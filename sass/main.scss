@@ -1,0 +1,23 @@
+/*---------------------------------------------------------------------------------
+Theme Name: ATF Newydd
+Text Domain: atfnewydd
+Version: 1.18
+Description: Bespoke Wordpress theme for the new ATF
+Tags: blog
+Author: Tom Pearson, Mike Galgher
+Author URI: https://www.aftertheflood.com
+License: GNU General Public License version 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+version 2.0 (http://www.gnu.org/licensesoji/gpl-2.0.html)
+-----------------------------------------------------------------------------------*/
+
+body{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.screen-reader-text{
+	display:none;
+}
+
+@import 'navigation';

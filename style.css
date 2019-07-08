@@ -1,18 +1,68 @@
 /*---------------------------------------------------------------------------------
-
-	Theme Name: ATF Newydd
-    Text Domain: atfnewydd
-	Version: 1.18
-	Description: Bespoke Wordpress theme for the new ATF
-	Tags: blog
-	Author: Tom Pearson, Mike Galgher
-	Author URI: https://www.aftertheflood.com
-	License: GNU General Public License version 2.0
-	License URI: http://www.gnu.org/licenses/gpl-2.0.html
-	version 2.0 (http://www.gnu.org/licensesoji/gpl-2.0.html)
-
+Theme Name: ATF Newydd
+Text Domain: atfnewydd
+Version: 1.18
+Description: Bespoke Wordpress theme for the new ATF
+Tags: blog
+Author: Tom Pearson, Mike Galgher
+Author URI: https://www.aftertheflood.com
+License: GNU General Public License version 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+version 2.0 (http://www.gnu.org/licensesoji/gpl-2.0.html)
 -----------------------------------------------------------------------------------*/
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0; }
 
-body{
-	font-family: sans-serif;
-}
+.screen-reader-text {
+  display: none; }
+
+nav {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start; }
+
+.header-links {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold; }
+
+.header-link {
+  display: inline-block; }
+
+nav a {
+  text-decoration: none;
+  color: black;
+  justify-content: space-between; }
+
+nav.home .home-link {
+  visibility: hidden; }
+
+nav.clients {
+  background-color: orange; }
+
+nav.journal {
+  background-color: yellow; }
+
+nav.about {
+  background-color: hotpink; }
+
+nav.contact {
+  background-color: black;
+  color: white;
+  fill: white; }
+
+nav.contact a {
+  color: white; }
+
+.active-marker {
+  width: 50px;
+  height: 50px; }
+
+/*# sourceMappingURL=style.css.map */

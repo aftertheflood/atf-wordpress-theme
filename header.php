@@ -1,15 +1,46 @@
-<?php wp_enqueue_style( 'style', get_stylesheet_uri() ); ?>
 <a class="skip-link screen-reader-text" href="#content">Skip to the content</a>
 <header class="site-header" role="banner">
-  <nav role="navigation">
-    <div class="homelink">
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+<?php 
+    global $post;
+    $post_slug = $post->post_name;
+
+    function linkIsActive($str, $slug){
+      if($str == $slug){
+        return true;
+      }
+      return false;
+    }
+
+    function addActiveMarker(){
+      echo '<div class="active-marker"><svg viewBox="0 0 50 50"><circle class="active-marker-circle" cx="25" cy="25" r="20"></circle></svg></div>';
+    }
+?>
+  <nav role="navigation" class="<?php if(is_front_page()) {
+    echo 'home';
+  }else{
+    echo $post_slug;
+  }?>">
+    <div class="header-links">
+      <a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+      <?php if(is_front_page()){ addActiveMarker(); } ?>
     </div>
-    <div class="primarylinks">
-      <a href="<?php echo esc_url( home_url( '/clients' ) ); ?>">Clients</a>
-      <a href="<?php echo esc_url( home_url( '/journal' ) ); ?>">Journal</a>
-      <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">About</a>
-      <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">Contact</a>
+    <div class="header-links">
+      <div class="header-link">
+        <a href="<?php echo esc_url( home_url( '/clients' ) ); ?>">Clients</a>
+        <?php if(linkIsActive('clients', $post_slug)){ addActiveMarker(); } ?>
+      </div>
+      <div class="header-link">
+        <a href="<?php echo esc_url( home_url( '/journal' ) ); ?>">Journal</a>
+        <?php if(linkIsActive('journal', $post_slug)){ addActiveMarker(); }?>
+      </div>
+      <div class="header-link">
+        <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">About</a>
+        <?php if(linkIsActive('about', $post_slug)){ addActiveMarker(); }?>
+      </div>
+      <div class="header-link">
+        <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">Contact</a>
+        <?php if(linkIsActive('contact', $post_slug)){ addActiveMarker(); }?>
+      </div>
     </div>
   </nav>
 

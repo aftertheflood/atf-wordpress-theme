@@ -1,0 +1,57 @@
+nav{
+	background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.header-links{
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header-link{
+  display:inline-block;
+}
+
+nav a{
+	text-decoration: none;
+  color:black;
+  justify-content: space-between;
+}
+
+nav.home .home-link{
+  visibility:hidden; 
+}
+
+nav.clients{
+	background-color: orange;
+}
+
+nav.journal{
+	background-color: yellow;
+}
+
+nav.about{
+	background-color: hotpink;
+}
+
+nav.contact{
+	background-color: black;
+  color:white;
+  fill:white;
+}
+
+nav.contact a{
+	color:white;
+}
+
+.active-marker-circle{
+  width: 50px;
+  height: 50px;
+}
