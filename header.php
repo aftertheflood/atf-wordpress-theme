@@ -20,9 +20,11 @@
   }else{
     echo $post_slug;
   }?>">
-    <div class="header-links">
-      <a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-      <?php if(is_front_page()){ addActiveMarker(); } ?>
+    <div class="header-links home-link">
+      <div class="header-link">
+        <a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+        <?php if(is_front_page()){ addActiveMarker(); } ?>
+      </div>
     </div>
     <div class="header-links">
       <div class="header-link">
