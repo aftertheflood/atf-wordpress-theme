@@ -32,11 +32,6 @@ nav a{
   justify-content: space-between;
 }
 
-.header-links.home-link
-{
-  visibility:hidden; 
-}
-
 nav.clients{
 	background-color: orange;
 }
@@ -74,4 +69,18 @@ nav.contact a{
 .active-marker-circle{
   width: $activeMarker;
   height: $activeMarker;
+}
+
+/* scroll behavior for home link */
+.header-links.home-link{
+  transition:visibility 0.3s linear,opacity 0.3s linear;
+}
+
+.header-links.home-link.top{
+  visibility:hidden;
+  opacity:0;
+}
+.header-links.home-link.scrolled{
+  visibility:visible;
+  opacity:1;
 }
