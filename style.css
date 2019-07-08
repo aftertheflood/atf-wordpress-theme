@@ -18,6 +18,9 @@ body {
 .screen-reader-text {
   display: none; }
 
+.site-title {
+  padding-top: 70px; }
+
 /* category colours */
 nav {
   position: fixed;
