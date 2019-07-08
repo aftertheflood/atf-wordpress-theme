@@ -18,7 +18,12 @@ body {
 .screen-reader-text {
   display: none; }
 
+/* category colours */
 nav {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  top: 0px;
   background-color: white;
   color: black;
   display: flex;
@@ -80,14 +85,16 @@ nav.contact a {
 
 /* scroll behavior for home link */
 .header-links.home-link {
-  transition: visibility 0.3s linear,opacity 0.3s linear; }
-
-.header-links.home-link.top {
+  transition: visibility 0.3s linear,opacity 0.3s linear;
   visibility: hidden;
   opacity: 0; }
 
-.header-links.home-link.scrolled {
+.header-links.home-link.scrolled,
+.header-links.home-link.persist {
   visibility: visible;
   opacity: 1; }
+
+.content {
+  padding-top: 70px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,7 +22,7 @@
   }else{
     echo $post_slug;
   }?>">
-    <div class="header-links home-link">
+    <div class="header-links home-link <?php if(!is_front_page()){ echo 'persist'; } ?>">
       <div class="header-link">
         <a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
         <?php if(is_front_page()){ addActiveMarker(); } ?>
