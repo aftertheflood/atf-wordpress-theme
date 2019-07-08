@@ -17,6 +17,8 @@
 ?>
   <nav role="navigation" class="<?php if(is_front_page()) {
     echo 'home';
+  }else if(is_single()){
+    echo 'journal';
   }else{
     echo $post_slug;
   }?>">
@@ -33,7 +35,7 @@
       </div>
       <div class="header-link">
         <a href="<?php echo esc_url( home_url( '/journal' ) ); ?>">Journal</a>
-        <?php if(linkIsActive('journal', $post_slug)){ addActiveMarker(); }?>
+        <?php if(linkIsActive('journal', $post_slug) || is_single()){ addActiveMarker(); }?>
       </div>
       <div class="header-link">
         <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">About</a>

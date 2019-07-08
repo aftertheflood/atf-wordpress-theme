@@ -47,17 +47,17 @@ nav a {
   justify-content: space-between; }
 
 nav.clients {
-  background-color: orange; }
+  background-color: #FF611E; }
 
 nav.journal {
-  background-color: yellow; }
+  background-color: #FFD700; }
 
 nav.about {
-  background-color: hotpink; }
+  background-color: #EB335F; }
 
 nav.contact {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #FFFFFF;
   fill: white; }
 
 nav.contact a {

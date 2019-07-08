@@ -1,3 +1,5 @@
+@import 'colors';
+
 $activeMarker: 30px;
 
 nav{
@@ -33,20 +35,20 @@ nav a{
 }
 
 nav.clients{
-	background-color: orange;
+	background-color: $clients-color;
 }
 
 nav.journal{
-	background-color: yellow;
+	background-color: $journal-color;
 }
 
 nav.about{
-	background-color: hotpink;
+	background-color: $about-color;
 }
 
 nav.contact{
-	background-color: black;
-  color:white;
+	background-color: $contact-color;
+  color:$contact-text;
   fill:white;
 }
 
