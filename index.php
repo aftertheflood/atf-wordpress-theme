@@ -10,18 +10,20 @@
 		<?php wp_body_open(); ?>
 		<?php get_header(); ?>
 		<main class="content" id="content" role="main">
+			<?php $count = 0; ?>
 			<?php if ( have_posts() ) :?>
 				<?php while ( have_posts() ) : the_post(); ?>
+					<?php
+						$count++;
+						if ($count <= 1 || !is_front_page()) { 
+					?>
 				<div class="post">
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>						
 					<?php
-						if ( is_singular() ){
-							the_content();	
-						}else{
-							the_excerpt();	
-						}
+						if ( is_singular() ){ the_content(); }else{ the_excerpt();	 }
 					?>
-					</div>
+				</div>
+					<?php } ?>
 				<?php endwhile; ?>
       <?php else : ?>
 				<div class="post">
