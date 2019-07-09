@@ -1,0 +1,27 @@
+{
+  "name": "atf-newydd",
+  "version": "1.0.0",
+  "description": "compile ths CSS from the scss files ... `sass sass/main.css ./style.css --scss`",
+  "main": "index.js",
+  "dependencies": {
+    "lodash.debounce": "^4.0.8"
+  },
+  "devDependencies": {
+    "browserify": "^16.3.0"
+  },
+  "scripts": {
+    "buildcss": "sass sass/main.scss ./style.css --scss",
+    "buildjs": "npx browserify ./src/index.js -o ./assets/js/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aftertheflood/atf-wordpress-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aftertheflood/atf-wordpress-theme/issues"
+  },
+  "homepage": "https://github.com/aftertheflood/atf-wordpress-theme#readme"
+}
