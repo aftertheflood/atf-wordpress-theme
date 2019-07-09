@@ -21,12 +21,5 @@ body{
 .screen-reader-text{
 	display:none;
 }
-.site-title{
-	padding-top: $nav-height;
-}
 
 @import 'navigation';
-
-.content{
-	padding-top: $nav-height;
-}

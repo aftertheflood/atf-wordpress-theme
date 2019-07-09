@@ -380,24 +380,6 @@ module.exports = debounce;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],2:[function(require,module,exports){
-const debounce = require('lodash.debounce');
+const debounce=require("lodash.debounce"),main=()=>{const e=document.getElementById("content"),n=document.querySelector(".header-links.home-link");window.onscroll=debounce(function(){e.getBoundingClientRect().top<30?n.classList.add("scrolled"):n.classList.remove("scrolled")},150)};window.onload=main;
 
-
-const main = () => {
-  const contentElement = document.getElementById('content');
-  const homeLink = document.querySelector('.header-links.home-link');
-  
-  function scrollHandler() {  
-    if(contentElement.getBoundingClientRect().top < 30){
-      homeLink.classList.add('scrolled');
-    }else{
-      homeLink.classList.remove('scrolled');
-    }
-    console.log(contentTop);
-  };
-
-  window.onscroll = debounce(scrollHandler, 150) 
-}
-
-window.onload = main;
 },{"lodash.debounce":1}]},{},[2]);

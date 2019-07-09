@@ -47,7 +47,7 @@
       </div>
     </div>
   </nav>
-
+  <div class="nav-place-holder"></div>
   <!-- FRONT PAGE HEADER -->
   <?php if ( is_front_page() ) {	?>
     <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
