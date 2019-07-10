@@ -1,9 +1,11 @@
 <a class="skip-link screen-reader-text" href="#content">Skip to the content</a>
 <header class="site-header" role="banner">
 <?php 
-    global $post;
-    $post_slug = $post->post_name;
-
+  global $pageTag;
+  $pageTag;
+  
+  global $post;
+  $post_slug = $post->post_name;
     function linkIsActive($str, $slug){
       if($str == $slug){
         return true;
@@ -15,13 +17,7 @@
       echo '<div class="active-marker"><svg viewBox="0 0 50 50"><circle class="active-marker-circle" cx="25" cy="25" r="20"></circle></svg></div>';
     }
 ?>
-  <nav role="navigation" class="<?php if(is_front_page()) {
-    echo 'home';
-  }else if(is_single()){
-    echo 'journal';
-  }else{
-    echo $post_slug;
-  }?>">
+  <nav role="navigation" class="<?php echo $pageTag ?>">
     <div class="header-links home-link <?php if(!is_front_page()){ echo 'persist'; } ?>">
       <div class="header-link">
         <a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
