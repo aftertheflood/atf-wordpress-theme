@@ -1,0 +1,24 @@
+label{
+  display: block;
+  width:  100%;
+  background-color: #282828;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+  width: 95%;
+  border: 0px;
+  background-color: #282828;
+}
+
+input[type=submit]{
+  padding: 20px;
+  border:0px;
+  background-color: #E426DD;
+  color: #000000;
+  display: inline-block;
+  font-size: 21px;
+}

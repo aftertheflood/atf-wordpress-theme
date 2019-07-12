@@ -24,13 +24,15 @@ body{
 }
 
 .page-layout{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-content: flex-start;
-	align-items: flex-start;
-	min-height: calc(100vh - #{$nav-height + $footer-height});
+	display: grid;
+	grid-template-rows: $nav-height auto $footer-height;
+	min-height:100vh; 
+}
+
+body.contact{
+	background-color: #000000;
 }
 
 @import 'navigation';
+@import 'contact-form';
+@import 'footer';

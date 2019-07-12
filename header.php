@@ -1,5 +1,5 @@
-<a class="skip-link screen-reader-text" href="#content">Skip to the content</a>
 <header class="site-header" role="banner">
+<a class="skip-link screen-reader-text" href="#content">Skip to the content</a>
 <?php 
   global $pageTag;
   $pageTag;

@@ -12,6 +12,6 @@ global $pageTag
 	</head>
 	<body class="<?php echo $pageTag ?>">
 		<?php wp_body_open(); ?>
-    <?php get_header(); ?>
 		<div class="page-layout">
+    <?php get_header(); ?>
     <main class="content" id="content" role="main">
