@@ -9,5 +9,4 @@ $pageTag = 'contact';
   <?php the_content(); ?>
   <?php endwhile; ?>
 <?php endif; ?>
-</form>
 <?php get_template_part('partials/html','bottom'); ?>

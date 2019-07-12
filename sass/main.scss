@@ -11,11 +11,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 version 2.0 (http://www.gnu.org/licensesoji/gpl-2.0.html)
 -----------------------------------------------------------------------------------*/
 
+@import 'fonts';
+
 $nav-height: 70px;
-$footer-height: 200px;
+
+*{
+	box-sizing: border-box;
+}
 
 body{
-	font-family: sans-serif;
+	font-family: Graphik, sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -25,7 +30,7 @@ body{
 
 .page-layout{
 	display: grid;
-	grid-template-rows: $nav-height auto $footer-height;
+	grid-template-rows: min-content auto min-content;
 	min-height:100vh; 
 }
 
@@ -33,6 +38,20 @@ body.contact{
 	background-color: #000000;
 }
 
+.atf-grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 5px;
+  column-gap: 20px;
+  grid-auto-rows: minmax(50px, max-content);
+  margin: 10px;
+}
+
+.ragged{
+  margin-right:-20px;
+}
+
+@import 'grid-templates';
 @import 'navigation';
 @import 'contact-form';
 @import 'footer';

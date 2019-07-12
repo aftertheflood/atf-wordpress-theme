@@ -1,0 +1,76 @@
+
+.splash{
+  grid-template-areas:  " . intro intro intro intro intro intro . . . . ."
+                        " . . . . . . promo promo promo promo promo promo";
+}
+
+@media (max-width: 650px) {
+  .splash{
+    grid-template-areas:  " . intro intro intro intro intro intro intro intro intro intro ."
+                          " . promo promo promo promo promo promo promo promo promo promo .";
+  }
+}
+
+.splash__intro{
+  grid-area: intro;
+}
+
+.splash__intro__title{
+  font-size: 54px;
+}
+
+.splash__intro__description{
+  margin-top: 10px;
+  font-size: 54px;
+  line-height: 118%;
+  letter-spacing: -0.03em;
+}
+
+$splashPromoPadding: 39px;
+
+.splash__promo{
+  grid-area: promo;
+  background-color: #FFD600;
+  padding: $splashPromoPadding;
+}
+
+.splash__promo__date{
+  margin-top: -$splashPromoPadding;
+  margin-right: -$splashPromoPadding;
+  text-align:right;
+}
+
+.splash__promo__title{
+
+}
+
+.splash__promo__excerpt{
+  font-style: italic; 
+}
+
+.splash__promo__link{
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.splash__promo__link::after{
+  content:' \00bb';
+}
+
+.bold-content{
+  grid-template-areas:  " . text text text text text text text . . . ."
+}
+
+@media (max-width: 650px) {
+  .bold-content{
+    grid-template-areas:  " . text text text text text text text text text text .";
+  }
+}
+
+.bold-content__text {
+  grid-area: text;
+  font-family: Graphik;
+  font-size: 32px;
+  line-height: 140%;
+}

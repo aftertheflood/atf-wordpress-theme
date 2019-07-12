@@ -1,6 +1,5 @@
 footer{
   width: 100%;
-  height: $footer-height;
   color:#FFFFFF;
   font-size: 14px;
   line-height: 150%;
@@ -8,6 +7,7 @@ footer{
   background: url(https://aftertheflood.com/wp-content/uploads/2017/12/atf-logo-clipped-footer.png) no-repeat left bottom;
   background-size:  contain;
   background-color: #000000;
+  padding: 50px;
 }
 
 footer a{
