@@ -5,7 +5,15 @@ $pageTag = 'home';
 ?>
 <?php get_template_part('partials/html','top'); ?>
 
-<?php /* The title and strapline */ ?>
+<?php /* The title and strap-line */ ?>
+
+<!-- FRONT PAGE HEADER -->
+<?php if ( is_front_page() ) {	?>
+  <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+  <?php if ( get_bloginfo( 'description' ) ) : ?>
+    <p class="site-description"><?php bloginfo( 'description' ); ?></p>
+  <?php endif; ?>	
+<?php } ?>
 
 <?php /* The most recent journal post */ ?>
 <?php 

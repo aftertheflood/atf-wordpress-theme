@@ -12,6 +12,7 @@ version 2.0 (http://www.gnu.org/licensesoji/gpl-2.0.html)
 -----------------------------------------------------------------------------------*/
 
 $nav-height: 70px;
+$footer-height: 200px;
 
 body{
 	font-family: sans-serif;
@@ -20,6 +21,16 @@ body{
 }
 .screen-reader-text{
 	display:none;
+}
+
+.page-layout{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-content: flex-start;
+	align-items: flex-start;
+	min-height: calc(100vh - #{$nav-height + $footer-height});
 }
 
 @import 'navigation';
