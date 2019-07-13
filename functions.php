@@ -5,7 +5,25 @@ function wp_add_scripts() {
 }
 
 function get_top_post() {
-  $one_post = array( 'post_type' => 'post', 'orderby' => 'date', 'order' => 'ASC', 'posts_per_page' => 1 );
+  $one_post = array( 
+    'post_type' => 'post', 
+    'orderby' => 'date', 
+    'order' => 'ASC', 
+    'posts_per_page' => 1,
+    'category_name' => 'journal'
+  );
+  $posts = new WP_Query( $one_post );
+  return $posts;
+}
+
+function get_client_posts() {
+  $one_post = array( 
+    'post_type' => 'post', 
+    'orderby' => 'date', 
+    'order' => 'ASC', 
+    'posts_per_page' => 1,
+    'category_name' => 'client'
+  );
   $posts = new WP_Query( $one_post );
   return $posts;
 }
