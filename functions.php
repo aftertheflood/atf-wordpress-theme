@@ -16,12 +16,12 @@ function get_top_post() {
   return $posts;
 }
 
-function get_client_posts() {
+function get_client_posts($count) {
   $one_post = array( 
     'post_type' => 'post', 
     'orderby' => 'date', 
     'order' => 'ASC', 
-    'posts_per_page' => 1,
+    'posts_per_page' => $count,
     'category_name' => 'client'
   );
   $posts = new WP_Query( $one_post );
