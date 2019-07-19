@@ -44,12 +44,14 @@ $pageTag = 'home';
       echo 'promo-left';
     }
   ?>">
-    <div class="client__promo">
+    <div class="client__promo promo__text">
       <div class="client__promo__sector"><?php echo get_post_meta($post->ID, 'client-sector', true);?></div>
       <h2 class="client__promo__title"><?php the_title(); ?></h2>						
       <div class="client__promo__excerpt"><?php the_excerpt(); ?></div>
       <a href="<?php the_permalink(); ?>" class="client__promo__link">Read the case study</a>
+      <img class="client__promo-logo" src="<?php echo get_post_meta($post->ID, 'client-logo', true);?>" alt="<?php echo get_post_meta($post->ID, 'client ', true);?> logo">
     </div>
+    <div class="client__promo promo__image" style="background-image:url(<?php echo get_post_meta($post->ID, 'promo-image', true);?>);">&nbsp;</div>
   </div>
   <?php endwhile; ?>
 

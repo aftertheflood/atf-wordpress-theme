@@ -98,9 +98,49 @@ body.contact {
 .splash {
   grid-template-areas: " . intro intro intro intro intro intro . . . . ." " . . . . . . promo promo promo promo promo promo"; }
 
+.bold-content {
+  grid-template-areas: " . text text text text text text text . . . ."; }
+
+.promo-right {
+  grid-template-areas: "image image image image image image image text text text text ."; }
+
+.promo-left {
+  grid-template-areas: ". text text text text image image image image image image image"; }
+
 @media (max-width: 650px) {
   .splash {
-    grid-template-areas: " . intro intro intro intro intro intro intro intro intro intro ." " . promo promo promo promo promo promo promo promo promo promo ."; } }
+    grid-template-areas: " . intro intro intro intro intro intro intro intro intro intro . " " . promo promo promo promo promo promo promo promo promo promo . "; }
+
+  .bold-content {
+    grid-template-areas: " . text text text text text text text text text text ."; }
+
+  .promo-left, .promo-right {
+    grid-template-areas: ". image image image image image image image image image image ."  ". text text text text text text text text text text ."; }
+
+  .promo-left.text-first, .promo-right.text-first {
+    grid-template-areas: ". text text text text text text text text text text . " ". image image image image image image image image image image ."; } }
+.promo-right, .promo-left {
+  margin-bottom: 100px; }
+
+.promo__text {
+  grid-area: text; }
+
+.promo__image {
+  grid-area: image;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  grid-area: image; }
+
+.promo-left .promo__image {
+  margin-right: calc(-$column-gap); }
+
+.promo-right .promo__image {
+  margin-left: calc(-$column-gap); }
+
+.client__promo-logo {
+  display: block;
+  width: 130px; }
+
 .splash__intro {
   grid-area: intro; }
 
@@ -134,12 +174,6 @@ body.contact {
 .splash__promo__link::after {
   content: ' \00bb'; }
 
-.bold-content {
-  grid-template-areas: " . text text text text text text text . . . ."; }
-
-@media (max-width: 650px) {
-  .bold-content {
-    grid-template-areas: " . text text text text text text text text text text ."; } }
 .bold-content__text {
   grid-area: text;
   font-family: Graphik;
