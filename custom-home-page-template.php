@@ -17,7 +17,7 @@ $pageTag = 'home';
   </div>
   <?php 
   /* The most recent journal post */
-  $posts = get_top_post();
+  $posts = get_journal_post_range(0,1);
   while ( $posts->have_posts() ) : $posts->the_post(); ?>
     <div class="splash__promo">
       <div class="splash__promo__date"><?php the_date() ?></div>
@@ -55,7 +55,13 @@ $pageTag = 'home';
   </div>
   <?php endwhile; ?>
 
-<?php /* 2nd and 3rd journal posts */ ?>
+<?php /* 2nd and 3rd journal posts start from 1 get 2*/ 
+  $posts = get_journal_post_range(1, 2);
+  while ( $posts->have_posts() ) : 
+    $posts->the_post();  ?>
+  POST
+<?php endwhile; ?>
+
 
 <?php /* The most recent journal post */ ?>
 
