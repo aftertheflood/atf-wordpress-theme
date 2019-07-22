@@ -17,6 +17,8 @@ version 2.0 (http://www.gnu.org/licensesoji/gpl-2.0.html)
 
 $nav-height: 70px;
 $column-gap: 20px;
+$promoPadding: 39px;
+
 
 *{
 	box-sizing: border-box;
@@ -63,14 +65,9 @@ body.contact{
   margin-right:-20px;
 }
 
-@import 'grid-templates';
+@import 'home-page-layout/page';
 
-@import 'home-page-layout/splash';
-@import 'home-page-layout/journal';
-@import 'home-page-layout/clients';
-
-@import 'journal-page-layout/archive';
-@import 'journal-page-layout/splash';
+@import 'journal-page-layout/page';
 
 @import 'navigation';
 @import 'contact-form';
