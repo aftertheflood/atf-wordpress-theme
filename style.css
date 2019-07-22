@@ -95,6 +95,12 @@ body.contact {
 .ragged {
   margin-right: -20px; }
 
+.split-50-50-left {
+  grid-area: auto / 2 / auto / 7; }
+
+.split-50-50-right {
+  grid-area: auto / 7 / auto / 12; }
+
 .splash {
   grid-template-areas: " . intro intro intro intro intro intro . . . . ." " . . . . . . promo promo promo promo promo promo"; }
 
@@ -119,6 +125,10 @@ body.contact {
 
   .promo-left.text-first, .promo-right.text-first {
     grid-template-areas: ". text text text text text text text text text text . " ". image image image image image image image image image image ."; } }
+.archive-post-light {
+  background-color: #FFD600;
+  padding: 39px; }
+
 .promo-right, .promo-left {
   margin-bottom: 100px; }
 
@@ -158,20 +168,24 @@ body.contact {
   background-color: #FFD600;
   padding: 39px; }
 
-.splash__promo__date {
+.splash__promo__date,
+.light-archive__date {
   margin-top: -39px;
   margin-right: -39px;
   text-align: right; }
 
-.splash__promo__excerpt {
+.splash__promo__excerpt,
+.light-archive__excerpt {
   font-style: italic; }
 
-.splash__promo__link {
+.splash__promo__link,
+.light-archive__link {
   font-size: 20px;
   font-weight: bold;
   text-decoration: none; }
 
-.splash__promo__link::after {
+.splash__promo__link::after,
+.light-archive__link::after {
   content: ' \00bb'; }
 
 .bold-content__text {

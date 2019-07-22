@@ -54,14 +54,26 @@ $pageTag = 'home';
     <div class="client__promo promo__image" style="background-image:url(<?php echo get_post_meta($post->ID, 'promo-image', true);?>);">&nbsp;</div>
   </div>
   <?php endwhile; ?>
-
+<h3>Recently in the Journal &hellip;</h3>
+<div class="atf-grid">
 <?php /* 2nd and 3rd journal posts start from 1 get 2*/ 
-  $posts = get_category_post_range('journal',1, 2);
+  $count = 0;
+  $posts = get_category_post_range('journal',1, 3);
   while ( $posts->have_posts() ) : 
     $posts->the_post();  ?>
-  POST
+  <div class="archive-post-light <?php if($count % 2 == 0){
+    echo 'split-50-50-left';
+  }else{
+    echo 'split-50-50-right';
+  } 
+  $count ++;?>">
+    <div class="light-archive__date"><?php the_date() ?></div>
+    <h2 class="light-archive__title"><?php the_title() ?></h2>
+    <div class="light-archive__excerpt"><?php the_excerpt() ?></div>
+    <a class="light-archive__link" href="<?php the_permalink() ?>">Read more</a>
+  </div>
 <?php endwhile; ?>
-
+</div>
 
 <?php /* The most recent journal post */ ?>
 

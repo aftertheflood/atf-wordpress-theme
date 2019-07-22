@@ -1,3 +1,12 @@
+$promoPadding: 39px;
+
+.split-50-50-left{
+  grid-area: auto / 2 / auto / 7;
+}
+
+.split-50-50-right{
+  grid-area: auto / 7 / auto / 12;
+}
 
 .splash{
   grid-template-areas:  " . intro intro intro intro intro intro . . . . ."
@@ -37,6 +46,11 @@
       ". text text text text text text text text text text . "
       ". image image image image image image image image image image .";
   }
+}
+
+.archive-post-light{
+  background-color: #FFD600;
+  padding: $promoPadding;
 }
 
 .promo-right, .promo-left{
@@ -82,35 +96,38 @@
   letter-spacing: -0.03em;
 }
 
-$splashPromoPadding: 39px;
-
 .splash__promo{
   grid-area: promo;
   background-color: #FFD600;
-  padding: $splashPromoPadding;
+  padding: $promoPadding;
 }
 
-.splash__promo__date{
-  margin-top: -$splashPromoPadding;
-  margin-right: -$splashPromoPadding;
+.splash__promo__date,
+.light-archive__date{
+  margin-top: -$promoPadding;
+  margin-right: -$promoPadding;
   text-align:right;
 }
 
-.splash__promo__title{
+.splash__promo__title,
+.light-archive__title{
 
 }
 
-.splash__promo__excerpt{
+.splash__promo__excerpt,
+.light-archive__excerpt{
   font-style: italic; 
 }
 
-.splash__promo__link{
+.splash__promo__link,
+.light-archive__link{
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
 }
 
-.splash__promo__link::after{
+.splash__promo__link::after,
+.light-archive__link::after{
   content:' \00bb';
 }
 
