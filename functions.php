@@ -4,40 +4,15 @@ function wp_add_scripts() {
   wp_enqueue_script('bundle');
 }
 
-function get_top_post() {
-  $one_post = array( 
+function get_category_post_range($category, $start, $count) {
+  $params = array(
     'post_type' => 'post', 
     'orderby' => 'date', 
-    'order' => 'ASC', 
-    'posts_per_page' => 1,
-    'category_name' => 'journal'
-  );
-  $posts = new WP_Query( $one_post );
-  return $posts;
-}
-
-function get_journal_post_range($start, $count) {
-  $params = array( 
-    'post_type' => 'post', 
-    'orderby' => 'date', 
-    'order' => 'ASC',
     'offset' => $start,
     'posts_per_page' => $count,
-    'category_name' => 'journal'
+    'category_name' => $category
   );
   $posts = new WP_Query( $params );
-  return $posts;
-}
-
-function get_client_posts($count) {
-  $one_post = array( 
-    'post_type' => 'post', 
-    'orderby' => 'date', 
-    'order' => 'ASC', 
-    'posts_per_page' => $count,
-    'category_name' => 'client'
-  );
-  $posts = new WP_Query( $one_post );
   return $posts;
 }
 
