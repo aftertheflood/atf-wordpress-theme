@@ -16,13 +16,14 @@ $pageTag = 'journal';
       <a href="<?php the_permalink(); ?>" class="journal-splash__link">Read the journal post</a>
     </div>
     <div class="journal-splash__image">
+      <img src="<?php echo get_post_meta($post->ID, 'promo-image', true);?>">
     </div>
   <?php endwhile; ?>
 </div>
 <?php /* the remaining journal entries */ ?>
 <div class="atf-grid journal-archive">
-  <div>Recently</div>
-  <div class="archive-subgrid">
+  <div class="">Recently</div>
+  <div class="atf-archive-grid">
   <?php 
   $posts = get_category_post_range('journal', 1, 9);
   while ( $posts->have_posts() ) : $posts->the_post(); ?>

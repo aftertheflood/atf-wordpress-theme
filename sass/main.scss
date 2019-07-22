@@ -50,11 +50,28 @@ body.contact{
   margin: 10px;
 }
 
+.atf-archive-grid{
+	display: grid;
+	grid-area: entries;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 5px;
+	column-gap: $column-gap;
+	background-color: grey;
+}
+
 .ragged{
   margin-right:-20px;
 }
 
 @import 'grid-templates';
+
+@import 'home-page-layout/splash';
+@import 'home-page-layout/journal';
+@import 'home-page-layout/clients';
+
+@import 'journal-page-layout/archive';
+@import 'journal-page-layout/splash';
+
 @import 'navigation';
 @import 'contact-form';
 @import 'footer';

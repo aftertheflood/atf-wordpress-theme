@@ -92,6 +92,14 @@ body.contact {
   grid-auto-rows: minmax(50px, max-content);
   margin: 10px; }
 
+.atf-archive-grid {
+  display: grid;
+  grid-area: entries;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 20px;
+  background-color: grey; }
+
 .ragged {
   margin-right: -20px; }
 
@@ -100,6 +108,24 @@ body.contact {
 
 .split-50-50-right {
   grid-area: auto / 7 / auto / 12; }
+
+.journal-splash {
+  grid-template-areas: " . text text text text text image image image image image image"; }
+
+.journal-splash__text {
+  grid-area: text; }
+
+.journal-splash__image {
+  grid-area: image; }
+
+.journal-archive {
+  margin-left: -20px;
+  margin-right: -20px;
+  grid-template-areas: " . kicker kicker entries entries entries entries entries entries entries entries .";
+  background-color: black; }
+
+.journal-archive__kicker {
+  grid-area: kicker; }
 
 .splash {
   grid-template-areas: " . intro intro intro intro intro intro . . . . ." " . . . . . . promo promo promo promo promo promo"; }

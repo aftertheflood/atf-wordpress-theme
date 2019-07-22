@@ -1,11 +1,35 @@
 $promoPadding: 39px;
 
+
 .split-50-50-left{
   grid-area: auto / 2 / auto / 7;
 }
 
 .split-50-50-right{
   grid-area: auto / 7 / auto / 12;
+}
+
+.journal-splash{
+  grid-template-areas: " . text text text text text image image image image image image";
+}
+
+.journal-splash__text{
+  grid-area: text;
+}
+
+.journal-splash__image{
+  grid-area: image;
+}
+
+.journal-archive{
+  margin-left:-$column-gap;
+  margin-right:-$column-gap;
+  grid-template-areas:  " . kicker kicker entries entries entries entries entries entries entries entries .";
+  background-color: black;
+}
+
+.journal-archive__kicker{
+  grid-area: kicker;
 }
 
 .splash{
