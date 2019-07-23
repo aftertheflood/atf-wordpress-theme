@@ -90,7 +90,7 @@ body.contact {
   row-gap: 5px;
   column-gap: 20px;
   grid-auto-rows: minmax(50px, max-content);
-  margin: 10px; }
+  margin: 0px; }
 
 .atf-archive-grid {
   display: grid;
@@ -158,6 +158,7 @@ body.contact {
   letter-spacing: -0.03em; }
 
 .splash__promo {
+  margin-right: 10px;
   grid-area: promo;
   background-color: #FFD600;
   padding: 39px; }
@@ -199,8 +200,6 @@ body.contact {
   grid-area: image; }
 
 .journal-archive {
-  margin-left: -20px;
-  margin-right: -20px;
   grid-template-areas: " . kicker kicker entries entries entries entries entries entries entries entries .";
   background-color: black; }
 
@@ -217,6 +216,40 @@ body.contact {
 
 .light-archive__link::after {
   content: ' \00bb'; }
+
+.bold-content {
+  grid-template-areas: " . text text text text text text text . . . ."; }
+
+@media (max-width: 650px) {
+  .bold-content {
+    grid-template-areas: " . text text text text text text text text text text ."; } }
+.bold-content__text {
+  grid-area: text;
+  font-family: Graphik;
+  font-size: 32px;
+  line-height: 140%; }
+
+label {
+  display: block;
+  width: 100%;
+  background-color: #282828;
+  color: #FFFFFF;
+  padding: 20px; }
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 95%;
+  border: 0px;
+  background-color: #282828; }
+
+input[type=submit] {
+  padding: 20px;
+  border: 0px;
+  background-color: #E426DD;
+  color: #000000;
+  display: inline-block;
+  font-size: 21px; }
 
 /* category colours */
 nav {
@@ -296,28 +329,6 @@ nav.contact a {
 
 .nav-place-holder {
   height: 70px; }
-
-label {
-  display: block;
-  width: 100%;
-  background-color: #282828;
-  color: #FFFFFF;
-  padding: 20px; }
-
-input[type=text],
-input[type=email],
-textarea {
-  width: 95%;
-  border: 0px;
-  background-color: #282828; }
-
-input[type=submit] {
-  padding: 20px;
-  border: 0px;
-  background-color: #E426DD;
-  color: #000000;
-  display: inline-block;
-  font-size: 21px; }
 
 footer {
   width: 100%;

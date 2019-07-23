@@ -1,3 +1,21 @@
+.bold-content{
+  grid-template-areas:  " . text text text text text text text . . . ."
+}
+
+
+@media (max-width: 650px) {
+  .bold-content{
+    grid-template-areas:  " . text text text text text text text text text text .";
+  }
+}
+
+.bold-content__text {
+  grid-area: text;
+  font-family: Graphik;
+  font-size: 32px;
+  line-height: 140%;
+}
+
 label{
   display: block;
   width:  100%;

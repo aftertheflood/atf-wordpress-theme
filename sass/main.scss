@@ -49,7 +49,7 @@ body.contact{
   row-gap: 5px;
   column-gap: $column-gap;
   grid-auto-rows: minmax(50px, max-content);
-  margin: 10px;
+  margin: 0px;
 }
 
 .atf-archive-grid{
@@ -65,10 +65,9 @@ body.contact{
   margin-right:-20px;
 }
 
-@import 'home-page-layout/page';
-
-@import 'journal-page-layout/page';
+@import 'home-page/page';
+@import 'journal-page/page';
+@import 'contact-page/page';
 
 @import 'navigation';
-@import 'contact-form';
 @import 'footer';

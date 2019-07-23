@@ -11,8 +11,6 @@
 }
 
 .journal-archive{
-  margin-left:-$column-gap;
-  margin-right:-$column-gap;
   grid-template-areas:  " . kicker kicker entries entries entries entries entries entries entries entries .";
   background-color: black;
 }
