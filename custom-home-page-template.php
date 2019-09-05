@@ -49,7 +49,9 @@ $pageTag = 'home';
       <h2 class="client__promo__title"><?php the_title(); ?></h2>						
       <div class="client__promo__excerpt"><?php the_excerpt(); ?></div>
       <a href="<?php the_permalink(); ?>" class="client__promo__link">Read the case study</a>
+      <?php if(get_post_meta($post->ID, 'client-logo', true)){ ?>
       <img class="client__promo-logo" src="<?php echo get_post_meta($post->ID, 'client-logo', true);?>" alt="<?php echo get_post_meta($post->ID, 'client ', true);?> logo">
+      <?php } ?>
     </div>
     <div class="client__promo promo__image" style="background-image:url(<?php echo get_post_meta($post->ID, 'promo-image', true);?>);">&nbsp;</div>
   </div>
@@ -58,7 +60,7 @@ $pageTag = 'home';
 <div class="atf-grid">
 <?php /* 2nd and 3rd journal posts start from 1 get 2*/ 
   $count = 0;
-  $posts = get_category_post_range('journal',1, 3);
+  $posts = get_category_post_range('journal',1, 2);
   while ( $posts->have_posts() ) : 
     $posts->the_post();  ?>
   <div class="archive-post-light <?php if($count % 2 == 0){

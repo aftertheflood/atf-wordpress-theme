@@ -13,7 +13,7 @@ $pageTag = 'journal';
       <h2 class="journal-splash__title"><?php the_title(); ?></h2>						
       <div class="journal-splash__date"><?php the_date() ?></div>
       <div class="journal-splash__excerpt"><?php the_excerpt(); ?></div>
-      <a href="<?php the_permalink(); ?>" class="journal-splash__link">Read the journal post</a>
+      <a href="<?php the_permalink(); ?>" class="journal-splash__link">Read more</a>
     </div>
     <div class="journal-splash__image">
       <img src="<?php echo get_post_meta($post->ID, 'promo-image', true);?>">
