@@ -1,8 +1,7 @@
 <?php /* Template Name: Home Page Template */ ?>
 <?php 
 global $pageTag;
-$pageTag = 'home';
-?>
+$pageTag = 'home';?>
 <?php get_template_part('partials/html','top'); ?>
 <div class="splash atf-grid">
   <div class="splash__intro">
@@ -28,34 +27,13 @@ $pageTag = 'home';
   <?php endwhile; ?>
 </div>
 
-<?php /* case studies */ ?>
-
 <?php 
-  /* The most recent journal post */
-  $posts = get_category_post_range('client',0,3);
-  $count = 0;
-  while ( $posts->have_posts() ) : 
-    $posts->the_post(); 
-    $count ++; ?>
-  <div class="atf-grid <?php 
-    if ($count % 2 == 0){
-      echo 'promo-right';
-    }else{
-      echo 'promo-left';
-    }
-  ?>">
-    <div class="client__promo promo__text">
-      <div class="client__promo__sector"><?php echo get_post_meta($post->ID, 'client-sector', true);?></div>
-      <h2 class="client__promo__title"><?php the_title(); ?></h2>						
-      <div class="client__promo__excerpt"><?php the_excerpt(); ?></div>
-      <a href="<?php the_permalink(); ?>" class="client__promo__link">Read the case study</a>
-      <?php if(get_post_meta($post->ID, 'client-logo', true)){ ?>
-      <img class="client__promo-logo" src="<?php echo get_post_meta($post->ID, 'client-logo', true);?>" alt="<?php echo get_post_meta($post->ID, 'client ', true);?> logo">
-      <?php } ?>
-    </div>
-    <div class="client__promo promo__image" style="background-image:url(<?php echo get_post_meta($post->ID, 'promo-image', true);?>);">&nbsp;</div>
-  </div>
-  <?php endwhile; ?>
+/* case studies */
+  $post = get_post(2); 
+  $content = apply_filters('the_content', $post->post_content); 
+  echo $content;
+?>
+
 <h3>Recently in the Journal &hellip;</h3>
 <div class="atf-grid">
 <?php /* 2nd and 3rd journal posts start from 1 get 2*/ 
