@@ -105,6 +105,7 @@ body.contact {
   column-gap: 20px;
   grid-auto-rows: minmax(50px, max-content);
   margin: 0px;
+  align-items: center;
 }
 
 .atf-archive-grid {
@@ -133,14 +134,20 @@ body.contact {
 }
 
 @media (max-width: 650px) {
-  .promo-left,
-.promo-right {
-    grid-template-areas: ". image image image image image image image image image image ." ". text text text text text text text text text text .";
+  .promo-left {
+    grid-template-areas: ". image image image image image image image image image image image" ". text text text text text text text text text text .";
   }
 
-  .promo-left.text-first,
-.promo-right.text-first {
-    grid-template-areas: ". text text text text text text text text text text . " ". image image image image image image image image image image .";
+  .promo-right {
+    grid-template-areas: "image image image image image image image image image image image ." ". text text text text text text text text text text .";
+  }
+
+  .promo-left.text-first {
+    grid-template-areas: ". text text text text text text text text text text . " ". image image image image image image image image image image image";
+  }
+
+  .promo-right.text-first {
+    grid-template-areas: ". text text text text text text text text text text . " "image image image image image image image image image image image .";
   }
 }
 .promo-double__left {
@@ -170,7 +177,13 @@ body.contact {
 .promo__image {
   background-size: auto 100%;
   background-repeat: no-repeat;
+  overflow: hidden;
+  max-width: 100%;
   grid-area: image;
+}
+
+.promo__image img {
+  width: 100%;
 }
 
 .client__promo-logo {
@@ -179,7 +192,7 @@ body.contact {
 }
 
 .splash {
-  grid-template-areas: " . intro intro intro intro intro intro . . . . ." " . . . . . . promo promo promo promo promo promo";
+  grid-template-areas: " . intro intro intro intro intro intro . . . . . " " . . . . . . promo promo promo promo promo promo ";
 }
 
 @media (max-width: 650px) {
@@ -221,6 +234,7 @@ body.contact {
 }
 
 .splash__promo__link {
+  color: black;
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
@@ -231,6 +245,7 @@ body.contact {
 }
 
 .archive-post-light {
+  height: 100%;
   background-color: #FFD600;
   padding: 39px;
 }
@@ -269,6 +284,7 @@ body.contact {
 }
 
 .light-archive__link {
+  color: black;
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
@@ -317,6 +333,22 @@ input[type=submit] {
   color: #000000;
   display: inline-block;
   font-size: 21px;
+}
+
+a.client__promo__link {
+  padding: 20px;
+  border: 0px;
+  background-color: #EEE;
+  font-weight: bold;
+  color: #FF611E;
+  display: inline-block;
+  font-size: 21px;
+  text-decoration: none;
+}
+
+a.client__promo__link:hover {
+  background-color: #FF611E;
+  color: #000;
 }
 
 /* category colours */

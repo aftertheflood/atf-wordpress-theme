@@ -50,6 +50,7 @@ body.contact{
   column-gap: $column-gap;
   grid-auto-rows: minmax(50px, max-content);
   margin: 0px;
+  align-items: center;
 }
 
 .atf-archive-grid{
