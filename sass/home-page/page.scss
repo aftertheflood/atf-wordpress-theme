@@ -5,6 +5,9 @@
 .promo-left{
   grid-template-areas: ". text text text text image image image image image image image";
 }
+.promo-double{
+  grid-template-areas: ". . lefttext lefttext lefttext lefttext righttext righttext righttext righttext . .";
+}
 
 @media (max-width: 650px) {
   .promo-left,
@@ -20,6 +23,14 @@
       ". text text text text text text text text text text . "
       ". image image image image image image image image image image .";
   }
+}
+
+.promo-double__left{
+  grid-area: lefttext;
+}
+
+.promo-double__right{
+  grid-area: righttext;
 }
 
 .promo-right, .promo-left{
@@ -39,7 +50,6 @@
 }
 
 .promo__image{
-  grid-area: image;
   background-size: auto 100%;
   background-repeat: no-repeat;
   grid-area: image;
