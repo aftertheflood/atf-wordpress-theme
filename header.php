@@ -51,7 +51,7 @@
     </div>
     <div class="header-links home-link <?php if(!is_front_page()){ echo 'persist'; } ?>">
       <div class="header-link">
-        <a class="menu-link" href="#menu">
+        <a class="menu-link" href="#compact-site-menu" class="open-menu-button">
           <svg height="25" viewBox="0 0 50 50">
             <circle class="active-marker-circle" cx="25" cy="25" r="20"></circle>
           </svg>

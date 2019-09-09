@@ -454,7 +454,23 @@ nav.contact a {
   display: none;
 }
 
+nav.compact-menu {
+  display: none;
+  overflow: hidden;
+}
+
 @media (max-width: 850px) {
+  nav.compact-menu {
+    display: block;
+    position: relative;
+    height: 100vh;
+    transition-property: max-height;
+  }
+
+  .compact-menu a {
+    display: block;
+  }
+
   .compact-nav {
     display: flex;
   }
