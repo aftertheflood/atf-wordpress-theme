@@ -44,7 +44,20 @@
     </div>
   </nav>
   <nav role="navigation" class="compact-nav <?php echo $pageTag ?>">
-    COMPACT
+    <div class="header-links home-link <?php if(!is_front_page()){ echo 'persist'; } ?>">
+      <div class="header-link">
+        <a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+      </div>
+    </div>
+    <div class="header-links home-link <?php if(!is_front_page()){ echo 'persist'; } ?>">
+      <div class="header-link">
+        <a class="menu-link" href="#menu">
+          <svg height="25" viewBox="0 0 50 50">
+            <circle class="active-marker-circle" cx="25" cy="25" r="20"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
   </nav>
   <div class="nav-place-holder"></div>
   <!-- ARCHIVE HEADER -->

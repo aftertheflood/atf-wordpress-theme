@@ -65,7 +65,7 @@ nav.contact a{
   display: inline-block;
   width: $activeMarker;
   height: $activeMarker;
-  bottom: -$activeMarker / 2;
+  bottom: -($activeMarker / 2 - 6);
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -101,7 +101,7 @@ nav.contact a{
 
 @media (max-width: 850px) {
   .compact-nav{
-    display: block;
+    display: flex;
   }
 
   .full-nav{
