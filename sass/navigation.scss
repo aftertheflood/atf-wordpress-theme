@@ -94,3 +94,17 @@ nav.contact a{
 .nav-place-holder{
 	height: $nav-height;
 }
+
+.compact-nav{
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .compact-nav{
+    display: block;
+  }
+
+  .full-nav{
+    display: none;
+  }
+}

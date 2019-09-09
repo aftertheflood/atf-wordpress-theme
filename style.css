@@ -220,6 +220,7 @@ body.contact {
   grid-area: promo;
   background-color: #FFD600;
   padding: 39px;
+  margin-bottom: 10px;
 }
 
 .splash__promo__date,
@@ -248,6 +249,7 @@ body.contact {
   height: 100%;
   background-color: #FFD600;
   padding: 39px;
+  margin-bottom: 10px;
 }
 
 .split-50-50-left {
@@ -256,6 +258,10 @@ body.contact {
 
 .split-50-50-right {
   grid-area: auto/7/auto/12;
+}
+
+.client__promo__sector {
+  font-weight: bold;
 }
 
 .journal-splash {
@@ -444,6 +450,19 @@ nav.contact a {
   height: 70px;
 }
 
+.compact-nav {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .compact-nav {
+    display: block;
+  }
+
+  .full-nav {
+    display: none;
+  }
+}
 footer {
   width: 100%;
   color: #FFFFFF;

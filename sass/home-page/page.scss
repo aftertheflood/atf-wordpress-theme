@@ -108,6 +108,7 @@
   grid-area: promo;
   background-color: #FFD600;
   padding: $promoPadding;
+  margin-bottom: 10px;
 }
 
 .splash__promo__date,
@@ -137,6 +138,7 @@
   height: 100%;
   background-color: #FFD600;
   padding: $promoPadding;
+  margin-bottom: 10px;
 }
 
 .split-50-50-left{
@@ -145,4 +147,8 @@
 
 .split-50-50-right{
   grid-area: auto / 7 / auto / 12;
+}
+
+.client__promo__sector{
+  font-weight: bold;
 }

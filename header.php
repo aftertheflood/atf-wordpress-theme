@@ -17,7 +17,7 @@
       echo '<div class="active-marker"><svg viewBox="0 0 50 50"><circle class="active-marker-circle" cx="25" cy="25" r="20"></circle></svg></div>';
     }
 ?>
-  <nav role="navigation" class="<?php echo $pageTag ?>">
+  <nav role="navigation" class="full-nav <?php echo $pageTag ?>">
     <div class="header-links home-link <?php if(!is_front_page()){ echo 'persist'; } ?>">
       <div class="header-link">
         <a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
@@ -42,6 +42,9 @@
         <?php if(linkIsActive('contact', $post_slug)){ addActiveMarker(); }?>
       </div>
     </div>
+  </nav>
+  <nav role="navigation" class="compact-nav <?php echo $pageTag ?>">
+    COMPACT
   </nav>
   <div class="nav-place-holder"></div>
   <!-- ARCHIVE HEADER -->

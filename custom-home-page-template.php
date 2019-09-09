@@ -54,7 +54,7 @@ $pageTag = 'home';?>
   </div>
 <?php endwhile; ?>
 </div>
+<div class="atf-grid"><a href="/journal">All Journal Posts</a></div>
 
-<?php /* The most recent journal post */ ?>
 
 <?php get_template_part('partials/html','bottom'); ?>
