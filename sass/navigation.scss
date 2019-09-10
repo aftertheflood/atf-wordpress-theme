@@ -79,9 +79,9 @@ nav.contact a{
 
 /* scroll behavior for home link */
 .header-links.home-link{
-  transition:visibility 0.3s linear,opacity 0.3s linear;
-  visibility:hidden;
-  opacity:0;
+  transition: visibility 0.3s linear,opacity 0.3s linear;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .header-links.home-link.scrolled,

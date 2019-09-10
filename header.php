@@ -49,7 +49,7 @@
         <a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
       </div>
     </div>
-    <div class="header-links home-link <?php if(!is_front_page()){ echo 'persist'; } ?>">
+    <div class="header-links">
       <div class="header-link">
         <a class="menu-link" href="#compact-site-menu" class="open-menu-button">
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none">

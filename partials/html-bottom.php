@@ -1,5 +1,5 @@
 </main>
-<nav class="compact-menu" id="compact-site-menu">
+<nav class="compact-menu <?php echo $pageTag ?>" id="compact-site-menu">
 	<div class="compact-menu__head">
 		<h2 class="compact-menu__title">After the flood</h2>
 		<a href="#page-top" class="close-menu-button">
@@ -7,7 +7,6 @@
 		<circle cx="22" cy="22" r="18" fill="white"/>
 		<path d="M11.3934 11.3934L32.6066 32.6066M11.3934 32.6066L32.6066 11.3934" stroke="black"/>
 		</svg>
-
 		</a>
 	</div>
 	<a class="compact-menu__link" href="/clients">Clients</a>

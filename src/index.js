@@ -6,17 +6,17 @@ function insertAfter(el, referenceNode) {
 
 const main = () => {
   const contentElement = document.getElementById('content');
-  const homeLink = document.querySelector('.header-links.home-link');
+  const homeLinks = document.querySelectorAll('.header-links.home-link');
   const compactSiteMenu = document.getElementById('compact-site-menu');
   const menuOpenButton = document.querySelector('.menu-link');
   const closeMenuButton = document.querySelector('.close-menu-button');
-  const navBottom = document.querySelector('.nav-place-holder');
 
   function scrollHandler() {  
     if(contentElement.getBoundingClientRect().top < 30){
-      homeLink.classList.add('scrolled');
+      console.log('S', homeLinks)
+      homeLinks.forEach(e=>e.classList.add('scrolled'));
     }else{
-      homeLink.classList.remove('scrolled');
+      homeLinks.forEach(e=>e.classList.remove('scrolled'));
     }
   };
 
