@@ -11,10 +11,11 @@
 								
 			<?php
 				if ( is_singular() ){ ?>
-				<div class="article-head">
+				<div class="article-head atf-grid">
 					<h2><?php the_title(); ?></h2>
 				</div>
 				<div class="article-body atf-grid">
+				<div class="article__date"><?php the_time( 'j M Y' ); ?></div>
 					<?php the_content(); ?>
 				</div>
 					<?php }else{ ?> 
