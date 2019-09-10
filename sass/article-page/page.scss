@@ -1,0 +1,5 @@
+.article-body{ 
+  img, p, blockquote, figure, ul, div {
+  grid-column: 4 / span 6;
+  }
+}

@@ -291,6 +291,9 @@ a.client__promo__link:hover {
   background-color: #FF611E;
   color: #000; }
 
+.article-body img, .article-body p, .article-body blockquote, .article-body figure, .article-body ul, .article-body div {
+  grid-column: 4 / span 6; }
+
 /* category colours */
 nav {
   position: fixed;
