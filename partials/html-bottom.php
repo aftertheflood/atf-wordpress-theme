@@ -3,9 +3,11 @@
 	<div class="compact-menu__head">
 		<h2 class="compact-menu__title">After the flood</h2>
 		<a href="#page-top" class="close-menu-button">
-		<svg viewBox="0 0 50 50" class="compact-menu__close-icon">
-			<circle cx="25" cy="25" r="20"></circle>
+		<svg class="compact-menu__close-icon" width="44" height="44" viewBox="0 0 44 44" fill="none" >
+		<circle cx="22" cy="22" r="18" fill="white"/>
+		<path d="M11.3934 11.3934L32.6066 32.6066M11.3934 32.6066L32.6066 11.3934" stroke="black"/>
 		</svg>
+
 		</a>
 	</div>
 	<a class="compact-menu__link" href="/clients">Clients</a>

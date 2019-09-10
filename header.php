@@ -52,9 +52,10 @@
     <div class="header-links home-link <?php if(!is_front_page()){ echo 'persist'; } ?>">
       <div class="header-link">
         <a class="menu-link" href="#compact-site-menu" class="open-menu-button">
-          <svg height="25" viewBox="0 0 50 50">
-            <circle class="active-marker-circle" cx="25" cy="25" r="20"></circle>
-          </svg>
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <circle cx="18" cy="18" r="18" fill="black"/>
+          <path d="M18 3V33M3 18H33" stroke="white"/>
+        </svg>
         </a>
       </div>
     </div>
