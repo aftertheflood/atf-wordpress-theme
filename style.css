@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*---------------------------------------------------------------------------------
 Theme Name: ATF Newydd
 Text Domain: atfnewydd
@@ -15,88 +14,75 @@ version 2.0 (http://www.gnu.org/licensesoji/gpl-2.0.html)
 Graphik Font
 ----------------------------------------------------------*/
 @font-face {
-  font-family: "Graphik";
+  font-family: 'Graphik';
   src: url("//tools.aftertheflood.com/assets/fonts/Graphik-BlackItalic-Web.eot");
   src: url("//tools.aftertheflood.com/assets/fonts/Graphik-BlackItalic-Web.eot?#iefix") format("embedded-opentype"), url("//tools.aftertheflood.com/assets/fonts/Graphik-BlackItalic-Web.woff2") format("woff2"), url("//tools.aftertheflood.com/assets/fonts/Graphik-BlackItalic-Web.woff") format("woff");
   font-weight: 800;
   font-style: italic;
-  font-stretch: normal;
-}
+  font-stretch: normal; }
 .Graphik-BlackItalic {
-  font-family: "Graphik";
+  font-family: 'Graphik';
   font-weight: 800;
   font-style: italic;
-  font-stretch: normal;
-}
+  font-stretch: normal; }
 
 @font-face {
-  font-family: "Graphik";
+  font-family: 'Graphik';
   src: url("//tools.aftertheflood.com/assets/fonts/Graphik-Black-Web.eot");
   src: url("//tools.aftertheflood.com/assets/fonts/Graphik-Black-Web.eot?#iefix") format("embedded-opentype"), url("//tools.aftertheflood.com/assets/fonts/Graphik-Black-Web.woff2") format("woff2"), url("//tools.aftertheflood.com/assets/fonts/Graphik-Black-Web.woff") format("woff");
   font-weight: 800;
   font-style: normal;
-  font-stretch: normal;
-}
+  font-stretch: normal; }
 .Graphik-Black {
-  font-family: "Graphik";
+  font-family: 'Graphik';
   font-weight: 800;
   font-style: normal;
-  font-stretch: normal;
-}
+  font-stretch: normal; }
 
 @font-face {
-  font-family: "Graphik";
+  font-family: 'Graphik';
   src: url("//tools.aftertheflood.com/assets/fonts/Graphik-RegularItalic-Web.eot");
   src: url("//tools.aftertheflood.com/assets/fonts/Graphik-RegularItalic-Web.eot?#iefix") format("embedded-opentype"), url("//tools.aftertheflood.com/assets/fonts/Graphik-RegularItalic-Web.woff2") format("woff2"), url("//tools.aftertheflood.com/assets/fonts/Graphik-RegularItalic-Web.woff") format("woff");
   font-weight: 400;
   font-style: italic;
-  font-stretch: normal;
-}
+  font-stretch: normal; }
 .Graphik-RegularItalic {
-  font-family: "Graphik";
+  font-family: 'Graphik';
   font-weight: 400;
   font-style: italic;
-  font-stretch: normal;
-}
+  font-stretch: normal; }
 
 @font-face {
-  font-family: "Graphik";
+  font-family: 'Graphik';
   src: url("//tools.aftertheflood.com/assets/fonts/Graphik-Regular-Web.eot");
   src: url("//tools.aftertheflood.com/assets/fonts/Graphik-Regular-Web.eot?#iefix") format("embedded-opentype"), url("//tools.aftertheflood.com/assets/fonts/Graphik-Regular-Web.woff2") format("woff2"), url("//tools.aftertheflood.com/assets/fonts/Graphik-Regular-Web.woff") format("woff");
   font-weight: 400;
   font-style: normal;
-  font-stretch: normal;
-}
+  font-stretch: normal; }
 .Graphik-Regular {
-  font-family: "Graphik";
+  font-family: 'Graphik';
   font-weight: 400;
   font-style: normal;
-  font-stretch: normal;
-}
+  font-stretch: normal; }
 
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   font-family: Graphik, sans-serif;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 .screen-reader-text {
-  display: none;
-}
+  display: none; }
 
 .page-layout {
   display: grid;
   grid-template-rows: min-content auto min-content;
-  min-height: 100vh;
-}
+  min-height: 100vh; }
 
 body.contact {
-  background-color: #000000;
-}
+  background-color: #000000; }
 
 .atf-grid {
   display: grid;
@@ -105,8 +91,7 @@ body.contact {
   column-gap: 20px;
   grid-auto-rows: minmax(50px, max-content);
   margin: 0px;
-  align-items: center;
-}
+  align-items: center; }
 
 .atf-archive-grid {
   display: grid;
@@ -114,223 +99,175 @@ body.contact {
   grid-template-columns: 1fr 1fr;
   row-gap: 5px;
   column-gap: 20px;
-  background-color: grey;
-}
+  background-color: grey; }
 
 .ragged {
-  margin-right: -20px;
-}
+  margin-right: -20px; }
 
 .promo-right {
-  grid-template-areas: "image image image image image image image text text text text .";
-}
+  grid-template-areas: "image image image image image image image text text text text ."; }
 
 .promo-left {
-  grid-template-areas: ". text text text text image image image image image image image";
-}
+  grid-template-areas: ". text text text text image image image image image image image"; }
 
 .promo-double {
-  grid-template-areas: ". . lefttext lefttext lefttext lefttext righttext righttext righttext righttext . .";
-}
+  grid-template-areas: ". . lefttext lefttext lefttext lefttext righttext righttext righttext righttext . ."; }
 
 @media (max-width: 650px) {
   .promo-left {
-    grid-template-areas: ". image image image image image image image image image image image" ". text text text text text text text text text text .";
-  }
+    grid-template-areas: ". image image image image image image image image image image image"  ". text text text text text text text text text text ."; }
 
   .promo-right {
-    grid-template-areas: "image image image image image image image image image image image ." ". text text text text text text text text text text .";
-  }
+    grid-template-areas: "image image image image image image image image image image image ."  ". text text text text text text text text text text ."; }
 
   .promo-left.text-first {
-    grid-template-areas: ". text text text text text text text text text text . " ". image image image image image image image image image image image";
-  }
+    grid-template-areas: ". text text text text text text text text text text . " ". image image image image image image image image image image image"; }
 
   .promo-right.text-first {
-    grid-template-areas: ". text text text text text text text text text text . " "image image image image image image image image image image image .";
-  }
-}
+    grid-template-areas: ". text text text text text text text text text text . " "image image image image image image image image image image image ."; } }
 .promo-double__left {
-  grid-area: lefttext;
-}
+  grid-area: lefttext; }
 
 .promo-double__right {
-  grid-area: righttext;
-}
+  grid-area: righttext; }
 
 .promo-right, .promo-left {
-  margin-bottom: 100px;
-}
+  margin-bottom: 100px; }
 
 .promo-left .promo__image {
-  margin-right: calc(-$column-gap);
-}
+  margin-right: calc(-$column-gap); }
 
 .promo-right .promo__image {
-  margin-left: calc(-$column-gap);
-}
+  margin-left: calc(-$column-gap); }
 
 .promo__text {
-  grid-area: text;
-}
+  grid-area: text; }
 
 .promo__image {
   background-size: auto 100%;
   background-repeat: no-repeat;
   overflow: hidden;
   max-width: 100%;
-  grid-area: image;
-}
+  grid-area: image; }
 
 .promo__image img {
-  width: 100%;
-}
+  width: 100%; }
 
 .client__promo-logo {
   display: block;
-  width: 130px;
-}
+  width: 130px; }
 
 .splash {
-  grid-template-areas: " . intro intro intro intro intro intro . . . . . " " . . . . . . promo promo promo promo promo promo ";
-}
+  grid-template-areas: " . intro intro intro intro intro intro . . . . . " " . . . . . . promo promo promo promo promo promo "; }
 
 @media (max-width: 650px) {
   .splash {
-    grid-template-areas: " . intro intro intro intro intro intro intro intro intro intro . " " . promo promo promo promo promo promo promo promo promo promo . ";
-  }
-}
+    grid-template-areas: " . intro intro intro intro intro intro intro intro intro intro . " " . promo promo promo promo promo promo promo promo promo promo . "; } }
 .splash__intro {
-  grid-area: intro;
-}
+  grid-area: intro; }
 
 .splash__intro__title {
-  font-size: 54px;
-}
+  font-size: 54px; }
 
 .splash__intro__description {
   margin-top: 10px;
   font-size: 54px;
   line-height: 118%;
-  letter-spacing: -0.03em;
-}
+  letter-spacing: -0.03em; }
 
 .splash__promo {
   margin-right: 10px;
   grid-area: promo;
   background-color: #FFD600;
   padding: 39px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .splash__promo__date,
 .light-archive__date {
   margin-top: -39px;
   margin-right: -39px;
-  text-align: right;
-}
+  text-align: right; }
 
 .splash__promo__excerpt {
-  font-style: italic;
-}
+  font-style: italic; }
 
 .splash__promo__link {
   color: black;
   font-size: 20px;
   font-weight: bold;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .splash__promo__link::after {
-  content: " »";
-}
+  content: ' \00bb'; }
 
 .archive-post-light {
   height: 100%;
   background-color: #FFD600;
   padding: 39px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .split-50-50-left {
-  grid-area: auto/2/auto/7;
-}
+  grid-area: auto / 2 / auto / 7; }
 
 .split-50-50-right {
-  grid-area: auto/7/auto/12;
-}
+  grid-area: auto / 7 / auto / 12; }
 
 .client__promo__sector {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .journal-splash {
-  grid-template-areas: " . text text text text text image image image image image image";
-}
+  grid-template-areas: " . text text text text text image image image image image image"; }
 
 .journal-splash__text {
-  grid-area: text;
-}
+  grid-area: text; }
 
 .journal-splash__image {
-  grid-area: image;
-}
+  grid-area: image; }
 
 .journal-archive {
   grid-template-areas: " . kicker kicker entries entries entries entries entries entries entries entries .";
-  background-color: black;
-}
+  background-color: black; }
 
 .journal-archive__kicker {
-  grid-area: kicker;
-}
+  grid-area: kicker; }
 
 .light-archive__excerpt {
-  font-style: italic;
-}
+  font-style: italic; }
 
 .light-archive__link {
   color: black;
   font-size: 20px;
   font-weight: bold;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .light-archive__link::after {
-  content: " »";
-}
+  content: ' \00bb'; }
 
 .bold-content {
-  grid-template-areas: " . text text text text text text text . . . .";
-}
+  grid-template-areas: " . text text text text text text text . . . ."; }
 
 @media (max-width: 650px) {
   .bold-content {
-    grid-template-areas: " . text text text text text text text text text text .";
-  }
-}
+    grid-template-areas: " . text text text text text text text text text text ."; } }
 .bold-content__text {
   grid-area: text;
   font-family: Graphik;
   font-size: 32px;
-  line-height: 140%;
-}
+  line-height: 140%; }
 
 label {
   display: block;
   width: 100%;
   background-color: #282828;
   color: #FFFFFF;
-  padding: 20px;
-}
+  padding: 20px; }
 
 input[type=text],
 input[type=email],
 textarea {
   width: 95%;
   border: 0px;
-  background-color: #282828;
-}
+  background-color: #282828; }
 
 input[type=submit] {
   padding: 20px;
@@ -338,8 +275,7 @@ input[type=submit] {
   background-color: #E426DD;
   color: #000000;
   display: inline-block;
-  font-size: 21px;
-}
+  font-size: 21px; }
 
 a.client__promo__link {
   padding: 20px;
@@ -349,13 +285,11 @@ a.client__promo__link {
   color: #FF611E;
   display: inline-block;
   font-size: 21px;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 a.client__promo__link:hover {
   background-color: #FF611E;
-  color: #000;
-}
+  color: #000; }
 
 /* category colours */
 nav {
@@ -370,14 +304,12 @@ nav {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-content: stretch;
-  align-items: flex-start;
-}
+  align-items: flex-start; }
 
 .header-links {
   display: inline-block;
   font-size: 30px;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .header-link {
   padding-top: 20px;
@@ -385,36 +317,29 @@ nav {
   padding-right: 15px;
   padding-left: 15px;
   position: relative;
-  display: inline-block;
-}
+  display: inline-block; }
 
 nav a {
   text-decoration: none;
   color: black;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 nav.clients {
-  background-color: #FF611E;
-}
+  background-color: #FF611E; }
 
 nav.journal {
-  background-color: #FFD700;
-}
+  background-color: #FFD700; }
 
 nav.about {
-  background-color: #EB335F;
-}
+  background-color: #EB335F; }
 
 nav.contact {
   background-color: #000000;
   color: #FFFFFF;
-  fill: white;
-}
+  fill: white; }
 
 nav.contact a {
-  color: white;
-}
+  color: white; }
 
 .active-marker {
   position: absolute;
@@ -425,60 +350,76 @@ nav.contact a {
   margin-left: auto;
   margin-right: auto;
   left: 0;
-  right: 0;
-}
+  right: 0; }
 
 .active-marker-circle {
   width: 30px;
-  height: 30px;
-}
+  height: 30px; }
 
 /* scroll behavior for home link */
 .header-links.home-link {
-  transition: visibility 0.3s linear, opacity 0.3s linear;
+  transition: visibility 0.3s linear,opacity 0.3s linear;
   visibility: hidden;
-  opacity: 0;
-}
+  opacity: 0; }
 
 .header-links.home-link.scrolled,
 .header-links.home-link.persist {
   visibility: visible;
-  opacity: 1;
-}
+  opacity: 1; }
 
 .nav-place-holder {
-  height: 70px;
-}
+  height: 70px; }
 
 .compact-nav {
-  display: none;
-}
+  display: none; }
 
 nav.compact-menu {
   display: none;
   overflow: hidden;
-}
+  background: black;
+  color: white; }
+
+.compact-menu__link {
+  color: white; }
+
+.compact-menu__title {
+  color: white; }
+
+.close-menu-button {
+  margin: 25px; }
+
+.compact-menu__close-icon {
+  fill: white;
+  width: 25px;
+  height: 25px; }
+
+.compact-menu__head {
+  display: flex;
+  justify-content: space-between; }
 
 @media (max-width: 850px) {
   nav.compact-menu {
     display: block;
     position: relative;
-    height: 100vh;
-    transition-property: max-height;
-  }
+    background: black;
+    color: white; }
+
+  nav.compact-menu.closed {
+    position: fixed;
+    height: 0vh; }
+
+  nav.compact-menu.open {
+    position: fixed;
+    height: 1000vh; }
 
   .compact-menu a {
-    display: block;
-  }
+    display: block; }
 
   .compact-nav {
-    display: flex;
-  }
+    display: flex; }
 
   .full-nav {
-    display: none;
-  }
-}
+    display: none; } }
 footer {
   width: 100%;
   color: #FFFFFF;
@@ -488,16 +429,13 @@ footer {
   background: url(https://aftertheflood.com/wp-content/uploads/2017/12/atf-logo-clipped-footer.png) no-repeat left bottom;
   background-size: contain;
   background-color: #000000;
-  padding: 50px;
-}
+  padding: 50px; }
 
 footer a {
   color: #FFFFFF;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .address {
-  color: #9d9d9d;
-}
+  color: #9d9d9d; }
 
 /*# sourceMappingURL=style.css.map */

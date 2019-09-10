@@ -404,15 +404,13 @@ const main = () => {
 
   window.onscroll = debounce(scrollHandler, 150);
 
-  // we know js is enabled so hide the mobile nav
-  compactSiteMenu.setAttribute('style', 'height:0;');
+  // we know js is enabled so hide the mobile nav and fix it
+  compactSiteMenu.setAttribute('style', 'height:0vh; position:fixed; transition-property:height;');
 
   // add an event listener to the menu open button
-  insertAfter(compactSiteMenu, navBottom);
-
   menuOpenButton.addEventListener('click', function(e){
     e.preventDefault();
-    compactSiteMenu.setAttribute('style', 'height:100vh;');
+    compactSiteMenu.setAttribute('style', 'height:100vh; position:fixed;');
     return false;
   });
 

@@ -102,16 +102,51 @@ nav.contact a{
 nav.compact-menu{
   display: none;
   overflow: hidden;
+  background: black;
+  color:white;
 }
 
+.compact-menu__link{
+  color:white;
+}
+
+.compact-menu__title{
+  color:white;
+}
+
+.close-menu-button{
+  margin:25px;
+}
+
+.compact-menu__close-icon{
+  fill:white;
+  width:25px;
+  height:25px;
+}
+
+.compact-menu__head{
+ display: flex;
+ justify-content:space-between;
+}
 
 @media (max-width: 850px) {
   nav.compact-menu{
     display: block;
     position: relative;
-    height: 100vh;
-    transition-property: max-height;
+    background: black;
+    color:white;
   }
+
+  nav.compact-menu.closed{
+    position: fixed;
+    height: 0vh;
+  }
+
+  nav.compact-menu.open{
+    position: fixed;
+    height: 1000vh;
+  }
+
   .compact-menu a{
     display: block;
   }
