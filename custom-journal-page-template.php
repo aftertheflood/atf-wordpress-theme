@@ -22,14 +22,14 @@ $pageTag = 'journal';
 </div>
 <?php /* the remaining journal entries */ ?>
 <div class="atf-grid journal-archive">
-  <div class="">Recently</div>
+  <div class="journal-archive__kicker">Recently</div>
   <div class="atf-archive-grid">
   <?php 
   $posts = get_category_post_range('journal', 1, 9);
   while ( $posts->have_posts() ) : $posts->the_post(); ?>
-  <div>
+  <div class="journal-archive__entry">
+    <h2 class="journal-archive__title"><?php the_title(); ?></h2>
     <div class="journal-archive__date"><?php the_date() ?></div>
-    <h2 class="journal-archive__title"><?php the_title(); ?></h2>						
     <div class="journal-archive__excerpt"><?php the_excerpt(); ?></div>
     <a href="<?php the_permalink(); ?>" class="journal-archive__link">Continue reading</a>
   </div>

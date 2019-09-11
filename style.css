@@ -114,7 +114,6 @@ body.contact {
   grid-template-columns: 1fr 1fr;
   row-gap: 5px;
   column-gap: 20px;
-  background-color: grey;
 }
 
 .ragged {
@@ -264,11 +263,13 @@ body.contact {
   font-weight: bold;
 }
 
+/* category colours */
 .journal-splash {
   grid-template-areas: " . text text text text text image image image image image image";
 }
 
 .journal-splash__text {
+  padding-top: 20px;
   grid-area: text;
 }
 
@@ -279,10 +280,30 @@ body.contact {
 .journal-archive {
   grid-template-areas: " . kicker kicker entries entries entries entries entries entries entries entries .";
   background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+}
+
+.journal-archive__entry {
+  color: white;
 }
 
 .journal-archive__kicker {
   grid-area: kicker;
+  color: #FFD700;
+  vertical-align: top;
+  height: 100%;
+}
+
+.journal-archive__date {
+  color: #FFD700;
+}
+
+.journal-archive__link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .light-archive__excerpt {

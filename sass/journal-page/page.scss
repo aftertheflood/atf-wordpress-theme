@@ -1,8 +1,11 @@
+@import '../colors';
+
 .journal-splash{
   grid-template-areas: " . text text text text text image image image image image image";
 }
 
 .journal-splash__text{
+  padding-top: 20px;
   grid-area: text;
 }
 
@@ -13,10 +16,30 @@
 .journal-archive{
   grid-template-areas:  " . kicker kicker entries entries entries entries entries entries entries entries .";
   background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+}
+
+.journal-archive__entry{
+  color:white;
 }
 
 .journal-archive__kicker{
   grid-area: kicker;
+  color: $journal-color;
+  vertical-align: top;
+  height: 100%;
+}
+
+.journal-archive__date{
+  color: $journal-color;
+}
+
+.journal-archive__link{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .light-archive__excerpt{
