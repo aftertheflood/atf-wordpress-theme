@@ -21,6 +21,15 @@
   margin-top: 30px;
 }
 
+.journal-archive__title{
+  font-family: Tiempos Text, serif;
+  text-transform: uppercase;
+  a{
+    color: white;
+    text-decoration: none;
+  }
+}
+
 .journal-archive__entry{
   color:white;
 }
@@ -34,6 +43,10 @@
 
 .journal-archive__date{
   color: $journal-color;
+}
+
+.journal-archive__excerpt{
+  font-family: Tiempos Text, serif;
 }
 
 .journal-archive__link{

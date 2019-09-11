@@ -285,6 +285,15 @@ body.contact {
   margin-top: 30px;
 }
 
+.journal-archive__title {
+  font-family: Tiempos Text, serif;
+  text-transform: uppercase;
+}
+.journal-archive__title a {
+  color: white;
+  text-decoration: none;
+}
+
 .journal-archive__entry {
   color: white;
 }
@@ -298,6 +307,10 @@ body.contact {
 
 .journal-archive__date {
   color: #FFD700;
+}
+
+.journal-archive__excerpt {
+  font-family: Tiempos Text, serif;
 }
 
 .journal-archive__link {
@@ -385,7 +398,7 @@ a.client__promo__link:hover {
 }
 .article-head h2 {
   grid-column: 2/span 6;
-  font-family: Tiempos Text;
+  font-family: Tiempos Text, serif;
   font-size: 32px;
   line-height: 118%;
   /* or 38px */
@@ -416,7 +429,7 @@ a.client__promo__link:hover {
 }
 .article-body blockquote.pullquote {
   grid-column: 1/span 6;
-  font-family: Tiempos Text;
+  font-family: Tiempos Text, serif;
   font-size: 48px;
   line-height: 58px;
   letter-spacing: -0.02em;

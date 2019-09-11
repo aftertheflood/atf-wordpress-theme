@@ -28,7 +28,7 @@ $pageTag = 'journal';
   $posts = get_category_post_range('journal', 1, 9);
   while ( $posts->have_posts() ) : $posts->the_post(); ?>
   <div class="journal-archive__entry">
-    <h2 class="journal-archive__title"><?php the_title(); ?></h2>
+    <h2 class="journal-archive__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
     <div class="journal-archive__date"><?php the_date() ?></div>
     <div class="journal-archive__excerpt"><?php the_excerpt(); ?></div>
     <a href="<?php the_permalink(); ?>" class="journal-archive__link">Continue reading</a>
