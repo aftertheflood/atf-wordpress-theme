@@ -1,84 +1,588 @@
-/*
-Error: Invalid CSS after "...ackground:gray:": expected "{", was "}"
-        on line 52 of sass/article-page/page.scss
-        from line 72 of sass/main.scss
+@charset "UTF-8";
+/*---------------------------------------------------------------------------------
+Theme Name: ATF Newydd
+Text Domain: atfnewydd
+Version: 1.18
+Description: Bespoke Wordpress theme for the new ATF
+Tags: blog
+Author: Tom Pearson, Mike Galgher
+Author URI: https://www.aftertheflood.com
+License: GNU General Public License version 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+version 2.0 (http://www.gnu.org/licensesoji/gpl-2.0.html)
+-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------
+Graphik Font
+----------------------------------------------------------*/
+@font-face {
+  font-family: "Graphik";
+  src: url("//tools.aftertheflood.com/assets/fonts/Graphik-BlackItalic-Web.eot");
+  src: url("//tools.aftertheflood.com/assets/fonts/Graphik-BlackItalic-Web.eot?#iefix") format("embedded-opentype"), url("//tools.aftertheflood.com/assets/fonts/Graphik-BlackItalic-Web.woff2") format("woff2"), url("//tools.aftertheflood.com/assets/fonts/Graphik-BlackItalic-Web.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-stretch: normal;
+}
+.Graphik-BlackItalic {
+  font-family: "Graphik";
+  font-weight: 800;
+  font-style: italic;
+  font-stretch: normal;
+}
 
-47:     padding: 30px 40px 30px 40px;
-48:   }
-49: 
-50:   .indepth{
-51:     background:gray:
-52:   }
-53: 
-54: /* styles useful for images *\/
-55:   .full-bleed{
-56:     grid-column: 1 / span 12;
-57:     width:100%;
+@font-face {
+  font-family: "Graphik";
+  src: url("//tools.aftertheflood.com/assets/fonts/Graphik-Black-Web.eot");
+  src: url("//tools.aftertheflood.com/assets/fonts/Graphik-Black-Web.eot?#iefix") format("embedded-opentype"), url("//tools.aftertheflood.com/assets/fonts/Graphik-Black-Web.woff2") format("woff2"), url("//tools.aftertheflood.com/assets/fonts/Graphik-Black-Web.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+}
+.Graphik-Black {
+  font-family: "Graphik";
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+}
 
-Backtrace:
-sass/article-page/page.scss:52
-sass/main.scss:72
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:1278:in `expected'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:1208:in `expected'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:1203:in `tok!'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:677:in `block'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:697:in `block_child'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:686:in `block_contents'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:678:in `block'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:697:in `block_child'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:689:in `block_contents'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:678:in `block'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:670:in `ruleset'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:696:in `block_child'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:689:in `block_contents'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/engine.rb:414:in `_to_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/engine.rb:321:in `to_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...ackground:gray:\": expected \"{\", was \"}\"\A         on line 52 of sass/article-page/page.scss\A         from line 72 of sass/main.scss\A \A 47:     padding: 30px 40px 30px 40px;\A 48:   }\A 49: \A 50:   .indepth{\A 51:     background:gray:\A 52:   }\A 53: \A 54: /* styles useful for images */\A 55:   .full-bleed{\A 56:     grid-column: 1 / span 12;\A 57:     width:100%;"; }
+@font-face {
+  font-family: "Graphik";
+  src: url("//tools.aftertheflood.com/assets/fonts/Graphik-RegularItalic-Web.eot");
+  src: url("//tools.aftertheflood.com/assets/fonts/Graphik-RegularItalic-Web.eot?#iefix") format("embedded-opentype"), url("//tools.aftertheflood.com/assets/fonts/Graphik-RegularItalic-Web.woff2") format("woff2"), url("//tools.aftertheflood.com/assets/fonts/Graphik-RegularItalic-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+.Graphik-RegularItalic {
+  font-family: "Graphik";
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("//tools.aftertheflood.com/assets/fonts/Graphik-Regular-Web.eot");
+  src: url("//tools.aftertheflood.com/assets/fonts/Graphik-Regular-Web.eot?#iefix") format("embedded-opentype"), url("//tools.aftertheflood.com/assets/fonts/Graphik-Regular-Web.woff2") format("woff2"), url("//tools.aftertheflood.com/assets/fonts/Graphik-Regular-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+.Graphik-Regular {
+  font-family: "Graphik";
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Graphik, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+  min-height: 100vh;
+}
+
+body.contact {
+  background-color: #000000;
+}
+
+.atf-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 5px;
+  column-gap: 20px;
+  grid-auto-rows: minmax(50px, max-content);
+  margin: 0px;
+  align-items: center;
+}
+
+.atf-archive-grid {
+  display: grid;
+  grid-area: entries;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 20px;
+  background-color: grey;
+}
+
+.ragged {
+  margin-right: -20px;
+}
+
+.promo-right {
+  grid-template-areas: "image image image image image image image text text text text .";
+}
+
+.promo-left {
+  grid-template-areas: ". text text text text image image image image image image image";
+}
+
+.promo-double {
+  grid-template-areas: ". . lefttext lefttext lefttext lefttext righttext righttext righttext righttext . .";
+}
+
+@media (max-width: 650px) {
+  .promo-left {
+    grid-template-areas: ". image image image image image image image image image image image" ". text text text text text text text text text text .";
+  }
+
+  .promo-right {
+    grid-template-areas: "image image image image image image image image image image image ." ". text text text text text text text text text text .";
+  }
+
+  .promo-left.text-first {
+    grid-template-areas: ". text text text text text text text text text text . " ". image image image image image image image image image image image";
+  }
+
+  .promo-right.text-first {
+    grid-template-areas: ". text text text text text text text text text text . " "image image image image image image image image image image image .";
+  }
+}
+.promo-double__left {
+  grid-area: lefttext;
+}
+
+.promo-double__right {
+  grid-area: righttext;
+}
+
+.promo-right, .promo-left {
+  margin-bottom: 100px;
+}
+
+.promo-left .promo__image {
+  margin-right: calc(-$column-gap);
+}
+
+.promo-right .promo__image {
+  margin-left: calc(-$column-gap);
+}
+
+.promo__text {
+  grid-area: text;
+}
+
+.promo__image {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  max-width: 100%;
+  grid-area: image;
+}
+
+.promo__image img {
+  width: 100%;
+}
+
+.client__promo-logo {
+  display: block;
+  width: 130px;
+}
+
+.splash {
+  grid-template-areas: " . intro intro intro intro intro intro . . . . . " " . . . . . . promo promo promo promo promo promo ";
+}
+
+@media (max-width: 650px) {
+  .splash {
+    grid-template-areas: " . intro intro intro intro intro intro intro intro intro intro . " " . promo promo promo promo promo promo promo promo promo promo . ";
+  }
+}
+.splash__intro {
+  grid-area: intro;
+}
+
+.splash__intro__title {
+  font-size: 54px;
+}
+
+.splash__intro__description {
+  margin-top: 10px;
+  font-size: 54px;
+  line-height: 118%;
+  letter-spacing: -0.03em;
+}
+
+.splash__promo {
+  margin-right: 10px;
+  grid-area: promo;
+  background-color: #FFD600;
+  padding: 39px;
+  margin-bottom: 10px;
+}
+
+.splash__promo__date,
+.light-archive__date {
+  margin-top: -39px;
+  margin-right: -39px;
+  text-align: right;
+}
+
+.splash__promo__excerpt {
+  font-style: italic;
+}
+
+.splash__promo__link {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.splash__promo__link::after {
+  content: " »";
+}
+
+.archive-post-light {
+  height: 100%;
+  background-color: #FFD600;
+  padding: 39px;
+  margin-bottom: 10px;
+}
+
+.split-50-50-left {
+  grid-area: auto/2/auto/7;
+}
+
+.split-50-50-right {
+  grid-area: auto/7/auto/12;
+}
+
+.client__promo__sector {
+  font-weight: bold;
+}
+
+.journal-splash {
+  grid-template-areas: " . text text text text text image image image image image image";
+}
+
+.journal-splash__text {
+  grid-area: text;
+}
+
+.journal-splash__image {
+  grid-area: image;
+}
+
+.journal-archive {
+  grid-template-areas: " . kicker kicker entries entries entries entries entries entries entries entries .";
+  background-color: black;
+}
+
+.journal-archive__kicker {
+  grid-area: kicker;
+}
+
+.light-archive__excerpt {
+  font-style: italic;
+}
+
+.light-archive__link {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.light-archive__link::after {
+  content: " »";
+}
+
+.bold-content {
+  grid-template-areas: " . text text text text text text text . . . .";
+}
+
+@media (max-width: 650px) {
+  .bold-content {
+    grid-template-areas: " . text text text text text text text text text text .";
+  }
+}
+.bold-content__text {
+  grid-area: text;
+  font-family: Graphik;
+  font-size: 32px;
+  line-height: 140%;
+}
+
+label {
+  display: block;
+  width: 100%;
+  background-color: #282828;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 95%;
+  border: 0px;
+  background-color: #282828;
+}
+
+input[type=submit] {
+  padding: 20px;
+  border: 0px;
+  background-color: #E426DD;
+  color: #000000;
+  display: inline-block;
+  font-size: 21px;
+}
+
+a.client__promo__link {
+  padding: 20px;
+  border: 0px;
+  background-color: #EEE;
+  font-weight: bold;
+  color: #FF611E;
+  display: inline-block;
+  font-size: 21px;
+  text-decoration: none;
+}
+
+a.client__promo__link:hover {
+  background-color: #FF611E;
+  color: #000;
+}
+
+.article-head {
+  font-family: Tiempos Text, serif;
+  line-height: 35px;
+  letter-spacing: -0.02em;
+}
+.article-head h2 {
+  grid-column: 2/span 6;
+  font-family: Tiempos Text;
+  font-size: 32px;
+  line-height: 118%;
+  /* or 38px */
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.article-body {
+  font-family: Tiempos Text, serif;
+  font-size: 21px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  /* styles for excerpting text content */
+  /* styles useful for images */
+}
+.article-body .article__date {
+  grid-column: 2/span 1;
+  font-weight: bold;
+  font-family: Graphik, sans-serif;
+}
+.article-body img, .article-body p, .article-body blockquote, .article-body figure, .article-body ul, .article-body div, .article-body h2, .article-body h3, .article-body h4 {
+  grid-column: 4/span 6;
+}
+.article-body blockquote {
+  background-color: #FFF9D8;
+  margin: 0;
+  padding: 21px 40px 21px 40px;
+}
+.article-body blockquote.pullquote {
+  grid-column: 1/span 6;
+  font-family: Tiempos Text;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -0.02em;
+  padding: 30px 40px 30px 40px;
+}
+.article-body .indepth {
+  background: gray;
+}
+.article-body .full-bleed {
+  grid-column: 1/span 12;
+  width: 100%;
+}
+.article-body img {
+  width: 100%;
+}
+
+/* category colours */
+nav {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  top: 0px;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.header-links {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header-link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  justify-content: space-between;
+}
+
+nav.clients {
+  background-color: #FF611E;
+}
+
+nav.journal {
+  background-color: #FFD700;
+}
+
+nav.about {
+  background-color: #EB335F;
+}
+
+nav.contact {
+  background-color: #000000;
+  color: #FFFFFF;
+  fill: white;
+}
+
+nav.contact a {
+  color: white;
+}
+
+.active-marker {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  bottom: -9px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.active-marker-circle {
+  width: 30px;
+  height: 30px;
+}
+
+/* scroll behavior for home link */
+.header-links.home-link {
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.header-links.home-link.scrolled,
+.header-links.home-link.persist {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav-place-holder {
+  height: 70px;
+}
+
+.compact-nav {
+  display: none;
+}
+
+nav.compact-menu {
+  display: none;
+  overflow: hidden;
+  background: black;
+  color: white;
+}
+
+.compact-menu__link {
+  color: white;
+}
+
+.compact-menu__title {
+  color: white;
+}
+
+.close-menu-button {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.compact-menu__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 850px) {
+  nav.compact-menu {
+    display: block;
+    position: relative;
+    background: black;
+    color: white;
+  }
+
+  nav.compact-menu.closed {
+    position: fixed;
+    height: 0vh;
+  }
+
+  nav.compact-menu.open {
+    position: fixed;
+    height: 1000vh;
+  }
+
+  .compact-menu a {
+    display: block;
+  }
+
+  .compact-nav {
+    display: flex;
+  }
+
+  .full-nav {
+    display: none;
+  }
+}
+footer {
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  background: url(https://aftertheflood.com/wp-content/uploads/2017/12/atf-logo-clipped-footer.png) no-repeat left bottom;
+  background-size: contain;
+  background-color: #000000;
+  padding: 50px;
+}
+
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.address {
+  color: #9d9d9d;
+}
+
+/*# sourceMappingURL=style.css.map */
