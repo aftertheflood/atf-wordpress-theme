@@ -101,6 +101,7 @@
   font-size: 54px;
   line-height: 118%;
   letter-spacing: -0.03em;
+  font-family: Tiempos, serif;
 }
 
 .splash__promo{
@@ -119,6 +120,7 @@
 }
 
 .splash__promo__excerpt{
+  font-family: Tiempos, serif;
   font-style: italic; 
 }
 
@@ -139,6 +141,31 @@
   background-color: #FFD600;
   padding: $promoPadding;
   margin-bottom: 10px;
+  font-family: Tiempos, serif;
+}
+
+.light-archive__excerpt{
+  font-style: italic; 
+}
+
+.light-archive__title{
+  text-transform: uppercase;
+}
+
+.light-archive__link{
+  color:black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Graphik, sans-serif;
+}
+
+.light-archive__link::after{
+  content:' \00bb';
+}
+
+.light-archive__link{
+  font-family: Graphik, sans-serif;
 }
 
 .split-50-50-left{
@@ -151,4 +178,8 @@
 
 .client__promo__sector{
   font-weight: bold;
+}
+
+.client__promo__excerpt{
+  font-family: Tiempos, serif;
 }

@@ -1,11 +1,11 @@
 .article-head{
-  font-family: Tiempos Text, serif;
+  font-family: Tiempos, serif;
   line-height: 35px;
   letter-spacing: -0.02em;
 
   h2{
     grid-column: 2 / span 6;
-    font-family: Tiempos Text, serif;
+    font-family: Tiempos, serif;
     font-size: 32px;
     line-height: 118%;
     /* or 38px */
@@ -15,7 +15,7 @@
 }
 
 .article-body{
-  font-family: Tiempos Text, serif;
+  font-family: Tiempos, serif;
   font-size: 21px;
   line-height: 32px;
   letter-spacing: -0.02em;
@@ -40,7 +40,7 @@
 
   blockquote.pullquote{
     grid-column: 1 / span 6;
-    font-family: Tiempos Text, serif;
+    font-family: Tiempos, serif;
     font-size: 48px;
     line-height: 58px;
     letter-spacing: -0.02em;

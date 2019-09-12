@@ -22,7 +22,7 @@
 }
 
 .journal-archive__title{
-  font-family: Tiempos Text, serif;
+  font-family: Tiempos, serif;
   text-transform: uppercase;
   a{
     color: white;
@@ -46,26 +46,11 @@
 }
 
 .journal-archive__excerpt{
-  font-family: Tiempos Text, serif;
+  font-family: Tiempos, serif;
 }
 
 .journal-archive__link{
   color: white;
   font-weight: bold;
   text-decoration: none;
-}
-
-.light-archive__excerpt{
-  font-style: italic; 
-}
-
-.light-archive__link{
-  color:black;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.light-archive__link::after{
-  content:' \00bb';
 }
