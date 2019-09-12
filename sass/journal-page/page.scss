@@ -1,4 +1,5 @@
 @import '../colors';
+@import '../type.scss';
 
 .journal-splash {
   grid-template-areas: " . text text text text text image image image image image image";
@@ -29,8 +30,7 @@
 }
 
 .journal-splash__date {
-  font-weight: bold;
-  font-size: 14px;
+  @extend %date;
 }
 
 .journal-splash__excerpt {
@@ -64,12 +64,14 @@
 
 .journal-archive__kicker {
   grid-area: kicker;
+  @extend %kicker;
   color: $journal-color;
   vertical-align: top;
   height: 100%;
 }
 
 .journal-archive__date {
+  @extend %date;
   color: $journal-color;
 }
 
@@ -83,13 +85,20 @@
   text-decoration: none;
 }
 
+.journal-archive__link::after {
+  content:' \00bb';
+}
+
 .journal-splash__link {
-  padding: 20px;
-  border:0px;
+  @extend %block-button;
   background-color: black;
   color: $journal-color;
   display: inline-block;
-  font-size: 21px;
-  text-decoration: none;
-  font-weight: bold;
+}
+
+.journal-splash__link:hover {
+  @extend %block-button;
+  color: black;
+  background-color: $journal-color;
+  display: inline-block;
 }
