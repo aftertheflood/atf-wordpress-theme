@@ -10,7 +10,8 @@ $pageTag = 'journal';
   while ( $posts->have_posts() ) : $posts->the_post(); ?>
     <div class="journal-splash__text">
       <div class="journal-splash__kicker">The latest</div>
-      <h2 class="journal-splash__title"><?php the_title(); ?></h2>						
+      <h2 class="journal-splash__title"><?php the_title(); ?></h2>
+      <div class="journal-splash__title"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>			
       <div class="journal-splash__date"><?php the_date() ?></div>
       <div class="journal-splash__excerpt"><?php the_excerpt(); ?></div>
       <a href="<?php the_permalink(); ?>" class="journal-splash__link">Read more</a>
@@ -29,6 +30,7 @@ $pageTag = 'journal';
   while ( $posts->have_posts() ) : $posts->the_post(); ?>
   <div class="journal-archive__entry">
     <h2 class="journal-archive__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    <div class="journal-archive__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>
     <div class="journal-archive__date"><?php the_date() ?></div>
     <div class="journal-archive__excerpt"><?php the_excerpt(); ?></div>
     <a href="<?php the_permalink(); ?>" class="journal-archive__link">Continue reading</a>

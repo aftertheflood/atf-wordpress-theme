@@ -20,8 +20,8 @@ $pageTag = 'home';?>
   while ( $posts->have_posts() ) : $posts->the_post(); ?>
     <div class="splash__promo">
       <div class="splash__promo__date"><?php the_date() ?></div>
-      <h2 class="splash__promo__title"><?php the_title(); ?></h2>						
-      <div class="splash__promo__excerpt"><?php the_excerpt(); ?></div>
+      <h2 class="splash__promo__title"><?php the_title(); ?></h2>
+      <div class="splash__promo__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>
       <a href="<?php the_permalink(); ?>" class="splash__promo__link">Read the journal post</a>
     </div>
   <?php endwhile; ?>

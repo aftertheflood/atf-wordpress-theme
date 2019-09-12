@@ -164,8 +164,15 @@
   content:' \00bb';
 }
 
-.light-archive__link{
+.light-archive__link,
+.light-archive__date{
   font-family: Graphik, sans-serif;
+}
+
+.light-archive__date,
+.splash__promo__date{
+  padding-right: 5px;
+  padding-top: 5px;
 }
 
 .split-50-50-left{

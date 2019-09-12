@@ -23,7 +23,10 @@
 
 .journal-archive__title{
   font-family: Tiempos, serif;
+  /* text-rendering: optimizeLegibility; */
   text-transform: uppercase;
+  font-weight:400;
+  margin-top: 0px;
   a{
     color: white;
     text-decoration: none;
@@ -32,6 +35,7 @@
 
 .journal-archive__entry{
   color:white;
+  padding-bottom:70px;
 }
 
 .journal-archive__kicker{
