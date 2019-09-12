@@ -11,7 +11,7 @@ $pageTag = 'journal';
     <div class="journal-splash__text">
       <div class="journal-splash__kicker">The latest</div>
       <h2 class="journal-splash__title"><?php the_title(); ?></h2>
-      <div class="journal-splash__title"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>			
+      <div class="journal-splash__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>			
       <div class="journal-splash__date"><?php the_date() ?></div>
       <div class="journal-splash__excerpt"><?php the_excerpt(); ?></div>
       <a href="<?php the_permalink(); ?>" class="journal-splash__link">Read more</a>

@@ -1,3 +1,20 @@
+@import '../type.scss';
+@import '../colors.scss';
+
+.splash__promo__title{
+  font-family: Tiempos, serif;
+  margin-bottom:0px;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.splash__promo__subtitle{
+  font-family: Tiempos, serif;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 200;
+}
+
 .promo-right{
   grid-template-areas: "image image image image image image image text text text text .";
 }
@@ -112,11 +129,14 @@
   margin-bottom: 10px;
 }
 
+
 .splash__promo__date,
 .light-archive__date{
   margin-top: -$promoPadding;
   margin-right: -$promoPadding;
   text-align:right;
+  @extend %date;
+  color: $half-black;
 }
 
 .splash__promo__excerpt{
@@ -152,27 +172,20 @@
   text-transform: uppercase;
 }
 
-.light-archive__link{
-  color:black;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  font-family: Graphik, sans-serif;
-}
-
-.light-archive__link::after{
-  content:' \00bb';
-}
-
 .light-archive__link,
 .light-archive__date{
   font-family: Graphik, sans-serif;
 }
 
-.light-archive__date,
-.splash__promo__date{
-  padding-right: 5px;
-  padding-top: 5px;
+.light-archive__link{
+  color:black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.light-archive__link::after{
+  content:' \00bb';
 }
 
 .split-50-50-left{
@@ -184,9 +197,33 @@
 }
 
 .client__promo__sector{
-  font-weight: bold;
+  @extend %kicker;
 }
 
 .client__promo__excerpt{
   font-family: Tiempos, serif;
+}
+
+a.client__promo__link{
+  @extend %block-button;
+  background-color: #EEE;
+  color: $clients-color;
+  display: inline-block;
+}
+
+a.client__promo__link:hover{
+  background-color: $clients-color;
+  color: #000;
+}
+
+.onward-journey-link{
+  grid-column: 10/ span 3;
+  color:black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Graphik, sans-serif;
+}
+.onward-journey-link::after{
+  content:' \00bb';
 }

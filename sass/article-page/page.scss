@@ -1,3 +1,5 @@
+@import '../type.scss';
+
 .article-head{
   font-family: Tiempos, serif;
   line-height: 35px;
@@ -21,9 +23,9 @@
   letter-spacing: -0.02em;
 
   .article__date{
+    @extend %date;
     grid-column: 2 / span 1;
-    font-weight: bold;
-    font-family: Graphik, sans-serif;
+    height: 100%;
   }
 
   img, p, blockquote, figure, ul, div, h2, h3, h4 {

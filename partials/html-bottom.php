@@ -5,7 +5,7 @@
 		<a href="#page-top" class="close-menu-button">
 		<svg class="compact-menu__close-icon" width="44" height="44" viewBox="0 0 44 44" fill="none" >
 		<circle cx="22" cy="22" r="18" fill="white"/>
-		<path d="M11.3934 11.3934L32.6066 32.6066M11.3934 32.6066L32.6066 11.3934" stroke="black"/>
+		<path shape-rendering="crispEdges" d="M11.3934 11.3934L32.6066 32.6066M11.3934 32.6066L32.6066 11.3934" stroke="black"/>
 		</svg>
 		</a>
 	</div>

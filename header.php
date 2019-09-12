@@ -54,7 +54,7 @@
         <a class="menu-link" href="#compact-site-menu" class="open-menu-button">
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
           <circle cx="18" cy="18" r="18" fill="black"/>
-          <path d="M18 3V33M3 18H33" stroke="white"/>
+          <path shape-rendering="crispEdges" d="M18 3V33M3 18H33" stroke="white"/>
         </svg>
         </a>
       </div>

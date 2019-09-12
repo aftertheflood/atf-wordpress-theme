@@ -1,7 +1,9 @@
+@import '../colors.scss';
+@import '../type.scss';
+
 .bold-content{
   grid-template-areas:  " . text text text text text text text . . . ."
 }
-
 
 @media (max-width: 650px) {
   .bold-content{
@@ -19,7 +21,7 @@
 label{
   display: block;
   width:  100%;
-  background-color: #282828;
+  background-color: $dark-grey;
   color: #FFFFFF;
   padding: 20px;
 }
@@ -29,30 +31,24 @@ input[type=email],
 textarea{
   width: 95%;
   border: 0px;
-  background-color: #282828;
+  background-color: $dark-grey;
 }
 
 input[type=submit]{
-  padding: 20px;
-  border:0px;
-  background-color: #E426DD;
+  @extend %block-button;
+  background-color: $contact-highlight-color;
   color: #000000;
   display: inline-block;
-  font-size: 21px;
+  cursor: pointer;
 }
 
-a.client__promo__link{
-  padding: 20px;
-  border:0px;
-  background-color: #EEE;
-  font-weight: bold;
-  color: #FF611E;
+input[type=submit]:hover{
+  @extend %block-button;
+  color: $contact-highlight-color;
+  background-color: $dark-grey;
   display: inline-block;
-  font-size: 21px;
-  text-decoration: none;
 }
 
-a.client__promo__link:hover{
-  background-color: #FF611E;
-  color: #000;
+.wpcf7-validation-errors{
+  background: $error-color;
 }

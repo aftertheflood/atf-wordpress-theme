@@ -54,7 +54,7 @@ $pageTag = 'home';?>
   </div>
 <?php endwhile; ?>
 </div>
-<div class="atf-grid"><a href="/journal">All Journal Posts</a></div>
+<div class="atf-grid"><a class="onward-journey-link" href="/journal">All Journal Posts</a></div>
 
 
 <?php get_template_part('partials/html','bottom'); ?>
