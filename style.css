@@ -682,6 +682,9 @@ input[type=submit]:hover {
   /* styles for excerpting text content */
   /* styles useful for images */
 }
+.article-body a {
+  color: #282828;
+}
 .article-body .article__date {
   grid-column: 2/span 1;
   height: 100%;

@@ -22,6 +22,10 @@
   line-height: 32px;
   letter-spacing: -0.02em;
 
+  a{
+    color: $dark-grey;
+  }
+
   .article__date{
     @extend %date;
     grid-column: 2 / span 1;
@@ -34,13 +38,13 @@
 
 /* styles for excerpting text content */
 
-  blockquote{
+  blockquote {
     background-color: #FFF9D8;
     margin: 0;
     padding: 21px 40px 21px 40px;
   }
 
-  blockquote.pullquote{
+  blockquote.pullquote {
     grid-column: 1 / span 6;
     font-family: Tiempos, serif;
     font-size: 48px;
