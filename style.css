@@ -81,7 +81,7 @@ Tiempos Font
   line-height: 118.1%;
 }
 
-input[type=submit]:hover, input[type=submit], .journal-splash__link:hover, .journal-splash__link, a.client__promo__link {
+input[type=submit]:hover, input[type=submit], .journal-splash__link:hover, .journal-splash__link, a.client__promo__link, .footer-contact-link a {
   font-size: 21px;
   padding: 20px;
   border: 0px;
@@ -151,7 +151,78 @@ body.contact {
   line-height: 118.1%;
 }
 
-input[type=submit]:hover, input[type=submit], .journal-splash__link:hover, .journal-splash__link, a.client__promo__link {
+input[type=submit]:hover, input[type=submit], .journal-splash__link:hover, .journal-splash__link, a.client__promo__link, .footer-contact-link a {
+  font-size: 21px;
+  padding: 20px;
+  border: 0px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* category colours */
+.atf-footer {
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  background: url(https://aftertheflood.com/wp-content/uploads/2017/12/atf-logo-clipped-footer.png) no-repeat left bottom;
+  background-size: contain;
+  background-color: #000000;
+  padding: 50px;
+  display: grid;
+  grid-template-areas: "heading" "link" "address";
+}
+.atf-footer h2 {
+  font-family: Tiempos, serif;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.footer-contact-link {
+  grid-area: link;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.footer-contact-link a {
+  grid-area: link;
+  color: black;
+  background-color: white;
+}
+
+.footer-contact-link a:hover {
+  color: white;
+  background-color: #282828;
+}
+
+.address {
+  grid-area: address;
+  color: #aaa;
+  margin-bottom: 100px;
+}
+.address a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.journal-archive__kicker, .client__promo__sector {
+  font-family: Graphik, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
+
+.article-body .article__date, .journal-archive__date, .journal-splash__date, .splash__promo__date,
+.light-archive__date {
+  font-family: Graphik, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 118.1%;
+}
+
+input[type=submit]:hover, input[type=submit], .journal-splash__link:hover, .journal-splash__link, a.client__promo__link, .footer-contact-link a {
   font-size: 21px;
   padding: 20px;
   border: 0px;
@@ -387,7 +458,7 @@ a.client__promo__link:hover {
   line-height: 118.1%;
 }
 
-input[type=submit]:hover, input[type=submit], .journal-splash__link:hover, .journal-splash__link, a.client__promo__link {
+input[type=submit]:hover, input[type=submit], .journal-splash__link:hover, .journal-splash__link, .footer-contact-link a, a.client__promo__link {
   font-size: 21px;
   padding: 20px;
   border: 0px;
@@ -507,7 +578,7 @@ input[type=submit]:hover, input[type=submit], .journal-splash__link:hover, .jour
   line-height: 118.1%;
 }
 
-input[type=submit]:hover, input[type=submit], a.client__promo__link, .journal-splash__link, .journal-splash__link:hover {
+input[type=submit]:hover, input[type=submit], .footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover {
   font-size: 21px;
   padding: 20px;
   border: 0px;
@@ -580,7 +651,7 @@ input[type=submit]:hover {
   line-height: 118.1%;
 }
 
-a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
+.footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
   font-size: 21px;
   padding: 20px;
   border: 0px;
@@ -793,26 +864,6 @@ nav.compact-menu {
   .full-nav {
     display: none;
   }
-}
-footer {
-  width: 100%;
-  color: #FFFFFF;
-  font-size: 14px;
-  line-height: 150%;
-  letter-spacing: 0.03em;
-  background: url(https://aftertheflood.com/wp-content/uploads/2017/12/atf-logo-clipped-footer.png) no-repeat left bottom;
-  background-size: contain;
-  background-color: #000000;
-  padding: 50px;
-}
-
-footer a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-.address {
-  color: #9d9d9d;
 }
 
 /*# sourceMappingURL=style.css.map */

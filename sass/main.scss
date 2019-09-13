@@ -65,9 +65,11 @@ body.contact{
   margin-right:-20px;
 }
 
+@import 'footer';
 @import 'home-page/page';
 @import 'journal-page/page';
 @import 'contact-page/page';
 @import 'article-page/page';
 @import 'navigation';
-@import 'footer';
+
+

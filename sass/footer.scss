@@ -1,4 +1,7 @@
-footer{
+@import 'type.scss';
+@import 'colors.scss';
+
+.atf-footer{
   width: 100%;
   color:#FFFFFF;
   font-size: 14px;
@@ -8,12 +11,42 @@ footer{
   background-size:  contain;
   background-color: #000000;
   padding: 50px;
+  display: grid;
+  grid-template-areas:  "heading"
+                        "link"
+                        "address";
+  h2{
+    font-family: Tiempos, serif;
+    font-size: 24px;
+    margin-bottom:40px;
+  }
 }
 
-footer a{
-  color: #FFFFFF;
-  text-decoration: none;
+
+.footer-contact-link{
+  grid-area: link;
+  margin-top:20px;
+  margin-bottom:70px;
 }
+
+.footer-contact-link a{
+  grid-area: link;
+  @extend %block-button;
+  color:black;
+  background-color: white;
+}
+
+.footer-contact-link a:hover{
+  color:white;
+  background-color: $dark-grey;
+}
+
 .address{
-  color: #9d9d9d;
+  grid-area: address;
+  color: $grey;
+  margin-bottom: 100px;
+  a{
+    color: $grey;
+    text-decoration: none;
+  }
 }
