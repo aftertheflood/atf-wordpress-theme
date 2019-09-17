@@ -30,7 +30,7 @@
         <?php if(linkIsActive('clients', $post_slug)){ addActiveMarker(); } ?>
       </div>
       <div class="header-link">
-        <a href="<?php echo esc_url( home_url( '/journal' ) ); ?>">Journal</a>
+        <a href="<?php echo esc_url( home_url( '/journal' ) ); ?>">Blog</a>
         <?php if(linkIsActive('journal', $post_slug) || is_single()){ addActiveMarker(); }?>
       </div>
       <div class="header-link">
