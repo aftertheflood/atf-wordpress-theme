@@ -131,6 +131,15 @@ body.contact {
   column-gap: 20px;
 }
 
+@media (max-width: 650px) {
+  .atf-archive-grid {
+    display: grid;
+    grid-area: entries;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    column-gap: 20px;
+  }
+}
 .ragged {
   margin-right: -20px;
 }
@@ -273,6 +282,10 @@ input[type=submit]:hover, input[type=submit], .journal-splash__link:hover, .jour
 
   .promo-right.text-first {
     grid-template-areas: ". text text text text text text text text text text . " "image image image image image image image image image image image .";
+  }
+
+  .promo-double {
+    grid-template-areas: ". lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext ." ". righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext .";
   }
 }
 .promo-double__left {
@@ -507,6 +520,11 @@ input[type=submit]:hover, input[type=submit], .journal-splash__link:hover, .jour
   margin-top: 30px;
 }
 
+@media (max-width: 800px) {
+  .journal-archive {
+    grid-template-areas: " . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . " " . entries entries entries entries entries entries entries entries entries entries .";
+  }
+}
 .journal-archive__title {
   font-family: Tiempos, serif;
   /* text-rendering: optimizeLegibility; */

@@ -61,6 +61,17 @@ body.contact{
 	column-gap: $column-gap;
 }
 
+@media (max-width: 650px) {
+	.atf-archive-grid{
+		display: grid;
+		grid-area: entries;
+		grid-template-columns: 1fr;
+		row-gap: 5px;
+		column-gap: $column-gap;
+	}
+}
+
+
 .ragged{
   margin-right:-20px;
 }

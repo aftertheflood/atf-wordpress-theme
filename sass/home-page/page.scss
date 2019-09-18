@@ -49,6 +49,12 @@
       ". text text text text text text text text text text . "
       "image image image image image image image image image image image .";
   }
+
+  .promo-double{
+    grid-template-areas: 
+      ". lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext ."
+      ". righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext .";
+  }
 }
 
 .promo-double__left{

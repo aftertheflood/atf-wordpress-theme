@@ -45,6 +45,14 @@
   margin-top: 30px;
 }
 
+@media (max-width: 800px) {
+  .journal-archive{
+    grid-template-areas:  " . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . " 
+    " . entries entries entries entries entries entries entries entries entries entries .";
+  }
+}
+
+
 .journal-archive__title {
   font-family: Tiempos, serif;
   /* text-rendering: optimizeLegibility; */
