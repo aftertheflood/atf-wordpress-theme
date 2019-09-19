@@ -16,7 +16,7 @@
 				</div>
 				<div class="article-body atf-grid">
 				<div class="article__date"><?php the_time( 'j M Y' ); ?></div>
-					<?php the_content(); ?>
+				<div class="article__content"><?php the_content(); ?></div>
 				</div>
 					<?php }else{ ?> 
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
