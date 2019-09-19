@@ -61,7 +61,7 @@ body.contact{
 	column-gap: $column-gap;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
 	.atf-archive-grid{
 		display: grid;
 		grid-area: entries;

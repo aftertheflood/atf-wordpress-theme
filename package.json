@@ -10,7 +10,7 @@
     "browserify": "^16.3.0"
   },
   "scripts": {
-    "buildcss": "sass sass/main.scss ./style.css --scss",
+    "buildcss": "sass sass/main.scss:./style.css --watch",
     "buildjs": "npx browserify ./src/index.js -o ./assets/js/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

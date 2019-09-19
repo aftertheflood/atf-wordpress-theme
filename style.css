@@ -131,7 +131,7 @@ body.contact {
   column-gap: 20px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   .atf-archive-grid {
     display: grid;
     grid-area: entries;
@@ -426,6 +426,15 @@ input[type=submit]:hover, input[type=submit], .journal-splash__link:hover, .jour
   grid-area: auto/7/auto/12;
 }
 
+@media (max-width: 800px) {
+  .split-50-50-left {
+    grid-area: auto/1/auto/13;
+  }
+
+  .split-50-50-right {
+    grid-area: auto/1/auto/13;
+  }
+}
 .client__promo__excerpt {
   font-family: Tiempos, serif;
 }
