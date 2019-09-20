@@ -16,7 +16,7 @@ $pageTag = 'home';?>
   </div>
   <?php 
   /* The most recent journal post */
-  $posts = get_category_post_range('journal',0,1);
+  $posts = get_category_post_range('pinned',0,1);
   while ( $posts->have_posts() ) : $posts->the_post(); ?>
     <div class="splash__promo">
       <div class="splash__promo__date"><?php the_date() ?></div>
