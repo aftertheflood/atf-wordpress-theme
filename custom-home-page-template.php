@@ -26,15 +26,21 @@ $pageTag = 'home';?>
     </div>
   <?php endwhile; ?>
 </div>
-
+<div class="homepage-promo-container">
 <?php 
 /* case studies */
   $post = get_post(2); 
   $content = apply_filters('the_content', $post->post_content); 
   echo $content;
 ?>
+  <div class="atf-grid">
+    <a class="more-clients-link" href="/clients">See more projects &raquo;</a>    
+  </div>
+</div>
 
-<h3>Recently in the Journal &hellip;</h3>
+<div class="atf-grid">
+  <h3 class="recently-header">Recently in the Journal &hellip;</h3>
+</div>
 <div class="atf-grid">
 <?php /* 2nd and 3rd journal posts start from 1 get 2*/ 
   $count = 0;
@@ -54,7 +60,9 @@ $pageTag = 'home';?>
   </div>
 <?php endwhile; ?>
 </div>
-<div class="atf-grid"><a class="onward-journey-link" href="/journal">All Journal Posts</a></div>
+<div class="atf-grid">
+  <a class="onward-journey-link" href="/journal">All Journal Posts</a>
+</div>
 
 
 <?php get_template_part('partials/html','bottom'); ?>

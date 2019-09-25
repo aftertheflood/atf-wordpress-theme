@@ -10,7 +10,7 @@
 		</a>
 	</div>
 	<a class="compact-menu__link" href="/clients">Clients</a>
-	<a class="compact-menu__link" href="/journal">Journal</a>
+	<a class="compact-menu__link" href="/journal">Blog</a>
 	<a class="compact-menu__link" href="/about">About</a>
 	<a class="compact-menu__link" href="/contact">Contact</a>
 	</ul>
@@ -18,6 +18,6 @@
 <?php get_template_part('partials/footer','promo'); ?>
 		<?php get_footer(); ?>
 		<?php wp_footer(); ?> 
-		</div> <!-- end of .plage-layout -->
+		</div> <!-- end of .page-layout -->
 	</body>
 </html>
