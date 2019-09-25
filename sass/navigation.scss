@@ -153,6 +153,12 @@ nav.compact-menu{
     display: flex;
   }
 
+  .compact-menu__link{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 120%;
+  }
+
   .full-nav{
     display: none;
   }

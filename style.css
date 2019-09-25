@@ -861,6 +861,7 @@ nav.compact-menu {
   overflow: hidden;
   background: black;
   color: white;
+  padding-left:20px;
 }
 
 .compact-menu__link {
@@ -868,7 +869,9 @@ nav.compact-menu {
 }
 
 .compact-menu__title {
-  color: white;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 17px;
+  padding-top: 9px;
 }
 
 .close-menu-button {
@@ -901,6 +904,9 @@ nav.compact-menu {
 
   .compact-menu a {
     display: block;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 120%;
   }
 
   .compact-nav {
