@@ -9,6 +9,4 @@ $pageTag = 'clients';
   $content = apply_filters('the_content', $post->post_content); 
   echo $content;
 ?>
-CLIENTS
-
 <?php get_template_part('partials/html','bottom'); ?>
