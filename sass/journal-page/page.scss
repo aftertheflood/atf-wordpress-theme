@@ -1,5 +1,6 @@
 @import '../colors';
 @import '../type.scss';
+@import '../dimensions';
 
 .journal-splash {
   grid-template-areas: " . text text text text text image image image image image image";
@@ -12,8 +13,12 @@
 
 .journal-splash__image {
   grid-area: image;
+}
+
+.journal-splash__image img{
   width:100%;
 }
+
 
 .journal-splash__kicker {
   font-weight: bold;
