@@ -3,12 +3,11 @@
 	$pageTag = 'journal'; /* by default, most of the time it's going to be a journal page */
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 ?>
+
 <?php get_template_part('partials/html','top'); ?>
 	<?php if ( have_posts() ) :?>
 		<?php while ( have_posts() ) : the_post(); ?>
 		<div class="post">
-			
-								
 			<?php
 				if ( is_singular() ){ ?>
 				<div class="article-head atf-grid">

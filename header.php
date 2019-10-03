@@ -6,16 +6,25 @@
   
   global $post;
   $post_slug = $post->post_name;
-    function linkIsActive($str, $slug){
-      if($str == $slug){
-        return true;
-      }
-      return false;
+  
+  if(is_single()){
+    if ( in_category( 'client' ) ){
+      $pageTag = 'clients';
+    }else{
+      $pageTag = 'journal';
     }
+  }
+  
+  function linkIsActive($str, $slug){
+    if($str == $slug){
+      return true;
+    }
+    return false;
+  }
 
-    function addActiveMarker(){
-      echo '<div class="active-marker"><svg viewBox="0 0 50 50"><circle class="active-marker-circle" cx="25" cy="25" r="20"></circle></svg></div>';
-    }
+  function addActiveMarker(){
+    echo '<div class="active-marker"><svg viewBox="0 0 50 50"><circle class="active-marker-circle" cx="25" cy="25" r="20"></circle></svg></div>';
+  }
 ?>
   <nav role="navigation" class="full-nav <?php echo $pageTag ?>">
     <div class="header-links home-link <?php if(!is_front_page()){ echo 'persist'; } ?>">
@@ -27,11 +36,11 @@
     <div class="header-links">
       <div class="header-link">
         <a href="<?php echo esc_url( home_url( '/clients' ) ); ?>">Clients</a>
-        <?php if(linkIsActive('clients', $post_slug)){ addActiveMarker(); } ?>
+        <?php if(linkIsActive('clients', $post_slug) || linkIsActive('clients', $pageTag)){ addActiveMarker(); } ?>
       </div>
       <div class="header-link">
         <a href="<?php echo esc_url( home_url( '/journal' ) ); ?>">Blog</a>
-        <?php if(linkIsActive('journal', $post_slug) || is_single()){ addActiveMarker(); }?>
+        <?php if(linkIsActive('journal', $post_slug) || linkIsActive('journal', $pageTag)){ addActiveMarker(); }?>
       </div>
       <div class="header-link">
         <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">About</a>
