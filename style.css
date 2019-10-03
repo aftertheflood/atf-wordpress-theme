@@ -275,23 +275,23 @@ input[type=submit]:hover, input[type=submit], .journal-splash__link:hover, .jour
 
 @media (max-width: 650px) {
   .promo-left {
-    grid-template-areas: ". image image image image image image image image image image image" ". text text text text text text text text text text .";
+    grid-template-areas: "image image image image image image image image image image image image" "text text text text text text text text text text text text";
   }
 
   .promo-right {
-    grid-template-areas: "image image image image image image image image image image image ." ". text text text text text text text text text text .";
+    grid-template-areas: "image image image image image image image image image image image image" "text text text text text text text text text text text text";
   }
 
   .promo-left.text-first {
-    grid-template-areas: ". text text text text text text text text text text . " ". image image image image image image image image image image image";
+    grid-template-areas: "text text text text text text text text text text text text" "image image image image image image image image image image image image";
   }
 
   .promo-right.text-first {
-    grid-template-areas: ". text text text text text text text text text text . " "image image image image image image image image image image image .";
+    grid-template-areas: "text text text text text text text text text text text text" "image image image image image image image image image image image image";
   }
 
   .promo-double {
-    grid-template-areas: ". lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext ." ". righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext .";
+    grid-template-areas: "lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext" "righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext";
   }
 
   .promo-double__left {
@@ -340,11 +340,6 @@ input[type=submit]:hover, input[type=submit], .journal-splash__link:hover, .jour
   grid-template-areas: " . intro intro intro intro intro intro . . . . . " " . . . . . . promo promo promo promo promo promo ";
 }
 
-@media (max-width: 650px) {
-  .splash {
-    grid-template-areas: " . intro intro intro intro intro intro intro intro intro intro . " " . promo promo promo promo promo promo promo promo promo promo . ";
-  }
-}
 .splash__intro {
   grid-area: intro;
 }
@@ -393,6 +388,16 @@ input[type=submit]:hover, input[type=submit], .journal-splash__link:hover, .jour
   content: " »";
 }
 
+@media (max-width: 650px) {
+  .splash {
+    grid-template-areas: " intro intro intro intro intro intro intro intro intro intro intro intro " " promo promo promo promo promo promo promo promo promo promo promo promo ";
+  }
+
+  .splash__promo {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}
 .archive-post-light {
   height: 100%;
   background-color: #FFD600;
