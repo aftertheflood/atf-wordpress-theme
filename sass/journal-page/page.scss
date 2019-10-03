@@ -6,6 +6,13 @@
   grid-template-areas: " . text text text text text image image image image image image";
 }
 
+@media (max-width: 650px) {
+  .journal-splash {
+    grid-template-areas: " image image image image image image image image image image image image"
+    " text text text text text text text text text text text text";
+  }
+}
+
 .journal-splash__text {
   padding-top: 20px;
   grid-area: text;
@@ -55,6 +62,13 @@
   .journal-archive{
     grid-template-areas:  " . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . " 
     " . entries entries entries entries entries entries entries entries entries entries .";
+  }
+}
+
+@media (max-width: 650px) {
+  .journal-archive{
+    grid-template-areas:  " kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker " 
+    "entries entries entries entries entries entries entries entries entries entries entries entries";
   }
 }
 
