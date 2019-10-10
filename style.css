@@ -336,13 +336,13 @@ html {
 
 .splash__intro {
   grid-area: intro;
-  margin-top: 90px;
-  margin-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 112px;
 }
 
 .splash__intro__title {
   font-size: 56px;
-  line-height: 66px;
+  line-height: 65px;
   letter-spacing: -0.02em;
   margin-top: 0;
   margin-bottom: -2px;
@@ -350,7 +350,7 @@ html {
 
 .splash__intro__description {
   font-size: 56px;
-  line-height: 66px;
+  line-height: 65px;
   letter-spacing: -0.02em;
   font-family: Tiempos, serif;
   margin-top: 0;
