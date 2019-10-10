@@ -17,12 +17,12 @@ nav{
 
 .header-links{
   display: inline-block;
-  font-size: 30px;
+  @include type-heading-small;
   font-weight: bold;
 }
 
 .header-link{
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 20px;
   padding-right: 20px;
   padding-left: 20px;
@@ -63,7 +63,7 @@ nav.contact a{
   display: inline-block;
   width: $activeMarker;
   height: $activeMarker;
-  bottom: -($activeMarker / 2 - 6);
+  bottom: -($activeMarker / 2 - 7);
   margin-left: auto;
   margin-right: auto;
   left: 0;

@@ -1,3 +1,31 @@
+html {
+    text-rendering: optimizeLegibility;
+    font-variant-ligatures: common-ligatures;
+    font-kerning: normal;
+}
+
+
+
+@mixin type-body {
+    font-family: Tiempos, Georgia, serif;
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+}
+
+@mixin type-label {
+    font-family: Graphik, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+}
+
+@mixin type-heading-small {
+    font-size: 32px;
+    line-height: 118%;
+    letter-spacing: -0.01em;
+}
+
 %kicker{
     font-family: Graphik, sans-serif;
     font-weight: bold;
@@ -19,7 +47,8 @@
 
 %block-button{
     font-size: 21px;
-    padding: 20px;
+    letter-spacing: 0.01em;
+    padding: 13px 20px 18px 20px;
     border: 0px;
     font-weight: bold;
     text-decoration: none;

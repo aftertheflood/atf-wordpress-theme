@@ -70,7 +70,13 @@ Tiempos Font
   font-stretch: normal;
 }
 
-.client__promo__sector, .journal-archive__kicker {
+html {
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: common-ligatures;
+  font-kerning: normal;
+}
+
+.journal-archive__kicker {
   font-family: Graphik, sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -88,7 +94,8 @@ Tiempos Font
 
 .footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
   font-size: 21px;
-  padding: 20px;
+  letter-spacing: 0.01em;
+  padding: 13px 20px 18px 20px;
   border: 0px;
   font-weight: bold;
   text-decoration: none;
@@ -151,7 +158,13 @@ body.contact {
   margin-right: -20px;
 }
 
-.client__promo__sector, .journal-archive__kicker {
+html {
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: common-ligatures;
+  font-kerning: normal;
+}
+
+.journal-archive__kicker {
   font-family: Graphik, sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -169,7 +182,8 @@ body.contact {
 
 .footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
   font-size: 21px;
-  padding: 20px;
+  letter-spacing: 0.01em;
+  padding: 13px 20px 18px 20px;
   border: 0px;
   font-weight: bold;
   text-decoration: none;
@@ -224,31 +238,6 @@ body.contact {
   text-decoration: none;
 }
 
-.client__promo__sector, .journal-archive__kicker {
-  font-family: Graphik, sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 140%;
-  letter-spacing: 0.02em;
-}
-
-.splash__promo__date,
-.light-archive__date, .journal-splash__date, .journal-archive__date, .article-body .article__date {
-  font-family: Graphik, sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 118.1%;
-}
-
-.footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
-  font-size: 21px;
-  padding: 20px;
-  border: 0px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* category colours */
 .splash__promo__title {
   font-family: Tiempos, serif;
   margin-bottom: 0px;
@@ -452,13 +441,40 @@ body.contact {
   }
 }
 
+.client__promo__sector {
+  font-family: Graphik, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+
+.client__promo__title {
+  font-size: 32px;
+  line-height: 118%;
+  letter-spacing: -0.01em;
+  margin-top: 10px;
+  margin-bottom: 36px;
+}
+
 .client__promo__excerpt {
-  font-family: Tiempos, serif;
+  font-family: Tiempos, Georgia, serif;
+  font-size: 21px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+}
+
+.client__promo__excerpt p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.client__promo__excerpt p:last-of-type {
+  margin-bottom: 40px;
 }
 
 a.client__promo__link {
   background-color: #EEE;
-  color: #FF611E;
+  color: #000;
   display: inline-block;
 }
 
@@ -501,7 +517,13 @@ a.client__promo__link:hover {
 }
 
 /* category colours */
-.client__promo__sector, .journal-archive__kicker {
+html {
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: common-ligatures;
+  font-kerning: normal;
+}
+
+.journal-archive__kicker {
   font-family: Graphik, sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -519,7 +541,8 @@ a.client__promo__link:hover {
 
 .footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
   font-size: 21px;
-  padding: 20px;
+  letter-spacing: 0.01em;
+  padding: 13px 20px 18px 20px;
   border: 0px;
   font-weight: bold;
   text-decoration: none;
@@ -644,7 +667,13 @@ a.client__promo__link:hover {
 }
 
 /* category colours */
-.client__promo__sector, .journal-archive__kicker {
+html {
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: common-ligatures;
+  font-kerning: normal;
+}
+
+.journal-archive__kicker {
   font-family: Graphik, sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -662,7 +691,8 @@ a.client__promo__link:hover {
 
 .footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
   font-size: 21px;
-  padding: 20px;
+  letter-spacing: 0.01em;
+  padding: 13px 20px 18px 20px;
   border: 0px;
   font-weight: bold;
   text-decoration: none;
@@ -718,30 +748,6 @@ input[type=submit]:hover {
   background: #F00;
 }
 
-.client__promo__sector, .journal-archive__kicker {
-  font-family: Graphik, sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 140%;
-  letter-spacing: 0.02em;
-}
-
-.splash__promo__date,
-.light-archive__date, .journal-splash__date, .journal-archive__date, .article-body .article__date {
-  font-family: Graphik, sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 118.1%;
-}
-
-.footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
-  font-size: 21px;
-  padding: 20px;
-  border: 0px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 .article-head {
   font-family: Tiempos, serif;
   line-height: 35px;
@@ -759,7 +765,7 @@ input[type=submit]:hover {
 }
 
 .article-body {
-  font-family: Tiempos, serif;
+  font-family: Tiempos, Georgia, serif;
   font-size: 21px;
   line-height: 32px;
   letter-spacing: -0.02em;
@@ -843,12 +849,14 @@ nav {
 
 .header-links {
   display: inline-block;
-  font-size: 30px;
+  font-size: 32px;
+  line-height: 118%;
+  letter-spacing: -0.01em;
   font-weight: bold;
 }
 
 .header-link {
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 20px;
   padding-right: 20px;
   padding-left: 20px;
@@ -889,7 +897,7 @@ nav.contact a {
   display: inline-block;
   width: 30px;
   height: 30px;
-  bottom: -9px;
+  bottom: -8px;
   margin-left: auto;
   margin-right: auto;
   left: 0;

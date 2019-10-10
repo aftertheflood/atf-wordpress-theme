@@ -1,5 +1,3 @@
-@import '../type.scss';
-
 .article-head{
   font-family: Tiempos, serif;
   line-height: 35px;
@@ -17,12 +15,9 @@
 }
 
 .article-body{
-  font-family: Tiempos, serif;
-  font-size: 21px;
-  line-height: 32px;
-  letter-spacing: -0.02em;
+  @include type-body;
 
-  a{
+  a {
     color: $dark-grey;
   }
 

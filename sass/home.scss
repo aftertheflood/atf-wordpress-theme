@@ -1,6 +1,3 @@
-@import '../type.scss';
-@import '../colors.scss';
-
 .splash__promo__title{
   font-family: Tiempos, serif;
   margin-bottom:0px;
@@ -221,17 +218,30 @@
 }
 
 .client__promo__sector{
-  @extend %kicker;
+  @include type-label;
+}
+
+.client__promo__title {
+  @include type-heading-small;
+  margin-top: 10px;
+  margin-bottom: 36px;
 }
 
 .client__promo__excerpt{
-  font-family: Tiempos, serif;
+  @include type-body;
+  p {
+    margin-top: 0;
+    margin-bottom: 1em;
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 a.client__promo__link{
   @extend %block-button;
   background-color: $light-grey;
-  color: $clients-color;
+  color: #000;
   display: inline-block;
 }
 
