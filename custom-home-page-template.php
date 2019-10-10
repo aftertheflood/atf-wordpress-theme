@@ -1,7 +1,9 @@
 <?php /* Template Name: Home Page Template */ ?>
 <?php 
 global $pageTag;
-$pageTag = 'home';?>
+$pageTag = 'home';
+$this_page_id = get_the_ID();
+?>
 <?php get_template_part('partials/html','top'); ?>
 <div class="splash atf-grid">
   <div class="splash__intro">
@@ -29,8 +31,9 @@ $pageTag = 'home';?>
 <div class="homepage-promo-container">
 <?php 
 /* case studies */
-  $post = get_post(2); 
-  $content = apply_filters('the_content', $post->post_content); 
+  $post = get_post($this_page_id); 
+  $content = apply_filters('the_content', $post->post_content);
+  echo $this_page_id; 
   echo $content;
 ?>
   <div class="atf-grid">
