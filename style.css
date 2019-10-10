@@ -336,18 +336,24 @@ html {
 
 .splash__intro {
   grid-area: intro;
+  margin-top: 90px;
+  margin-bottom: 100px;
 }
 
 .splash__intro__title {
   font-size: 54px;
+  line-height: 62px;
+  margin-top: 0;
+  margin-bottom: -2px;
 }
 
 .splash__intro__description {
-  margin-top: 10px;
   font-size: 54px;
-  line-height: 118%;
+  line-height: 62px;
   letter-spacing: -0.03em;
   font-family: Tiempos, serif;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .splash__promo {
