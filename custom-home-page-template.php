@@ -33,7 +33,6 @@ $this_page_id = get_the_ID();
 /* case studies */
   $post = get_post($this_page_id); 
   $content = apply_filters('the_content', $post->post_content);
-  echo $this_page_id; 
   echo $content;
 ?>
   <div class="atf-grid">
