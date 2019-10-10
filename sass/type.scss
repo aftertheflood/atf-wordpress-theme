@@ -5,6 +5,7 @@ html {
 }
 
 
+// Type mixins
 
 @mixin type-body {
     font-family: Tiempos, Georgia, serif;
@@ -20,6 +21,14 @@ html {
     letter-spacing: 0.02em;
 }
 
+// The really big type on the homepage, top of project pages, etc.
+@mixin type-heading-big {
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: -0.02em;
+}
+
+// Standard headings for the promo modules, etc.
 @mixin type-heading-small {
     font-size: 32px;
     line-height: 118%;

@@ -341,16 +341,17 @@ html {
 }
 
 .splash__intro__title {
-  font-size: 54px;
-  line-height: 62px;
+  font-size: 56px;
+  line-height: 66px;
+  letter-spacing: -0.02em;
   margin-top: 0;
   margin-bottom: -2px;
 }
 
 .splash__intro__description {
-  font-size: 54px;
-  line-height: 62px;
-  letter-spacing: -0.03em;
+  font-size: 56px;
+  line-height: 66px;
+  letter-spacing: -0.02em;
   font-family: Tiempos, serif;
   margin-top: 0;
   margin-bottom: 0;
