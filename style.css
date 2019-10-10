@@ -254,11 +254,11 @@ html {
 }
 
 .promo-right {
-  grid-template-areas: "image image image image image image image text text text text .";
+  grid-template-areas: "image image image image image image . text text text text .";
 }
 
 .promo-left {
-  grid-template-areas: ". text text text text image image image image image image image";
+  grid-template-areas: ". text text text text . image image image image image image";
 }
 
 .promo-double {
