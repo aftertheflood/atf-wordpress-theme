@@ -43,7 +43,7 @@ body.contact{
 .atf-grid{
   display: grid;
   grid-template-columns: 0px repeat(12, 1fr) 0px;
-  row-gap: 5px;
+  // row-gap: 5px;
   column-gap: $column-gap;
   grid-auto-rows: minmax(50px, max-content);
   margin: 0px;
