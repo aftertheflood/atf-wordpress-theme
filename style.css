@@ -377,6 +377,10 @@ where in the rendered web page you only see one column to the outside of the tex
 
 /* The home (and clients page) feature blocks
 -------------------------------------------------------------------------------------- */
+.content {
+  z-index: 10;
+}
+
 .homepage-promo-container {
   background: whitesmoke;
   background: linear-gradient(to bottom, whitesmoke 0%, rgba(245, 245, 245, 0) 50%, whitesmoke 100%);
@@ -911,6 +915,10 @@ input[type=submit]:hover {
   width: 100%;
 }
 
+.site-header {
+  z-index: 999;
+}
+
 nav {
   position: fixed;
   height: 60px;
@@ -947,6 +955,10 @@ nav a {
   text-decoration: none;
   color: black;
   justify-content: space-between;
+}
+
+nav a:hover {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 nav.clients {

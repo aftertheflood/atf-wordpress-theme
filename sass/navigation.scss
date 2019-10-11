@@ -1,6 +1,10 @@
 $activeMarker: 30px;
 
-nav{
+.site-header {
+  z-index: 999;
+}
+
+nav {
   position: fixed;
   height: $nav-height;
   width: 100%;
@@ -15,50 +19,45 @@ nav{
   align-items: flex-start;
 }
 
-.header-links{
+.header-links {
   display: inline-block;
   @include type-heading-small;
   font-weight: bold;
 }
 
-.header-link{
+.header-link {
   padding-top: 9px;
   padding-bottom: 20px;
   padding-right: 20px;
   padding-left: 20px;
   position: relative;
-  display:inline-block;
+  display: inline-block;
 }
 
-nav a{
+nav a {
 	text-decoration: none;
   color:black;
   justify-content: space-between;
+  &:hover {
+    color: rgba(0,0,0,0.7);
+  }
 }
 
-nav.clients{
-	background-color: $clients-color;
-}
+nav.clients {background-color: $clients-color;}
+nav.journal {background-color: $journal-color;}
+nav.about {background-color: $about-color;}
 
-nav.journal{
-	background-color: $journal-color;
-}
-
-nav.about{
-	background-color: $about-color;
-}
-
-nav.contact{
+nav.contact {
 	background-color: $contact-color;
   color:$contact-text;
   fill:white;
 }
 
-nav.contact a{
-	color:white;
+nav.contact a {
+	color: white;
 }
 
-.active-marker{
+.active-marker {
   position: absolute;
   display: inline-block;
   width: $activeMarker;
@@ -70,13 +69,13 @@ nav.contact a{
   right: 0;
 }
 
-.active-marker-circle{
+.active-marker-circle {
   width: $activeMarker;
   height: $activeMarker;
 }
 
 /* scroll behavior for home link */
-.header-links.home-link{
+.header-links.home-link {
   transition: visibility 0.3s linear,opacity 0.3s linear;
   visibility: hidden;
   opacity: 0;
