@@ -12,15 +12,27 @@
   font-weight: 200;
 }
 
+/* Note: 
+
+The visible grid is 12 columns, however the CSS grid has 14 columns.
+This is done so that we can have an outer margin (gutter, in CSS parlance)
+that is part of the grid instead of exterior to the grid, 
+as this allows us to stretch across that space with grid settings.
+
+This is why there are two full-stops next to the text settings below
+where in the rendered web page you only see one column to the outside of the text.
+
+*/
+
 .promo-right{
-  grid-template-areas: "image image image image image image . text text text text .";
+  grid-template-areas: "image image image image image image image . text text text text . .";
 }
 
 .promo-left{  
-  grid-template-areas: ". text text text text . image image image image image image";
+  grid-template-areas: ". . text text text text . image image image image image image image";
 }
 .promo-double{
-  grid-template-areas: ". . lefttext lefttext lefttext lefttext . righttext righttext righttext righttext .";
+  grid-template-areas: ". . . lefttext lefttext lefttext lefttext . righttext righttext righttext righttext . .";
 }
 
 .promo-double__left{
@@ -69,7 +81,7 @@
 }
 
 .promo-right, .promo-left{
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 .promo-left .promo__image{
@@ -93,7 +105,12 @@
 }
 
 .promo__image img{
-  width: 100%;
+  width: calc(100% + 180px);
+}
+
+.promo-right .promo__image img {
+  position: relative;
+  right: 180px
 }
 
 .client__promo-logo{
@@ -102,8 +119,8 @@
 }
 
 .splash{
-  grid-template-areas:  " . intro intro intro intro intro intro . . . . . "
-                        " . . . . . . promo promo promo promo promo promo ";
+  grid-template-areas:  " . . intro intro intro intro intro intro . . . . . . "
+                        " . . . . . . . promo promo promo promo promo promo .";
 }
 
 .splash__intro{
