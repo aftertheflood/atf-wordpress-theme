@@ -35,7 +35,11 @@ html {
     letter-spacing: -0.01em;
 }
 
-%kicker{
+@mixin spaced-caps {
+    letter-spacing: 0.04em;
+}
+
+%kicker {
     font-family: Graphik, sans-serif;
     font-weight: bold;
     font-size: 14px;
@@ -43,30 +47,33 @@ html {
     letter-spacing: 0.02em;
 }
 
-%date{
+%date {
     font-family: Graphik, sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 118.1%;
 }
 
-%more-link{
+%more-link {
 
 }
 
-%block-button{
-    font-size: 21px;
-    letter-spacing: 0.01em;
+%block-button {
     padding: 13px 20px 18px 20px;
     border: 0px;
+}
+
+%block-button-type {
+    font-size: 21px;
+    letter-spacing: 0.01em;
     font-weight: bold;
     text-decoration: none;
 }
 
-%promo-body{
+%promo-body {
 
 }
 
-%promo-headline{
+%promo-headline {
 
 }

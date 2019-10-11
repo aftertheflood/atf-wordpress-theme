@@ -93,10 +93,13 @@ html {
 }
 
 .footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
-  font-size: 21px;
-  letter-spacing: 0.01em;
   padding: 13px 20px 18px 20px;
   border: 0px;
+}
+
+.splash__promo__link, a.client__promo__link {
+  font-size: 21px;
+  letter-spacing: 0.01em;
   font-weight: bold;
   text-decoration: none;
 }
@@ -181,10 +184,13 @@ html {
 }
 
 .footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
-  font-size: 21px;
-  letter-spacing: 0.01em;
   padding: 13px 20px 18px 20px;
   border: 0px;
+}
+
+.splash__promo__link, a.client__promo__link {
+  font-size: 21px;
+  letter-spacing: 0.01em;
   font-weight: bold;
   text-decoration: none;
 }
@@ -238,21 +244,6 @@ html {
   text-decoration: none;
 }
 
-.splash__promo__title {
-  font-family: Tiempos, serif;
-  margin-bottom: 0px;
-  text-transform: uppercase;
-  font-weight: 200;
-}
-
-.splash__promo__subtitle {
-  font-family: Tiempos, serif;
-  font-style: italic;
-  margin-bottom: 20px;
-  font-size: 25px;
-  font-weight: 200;
-}
-
 /* Note: 
 
 The visible grid is 12 columns, however the CSS grid has 14 columns.
@@ -264,6 +255,106 @@ This is why there are two full-stops next to the text settings below
 where in the rendered web page you only see one column to the outside of the text.
 
 */
+/* The home splash zone 
+-------------------------------------------------------------------------------------- */
+.splash {
+  grid-template-areas: " . . intro intro intro intro intro intro . . . . . . " " . . . . . . . promo promo promo promo promo promo .";
+}
+
+.splash__intro {
+  grid-area: intro;
+  margin-top: 100px;
+  margin-bottom: 112px;
+}
+
+.splash__intro__title {
+  font-size: 56px;
+  line-height: 65px;
+  letter-spacing: -0.02em;
+  margin-top: 0;
+  margin-bottom: -2px;
+}
+
+.splash__intro__description {
+  font-size: 56px;
+  line-height: 65px;
+  letter-spacing: -0.02em;
+  font-family: Tiempos, serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.splash__promo {
+  grid-area: promo;
+  background-color: #FFD600;
+  padding: 40px;
+  padding-top: 39px;
+  margin-bottom: 20px;
+}
+
+.splash__promo__title,
+.splash__promo__subtitle {
+  font-size: 32px;
+  line-height: 118%;
+  letter-spacing: -0.01em;
+  font-family: Tiempos, Georgia, serif;
+  font-weight: 400;
+  padding-right: 40px;
+}
+
+.splash__promo__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.splash__promo__subtitle {
+  margin-top: -1px;
+  margin-bottom: 6px;
+  font-style: italic;
+}
+
+.splash__promo__date,
+.light-archive__date {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 33px;
+}
+
+.splash__promo__excerpt {
+  font-family: Tiempos, serif;
+  font-style: italic;
+}
+
+.splash__promo__link {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.splash__promo__link:hover {
+  color: #000;
+}
+
+.splash__promo__link::after {
+  content: ' \00bb';
+}
+
+@media (max-width: 650px) {
+  .splash {
+    grid-template-areas: " intro intro intro intro intro intro intro intro intro intro intro intro " " promo promo promo promo promo promo promo promo promo promo promo promo ";
+  }
+  .splash__promo {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+/* The home (and clients page) feature blocks
+-------------------------------------------------------------------------------------- */
+.homepage-promo-container {
+  background: whitesmoke;
+  background: linear-gradient(to bottom, whitesmoke 0%, rgba(245, 245, 245, 0) 50%, whitesmoke 100%);
+}
+
 .promo-right {
   grid-template-areas: "image image image image image image image . text text text text . .";
 }
@@ -346,79 +437,67 @@ where in the rendered web page you only see one column to the outside of the tex
   width: 130px;
 }
 
-.splash {
-  grid-template-areas: " . . intro intro intro intro intro intro . . . . . . " " . . . . . . . promo promo promo promo promo promo .";
-}
-
-.splash__intro {
-  grid-area: intro;
-  margin-top: 100px;
-  margin-bottom: 112px;
-}
-
-.splash__intro__title {
-  font-size: 56px;
-  line-height: 65px;
-  letter-spacing: -0.02em;
-  margin-top: 0;
-  margin-bottom: -2px;
-}
-
-.splash__intro__description {
-  font-size: 56px;
-  line-height: 65px;
-  letter-spacing: -0.02em;
-  font-family: Tiempos, serif;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.splash__promo {
-  margin-right: 10px;
-  grid-area: promo;
-  background-color: #FFD600;
-  padding: 39px;
-  margin-bottom: 10px;
-}
-
-.splash__promo__date,
-.light-archive__date {
-  margin-top: -39px;
-  margin-right: -39px;
-  text-align: right;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.splash__promo__excerpt {
-  font-family: Tiempos, serif;
-  font-style: italic;
-}
-
-.splash__promo__link {
-  color: black;
-  font-size: 20px;
+.client__promo__sector {
+  font-family: Graphik, sans-serif;
   font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+
+.client__promo__title {
+  font-size: 32px;
+  line-height: 118%;
+  letter-spacing: -0.01em;
+  margin-top: 10px;
+  margin-bottom: 36px;
+}
+
+.client__promo__excerpt {
+  font-family: Tiempos, Georgia, serif;
+  font-size: 21px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+}
+
+.client__promo__excerpt p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.client__promo__excerpt p:last-of-type {
+  margin-bottom: 40px;
+}
+
+a.client__promo__link {
+  background-color: #EEE;
+  color: #000;
+  display: inline-block;
+}
+
+a.client__promo__link:hover {
+  background-color: #FF611E;
+  color: #000;
+}
+
+.more-clients-link {
+  font-size: 56px;
+  line-height: 65px;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  grid-column: 3 / span 6;
   text-decoration: none;
+  color: #000;
+  margin-bottom: 30px;
 }
 
-.splash__promo__link::after {
-  content: ' \00bb';
-}
-
-@media (max-width: 650px) {
-  .splash {
-    grid-template-areas: " intro intro intro intro intro intro intro intro intro intro intro intro " " promo promo promo promo promo promo promo promo promo promo promo promo ";
-  }
-  .splash__promo {
-    margin-right: 0px;
-    margin-bottom: 0px;
-  }
+.more-clients-link:hover {
+  color: #FF611E;
 }
 
 .archive-post-light {
   height: 100%;
   background-color: #FFD600;
-  padding: 39px;
+  padding: 40px;
   margin-bottom: 10px;
   font-family: Tiempos, serif;
 }
@@ -464,48 +543,6 @@ where in the rendered web page you only see one column to the outside of the tex
   }
 }
 
-.client__promo__sector {
-  font-family: Graphik, sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  letter-spacing: 0.02em;
-}
-
-.client__promo__title {
-  font-size: 32px;
-  line-height: 118%;
-  letter-spacing: -0.01em;
-  margin-top: 10px;
-  margin-bottom: 36px;
-}
-
-.client__promo__excerpt {
-  font-family: Tiempos, Georgia, serif;
-  font-size: 21px;
-  line-height: 32px;
-  letter-spacing: -0.02em;
-}
-
-.client__promo__excerpt p {
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-
-.client__promo__excerpt p:last-of-type {
-  margin-bottom: 40px;
-}
-
-a.client__promo__link {
-  background-color: #EEE;
-  color: #000;
-  display: inline-block;
-}
-
-a.client__promo__link:hover {
-  background-color: #FF611E;
-  color: #000;
-}
-
 .onward-journey-link {
   grid-column: 1 / 12;
   text-align: end;
@@ -518,26 +555,6 @@ a.client__promo__link:hover {
 
 .onward-journey-link::after {
   content: ' \00bb';
-}
-
-.homepage-promo-container {
-  background: whitesmoke;
-  background: linear-gradient(to bottom, whitesmoke 0%, rgba(245, 245, 245, 0) 50%, whitesmoke 100%);
-}
-
-.more-clients-link {
-  font-size: 56px;
-  line-height: 65px;
-  letter-spacing: -0.02em;
-  font-weight: 800;
-  grid-column: 3 / span 6;
-  text-decoration: none;
-  color: #000;
-  margin-bottom: 30px;
-}
-
-.more-clients-link:hover {
-  color: #FF611E;
 }
 
 .recently-header {
@@ -569,10 +586,13 @@ html {
 }
 
 .footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
-  font-size: 21px;
-  letter-spacing: 0.01em;
   padding: 13px 20px 18px 20px;
   border: 0px;
+}
+
+.splash__promo__link, a.client__promo__link {
+  font-size: 21px;
+  letter-spacing: 0.01em;
   font-weight: bold;
   text-decoration: none;
 }
@@ -719,10 +739,13 @@ html {
 }
 
 .footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
-  font-size: 21px;
-  letter-spacing: 0.01em;
   padding: 13px 20px 18px 20px;
   border: 0px;
+}
+
+.splash__promo__link, a.client__promo__link {
+  font-size: 21px;
+  letter-spacing: 0.01em;
   font-weight: bold;
   text-decoration: none;
 }
