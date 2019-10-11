@@ -526,12 +526,18 @@ a.client__promo__link:hover {
 }
 
 .more-clients-link {
-  grid-column: 2 / span 6;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 56px;
+  line-height: 65px;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  grid-column: 3 / span 6;
   text-decoration: none;
   color: #000;
   margin-bottom: 30px;
+}
+
+.more-clients-link:hover {
+  color: #FF611E;
 }
 
 .recently-header {

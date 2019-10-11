@@ -290,12 +290,15 @@ a.client__promo__link:hover{
 }
 
 .more-clients-link{
-  grid-column: 2 / span 6;
-  font-size: 30px;
-  font-weight: bold;
+  @include type-heading-big;
+  font-weight: 800;
+  grid-column: 3 / span 6;
   text-decoration: none;
   color: #000;
   margin-bottom: 30px;
+  &:hover {
+    color: $clients-color;
+  }
 }
 
 .recently-header{
