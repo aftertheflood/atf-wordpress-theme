@@ -1,61 +1,139 @@
-.article-head{
-  font-family: Tiempos, serif;
-  line-height: 35px;
-  letter-spacing: -0.02em;
-
-  h2{
-    grid-column: 2 / span 6;
-    font-family: Tiempos, serif;
-    font-size: 32px;
-    line-height: 118%;
-    /* or 38px */
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+.article-head {
+  margin: 114px 0 120px 0;
+  .article-title {grid-column: 3 / span 6;}
+  h1 {
+    @include type-heading-small;
+    @include spaced-caps;
+    font-family: Tiempos, Georgia, serif;
+    font-weight: 400;
+    margin: 0;
+  }
+  .journal-splash__subtitle {
+    @include type-heading-small;
+    margin: 0;
   }
 }
 
-.article-body{
+.article-body {
   @include type-body;
+  
+  p {
+    font-weight: 400;
+    margin: 0 0 24px 0;
+  }
+
+  strong {
+    font-family: "Tiempos Text";
+    font-weight: 600;
+  }
 
   a {
     color: $dark-grey;
   }
 
-  .article__date{
-    @extend %date;
-    grid-column: 2 / span 1;
+  h2 {
+    @include type-heading-small;
+    font-family: "Tiempos Text";
+    font-weight: 600;
+    margin: 120px 0 24px 0;
+  }
+
+  h3 {
+    font-family: "Tiempos Text", Georgia, serif;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 32px;    
+    margin: 60px 0 24px 0;
+  }
+
+  h4 {
+    font-family: "Tiempos Text", Georgia, serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;    
+    @include spaced-caps;
+    margin: 60px 0 12px 0;
+    display: block;
+  }
+
+  h5 {
+    font-family: Tiempos, Georgia, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;    
+    @include spaced-caps;
+    margin: 60px 0 0 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: $column-gap;
+  }
+
+  li {
+    text-indent: -25px;
+  }
+
+  li:before {
+    content: "— ";
+  }
+
+  .article__date {
+    @include type-label;
+    grid-column: 3 / span 2;
     height: 100%;
   }
 
-  .article__content{
+  .article__content {
     padding-top: 0px;
-    margin-top: -27px;
+    margin-top: -7px;
   }
 
   .article__content, img, p, blockquote, figure, ul, div, h2, h3, h4 {
-    grid-column: 4 / span 6;
+    grid-column: 5 / span 6;
   }
+
   @media (max-width: 800px) {
     .article__date{
       height:auto; 
       grid-column: 2 / span 10;
     }
-    .article__content{
+    .article__content {
       grid-column: 2 / span 10;
     }
-    h2{
+    h2 {
       grid-column: 2 / span 10;
     }
   }
+
 /* styles for excerpting text content */
 
   blockquote {
     background-color: #FFF9D8;
-    margin: 0;
-    padding: 21px 40px 21px 40px;
+    margin: 60px 0 60px 0;
+    padding: 24px 50px 24px 50px;
   }
 
-  blockquote.pullquote {
+  blockquote p {
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+
+  cite {
+    display: block;
+    margin: 24px 100px 14px 0;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    // font-family: Tiempos, Georgia, serif;
+  }
+
+  blockquote p.in-quotes {
+    text-indent: -10px;
+  }
+
+  blockquote.pullquote-left {
     grid-column: 1 / span 6;
     font-family: Tiempos, serif;
     font-size: 48px;
@@ -64,17 +142,18 @@
     padding: 30px 40px 30px 40px;
   }
 
-  .indepth{
+  .indepth {
     background:gray;
   }
 
 /* styles useful for images */
-  .full-bleed{
+
+  .full-bleed {
     grid-column: 1 / span 12;
     width:100%;
   }
 
-  img{
+  img {
     width:100%;
   }
 }

@@ -18,6 +18,7 @@ html {
     font-family: Graphik, sans-serif;
     font-weight: bold;
     font-size: 15px;
+    line-height: 118%;
     letter-spacing: 0.02em;
 }
 
@@ -36,7 +37,9 @@ html {
 }
 
 @mixin spaced-caps {
+    text-transform: uppercase;
     letter-spacing: 0.04em;
+    line-height: 128%;
 }
 
 %kicker {
@@ -51,7 +54,7 @@ html {
     font-family: Graphik, sans-serif;
     font-weight: bold;
     font-size: 14px;
-    line-height: 118.1%;
+    line-height: 118%;
 }
 
 %more-link {

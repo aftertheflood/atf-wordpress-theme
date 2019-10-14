@@ -11,7 +11,15 @@
 			<?php
 				if ( is_singular() ){ ?>
 				<div class="article-head atf-grid">
-					<h2><?php the_title(); ?></h2>
+					<div class="article-title">
+						<h1><?php the_title(); ?></h1>
+						<?php 
+							$subtitle = get_post_meta($post->ID, 'subtitle', true);
+							if ($subtitle) {
+								echo '<div class="journal-splash__subtitle">'.$subtitle.'</div>';
+							}
+						?>			
+					</div>
 				</div>
 				<div class="article-body atf-grid">
 				<div class="article__date"><?php the_time( 'j M Y' ); ?></div>
