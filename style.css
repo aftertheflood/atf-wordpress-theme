@@ -721,7 +721,23 @@ a.client__promo__link:hover {
 
 .journal-archive__entry {
   color: white;
-  padding-bottom: 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-right: -6.6666666667px;
+}
+
+.journal-archive__entry:nth-of-type(1), .journal-archive__entry:nth-of-type(2) {
+  padding-top: 0;
+}
+
+.journal-archive__entry:nth-of-type(odd) {
+  box-shadow: 8px 0px #EEE, 0 8px 0px #EEE;
+  padding-right: 30px;
+}
+
+.journal-archive__entry:nth-of-type(even) {
+  padding-left: 30px;
+  box-shadow: 0 8px 0px #EEE;
 }
 
 .journal-archive__kicker {
