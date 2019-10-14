@@ -71,6 +71,24 @@ Tiempos Font
   font-stretch: normal;
 }
 
+@font-face {
+  font-family: 'Tiempos';
+  src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-Semibold.eot");
+  src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-Semibold.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-Semibold.woff2") format("woff2"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-SemiboldItalic.eot");
+  src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-SemiboldItalic.woff2") format("woff2"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+}
+
 html {
   text-rendering: optimizeLegibility;
   font-variant-ligatures: common-ligatures;
@@ -596,43 +614,9 @@ a.client__promo__link:hover {
   grid-column: 2 / span 6;
 }
 
-/* category colours */
-html {
-  text-rendering: optimizeLegibility;
-  font-variant-ligatures: common-ligatures;
-  font-kerning: normal;
-}
-
-.journal-archive__kicker {
-  font-family: Graphik, sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 140%;
-  letter-spacing: 0.02em;
-}
-
-.splash__promo__date,
-.light-archive__date, .journal-splash__date, .journal-archive__date {
-  font-family: Graphik, sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 118%;
-}
-
-.footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
-  padding: 13px 20px 18px 20px;
-  border: 0px;
-}
-
-.footer-contact-link a, .splash__promo__link, a.client__promo__link {
-  font-size: 21px;
-  letter-spacing: 0.01em;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 .journal-splash {
-  grid-template-areas: " . text text text text text image image image image image image";
+  grid-template-areas: ". . text text text text text image image image image image image .";
+  margin: 114px 0 120px 0;
 }
 
 @media (max-width: 650px) {
@@ -876,7 +860,7 @@ input[type=submit]:hover {
 }
 
 .article-body strong {
-  font-family: "Tiempos Text";
+  font-family: Tiempos;
   font-weight: 600;
 }
 
@@ -888,13 +872,13 @@ input[type=submit]:hover {
   font-size: 32px;
   line-height: 118%;
   letter-spacing: -0.01em;
-  font-family: "Tiempos Text";
+  font-family: Tiempos;
   font-weight: 600;
   margin: 120px 0 24px 0;
 }
 
 .article-body h3 {
-  font-family: "Tiempos Text", Georgia, serif;
+  font-family: Tiempos, Georgia, serif;
   font-weight: 600;
   font-size: 25px;
   line-height: 32px;
@@ -902,7 +886,7 @@ input[type=submit]:hover {
 }
 
 .article-body h4 {
-  font-family: "Tiempos Text", Georgia, serif;
+  font-family: Tiempos, Georgia, serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;

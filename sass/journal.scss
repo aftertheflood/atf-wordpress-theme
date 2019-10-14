@@ -1,9 +1,7 @@
-@import '../colors';
-@import '../type.scss';
-@import '../dimensions';
-
 .journal-splash {
-  grid-template-areas: " . text text text text text image image image image image image";
+  grid-template-areas: ". . text text text text text image image image image image image .";
+  margin: 114px 0 120px 0;
+
 }
 
 @media (max-width: 650px) {
