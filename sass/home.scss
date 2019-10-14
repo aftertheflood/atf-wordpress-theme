@@ -231,6 +231,7 @@ where in the rendered web page you only see one column to the outside of the tex
 
 .client__promo__excerpt{
   @include type-body;
+  @include type-serif;
   p {
     margin-top: 0;
     margin-bottom: 1em;

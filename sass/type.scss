@@ -7,11 +7,26 @@ html {
 
 // Type mixins
 
-@mixin type-body {
+@mixin type-serif {
     font-family: Tiempos, Georgia, serif;
+}
+
+@mixin type-sans {
+    font-family: Graphik, sans-serif;
+}
+
+
+@mixin type-body {
     font-size: 21px;
     line-height: 32px;
     letter-spacing: -0.02em;
+}
+
+@mixin type-small {
+    font-family: Tiempos, Georgia, serif;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.01em;
 }
 
 @mixin type-label {
@@ -45,7 +60,7 @@ html {
 %kicker {
     font-family: Graphik, sans-serif;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 140%;
     letter-spacing: 0.02em;
 }
@@ -53,7 +68,7 @@ html {
 %date {
     font-family: Graphik, sans-serif;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 118%;
 }
 

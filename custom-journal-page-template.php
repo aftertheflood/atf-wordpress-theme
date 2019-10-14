@@ -17,7 +17,7 @@ $pageTag = 'journal';
       <a href="<?php the_permalink(); ?>" class="journal-splash__link">Read more</a>
     </div>
     <div class="journal-splash__image">
-      <img src="<?php echo get_post_meta($post->ID, 'promo-image', true);?>">
+      <img src="<?php echo get_post_meta($post->ID, 'promo-image', true);?>" class="cover">
     </div>
   <?php endwhile; ?>
 </div>

@@ -17,30 +17,30 @@ version 2.0 (http://www.gnu.org/licensesoji/gpl-2.0.html)
 @import 'dimensions';
 @import 'colors';
 
-*{
+* {
 	box-sizing: border-box;
 }
 
-body{
+body {
 	font-family: Graphik, sans-serif;
 	margin: 0;
 	padding: 0;
 }
-.screen-reader-text{
+.screen-reader-text {
 	display:none;
 }
 
-.page-layout{
+.page-layout {
 	display: grid;
 	grid-template-rows: min-content auto min-content;
 	min-height:100vh; 
 }
 
-body.contact{
+body.contact {
 	background-color: #000000;
 }
 
-.atf-grid{
+.atf-grid {
   display: grid;
   grid-template-columns: 0px repeat(12, 1fr) 0px;
   // row-gap: 5px;
@@ -50,7 +50,7 @@ body.contact{
   align-items: center;
 }
 
-.atf-archive-grid{
+.atf-archive-grid {
 	display: grid;
 	grid-area: entries;
 	grid-template-columns: 1fr 1fr;
@@ -69,7 +69,7 @@ body.contact{
 }
 
 
-.ragged{
+.ragged {
   margin-right:-20px;
 }
 

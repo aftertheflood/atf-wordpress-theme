@@ -4,7 +4,7 @@
   h1 {
     @include type-heading-small;
     @include spaced-caps;
-    font-family: Tiempos, Georgia, serif;
+    @include type-serif;
     font-weight: 400;
     margin: 0;
   }
@@ -16,6 +16,7 @@
 
 .article-body {
   @include type-body;
+  @include type-serif;
   
   p {
     font-weight: 400;
@@ -23,7 +24,7 @@
   }
 
   strong {
-    font-family: Tiempos;
+    @include type-serif;
     font-weight: 600;
   }
 
@@ -33,13 +34,13 @@
 
   h2 {
     @include type-heading-small;
-    font-family: Tiempos;
+    @include type-serif;
     font-weight: 600;
     margin: 120px 0 24px 0;
   }
 
   h3 {
-    font-family: Tiempos, Georgia, serif;
+    @include type-serif;
     font-weight: 600;
     font-size: 25px;
     line-height: 32px;    
@@ -47,7 +48,7 @@
   }
 
   h4 {
-    font-family: Tiempos, Georgia, serif;
+    @include type-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 32px;    
@@ -57,7 +58,7 @@
   }
 
   h5 {
-    font-family: Tiempos, Georgia, serif;
+    @include type-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;    
@@ -94,7 +95,7 @@
   }
 
   @media (max-width: 800px) {
-    .article__date{
+    .article__date {
       height:auto; 
       grid-column: 2 / span 10;
     }
@@ -126,7 +127,6 @@
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 0.01em;
-    // font-family: Tiempos, Georgia, serif;
   }
 
   blockquote p.in-quotes {
@@ -135,7 +135,7 @@
 
   blockquote.pullquote-left {
     grid-column: 1 / span 6;
-    font-family: Tiempos, serif;
+    @include type-serif;
     font-size: 48px;
     line-height: 58px;
     letter-spacing: -0.02em;

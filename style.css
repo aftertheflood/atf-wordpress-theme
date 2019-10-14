@@ -95,19 +95,19 @@ html {
   font-kerning: normal;
 }
 
-.journal-archive__kicker {
+.journal-splash__kicker {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 140%;
   letter-spacing: 0.02em;
 }
 
 .splash__promo__date,
-.light-archive__date, .journal-splash__date, .journal-archive__date {
+.light-archive__date, .journal-splash__date {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 118%;
 }
 
@@ -116,7 +116,7 @@ html {
   border: 0px;
 }
 
-.footer-contact-link a, .splash__promo__link, a.client__promo__link {
+.footer-contact-link a, .splash__promo__link, a.client__promo__link, .journal-splash__link {
   font-size: 21px;
   letter-spacing: 0.01em;
   font-weight: bold;
@@ -185,19 +185,19 @@ html {
   font-kerning: normal;
 }
 
-.journal-archive__kicker {
+.journal-splash__kicker {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 140%;
   letter-spacing: 0.02em;
 }
 
 .splash__promo__date,
-.light-archive__date, .journal-splash__date, .journal-archive__date {
+.light-archive__date, .journal-splash__date {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 118%;
 }
 
@@ -206,7 +206,7 @@ html {
   border: 0px;
 }
 
-.footer-contact-link a, .splash__promo__link, a.client__promo__link {
+.footer-contact-link a, .splash__promo__link, a.client__promo__link, .journal-splash__link {
   font-size: 21px;
   letter-spacing: 0.01em;
   font-weight: bold;
@@ -505,10 +505,10 @@ where in the rendered web page you only see one column to the outside of the tex
 }
 
 .client__promo__excerpt {
-  font-family: Tiempos, Georgia, serif;
   font-size: 21px;
   line-height: 32px;
   letter-spacing: -0.02em;
+  font-family: Tiempos, Georgia, serif;
 }
 
 .client__promo__excerpt p {
@@ -615,8 +615,7 @@ a.client__promo__link:hover {
 }
 
 .journal-splash {
-  grid-template-areas: ". . text text text text text image image image image image image .";
-  margin: 114px 0 120px 0;
+  grid-template-areas: ". . text text text text text image image image image image image image";
 }
 
 @media (max-width: 650px) {
@@ -626,44 +625,57 @@ a.client__promo__link:hover {
 }
 
 .journal-splash__text {
-  padding-top: 20px;
+  padding: 114px 0 120px 0;
   grid-area: text;
 }
 
 .journal-splash__image {
   grid-area: image;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .journal-splash__image img {
-  width: 100%;
+  display: block;
+  object-fit: cover;
+  width: 200%;
 }
 
-.journal-splash__kicker {
-  font-weight: bold;
+.journal-splash__title,
+.journal-splash__subtitle {
+  font-size: 32px;
+  line-height: 118%;
+  letter-spacing: -0.01em;
+  font-family: Tiempos, Georgia, serif;
+  font-weight: 400;
 }
 
 .journal-splash__title {
-  font-family: Tiempos, serif;
   text-transform: uppercase;
-  margin-bottom: 0px;
+  letter-spacing: 0.04em;
+  line-height: 128%;
+  margin: 36px 40px 0 0;
 }
 
 .journal-splash__subtitle {
-  font-family: Tiempos, serif;
   font-style: italic;
-  font-size: 24px;
+  margin: -1px 40px 10px 0;
 }
 
 .journal-splash__excerpt {
+  font-size: 21px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
   font-family: Tiempos, serif;
+  margin: 36px 40px 36px 0;
 }
 
 .journal-archive {
-  grid-template-areas: " . kicker kicker entries entries entries entries entries entries entries entries .";
-  background-color: black;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-top: 30px;
+  grid-template-areas: ". . kicker kicker entries entries entries entries entries entries entries entries . .";
+  background-color: #282828;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 @media (max-width: 800px) {
@@ -678,17 +690,33 @@ a.client__promo__link:hover {
   }
 }
 
-.journal-archive__title {
-  font-family: Tiempos, serif;
-  /* text-rendering: optimizeLegibility; */
-  text-transform: uppercase;
+.journal-archive__title,
+.journal-archive__subtitle {
+  font-size: 21px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  font-family: Tiempos, Georgia, serif;
   font-weight: 400;
-  margin-top: 0px;
+}
+
+.journal-archive__title {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 128%;
+  margin: 0;
+  line-height: 30px;
 }
 
 .journal-archive__title a {
   color: white;
   text-decoration: none;
+}
+
+.journal-archive__subtitle {
+  font-style: italic;
+  margin-top: -3px;
+  margin-bottom: 0;
+  line-height: 30px;
 }
 
 .journal-archive__entry {
@@ -698,23 +726,53 @@ a.client__promo__link:hover {
 
 .journal-archive__kicker {
   grid-area: kicker;
+  font-family: Graphik, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 118%;
+  letter-spacing: 0.02em;
   color: #FFD600;
   vertical-align: top;
   height: 100%;
 }
 
 .journal-archive__date {
+  font-family: Graphik, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 118%;
+  letter-spacing: 0.02em;
   color: #FFD600;
+  margin-top: 8px;
+  margin-bottom: 24px;
 }
 
 .journal-archive__excerpt {
-  font-family: Tiempos, serif;
+  font-family: Tiempos, Georgia, serif;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  font-family: Tiempos, Georgia, serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.journal-archive__excerpt p {
+  margin: 0;
 }
 
 .journal-archive__link {
-  color: white;
+  font-family: Tiempos, Georgia, serif;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  font-family: Graphik, sans-serif;
+  color: rgba(255, 255, 255, 0.7);
   font-weight: bold;
   text-decoration: none;
+}
+
+.journal-archive__link:hover {
+  color: #fff;
 }
 
 .journal-archive__link::after {
@@ -740,19 +798,19 @@ html {
   font-kerning: normal;
 }
 
-.journal-archive__kicker {
+.journal-splash__kicker {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 140%;
   letter-spacing: 0.02em;
 }
 
 .splash__promo__date,
-.light-archive__date, .journal-splash__date, .journal-archive__date {
+.light-archive__date, .journal-splash__date {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 118%;
 }
 
@@ -761,7 +819,7 @@ html {
   border: 0px;
 }
 
-.footer-contact-link a, .splash__promo__link, a.client__promo__link {
+.footer-contact-link a, .splash__promo__link, a.client__promo__link, .journal-splash__link {
   font-size: 21px;
   letter-spacing: 0.01em;
   font-weight: bold;
@@ -846,10 +904,10 @@ input[type=submit]:hover {
 }
 
 .article-body {
-  font-family: Tiempos, Georgia, serif;
   font-size: 21px;
   line-height: 32px;
   letter-spacing: -0.02em;
+  font-family: Tiempos, Georgia, serif;
   /* styles for excerpting text content */
   /* styles useful for images */
 }
@@ -860,7 +918,7 @@ input[type=submit]:hover {
 }
 
 .article-body strong {
-  font-family: Tiempos;
+  font-family: Tiempos, Georgia, serif;
   font-weight: 600;
 }
 
@@ -872,7 +930,7 @@ input[type=submit]:hover {
   font-size: 32px;
   line-height: 118%;
   letter-spacing: -0.01em;
-  font-family: Tiempos;
+  font-family: Tiempos, Georgia, serif;
   font-weight: 600;
   margin: 120px 0 24px 0;
 }
@@ -979,7 +1037,7 @@ input[type=submit]:hover {
 
 .article-body blockquote.pullquote-left {
   grid-column: 1 / span 6;
-  font-family: Tiempos, serif;
+  font-family: Tiempos, Georgia, serif;
   font-size: 48px;
   line-height: 58px;
   letter-spacing: -0.02em;
