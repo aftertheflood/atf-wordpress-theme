@@ -56,7 +56,7 @@ body.contact {
 	grid-template-columns: 1fr;
 	row-gap: 5px;
 	column-gap: $column-gap;
-	@include break(medium) {
+	@include break(large) {
 		grid-template-columns: 1fr 1fr;
 		row-gap: 8px;
 		column-gap: 8px;

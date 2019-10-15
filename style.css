@@ -164,7 +164,7 @@ body.contact {
   column-gap: 20px;
 }
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 1100px) {
   .atf-archive-grid {
     grid-template-columns: 1fr 1fr;
     row-gap: 8px;
@@ -634,32 +634,55 @@ a.client__promo__link:hover {
   grid-column: 2 / span 6;
 }
 
-.journal-splash .journal-splash {
-  grid-template-areas: "image image image image image image image image image image image image image image" "text text text text text text text text text text text text text text";
+.journal-splash {
+  grid-template-areas: "image image image image image image image image image image image image image image" ". . text text text text text text text text text text . .";
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 830px) {
+  .journal-splash {
+    grid-template-areas: "image image image image image image image image image image image image image image" ". . . text text text text text text text text . . .";
+  }
+}
+
+@media screen and (min-width: 1100px) {
   .journal-splash {
     grid-template-areas: ". . text text text text text image image image image image image image";
   }
 }
 
 .journal-splash__text {
-  padding: 114px 0 120px 0;
+  padding: 65px 0 70px 0;
   grid-area: text;
+}
+
+@media screen and (min-width: 1100px) {
+  .journal-splash__text {
+    padding: 114px 0 120px 0;
+  }
 }
 
 .journal-splash__image {
   grid-area: image;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  height: 100%;
-  background-image: url(/wp-content/uploads/2019/07/9_white_bg.png);
-  background-size: auto 100%;
+}
+
+@media screen and (min-width: 1100px) {
+  .journal-splash__image {
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100%;
+    background-size: auto 100%;
+  }
 }
 
 .journal-splash__image img {
-  display: none;
+  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 1100px) {
+  .journal-splash__image img {
+    display: none;
+  }
 }
 
 .journal-splash__title,
@@ -675,7 +698,13 @@ a.client__promo__link:hover {
   text-transform: uppercase;
   letter-spacing: 0.04em;
   line-height: 128%;
-  margin: 32px 40px 0 0;
+  margin: 20px 60px 0 0;
+}
+
+@media screen and (min-width: 1100px) {
+  .journal-splash__title {
+    margin: 32px 40px 0 0;
+  }
 }
 
 .journal-splash__subtitle {
@@ -688,14 +717,20 @@ a.client__promo__link:hover {
   line-height: 32px;
   letter-spacing: -0.01em;
   font-family: Tiempos, serif;
-  margin: 36px 40px 36px 0;
+  margin: 25px 0 32px 0;
+}
+
+@media screen and (min-width: 1100px) {
+  .journal-splash__excerpt {
+    margin: 36px 40px 36px 0;
+  }
 }
 
 .journal-archive {
   grid-template-areas: ". kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker ."  ". entries entries entries entries entries entries entries entries entries entries entries entries .";
   background-color: #282828;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 @media screen and (min-width: 420px) {
@@ -704,8 +739,16 @@ a.client__promo__link:hover {
   }
 }
 
+@media screen and (min-width: 830px) {
+  .journal-archive {
+    grid-template-areas: ". . . kicker kicker kicker kicker kicker kicker kicker kicker . . ."  ". . . entries entries entries entries entries entries entries entries . . .";
+  }
+}
+
 @media screen and (min-width: 1100px) {
   .journal-archive {
+    padding-top: 120px;
+    padding-bottom: 120px;
     grid-template-areas: ". . kicker kicker entries entries entries entries entries entries entries entries . .";
   }
 }
@@ -748,8 +791,8 @@ a.client__promo__link:hover {
 
 .journal-archive__entry {
   color: white;
-  padding-top: 35px;
-  padding-bottom: 30px;
+  padding-top: 55px;
+  padding-bottom: 50px;
 }
 
 .journal-archive__entry:nth-of-type(odd), .journal-archive__entry:nth-of-type(even) {
@@ -765,7 +808,11 @@ a.client__promo__link:hover {
   box-shadow: none;
 }
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 1100px) {
+  .journal-archive__entry {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
   .journal-archive__entry:nth-of-type(1), .journal-archive__entry:nth-of-type(2) {
     padding-top: 0;
   }
@@ -802,7 +849,7 @@ a.client__promo__link:hover {
 
 @media screen and (min-width: 830px) {
   .journal-archive__kicker {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
 }
 

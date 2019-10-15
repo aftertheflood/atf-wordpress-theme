@@ -1,27 +1,42 @@
 .journal-splash {
-  .journal-splash {
-    grid-template-areas: "image image image image image image image image image image image image image image"
-    "text text text text text text text text text text text text text text";
+  grid-template-areas: 
+    "image image image image image image image image image image image image image image"
+    ". . text text text text text text text text text text . .";
+  @include break(medium) {
+    grid-template-areas: 
+    "image image image image image image image image image image image image image image"
+    ". . . text text text text text text text text . . .";
   }
-  @include break(small) {grid-template-areas: ". . text text text text text image image image image image image image";}
+  @include break(large) {
+    grid-template-areas: ". . text text text text text image image image image image image image";
+  }
 }
 
 .journal-splash__text {
-  padding: 114px 0 120px 0;
+  padding: 65px 0 70px 0;
   grid-area: text;
+  @include break(large) {
+    padding: 114px 0 120px 0;
+  }
 }
 
 .journal-splash__image {
   grid-area: image;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  height: 100%;
-  background-image: url(/wp-content/uploads/2019/07/9_white_bg.png);
-  background-size: auto 100%;
+  @include break(large) {
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100%;
+    background-size: auto 100%;
+    // background-image: url(/wp-content/uploads/2019/07/9_white_bg.png);
+  }
 }
 
 .journal-splash__image img {
-  display: none;
+  display: block;
+  width: 100%;
+  @include break(large) {
+    display: none;
+  }
 }
 
 .journal-splash__kicker {
@@ -37,7 +52,10 @@
 
 .journal-splash__title {
   @include spaced-caps;
-  margin: 32px 40px 0 0;
+  margin: 20px 60px 0 0;
+  @include break(large) {
+    margin: 32px 40px 0 0;
+  }
 }
 
 .journal-splash__subtitle {
@@ -52,7 +70,10 @@
 .journal-splash__excerpt {
   @include type-body;
   font-family: Tiempos, serif;
-  margin: 36px 40px 36px 0;
+  margin: 25px 0 32px 0;
+  @include break(large) {
+    margin: 36px 40px 36px 0;
+  }
 }
 
 .journal-archive {
@@ -60,18 +81,21 @@
     ". kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker ." 
     ". entries entries entries entries entries entries entries entries entries entries entries entries .";
   background-color: $very-dark-grey;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  // @include break(small) {
-  //   grid-template-areas: 
-  //     ""
-  // }
+  padding-top: 70px;
+  padding-bottom: 70px;
   @include break(tiny) {
     grid-template-areas:  
       ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ." 
       ". . entries entries entries entries entries entries entries entries entries entries . .";
   }
+  @include break(medium) {
+    grid-template-areas:  
+      ". . . kicker kicker kicker kicker kicker kicker kicker kicker . . ." 
+      ". . . entries entries entries entries entries entries entries entries . . .";
+  }
   @include break(large) {
+    padding-top: 120px;
+    padding-bottom: 120px;
     grid-template-areas:  
       ". . kicker kicker entries entries entries entries entries entries entries entries . .";
   }
@@ -108,10 +132,10 @@
 
 .journal-archive__entry {
   color:white;
-  padding-top: 35px; 
+  padding-top: 55px; 
     // This compensates for the negative top margin seen above.
     // In theory the additional padding here should match that, but for whatever reason that doesn't look right, so it is adjusted.
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   &:nth-of-type(odd),
   &:nth-of-type(even) {
     box-shadow: 0 8px 0px $dark-grey;
@@ -124,7 +148,11 @@
     padding-bottom: 0;
     box-shadow: none;
   }
-  @include break(medium) {
+  @include break(large) {
+    padding-top: 35px; 
+    // This compensates for the negative top margin seen above.
+    // In theory the additional padding here should match that, but for whatever reason that doesn't look right, so it is adjusted.
+    padding-bottom: 30px;
     &:nth-of-type(1),
     &:nth-of-type(2) {
       padding-top: 0;
@@ -156,7 +184,7 @@
   color: $journal-color;
   height: 100%;
   @include break(medium) {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
   @include break(large) {
     margin-top: -6px; // this is to match the top of the archive entries, which are also adjusted upward.
