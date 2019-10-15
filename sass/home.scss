@@ -21,8 +21,13 @@ where in the rendered web page you only see one column to the outside of the tex
 
 .splash {
   grid-template-areas:  
-  " . . intro intro intro intro intro intro . . . . . . "
-  " . . . . . . . promo promo promo promo promo promo .";
+    " . intro intro intro intro intro intro intro intro intro intro intro intro . "
+    " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
+  @include break(medium) {
+    grid-template-areas:  
+    " . . intro intro intro intro intro intro . . . . . . "
+    " . . . . . . . promo promo promo promo promo promo .";
+  }
 }
 
 .splash__intro {
@@ -47,9 +52,11 @@ where in the rendered web page you only see one column to the outside of the tex
 .splash__promo {
   grid-area: promo;
   background-color: #FFD600;
-  padding: $promoPadding;
-  padding-top: ($promoPadding - 1px);
-  margin-bottom: $column-gap;
+  margin: 0;
+  padding: ($promoPadding - 1px) $promoPadding $promoPadding $promoPadding;
+  @include break(medium) {
+    margin-bottom: $column-gap;
+  }
 }
 
 .splash__promo__title,
@@ -68,13 +75,13 @@ where in the rendered web page you only see one column to the outside of the tex
 
 .splash__promo__subtitle {
   margin-top: -1px;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   font-style: italic;
 }
 
 .splash__promo__date,
 .light-archive__date {
-  @extend %date;
+  @include type-label;
   color: $half-black;
   margin-bottom: ($promoPadding - 7px);
 }
@@ -98,12 +105,7 @@ where in the rendered web page you only see one column to the outside of the tex
 
 @media (max-width: 650px) {
   .splash{
-    grid-template-areas:  " intro intro intro intro intro intro intro intro intro intro intro intro "
-                          " promo promo promo promo promo promo promo promo promo promo promo promo ";
-  }
-  .splash__promo {
-    margin-right: 0px;
-    margin-bottom: 0px;
+    
   }
 }
 

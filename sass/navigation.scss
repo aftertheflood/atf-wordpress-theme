@@ -6,7 +6,7 @@ $activeMarker: 30px;
 
 nav {
   position: fixed;
-  height: $nav-height;
+  height: 58px;
   width: 100%;
   top: 0px;
 	background-color: white;
@@ -17,6 +17,8 @@ nav {
   justify-content: space-between;
   align-content: stretch;
   align-items: flex-start;
+  @include break(medium) {height: 60px;}
+  @include break(large) {height: 62px;}
 }
 
 .header-links {
@@ -33,7 +35,7 @@ nav {
 .header-link {
   position: relative;
   display: inline-block;
-  padding-top: ($column-gap/2)-1;
+  padding-top: ($column-gap/2)-2;
   padding-bottom: $column-gap;
   padding-left: $column-gap/2;
   padding-right: $column-gap/2;
@@ -75,6 +77,12 @@ nav.contact {
   margin-right: auto;
   left: 0;
   right: 0;
+  @include break(medium) {
+    bottom: -($activeMarker / 2 - 7);
+  }
+  @include break(large) {
+    bottom: -($activeMarker / 2 - 9);
+  }
 }
 
 .active-marker-circle {

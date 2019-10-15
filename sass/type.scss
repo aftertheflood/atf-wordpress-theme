@@ -7,34 +7,50 @@ html {
 
 // Type mixins
 
-@mixin type-serif {
-    font-family: Tiempos, Georgia, serif;
-}
-
-@mixin type-sans {
-    font-family: Graphik, sans-serif;
-}
+@mixin type-serif {font-family: Tiempos, Georgia, serif;}
+@mixin type-sans {font-family: Graphik, sans-serif;}
 
 
 @mixin type-body {
-    font-size: 21px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 27px;
     letter-spacing: -0.01em;
+    @include break(medium) {
+        font-size: 19px;
+        line-height: 30px;
+        letter-spacing: -0.01em;
+    }
+    @include break(large) {
+        font-size: 20px;
+        line-height: 31px;
+        letter-spacing: -0.01em;
+    }
 }
 
 @mixin type-small {
     font-family: Tiempos, Georgia, serif;
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: -0.01em;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    @include break(medium) {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    @include break(large) {
+        font-size: 17px;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+    }
 }
 
 @mixin type-label {
     font-family: Graphik, sans-serif;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 118%;
     letter-spacing: 0.02em;
+    @include break(medium) {font-size: 14px;}
+    @include break(large) {font-size: 15px;}
 }
 
 // The really big type on the homepage, top of project pages, etc.
@@ -46,9 +62,15 @@ html {
 
 // Standard headings for the promo modules, etc.
 @mixin type-heading-small {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 118%;
     letter-spacing: -0.01em;
+    @include break(medium) {
+        font-size: 32px;
+    }
+    @include break(large) {
+        font-size: 34px;
+    }
 }
 
 @mixin spaced-caps {
@@ -57,20 +79,20 @@ html {
     line-height: 128%;
 }
 
-%kicker {
-    font-family: Graphik, sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 140%;
-    letter-spacing: 0.02em;
-}
+// %kicker {
+//     font-family: Graphik, sans-serif;
+//     font-weight: bold;
+//     font-size: 15px;
+//     line-height: 140%;
+//     letter-spacing: 0.02em;
+// }
 
-%date {
-    font-family: Graphik, sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 118%;
-}
+// %date {
+//     font-family: Graphik, sans-serif;
+//     font-weight: bold;
+//     font-size: 15px;
+//     line-height: 118%;
+// }
 
 %more-link {
 

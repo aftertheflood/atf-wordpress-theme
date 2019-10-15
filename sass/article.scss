@@ -1,7 +1,15 @@
 .article-head {
   margin: 114px 0 120px 0;
-  .article-title {grid-column: 3 / span 6;}
-  h1 {
+  .article-title {
+    grid-column: 3 / span 8;
+    @include break(medium) {
+      grid-column: 4 / span 7;
+    }
+    @include break(large) {
+      grid-column: 3 / span 6;
+    }
+  }
+    h1 {
     @include type-heading-small;
     @include spaced-caps;
     @include type-serif;
@@ -93,8 +101,11 @@
   .article__content {
     padding-top: 0px;
     margin-top: -7px;
-    grid-column: 2 / span 10;
+    grid-column: 3 / span 10;
     @include break(medium) {
+      grid-column: 4 / span 8;
+    }
+    @include break(large) {
       grid-column: 5 / span 6;
     }
   }

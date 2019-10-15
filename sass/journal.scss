@@ -39,8 +39,9 @@
   }
 }
 
-.journal-splash__kicker {
-  @extend %kicker;
+.journal-splash__kicker, 
+.journal-splash__date {
+  @include type-label;
 }
 
 .journal-splash__title,
@@ -61,10 +62,6 @@
 .journal-splash__subtitle {
   font-style: italic; 
   margin: -1px 40px 10px 0;
-}
-
-.journal-splash__date {
-  @extend %date;
 }
 
 .journal-splash__excerpt {

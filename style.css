@@ -95,22 +95,6 @@ html {
   font-kerning: normal;
 }
 
-.journal-splash__kicker {
-  font-family: Graphik, sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 140%;
-  letter-spacing: 0.02em;
-}
-
-.splash__promo__date,
-.light-archive__date, .journal-splash__date {
-  font-family: Graphik, sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 118%;
-}
-
 .footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
   padding: 13px 20px 18px 20px;
   border: 0px;
@@ -182,22 +166,6 @@ html {
   font-kerning: normal;
 }
 
-.journal-splash__kicker {
-  font-family: Graphik, sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 140%;
-  letter-spacing: 0.02em;
-}
-
-.splash__promo__date,
-.light-archive__date, .journal-splash__date {
-  font-family: Graphik, sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 118%;
-}
-
 .footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
   padding: 13px 20px 18px 20px;
   border: 0px;
@@ -225,12 +193,24 @@ html {
 
 .atf-footer h2 {
   grid-area: heading;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 118%;
   letter-spacing: -0.01em;
   font-family: Tiempos, serif;
   font-weight: 400;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 830px) {
+  .atf-footer h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .atf-footer h2 {
+    font-size: 34px;
+  }
 }
 
 .footer-contact-link {
@@ -301,7 +281,13 @@ where in the rendered web page you only see one column to the outside of the tex
 /* The home splash zone 
 -------------------------------------------------------------------------------------- */
 .splash {
-  grid-template-areas: " . . intro intro intro intro intro intro . . . . . . " " . . . . . . . promo promo promo promo promo promo .";
+  grid-template-areas: " . intro intro intro intro intro intro intro intro intro intro intro intro . " " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
+}
+
+@media screen and (min-width: 830px) {
+  .splash {
+    grid-template-areas: " . . intro intro intro intro intro intro . . . . . . " " . . . . . . . promo promo promo promo promo promo .";
+  }
 }
 
 .splash__intro {
@@ -330,19 +316,38 @@ where in the rendered web page you only see one column to the outside of the tex
 .splash__promo {
   grid-area: promo;
   background-color: #FFD600;
-  padding: 40px;
-  padding-top: 39px;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 39px 40px 40px 40px;
+}
+
+@media screen and (min-width: 830px) {
+  .splash__promo {
+    margin-bottom: 20px;
+  }
 }
 
 .splash__promo__title,
 .splash__promo__subtitle {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 118%;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
   padding-right: 40px;
+}
+
+@media screen and (min-width: 830px) {
+  .splash__promo__title,
+  .splash__promo__subtitle {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .splash__promo__title,
+  .splash__promo__subtitle {
+    font-size: 34px;
+  }
 }
 
 .splash__promo__title {
@@ -355,14 +360,33 @@ where in the rendered web page you only see one column to the outside of the tex
 
 .splash__promo__subtitle {
   margin-top: -1px;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   font-style: italic;
 }
 
 .splash__promo__date,
 .light-archive__date {
+  font-family: Graphik, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 118%;
+  letter-spacing: 0.02em;
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 33px;
+}
+
+@media screen and (min-width: 830px) {
+  .splash__promo__date,
+  .light-archive__date {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .splash__promo__date,
+  .light-archive__date {
+    font-size: 15px;
+  }
 }
 
 .splash__promo__excerpt {
@@ -380,16 +404,6 @@ where in the rendered web page you only see one column to the outside of the tex
 
 .splash__promo__link::after {
   content: ' \00bb';
-}
-
-@media (max-width: 650px) {
-  .splash {
-    grid-template-areas: " intro intro intro intro intro intro intro intro intro intro intro intro " " promo promo promo promo promo promo promo promo promo promo promo promo ";
-  }
-  .splash__promo {
-    margin-right: 0px;
-    margin-bottom: 0px;
-  }
 }
 
 /* The home (and clients page) feature blocks
@@ -511,24 +525,64 @@ where in the rendered web page you only see one column to the outside of the tex
 .client__promo__sector {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 118%;
   letter-spacing: 0.02em;
 }
 
+@media screen and (min-width: 830px) {
+  .client__promo__sector {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .client__promo__sector {
+    font-size: 15px;
+  }
+}
+
 .client__promo__title {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 118%;
   letter-spacing: -0.01em;
   margin-top: 4px;
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 830px) {
+  .client__promo__title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .client__promo__title {
+    font-size: 34px;
+  }
+}
+
 .client__promo__excerpt {
-  font-size: 21px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 27px;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
+}
+
+@media screen and (min-width: 830px) {
+  .client__promo__excerpt {
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .client__promo__excerpt {
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: -0.01em;
+  }
 }
 
 .client__promo__excerpt p {
@@ -685,13 +739,50 @@ a.client__promo__link:hover {
   }
 }
 
+.journal-splash__kicker,
+.journal-splash__date {
+  font-family: Graphik, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 118%;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 830px) {
+  .journal-splash__kicker,
+  .journal-splash__date {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .journal-splash__kicker,
+  .journal-splash__date {
+    font-size: 15px;
+  }
+}
+
 .journal-splash__title,
 .journal-splash__subtitle {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 118%;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
+}
+
+@media screen and (min-width: 830px) {
+  .journal-splash__title,
+  .journal-splash__subtitle {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .journal-splash__title,
+  .journal-splash__subtitle {
+    font-size: 34px;
+  }
 }
 
 .journal-splash__title {
@@ -713,11 +804,27 @@ a.client__promo__link:hover {
 }
 
 .journal-splash__excerpt {
-  font-size: 21px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 27px;
   letter-spacing: -0.01em;
   font-family: Tiempos, serif;
   margin: 25px 0 32px 0;
+}
+
+@media screen and (min-width: 830px) {
+  .journal-splash__excerpt {
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .journal-splash__excerpt {
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: -0.01em;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -755,11 +862,29 @@ a.client__promo__link:hover {
 
 .journal-archive__title,
 .journal-archive__subtitle {
-  font-size: 21px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 27px;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
+}
+
+@media screen and (min-width: 830px) {
+  .journal-archive__title,
+  .journal-archive__subtitle {
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .journal-archive__title,
+  .journal-archive__subtitle {
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: -0.01em;
+  }
 }
 
 .journal-archive__title {
@@ -840,11 +965,23 @@ a.client__promo__link:hover {
   grid-area: kicker;
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 118%;
   letter-spacing: 0.02em;
   color: #FFD600;
   height: 100%;
+}
+
+@media screen and (min-width: 830px) {
+  .journal-archive__kicker {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .journal-archive__kicker {
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -863,12 +1000,24 @@ a.client__promo__link:hover {
 .journal-archive__date {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 118%;
   letter-spacing: 0.02em;
   color: #FFD600;
   margin-top: 8px;
   margin-bottom: 18px;
+}
+
+@media screen and (min-width: 830px) {
+  .journal-archive__date {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .journal-archive__date {
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -879,11 +1028,26 @@ a.client__promo__link:hover {
 
 .journal-archive__excerpt {
   font-family: Tiempos, Georgia, serif;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: -0.01em;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0em;
   font-family: Tiempos, Georgia, serif;
   color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (min-width: 830px) {
+  .journal-archive__excerpt {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .journal-archive__excerpt {
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+  }
 }
 
 .journal-archive__excerpt p {
@@ -892,13 +1056,28 @@ a.client__promo__link:hover {
 
 .journal-archive__link {
   font-family: Tiempos, Georgia, serif;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: -0.01em;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0em;
   font-family: Graphik, sans-serif;
   color: rgba(255, 255, 255, 0.7);
   font-weight: bold;
   text-decoration: none;
+}
+
+@media screen and (min-width: 830px) {
+  .journal-archive__link {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .journal-archive__link {
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+  }
 }
 
 .journal-archive__link:hover {
@@ -926,22 +1105,6 @@ html {
   text-rendering: optimizeLegibility;
   font-variant-ligatures: common-ligatures;
   font-kerning: normal;
-}
-
-.journal-splash__kicker {
-  font-family: Graphik, sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 140%;
-  letter-spacing: 0.02em;
-}
-
-.splash__promo__date,
-.light-archive__date, .journal-splash__date {
-  font-family: Graphik, sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 118%;
 }
 
 .footer-contact-link a, a.client__promo__link, .journal-splash__link, .journal-splash__link:hover, input[type=submit], input[type=submit]:hover {
@@ -1011,11 +1174,23 @@ input[type=submit]:hover {
 }
 
 .article-head .article-title {
-  grid-column: 3 / span 6;
+  grid-column: 3 / span 8;
+}
+
+@media screen and (min-width: 830px) {
+  .article-head .article-title {
+    grid-column: 4 / span 7;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .article-head .article-title {
+    grid-column: 3 / span 6;
+  }
 }
 
 .article-head h1 {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 118%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
@@ -1026,20 +1201,60 @@ input[type=submit]:hover {
   margin: 0;
 }
 
+@media screen and (min-width: 830px) {
+  .article-head h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .article-head h1 {
+    font-size: 34px;
+  }
+}
+
 .article-head .journal-splash__subtitle {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 118%;
   letter-spacing: -0.01em;
   margin: 0;
 }
 
+@media screen and (min-width: 830px) {
+  .article-head .journal-splash__subtitle {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .article-head .journal-splash__subtitle {
+    font-size: 34px;
+  }
+}
+
 .article-body {
-  font-size: 21px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 27px;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   /* styles for excerpting text content */
   /* styles useful for images */
+}
+
+@media screen and (min-width: 830px) {
+  .article-body {
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .article-body {
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: -0.01em;
+  }
 }
 
 .article-body p {
@@ -1057,12 +1272,24 @@ input[type=submit]:hover {
 }
 
 .article-body h2 {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 118%;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 600;
   margin: 120px 0 24px 0;
+}
+
+@media screen and (min-width: 830px) {
+  .article-body h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .article-body h2 {
+    font-size: 34px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -1118,11 +1345,23 @@ input[type=submit]:hover {
 .article-body .article__date {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 118%;
   letter-spacing: 0.02em;
   height: auto;
   grid-column: 2 / span 10;
+}
+
+@media screen and (min-width: 830px) {
+  .article-body .article__date {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .article-body .article__date {
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -1135,10 +1374,16 @@ input[type=submit]:hover {
 .article-body .article__content {
   padding-top: 0px;
   margin-top: -7px;
-  grid-column: 2 / span 10;
+  grid-column: 3 / span 10;
 }
 
 @media screen and (min-width: 830px) {
+  .article-body .article__content {
+    grid-column: 4 / span 8;
+  }
+}
+
+@media screen and (min-width: 1100px) {
   .article-body .article__content {
     grid-column: 5 / span 6;
   }
@@ -1200,7 +1445,7 @@ input[type=submit]:hover {
 
 nav {
   position: fixed;
-  height: 60px;
+  height: 58px;
   width: 100%;
   top: 0px;
   background-color: white;
@@ -1213,14 +1458,38 @@ nav {
   align-items: flex-start;
 }
 
+@media screen and (min-width: 830px) {
+  nav {
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  nav {
+    height: 62px;
+  }
+}
+
 .header-links {
   display: inline-block;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 118%;
   letter-spacing: -0.01em;
   font-weight: bold;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@media screen and (min-width: 830px) {
+  .header-links {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .header-links {
+    font-size: 34px;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -1232,7 +1501,7 @@ nav {
 .header-link {
   position: relative;
   display: inline-block;
-  padding-top: 9px;
+  padding-top: 8px;
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1289,6 +1558,18 @@ nav.contact a {
   right: 0;
 }
 
+@media screen and (min-width: 830px) {
+  .active-marker {
+    bottom: -8px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .active-marker {
+    bottom: -6px;
+  }
+}
+
 .active-marker-circle {
   width: 30px;
   height: 30px;
@@ -1308,7 +1589,7 @@ nav.contact a {
 }
 
 .nav-place-holder {
-  height: 60px;
+  height: 62px;
 }
 
 .full-nav {
