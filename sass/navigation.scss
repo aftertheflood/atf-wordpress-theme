@@ -23,15 +23,24 @@ nav {
   display: inline-block;
   @include type-heading-small;
   font-weight: bold;
+  padding-left: $column-gap/2;
+  padding-right: $column-gap/2;
+  @include break(large) {
+    padding: 0;
+  }
 }
 
 .header-link {
-  padding-top: 9px;
-  padding-bottom: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
   position: relative;
   display: inline-block;
+  padding-top: ($column-gap/2)-1;
+  padding-bottom: $column-gap;
+  padding-left: $column-gap/2;
+  padding-right: $column-gap/2;
+  @include break(large) {
+    padding-left: $column-gap;
+    padding-right: $column-gap;
+  }
 }
 
 nav a {
@@ -45,16 +54,15 @@ nav a {
 
 nav.clients {background-color: $clients-color;}
 nav.journal {background-color: $journal-color;}
-nav.about {background-color: $about-color;}
+nav.about   {background-color: $about-color;}
 
 nav.contact {
 	background-color: $contact-color;
-  color:$contact-text;
+  color: $contact-text;
   fill:white;
-}
-
-nav.contact a {
-	color: white;
+  a {
+    color: white;
+  }
 }
 
 .active-marker {
@@ -108,8 +116,9 @@ nav.contact a {
 nav.compact-menu {
   z-index: 1000; // need to fix this
   display: block;
+  // margin-left: 100px;
   position: relative;
-  background: black;
+  background: red;
   color: white;
   a {
     display: block;
@@ -130,7 +139,7 @@ nav.compact-menu.closed {
   @include break(medium) {display: none;}
 }
 nav.compact-menu.open {
-  background: black;
+  // background: red;
   position: fixed;
   height: 1000vh;
   @include break(medium) {display: none;}
