@@ -219,8 +219,8 @@ where in the rendered web page you only see one column to the outside of the tex
 
 .client__promo__title {
   @include type-heading-small;
-  margin-top: 10px;
-  margin-bottom: 36px;
+  margin-top: 4px;
+  margin-bottom: 30px;
 }
 
 .client__promo__excerpt{
@@ -228,9 +228,9 @@ where in the rendered web page you only see one column to the outside of the tex
   @include type-serif;
   p {
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: 0.9em;
     &:last-of-type {
-      margin-bottom: 40px;
+      margin-bottom: 34px;
     }
   }
 }
@@ -248,7 +248,7 @@ a.client__promo__link:hover{
   color: #000;
 }
 
-.more-clients-link{
+.more-clients-link {
   @include type-heading-big;
   font-weight: 800;
   grid-column: 3 / span 6;

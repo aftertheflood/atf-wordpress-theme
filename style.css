@@ -152,7 +152,6 @@ body.contact {
   display: grid;
   grid-template-columns: 0px repeat(12, 1fr) 0px;
   column-gap: 20px;
-  grid-auto-rows: minmax(50px, max-content);
   margin: 0px;
   align-items: center;
 }
@@ -521,24 +520,24 @@ where in the rendered web page you only see one column to the outside of the tex
   font-size: 32px;
   line-height: 118%;
   letter-spacing: -0.01em;
-  margin-top: 10px;
-  margin-bottom: 36px;
+  margin-top: 4px;
+  margin-bottom: 30px;
 }
 
 .client__promo__excerpt {
   font-size: 21px;
   line-height: 32px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
 }
 
 .client__promo__excerpt p {
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0.9em;
 }
 
 .client__promo__excerpt p:last-of-type {
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 a.client__promo__link {
@@ -676,7 +675,7 @@ a.client__promo__link:hover {
   text-transform: uppercase;
   letter-spacing: 0.04em;
   line-height: 128%;
-  margin: 36px 40px 0 0;
+  margin: 32px 40px 0 0;
 }
 
 .journal-splash__subtitle {
@@ -687,7 +686,7 @@ a.client__promo__link:hover {
 .journal-splash__excerpt {
   font-size: 21px;
   line-height: 32px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   font-family: Tiempos, serif;
   margin: 36px 40px 36px 0;
 }
@@ -699,7 +698,7 @@ a.client__promo__link:hover {
   padding-bottom: 120px;
 }
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 420px) {
   .journal-archive {
     grid-template-areas: ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ."  ". . entries entries entries entries entries entries entries entries entries entries . .";
   }
@@ -715,7 +714,7 @@ a.client__promo__link:hover {
 .journal-archive__subtitle {
   font-size: 21px;
   line-height: 32px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
 }
@@ -761,6 +760,11 @@ a.client__promo__link:hover {
   padding-right: 0;
 }
 
+.journal-archive__entry:last-of-type {
+  padding-bottom: 0;
+  box-shadow: none;
+}
+
 @media screen and (min-width: 830px) {
   .journal-archive__entry:nth-of-type(1), .journal-archive__entry:nth-of-type(2) {
     padding-top: 0;
@@ -793,9 +797,20 @@ a.client__promo__link:hover {
   line-height: 118%;
   letter-spacing: 0.02em;
   color: #FFD600;
-  vertical-align: top;
   height: 100%;
-  margin-top: -4px;
+}
+
+@media screen and (min-width: 830px) {
+  .journal-archive__kicker {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .journal-archive__kicker {
+    margin-top: -6px;
+    padding-bottom: 0;
+  }
 }
 
 .journal-archive__date {
@@ -806,7 +821,13 @@ a.client__promo__link:hover {
   letter-spacing: 0.02em;
   color: #FFD600;
   margin-top: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 830px) {
+  .journal-archive__date {
+    margin-bottom: 24px;
+  }
 }
 
 .journal-archive__excerpt {
@@ -968,7 +989,7 @@ input[type=submit]:hover {
 .article-body {
   font-size: 21px;
   line-height: 32px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   /* styles for excerpting text content */
   /* styles useful for images */
@@ -976,7 +997,7 @@ input[type=submit]:hover {
 
 .article-body p {
   font-weight: 400;
-  margin: 0 0 24px 0;
+  margin: 0 0 0.9em 0;
 }
 
 .article-body strong {

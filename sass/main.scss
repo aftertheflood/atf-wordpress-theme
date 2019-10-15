@@ -45,7 +45,7 @@ body.contact {
   display: grid;
   grid-template-columns: 0px repeat(12, 1fr) 0px;
   column-gap: $column-gap;
-  grid-auto-rows: minmax(50px, max-content);
+  // grid-auto-rows: minmax(50px, max-content); // I don't *think* we need this.
   margin: 0px;
   align-items: center;
 }
