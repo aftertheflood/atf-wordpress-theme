@@ -54,11 +54,11 @@ body.contact {
 	display: grid;
 	grid-area: entries;
 	grid-template-columns: 1fr 1fr;
-	row-gap: 5px;
-	column-gap: $column-gap;
+	row-gap: 8px;
+	column-gap: 8px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
 	.atf-archive-grid{
 		display: grid;
 		grid-area: entries;

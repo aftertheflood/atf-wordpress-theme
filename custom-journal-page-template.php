@@ -26,7 +26,7 @@ $pageTag = 'journal';
   <div class="journal-archive__kicker">Recently</div>
   <div class="atf-archive-grid">
   <?php 
-  $posts = get_category_post_range('journal', 1, 9);
+  $posts = get_category_post_range('journal', 1, 10);
   while ( $posts->have_posts() ) : $posts->the_post(); ?>
   <div class="journal-archive__entry">
     <h2 class="journal-archive__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
