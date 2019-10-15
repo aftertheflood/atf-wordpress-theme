@@ -82,82 +82,82 @@ nav.contact a {
 }
 
 .header-links.home-link.scrolled,
-.header-links.home-link.persist
-{
-  visibility:visible;
-  opacity:1;
+.header-links.home-link.persist {
+  visibility: visible;
+  opacity: 1;
 }
 
-.nav-place-holder{
+.nav-place-holder {
 	height: $nav-height;
 }
 
-.compact-nav{
+.full-nav {
   display: none;
+  @include break(medium) {
+    display: flex;
+  }
 }
 
-nav.compact-menu{
-  display: none;
-  overflow: hidden;
+.compact-nav {
+  display: flex;
+  @include break(medium) {
+    display: none;
+  }
+}
+
+nav.compact-menu {
+  z-index: 1000; // need to fix this
+  display: block;
+  position: relative;
   background: black;
-  color:white;
-  padding-left: 20px;
+  color: white;
+  a {
+    display: block;
+    color: white;
+  }
+  @include break(medium) {
+    display: none;
+    overflow: hidden;
+    // background: black;
+    // color:white;
+    padding-left: 20px;
+  }
 }
 
-.compact-menu__link{
-  color:white;
+nav.compact-menu.closed {
+  position: fixed;
+  height: 0vh;
+  @include break(medium) {display: none;}
+}
+nav.compact-menu.open {
+  background: black;
+  position: fixed;
+  height: 1000vh;
+  @include break(medium) {display: none;}
 }
 
-.compact-menu__title{
+.compact-menu__link {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 120%;
+  @include break(medium) {
+    color:white;
+  }
+}
+
+.compact-menu__title {
   color:rgba(255,255,255,0.5);
 }
 
-.close-menu-button{
-  margin-top:15px;
-  margin-right:10px;
+.close-menu-button {
+  margin-top: 15px;
+  margin-right: 10px;
 }
 
-.compact-menu__close-icon{
-
+.compact-menu__close-icon {
 }
 
-.compact-menu__head{
- display: flex;
- justify-content:space-between;
-}
-
-@media (max-width: 850px) {
-  nav.compact-menu{
-    display: block;
-    position: relative;
-    background: black;
-    color:white;
-  }
-
-  nav.compact-menu.closed{
-    position: fixed;
-    height: 0vh;
-  }
-
-  nav.compact-menu.open{
-    position: fixed;
-    height: 1000vh;
-  }
-
-  .compact-menu a{
-    display: block;
-  }
-  .compact-nav{
-    display: flex;
-  }
-
-  .compact-menu__link{
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 120%;
-  }
-
-  .full-nav{
-    display: none;
-  }
+.compact-menu__head {
+  display: flex;
+  justify-content: space-between;
 }

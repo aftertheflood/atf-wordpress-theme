@@ -37,6 +37,7 @@
     @include type-serif;
     font-weight: 600;
     margin: 120px 0 24px 0;
+    @include break(medium) {grid-column: 2 / span 10;}
   }
 
   h3 {
@@ -81,30 +82,25 @@
 
   .article__date {
     @include type-label;
-    grid-column: 3 / span 2;
-    height: 100%;
+    height:auto; 
+    grid-column: 2 / span 10;
+    @include break(medium) {
+      height: 100%;
+      grid-column: 3 / span 2;
+    }
   }
 
   .article__content {
     padding-top: 0px;
     margin-top: -7px;
+    grid-column: 2 / span 10;
+    @include break(medium) {
+      grid-column: 5 / span 6;
+    }
   }
 
-  .article__content, img, p, blockquote, figure, ul, div, h2, h3, h4 {
+  img, p, blockquote, figure, ul, div, h2, h3, h4 {
     grid-column: 5 / span 6;
-  }
-
-  @media (max-width: 800px) {
-    .article__date {
-      height:auto; 
-      grid-column: 2 / span 10;
-    }
-    .article__content {
-      grid-column: 2 / span 10;
-    }
-    h2 {
-      grid-column: 2 / span 10;
-    }
   }
 
 /* styles for excerpting text content */

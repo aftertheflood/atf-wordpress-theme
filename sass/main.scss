@@ -12,6 +12,7 @@ version 2.0 (http://www.gnu.org/licensesoji/gpl-2.0.html)
 -----------------------------------------------------------------------------------*/
 
 @charset 'utf-8';
+@import 'breakpoints';
 @import 'fonts';
 @import 'type';
 @import 'dimensions';
@@ -43,31 +44,24 @@ body.contact {
 .atf-grid {
   display: grid;
   grid-template-columns: 0px repeat(12, 1fr) 0px;
-  // row-gap: 5px;
   column-gap: $column-gap;
   grid-auto-rows: minmax(50px, max-content);
   margin: 0px;
   align-items: center;
 }
 
-.atf-archive-grid {
+.atf-archive-grid{
 	display: grid;
 	grid-area: entries;
-	grid-template-columns: 1fr 1fr;
-	row-gap: 8px;
-	column-gap: 8px;
-}
-
-@media (max-width: 820px) {
-	.atf-archive-grid{
-		display: grid;
-		grid-area: entries;
-		grid-template-columns: 1fr;
-		row-gap: 5px;
-		column-gap: $column-gap;
+	grid-template-columns: 1fr;
+	row-gap: 5px;
+	column-gap: $column-gap;
+	@include break(medium) {
+		grid-template-columns: 1fr 1fr;
+		row-gap: 8px;
+		column-gap: 8px;
 	}
 }
-
 
 .ragged {
   margin-right:-20px;
