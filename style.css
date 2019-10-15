@@ -631,15 +631,15 @@ a.client__promo__link:hover {
 
 .journal-splash__image {
   grid-area: image;
-  background-size: auto 100%;
   background-repeat: no-repeat;
   overflow: hidden;
+  height: 100%;
+  background-image: url(/wp-content/uploads/2019/07/9_white_bg.png);
+  background-size: auto 100%;
 }
 
 .journal-splash__image img {
-  display: block;
-  object-fit: cover;
-  width: 200%;
+  display: none;
 }
 
 .journal-splash__title,
