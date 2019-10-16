@@ -205,13 +205,25 @@ html {
 
 .atf-footer h2 {
   grid-area: heading;
-  font-size: 30px;
+  font-size: 22px;
   line-height: 118%;
   letter-spacing: -0.01em;
   font-family: Tiempos, serif;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 420px) {
+  .atf-footer h2 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .atf-footer h2 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -392,20 +404,76 @@ where in the rendered web page you only see one column to the outside of the tex
 }
 
 .splash__intro__title {
-  font-size: 56px;
-  line-height: 65px;
+  font-size: 33px;
+  line-height: 38px;
   letter-spacing: -0.02em;
   margin-top: 0;
   margin-bottom: -2px;
 }
 
+@media screen and (min-width: 420px) {
+  .splash__intro__title {
+    font-size: 39px;
+    line-height: 47px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .splash__intro__title {
+    font-size: 46px;
+    line-height: 52px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .splash__intro__title {
+    font-size: 52px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .splash__intro__title {
+    font-size: 56px;
+    line-height: 65px;
+  }
+}
+
 .splash__intro__description {
-  font-size: 56px;
-  line-height: 65px;
+  font-size: 33px;
+  line-height: 38px;
   letter-spacing: -0.02em;
   font-family: Tiempos, serif;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 420px) {
+  .splash__intro__description {
+    font-size: 39px;
+    line-height: 47px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .splash__intro__description {
+    font-size: 46px;
+    line-height: 52px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .splash__intro__description {
+    font-size: 52px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .splash__intro__description {
+    font-size: 56px;
+    line-height: 65px;
+  }
 }
 
 .splash__promo {
@@ -423,12 +491,26 @@ where in the rendered web page you only see one column to the outside of the tex
 
 .splash__promo__title,
 .splash__promo__subtitle {
-  font-size: 30px;
+  font-size: 22px;
   line-height: 118%;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
   padding-right: 20px;
+}
+
+@media screen and (min-width: 420px) {
+  .splash__promo__title,
+  .splash__promo__subtitle {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .splash__promo__title,
+  .splash__promo__subtitle {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -660,11 +742,23 @@ where in the rendered web page you only see one column to the outside of the tex
 }
 
 .client__promo__title {
-  font-size: 30px;
+  font-size: 22px;
   line-height: 118%;
   letter-spacing: -0.01em;
   margin-top: 4px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 420px) {
+  .client__promo__title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .client__promo__title {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -680,10 +774,24 @@ where in the rendered web page you only see one column to the outside of the tex
 }
 
 .client__promo__excerpt {
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 25px;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
+}
+
+@media screen and (min-width: 420px) {
+  .client__promo__excerpt {
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .client__promo__excerpt {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -698,7 +806,6 @@ where in the rendered web page you only see one column to the outside of the tex
   .client__promo__excerpt {
     font-size: 20px;
     line-height: 31px;
-    letter-spacing: -0.01em;
   }
 }
 
@@ -753,14 +860,42 @@ a.client__promo__link:hover {
 }
 
 .more-clients-link {
-  font-size: 56px;
-  line-height: 65px;
+  font-size: 33px;
+  line-height: 38px;
   letter-spacing: -0.02em;
   font-weight: 800;
-  grid-column: 3 / span 6;
+  grid-column: 3 / span 9;
   text-decoration: none;
   color: #000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 420px) {
+  .more-clients-link {
+    font-size: 39px;
+    line-height: 47px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .more-clients-link {
+    font-size: 46px;
+    line-height: 52px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .more-clients-link {
+    font-size: 52px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .more-clients-link {
+    font-size: 56px;
+    line-height: 65px;
+  }
 }
 
 .more-clients-link:hover {
@@ -852,11 +987,25 @@ a.client__promo__link:hover {
 
 .journal-splash__title,
 .journal-splash__subtitle {
-  font-size: 30px;
+  font-size: 22px;
   line-height: 118%;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
+}
+
+@media screen and (min-width: 420px) {
+  .journal-splash__title,
+  .journal-splash__subtitle {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .journal-splash__title,
+  .journal-splash__subtitle {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -891,11 +1040,25 @@ a.client__promo__link:hover {
 }
 
 .journal-splash__excerpt {
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 25px;
   letter-spacing: -0.01em;
   font-family: Tiempos, serif;
   margin: 25px 0 32px 0;
+}
+
+@media screen and (min-width: 420px) {
+  .journal-splash__excerpt {
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .journal-splash__excerpt {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -910,7 +1073,6 @@ a.client__promo__link:hover {
   .journal-splash__excerpt {
     font-size: 20px;
     line-height: 31px;
-    letter-spacing: -0.01em;
   }
 }
 
@@ -949,12 +1111,28 @@ a.client__promo__link:hover {
 
 .journal-archive__title,
 .journal-archive__subtitle {
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 25px;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
   line-height: 24px;
+}
+
+@media screen and (min-width: 420px) {
+  .journal-archive__title,
+  .journal-archive__subtitle {
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .journal-archive__title,
+  .journal-archive__subtitle {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -971,7 +1149,6 @@ a.client__promo__link:hover {
   .journal-archive__subtitle {
     font-size: 20px;
     line-height: 31px;
-    letter-spacing: -0.01em;
   }
 }
 
@@ -1438,7 +1615,7 @@ input[type=submit]:hover {
 }
 
 .article-head h1 {
-  font-size: 30px;
+  font-size: 22px;
   line-height: 118%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
@@ -1446,6 +1623,18 @@ input[type=submit]:hover {
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
   margin: 0;
+}
+
+@media screen and (min-width: 420px) {
+  .article-head h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-head h1 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -1461,10 +1650,22 @@ input[type=submit]:hover {
 }
 
 .article-head .journal-splash__subtitle {
-  font-size: 30px;
+  font-size: 22px;
   line-height: 118%;
   letter-spacing: -0.01em;
   margin: -3px 0 0 0;
+}
+
+@media screen and (min-width: 420px) {
+  .article-head .journal-splash__subtitle {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-head .journal-splash__subtitle {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -1492,12 +1693,26 @@ input[type=submit]:hover {
 }
 
 .article-body {
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 25px;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   /* styles for excerpting text content */
   /* styles useful for images */
+}
+
+@media screen and (min-width: 420px) {
+  .article-body {
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-body {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -1512,7 +1727,6 @@ input[type=submit]:hover {
   .article-body {
     font-size: 20px;
     line-height: 31px;
-    letter-spacing: -0.01em;
   }
 }
 
@@ -1537,12 +1751,24 @@ input[type=submit]:hover {
 }
 
 .article-body h2 {
-  font-size: 30px;
+  font-size: 22px;
   line-height: 118%;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 600;
   margin: 120px 0 24px 0;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body h2 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-body h2 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -1776,12 +2002,24 @@ nav {
 
 .header-links {
   display: inline-block;
-  font-size: 30px;
+  font-size: 22px;
   line-height: 118%;
   letter-spacing: -0.01em;
   font-weight: bold;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@media screen and (min-width: 420px) {
+  .header-links {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .header-links {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 830px) {

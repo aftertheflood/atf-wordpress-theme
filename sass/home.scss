@@ -253,10 +253,10 @@ a.client__promo__link:hover{
 .more-clients-link {
   @include type-heading-big;
   font-weight: 800;
-  grid-column: 3 / span 6;
+  grid-column: 3 / span 9;
   text-decoration: none;
   color: #000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   &:hover {
     color: $clients-color;
   }
