@@ -111,15 +111,19 @@ html {
 
 
 @mixin block-button {
-    padding: 13px 20px 18px 20px;
+    padding: 11px 16px 15px 16px;
     border: 0px;
+    @include break(medium) {padding: 12px 18px 16px 18px;}
+    @include break(large) {padding: 13px 20px 18px 20px;}
 }
 
 @mixin block-button-type {
-    font-size: 21px;
+    font-size: 18px;
     letter-spacing: 0.01em;
     font-weight: bold;
     text-decoration: none;
+    @include break(medium) {font-size: 19px;}
+    @include break(large) {font-size: 20px;}
 }
 
 
