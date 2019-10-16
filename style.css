@@ -1743,7 +1743,13 @@ input[type=submit]:hover {
 
 .article-head .article-title {
   margin: 70px 0 10px 0;
-  grid-column: 3 / span 10;
+  grid-column: 2 / span 12;
+}
+
+@media screen and (min-width: 420px) {
+  .article-head .article-title {
+    grid-column: 3 / span 10;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -1977,7 +1983,7 @@ input[type=submit]:hover {
   line-height: 118%;
   letter-spacing: 0.02em;
   height: auto;
-  grid-column: 3 / span 8;
+  grid-column: 2 / span 12;
 }
 
 @media screen and (min-width: 420px) {
@@ -1998,6 +2004,12 @@ input[type=submit]:hover {
   }
 }
 
+@media screen and (min-width: 420px) {
+  .article-body .article__date {
+    grid-column: 3 / span 10;
+  }
+}
+
 @media screen and (min-width: 830px) {
   .article-body .article__date {
     grid-column: 4 / span 7;
@@ -2014,7 +2026,13 @@ input[type=submit]:hover {
 .article-body .article__content {
   margin-top: 70px;
   margin-bottom: 70px;
-  grid-column: 3 / span 10;
+  grid-column: 2 / span 12;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body .article__content {
+    grid-column: 3 / span 10;
+  }
 }
 
 @media screen and (min-width: 830px) {

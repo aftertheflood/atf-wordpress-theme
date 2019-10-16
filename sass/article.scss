@@ -1,7 +1,10 @@
 .article-head {
   .article-title {
     margin: 70px 0 10px 0;
-    grid-column: 3 / span 10;
+    grid-column: 2 / span 12;
+    @include break(tiny) {
+      grid-column: 3 / span 10;
+    }
     @include break(medium) {
       margin: 90px 0 7px 0;
       grid-column: 4 / span 8;
@@ -99,7 +102,10 @@
   .article__date {
     @include type-label;
     height: auto; 
-    grid-column: 3 / span 8;
+    grid-column: 2 / span 12;
+    @include break(tiny) {
+      grid-column: 3 / span 10;
+    }
     @include break(medium) {
       grid-column: 4 / span 7;
     }
@@ -112,7 +118,8 @@
   .article__content {
     margin-top: 70px;
     margin-bottom: 70px;
-    grid-column: 3 / span 10;
+    grid-column: 2 / span 12;
+    @include break(tiny) { grid-column: 3 / span 10; }
     @include break(medium) {
       margin-top: 90px;
       margin-bottom: 90px;
