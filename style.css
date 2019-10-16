@@ -419,7 +419,7 @@ where in the rendered web page you only see one column to the outside of the tex
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
-  padding-right: 40px;
+  padding-right: 20px;
 }
 
 @media screen and (min-width: 830px) {
@@ -433,6 +433,13 @@ where in the rendered web page you only see one column to the outside of the tex
   .splash__promo__title,
   .splash__promo__subtitle {
     font-size: 34px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .splash__promo__title,
+  .splash__promo__subtitle {
+    padding-right: 40px;
   }
 }
 

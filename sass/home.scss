@@ -13,9 +13,6 @@ where in the rendered web page you only see one column to the outside of the tex
 
 
 
-
-
-
 /* The home splash zone 
 -------------------------------------------------------------------------------------- */
 
@@ -64,7 +61,10 @@ where in the rendered web page you only see one column to the outside of the tex
   @include type-heading-small;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
-  padding-right: $promoPadding;
+  padding-right: ($promoPadding/2);
+  @include break(huge) {
+    padding-right: $promoPadding;
+  }
 }
 
 .splash__promo__title {
