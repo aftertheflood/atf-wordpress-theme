@@ -1,5 +1,5 @@
 </main>
-<nav class="compact-menu <?php echo $pageTag ?>" id="compact-site-menu">
+<nav class="compact-menu <?php echo $pageTag ?>" id="compact-site-menu" style="display:none;">
 	<div class="compact-menu__head">
 		<h2 class="compact-menu__title">After the flood</h2>
 		<a href="#page-top" class="close-menu-button">
