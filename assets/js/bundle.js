@@ -420,7 +420,6 @@ const main = () => {
     return false;
   })
   
-  console.log('MMM',menuOpenButton);
   // add an event listener to the menu close button
 
 }
