@@ -12,10 +12,10 @@ html {
 
 
 @mixin type-body {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 25px;
     letter-spacing: -0.01em;
-    @include break(tiny)   { font-size: 17px; line-height: 26px; }
+    // @include break(tiny)   { font-size: 17px; line-height: 26px; }
     @include break(small)  { font-size: 18px; line-height: 27px; }
     @include break(medium) { font-size: 19px; line-height: 30px; letter-spacing: -0.01em; }
     @include break(large)  { font-size: 20px; line-height: 31px; }
@@ -31,9 +31,10 @@ html {
 }
 
 @mixin type-very-small {
-    font-size: 13px;
-    line-height: 19px;
+    font-size: 12px;
+    line-height: 18px;
     letter-spacing: 0.02em;
+    @include break(tiny)   { font-size: 13px; line-height: 19px; }
     @include break(medium) { font-size: 14px; line-height: 20px; letter-spacing: 0.01em; }
     @include break(large)  { font-size: 15px; line-height: 21px; }
 }
@@ -41,19 +42,20 @@ html {
 @mixin type-label {
     font-family: Graphik, sans-serif;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 118%;
     letter-spacing: 0.02em;
+    @include break(tiny)   { font-size: 13px; }
     @include break(medium) { font-size: 14px; }
     @include break(large)  { font-size: 15px; }
 }
 
 // The really big type on the homepage, top of project pages, etc.
 @mixin type-heading-big {
-    font-size: 33px;
+    font-size: 32px;
     line-height: 38px;
     letter-spacing: -0.02em;
-    @include break(tiny)   { font-size: 39px; line-height: 47px; }
+    @include break(tiny)   { font-size: 38px; line-height: 47px; }
     @include break(small)  { font-size: 46px; line-height: 52px; }
     @include break(medium) { font-size: 52px; line-height: 60px; }
     @include break(large)  { font-size: 56px; line-height: 65px; }
@@ -83,12 +85,14 @@ html {
 }
 
 @mixin block-button-type {
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 0.01em;
     font-weight: bold;
     text-decoration: none;
-    @include break(medium) {font-size: 19px;}
-    @include break(large)  {font-size: 20px;}
+    // @include break(tiny)   { font-size: 17px; }
+    @include break(small)  { font-size: 18px; }
+    @include break(medium) { font-size: 19px; }
+    @include break(large)  { font-size: 20px; }
 }
 
 
