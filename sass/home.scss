@@ -322,27 +322,12 @@ a.client__promo__link:hover{
 
 
 
-.onward-journey-link{
-  grid-column: 1 / 12 ;
-  text-align: end;
-  color:black;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  font-family: Graphik, sans-serif;
-}
 
-.onward-journey-link::after{
-  content:' \00bb';
-}
+// .recently-header{
+//   margin-top: 50px;
+//   grid-column: 2 / span 6;
+// }
 
+// .promo-double__right{
 
-
-.recently-header{
-  margin-top: 50px;
-  grid-column: 2 / span 6;
-}
-
-.promo-double__right{
-
-}
+// }

@@ -808,25 +808,6 @@ a.client__promo__link:hover {
   }
 }
 
-.onward-journey-link {
-  grid-column: 1 / 12;
-  text-align: end;
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  font-family: Graphik, sans-serif;
-}
-
-.onward-journey-link::after {
-  content: ' \00bb';
-}
-
-.recently-header {
-  margin-top: 50px;
-  grid-column: 2 / span 6;
-}
-
 .journal-splash {
   grid-template-areas: "image image image image image image image image image image image image image image" ". . text text text text text text text text text text . .";
 }
@@ -1006,6 +987,83 @@ a.client__promo__link:hover {
     padding-bottom: 120px;
     grid-template-areas: ". . kicker kicker entries entries entries entries entries entries entries entries . .";
   }
+}
+
+.journal-home {
+  grid-template-areas: ". kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker ."  ". entries entries entries entries entries entries entries entries entries entries entries entries ." ". onward onward onward onward onward onward onward onward onward onward onward onward .";
+  background-color: #282828;
+  padding: 70px 0;
+}
+
+@media screen and (min-width: 420px) {
+  .journal-home {
+    grid-template-areas: ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ."  ". . entries entries entries entries entries entries entries entries entries entries . ." ". . onward onward onward onward onward onward onward onward onward onward . .";
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .journal-home {
+    grid-template-areas: ". . . kicker kicker kicker kicker kicker kicker kicker kicker . . ."  ". . . entries entries entries entries entries entries entries entries . . ." ". . . onward onward onward onward onward onward onward onward . . .";
+    padding: 90px 0;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .journal-home {
+    grid-template-areas: ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ."  ". . entries entries entries entries entries entries entries entries entries entries . ." ". . onward onward onward onward onward onward onward onward onward onward . .";
+    padding: 120px 0;
+  }
+}
+
+.journal-home .recently-header {
+  grid-area: kicker;
+  margin: 0;
+  color: #FFD600;
+}
+
+.journal-home .recently-header,
+.journal-home .onward-journey-link {
+  font-family: Graphik, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 118%;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 830px) {
+  .journal-home .recently-header,
+  .journal-home .onward-journey-link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .journal-home .recently-header,
+  .journal-home .onward-journey-link {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .journal-home .journal-home__posts {
+    margin: 50px 0;
+  }
+}
+
+.journal-home .onward-journey-link {
+  grid-area: onward;
+  text-align: end;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.journal-home .onward-journey-link:hover {
+  color: #FFF;
+}
+
+.journal-home .onward-journey-link::after {
+  content: ' \00bb';
 }
 
 .journal-archive__title,
