@@ -136,7 +136,7 @@ body.contact {
   column-gap: 20px;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .atf-archive-grid {
     grid-template-columns: 1fr 1fr;
     row-gap: 8px;
@@ -175,7 +175,7 @@ html {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .atf-footer {
     font-size: 15px;
     line-height: 21px;
@@ -188,7 +188,7 @@ html {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .atf-footer {
     padding-top: 120px;
   }
@@ -211,7 +211,7 @@ html {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .atf-footer h2 {
     font-size: 34px;
   }
@@ -223,7 +223,7 @@ html {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .atf-footer h2 {
     margin-bottom: 30px;
   }
@@ -253,7 +253,7 @@ html {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .footer-contact-link a {
     padding: 13px 20px 18px 20px;
   }
@@ -265,7 +265,7 @@ html {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .footer-contact-link a {
     font-size: 20px;
   }
@@ -295,7 +295,7 @@ html {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .social img {
     height: 38px;
     width: 38px;
@@ -309,7 +309,7 @@ html {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .social {
     height: 38px;
   }
@@ -331,7 +331,7 @@ html {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .address {
     margin-bottom: 108px;
   }
@@ -429,7 +429,7 @@ where in the rendered web page you only see one column to the outside of the tex
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .splash__promo__title,
   .splash__promo__subtitle {
     font-size: 34px;
@@ -468,7 +468,7 @@ where in the rendered web page you only see one column to the outside of the tex
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .splash__promo__date,
   .light-archive__date {
     font-size: 15px;
@@ -494,7 +494,7 @@ where in the rendered web page you only see one column to the outside of the tex
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .splash__promo__link {
     font-size: 20px;
   }
@@ -638,7 +638,7 @@ where in the rendered web page you only see one column to the outside of the tex
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .client__promo__sector {
     font-size: 15px;
   }
@@ -658,7 +658,7 @@ where in the rendered web page you only see one column to the outside of the tex
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .client__promo__title {
     font-size: 34px;
   }
@@ -679,7 +679,7 @@ where in the rendered web page you only see one column to the outside of the tex
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .client__promo__excerpt {
     font-size: 20px;
     line-height: 31px;
@@ -714,7 +714,7 @@ a.client__promo__link {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   a.client__promo__link {
     padding: 13px 20px 18px 20px;
   }
@@ -726,7 +726,7 @@ a.client__promo__link {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   a.client__promo__link {
     font-size: 20px;
   }
@@ -830,7 +830,7 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-splash {
     grid-template-areas: ". . text text text text text image image image image image image image";
   }
@@ -841,7 +841,7 @@ a.client__promo__link:hover {
   grid-area: text;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-splash__text {
     padding: 114px 0 120px 0;
   }
@@ -849,14 +849,23 @@ a.client__promo__link:hover {
 
 .journal-splash__image {
   grid-area: image;
+  overflow: hidden;
+  background: none;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 830px) {
+  .journal-splash__image {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
   .journal-splash__image {
     background-repeat: no-repeat;
     overflow: hidden;
     height: 100%;
     background-size: auto 100%;
+    background-position: center;
   }
 }
 
@@ -865,7 +874,7 @@ a.client__promo__link:hover {
   width: 100%;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-splash__image img {
     display: none;
   }
@@ -887,7 +896,7 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-splash__kicker,
   .journal-splash__date {
     font-size: 15px;
@@ -910,7 +919,7 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-splash__title,
   .journal-splash__subtitle {
     font-size: 34px;
@@ -924,7 +933,7 @@ a.client__promo__link:hover {
   margin: 20px 60px 0 0;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-splash__title {
     margin: 32px 40px 0 0;
   }
@@ -951,7 +960,7 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-splash__excerpt {
     font-size: 20px;
     line-height: 31px;
@@ -959,7 +968,7 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-splash__excerpt {
     margin: 36px 40px 36px 0;
   }
@@ -984,7 +993,7 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-archive {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -1010,7 +1019,7 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-archive__title,
   .journal-archive__subtitle {
     font-size: 20px;
@@ -1065,7 +1074,7 @@ a.client__promo__link:hover {
   box-shadow: none;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-archive__entry {
     padding-top: 35px;
     padding-bottom: 30px;
@@ -1110,7 +1119,7 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-archive__kicker {
     font-size: 15px;
   }
@@ -1122,7 +1131,7 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-archive__kicker {
     margin-top: -6px;
     padding-bottom: 0;
@@ -1146,7 +1155,7 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-archive__date {
     font-size: 15px;
   }
@@ -1174,7 +1183,7 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-archive__excerpt {
     font-size: 17px;
     line-height: 26px;
@@ -1204,7 +1213,7 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-archive__link {
     font-size: 17px;
     line-height: 26px;
@@ -1238,7 +1247,7 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-splash__link {
     padding: 13px 20px 18px 20px;
   }
@@ -1250,7 +1259,7 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-splash__link {
     font-size: 20px;
   }
@@ -1270,7 +1279,7 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .journal-splash__link:hover {
     padding: 13px 20px 18px 20px;
   }
@@ -1331,7 +1340,7 @@ input[type=submit] {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   input[type=submit] {
     padding: 13px 20px 18px 20px;
   }
@@ -1351,7 +1360,7 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   input[type=submit]:hover {
     padding: 13px 20px 18px 20px;
   }
@@ -1373,7 +1382,7 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .article-head .article-title {
     margin: 114px 0 120px 0;
     grid-column: 3 / span 6;
@@ -1398,7 +1407,7 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .article-head h1 {
     font-size: 34px;
   }
@@ -1417,7 +1426,7 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .article-head .journal-splash__subtitle {
     font-size: 34px;
   }
@@ -1429,7 +1438,7 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .article-head .journal-splash__subtitle {
     margin-bottom: 0;
   }
@@ -1452,7 +1461,7 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .article-body {
     font-size: 20px;
     line-height: 31px;
@@ -1495,7 +1504,7 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .article-body h2 {
     font-size: 34px;
   }
@@ -1567,7 +1576,7 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .article-body .article__date {
     font-size: 15px;
   }
@@ -1579,7 +1588,7 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .article-body .article__date {
     height: 100%;
     grid-column: 3 / span 2;
@@ -1600,7 +1609,7 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .article-body .article__content {
     padding-top: 0px;
     margin-top: -7px;
@@ -1676,14 +1685,14 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .article-body .wp-block-image figcaption {
     font-size: 15px;
     line-height: 21px;
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .article-body .wp-block-image figcaption {
     margin: 7px 0 50px 0;
   }
@@ -1714,7 +1723,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   nav {
     height: 62px;
   }
@@ -1736,13 +1745,13 @@ nav {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .header-links {
     font-size: 34px;
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .header-links {
     padding: 0;
   }
@@ -1757,7 +1766,7 @@ nav {
   padding-right: 10px;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .header-link {
     padding-left: 20px;
     padding-right: 20px;
@@ -1814,7 +1823,7 @@ nav.contact a {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1120px) {
   .active-marker {
     bottom: -6px;
   }
