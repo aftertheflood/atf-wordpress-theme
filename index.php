@@ -26,7 +26,7 @@
 				<?php }else{ ?>
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<?php the_excerpt(); ?>
-				<?} ?>
+				<?php } ?>
 		<?php endwhile; ?>
 	<?php else : ?>
 		<div class="post">
