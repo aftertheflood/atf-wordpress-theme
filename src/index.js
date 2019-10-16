@@ -13,7 +13,6 @@ const main = () => {
 
   function scrollHandler() {  
     if(contentElement.getBoundingClientRect().top < 30){
-      console.log('S', homeLinks)
       homeLinks.forEach(e=>e.classList.add('scrolled'));
     }else{
       homeLinks.forEach(e=>e.classList.remove('scrolled'));
