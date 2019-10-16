@@ -1396,12 +1396,14 @@ input[type=submit]:hover {
 
 .article-body .article__content {
   margin-top: 70px;
+  margin-bottom: 70px;
   grid-column: 3 / span 10;
 }
 
 @media screen and (min-width: 830px) {
   .article-body .article__content {
     margin-top: 90px;
+    margin-bottom: 90px;
     grid-column: 4 / span 8;
   }
 }
