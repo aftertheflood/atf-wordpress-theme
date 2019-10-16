@@ -104,74 +104,20 @@
   }
 }
 
-// Variations on the journal archive for the homepage
-.journal-home {
-  grid-template-areas: 
-    ". kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker ." 
-    ". entries entries entries entries entries entries entries entries entries entries entries entries ."
-    ". onward onward onward onward onward onward onward onward onward onward onward onward .";
-  background-color: $very-dark-grey;
-  padding: 70px 0;
-  @include break(tiny) {
-    grid-template-areas: 
-      ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ." 
-      ". . entries entries entries entries entries entries entries entries entries entries . ."
-      ". . onward onward onward onward onward onward onward onward onward onward . .";
-  }
-  @include break(medium) {
-    grid-template-areas: 
-      ". . . kicker kicker kicker kicker kicker kicker kicker kicker . . ." 
-      ". . . entries entries entries entries entries entries entries entries . . ."
-      ". . . onward onward onward onward onward onward onward onward . . .";
-    padding: 90px 0;
-  }
-  @include break(large) {
-    grid-template-areas: 
-      ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ." 
-      ". . entries entries entries entries entries entries entries entries entries entries . ."
-      ". . onward onward onward onward onward onward onward onward onward onward . .";
-    padding: 120px 0;
-  }
-  .recently-header {
-    grid-area: kicker;
-    margin: 0;
-    color: $journal-color;
-  }
-  .recently-header, 
-  .onward-journey-link {
-    @include type-label;
-  }
-  .journal-home__posts {
-    @include break(large) {
-      margin: 50px 0;
-    }
-  }
-  .onward-journey-link {
-    grid-area: onward;
-    text-align: end;
-    color: $faded-text;
-    text-decoration: none;
-    font-weight: bold;
-    &:hover {color: #FFF; }
-  }
-  .onward-journey-link::after {
-    content:' \00bb';
-  }
-} // end homepage variations
-
 .journal-archive__title, 
 .journal-archive__subtitle {
   @include type-body;
   @include type-serif;
   font-weight: 400;
+  line-height: 24px;
+  @include break(medium) {line-height: 27px;}
+  @include break(large) {line-height: 30px;}
 }
-
 
 .journal-archive__title {
   @include spaced-caps;
   margin: 0;
   padding-top: 0;
-  line-height: 30px;
   a {
     color: white;
     text-decoration: none;
@@ -184,13 +130,12 @@
 .journal-archive__subtitle {
   font-style: italic;
   margin-top: -3px;
-  margin-bottom: 0;
-  line-height: 30px;
+  margin-bottom: -10px;
 }
 
 .journal-archive__entry {
   color:white;
-  padding-top: 55px; 
+  padding-top: 50px; 
     // This compensates for the negative top margin seen above.
     // In theory the additional padding here should match that, but for whatever reason that doesn't look right, so it is adjusted.
   padding-bottom: 50px;
@@ -253,7 +198,7 @@
 .journal-archive__date {
   @include type-label;
   color: $journal-color;
-  margin-top: 8px;
+  margin-top: 13px;
   margin-bottom: 18px;
   @include break(medium) {
     margin-bottom: 24px;
@@ -298,3 +243,70 @@
   background-color: $journal-color;
   display: inline-block;
 }
+
+
+
+
+
+/* Variations on the journal archive for the homepage
+------------------------------------------------------------------------------------------ */
+.journal-home {
+  grid-template-areas: 
+    ". kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker ." 
+    ". entries entries entries entries entries entries entries entries entries entries entries entries ."
+    ". onward onward onward onward onward onward onward onward onward onward onward onward .";
+  background-color: $very-dark-grey;
+  padding: 70px 0;
+  @include break(tiny) {
+    grid-template-areas: 
+      ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ." 
+      ". . entries entries entries entries entries entries entries entries entries entries . ."
+      ". . onward onward onward onward onward onward onward onward onward onward . .";
+  }
+  @include break(medium) {padding: 90px 0;}
+  @include break(large) {padding: 120px 0;}
+
+  .recently-header {
+    grid-area: kicker;
+    margin: 0;
+    color: $journal-color;
+  }
+  .recently-header, 
+  .onward-journey-link {
+    @include type-label;
+  }
+  // .journal-home__posts {
+  //   @include break(small) {padding: 50px 0;}
+  // }
+
+  .onward-journey-link {
+    grid-area: onward;
+    text-align: end;
+    color: $faded-text;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {color: #FFF; }
+  }
+  .onward-journey-link::after {content:' \00bb';}
+
+
+  .journal-archive__entry {
+    &:last-of-type {
+      padding-bottom: 50px;
+    }
+    @include break(small) {
+      margin: -13px 0 -16px 0;
+      padding: 64px 0; 
+      &:nth-of-type(1) {
+        box-shadow: 8px 0px $dark-grey;
+        padding-right: 30px;
+      }
+      &:nth-of-type(2) {
+        padding-left: 39px;
+        margin-left: -9px; 
+      }
+    }
+  }
+
+
+} // end homepage variations

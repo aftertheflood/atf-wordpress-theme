@@ -42,7 +42,7 @@ $this_page_id = get_the_ID();
 
 <div class="atf-grid journal-home">
   <h3 class="recently-header">Recently from the Blog &hellip;</h3>
-  <div class="atf-archive-grid journal-home__posts">
+  <div class="atf-archive-grid-home journal-home__posts">
     <?php /* 2nd and 3rd journal posts start from 1 get 2*/ 
       $count = 0;
       $posts = get_category_post_range('journal',1, 2);

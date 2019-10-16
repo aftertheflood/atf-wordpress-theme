@@ -50,18 +50,31 @@ body.contact {
   align-items: center;
 }
 
-.atf-archive-grid{
+.atf-archive-grid,
+.atf-archive-grid-home {
 	display: grid;
 	grid-area: entries;
 	grid-template-columns: 1fr;
 	row-gap: 5px;
 	column-gap: $column-gap;
+}
+
+.atf-archive-grid {
 	@include break(large) {
 		grid-template-columns: 1fr 1fr;
 		row-gap: 8px;
 		column-gap: 8px;
 	}
 }
+
+.atf-archive-grid-home {
+	@include break(small) {
+		grid-template-columns: 1fr 1fr;
+		row-gap: 8px;
+		column-gap: 8px;
+	}
+}
+
 
 .ragged {
   margin-right:-20px;
