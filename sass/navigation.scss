@@ -1,10 +1,12 @@
-@import 'colors';
-
 $activeMarker: 30px;
 
-nav{
+.site-header {
+  z-index: 999;
+}
+
+nav {
   position: fixed;
-  height: $nav-height;
+  height: 58px;
   width: 100%;
   top: 0px;
 	background-color: white;
@@ -15,152 +17,164 @@ nav{
   justify-content: space-between;
   align-content: stretch;
   align-items: flex-start;
+  @include break(medium) {height: 60px;}
+  @include break(large) {height: 62px;}
 }
 
-.header-links{
+.header-links {
   display: inline-block;
-  font-size: 30px;
+  @include type-heading-small;
   font-weight: bold;
+  padding-left: $column-gap/2;
+  padding-right: $column-gap/2;
+  @include break(large) {
+    padding: 0;
+  }
 }
 
-.header-link{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 15px;
-  padding-left: 15px;
+.header-link {
   position: relative;
-  display:inline-block;
+  display: inline-block;
+  padding-top: ($column-gap/2)-2;
+  padding-bottom: $column-gap;
+  padding-left: $column-gap/2;
+  padding-right: $column-gap/2;
+  @include break(large) {
+    padding-left: $column-gap;
+    padding-right: $column-gap;
+  }
 }
 
-nav a{
+nav a {
 	text-decoration: none;
   color:black;
   justify-content: space-between;
+  &:hover {
+    color: rgba(0,0,0,0.7);
+  }
 }
 
-nav.clients{
-	background-color: $clients-color;
-}
+nav.clients {background-color: $clients-color;}
+nav.journal {background-color: $journal-color;}
+nav.about   {background-color: $about-color;}
 
-nav.journal{
-	background-color: $journal-color;
-}
-
-nav.about{
-	background-color: $about-color;
-}
-
-nav.contact{
+nav.contact {
 	background-color: $contact-color;
-  color:$contact-text;
+  color: $contact-text;
   fill:white;
+  a {
+    color: white;
+  }
 }
 
-nav.contact a{
-	color:white;
-}
-
-.active-marker{
+.active-marker {
   position: absolute;
   display: inline-block;
   width: $activeMarker;
   height: $activeMarker;
-  bottom: -($activeMarker / 2 - 6);
+  bottom: -($activeMarker / 2 - 8);
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+  @include break(medium) {
+    bottom: -($activeMarker / 2 - 7);
+  }
+  @include break(large) {
+    bottom: -($activeMarker / 2 - 9);
+  }
 }
 
-.active-marker-circle{
+.active-marker-circle {
   width: $activeMarker;
   height: $activeMarker;
 }
 
 /* scroll behavior for home link */
-.header-links.home-link{
+.header-links.home-link {
   transition: visibility 0.3s linear,opacity 0.3s linear;
   visibility: hidden;
   opacity: 0;
 }
 
 .header-links.home-link.scrolled,
-.header-links.home-link.persist
-{
-  visibility:visible;
-  opacity:1;
+.header-links.home-link.persist {
+  visibility: visible;
+  opacity: 1;
 }
 
-.nav-place-holder{
+.nav-place-holder {
 	height: $nav-height;
 }
 
-.compact-nav{
+.full-nav {
   display: none;
+  @include break(medium) {
+    display: flex;
+  }
 }
 
-nav.compact-menu{
-  display: none;
-  overflow: hidden;
-  background: black;
-  color:white;
-  padding-left: 20px;
+.compact-nav {
+  display: flex;
+  @include break(medium) {
+    display: none;
+  }
 }
 
-.compact-menu__link{
-  color:white;
+nav.compact-menu {
+  z-index: 1000; // need to fix this
+  display: block;
+  // margin-left: 100px;
+  position: relative;
+  background: red;
+  color: white;
+  a {
+    display: block;
+    color: white;
+  }
+  @include break(medium) {
+    display: none;
+    overflow: hidden;
+    // background: black;
+    // color:white;
+    padding-left: 20px;
+  }
 }
 
-.compact-menu__title{
+nav.compact-menu.closed {
+  position: fixed;
+  height: 0vh;
+  @include break(medium) {display: none;}
+}
+nav.compact-menu.open {
+  // background: red;
+  position: fixed;
+  height: 1000vh;
+  @include break(medium) {display: none;}
+}
+
+.compact-menu__link {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 120%;
+  @include break(medium) {
+    color:white;
+  }
+}
+
+.compact-menu__title {
   color:rgba(255,255,255,0.5);
 }
 
-.close-menu-button{
-  margin-top:15px;
-  margin-right:10px;
+.close-menu-button {
+  margin-top: 15px;
+  margin-right: 10px;
 }
 
-.compact-menu__close-icon{
-
+.compact-menu__close-icon {
 }
 
-.compact-menu__head{
- display: flex;
- justify-content:space-between;
-}
-
-@media (max-width: 850px) {
-  nav.compact-menu{
-    display: block;
-    position: relative;
-    background: black;
-    color:white;
-  }
-
-  nav.compact-menu.closed{
-    position: fixed;
-    height: 0vh;
-  }
-
-  nav.compact-menu.open{
-    position: fixed;
-    height: 1000vh;
-  }
-
-  .compact-menu a{
-    display: block;
-  }
-  .compact-nav{
-    display: flex;
-  }
-
-  .compact-menu__link{
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 120%;
-  }
-
-  .full-nav{
-    display: none;
-  }
+.compact-menu__head {
+  display: flex;
+  justify-content: space-between;
 }

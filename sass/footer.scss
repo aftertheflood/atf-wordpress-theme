@@ -2,51 +2,93 @@
 @import 'colors.scss';
 
 .atf-footer{
-  width: 100%;
-  color:#FFFFFF;
-  font-size: 14px;
-  line-height: 150%;
-  letter-spacing: 0.03em;
-  background: url(https://aftertheflood.com/wp-content/uploads/2017/12/atf-logo-clipped-footer.png) no-repeat left bottom;
-  background-size:  contain;
-  background-color: #000000;
-  padding: 50px;
-  display: grid;
-  grid-template-areas:  "heading"
-                        "link"
-                        "address";
-  h2{
-    font-family: Tiempos, serif;
-    font-size: 24px;
-    margin-bottom:40px;
-  }
+	width: 100%;
+	color:#FFFFFF;
+	// font-size: 14px;
+	// line-height: 150%;
+	// letter-spacing: 0.03em;
+	@include type-very-small;
+	background-color: #000000;
+	padding-top: 70px;
+	display: grid;
+	grid-template-areas: 
+		". . heading heading heading heading heading heading heading heading heading heading . ."
+		". . link link link link link link link link link link . ."
+		". . social social social social social social social social social social . ."
+		". . address address address address address address address address address address . ."
+		". logo logo logo logo logo logo logo logo logo logo logo logo .";
+	@include break(medium) {
+		padding-top: 90px;
+	}
+	@include break(large) {
+		padding-top: 120px;
+	}
+	h2 {
+		grid-area: heading;
+		@include type-heading-small;
+		font-family: Tiempos, serif;
+		font-weight: 400;
+		margin-top: 0;
+		margin-bottom: 20px;
+		@include break(medium) {margin-bottom: 24px;}
+		@include break(large) {margin-bottom: 30px;}
+	}
 }
 
-
-.footer-contact-link{
-  grid-area: link;
-  margin-top:20px;
-  margin-bottom:70px;
+.footer-contact-link {
+	grid-area: link;
+	margin-top: 20px;
+	margin-bottom: 120px;
 }
 
-.footer-contact-link a{
-  grid-area: link;
-  @extend %block-button;
-  color:black;
-  background-color: white;
+.footer-contact-link a {
+	grid-area: link;
+	@include block-button;
+	@include block-button-type;
+	color:black;
+	background-color: white;
+	&:hover {
+		background-color: rgba(255,255,255,0.9);
+	}
 }
 
-.footer-contact-link a:hover{
-  color:white;
-  background-color: $dark-grey;
+.social {
+	grid-area: social;
+	margin-bottom: 26px;
+	height: 34px;
+	img {
+		height: 34px;
+		width: 34px;
+		margin-right: 4px;
+		@include break(medium) {height: 36px; width: 36px; margin-right: 5px}
+		@include break(large) {height: 38px; width: 38px;}
+	}
+	@include break(medium) {margin-bottom: 30px; height: 36px;}
+	@include break(large) {height: 38px;}
+
+	a:hover {
+		opacity: 0.9;
+	}
 }
 
-.address{
-  grid-area: address;
-  color: $grey;
-  margin-bottom: 100px;
-  a{
-    color: $grey;
-    text-decoration: none;
-  }
+.address {
+	grid-area: address;
+	color: $grey;
+	margin-bottom: 64px;
+	@include break(medium) {margin-bottom: 84px;}
+	@include break(large) {margin-bottom: 108px;}
+	a {
+		color: $grey;
+		text-decoration: none;
+	}
+}
+
+.footer-logo {
+	grid-area: logo;
+	bottom: 0;
+	padding-right: 2px;
+	img {
+		width: 100%;
+		vertical-align: bottom;
+	}
 }

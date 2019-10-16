@@ -1,34 +1,134 @@
-%kicker{
-    font-family: Graphik, sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 140%;
+html {
+    text-rendering: optimizeLegibility;
+    font-variant-ligatures: common-ligatures;
+    font-kerning: normal;
+}
+
+
+// Type mixins
+
+@mixin type-serif {font-family: Tiempos, Georgia, serif;}
+@mixin type-sans {font-family: Graphik, sans-serif;}
+
+
+@mixin type-body {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.01em;
+    @include break(medium) {
+        font-size: 19px;
+        line-height: 30px;
+        letter-spacing: -0.01em;
+    }
+    @include break(large) {
+        font-size: 20px;
+        line-height: 31px;
+        letter-spacing: -0.01em;
+    }
+}
+
+@mixin type-small {
+    font-family: Tiempos, Georgia, serif;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    @include break(medium) {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    @include break(large) {
+        font-size: 17px;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+    }
+}
+
+@mixin type-very-small {
+    font-size: 13px;
+    line-height: 19px;
     letter-spacing: 0.02em;
+    @include break(medium) {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+    }
+    @include break(large) {
+        font-size: 15px;
+        line-height: 21px;
+    }
 }
 
-%date{
+@mixin type-label {
     font-family: Graphik, sans-serif;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 118.1%;
+    font-size: 13px;
+    line-height: 118%;
+    letter-spacing: 0.02em;
+    @include break(medium) {font-size: 14px;}
+    @include break(large) {font-size: 15px;}
 }
 
-%more-link{
-
+// The really big type on the homepage, top of project pages, etc.
+@mixin type-heading-big {
+    font-size: 56px;
+    line-height: 65px;
+    letter-spacing: -0.02em;
 }
 
-%block-button{
-    font-size: 21px;
-    padding: 20px;
+// Standard headings for the promo modules, etc.
+@mixin type-heading-small {
+    font-size: 30px;
+    line-height: 118%;
+    letter-spacing: -0.01em;
+    @include break(medium) {
+        font-size: 32px;
+    }
+    @include break(large) {
+        font-size: 34px;
+    }
+}
+
+@mixin spaced-caps {
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+// %kicker {
+//     font-family: Graphik, sans-serif;
+//     font-weight: bold;
+//     font-size: 15px;
+//     line-height: 140%;
+//     letter-spacing: 0.02em;
+// }
+
+// %date {
+//     font-family: Graphik, sans-serif;
+//     font-weight: bold;
+//     font-size: 15px;
+//     line-height: 118%;
+// }
+
+
+@mixin block-button {
+    padding: 11px 16px 15px 16px;
     border: 0px;
+    @include break(medium) {padding: 12px 18px 16px 18px;}
+    @include break(large) {padding: 13px 20px 18px 20px;}
+}
+
+@mixin block-button-type {
+    font-size: 18px;
+    letter-spacing: 0.01em;
     font-weight: bold;
     text-decoration: none;
+    @include break(medium) {font-size: 19px;}
+    @include break(large) {font-size: 20px;}
 }
 
-%promo-body{
 
-}
 
-%promo-headline{
+%more-link {}
 
-}
+%promo-body {}
+
+%promo-headline {}

@@ -7,21 +7,26 @@
 <?php get_template_part('partials/html','top'); ?>
 	<?php if ( have_posts() ) :?>
 		<?php while ( have_posts() ) : the_post(); ?>
-		<div class="post">
-			<?php
-				if ( is_singular() ){ ?>
+			<?php if ( is_singular() ){ ?>
 				<div class="article-head atf-grid">
-					<h2><?php the_title(); ?></h2>
+					<div class="article-title">
+						<h1><?php the_title(); ?></h1>
+						<?php 
+							$subtitle = get_post_meta($post->ID, 'subtitle', true);
+							if ($subtitle) {
+								echo '<div class="journal-splash__subtitle">'.$subtitle.'</div>';
+							}
+						?>			
+					</div>
 				</div>
 				<div class="article-body atf-grid">
 				<div class="article__date"><?php the_time( 'j M Y' ); ?></div>
 				<div class="article__content"><?php the_content(); ?></div>
 				</div>
-					<?php }else{ ?> 
+				<?php }else{ ?>
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-					<?php the_excerpt();
-				} ?>
-		</div>
+					<?php the_excerpt(); ?>
+				<?php } ?>
 		<?php endwhile; ?>
 	<?php else : ?>
 		<div class="post">

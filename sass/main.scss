@@ -12,71 +12,79 @@ version 2.0 (http://www.gnu.org/licensesoji/gpl-2.0.html)
 -----------------------------------------------------------------------------------*/
 
 @charset 'utf-8';
+@import 'breakpoints';
 @import 'fonts';
 @import 'type';
 @import 'dimensions';
+@import 'colors';
 
-*{
+* {
 	box-sizing: border-box;
 }
 
-body{
+body {
 	font-family: Graphik, sans-serif;
 	margin: 0;
 	padding: 0;
 }
-.screen-reader-text{
+.screen-reader-text {
 	display:none;
 }
 
-.page-layout{
+.page-layout {
 	display: grid;
 	grid-template-rows: min-content auto min-content;
 	min-height:100vh; 
 }
 
-body.contact{
+body.contact {
 	background-color: #000000;
 }
 
-.atf-grid{
+.atf-grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  row-gap: 5px;
+  grid-template-columns: 0px repeat(12, 1fr) 0px;
   column-gap: $column-gap;
-  grid-auto-rows: minmax(50px, max-content);
+  // grid-auto-rows: minmax(50px, max-content); // I don't *think* we need this.
   margin: 0px;
   align-items: center;
 }
 
-.atf-archive-grid{
+.atf-archive-grid,
+.atf-archive-grid-home {
 	display: grid;
 	grid-area: entries;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	row-gap: 5px;
 	column-gap: $column-gap;
 }
 
-@media (max-width: 800px) {
-	.atf-archive-grid{
-		display: grid;
-		grid-area: entries;
-		grid-template-columns: 1fr;
-		row-gap: 5px;
-		column-gap: $column-gap;
+.atf-archive-grid {
+	@include break(large) {
+		grid-template-columns: 1fr 1fr;
+		row-gap: 8px;
+		column-gap: 8px;
+	}
+}
+
+.atf-archive-grid-home {
+	@include break(small) {
+		grid-template-columns: 1fr 1fr;
+		row-gap: 8px;
+		column-gap: 8px;
 	}
 }
 
 
-.ragged{
+.ragged {
   margin-right:-20px;
 }
 
 @import 'footer';
-@import 'home-page/page';
-@import 'journal-page/page';
-@import 'contact-page/page';
-@import 'article-page/page';
+@import 'home';
+@import 'journal';
+@import 'contact';
+@import 'article';
 @import 'navigation';
 
 

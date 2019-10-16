@@ -1,13 +1,10 @@
-@import '../colors.scss';
-@import '../type.scss';
+@import 'colors.scss';
+@import 'type.scss';
 
 .bold-content{
-  grid-template-areas:  " . text text text text text text text . . . ."
-}
-
-@media (max-width: 650px) {
-  .bold-content{
-    grid-template-areas:  " . text text text text text text text text text text .";
+  grid-template-areas:  " . text text text text text text text text text text .";
+  @include break(small) {
+    grid-template-areas:  ". . text text text text text text text . . . . .";
   }
 }
 
@@ -35,7 +32,7 @@ textarea{
 }
 
 input[type=submit]{
-  @extend %block-button;
+  @include block-button;
   background-color: $contact-highlight-color;
   color: #000000;
   display: inline-block;
@@ -43,7 +40,7 @@ input[type=submit]{
 }
 
 input[type=submit]:hover{
-  @extend %block-button;
+  @include block-button;
   color: $contact-highlight-color;
   background-color: $dark-grey;
   display: inline-block;

@@ -21,9 +21,9 @@ $this_page_id = get_the_ID();
   $posts = get_category_post_range('pinned',0,1);
   while ( $posts->have_posts() ) : $posts->the_post(); ?>
     <div class="splash__promo">
-      <div class="splash__promo__date"><?php the_date() ?></div>
       <h2 class="splash__promo__title"><?php the_title(); ?></h2>
       <div class="splash__promo__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>
+      <div class="splash__promo__date"><?php the_date() ?></div>
       <a href="<?php the_permalink(); ?>" class="splash__promo__link">Read the journal post</a>
     </div>
   <?php endwhile; ?>
@@ -40,31 +40,25 @@ $this_page_id = get_the_ID();
   </div>
 </div>
 
-<div class="atf-grid">
-  <h3 class="recently-header">Recently in the Journal &hellip;</h3>
-</div>
-<div class="atf-grid">
-<?php /* 2nd and 3rd journal posts start from 1 get 2*/ 
-  $count = 0;
-  $posts = get_category_post_range('journal',1, 2);
-  while ( $posts->have_posts() ) : 
-    $posts->the_post();  ?>
-  <div class="archive-post-light <?php if($count % 2 == 0){
-    echo 'split-50-50-left';
-  }else{
-    echo 'split-50-50-right';
-  } 
-  $count ++;?>">
-    <div class="light-archive__date"><?php the_date() ?></div>
-    <h2 class="light-archive__title"><?php the_title() ?></h2>
-    <div class="light-archive__excerpt"><?php the_excerpt() ?></div>
-    <a class="light-archive__link" href="<?php the_permalink() ?>">Read more</a>
+<div class="atf-grid journal-home">
+  <h3 class="recently-header">Recently from the Blog &hellip;</h3>
+  <div class="atf-archive-grid-home journal-home__posts">
+    <?php /* 2nd and 3rd journal posts start from 1 get 2*/ 
+      $count = 0;
+      $posts = get_category_post_range('journal',1, 2);
+      while ( $posts->have_posts() ) : 
+        $posts->the_post(); ?>
+      <div class="journal-archive__entry">
+        <h2 class="journal-archive__title"><?php the_title() ?></h2>
+        <div class="journal-archive__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>
+        <div class="journal-archive__date"><?php the_date() ?></div>
+        <div class="journal-archive__excerpt"><?php the_excerpt() ?></div>
+        <a class="journal-archive__link" href="<?php the_permalink() ?>">Read more</a>
+      </div>
+    <?php endwhile; ?>
   </div>
-<?php endwhile; ?>
-</div>
-<div class="atf-grid">
   <a class="onward-journey-link" href="/journal">All Journal Posts</a>
-</div>
 
+</div>
 
 <?php get_template_part('partials/html','bottom'); ?>

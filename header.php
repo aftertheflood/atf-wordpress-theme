@@ -60,7 +60,7 @@
     </div>
     <div class="header-links">
       <div class="header-link">
-        <a class="menu-link" href="#compact-site-menu" class="open-menu-button">
+        <a class="menu-link open-menu-button" href="#compact-site-menu">
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
           <circle cx="18" cy="18" r="18" fill="black"/>
           <path shape-rendering="crispEdges" d="M18 3V33M3 18H33" stroke="white"/>
@@ -71,11 +71,6 @@
   </nav>
   <div class="nav-place-holder"></div>
   <!-- ARCHIVE HEADER -->
-  <?php if ( is_archive() ) {	?>
-    <h1 class="site-title"><?php bloginfo( 'name' ); ?> archive</h1>
-    <?php if ( get_bloginfo( 'description' ) ) : ?>
-      <p class="site-description"><?php bloginfo( 'description' ); ?></p>
-    <?php endif; ?>	
-  <?php } ?>
+  <?php if ( is_archive() ) {	?> <?php } ?>
 
 </header>
