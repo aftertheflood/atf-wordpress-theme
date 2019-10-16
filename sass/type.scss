@@ -43,6 +43,21 @@ html {
     }
 }
 
+@mixin type-very-small {
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    @include break(medium) {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+    }
+    @include break(large) {
+        font-size: 15px;
+        line-height: 21px;
+    }
+}
+
 @mixin type-label {
     font-family: Graphik, sans-serif;
     font-weight: bold;

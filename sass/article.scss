@@ -1,11 +1,13 @@
 .article-head {
-  margin: 114px 0 120px 0;
   .article-title {
-    grid-column: 3 / span 8;
+    margin: 70px 0 10px 0;
+    grid-column: 3 / span 10;
     @include break(medium) {
-      grid-column: 4 / span 7;
+      margin: 90px 0 7px 0;
+      grid-column: 4 / span 8;
     }
     @include break(large) {
+      margin: 114px 0 120px 0;
       grid-column: 3 / span 6;
     }
   }
@@ -18,7 +20,9 @@
   }
   .journal-splash__subtitle {
     @include type-heading-small;
-    margin: 0;
+    margin: -3px 0 0 0;
+    @include break(medium) {margin: -1px 0 1px 0;}
+    @include break(large) {margin-bottom: 0}
   }
 }
 
@@ -90,22 +94,27 @@
 
   .article__date {
     @include type-label;
-    height:auto; 
-    grid-column: 2 / span 10;
+    height: auto; 
+    grid-column: 3 / span 8;
     @include break(medium) {
+      grid-column: 4 / span 7;
+    }
+    @include break(large) {
       height: 100%;
       grid-column: 3 / span 2;
     }
   }
 
   .article__content {
-    padding-top: 0px;
-    margin-top: -7px;
+    margin-top: 70px;
     grid-column: 3 / span 10;
     @include break(medium) {
+      margin-top: 90px;
       grid-column: 4 / span 8;
     }
     @include break(large) {
+      padding-top: 0px;
+      margin-top: -7px;
       grid-column: 5 / span 6;
     }
   }
@@ -163,4 +172,18 @@
   img {
     width:100%;
   }
+
+  .wp-block-image {
+    figcaption {
+      @include type-very-small;
+      text-align: left;
+      color: black;
+      max-width: 450px;
+      margin: 6px 0 40px 0;
+      @include break(large) {
+        margin: 7px 0 50px 0;
+      }
+    }
+  }
+
 }
