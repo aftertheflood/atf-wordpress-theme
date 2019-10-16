@@ -767,55 +767,6 @@ a.client__promo__link:hover {
   color: #FF611E;
 }
 
-.archive-post-light {
-  height: 100%;
-  background-color: #FFD600;
-  padding: 40px;
-  margin-bottom: 10px;
-  font-family: Tiempos, serif;
-}
-
-.light-archive__excerpt {
-  font-style: italic;
-}
-
-.light-archive__title {
-  text-transform: uppercase;
-}
-
-.light-archive__link,
-.light-archive__date {
-  font-family: Graphik, sans-serif;
-}
-
-.light-archive__link {
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.light-archive__link::after {
-  content: ' \00bb';
-}
-
-.split-50-50-left {
-  grid-area: auto / 2 / auto / 7;
-}
-
-.split-50-50-right {
-  grid-area: auto / 7 / auto / 12;
-}
-
-@media (max-width: 800px) {
-  .split-50-50-left {
-    grid-area: auto / 1 / auto / 13;
-  }
-  .split-50-50-right {
-    grid-area: auto / 1 / auto / 13;
-  }
-}
-
 .journal-splash {
   grid-template-areas: "image image image image image image image image image image image image image image" ". . text text text text text text text text text text . .";
 }
