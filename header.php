@@ -71,11 +71,6 @@
   </nav>
   <div class="nav-place-holder"></div>
   <!-- ARCHIVE HEADER -->
-  <?php if ( is_archive() ) {	?>
-    <h1 class="site-title"><?php bloginfo( 'name' ); ?> archive</h1>
-    <?php if ( get_bloginfo( 'description' ) ) : ?>
-      <p class="site-description"><?php bloginfo( 'description' ); ?></p>
-    <?php endif; ?>	
-  <?php } ?>
+  <?php if ( is_archive() ) {	?> <?php } ?>
 
 </header>
