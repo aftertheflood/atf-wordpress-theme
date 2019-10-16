@@ -109,26 +109,23 @@ html {
 //     line-height: 118%;
 // }
 
-%more-link {
 
-}
-
-%block-button {
+@mixin block-button {
     padding: 13px 20px 18px 20px;
     border: 0px;
 }
 
-%block-button-type {
+@mixin block-button-type {
     font-size: 21px;
     letter-spacing: 0.01em;
     font-weight: bold;
     text-decoration: none;
 }
 
-%promo-body {
 
-}
 
-%promo-headline {
+%more-link {}
 
-}
+%promo-body {}
+
+%promo-headline {}

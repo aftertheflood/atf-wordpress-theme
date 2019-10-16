@@ -11,10 +11,10 @@
 	padding-top: 120px;
 	display: grid;
 	grid-template-areas: 
-		". . heading heading heading heading heading heading . . . . . ."
-		". . link link link link link link . . . . . ."
-		". . social social social social social social . . . . . ."
-		". . address address address address address address . . . . . ."
+		". . heading heading heading heading heading heading heading heading heading heading . ."
+		". . link link link link link link link link link link . ."
+		". . social social social social social social social social social social . ."
+		". . address address address address address address address address address address . ."
 		". logo logo logo logo logo logo logo logo logo logo logo logo .";
 	h2 {
 		grid-area: heading;
@@ -33,8 +33,8 @@
 
 .footer-contact-link a {
 	grid-area: link;
-	@extend %block-button;
-	@extend %block-button-type;
+	@include block-button;
+	@include block-button-type;
 	color:black;
 	background-color: white;
 	&:hover {

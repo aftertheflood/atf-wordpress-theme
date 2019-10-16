@@ -92,7 +92,7 @@ where in the rendered web page you only see one column to the outside of the tex
 }
 
 .splash__promo__link {
-  @extend %block-button-type;
+  @include block-button-type;
   color: $half-black;
   &:hover {
     color: #000;
@@ -238,8 +238,8 @@ where in the rendered web page you only see one column to the outside of the tex
 }
 
 a.client__promo__link{
-  @extend %block-button;
-  @extend %block-button-type;
+  @include block-button;
+  @include block-button-type;
   background-color: $light-grey;
   color: #000;
   display: inline-block;

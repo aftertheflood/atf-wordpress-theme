@@ -224,15 +224,15 @@
 }
 
 .journal-splash__link {
-  @extend %block-button;
-  @extend %block-button-type;
+  @include block-button;
+  @include block-button-type;
   background-color: black;
   color: $journal-color;
   display: inline-block;
 }
 
 .journal-splash__link:hover {
-  @extend %block-button;
+  @include block-button;
   color: black;
   background-color: $journal-color;
   display: inline-block;
