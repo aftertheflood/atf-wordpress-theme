@@ -34,6 +34,6 @@
   <?php } 
   if($maxPages > $paged + 1){?>
   <a href="<?php next_posts(); ?>">next</a>
-  <?php } ?>
+  <?php }  ?>
 </div>
 <?php get_template_part('partials/html','bottom'); ?>
