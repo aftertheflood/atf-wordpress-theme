@@ -53,7 +53,7 @@ the article BODY
   p {
     font-weight: 400;
     margin: 0 0 0.9em 0;
-    @media screen and (min-width: 720px) {
+    @media screen and (min-width: 720px) and (max-width: $screen-medium) {
       line-height: 29px; // extra line-height while the paragraph is a bit wide.
     }
   }
@@ -116,7 +116,7 @@ the article BODY
 
   .article__date {
     @include type-label;
-    @include break(large) { margin-bottom: -23px; }
+    @include break(large) { margin-bottom: -22px; }
   }
 
   .article__content {
@@ -149,9 +149,12 @@ the article BODY
   blockquote, figure, 
   div.wp-block-image, .exec-summary, .case-study {
     grid-column: 2 / span 12;
+    text-align: left;
     @include break(tiny)   { grid-column: 3 / span 10; }
     @include break(medium) { grid-column: 4 / span 8; }
     @include break(large)  { grid-column: 5 / span 6; }
+    @include break(huge)   { grid-column: 6 / span 6; }
+    @include break(mega)   { grid-column: 7 / span 6; }
   }
 
 

@@ -47,7 +47,9 @@ body.contact {
   column-gap: $column-gap;
   // grid-auto-rows: minmax(50px, max-content); // I don't *think* we need this.
   margin: 0px;
-  align-items: center;
+	align-items: center;
+	@include break(huge) { grid-template-columns: 0px repeat(14, 1fr) 0px; }
+	@include break(mega) { grid-template-columns: 0px repeat(16, 1fr) 0px; }
 }
 
 .atf-archive-grid,

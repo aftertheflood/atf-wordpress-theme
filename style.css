@@ -128,6 +128,24 @@ body.contact {
   align-items: center;
 }
 
+@media screen and (min-width: 1480px) {
+  .atf-grid {
+    grid-template-columns: 0px repeat(14, 1fr) 0px;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .atf-grid {
+    grid-template-columns: 0px repeat(16, 1fr) 0px;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .atf-grid {
+    grid-template-columns: 0px repeat(16, 1fr) 0px;
+  }
+}
+
 .atf-archive-grid,
 .atf-archive-grid-home {
   display: grid;
@@ -157,13 +175,6 @@ body.contact {
   margin-right: -20px;
 }
 
-html {
-  text-rendering: optimizeLegibility;
-  font-variant-ligatures: common-ligatures;
-  font-kerning: normal;
-}
-
-/* category colours */
 .atf-footer {
   width: 100%;
   color: #FFFFFF;
@@ -207,6 +218,24 @@ html {
 @media screen and (min-width: 1120px) {
   .atf-footer {
     padding-top: 120px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .atf-footer {
+    grid-template-areas: ". . heading heading heading heading heading heading heading heading heading heading heading heading . ." ". . link link link link link link link link link link link link . ." ". . social social social social social social social social social social social social . ." ". . address address address address address address address address address address address address . ." ". logo logo logo logo logo logo logo logo logo logo logo logo logo logo .";
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .atf-footer {
+    grid-template-areas: ". . heading heading heading heading heading heading heading heading heading heading heading heading heading heading . ." ". . link link link link link link link link link link link link link link . ." ". . social social social social social social social social social social social social social social . ." ". . address address address address address address address address address address address address address address . ." ". logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo .";
+  }
+}
+
+@media screen and (min-width: mega) {
+  .atf-footer {
+    grid-template-areas: ". . heading heading heading heading heading heading heading heading heading heading heading heading heading heading . ." ". . link link link link link link link link link link link link link link . ." ". . social social social social social social social social social social social social social social . ." ". . address address address address address address address address address address address address address address . ." ". logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo .";
   }
 }
 
@@ -422,6 +451,24 @@ where in the rendered web page you only see one column to the outside of the tex
   }
 }
 
+@media screen and (min-width: 1480px) {
+  .splash {
+    grid-template-areas: " . . intro intro intro intro intro intro intro . . . . . . ." " . . . . . . . . promo promo promo promo promo promo promo .";
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .splash {
+    grid-template-areas: " . . intro intro intro intro intro intro intro . . . . . . . . ." ". .  . . . . . . . promo promo promo promo promo promo promo promo .";
+  }
+}
+
+@media screen and (min-width: mega) {
+  .splash {
+    grid-template-areas: " . . intro intro intro intro intro intro intro . . . . . . . . ." ". .  . . . . . . . promo promo promo promo promo promo promo promo .";
+  }
+}
+
 .splash__intro {
   grid-area: intro;
   margin-top: 60px;
@@ -614,7 +661,7 @@ where in the rendered web page you only see one column to the outside of the tex
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1480px) {
   .splash__promo__title,
   .splash__promo__subtitle {
     padding-right: 40px;
@@ -926,6 +973,13 @@ where in the rendered web page you only see one column to the outside of the tex
   }
 }
 
+@media screen and (min-width: 1480px) {
+  .client__promo__excerpt {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
 .client__promo__excerpt p {
   margin-top: 0;
   margin-bottom: 0.9em;
@@ -1044,6 +1098,24 @@ a.client__promo__link:hover {
 @media screen and (min-width: 1120px) {
   .journal-splash {
     grid-template-areas: ". . text text text text text image image image image image image image";
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .journal-splash {
+    grid-template-areas: ". . text text text text text text image image image image image image image image";
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .journal-splash {
+    grid-template-areas: ". . text text text text text text text image image image image image image image image image";
+  }
+}
+
+@media screen and (min-width: mega) {
+  .journal-splash {
+    grid-template-areas: ". . text text text text text text text image image image image image image image image image";
   }
 }
 
@@ -1205,6 +1277,13 @@ a.client__promo__link:hover {
   }
 }
 
+@media screen and (min-width: 1480px) {
+  .journal-splash__excerpt {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
 @media screen and (min-width: 1120px) {
   .journal-splash__excerpt {
     margin: 36px 40px 36px 0;
@@ -1235,6 +1314,18 @@ a.client__promo__link:hover {
     padding-top: 120px;
     padding-bottom: 120px;
     grid-template-areas: ". . kicker kicker entries entries entries entries entries entries entries entries . .";
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .journal-archive {
+    grid-template-areas: ". . kicker kicker . entries entries entries entries entries entries entries entries entries . .";
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .journal-archive {
+    grid-template-areas: ". . kicker kicker . . entries entries entries entries entries entries entries entries entries entries . .";
   }
 }
 
@@ -1270,6 +1361,14 @@ a.client__promo__link:hover {
   .journal-archive__subtitle {
     font-size: 20px;
     line-height: 31px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .journal-archive__title,
+  .journal-archive__subtitle {
+    font-size: 21px;
+    line-height: 32px;
   }
 }
 
@@ -1585,6 +1684,24 @@ a.client__promo__link:hover {
   }
 }
 
+@media screen and (min-width: 1480px) {
+  .journal-home {
+    grid-template-areas: ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ."  ". . entries entries entries entries entries entries entries entries entries entries entries entries . ." ". . onward onward onward onward onward onward onward onward onward onward onward onward . .";
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .journal-home {
+    grid-template-areas: ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ."  ". . entries entries entries entries entries entries entries entries entries entries entries entries entries entries . ." ". . onward onward onward onward onward onward onward onward onward onward onward onward onward onward . .";
+  }
+}
+
+@media screen and (min-width: mega) {
+  .journal-home {
+    grid-template-areas: ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ."  ". . entries entries entries entries entries entries entries entries entries entries entries entries entries entries . ." ". . onward onward onward onward onward onward onward onward onward onward onward onward onward onward . .";
+  }
+}
+
 .journal-home .recently-header {
   grid-area: kicker;
   margin: 0;
@@ -1887,12 +2004,19 @@ the article BODY
   }
 }
 
+@media screen and (min-width: 1480px) {
+  .article-body {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
 .article-body p {
   font-weight: 400;
   margin: 0 0 0.9em 0;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 720px) and (max-width: 830px) {
   .article-body p {
     line-height: 29px;
   }
@@ -2010,7 +2134,7 @@ the article BODY
 
 @media screen and (min-width: 1120px) {
   .article-body .article__date {
-    margin-bottom: -23px;
+    margin-bottom: -22px;
   }
 }
 
@@ -2059,6 +2183,7 @@ the article BODY
 .article-body blockquote, .article-body figure,
 .article-body div.wp-block-image, .article-body .exec-summary, .article-body .case-study {
   grid-column: 2 / span 12;
+  text-align: left;
 }
 
 @media screen and (min-width: 420px) {
@@ -2082,6 +2207,30 @@ the article BODY
   .article-body blockquote, .article-body figure,
   .article-body div.wp-block-image, .article-body .exec-summary, .article-body .case-study {
     grid-column: 5 / span 6;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
+  .article-body blockquote, .article-body figure,
+  .article-body div.wp-block-image, .article-body .exec-summary, .article-body .case-study {
+    grid-column: 6 / span 6;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
+  .article-body blockquote, .article-body figure,
+  .article-body div.wp-block-image, .article-body .exec-summary, .article-body .case-study {
+    grid-column: 7 / span 6;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
+  .article-body blockquote, .article-body figure,
+  .article-body div.wp-block-image, .article-body .exec-summary, .article-body .case-study {
+    grid-column: 7 / span 6;
   }
 }
 

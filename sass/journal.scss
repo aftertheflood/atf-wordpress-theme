@@ -7,9 +7,9 @@
     "image image image image image image image image image image image image image image"
     ". . . text text text text text text text text . . .";
   }
-  @include break(large) {
-    grid-template-areas: ". . text text text text text image image image image image image image";
-  }
+  @include break(large) { grid-template-areas: ". . text text text text text image image image image image image image"; }
+  @include break(huge)  { grid-template-areas: ". . text text text text text text image image image image image image image image"; }
+  @include break(mega)  { grid-template-areas: ". . text text text text text text text image image image image image image image image image"; }
 }
 
 .journal-splash__text {
@@ -102,6 +102,8 @@
     grid-template-areas:  
       ". . kicker kicker entries entries entries entries entries entries entries entries . .";
   }
+  @include break(huge) { grid-template-areas: ". . kicker kicker . entries entries entries entries entries entries entries entries entries . .";  }
+  @include break(huge) { grid-template-areas: ". . kicker kicker . . entries entries entries entries entries entries entries entries entries entries . .";  }
 }
 
 .journal-archive__title, 
@@ -265,6 +267,18 @@
   }
   @include break(medium) {padding: 90px 0;}
   @include break(large) {padding: 120px 0;}
+  @include break(huge) {
+    grid-template-areas: 
+      ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ." 
+      ". . entries entries entries entries entries entries entries entries entries entries entries entries . ."
+      ". . onward onward onward onward onward onward onward onward onward onward onward onward . .";
+  }
+  @include break(mega) {
+    grid-template-areas: 
+      ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ." 
+      ". . entries entries entries entries entries entries entries entries entries entries entries entries entries entries . ."
+      ". . onward onward onward onward onward onward onward onward onward onward onward onward onward onward . .";
+  }
 
   .recently-header {
     grid-area: kicker;

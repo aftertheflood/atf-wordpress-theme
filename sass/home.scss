@@ -35,6 +35,16 @@ where in the rendered web page you only see one column to the outside of the tex
     " . . intro intro intro intro intro intro . . . . . . "
     " . . . . . . . promo promo promo promo promo promo .";
   }
+  @include break(huge) {
+    grid-template-areas:  
+    " . . intro intro intro intro intro intro intro . . . . . . ."
+    " . . . . . . . . promo promo promo promo promo promo promo .";
+  }
+  @include break(mega) {
+    grid-template-areas:  
+    " . . intro intro intro intro intro intro intro . . . . . . . . ."
+    ". .  . . . . . . . promo promo promo promo promo promo promo promo .";
+  }
 }
 
 .splash__intro {

@@ -19,6 +19,7 @@ html {
     @include break(small)  { font-size: 18px; line-height: 27px; }
     @include break(medium) { font-size: 19px; line-height: 30px; letter-spacing: -0.01em; }
     @include break(large)  { font-size: 20px; line-height: 31px; }
+    @include break(huge)   { font-size: 21px; line-height: 32px; }
 }
 
 @mixin type-small {
