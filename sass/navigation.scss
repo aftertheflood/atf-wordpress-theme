@@ -18,7 +18,9 @@ nav {
   align-content: stretch;
   align-items: flex-start;
   @include break(medium) {height: 60px;}
-  @include break(large) {height: 62px;}
+  @include break(large)  {height: 62px;}
+  @include break(huge)   {height: 63px;}
+  @include break(mega)   {height: 64px;}
 }
 
 .header-links {
@@ -43,6 +45,8 @@ nav {
     padding-left: $column-gap;
     padding-right: $column-gap;
   }
+  @include break(huge) { padding-top: ($column-gap/2)-3; }
+  @include break(mega) { padding-top: ($column-gap/2)-4; }
 }
 
 nav a {
@@ -77,12 +81,10 @@ nav.contact {
   margin-right: auto;
   left: 0;
   right: 0;
-  @include break(medium) {
-    bottom: -($activeMarker / 2 - 7);
-  }
-  @include break(large) {
-    bottom: -($activeMarker / 2 - 9);
-  }
+  @include break(medium) { bottom: -($activeMarker / 2 - 7); }
+  @include break(large)  { bottom: -($activeMarker / 2 - 9); }
+  @include break(huge)   { bottom: -($activeMarker / 2 - 12); }
+  @include break(mega)   { bottom: -($activeMarker / 2 - 14); }
 }
 
 .active-marker-circle {
