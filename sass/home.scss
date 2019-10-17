@@ -20,7 +20,17 @@ where in the rendered web page you only see one column to the outside of the tex
   grid-template-areas:  
     " . intro intro intro intro intro intro intro intro intro intro intro intro . "
     " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
+  @include break(small) {
+    grid-template-areas:  
+    " . . intro intro intro intro intro intro intro intro . . . . "
+    " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
+  }
   @include break(medium) {
+    grid-template-areas:  
+    " . . intro intro intro intro intro intro intro intro . . . . "
+    " . . . . . . promo promo promo promo promo promo promo .";
+  }
+  @include break(large) {
     grid-template-areas:  
     " . . intro intro intro intro intro intro . . . . . . "
     " . . . . . . . promo promo promo promo promo promo .";
@@ -29,8 +39,12 @@ where in the rendered web page you only see one column to the outside of the tex
 
 .splash__intro {
   grid-area: intro;
-  margin-top: 100px;
-  margin-bottom: 112px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  @include break(tiny)   { margin-top: 80px; margin-bottom: 55px; }
+  @include break(small)  { margin-top: 80px; margin-bottom: 70px; }
+  @include break(medium) { margin-top: 90px; margin-bottom: 100px; }
+  @include break(large)  { margin-top: 100px; margin-bottom: 112px; }
 }
 
 .splash__intro__title {
@@ -50,9 +64,31 @@ where in the rendered web page you only see one column to the outside of the tex
   grid-area: promo;
   background-color: #FFD600;
   margin: 0;
-  padding: ($promoPadding - 1px) $promoPadding $promoPadding $promoPadding;
+  padding: 18px 20px 20px;
+  @include break(small) {
+    padding: 24px 0 27px 0;
+  }
   @include break(medium) {
     margin-bottom: $column-gap;
+    padding: 33px 36px 36px;
+  }
+  @include break(large) {
+    padding: 37px 40px 40px;
+  }
+}
+
+// the following two styles are just for the small–medium space.
+.splash__promo-gridwrapper {
+  @media screen and (min-width: $screen-small) and (max-width: $screen-medium - 1) {
+    display: grid;
+    grid-template-columns: 0px repeat(12, 1fr) 0px;
+    column-gap: $column-gap;
+    margin: 0;
+  }
+}
+.splash__promo-gridwrapper-inner {
+  @media screen and (min-width: $screen-small) and (max-width: $screen-medium - 1) {
+    grid-column: 3 / span 10;
   }
 }
 
@@ -61,10 +97,8 @@ where in the rendered web page you only see one column to the outside of the tex
   @include type-heading-small;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
-  padding-right: ($promoPadding/2);
-  @include break(huge) {
-    padding-right: $promoPadding;
-  }
+  @include break(large) {padding-right: ($promoPadding/2);}
+  @include break(huge)  {padding-right: $promoPadding;}
 }
 
 .splash__promo__title {
@@ -75,8 +109,11 @@ where in the rendered web page you only see one column to the outside of the tex
 
 .splash__promo__subtitle {
   margin-top: -1px;
-  margin-bottom: 9px;
+  margin-bottom: 5px;
   font-style: italic;
+  @include break(small)  { margin-bottom: 7px; }
+  @include break(medium) { margin-bottom: 8px; }
+  @include break(large)  { margin-bottom: 9px; }
 }
 
 .splash__promo__date,
@@ -253,81 +290,16 @@ a.client__promo__link:hover{
 .more-clients-link {
   @include type-heading-big;
   font-weight: 800;
-  grid-column: 3 / span 6;
+  grid-column: 2 / span 12;
   text-decoration: none;
   color: #000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   &:hover {
     color: $clients-color;
   }
+  @include break(tiny) {grid-column: 3 / span 10;}
 }
 
 
 
 
-
-
-
-
-
-.archive-post-light {
-  height: 100%;
-  background-color: #FFD600;
-  padding: $promoPadding;
-  margin-bottom: 10px;
-  font-family: Tiempos, serif;
-}
-
-.light-archive__excerpt {
-  font-style: italic; 
-}
-
-.light-archive__title {
-  text-transform: uppercase;
-}
-
-.light-archive__link,
-.light-archive__date{
-  font-family: Graphik, sans-serif;
-}
-
-.light-archive__link{
-  color:black;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.light-archive__link::after{
-  content:' \00bb';
-}
-
-.split-50-50-left{
-  grid-area: auto / 2 / auto / 7;
-}
-
-.split-50-50-right{
-  grid-area: auto / 7 / auto / 12;
-}
-
-@media (max-width: 800px) {
-  .split-50-50-left{
-    grid-area: auto / 1 / auto / 13;
-  }
-  
-  .split-50-50-right{
-    grid-area: auto / 1 / auto / 13;
-  } 
-}
-
-
-
-
-// .recently-header{
-//   margin-top: 50px;
-//   grid-column: 2 / span 6;
-// }
-
-// .promo-double__right{
-
-// }
