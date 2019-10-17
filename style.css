@@ -1741,6 +1741,9 @@ input[type=submit]:hover {
   background: #F00;
 }
 
+/* ===================================================================================
+the article HEADING
+=================================================================================== */
 .article-head .article-title {
   margin: 70px 0 10px 0;
   grid-column: 2 / span 12;
@@ -1844,13 +1847,22 @@ input[type=submit]:hover {
   }
 }
 
+/* ===================================================================================
+the article BODY
+=================================================================================== */
 .article-body {
   font-size: 17px;
   line-height: 25px;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
-  /* styles for excerpting text content */
-  /* styles useful for images */
+  /* type styles and spacing
+  --------------------------------------------------------------------------------- */
+  /* grid styles
+  --------------------------------------------------------------------------------- */
+  /* styles for excerpting text content 
+  --------------------------------------------------------------------------------- */
+  /* styles useful for images 
+  --------------------------------------------------------------------------------- */
 }
 
 @media screen and (min-width: 650px) {
@@ -1928,12 +1940,6 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (min-width: 830px) {
-  .article-body h2 {
-    grid-column: 2 / span 10;
-  }
-}
-
 .article-body h3 {
   font-family: Tiempos, Georgia, serif;
   font-weight: 600;
@@ -1968,11 +1974,11 @@ input[type=submit]:hover {
   margin-left: 20px;
 }
 
-.article-body li {
+.article-body ul li {
   text-indent: -25px;
 }
 
-.article-body li:before {
+.article-body ul li:before {
   content: "— ";
 }
 
@@ -1982,8 +1988,6 @@ input[type=submit]:hover {
   font-size: 12px;
   line-height: 118%;
   letter-spacing: 0.02em;
-  height: auto;
-  grid-column: 2 / span 12;
 }
 
 @media screen and (min-width: 420px) {
@@ -2004,42 +2008,21 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (min-width: 420px) {
-  .article-body .article__date {
-    grid-column: 3 / span 10;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .article-body .article__date {
-    grid-column: 4 / span 7;
-  }
-}
-
 @media screen and (min-width: 1120px) {
   .article-body .article__date {
-    height: 100%;
-    grid-column: 3 / span 2;
+    margin-bottom: -23px;
   }
 }
 
 .article-body .article__content {
   margin-top: 70px;
   margin-bottom: 70px;
-  grid-column: 2 / span 12;
-}
-
-@media screen and (min-width: 420px) {
-  .article-body .article__content {
-    grid-column: 3 / span 10;
-  }
 }
 
 @media screen and (min-width: 830px) {
   .article-body .article__content {
     margin-top: 90px;
     margin-bottom: 90px;
-    grid-column: 4 / span 8;
   }
 }
 
@@ -2047,12 +2030,59 @@ input[type=submit]:hover {
   .article-body .article__content {
     padding-top: 0px;
     margin-top: -7px;
-    grid-column: 5 / span 6;
   }
 }
 
-.article-body img, .article-body p, .article-body blockquote, .article-body figure, .article-body ul, .article-body div, .article-body h2, .article-body h3, .article-body h4 {
-  grid-column: 5 / span 6;
+.article-body .the-date {
+  grid-column: 2 / span 12;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body .the-date {
+    grid-column: 3 / span 10;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body .the-date {
+    grid-column: 4 / span 7;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body .the-date {
+    grid-column: 3 / span 2;
+  }
+}
+
+.article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
+.article-body blockquote, .article-body figure,
+.article-body div.wp-block-image, .article-body .exec-summary, .article-body .case-study {
+  grid-column: 2 / span 12;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
+  .article-body blockquote, .article-body figure,
+  .article-body div.wp-block-image, .article-body .exec-summary, .article-body .case-study {
+    grid-column: 3 / span 10;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
+  .article-body blockquote, .article-body figure,
+  .article-body div.wp-block-image, .article-body .exec-summary, .article-body .case-study {
+    grid-column: 4 / span 8;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
+  .article-body blockquote, .article-body figure,
+  .article-body div.wp-block-image, .article-body .exec-summary, .article-body .case-study {
+    grid-column: 5 / span 6;
+  }
 }
 
 .article-body blockquote {
@@ -2066,6 +2096,31 @@ input[type=submit]:hover {
   margin-bottom: 14px;
 }
 
+.article-body blockquote p.in-quotes {
+  text-indent: -10px;
+}
+
+.article-body blockquote.pullquote-left,
+.article-body blockquote.pullquote-right {
+  font-family: Tiempos, Georgia, serif;
+  padding: 30px 40px 30px 40px;
+}
+
+.article-body blockquote.pullquote-left p,
+.article-body blockquote.pullquote-right p {
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: -0.02em;
+}
+
+.article-body blockquote.pullquote-left {
+  grid-column: 1 / span 7;
+}
+
+.article-body blockquote.pullquote-right {
+  grid-column: 8 / span 7;
+}
+
 .article-body cite {
   display: block;
   margin: 24px 100px 14px 0;
@@ -2073,19 +2128,6 @@ input[type=submit]:hover {
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 0.01em;
-}
-
-.article-body blockquote p.in-quotes {
-  text-indent: -10px;
-}
-
-.article-body blockquote.pullquote-left {
-  grid-column: 1 / span 6;
-  font-family: Tiempos, Georgia, serif;
-  font-size: 48px;
-  line-height: 58px;
-  letter-spacing: -0.02em;
-  padding: 30px 40px 30px 40px;
 }
 
 .article-body .indepth {
