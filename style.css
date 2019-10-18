@@ -1226,7 +1226,13 @@ a.client__promo__link:hover {
 }
 
 .journal-splash {
-  grid-template-areas: "image image image image image image image image image image image image image image" ". . text text text text text text text text text text . .";
+  grid-template-areas: "image image image image image image image image image image image image image image" ". text text text text text text text text text text text text .";
+}
+
+@media screen and (min-width: 420px) {
+  .journal-splash {
+    grid-template-areas: "image image image image image image image image image image image image image image" ". . text text text text text text text text text text . .";
+  }
 }
 
 @media screen and (min-width: 830px) {

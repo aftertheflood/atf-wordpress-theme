@@ -1,7 +1,12 @@
 .journal-splash {
   grid-template-areas: 
     "image image image image image image image image image image image image image image"
-    ". . text text text text text text text text text text . .";
+    ". text text text text text text text text text text text text .";
+  @include break(tiny) {
+    grid-template-areas: 
+      "image image image image image image image image image image image image image image"
+      ". . text text text text text text text text text text . .";
+  }
   @include break(medium) {
     grid-template-areas: 
     "image image image image image image image image image image image image image image"
