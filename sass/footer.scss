@@ -6,11 +6,19 @@
 	padding-top: 70px;
 	display: grid;
 	grid-template-areas: 
+		". heading heading heading heading heading heading heading heading heading heading heading heading ."
+		". link link link link link link link link link link link link ."
+		". social social social social social social social social social social social social ."
+		". address address address address address address address address address address address address ."
+		". logo logo logo logo logo logo logo logo logo logo logo logo .";
+	@include break(tiny) {
+		grid-template-areas: 
 		". . heading heading heading heading heading heading heading heading heading heading . ."
 		". . link link link link link link link link link link . ."
 		". . social social social social social social social social social social . ."
 		". . address address address address address address address address address address . ."
 		". logo logo logo logo logo logo logo logo logo logo logo logo .";
+	}
 	@include break(medium) {padding-top: 90px;}
 	@include break(large) {padding-top: 120px;}
 	@include break(huge) {

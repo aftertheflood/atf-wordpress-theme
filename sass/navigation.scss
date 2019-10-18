@@ -61,15 +61,15 @@ nav a {
 nav.clients {background-color: $clients-color;}
 nav.journal {background-color: $journal-color;}
 nav.about   {background-color: $about-color;}
-
-nav.contact {
-	background-color: $contact-color;
-  color: $contact-text;
-  fill:white;
-  a {
-    color: white;
-  }
-}
+nav.contact {background-color: $contact-color;}
+// nav.contact {
+// 	background-color: $contact-color;
+//   color: $contact-text;
+//   fill:white;
+//   a {
+//     color: white;
+//   }
+// }
 
 .active-marker {
   position: absolute;
