@@ -5,7 +5,7 @@ $activeMarker: 30px;
 }
 
 nav {
-  position: fixed;
+  // position: fixed;
   width: 100%;
   top: 0px;
 	background-color: white;
@@ -18,11 +18,20 @@ nav {
   align-items: flex-start;
 }
 
-nav, 
-.nav-place-holder {
+nav.full-nav {
+  position: fixed;
+}
+
+nav {
   height: 50px;
   @include break(tiny)   {height: 52px;}
   @include break(small)  {height: 55px;}
+}
+
+.nav-place-holder { height: 0; }
+
+nav, 
+.nav-place-holder {
   @include break(medium) {height: 60px;}
   @include break(large)  {height: 62px;}
   @include break(huge)   {height: 63px;}
@@ -56,6 +65,12 @@ nav,
   @include break(mega)   { padding-top: 6px; }
 }
 
+.header-button {
+  position: fixed;
+  float: right;
+  right: 0;
+}
+
 .header-button, 
 .close-menu-button {
   padding-top: 7px;
@@ -63,7 +78,6 @@ nav,
   @include break(tiny)  { padding-top: 8px; padding-right: 8px; }
   @include break(small) { padding-top: 9px; padding-right: 9px; }
 }
-
 
 nav a {
 	text-decoration: none;
