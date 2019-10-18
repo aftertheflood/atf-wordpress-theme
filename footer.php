@@ -1,10 +1,13 @@
+<?php global $pageTag; ?>
 <footer class="atf-footer atf-grid">
+<?php if($pageTag != 'contact' ) { ?>
 	<h2>Would you like to know more?</h2>
 	<div class="footer-contact-link">
 		<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" > 
 			Get in touch
 		</a>
 	</div>
+<?php } ?>
 	<div class="social">
 		<a href="https://twitter.com/afterthefloodco?lang=en"><img src="/wp-content/themes/atf-wordpress-theme/assets/images/twitter-social-circle-white.svg" class="social-icon"></a>
 		<a href="https://www.instagram.com/afterthefloodco/"><img src="/wp-content/themes/atf-wordpress-theme/assets/images/instagram-social-circle-white.svg" class="social-icon"></a>
