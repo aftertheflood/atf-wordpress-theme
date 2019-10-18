@@ -30,14 +30,14 @@ const main = () => {
     compactSiteMenu.setAttribute('style', 'height:100vh; position:fixed;');
     return false;
   });
-
+  
+  // add an event listener to the menu close button
   closeMenuButton.addEventListener('click', function(e){
     e.preventDefault();
     compactSiteMenu.setAttribute('style', 'height:0vh;overflow:hidden;');
     return false;
   })
-  
-  // add an event listener to the menu close button
+
 
 }
 
