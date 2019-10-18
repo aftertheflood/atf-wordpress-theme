@@ -6,7 +6,6 @@ $activeMarker: 30px;
 
 nav {
   position: fixed;
-  height: 58px;
   width: 100%;
   top: 0px;
 	background-color: white;
@@ -17,6 +16,13 @@ nav {
   justify-content: space-between;
   align-content: stretch;
   align-items: flex-start;
+}
+
+nav, 
+.nav-place-holder {
+  height: 50px;
+  @include break(tiny)   {height: 52px;}
+  @include break(small)  {height: 55px;}
   @include break(medium) {height: 60px;}
   @include break(large)  {height: 62px;}
   @include break(huge)   {height: 63px;}
@@ -25,29 +31,39 @@ nav {
 
 .header-links {
   display: inline-block;
-  @include type-heading-small;
+  font-size: 32px;
+  line-height: 118%;
+  letter-spacing: -0.01em;
   font-weight: bold;
-  padding-left: $column-gap/2;
-  padding-right: $column-gap/2;
-  @include break(large) {
-    padding: 0;
-  }
+  padding-left: $column-gap;
+  @include break(tiny)   { font-size: 25px; }
+  @include break(small)  { font-size: 30px; }
+  @include break(medium) { font-size: 32px; padding-left: $column-gap/2; padding-right: $column-gap/2; }
+  @include break(large)  { font-size: 34px; padding: 0; }
+  @include break(huge)   { font-size: 36px; }
+  @include break(mega)   { font-size: 38px; }  
 }
 
 .header-link {
   position: relative;
   display: inline-block;
-  padding-top: ($column-gap/2)-2;
-  padding-bottom: $column-gap;
-  padding-left: $column-gap/2;
-  padding-right: $column-gap/2;
-  @include break(large) {
-    padding-left: $column-gap;
-    padding-right: $column-gap;
-  }
-  @include break(huge) { padding-top: ($column-gap/2)-3; }
-  @include break(mega) { padding-top: ($column-gap/2)-4; }
+  padding-top: 4px;
+  @include break(tiny)   { padding-top: 9px; }
+  @include break(small)  { padding-top: 8px; }
+  @include break(medium) { padding-left: $column-gap/2; padding-right: $column-gap/2; }
+  @include break(large)  { padding-left: $column-gap; padding-right: $column-gap; }
+  @include break(huge)   { padding-top: 7px; }
+  @include break(mega)   { padding-top: 6px; }
 }
+
+.header-button, 
+.close-menu-button {
+  padding-top: 7px;
+  padding-right: 7px;
+  @include break(tiny)  { padding-top: 8px; padding-right: 8px; }
+  @include break(small) { padding-top: 9px; padding-right: 9px; }
+}
+
 
 nav a {
 	text-decoration: none;
@@ -62,29 +78,18 @@ nav.clients {background-color: $clients-color;}
 nav.journal {background-color: $journal-color;}
 nav.about   {background-color: $about-color;}
 nav.contact {background-color: $contact-color;}
-// nav.contact {
-// 	background-color: $contact-color;
-//   color: $contact-text;
-//   fill:white;
-//   a {
-//     color: white;
-//   }
-// }
 
 .active-marker {
   position: absolute;
   display: inline-block;
   width: $activeMarker;
   height: $activeMarker;
-  bottom: -($activeMarker / 2 - 8);
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  @include break(medium) { bottom: -($activeMarker / 2 - 7); }
-  @include break(large)  { bottom: -($activeMarker / 2 - 9); }
-  @include break(huge)   { bottom: -($activeMarker / 2 - 12); }
-  @include break(mega)   { bottom: -($activeMarker / 2 - 14); }
+  @include break(medium) { margin-top: 35px; }
+  @include break(large)  { margin-top: 36px; }
 }
 
 .active-marker-circle {
@@ -105,10 +110,6 @@ nav.contact {background-color: $contact-color;}
   opacity: 1;
 }
 
-.nav-place-holder {
-	height: $nav-height;
-}
-
 .full-nav {
   display: none;
   @include break(medium) {
@@ -126,21 +127,15 @@ nav.contact {background-color: $contact-color;}
 nav.compact-menu {
   z-index: 1000; // need to fix this
   display: block;
-  // margin-left: 100px;
   position: relative;
-  background: red;
+  background: #000;
   color: white;
+  padding-left: 20px;
   a {
     display: block;
     color: white;
   }
-  @include break(medium) {
-    display: none;
-    overflow: hidden;
-    // background: black;
-    // color:white;
-    padding-left: 20px;
-  }
+  @include break(medium) { display: none; overflow: hidden; }
 }
 
 nav.compact-menu.closed {
@@ -149,34 +144,39 @@ nav.compact-menu.closed {
   @include break(medium) {display: none;}
 }
 nav.compact-menu.open {
-  // background: red;
   position: fixed;
   height: 1000vh;
   @include break(medium) {display: none;}
 }
 
-.compact-menu__link {
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 120%;
-  @include break(medium) {
-    color:white;
-  }
-}
-
-.compact-menu__title {
-  color:rgba(255,255,255,0.5);
-}
-
-.close-menu-button {
-  margin-top: 15px;
-  margin-right: 10px;
-}
-
-.compact-menu__close-icon {
-}
 
 .compact-menu__head {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.compact-menu__head h2 {
+  margin: 0;
+}
+
+.compact-menu__link, 
+h2.compact-menu__title {
+  font-size: 32px;
+  line-height: 118%;
+  letter-spacing: -0.01em;
+  font-weight: bold;
+  @include break(tiny)   { font-size: 25px; }
+  @include break(small)  { font-size: 30px; }
+}
+
+h2.compact-menu__title {
+  color:rgba(255,255,255,0.5);
+  padding-top: 4px;
+  @include break(tiny)   { padding-top: 9px; }
+  @include break(small)  { padding-top: 8px; }
+}
+
+.compact-menu__link {
+  padding: 10px 0;
 }
