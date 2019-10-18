@@ -3343,6 +3343,12 @@ nav {
   right: 0;
 }
 
+@media screen and (min-width: 830px) {
+  .header-button {
+    display: none;
+  }
+}
+
 .header-button,
 .close-menu-button {
   padding-top: 7px;
