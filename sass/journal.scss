@@ -108,7 +108,7 @@
       ". . kicker kicker entries entries entries entries entries entries entries entries . .";
   }
   @include break(huge) { grid-template-areas: ". . kicker kicker . entries entries entries entries entries entries entries entries entries . .";  }
-  @include break(huge) { grid-template-areas: ". . kicker kicker . . entries entries entries entries entries entries entries entries entries entries . .";  }
+  @include break(mega) { grid-template-areas: ". . kicker kicker . . entries entries entries entries entries entries entries entries entries entries . .";  }
 }
 
 .journal-archive__title, 
@@ -251,7 +251,25 @@
   display: inline-block;
 }
 
-
+.archive-pagination {
+  grid-column: 2 / span 8;
+  margin: 60px 0 0 0;
+  @include break(tiny)   { grid-column: 3 / span 8; }
+  @include break(small)  { grid-column: 3 / span 8; }
+  @include break(medium) { grid-column: 4 / span 8; }
+  @include break(large)  { grid-column: 5 / span 8; }
+  @include break(huge)   { grid-column: 6 / span 8; }
+  @include break(mega)   { grid-column: 7 / span 8; }
+  a {
+    @include block-button;
+    @include block-button-type;
+    background: white;
+    color: black;
+    &:hover {
+      background-color: rgba(255,255,255,0.9);
+    }
+  }
+}
 
 
 

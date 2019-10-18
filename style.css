@@ -1490,7 +1490,13 @@ a.client__promo__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1850px) {
+  .journal-archive {
+    grid-template-areas: ". . kicker kicker . . entries entries entries entries entries entries entries entries entries entries . .";
+  }
+}
+
+@media screen and (min-width: mega) {
   .journal-archive {
     grid-template-areas: ". . kicker kicker . . entries entries entries entries entries entries entries entries entries entries . .";
   }
@@ -1829,6 +1835,104 @@ a.client__promo__link:hover {
   .journal-splash__link:hover {
     padding: 13px 20px 18px 20px;
   }
+}
+
+.archive-pagination {
+  grid-column: 2 / span 8;
+  margin: 60px 0 0 0;
+}
+
+@media screen and (min-width: 420px) {
+  .archive-pagination {
+    grid-column: 3 / span 8;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .archive-pagination {
+    grid-column: 3 / span 8;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .archive-pagination {
+    grid-column: 4 / span 8;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .archive-pagination {
+    grid-column: 5 / span 8;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .archive-pagination {
+    grid-column: 6 / span 8;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .archive-pagination {
+    grid-column: 7 / span 8;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .archive-pagination {
+    grid-column: 7 / span 8;
+  }
+}
+
+.archive-pagination a {
+  padding: 11px 16px 15px 16px;
+  border: 0px;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+  font-weight: bold;
+  text-decoration: none;
+  background: white;
+  color: black;
+}
+
+@media screen and (min-width: 830px) {
+  .archive-pagination a {
+    padding: 12px 18px 16px 18px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .archive-pagination a {
+    padding: 13px 20px 18px 20px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .archive-pagination a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .archive-pagination a {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .archive-pagination a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .archive-pagination a {
+    font-size: 21px;
+  }
+}
+
+.archive-pagination a:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Variations on the journal archive for the homepage
