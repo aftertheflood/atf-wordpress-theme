@@ -183,7 +183,7 @@ The home (and clients) PROMO zone
 /* Feature blocks: GRID SETTINGS
 -------------------------------------------------------------------------------------- */
 
-.promo-right {
+.client-promo__right {
   grid-template-areas:
     "image image image image image image image image image image image image image image" 
     ". text text text text text text text text text text text text .";
@@ -213,7 +213,7 @@ The home (and clients) PROMO zone
   }
 }
 
-.promo-left {  
+.client-promo__left {  
   grid-template-areas:
       "image image image image image image image image image image image image image image" 
       ". text text text text text text text text text text text text .";
@@ -265,13 +265,20 @@ The home (and clients) PROMO zone
 
 
 
+
+
+
 /* The primary blocks */
 
-.promo-left, .promo-right {
+.client-promo__left, .client-promo__right {
   margin-bottom: 0; // on mobile, no margin
   padding-top: 40px; // on mobile, add space between the text and image or divider
   border-top: 1px solid #ddd;
-  &:first-of-type { border-top: none; }
+  &:first-of-type { 
+    border-top: none; 
+    padding-top: 0;
+  }
+  @include break(tiny)   { padding-top: 70px; }
   @include break(medium) { 
     border-top: none; 
     padding-top: 0;
@@ -279,7 +286,7 @@ The home (and clients) PROMO zone
 }
 
 
-.promo-double__left {
+.client-promo-double__left {
   box-shadow: 0px 0px; // necessary?
   @include break(small) {
     grid-area: lefttext;
@@ -288,7 +295,7 @@ The home (and clients) PROMO zone
   }
 }
 
-.promo-double__right {
+.client-promo-double__right {
   grid-area: righttext;
   padding-right: 30px;
 }
@@ -296,14 +303,118 @@ The home (and clients) PROMO zone
 
 
 
-/* Images */
 
-// fairly certain this doesn't do anything
-// .promo-left .promo__image { margin-right: calc(-$column-gap); }
-// .promo-right .promo__image { margin-left: calc(-$column-gap); }
 
-.promo__text { grid-area: text; }
 
+
+/* The text block */
+.promo__text { 
+  grid-area: text; 
+
+  .sector { @include type-label; }
+  
+  .title {
+    @include type-heading-small;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    @include break(tiny) { margin-bottom: 30px; }
+  }
+  
+  .excerpt {
+    @include type-body;
+    @include type-serif;
+    p {
+      margin-top: 0;
+      margin-bottom: 0.8em;
+      &:last-of-type { margin-bottom: 36px; }
+    }
+    @include break(tiny) {
+      p { 
+        margin-bottom: 0.9em;
+        &:last-of-type { margin-bottom: 34px; }
+      }
+    }
+  }
+  
+  .promo-bottom {
+    position: relative;
+    height: 86px; // this is the height of the button + the desired margin, 46 + 40
+    @include break(tiny) { height: 116px; } // 46 + 70
+    @include break(small) {
+      height: auto;
+      margin-bottom: 40px;
+    }
+    @include break(medium) {
+      margin-bottom: 0;
+    }
+
+    .bottom-inner {
+      position: absolute;
+      height: 46px;
+      overflow: visible;
+      width: 100%;
+      @include break(tiny)   { height: 46px; }
+      @include break(small) {
+        position: static;
+        height: auto;
+      }
+    }
+
+    a.link {
+      @include block-button;
+      @include block-button-type;
+      background-color: $light-grey;
+      color: #000;
+      display: inline-block;
+      &:hover {
+        background-color: $clients-color;
+        color: #000;
+      }
+      @include break(small)  { margin-bottom: 36px; }
+      @include break(large) { margin-bottom: 40px; }
+    }
+
+    img.logo {
+      display: block;
+      position: relative;
+      float: right;
+      max-width: 94px;
+      max-height: 77px;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      @include break(tiny) {
+        max-width: 110px;
+        max-height: 94px;
+      }
+      @include break(small) {
+        display: block;
+        position: static;
+        float: none;
+        width: auto;
+        height: auto;
+        top: auto;
+        transform: none;
+      }
+      @include break(medium) {
+        max-width: 120px;
+        max-height: 102px;
+      }
+      @include break(large) {
+        max-width: 128px;
+        max-height: 113px;
+      }
+    }
+  }
+} // end text block
+
+
+
+
+
+
+
+/* The image block */
 .promo__image {
   grid-area: image;
   // background-size: auto 100%;
@@ -332,74 +443,13 @@ The home (and clients) PROMO zone
   }
 }
 
-.promo-right .promo__image img {
+.client-promo__right .promo__image img {
   // right: 40px;
   @include break(medium) {
     position: relative;
     right: 180px;
   }
 }
-
-
-
-
-/* Text, etc. */
-
-.client-promo {
-
-  .sector { @include type-label; }
-  
-  .title {
-    @include type-heading-small;
-    margin-top: 4px;
-    margin-bottom: 15px;
-    @include break(tiny) { margin-bottom: 30px; }
-  }
-  
-  .excerpt {
-    @include type-body;
-    @include type-serif;
-    p {
-      margin-top: 0;
-      margin-bottom: 0.8em;
-      &:last-of-type { margin-bottom: 20px; }
-    }
-    @include break(tiny) {
-      p { 
-        margin-bottom: 0.9em;
-        &:last-of-type { margin-bottom: 34px; }
-      }
-    }
-  }
-  
-  .bottom {
-
-    a.link{
-      @include block-button;
-      @include block-button-type;
-      background-color: $light-grey;
-      color: #000;
-      display: inline-block;
-      &:hover {
-        background-color: $clients-color;
-        color: #000;
-      }
-    }
-
-    .logo {
-      display: block;
-      width: 100px;
-      max-height: 70px;
-      float: right;
-      @include break(medium) {
-        display: block;
-        width: 130px;
-      }
-    }
-  }
-
-}
-
 
 
 
