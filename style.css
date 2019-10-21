@@ -454,8 +454,9 @@ This is why there are two full-stops next to the text settings below
 where in the rendered web page you only see one column to the outside of the text.
 
 */
-/* The home splash zone 
--------------------------------------------------------------------------------------- */
+/* =======================================================================================
+The home SPLASHh zone 
+======================================================================================= */
 .splash {
   grid-template-areas: " . intro intro intro intro intro intro intro intro intro intro intro intro . " " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
 }
@@ -866,9 +867,9 @@ where in the rendered web page you only see one column to the outside of the tex
   content: ' \00bb';
 }
 
-/* The home (and clients page) feature blocks
-   GRID SETTINGS
--------------------------------------------------------------------------------------- */
+/* =======================================================================================
+The home (and clients) PROMO zone 
+======================================================================================= */
 .content {
   z-index: 10;
 }
@@ -878,6 +879,8 @@ where in the rendered web page you only see one column to the outside of the tex
   background: linear-gradient(to bottom, whitesmoke 0%, rgba(245, 245, 245, 0) 50%, whitesmoke 100%);
 }
 
+/* Feature blocks: GRID SETTINGS
+-------------------------------------------------------------------------------------- */
 .promo-right {
   grid-template-areas: "image image image image image image image image image image image image image image"  ". text text text text text text text text text text text text .";
 }
@@ -976,10 +979,12 @@ where in the rendered web page you only see one column to the outside of the tex
   }
 }
 
-/* The home (and clients page) feature blocks
-   LAYOUT SETTINGS
+/* Feature blocks: LAYOUT SETTINGS
 -------------------------------------------------------------------------------------- */
+/* The primary blocks */
 .promo-left, .promo-right {
+  margin-bottom: 0;
+  padding-top: 40px;
   border-top: 1px solid #ddd;
 }
 
@@ -990,6 +995,7 @@ where in the rendered web page you only see one column to the outside of the tex
 @media screen and (min-width: 830px) {
   .promo-left, .promo-right {
     border-top: none;
+    padding-top: 0;
   }
 }
 
@@ -1010,43 +1016,63 @@ where in the rendered web page you only see one column to the outside of the tex
   padding-right: 30px;
 }
 
-.promo-right, .promo-left {
-  margin-bottom: 0;
-}
-
-.promo-left .promo__image {
-  margin-right: calc(-$column-gap);
-}
-
-.promo-right .promo__image {
-  margin-left: calc(-$column-gap);
-}
-
+/* Images */
 .promo__text {
   grid-area: text;
 }
 
 .promo__image {
-  background-size: auto 100%;
-  background-repeat: no-repeat;
+  grid-area: image;
   overflow: hidden;
   max-width: 100%;
-  grid-area: image;
+  min-width: 100px;
+  max-height: 280px;
+  text-align: center;
+}
+
+@media screen and (min-width: 830px) {
+  .promo__image {
+    height: auto;
+    max-height: none;
+  }
 }
 
 .promo__image img {
-  width: calc(100% + 180px);
-  display: block;
+  display: absolute;
+  width: 120%;
+  left: 50%;
+  margin-left: -10%;
 }
 
-.promo-right .promo__image img {
-  position: relative;
-  right: 180px;
+@media screen and (min-width: 830px) {
+  .promo__image img {
+    width: calc(100% + 180px);
+    left: 0;
+    margin-left: 0;
+    display: block;
+  }
 }
 
+@media screen and (min-width: 830px) {
+  .promo-right .promo__image img {
+    position: relative;
+    right: 180px;
+  }
+}
+
+/* Text, etc. */
 .client__promo-logo {
   display: block;
-  width: 130px;
+  width: 100px;
+  max-height: 70px;
+  float: right;
+}
+
+@media screen and (min-width: 830px) {
+  .client__promo-logo {
+    display: block;
+    width: 130px;
+  }
 }
 
 .client__promo__sector {
@@ -1080,7 +1106,7 @@ where in the rendered web page you only see one column to the outside of the tex
   line-height: 118%;
   letter-spacing: -0.01em;
   margin-top: 4px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 420px) {
@@ -1125,6 +1151,12 @@ where in the rendered web page you only see one column to the outside of the tex
   }
 }
 
+@media screen and (min-width: 420px) {
+  .client__promo__title {
+    margin-bottom: 30px;
+  }
+}
+
 .client__promo__excerpt {
   font-size: 17px;
   line-height: 25px;
@@ -1163,11 +1195,20 @@ where in the rendered web page you only see one column to the outside of the tex
 
 .client__promo__excerpt p {
   margin-top: 0;
-  margin-bottom: 0.9em;
+  margin-bottom: 0.8em;
 }
 
 .client__promo__excerpt p:last-of-type {
-  margin-bottom: 34px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 420px) {
+  .client__promo__excerpt p {
+    margin-bottom: 0.9em;
+  }
+  .client__promo__excerpt p:last-of-type {
+    margin-bottom: 34px;
+  }
 }
 
 a.client__promo__link {
@@ -1223,10 +1264,11 @@ a.client__promo__link:hover {
   color: #000;
 }
 
+/* The "see more projects" link at the bottom */
 .more-clients {
   border-top: 1px solid #ddd;
-  padding-top: 9px;
-  padding-bottom: 20px;
+  padding-top: 8px;
+  padding-bottom: 16px;
 }
 
 @media screen and (min-width: 830px) {
@@ -1242,7 +1284,7 @@ a.client__promo__link:hover {
   font-weight: 800;
   grid-column: 2 / span 12;
   text-decoration: none;
-  color: #000;
+  color: #FF611E;
 }
 
 @media screen and (min-width: 420px) {
@@ -1295,12 +1337,21 @@ a.client__promo__link:hover {
 }
 
 .more-clients-link:hover {
-  color: #FF611E;
+  color: #000;
 }
 
 @media screen and (min-width: 420px) {
   .more-clients-link {
     grid-column: 3 / span 10;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .more-clients-link {
+    color: #000;
+  }
+  .more-clients-link:hover {
+    color: #FF611E;
   }
 }
 
