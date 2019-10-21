@@ -875,8 +875,8 @@ The home (and clients) PROMO zone
 }
 
 .homepage-promo-container {
-  background: whitesmoke;
-  background: linear-gradient(to bottom, whitesmoke 0%, rgba(245, 245, 245, 0) 50%, whitesmoke 100%);
+  background: white;
+  background: linear-gradient(to bottom, whitesmoke 0%, rgba(245, 245, 245, 0) 20%, rgba(245, 245, 245, 0) 80%, whitesmoke 100%);
 }
 
 /* Feature blocks: GRID SETTINGS
