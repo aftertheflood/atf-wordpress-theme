@@ -44,7 +44,7 @@ The home SPLASHh zone
   }
   @include break(mega) {
     grid-template-areas:  
-    " . . intro intro intro intro intro intro intro . . . . . . . . ."
+    " . . . intro intro intro intro intro intro . . . . . . . . ."
     ". .  . . . . . . . promo promo promo promo promo promo promo promo .";
   }
 }
@@ -194,8 +194,8 @@ The home (and clients) PROMO zone
   }  
   @include break(medium) { grid-template-areas: "image image image image image image image text text text text text . .";}
   @include break(large)  { grid-template-areas: "image image image image image image image . text text text text . .";}
-  @include break(huge)   {}
-  @include break(mega)   {}
+  @include break(huge)   { grid-template-areas: "image image image image image image image image image . text text text text . ."; }
+  @include break(mega)   { grid-template-areas: "image image image image image image image image . . text text text text text . . ."; }
   &.text-first {
     grid-template-areas:
       ". text text text text text text text text text text text text ."
@@ -207,8 +207,8 @@ The home (and clients) PROMO zone
     }  
     @include break(medium) { grid-template-areas: "image image image image image image image text text text text text . ."; }
     @include break(large)  { grid-template-areas: "image image image image image image image . text text text text . ."; }
-    @include break(huge)   {}
-    @include break(mega)   {}
+    @include break(huge)   { grid-template-areas: "image image image image image image image image image . text text text text . ."; }
+    @include break(mega)   { grid-template-areas: "image image image image image image image image . . text text text text text . . ."; }
     // identical to the non-text-first version, as that only applies to small screens.
   }
 }
@@ -224,8 +224,8 @@ The home (and clients) PROMO zone
   }  
   @include break(medium) { grid-template-areas: ". . text text text text text image image image image image image image"; }
   @include break(large)  { grid-template-areas: ". . text text text text . image image image image image image image"; }
-  @include break(huge)   {}
-  @include break(mega)   {}
+  @include break(huge)   { grid-template-areas: ". . text text text text . image image image image image image image image image"; }
+  @include break(mega)   { grid-template-areas: ". . . text text text text text . . image image image image image image image image"; }
   &.text-first {
     grid-template-areas:
       ". text text text text text text text text text text text text ."
@@ -237,8 +237,8 @@ The home (and clients) PROMO zone
     }
     @include break(medium) { grid-template-areas: ". . text text text text text image image image image image image image"; }
     @include break(large)  { grid-template-areas: ". . text text text text . image image image image image image image"; }
-    @include break(huge)   {}
-    @include break(mega)   {}
+    @include break(huge)   { grid-template-areas: ". . text text text text . image image image image image image image image image"; }
+    @include break(mega)   { grid-template-areas: ". . . text text text text text . . image image image image image image image image"; }
     // identical to the non-text-first version, as that only applies to small screens.
   }
 }
@@ -289,6 +289,10 @@ The home (and clients) PROMO zone
     border-top: none; 
     padding-top: 0;
     padding-bottom: 0;
+    margin-bottom: 90px;
+  }
+  @include break(large) {
+    margin-bottom: 120px;
   }
 }
 
@@ -496,6 +500,9 @@ The home (and clients) PROMO zone
   @include break(medium) {
     color: #000;
     &:hover { color: $clients-color; }
+  }
+  @include break(mega) {
+    grid-column: 4 / span 10;
   }
 }
 

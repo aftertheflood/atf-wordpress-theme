@@ -232,13 +232,13 @@ body {
 
 @media screen and (min-width: 1850px) {
   .atf-footer {
-    grid-template-areas: ". . heading heading heading heading heading heading heading heading heading heading heading heading heading heading . ." ". . link link link link link link link link link link link link link link . ." ". . social social social social social social social social social social social social social social . ." ". . address address address address address address address address address address address address address address . ." ". logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo .";
+    grid-template-areas: ". . . heading heading heading heading heading heading heading heading heading heading heading heading . . ." ". . . link link link link link link link link link link link link . . ." ". . . social social social social social social social social social social social social . . ." ". . . address address address address address address address address address address address address . . ." ". logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo .";
   }
 }
 
 @media screen and (min-width: mega) {
   .atf-footer {
-    grid-template-areas: ". . heading heading heading heading heading heading heading heading heading heading heading heading heading heading . ." ". . link link link link link link link link link link link link link link . ." ". . social social social social social social social social social social social social social social . ." ". . address address address address address address address address address address address address address address . ." ". logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo .";
+    grid-template-areas: ". . . heading heading heading heading heading heading heading heading heading heading heading heading . . ." ". . . link link link link link link link link link link link link . . ." ". . . social social social social social social social social social social social social . . ." ". . . address address address address address address address address address address address address . . ." ". logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo .";
   }
 }
 
@@ -487,13 +487,13 @@ The home SPLASHh zone
 
 @media screen and (min-width: 1850px) {
   .splash {
-    grid-template-areas: " . . intro intro intro intro intro intro intro . . . . . . . . ." ". .  . . . . . . . promo promo promo promo promo promo promo promo .";
+    grid-template-areas: " . . . intro intro intro intro intro intro . . . . . . . . ." ". .  . . . . . . . promo promo promo promo promo promo promo promo .";
   }
 }
 
 @media screen and (min-width: mega) {
   .splash {
-    grid-template-areas: " . . intro intro intro intro intro intro intro . . . . . . . . ." ". .  . . . . . . . promo promo promo promo promo promo promo promo .";
+    grid-template-areas: " . . . intro intro intro intro intro intro . . . . . . . . ." ". .  . . . . . . . promo promo promo promo promo promo promo promo .";
   }
 }
 
@@ -903,6 +903,24 @@ The home (and clients) PROMO zone
   }
 }
 
+@media screen and (min-width: 1480px) {
+  .client-promo__right {
+    grid-template-areas: "image image image image image image image image image . text text text text . .";
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .client-promo__right {
+    grid-template-areas: "image image image image image image image image . . text text text text text . . .";
+  }
+}
+
+@media screen and (min-width: mega) {
+  .client-promo__right {
+    grid-template-areas: "image image image image image image image image . . text text text text text . . .";
+  }
+}
+
 .client-promo__right.text-first {
   grid-template-areas: ". text text text text text text text text text text text text ." "image image image image image image image image image image image image image image";
 }
@@ -922,6 +940,24 @@ The home (and clients) PROMO zone
 @media screen and (min-width: 1120px) {
   .client-promo__right.text-first {
     grid-template-areas: "image image image image image image image . text text text text . .";
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .client-promo__right.text-first {
+    grid-template-areas: "image image image image image image image image image . text text text text . .";
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .client-promo__right.text-first {
+    grid-template-areas: "image image image image image image image image . . text text text text text . . .";
+  }
+}
+
+@media screen and (min-width: mega) {
+  .client-promo__right.text-first {
+    grid-template-areas: "image image image image image image image image . . text text text text text . . .";
   }
 }
 
@@ -947,6 +983,24 @@ The home (and clients) PROMO zone
   }
 }
 
+@media screen and (min-width: 1480px) {
+  .client-promo__left {
+    grid-template-areas: ". . text text text text . image image image image image image image image image";
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .client-promo__left {
+    grid-template-areas: ". . . text text text text text . . image image image image image image image image";
+  }
+}
+
+@media screen and (min-width: mega) {
+  .client-promo__left {
+    grid-template-areas: ". . . text text text text text . . image image image image image image image image";
+  }
+}
+
 .client-promo__left.text-first {
   grid-template-areas: ". text text text text text text text text text text text text ." "image image image image image image image image image image image image image image";
 }
@@ -966,6 +1020,24 @@ The home (and clients) PROMO zone
 @media screen and (min-width: 1120px) {
   .client-promo__left.text-first {
     grid-template-areas: ". . text text text text . image image image image image image image";
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .client-promo__left.text-first {
+    grid-template-areas: ". . text text text text . image image image image image image image image image";
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .client-promo__left.text-first {
+    grid-template-areas: ". . . text text text text text . . image image image image image image image image";
+  }
+}
+
+@media screen and (min-width: mega) {
+  .client-promo__left.text-first {
+    grid-template-areas: ". . . text text text text text . . image image image image image image image image";
   }
 }
 
@@ -1013,6 +1085,13 @@ The home (and clients) PROMO zone
     border-top: none;
     padding-top: 0;
     padding-bottom: 0;
+    margin-bottom: 90px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .client-promo__left, .client-promo__right {
+    margin-bottom: 120px;
   }
 }
 
@@ -1479,6 +1558,18 @@ The home (and clients) PROMO zone
   }
 }
 
+@media screen and (min-width: 1850px) {
+  .more-clients-link {
+    grid-column: 4 / span 10;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .more-clients-link {
+    grid-column: 4 / span 10;
+  }
+}
+
 .journal-splash {
   grid-template-areas: "image image image image image image image image image image image image image image" ". text text text text text text text text text text text text .";
 }
@@ -1509,13 +1600,13 @@ The home (and clients) PROMO zone
 
 @media screen and (min-width: 1850px) {
   .journal-splash {
-    grid-template-areas: ". . text text text text text text text image image image image image image image image image";
+    grid-template-areas: ". . . text text text text text . image image image image image image image image image";
   }
 }
 
 @media screen and (min-width: mega) {
   .journal-splash {
-    grid-template-areas: ". . text text text text text text text image image image image image image image image image";
+    grid-template-areas: ". . . text text text text text . image image image image image image image image image";
   }
 }
 
@@ -1746,13 +1837,13 @@ The home (and clients) PROMO zone
 
 @media screen and (min-width: 1850px) {
   .journal-archive {
-    grid-template-areas: ". . kicker kicker . . entries entries entries entries entries entries entries entries entries entries . .";
+    grid-template-areas: ". . . kicker . entries entries entries entries entries entries entries entries . . . . .";
   }
 }
 
 @media screen and (min-width: mega) {
   .journal-archive {
-    grid-template-areas: ". . kicker kicker . . entries entries entries entries entries entries entries entries entries entries . .";
+    grid-template-areas: ". . . kicker . entries entries entries entries entries entries entries entries . . . . .";
   }
 }
 
@@ -2128,13 +2219,13 @@ The home (and clients) PROMO zone
 
 @media screen and (min-width: 1850px) {
   .archive-pagination {
-    grid-column: 7 / span 8;
+    grid-column: 6 / span 8;
   }
 }
 
 @media screen and (min-width: mega) {
   .archive-pagination {
-    grid-column: 7 / span 8;
+    grid-column: 6 / span 8;
   }
 }
 
@@ -2223,13 +2314,13 @@ The home (and clients) PROMO zone
 
 @media screen and (min-width: 1850px) {
   .journal-home {
-    grid-template-areas: ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ."  ". . entries entries entries entries entries entries entries entries entries entries entries entries entries entries . ." ". . onward onward onward onward onward onward onward onward onward onward onward onward onward onward . .";
+    grid-template-areas: ". . . . . kicker kicker kicker kicker kicker kicker kicker kicker . . . . ."  ". . . . . entries entries entries entries entries entries entries entries . . . . ." ". . . . . onward onward onward onward onward onward onward onward . . . . .";
   }
 }
 
 @media screen and (min-width: mega) {
   .journal-home {
-    grid-template-areas: ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ."  ". . entries entries entries entries entries entries entries entries entries entries entries entries entries entries . ." ". . onward onward onward onward onward onward onward onward onward onward onward onward onward onward . .";
+    grid-template-areas: ". . . . . kicker kicker kicker kicker kicker kicker kicker kicker . . . . ."  ". . . . . entries entries entries entries entries entries entries entries . . . . ." ". . . . . onward onward onward onward onward onward onward onward . . . . .";
   }
 }
 
