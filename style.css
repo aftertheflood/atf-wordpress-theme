@@ -122,9 +122,6 @@ body {
   display: grid;
   grid-template-columns: 0px repeat(12, 1fr) 0px;
   column-gap: 20px;
-  grid-auto-rows: minmax(50px, max-content);
-  margin: 0;
-  padding: 0;
   align-items: center;
 }
 
