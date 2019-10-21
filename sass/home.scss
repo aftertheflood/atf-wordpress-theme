@@ -279,9 +279,16 @@ The home (and clients) PROMO zone
     padding-top: 0;
   }
   @include break(tiny)   { padding-top: 70px; }
+  @include break(small)  { 
+    padding-bottom: 30px;  
+    &.text-first {
+      padding-bottom: 0;
+    }
+  }
   @include break(medium) { 
     border-top: none; 
     padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -342,7 +349,7 @@ The home (and clients) PROMO zone
     @include break(tiny) { height: 116px; } // 46 + 70
     @include break(small) {
       height: auto;
-      margin-bottom: 40px;
+      margin-bottom: 40px; // this only applies to the modules with images at the top
     }
     @include break(medium) {
       margin-bottom: 0;
@@ -417,40 +424,52 @@ The home (and clients) PROMO zone
 /* The image block */
 .promo__image {
   grid-area: image;
-  // background-size: auto 100%;
-  // background-repeat: no-repeat;
   overflow: hidden;
   max-width: 100%;
   min-width: 100px;
   max-height: 280px;
+  height: 280px;
   text-align: center;
+  position: relative;
+  
+  @include break(tiny) { 
+    max-height: 330px; 
+    height: 330px; 
+  }
+  @include break(small) {
+    max-height: 400px; 
+    height: 400px; 
+  }
   @include break(medium) { 
-    height: auto; 
-    max-height: none;
+    max-height: none; 
+    height: auto;
   }
-}
 
-.promo__image img {
-  display: absolute; // get in! this gets rid of the weird extra 3 or 4px at the bottom of the image wrapper.
-  width: 120%;
-  left: 50%;
-  margin-left: -10%;
-  @include break(medium) {
-    width: calc(100% + 180px);
-    left: 0;
-    margin-left: 0;
-    display: block;
+  img {
+    position: absolute;
+    width: 120%;
+    left: 50%;
+    margin-left: -60%;
+    &.flowing-up {
+      bottom: 0;
+    }
+    @include break(medium) {
+      width: calc(100% + 180px);
+      left: 0;
+      margin-left: 0;
+      display: block;
+      position: relative;
+    }
   }
+
 }
 
 .client-promo__right .promo__image img {
-  // right: 40px;
   @include break(medium) {
     position: relative;
     right: 180px;
   }
 }
-
 
 
 

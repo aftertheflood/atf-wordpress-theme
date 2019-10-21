@@ -999,10 +999,20 @@ The home (and clients) PROMO zone
   }
 }
 
+@media screen and (min-width: 650px) {
+  .client-promo__left, .client-promo__right {
+    padding-bottom: 30px;
+  }
+  .client-promo__left.text-first, .client-promo__right.text-first {
+    padding-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 830px) {
   .client-promo__left, .client-promo__right {
     border-top: none;
     padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -1324,21 +1334,41 @@ The home (and clients) PROMO zone
   max-width: 100%;
   min-width: 100px;
   max-height: 280px;
+  height: 280px;
   text-align: center;
+  position: relative;
+}
+
+@media screen and (min-width: 420px) {
+  .promo__image {
+    max-height: 330px;
+    height: 330px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .promo__image {
+    max-height: 400px;
+    height: 400px;
+  }
 }
 
 @media screen and (min-width: 830px) {
   .promo__image {
-    height: auto;
     max-height: none;
+    height: auto;
   }
 }
 
 .promo__image img {
-  display: absolute;
+  position: absolute;
   width: 120%;
   left: 50%;
-  margin-left: -10%;
+  margin-left: -60%;
+}
+
+.promo__image img.flowing-up {
+  bottom: 0;
 }
 
 @media screen and (min-width: 830px) {
@@ -1347,6 +1377,7 @@ The home (and clients) PROMO zone
     left: 0;
     margin-left: 0;
     display: block;
+    position: relative;
   }
 }
 
