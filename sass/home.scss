@@ -345,55 +345,64 @@ The home (and clients) PROMO zone
 
 /* Text, etc. */
 
-.client__promo-logo {
-  display: block;
-  width: 100px;
-  max-height: 70px;
-  float: right;
-  @include break(medium) {
-    display: block;
-    width: 130px;
+.client-promo {
+
+  .sector { @include type-label; }
+  
+  .title {
+    @include type-heading-small;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    @include break(tiny) { margin-bottom: 30px; }
   }
-}
-
-.client__promo__sector{
-  @include type-label;
-}
-
-.client__promo__title {
-  @include type-heading-small;
-  margin-top: 4px;
-  margin-bottom: 15px;
-  @include break(tiny) { margin-bottom: 30px; }
-}
-
-.client__promo__excerpt {
-  @include type-body;
-  @include type-serif;
-  p {
-    margin-top: 0;
-    margin-bottom: 0.8em;
-    &:last-of-type { margin-bottom: 20px; }
-  }
-  @include break(tiny) {
-    p { 
-      margin-bottom: 0.9em;
-      &:last-of-type { margin-bottom: 34px; }
+  
+  .excerpt {
+    @include type-body;
+    @include type-serif;
+    p {
+      margin-top: 0;
+      margin-bottom: 0.8em;
+      &:last-of-type { margin-bottom: 20px; }
+    }
+    @include break(tiny) {
+      p { 
+        margin-bottom: 0.9em;
+        &:last-of-type { margin-bottom: 34px; }
+      }
     }
   }
+  
+  .bottom {
+
+    a.link{
+      @include block-button;
+      @include block-button-type;
+      background-color: $light-grey;
+      color: #000;
+      display: inline-block;
+      &:hover {
+        background-color: $clients-color;
+        color: #000;
+      }
+    }
+
+    .logo {
+      display: block;
+      width: 100px;
+      max-height: 70px;
+      float: right;
+      @include break(medium) {
+        display: block;
+        width: 130px;
+      }
+    }
+  }
+
 }
 
-a.client__promo__link{
-  @include block-button;
-  @include block-button-type;
-  background-color: $light-grey;
-  color: #000;
-  display: inline-block;
-  &:hover {
-    background-color: $clients-color;
-    color: #000;
-  }
-}
+
+
+
 
 
 
