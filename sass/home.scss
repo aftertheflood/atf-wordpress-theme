@@ -162,7 +162,10 @@ where in the rendered web page you only see one column to the outside of the tex
 
 
 
+
+
 /* The home (and clients page) feature blocks
+   GRID SETTINGS
 -------------------------------------------------------------------------------------- */
 
 .content {
@@ -176,38 +179,89 @@ where in the rendered web page you only see one column to the outside of the tex
 
 .promo-right {
   grid-template-areas:
-    "image image image image image image image image image image image image" 
-    "text text text text text text text text text text text text";
-  @include break(small) {grid-template-areas: "image image image image image image image . text text text text . .";}
+    "image image image image image image image image image image image image image image" 
+    ". text text text text text text text text text text text text .";
+  @include break(tiny) {
+    grid-template-areas: 
+      "image image image image image image image image image image image image image image" 
+      ". . text text text text text text text text text text . .";
+  }  
+  @include break(medium) { grid-template-areas: "image image image image image image image text text text text text . .";}
+  @include break(large)  { grid-template-areas: "image image image image image image image . text text text text . .";}
+  @include break(huge)   {}
+  @include break(mega)   {}
   &.text-first {
     grid-template-areas:
-      "text text text text text text text text text text text text"
-      "image image image image image image image image image image image image";
-    @include break(small) {grid-template-areas: "image image image image image image image . text text text text . .";}
+      ". text text text text text text text text text text text text ."
+      "image image image image image image image image image image image image image image"; 
+    @include break(tiny) {
+      grid-template-areas: 
+        ". . text text text text text text text text text text . ."
+        "image image image image image image image image image image image image image image";
+    }  
+    @include break(medium) { grid-template-areas: "image image image image image image image text text text text text . ."; }
+    @include break(large)  { grid-template-areas: "image image image image image image image . text text text text . ."; }
+    @include break(huge)   {}
+    @include break(mega)   {}
     // identical to the non-text-first version, as that only applies to small screens.
   }
 }
 
 .promo-left {  
   grid-template-areas:
-      "image image image image image image image image image image image image" 
-      "text text text text text text text text text text text text";
-  @include break(small) {grid-template-areas: ". . text text text text . image image image image image image image";}
+      "image image image image image image image image image image image image image image" 
+      ". text text text text text text text text text text text text .";
+  @include break(tiny)  {
+    grid-template-areas: 
+      "image image image image image image image image image image image image image image" 
+      ". . text text text text text text text text text text . .";
+  }  
+  @include break(medium) { grid-template-areas: ". . text text text text text image image image image image image image"; }
+  @include break(large)  { grid-template-areas: ". . text text text text . image image image image image image image"; }
+  @include break(huge)   {}
+  @include break(mega)   {}
   &.text-first {
     grid-template-areas:
-      "text text text text text text text text text text text text"
-      "image image image image image image image image image image image image";
-    @include break(small) {grid-template-areas: ". . text text text text . image image image image image image image";}
+      ". text text text text text text text text text text text text ."
+      "image image image image image image image image image image image image image image"; 
+    @include break(tiny) {
+      grid-template-areas: 
+        ". . text text text text text text text text text text . ."
+        "image image image image image image image image image image image image image image";
+    }
+    @include break(medium) { grid-template-areas: ". . text text text text text image image image image image image image"; }
+    @include break(large)  { grid-template-areas: ". . text text text text . image image image image image image image"; }
+    @include break(huge)   {}
+    @include break(mega)   {}
     // identical to the non-text-first version, as that only applies to small screens.
   }
 }
-
 
 .promo-double {
   grid-template-areas: 
     "lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext"
     "righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext";
   @include break(small) {grid-template-areas: ". . . lefttext lefttext lefttext lefttext . righttext righttext righttext righttext . .";}
+}
+
+
+
+
+
+
+
+
+
+
+/* The home (and clients page) feature blocks
+   LAYOUT SETTINGS
+-------------------------------------------------------------------------------------- */
+
+
+.promo-left, .promo-right {
+  border-top: 1px solid #ddd;
+  &:first-of-type { border-top: none; }
+  @include break(medium) { border-top: none; }
 }
 
 .promo-double__left {
@@ -225,20 +279,13 @@ where in the rendered web page you only see one column to the outside of the tex
 }
 
 .promo-right, .promo-left {
-  margin-bottom: 120px;
+  margin-bottom: 0;
 }
 
-.promo-left .promo__image {
-  margin-right: calc(-$column-gap);
-}
+.promo-left .promo__image { margin-right: calc(-$column-gap); }
+.promo-right .promo__image { margin-left: calc(-$column-gap); }
 
-.promo-right .promo__image {
-  margin-left: calc(-$column-gap);
-}
-
-.promo__text {
-  grid-area: text;
-}
+.promo__text { grid-area: text; }
 
 .promo__image {
   background-size: auto 100%;
@@ -250,11 +297,12 @@ where in the rendered web page you only see one column to the outside of the tex
 
 .promo__image img {
   width: calc(100% + 180px);
+  display: block; // get in! this gets rid of the weird extra 3 or 4px at the bottom of the image wrapper.
 }
 
 .promo-right .promo__image img {
   position: relative;
-  right: 180px
+  right: 180px;
 }
 
 .client__promo-logo {
@@ -290,24 +338,36 @@ a.client__promo__link{
   background-color: $light-grey;
   color: #000;
   display: inline-block;
+  &:hover {
+    background-color: $clients-color;
+    color: #000;
+  }
 }
 
-a.client__promo__link:hover{
-  background-color: $clients-color;
-  color: #000;
-}
 
+
+
+
+
+
+
+
+
+// the "see more projects" link at the bottom
+.more-clients {
+  border-top: 1px solid #ddd;
+  padding-top: 9px;
+  padding-bottom: 20px;
+  @include break(medium) { border-top: none; }
+}
 .more-clients-link {
   @include type-heading-big;
   font-weight: 800;
   grid-column: 2 / span 12;
   text-decoration: none;
   color: #000;
-  margin-bottom: 20px;
-  &:hover {
-    color: $clients-color;
-  }
-  @include break(tiny) {grid-column: 3 / span 10;}
+  &:hover { color: $clients-color; }
+  @include break(tiny) { grid-column: 3 / span 10; }
 }
 
 

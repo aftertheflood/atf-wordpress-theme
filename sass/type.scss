@@ -2,6 +2,8 @@ html {
     text-rendering: optimizeLegibility;
     font-variant-ligatures: common-ligatures;
     font-kerning: normal;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 

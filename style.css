@@ -93,6 +93,8 @@ html {
   text-rendering: optimizeLegibility;
   font-variant-ligatures: common-ligatures;
   font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* category colours */
@@ -120,7 +122,9 @@ body {
   display: grid;
   grid-template-columns: 0px repeat(12, 1fr) 0px;
   column-gap: 20px;
-  margin: 0px;
+  grid-auto-rows: minmax(50px, max-content);
+  margin: 0;
+  padding: 0;
   align-items: center;
 }
 
@@ -696,63 +700,63 @@ where in the rendered web page you only see one column to the outside of the tex
 
 @media screen and (min-width: 420px) {
   .splash__promo__title,
-  .splash__promo__subtitle {
+.splash__promo__subtitle {
     font-size: 25px;
   }
 }
 
 @media screen and (min-width: 650px) {
   .splash__promo__title,
-  .splash__promo__subtitle {
+.splash__promo__subtitle {
     font-size: 30px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .splash__promo__title,
-  .splash__promo__subtitle {
+.splash__promo__subtitle {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .splash__promo__title,
-  .splash__promo__subtitle {
+.splash__promo__subtitle {
     font-size: 34px;
   }
 }
 
 @media screen and (min-width: 1480px) {
   .splash__promo__title,
-  .splash__promo__subtitle {
+.splash__promo__subtitle {
     font-size: 36px;
   }
 }
 
 @media screen and (min-width: 1850px) {
   .splash__promo__title,
-  .splash__promo__subtitle {
+.splash__promo__subtitle {
     font-size: 38px;
   }
 }
 
 @media screen and (min-width: mega) {
   .splash__promo__title,
-  .splash__promo__subtitle {
+.splash__promo__subtitle {
     font-size: 38px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .splash__promo__title,
-  .splash__promo__subtitle {
+.splash__promo__subtitle {
     padding-right: 20px;
   }
 }
 
 @media screen and (min-width: 1480px) {
   .splash__promo__title,
-  .splash__promo__subtitle {
+.splash__promo__subtitle {
     padding-right: 40px;
   }
 }
@@ -801,21 +805,21 @@ where in the rendered web page you only see one column to the outside of the tex
 
 @media screen and (min-width: 420px) {
   .splash__promo__date,
-  .light-archive__date {
+.light-archive__date {
     font-size: 13px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .splash__promo__date,
-  .light-archive__date {
+.light-archive__date {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .splash__promo__date,
-  .light-archive__date {
+.light-archive__date {
     font-size: 15px;
   }
 }
@@ -866,6 +870,7 @@ where in the rendered web page you only see one column to the outside of the tex
 }
 
 /* The home (and clients page) feature blocks
+   GRID SETTINGS
 -------------------------------------------------------------------------------------- */
 .content {
   z-index: 10;
@@ -877,40 +882,88 @@ where in the rendered web page you only see one column to the outside of the tex
 }
 
 .promo-right {
-  grid-template-areas: "image image image image image image image image image image image image"  "text text text text text text text text text text text text";
+  grid-template-areas: "image image image image image image image image image image image image image image"  ". text text text text text text text text text text text text .";
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 420px) {
+  .promo-right {
+    grid-template-areas: "image image image image image image image image image image image image image image"  ". . text text text text text text text text text text . .";
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo-right {
+    grid-template-areas: "image image image image image image image text text text text text . .";
+  }
+}
+
+@media screen and (min-width: 1120px) {
   .promo-right {
     grid-template-areas: "image image image image image image image . text text text text . .";
   }
 }
 
 .promo-right.text-first {
-  grid-template-areas: "text text text text text text text text text text text text" "image image image image image image image image image image image image";
+  grid-template-areas: ". text text text text text text text text text text text text ." "image image image image image image image image image image image image image image";
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 420px) {
+  .promo-right.text-first {
+    grid-template-areas: ". . text text text text text text text text text text . ." "image image image image image image image image image image image image image image";
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo-right.text-first {
+    grid-template-areas: "image image image image image image image text text text text text . .";
+  }
+}
+
+@media screen and (min-width: 1120px) {
   .promo-right.text-first {
     grid-template-areas: "image image image image image image image . text text text text . .";
   }
 }
 
 .promo-left {
-  grid-template-areas: "image image image image image image image image image image image image"  "text text text text text text text text text text text text";
+  grid-template-areas: "image image image image image image image image image image image image image image"  ". text text text text text text text text text text text text .";
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 420px) {
+  .promo-left {
+    grid-template-areas: "image image image image image image image image image image image image image image"  ". . text text text text text text text text text text . .";
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo-left {
+    grid-template-areas: ". . text text text text text image image image image image image image";
+  }
+}
+
+@media screen and (min-width: 1120px) {
   .promo-left {
     grid-template-areas: ". . text text text text . image image image image image image image";
   }
 }
 
 .promo-left.text-first {
-  grid-template-areas: "text text text text text text text text text text text text" "image image image image image image image image image image image image";
+  grid-template-areas: ". text text text text text text text text text text text text ." "image image image image image image image image image image image image image image";
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 420px) {
+  .promo-left.text-first {
+    grid-template-areas: ". . text text text text text text text text text text . ." "image image image image image image image image image image image image image image";
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo-left.text-first {
+    grid-template-areas: ". . text text text text text image image image image image image image";
+  }
+}
+
+@media screen and (min-width: 1120px) {
   .promo-left.text-first {
     grid-template-areas: ". . text text text text . image image image image image image image";
   }
@@ -923,6 +976,23 @@ where in the rendered web page you only see one column to the outside of the tex
 @media screen and (min-width: 650px) {
   .promo-double {
     grid-template-areas: ". . . lefttext lefttext lefttext lefttext . righttext righttext righttext righttext . .";
+  }
+}
+
+/* The home (and clients page) feature blocks
+   LAYOUT SETTINGS
+-------------------------------------------------------------------------------------- */
+.promo-left, .promo-right {
+  border-top: 1px solid #ddd;
+}
+
+.promo-left:first-of-type, .promo-right:first-of-type {
+  border-top: none;
+}
+
+@media screen and (min-width: 830px) {
+  .promo-left, .promo-right {
+    border-top: none;
   }
 }
 
@@ -944,7 +1014,7 @@ where in the rendered web page you only see one column to the outside of the tex
 }
 
 .promo-right, .promo-left {
-  margin-bottom: 120px;
+  margin-bottom: 0;
 }
 
 .promo-left .promo__image {
@@ -969,6 +1039,7 @@ where in the rendered web page you only see one column to the outside of the tex
 
 .promo__image img {
   width: calc(100% + 180px);
+  display: block;
 }
 
 .promo-right .promo__image img {
@@ -1155,6 +1226,18 @@ a.client__promo__link:hover {
   color: #000;
 }
 
+.more-clients {
+  border-top: 1px solid #ddd;
+  padding-top: 9px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 830px) {
+  .more-clients {
+    border-top: none;
+  }
+}
+
 .more-clients-link {
   font-size: 32px;
   line-height: 38px;
@@ -1163,7 +1246,6 @@ a.client__promo__link:hover {
   grid-column: 2 / span 12;
   text-decoration: none;
   color: #000;
-  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 420px) {
@@ -1320,21 +1402,21 @@ a.client__promo__link:hover {
 
 @media screen and (min-width: 420px) {
   .journal-splash__kicker,
-  .journal-splash__date {
+.journal-splash__date {
     font-size: 13px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .journal-splash__kicker,
-  .journal-splash__date {
+.journal-splash__date {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-splash__kicker,
-  .journal-splash__date {
+.journal-splash__date {
     font-size: 15px;
   }
 }
@@ -1350,49 +1432,49 @@ a.client__promo__link:hover {
 
 @media screen and (min-width: 420px) {
   .journal-splash__title,
-  .journal-splash__subtitle {
+.journal-splash__subtitle {
     font-size: 25px;
   }
 }
 
 @media screen and (min-width: 650px) {
   .journal-splash__title,
-  .journal-splash__subtitle {
+.journal-splash__subtitle {
     font-size: 30px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .journal-splash__title,
-  .journal-splash__subtitle {
+.journal-splash__subtitle {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-splash__title,
-  .journal-splash__subtitle {
+.journal-splash__subtitle {
     font-size: 34px;
   }
 }
 
 @media screen and (min-width: 1480px) {
   .journal-splash__title,
-  .journal-splash__subtitle {
+.journal-splash__subtitle {
     font-size: 36px;
   }
 }
 
 @media screen and (min-width: 1850px) {
   .journal-splash__title,
-  .journal-splash__subtitle {
+.journal-splash__subtitle {
     font-size: 38px;
   }
 }
 
 @media screen and (min-width: mega) {
   .journal-splash__title,
-  .journal-splash__subtitle {
+.journal-splash__subtitle {
     font-size: 38px;
   }
 }
@@ -1514,7 +1596,7 @@ a.client__promo__link:hover {
 
 @media screen and (min-width: 650px) {
   .journal-archive__title,
-  .journal-archive__subtitle {
+.journal-archive__subtitle {
     font-size: 18px;
     line-height: 27px;
   }
@@ -1522,7 +1604,7 @@ a.client__promo__link:hover {
 
 @media screen and (min-width: 830px) {
   .journal-archive__title,
-  .journal-archive__subtitle {
+.journal-archive__subtitle {
     font-size: 19px;
     line-height: 30px;
     letter-spacing: -0.01em;
@@ -1531,7 +1613,7 @@ a.client__promo__link:hover {
 
 @media screen and (min-width: 1120px) {
   .journal-archive__title,
-  .journal-archive__subtitle {
+.journal-archive__subtitle {
     font-size: 20px;
     line-height: 31px;
   }
@@ -1539,7 +1621,7 @@ a.client__promo__link:hover {
 
 @media screen and (min-width: 1480px) {
   .journal-archive__title,
-  .journal-archive__subtitle {
+.journal-archive__subtitle {
     font-size: 21px;
     line-height: 32px;
   }
@@ -1547,14 +1629,14 @@ a.client__promo__link:hover {
 
 @media screen and (min-width: 830px) {
   .journal-archive__title,
-  .journal-archive__subtitle {
+.journal-archive__subtitle {
     line-height: 27px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-archive__title,
-  .journal-archive__subtitle {
+.journal-archive__subtitle {
     line-height: 30px;
   }
 }
@@ -1996,21 +2078,21 @@ a.client__promo__link:hover {
 
 @media screen and (min-width: 420px) {
   .journal-home .recently-header,
-  .journal-home .onward-journey-link {
+.journal-home .onward-journey-link {
     font-size: 13px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .journal-home .recently-header,
-  .journal-home .onward-journey-link {
+.journal-home .onward-journey-link {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-home .recently-header,
-  .journal-home .onward-journey-link {
+.journal-home .onward-journey-link {
     font-size: 15px;
   }
 }
@@ -2268,56 +2350,56 @@ textarea {
 
 @media screen and (min-width: 420px) {
   input[type=text],
-  input[type=email],
-  textarea {
+input[type=email],
+textarea {
     font-size: 25px;
   }
 }
 
 @media screen and (min-width: 650px) {
   input[type=text],
-  input[type=email],
-  textarea {
+input[type=email],
+textarea {
     font-size: 30px;
   }
 }
 
 @media screen and (min-width: 830px) {
   input[type=text],
-  input[type=email],
-  textarea {
+input[type=email],
+textarea {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   input[type=text],
-  input[type=email],
-  textarea {
+input[type=email],
+textarea {
     font-size: 34px;
   }
 }
 
 @media screen and (min-width: 1480px) {
   input[type=text],
-  input[type=email],
-  textarea {
+input[type=email],
+textarea {
     font-size: 36px;
   }
 }
 
 @media screen and (min-width: 1850px) {
   input[type=text],
-  input[type=email],
-  textarea {
+input[type=email],
+textarea {
     font-size: 38px;
   }
 }
 
 @media screen and (min-width: mega) {
   input[type=text],
-  input[type=email],
-  textarea {
+input[type=email],
+textarea {
     font-size: 38px;
   }
 }
@@ -2331,8 +2413,8 @@ textarea:focus {
 
 @media screen and (min-width: 650px) {
   input[type=text]:focus,
-  input[type=email]:focus,
-  textarea:focus {
+input[type=email]:focus,
+textarea:focus {
     border: 8px solid #FF00FF;
   }
 }
@@ -2345,21 +2427,21 @@ input[type=email] {
 
 @media screen and (min-width: 420px) {
   input[type=text],
-  input[type=email] {
+input[type=email] {
     height: 64px;
   }
 }
 
 @media screen and (min-width: 650px) {
   input[type=text],
-  input[type=email] {
+input[type=email] {
     height: 70px;
   }
 }
 
 @media screen and (min-width: 830px) {
   input[type=text],
-  input[type=email] {
+input[type=email] {
     height: 80px;
     padding: 3px 18px 10px 18px;
   }
@@ -2851,48 +2933,48 @@ the article BODY
 
 @media screen and (min-width: 420px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-  .article-body blockquote, .article-body figure,
-  .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
+.article-body blockquote, .article-body figure,
+.article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 3 / span 10;
   }
 }
 
 @media screen and (min-width: 830px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-  .article-body blockquote, .article-body figure,
-  .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
+.article-body blockquote, .article-body figure,
+.article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 4 / span 8;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-  .article-body blockquote, .article-body figure,
-  .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
+.article-body blockquote, .article-body figure,
+.article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 5 / span 6;
   }
 }
 
 @media screen and (min-width: 1480px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-  .article-body blockquote, .article-body figure,
-  .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
+.article-body blockquote, .article-body figure,
+.article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 6 / span 6;
   }
 }
 
 @media screen and (min-width: 1850px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-  .article-body blockquote, .article-body figure,
-  .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
+.article-body blockquote, .article-body figure,
+.article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 7 / span 6;
   }
 }
 
 @media screen and (min-width: mega) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-  .article-body blockquote, .article-body figure,
-  .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
+.article-body blockquote, .article-body figure,
+.article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 7 / span 6;
   }
 }
@@ -3304,35 +3386,35 @@ nav {
 
 @media screen and (min-width: 830px) {
   nav,
-  .nav-place-holder {
+.nav-place-holder {
     height: 60px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   nav,
-  .nav-place-holder {
+.nav-place-holder {
     height: 62px;
   }
 }
 
 @media screen and (min-width: 1480px) {
   nav,
-  .nav-place-holder {
+.nav-place-holder {
     height: 63px;
   }
 }
 
 @media screen and (min-width: 1850px) {
   nav,
-  .nav-place-holder {
+.nav-place-holder {
     height: 64px;
   }
 }
 
 @media screen and (min-width: mega) {
   nav,
-  .nav-place-holder {
+.nav-place-holder {
     height: 64px;
   }
 }
@@ -3461,7 +3543,7 @@ nav {
 
 @media screen and (min-width: 420px) {
   .header-button,
-  .close-menu-button {
+.close-menu-button {
     padding-top: 8px;
     padding-right: 8px;
   }
@@ -3469,7 +3551,7 @@ nav {
 
 @media screen and (min-width: 650px) {
   .header-button,
-  .close-menu-button {
+.close-menu-button {
     padding-top: 9px;
     padding-right: 9px;
   }
@@ -3625,14 +3707,14 @@ h2.compact-menu__title {
 
 @media screen and (min-width: 420px) {
   .compact-menu__link,
-  h2.compact-menu__title {
+h2.compact-menu__title {
     font-size: 25px;
   }
 }
 
 @media screen and (min-width: 650px) {
   .compact-menu__link,
-  h2.compact-menu__title {
+h2.compact-menu__title {
     font-size: 30px;
   }
 }
