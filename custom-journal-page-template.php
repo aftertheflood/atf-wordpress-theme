@@ -12,6 +12,7 @@ if($paged == 0){
   <?php 
   $posts = get_category_post_range('journal',0,1);
   while ( $posts->have_posts() ) : $posts->the_post(); ?>
+    <?php if(get_post_meta($post->ID, 'promo-image', true) == '') { ?>  
     <div class="journal-splash__text">
       <div class="journal-splash__kicker">The latest</div>
       <h2 class="journal-splash__title"><?php the_title(); ?></h2>
@@ -23,6 +24,15 @@ if($paged == 0){
     <div class="journal-splash__image" style="background-image: url(<?php echo get_post_meta($post->ID, 'promo-image', true);?>)">
       <img src="<?php echo get_post_meta($post->ID, 'promo-image', true);?>">
     </div>
+    <?php } else { ?>
+    <div class="journal-splash__text-only">
+      <div class="journal-splash__kicker">The latest</div>
+      <h2 class="journal-splash__title"><?php the_title(); ?></h2>		
+      <div class="journal-splash__date"><?php the_date() ?></div>
+      <div class="journal-splash__excerpt"><?php the_excerpt(); ?></div>
+      <a href="<?php the_permalink(); ?>" class="journal-splash__link">Read more</a>
+    </div>
+    <?php } ?>
   <?php endwhile; ?>
 </div>
 <?php } /* the remaining journal entries */ ?>
