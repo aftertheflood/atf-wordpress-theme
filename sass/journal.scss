@@ -142,10 +142,10 @@
 
 .journal-archive__entry {
   color:white;
-  padding-top: 50px; 
+  padding-top: 30px; 
     // This compensates for the negative top margin seen above.
     // In theory the additional padding here should match that, but for whatever reason that doesn't look right, so it is adjusted.
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   &:nth-of-type(odd),
   &:nth-of-type(even) {
     box-shadow: 0 8px 0px $dark-grey;
@@ -154,9 +154,12 @@
     padding-left: 0;
     padding-right: 0;  // just the box shadow on the bottom.
   }
-  &:last-of-type {
-    padding-bottom: 0;
-    box-shadow: none;
+
+  @include break(small) {
+    &:last-of-type {
+      padding-bottom: 0;
+      box-shadow: none;
+    }
   }
   @include break(large) {
     padding-top: 35px; 
@@ -316,20 +319,36 @@
   //   @include break(small) {padding: 50px 0;}
   // }
 
+  .recently-header {
+    box-shadow: 0px 8px 0px $dark-grey;
+    padding-bottom: 28px;
+    @include break(small) {
+      box-shadow: none;
+      padding-bottom: 0;
+    }
+  }
+
+  .journal-home__posts {
+    padding-bottom: 38px;
+    @include break(small) {
+      padding-bottom: 0;
+    }
+  }
+
   .onward-journey-link {
     grid-area: onward;
     text-align: end;
     color: $faded-text;
     text-decoration: none;
     font-weight: bold;
-    &:hover {color: #FFF; }
+    &:hover { color: #FFF; }
   }
   .onward-journey-link::after {content:' \00bb';}
 
 
   .journal-archive__entry {
     &:last-of-type {
-      padding-bottom: 50px;
+      padding-bottom: 30px;
     }
     @include break(small) {
       margin: -13px 0 -16px 0;

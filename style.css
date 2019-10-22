@@ -1930,8 +1930,8 @@ The home (and clients) PROMO zone
 
 .journal-archive__entry {
   color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .journal-archive__entry:nth-of-type(odd), .journal-archive__entry:nth-of-type(even) {
@@ -1942,9 +1942,11 @@ The home (and clients) PROMO zone
   padding-right: 0;
 }
 
-.journal-archive__entry:last-of-type {
-  padding-bottom: 0;
-  box-shadow: none;
+@media screen and (min-width: 650px) {
+  .journal-archive__entry:last-of-type {
+    padding-bottom: 0;
+    box-shadow: none;
+  }
 }
 
 @media screen and (min-width: 1120px) {
@@ -2360,6 +2362,28 @@ The home (and clients) PROMO zone
   }
 }
 
+.journal-home .recently-header {
+  box-shadow: 0px 8px 0px #3A3A3A;
+  padding-bottom: 28px;
+}
+
+@media screen and (min-width: 650px) {
+  .journal-home .recently-header {
+    box-shadow: none;
+    padding-bottom: 0;
+  }
+}
+
+.journal-home .journal-home__posts {
+  padding-bottom: 38px;
+}
+
+@media screen and (min-width: 650px) {
+  .journal-home .journal-home__posts {
+    padding-bottom: 0;
+  }
+}
+
 .journal-home .onward-journey-link {
   grid-area: onward;
   text-align: end;
@@ -2377,7 +2401,7 @@ The home (and clients) PROMO zone
 }
 
 .journal-home .journal-archive__entry:last-of-type {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 650px) {
