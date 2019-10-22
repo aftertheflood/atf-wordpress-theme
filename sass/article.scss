@@ -202,24 +202,28 @@ the article BODY
       }
     }
     figure { 
+      margin-top: 1em;
       margin-bottom: 0;
       display: grid; 
       column-gap: $column-gap;
       grid-column: 1 / span 14;
       grid-template-columns: 0 repeat(12, 1fr) 0;
       img { grid-column: 1 / span 14; }
+      img.with-margins { grid-column: 2 / span 12; }
       figcaption { grid-column: 2 / span 12; }  
     }
+    .image-border-bottom---grey { border-bottom: 1px solid #ddd; }
+    // these two are for images that are full width, but need to be bumped off the edge of the module
+    .case-study-with-left-padding { padding-left: 20px; }
+    .case-study-with-right-padding { padding-right: 20px; }
     @include break(tiny)   { 
       grid-column: 1 / span 14; 
-      // grid-template-columns: 0 repeat(12, 1fr) 0;
       margin: 70px 0;
       padding: 70px 0;
       p, h5 { grid-column: 3 / span 10; }
       figure {
         grid-column: 1 / span 14;
-        // grid-template-columns: 0 repeat(12, 1fr) 0;
-        // img { grid-column: 1 / span 14; }
+        img.with-margins { grid-column: 3 / span 10; }
         figcaption { grid-column: 3 / span 8; }      
       }
     }
@@ -231,54 +235,28 @@ the article BODY
       p, h5 { grid-column: 2 / span 8; }
       figure {
         grid-column: 1 / span 10;
-        margin-top: 74px;
+        margin-top: 1em;
         grid-template-columns: repeat(10, 1fr);
+        &:first-of-type { margin-top: 72px; }
         img { grid-column: 1 / span 10; }
+        img.with-margins { grid-column: 2 / span 8; }
         figcaption { grid-column: 2 / span 8; }
       }
     }
     @include break(large)  { 
       grid-column: 4 / span 8; 
       grid-template-columns: repeat(8, 1fr);
-      margin: 85px 0;
-      padding: 85px 0;
       p, h5 { grid-column: 2 / span 6; }
       figure {
         grid-column: 1 / span 8;
-        margin-top: 74px;
         grid-template-columns: repeat(8, 1fr);
         img { grid-column: 1 / span 8; }
+        img.with-margins { grid-column: 2 / span 6; }
         figcaption { grid-column: 2 / span 6; }
       }
     }
-    @include break(huge)   { 
-      grid-column: 5 / span 8; 
-      grid-template-columns: repeat(8, 1fr);
-      margin: 85px 0;
-      padding: 85px 0;
-      p, h5 { grid-column: 2 / span 6; }
-      figure {
-        grid-column: 1 / span 8;
-        margin-top: 74px;
-        grid-template-columns: repeat(8, 1fr);
-        img { grid-column: 1 / span 8; }
-        figcaption { grid-column: 2 / span 6; }
-      }
-    }
-    @include break(mega)   { 
-      grid-column: 6 / span 8; 
-      grid-template-columns: repeat(8, 1fr);
-      margin: 85px 0;
-      padding: 85px 0;
-      p, h5 { grid-column: 2 / span 6; }
-      figure {
-        grid-column: 1 / span 8;
-        margin-top: 74px;
-        grid-template-columns: repeat(8, 1fr);
-        img { grid-column: 1 / span 8; }
-        figcaption { grid-column: 2 / span 6; }
-      }
-    }
+    @include break(huge)   { grid-column: 5 / span 8; }
+    @include break(mega)   { grid-column: 6 / span 8; }
   }
 
 
