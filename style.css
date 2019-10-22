@@ -1629,8 +1629,14 @@ The home (and clients) PROMO zone
 }
 
 .journal-splash__text {
-  padding: 65px 0 70px 0;
+  padding: 20px 0 70px 0;
   grid-area: text;
+}
+
+@media screen and (min-width: 420px) {
+  .journal-splash__text {
+    padding: 65px 0 70px 0;
+  }
 }
 
 @media screen and (min-width: 1120px) {
@@ -2004,6 +2010,8 @@ The home (and clients) PROMO zone
   letter-spacing: 0.02em;
   color: #FFD600;
   height: 100%;
+  box-shadow: 0px 8px 0px #3A3A3A;
+  padding-bottom: 28px;
 }
 
 @media screen and (min-width: 420px) {
@@ -2021,6 +2029,12 @@ The home (and clients) PROMO zone
 @media screen and (min-width: 1120px) {
   .journal-archive__kicker {
     font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .journal-archive__kicker {
+    box-shadow: none;
   }
 }
 

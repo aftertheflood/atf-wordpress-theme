@@ -18,8 +18,11 @@
 }
 
 .journal-splash__text {
-  padding: 65px 0 70px 0;
+  padding: 20px 0 70px 0;
   grid-area: text;
+  @include break(tiny) {
+    padding: 65px 0 70px 0;
+  }
   @include break(large) {
     padding: 114px 0 120px 0;
   }
@@ -196,6 +199,11 @@
   @include type-label;
   color: $journal-color;
   height: 100%;
+  box-shadow: 0px 8px 0px $dark-grey;
+  padding-bottom: 28px;
+  @include break(small) {
+    box-shadow: none;
+  }
   @include break(medium) {
     padding-bottom: 15px;
   }
