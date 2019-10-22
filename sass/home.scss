@@ -454,15 +454,29 @@ The home (and clients) PROMO zone
     width: 120%;
     left: 50%;
     margin-left: -60%;
-    &.flowing-up {
+    &.mobile__flowing-up {
       bottom: 0;
+      margin-bottom: 40px;
+
     }
+    @include break(tiny) {
+      &.mobile__flowing-up {
+        margin-bottom: 64px;
+      }
+    }
+    // @include break(small) {
+    //   &.mobile__flowing-up {
+    //     margin-bottom: 0;
+    //   }
+    // }
     @include break(medium) {
       width: calc(100% + 180px);
       left: 0;
       margin-left: 0;
       display: block;
-      position: relative;
+      position: static;
+      &.mobile__flowing-up { margin-bottom: 0; }
+      &.desktop__extra-width { width: calc(100% + 360px); }
     }
   }
 
@@ -472,6 +486,11 @@ The home (and clients) PROMO zone
   @include break(medium) {
     position: relative;
     right: 180px;
+    left: -180px;
+    &.desktop__extra-width {
+      right: 360px;
+      left: -360px;
+    }
   }
 }
 

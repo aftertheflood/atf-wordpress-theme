@@ -1446,8 +1446,15 @@ The home (and clients) PROMO zone
   margin-left: -60%;
 }
 
-.promo__image img.flowing-up {
+.promo__image img.mobile__flowing-up {
   bottom: 0;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 420px) {
+  .promo__image img.mobile__flowing-up {
+    margin-bottom: 64px;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -1456,7 +1463,13 @@ The home (and clients) PROMO zone
     left: 0;
     margin-left: 0;
     display: block;
-    position: relative;
+    position: static;
+  }
+  .promo__image img.mobile__flowing-up {
+    margin-bottom: 0;
+  }
+  .promo__image img.desktop__extra-width {
+    width: calc(100% + 360px);
   }
 }
 
@@ -1464,6 +1477,11 @@ The home (and clients) PROMO zone
   .client-promo__right .promo__image img {
     position: relative;
     right: 180px;
+    left: -180px;
+  }
+  .client-promo__right .promo__image img.desktop__extra-width {
+    right: 360px;
+    left: -360px;
   }
 }
 
