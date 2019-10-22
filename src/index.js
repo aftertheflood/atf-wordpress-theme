@@ -13,9 +13,9 @@ const main = () => {
 
   function scrollHandler() {  
     if(contentElement.getBoundingClientRect().top < 30){
-      homeLinks.forEach(e=>e.classList.add('scrolled'));
+      homeLinks.forEach(e => e.classList.add('scrolled'));
     }else{
-      homeLinks.forEach(e=>e.classList.remove('scrolled'));
+      homeLinks.forEach(e => e.classList.remove('scrolled'));
     }
   };
 
@@ -30,7 +30,7 @@ const main = () => {
     compactSiteMenu.setAttribute('style', 'height:100vh; position:fixed;');
     return false;
   });
-  
+
   // add an event listener to the menu close button
   closeMenuButton.addEventListener('click', function(e){
     e.preventDefault();
