@@ -25,7 +25,7 @@ if($paged == 0){
       <img src="<?php echo get_post_meta($post->ID, 'promo-image', true);?>">
     </div>
     <?php } else { ?>
-    <div class="journal-splash__text-only">
+    <div class="journal-splash__textonly">
       <div class="journal-splash__kicker">The latest</div>
       <h2 class="journal-splash__title"><?php the_title(); ?></h2>		
       <div class="journal-splash__date"><?php the_date() ?></div>
