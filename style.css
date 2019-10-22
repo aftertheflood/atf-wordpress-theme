@@ -3043,7 +3043,18 @@ the article BODY
 }
 
 .article-body a {
-  color: #3A3A3A;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.article-body a:hover {
+  border-bottom: 1px solid black;
+  transition: border-bottom 0.5s;
+}
+
+.article-body a:active {
+  background: #FFD600;
 }
 
 .article-body h2 {
@@ -3340,6 +3351,7 @@ the article BODY
 .article-body div.case-study h5 a {
   color: #000;
   text-decoration: none;
+  border-bottom: none;
 }
 
 .article-body div.case-study h5 a::after {

@@ -66,7 +66,16 @@ the article BODY
   }
 
   a {
-    color: $dark-grey;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    &:hover {
+      border-bottom: 1px solid rgba(0,0,0,1);
+      transition: border-bottom 0.5s;
+    }
+    &:active {
+      background: $journal-color;
+    }
   }
 
   h2 {
@@ -183,6 +192,7 @@ the article BODY
       a {
         color: #000;
         text-decoration: none;
+        border-bottom: none;
         &::after {
           content:' \00bb';
         }
