@@ -33,25 +33,27 @@ if($paged == 0){
   <div class="journal-archive__kicker">Archive</div>
   <?php } ?>  
   <div class="atf-archive-grid">
-  <?php 
-  $posts = get_category_post_range('journal', ($paged*10 + 1), 10);
-  while ( $posts->have_posts() ) : $posts->the_post(); ?>
-  <div class="journal-archive__entry">
-    <h2 class="journal-archive__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-    <div class="journal-archive__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>
-    <div class="journal-archive__date"><?php the_date() ?></div>
-    <div class="journal-archive__excerpt"><?php the_excerpt(); ?></div>
-    <a href="<?php the_permalink(); ?>" class="journal-archive__link">Continue reading</a>
+    <?php 
+    $posts = get_category_post_range('journal', ($paged*10 + 1), 10);
+    while ( $posts->have_posts() ) : $posts->the_post(); ?>
+    <div class="journal-archive__entry">
+      <h2 class="journal-archive__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      <div class="journal-archive__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>
+      <div class="journal-archive__date"><?php the_date() ?></div>
+      <div class="journal-archive__excerpt"><?php the_excerpt(); ?></div>
+      <a href="<?php the_permalink(); ?>" class="journal-archive__link">Continue reading</a>
+    </div>
+    <?php endwhile; ?>
   </div>
-  <?php endwhile; ?>
+  <!-- the previous/next button -->
+  <div class="archive-pagination">
+    <?php if($paged > 0){ ?>
+    <a href="<?php previous_posts(); ?>">Newer</a>
+    <?php } ?>
+    <a href="<?php next_posts(); ?>">Older</a>
+    <?php ?>
   </div>
 </div>
-<div class="archive-pagination">
-  <?php if($paged > 0){ ?>
-  <a href="<?php previous_posts(); ?>">previous</a>
-  <?php } ?>
-  <a href="<?php next_posts(); ?>">next</a>
-  <?php ?>
-</div>
+
 
 <?php get_template_part('partials/html','bottom'); ?>

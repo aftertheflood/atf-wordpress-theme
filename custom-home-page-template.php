@@ -39,7 +39,7 @@ $this_page_id = get_the_ID();
   $content = apply_filters('the_content', $post->post_content);
   echo $content;
 ?>
-  <div class="atf-grid">
+  <div class="atf-grid more-clients">
     <a class="more-clients-link" href="/clients">See more projects &raquo;</a>    
   </div>
 </div>

@@ -2,6 +2,8 @@ html {
     text-rendering: optimizeLegibility;
     font-variant-ligatures: common-ligatures;
     font-kerning: normal;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -19,6 +21,7 @@ html {
     @include break(small)  { font-size: 18px; line-height: 27px; }
     @include break(medium) { font-size: 19px; line-height: 30px; letter-spacing: -0.01em; }
     @include break(large)  { font-size: 20px; line-height: 31px; }
+    @include break(huge)   { font-size: 21px; line-height: 32px; }
 }
 
 @mixin type-small {
@@ -59,6 +62,8 @@ html {
     @include break(small)  { font-size: 46px; line-height: 52px; }
     @include break(medium) { font-size: 52px; line-height: 60px; }
     @include break(large)  { font-size: 56px; line-height: 65px; }
+    @include break(huge)   { font-size: 60px; line-height: 67px; }
+    @include break(mega)   { font-size: 64px; line-height: 70px; }
 }
 
 // Standard headings for the promo modules, etc.
@@ -70,6 +75,8 @@ html {
     @include break(small)  { font-size: 30px; }
     @include break(medium) { font-size: 32px; }
     @include break(large)  { font-size: 34px; }
+    @include break(huge)   { font-size: 36px; }
+    @include break(mega)   { font-size: 38px; }
 }
 
 @mixin spaced-caps {
@@ -93,6 +100,7 @@ html {
     @include break(small)  { font-size: 18px; }
     @include break(medium) { font-size: 19px; }
     @include break(large)  { font-size: 20px; }
+    @include break(huge)   { font-size: 21px; }
 }
 
 

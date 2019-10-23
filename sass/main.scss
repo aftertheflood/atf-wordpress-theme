@@ -12,6 +12,7 @@ version 2.0 (http://www.gnu.org/licensesoji/gpl-2.0.html)
 -----------------------------------------------------------------------------------*/
 
 @charset 'utf-8';
+// @import 'reset';
 @import 'breakpoints';
 @import 'fonts';
 @import 'type';
@@ -37,17 +38,13 @@ body {
 	min-height:100vh; 
 }
 
-body.contact {
-	background-color: #000000;
-}
-
 .atf-grid {
   display: grid;
-  grid-template-columns: 0px repeat(12, 1fr) 0px;
-  column-gap: $column-gap;
-  // grid-auto-rows: minmax(50px, max-content); // I don't *think* we need this.
-  margin: 0px;
-  align-items: center;
+	grid-template-columns: 0px repeat(12, 1fr) 0px;
+	column-gap: $column-gap;
+	align-items: center;
+	@include break(huge) { grid-template-columns: 0px repeat(14, 1fr) 0px; }
+	@include break(mega) { grid-template-columns: 0px repeat(16, 1fr) 0px; }
 }
 
 .atf-archive-grid,
@@ -75,10 +72,7 @@ body.contact {
 	}
 }
 
-
-.ragged {
-  margin-right:-20px;
-}
+.ragged { margin-right:-20px; }
 
 @import 'footer';
 @import 'home';

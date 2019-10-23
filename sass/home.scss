@@ -13,8 +13,10 @@ where in the rendered web page you only see one column to the outside of the tex
 
 
 
-/* The home splash zone 
--------------------------------------------------------------------------------------- */
+/* =======================================================================================
+The home SPLASHh zone 
+======================================================================================= */
+
 
 .splash {
   grid-template-areas:  
@@ -34,6 +36,16 @@ where in the rendered web page you only see one column to the outside of the tex
     grid-template-areas:  
     " . . intro intro intro intro intro intro . . . . . . "
     " . . . . . . . promo promo promo promo promo promo .";
+  }
+  @include break(huge) {
+    grid-template-areas:  
+    " . . intro intro intro intro intro intro intro . . . . . . ."
+    " . . . . . . . . promo promo promo promo promo promo promo .";
+  }
+  @include break(mega) {
+    grid-template-areas:  
+    " . . . intro intro intro intro intro intro . . . . . . . . ."
+    ". .  . . . . . . . promo promo promo promo promo promo promo promo .";
   }
 }
 
@@ -152,46 +164,84 @@ where in the rendered web page you only see one column to the outside of the tex
 
 
 
-/* The home (and clients page) feature blocks
--------------------------------------------------------------------------------------- */
 
-.content {
-  z-index: 10;
-}
+
+/* =======================================================================================
+The home (and clients) PROMO zone 
+======================================================================================= */
+
+.content { z-index: 10; }
 
 .homepage-promo-container{
-  background: rgba(245,245,245,1);
-  background: linear-gradient(to bottom, rgba(245,245,245,1) 0%, rgba(245,245,245,0) 50%, rgba(245,245,245,1) 100%);
+  background: rgba(255,255,255,1);
+  background: linear-gradient(to bottom, rgba(245,245,245,1) 0%, rgba(245,245,245,0) 20%, rgba(245,245,245,0) 80%, rgba(245,245,245,1) 100%);
 }
 
-.promo-right {
+
+
+
+/* Feature blocks: GRID SETTINGS
+-------------------------------------------------------------------------------------- */
+
+.client-promo__right {
   grid-template-areas:
-    "image image image image image image image image image image image image" 
-    "text text text text text text text text text text text text";
-  @include break(small) {grid-template-areas: "image image image image image image image . text text text text . .";}
+    "image image image image image image image image image image image image image image" 
+    ". text text text text text text text text text text text text .";
+  @include break(tiny) {
+    grid-template-areas: 
+      "image image image image image image image image image image image image image image" 
+      ". . text text text text text text text text text text . .";
+  }  
+  @include break(medium) { grid-template-areas: "image image image image image image image text text text text text . .";}
+  @include break(large)  { grid-template-areas: "image image image image image image image . text text text text . .";}
+  @include break(huge)   { grid-template-areas: "image image image image image image image image image . text text text text . ."; }
+  @include break(mega)   { grid-template-areas: "image image image image image image image image . . text text text text text . . ."; }
   &.text-first {
     grid-template-areas:
-      "text text text text text text text text text text text text"
-      "image image image image image image image image image image image image";
-    @include break(small) {grid-template-areas: "image image image image image image image . text text text text . .";}
+      ". text text text text text text text text text text text text ."
+      "image image image image image image image image image image image image image image"; 
+    @include break(tiny) {
+      grid-template-areas: 
+        ". . text text text text text text text text text text . ."
+        "image image image image image image image image image image image image image image";
+    }  
+    @include break(medium) { grid-template-areas: "image image image image image image image text text text text text . ."; }
+    @include break(large)  { grid-template-areas: "image image image image image image image . text text text text . ."; }
+    @include break(huge)   { grid-template-areas: "image image image image image image image image image . text text text text . ."; }
+    @include break(mega)   { grid-template-areas: "image image image image image image image image . . text text text text text . . ."; }
     // identical to the non-text-first version, as that only applies to small screens.
   }
 }
 
-.promo-left {  
+.client-promo__left {  
   grid-template-areas:
-      "image image image image image image image image image image image image" 
-      "text text text text text text text text text text text text";
-  @include break(small) {grid-template-areas: ". . text text text text . image image image image image image image";}
+      "image image image image image image image image image image image image image image" 
+      ". text text text text text text text text text text text text .";
+  @include break(tiny)  {
+    grid-template-areas: 
+      "image image image image image image image image image image image image image image" 
+      ". . text text text text text text text text text text . .";
+  }  
+  @include break(medium) { grid-template-areas: ". . text text text text text image image image image image image image"; }
+  @include break(large)  { grid-template-areas: ". . text text text text . image image image image image image image"; }
+  @include break(huge)   { grid-template-areas: ". . text text text text . image image image image image image image image image"; }
+  @include break(mega)   { grid-template-areas: ". . . text text text text text . . image image image image image image image image"; }
   &.text-first {
     grid-template-areas:
-      "text text text text text text text text text text text text"
-      "image image image image image image image image image image image image";
-    @include break(small) {grid-template-areas: ". . text text text text . image image image image image image image";}
+      ". text text text text text text text text text text text text ."
+      "image image image image image image image image image image image image image image"; 
+    @include break(tiny) {
+      grid-template-areas: 
+        ". . text text text text text text text text text text . ."
+        "image image image image image image image image image image image image image image";
+    }
+    @include break(medium) { grid-template-areas: ". . text text text text text image image image image image image image"; }
+    @include break(large)  { grid-template-areas: ". . text text text text . image image image image image image image"; }
+    @include break(huge)   { grid-template-areas: ". . text text text text . image image image image image image image image image"; }
+    @include break(mega)   { grid-template-areas: ". . . text text text text text . . image image image image image image image image"; }
     // identical to the non-text-first version, as that only applies to small screens.
   }
 }
-
 
 .promo-double {
   grid-template-areas: 
@@ -200,7 +250,54 @@ where in the rendered web page you only see one column to the outside of the tex
   @include break(small) {grid-template-areas: ". . . lefttext lefttext lefttext lefttext . righttext righttext righttext righttext . .";}
 }
 
-.promo-double__left {
+
+
+
+
+
+
+
+
+
+/* Feature blocks: LAYOUT SETTINGS
+-------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* The primary blocks */
+
+.client-promo__left, .client-promo__right {
+  margin-bottom: 0; // on mobile, no margin
+  padding-top: 40px; // on mobile, add space between the text and image or divider
+  border-top: 1px solid #ddd;
+  &:first-of-type { 
+    border-top: none; 
+    padding-top: 0;
+  }
+  @include break(tiny)   { padding-top: 70px; }
+  @include break(small)  { 
+    padding-bottom: 30px;  
+    &.text-first {
+      padding-bottom: 0;
+    }
+  }
+  @include break(medium) { 
+    border-top: none; 
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 90px;
+  }
+  @include break(large) {
+    margin-bottom: 120px;
+  }
+}
+
+
+.client-promo-double__left {
   box-shadow: 0px 0px; // necessary?
   @include break(small) {
     grid-area: lefttext;
@@ -209,82 +306,206 @@ where in the rendered web page you only see one column to the outside of the tex
   }
 }
 
-.promo-double__right {
+.client-promo-double__right {
   grid-area: righttext;
   padding-right: 30px;
 }
 
-.promo-right, .promo-left {
-  margin-bottom: 120px;
-}
 
-.promo-left .promo__image {
-  margin-right: calc(-$column-gap);
-}
 
-.promo-right .promo__image {
-  margin-left: calc(-$column-gap);
-}
 
-.promo__text {
-  grid-area: text;
-}
 
+
+
+
+/* The text block */
+.promo__text { 
+  grid-area: text; 
+
+  .sector { @include type-label; }
+  
+  .title {
+    @include type-heading-small;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    @include break(tiny) { margin-bottom: 30px; }
+  }
+  
+  .excerpt {
+    @include type-body;
+    @include type-serif;
+    p {
+      margin-top: 0;
+      margin-bottom: 0.8em;
+      &:last-of-type { margin-bottom: 36px; }
+    }
+    @include break(tiny) {
+      p { 
+        margin-bottom: 0.9em;
+        &:last-of-type { margin-bottom: 34px; }
+      }
+    }
+  }
+  
+  .promo-bottom {
+    position: relative;
+    height: 86px; // this is the height of the button + the desired margin, 46 + 40
+    @include break(tiny) { height: 116px; } // 46 + 70
+    @include break(small) {
+      height: auto;
+      margin-bottom: 40px; // this only applies to the modules with images at the top
+    }
+    @include break(medium) {
+      margin-bottom: 0;
+    }
+
+    .bottom-inner {
+      position: absolute;
+      height: 46px;
+      overflow: visible;
+      width: 100%;
+      @include break(tiny)   { height: 46px; }
+      @include break(small) {
+        position: static;
+        height: auto;
+      }
+    }
+
+    a.link {
+      @include block-button;
+      @include block-button-type;
+      background-color: $light-grey;
+      color: #000;
+      display: inline-block;
+      &:hover {
+        background-color: $clients-color;
+        color: #000;
+      }
+      @include break(small)  { margin-bottom: 36px; }
+      @include break(large) { margin-bottom: 40px; }
+    }
+
+    img.logo {
+      display: block;
+      position: relative;
+      float: right;
+      max-width: 94px;
+      max-height: 77px;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      @include break(tiny) {
+        max-width: 110px;
+        max-height: 94px;
+      }
+      @include break(small) {
+        display: block;
+        position: static;
+        float: none;
+        width: auto;
+        height: auto;
+        top: auto;
+        transform: none;
+      }
+      @include break(medium) {
+        max-width: 120px;
+        max-height: 102px;
+      }
+      @include break(large) {
+        max-width: 128px;
+        max-height: 113px;
+      }
+    }
+  }
+} // end text block
+
+
+
+
+
+
+
+/* The image block */
 .promo__image {
-  background-size: auto 100%;
-  background-repeat: no-repeat;
+  grid-area: image;
   overflow: hidden;
   max-width: 100%;
-  grid-area: image;
-}
-
-.promo__image img {
-  width: calc(100% + 180px);
-}
-
-.promo-right .promo__image img {
+  min-width: 100px;
+  max-height: 280px;
+  height: 280px;
+  text-align: center;
   position: relative;
-  right: 180px
+  
+  @include break(tiny) { 
+    max-height: 330px; 
+    height: 330px; 
+  }
+  @include break(small) {
+    max-height: 400px; 
+    height: 400px; 
+  }
+  @include break(medium) { 
+    max-height: none; 
+    height: auto;
+  }
+
+  img {
+    position: absolute;
+    width: 120%;
+    left: 50%;
+    margin-left: -60%;
+    &.mobile__flowing-up {
+      bottom: 0;
+      margin-bottom: 40px;
+
+    }
+    @include break(tiny) {
+      &.mobile__flowing-up {
+        margin-bottom: 64px;
+      }
+    }
+    // @include break(small) {
+    //   &.mobile__flowing-up {
+    //     margin-bottom: 0;
+    //   }
+    // }
+    @include break(medium) {
+      width: calc(100% + 180px);
+      left: 0;
+      margin-left: 0;
+      display: block;
+      position: static;
+      &.mobile__flowing-up { margin-bottom: 0; }
+      &.desktop__extra-width { width: calc(100% + 360px); }
+    }
+  }
+
 }
 
-.client__promo-logo {
-  display: block;
-  width: 130px;
-}
-
-.client__promo__sector{
-  @include type-label;
-}
-
-.client__promo__title {
-  @include type-heading-small;
-  margin-top: 4px;
-  margin-bottom: 30px;
-}
-
-.client__promo__excerpt{
-  @include type-body;
-  @include type-serif;
-  p {
-    margin-top: 0;
-    margin-bottom: 0.9em;
-    &:last-of-type {
-      margin-bottom: 34px;
+.client-promo__right .promo__image img {
+  @include break(medium) {
+    position: relative;
+    right: 180px;
+    left: -180px;
+    &.desktop__extra-width {
+      right: 360px;
+      left: -360px;
     }
   }
 }
 
-a.client__promo__link{
-  @include block-button;
-  @include block-button-type;
-  background-color: $light-grey;
-  color: #000;
-  display: inline-block;
-}
 
-a.client__promo__link:hover{
-  background-color: $clients-color;
-  color: #000;
+
+
+
+
+/* The "see more projects" link at the bottom */
+
+.more-clients {
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  @include break(medium) { border-top: none; }
 }
 
 .more-clients-link {
@@ -292,12 +513,16 @@ a.client__promo__link:hover{
   font-weight: 800;
   grid-column: 2 / span 12;
   text-decoration: none;
-  color: #000;
-  margin-bottom: 20px;
-  &:hover {
-    color: $clients-color;
+  color: $clients-color;
+  &:hover { color: #000; }
+  @include break(tiny) { grid-column: 3 / span 10; }
+  @include break(medium) {
+    color: #000;
+    &:hover { color: $clients-color; }
   }
-  @include break(tiny) {grid-column: 3 / span 10;}
+  @include break(mega) {
+    grid-column: 4 / span 10;
+  }
 }
 
 

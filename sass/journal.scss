@@ -1,20 +1,28 @@
 .journal-splash {
   grid-template-areas: 
     "image image image image image image image image image image image image image image"
-    ". . text text text text text text text text text text . .";
+    ". text text text text text text text text text text text text .";
+  @include break(tiny) {
+    grid-template-areas: 
+      "image image image image image image image image image image image image image image"
+      ". . text text text text text text text text text text . .";
+  }
   @include break(medium) {
     grid-template-areas: 
     "image image image image image image image image image image image image image image"
     ". . . text text text text text text text text . . .";
   }
-  @include break(large) {
-    grid-template-areas: ". . text text text text text image image image image image image image";
-  }
+  @include break(large) { grid-template-areas: ". . text text text text text image image image image image image image"; }
+  @include break(huge)  { grid-template-areas: ". . text text text text text text image image image image image image image image"; }
+  @include break(mega)  { grid-template-areas: ". . . text text text text text . image image image image image image image image image"; }
 }
 
 .journal-splash__text {
-  padding: 65px 0 70px 0;
+  padding: 20px 0 70px 0;
   grid-area: text;
+  @include break(tiny) {
+    padding: 65px 0 70px 0;
+  }
   @include break(large) {
     padding: 114px 0 120px 0;
   }
@@ -102,6 +110,8 @@
     grid-template-areas:  
       ". . kicker kicker entries entries entries entries entries entries entries entries . .";
   }
+  @include break(huge) { grid-template-areas: ". . kicker kicker . entries entries entries entries entries entries entries entries entries . .";  }
+  @include break(mega) { grid-template-areas: ". . . kicker . entries entries entries entries entries entries entries entries . . . . .";  }
 }
 
 .journal-archive__title, 
@@ -135,10 +145,10 @@
 
 .journal-archive__entry {
   color:white;
-  padding-top: 50px; 
+  padding-top: 30px; 
     // This compensates for the negative top margin seen above.
     // In theory the additional padding here should match that, but for whatever reason that doesn't look right, so it is adjusted.
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   &:nth-of-type(odd),
   &:nth-of-type(even) {
     box-shadow: 0 8px 0px $dark-grey;
@@ -147,9 +157,12 @@
     padding-left: 0;
     padding-right: 0;  // just the box shadow on the bottom.
   }
-  &:last-of-type {
-    padding-bottom: 0;
-    box-shadow: none;
+
+  @include break(small) {
+    &:last-of-type {
+      padding-bottom: 0;
+      box-shadow: none;
+    }
   }
   @include break(large) {
     padding-top: 35px; 
@@ -186,6 +199,11 @@
   @include type-label;
   color: $journal-color;
   height: 100%;
+  box-shadow: 0px 8px 0px $dark-grey;
+  padding-bottom: 28px;
+  @include break(small) {
+    box-shadow: none;
+  }
   @include break(medium) {
     padding-bottom: 15px;
   }
@@ -244,7 +262,25 @@
   display: inline-block;
 }
 
-
+.archive-pagination {
+  grid-column: 2 / span 8;
+  margin: 60px 0 0 0;
+  @include break(tiny)   { grid-column: 3 / span 8; }
+  @include break(small)  { grid-column: 3 / span 8; }
+  @include break(medium) { grid-column: 4 / span 8; }
+  @include break(large)  { grid-column: 5 / span 8; }
+  @include break(huge)   { grid-column: 6 / span 8; }
+  @include break(mega)   { grid-column: 6 / span 8; }
+  a {
+    @include block-button;
+    @include block-button-type;
+    background: white;
+    color: black;
+    &:hover {
+      background-color: rgba(255,255,255,0.9);
+    }
+  }
+}
 
 
 
@@ -265,6 +301,18 @@
   }
   @include break(medium) {padding: 90px 0;}
   @include break(large) {padding: 120px 0;}
+  @include break(huge) {
+    grid-template-areas: 
+      ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ." 
+      ". . entries entries entries entries entries entries entries entries entries entries entries entries . ."
+      ". . onward onward onward onward onward onward onward onward onward onward onward onward . .";
+  }
+  @include break(mega) {
+    grid-template-areas: 
+      ". . . . . kicker kicker kicker kicker kicker kicker kicker kicker . . . . ." 
+      ". . . . . entries entries entries entries entries entries entries entries . . . . ."
+      ". . . . . onward onward onward onward onward onward onward onward . . . . .";
+  }
 
   .recently-header {
     grid-area: kicker;
@@ -279,20 +327,36 @@
   //   @include break(small) {padding: 50px 0;}
   // }
 
+  .recently-header {
+    box-shadow: 0px 8px 0px $dark-grey;
+    padding-bottom: 28px;
+    @include break(small) {
+      box-shadow: none;
+      padding-bottom: 0;
+    }
+  }
+
+  .journal-home__posts {
+    padding-bottom: 38px;
+    @include break(small) {
+      padding-bottom: 0;
+    }
+  }
+
   .onward-journey-link {
     grid-area: onward;
     text-align: end;
     color: $faded-text;
     text-decoration: none;
     font-weight: bold;
-    &:hover {color: #FFF; }
+    &:hover { color: #FFF; }
   }
   .onward-journey-link::after {content:' \00bb';}
 
 
   .journal-archive__entry {
     &:last-of-type {
-      padding-bottom: 50px;
+      padding-bottom: 30px;
     }
     @include break(small) {
       margin: -13px 0 -16px 0;
