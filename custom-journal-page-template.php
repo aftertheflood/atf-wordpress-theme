@@ -10,7 +10,8 @@ if($paged == 0){
 
 <div class="atf-grid journal-splash">
   <?php 
-  $posts = get_category_post_range('journal',0,1);
+  /* exclude category '8' which is clients */
+  $posts = get_excluding_category_post_range(array('8'), 0, 1);
   while ( $posts->have_posts() ) : $posts->the_post(); ?>
     <div class="journal-splash__text">
       <div class="journal-splash__kicker">The latest</div>
@@ -34,7 +35,7 @@ if($paged == 0){
   <?php } ?>  
   <div class="atf-archive-grid">
     <?php 
-    $posts = get_category_post_range('journal', ($paged*10 + 1), 10);
+    $posts = get_excluding_category_post_range(array('8'), ($paged*10 + 1), 10);
     while ( $posts->have_posts() ) : $posts->the_post(); ?>
     <div class="journal-archive__entry">
       <h2 class="journal-archive__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
