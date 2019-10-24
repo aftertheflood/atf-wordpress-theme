@@ -245,9 +245,16 @@ The home (and clients) PROMO zone
 
 .promo-double {
   grid-template-areas: 
-    "lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext"
-    "righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext";
-  @include break(small) {grid-template-areas: ". . . lefttext lefttext lefttext lefttext . righttext righttext righttext righttext . .";}
+    " . lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext . "
+    " . righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext . ";
+  @include break(tiny)  { 
+    grid-template-areas: 
+      " . . lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext . . "
+      " . . righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext . . ";
+  }
+  @include break(small)  { grid-template-areas: ". . lefttext lefttext lefttext lefttext lefttext righttext righttext righttext righttext righttext . .";}
+  @include break(large) { grid-template-areas: ". . . lefttext lefttext lefttext lefttext righttext righttext righttext righttext . . .";}
+
 }
 
 
@@ -298,15 +305,19 @@ The home (and clients) PROMO zone
 
 
 .client-promo-double__left {
+  background: yellow;
+  align-self: start;
   box-shadow: 0px 0px; // necessary?
+  grid-area: lefttext;
   @include break(small) {
-    grid-area: lefttext;
     margin-right: -($column-gap/3);
     box-shadow: ($column-gap/2.5) 0px $light-grey;
   }
 }
 
 .client-promo-double__right {
+  background: cyan;
+  align-self: start;
   grid-area: righttext;
   padding-right: 30px;
 }
