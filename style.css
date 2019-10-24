@@ -1117,7 +1117,9 @@ The home (and clients) PROMO zone
   grid-area: text;
 }
 
-.promo__text .sector {
+.promo__text .sector,
+.client-promo-double__left .sector,
+.client-promo-double__right .sector {
   font-family: Graphik, sans-serif;
   font-weight: bold;
   font-size: 12px;
@@ -1126,24 +1128,32 @@ The home (and clients) PROMO zone
 }
 
 @media screen and (min-width: 420px) {
-  .promo__text .sector {
+  .promo__text .sector,
+  .client-promo-double__left .sector,
+  .client-promo-double__right .sector {
     font-size: 13px;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .promo__text .sector {
+  .promo__text .sector,
+  .client-promo-double__left .sector,
+  .client-promo-double__right .sector {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .promo__text .sector {
+  .promo__text .sector,
+  .client-promo-double__left .sector,
+  .client-promo-double__right .sector {
     font-size: 15px;
   }
 }
 
-.promo__text .title {
+.promo__text .title,
+.client-promo-double__left .title,
+.client-promo-double__right .title {
   font-size: 22px;
   line-height: 118%;
   letter-spacing: -0.01em;
@@ -1152,54 +1162,72 @@ The home (and clients) PROMO zone
 }
 
 @media screen and (min-width: 420px) {
-  .promo__text .title {
+  .promo__text .title,
+  .client-promo-double__left .title,
+  .client-promo-double__right .title {
     font-size: 25px;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .promo__text .title {
+  .promo__text .title,
+  .client-promo-double__left .title,
+  .client-promo-double__right .title {
     font-size: 30px;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .promo__text .title {
+  .promo__text .title,
+  .client-promo-double__left .title,
+  .client-promo-double__right .title {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .promo__text .title {
+  .promo__text .title,
+  .client-promo-double__left .title,
+  .client-promo-double__right .title {
     font-size: 34px;
   }
 }
 
 @media screen and (min-width: 1480px) {
-  .promo__text .title {
+  .promo__text .title,
+  .client-promo-double__left .title,
+  .client-promo-double__right .title {
     font-size: 36px;
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .promo__text .title {
+  .promo__text .title,
+  .client-promo-double__left .title,
+  .client-promo-double__right .title {
     font-size: 38px;
   }
 }
 
 @media screen and (min-width: mega) {
-  .promo__text .title {
+  .promo__text .title,
+  .client-promo-double__left .title,
+  .client-promo-double__right .title {
     font-size: 38px;
   }
 }
 
 @media screen and (min-width: 420px) {
-  .promo__text .title {
+  .promo__text .title,
+  .client-promo-double__left .title,
+  .client-promo-double__right .title {
     margin-bottom: 30px;
   }
 }
 
-.promo__text .excerpt {
+.promo__text .excerpt,
+.client-promo-double__left .excerpt,
+.client-promo-double__right .excerpt {
   font-size: 17px;
   line-height: 25px;
   letter-spacing: -0.01em;
@@ -1207,14 +1235,18 @@ The home (and clients) PROMO zone
 }
 
 @media screen and (min-width: 650px) {
-  .promo__text .excerpt {
+  .promo__text .excerpt,
+  .client-promo-double__left .excerpt,
+  .client-promo-double__right .excerpt {
     font-size: 18px;
     line-height: 27px;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .promo__text .excerpt {
+  .promo__text .excerpt,
+  .client-promo-double__left .excerpt,
+  .client-promo-double__right .excerpt {
     font-size: 19px;
     line-height: 30px;
     letter-spacing: -0.01em;
@@ -1222,62 +1254,84 @@ The home (and clients) PROMO zone
 }
 
 @media screen and (min-width: 1120px) {
-  .promo__text .excerpt {
+  .promo__text .excerpt,
+  .client-promo-double__left .excerpt,
+  .client-promo-double__right .excerpt {
     font-size: 20px;
     line-height: 31px;
   }
 }
 
 @media screen and (min-width: 1480px) {
-  .promo__text .excerpt {
+  .promo__text .excerpt,
+  .client-promo-double__left .excerpt,
+  .client-promo-double__right .excerpt {
     font-size: 21px;
     line-height: 32px;
   }
 }
 
-.promo__text .excerpt p {
+.promo__text .excerpt p,
+.client-promo-double__left .excerpt p,
+.client-promo-double__right .excerpt p {
   margin-top: 0;
   margin-bottom: 0.8em;
 }
 
-.promo__text .excerpt p:last-of-type {
+.promo__text .excerpt p:last-of-type,
+.client-promo-double__left .excerpt p:last-of-type,
+.client-promo-double__right .excerpt p:last-of-type {
   margin-bottom: 36px;
 }
 
 @media screen and (min-width: 420px) {
-  .promo__text .excerpt p {
+  .promo__text .excerpt p,
+  .client-promo-double__left .excerpt p,
+  .client-promo-double__right .excerpt p {
     margin-bottom: 0.9em;
   }
-  .promo__text .excerpt p:last-of-type {
+  .promo__text .excerpt p:last-of-type,
+  .client-promo-double__left .excerpt p:last-of-type,
+  .client-promo-double__right .excerpt p:last-of-type {
     margin-bottom: 34px;
   }
 }
 
-.promo__text .promo-bottom {
+.promo__text .promo-bottom,
+.client-promo-double__left .promo-bottom,
+.client-promo-double__right .promo-bottom {
   position: relative;
   height: 86px;
 }
 
 @media screen and (min-width: 420px) {
-  .promo__text .promo-bottom {
+  .promo__text .promo-bottom,
+  .client-promo-double__left .promo-bottom,
+  .client-promo-double__right .promo-bottom {
     height: 116px;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .promo__text .promo-bottom {
+  .promo__text .promo-bottom,
+  .client-promo-double__left .promo-bottom,
+  .client-promo-double__right .promo-bottom {
     height: auto;
     margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .promo__text .promo-bottom {
+  .promo__text .promo-bottom,
+  .client-promo-double__left .promo-bottom,
+  .client-promo-double__right .promo-bottom {
     margin-bottom: 0;
   }
 }
 
-.promo__text .promo-bottom .bottom-inner {
+.promo__text .promo-bottom .bottom-inner,
+.client-promo-double__left .promo-bottom .bottom-inner,
+.client-promo-double__right .promo-bottom .bottom-inner {
   position: absolute;
   height: 46px;
   overflow: visible;
@@ -1285,19 +1339,25 @@ The home (and clients) PROMO zone
 }
 
 @media screen and (min-width: 420px) {
-  .promo__text .promo-bottom .bottom-inner {
+  .promo__text .promo-bottom .bottom-inner,
+  .client-promo-double__left .promo-bottom .bottom-inner,
+  .client-promo-double__right .promo-bottom .bottom-inner {
     height: 46px;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .promo__text .promo-bottom .bottom-inner {
+  .promo__text .promo-bottom .bottom-inner,
+  .client-promo-double__left .promo-bottom .bottom-inner,
+  .client-promo-double__right .promo-bottom .bottom-inner {
     position: static;
     height: auto;
   }
 }
 
-.promo__text .promo-bottom a.link {
+.promo__text .promo-bottom a.link,
+.client-promo-double__left .promo-bottom a.link,
+.client-promo-double__right .promo-bottom a.link {
   padding: 11px 16px 15px 16px;
   border: 0px;
   font-size: 17px;
@@ -1310,59 +1370,79 @@ The home (and clients) PROMO zone
 }
 
 @media screen and (min-width: 830px) {
-  .promo__text .promo-bottom a.link {
+  .promo__text .promo-bottom a.link,
+  .client-promo-double__left .promo-bottom a.link,
+  .client-promo-double__right .promo-bottom a.link {
     padding: 12px 18px 16px 18px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .promo__text .promo-bottom a.link {
+  .promo__text .promo-bottom a.link,
+  .client-promo-double__left .promo-bottom a.link,
+  .client-promo-double__right .promo-bottom a.link {
     padding: 13px 20px 18px 20px;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .promo__text .promo-bottom a.link {
+  .promo__text .promo-bottom a.link,
+  .client-promo-double__left .promo-bottom a.link,
+  .client-promo-double__right .promo-bottom a.link {
     font-size: 18px;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .promo__text .promo-bottom a.link {
+  .promo__text .promo-bottom a.link,
+  .client-promo-double__left .promo-bottom a.link,
+  .client-promo-double__right .promo-bottom a.link {
     font-size: 19px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .promo__text .promo-bottom a.link {
+  .promo__text .promo-bottom a.link,
+  .client-promo-double__left .promo-bottom a.link,
+  .client-promo-double__right .promo-bottom a.link {
     font-size: 20px;
   }
 }
 
 @media screen and (min-width: 1480px) {
-  .promo__text .promo-bottom a.link {
+  .promo__text .promo-bottom a.link,
+  .client-promo-double__left .promo-bottom a.link,
+  .client-promo-double__right .promo-bottom a.link {
     font-size: 21px;
   }
 }
 
-.promo__text .promo-bottom a.link:hover {
+.promo__text .promo-bottom a.link:hover,
+.client-promo-double__left .promo-bottom a.link:hover,
+.client-promo-double__right .promo-bottom a.link:hover {
   background-color: #FF611E;
   color: #000;
 }
 
 @media screen and (min-width: 650px) {
-  .promo__text .promo-bottom a.link {
+  .promo__text .promo-bottom a.link,
+  .client-promo-double__left .promo-bottom a.link,
+  .client-promo-double__right .promo-bottom a.link {
     margin-bottom: 36px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .promo__text .promo-bottom a.link {
+  .promo__text .promo-bottom a.link,
+  .client-promo-double__left .promo-bottom a.link,
+  .client-promo-double__right .promo-bottom a.link {
     margin-bottom: 40px;
   }
 }
 
-.promo__text .promo-bottom img.logo {
+.promo__text .promo-bottom img.logo,
+.client-promo-double__left .promo-bottom img.logo,
+.client-promo-double__right .promo-bottom img.logo {
   display: block;
   position: relative;
   float: right;
@@ -1374,14 +1454,18 @@ The home (and clients) PROMO zone
 }
 
 @media screen and (min-width: 420px) {
-  .promo__text .promo-bottom img.logo {
+  .promo__text .promo-bottom img.logo,
+  .client-promo-double__left .promo-bottom img.logo,
+  .client-promo-double__right .promo-bottom img.logo {
     max-width: 110px;
     max-height: 94px;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .promo__text .promo-bottom img.logo {
+  .promo__text .promo-bottom img.logo,
+  .client-promo-double__left .promo-bottom img.logo,
+  .client-promo-double__right .promo-bottom img.logo {
     display: block;
     position: static;
     float: none;
@@ -1393,14 +1477,18 @@ The home (and clients) PROMO zone
 }
 
 @media screen and (min-width: 830px) {
-  .promo__text .promo-bottom img.logo {
+  .promo__text .promo-bottom img.logo,
+  .client-promo-double__left .promo-bottom img.logo,
+  .client-promo-double__right .promo-bottom img.logo {
     max-width: 120px;
     max-height: 102px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .promo__text .promo-bottom img.logo {
+  .promo__text .promo-bottom img.logo,
+  .client-promo-double__left .promo-bottom img.logo,
+  .client-promo-double__right .promo-bottom img.logo {
     max-width: 128px;
     max-height: 113px;
   }

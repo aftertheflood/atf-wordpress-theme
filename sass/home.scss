@@ -319,8 +319,12 @@ The home (and clients) PROMO zone
 
 
 /* The text block */
-.promo__text { 
-  grid-area: text; 
+
+.promo__text { grid-area: text; }
+
+.promo__text,
+.client-promo-double__left, 
+.client-promo-double__right { 
 
   .sector { @include type-label; }
   
