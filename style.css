@@ -698,63 +698,63 @@ The home SPLASHh zone
 
 @media screen and (min-width: 420px) {
   .splash__promo__title,
-.splash__promo__subtitle {
+  .splash__promo__subtitle {
     font-size: 25px;
   }
 }
 
 @media screen and (min-width: 650px) {
   .splash__promo__title,
-.splash__promo__subtitle {
+  .splash__promo__subtitle {
     font-size: 30px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .splash__promo__title,
-.splash__promo__subtitle {
+  .splash__promo__subtitle {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .splash__promo__title,
-.splash__promo__subtitle {
+  .splash__promo__subtitle {
     font-size: 34px;
   }
 }
 
 @media screen and (min-width: 1480px) {
   .splash__promo__title,
-.splash__promo__subtitle {
+  .splash__promo__subtitle {
     font-size: 36px;
   }
 }
 
 @media screen and (min-width: 1850px) {
   .splash__promo__title,
-.splash__promo__subtitle {
+  .splash__promo__subtitle {
     font-size: 38px;
   }
 }
 
 @media screen and (min-width: mega) {
   .splash__promo__title,
-.splash__promo__subtitle {
+  .splash__promo__subtitle {
     font-size: 38px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .splash__promo__title,
-.splash__promo__subtitle {
+  .splash__promo__subtitle {
     padding-right: 20px;
   }
 }
 
 @media screen and (min-width: 1480px) {
   .splash__promo__title,
-.splash__promo__subtitle {
+  .splash__promo__subtitle {
     padding-right: 40px;
   }
 }
@@ -803,21 +803,21 @@ The home SPLASHh zone
 
 @media screen and (min-width: 420px) {
   .splash__promo__date,
-.light-archive__date {
+  .light-archive__date {
     font-size: 13px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .splash__promo__date,
-.light-archive__date {
+  .light-archive__date {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .splash__promo__date,
-.light-archive__date {
+  .light-archive__date {
     font-size: 15px;
   }
 }
@@ -1689,21 +1689,21 @@ The home (and clients) PROMO zone
 
 @media screen and (min-width: 420px) {
   .journal-splash__kicker,
-.journal-splash__date {
+  .journal-splash__date {
     font-size: 13px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .journal-splash__kicker,
-.journal-splash__date {
+  .journal-splash__date {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-splash__kicker,
-.journal-splash__date {
+  .journal-splash__date {
     font-size: 15px;
   }
 }
@@ -1719,49 +1719,49 @@ The home (and clients) PROMO zone
 
 @media screen and (min-width: 420px) {
   .journal-splash__title,
-.journal-splash__subtitle {
+  .journal-splash__subtitle {
     font-size: 25px;
   }
 }
 
 @media screen and (min-width: 650px) {
   .journal-splash__title,
-.journal-splash__subtitle {
+  .journal-splash__subtitle {
     font-size: 30px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .journal-splash__title,
-.journal-splash__subtitle {
+  .journal-splash__subtitle {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-splash__title,
-.journal-splash__subtitle {
+  .journal-splash__subtitle {
     font-size: 34px;
   }
 }
 
 @media screen and (min-width: 1480px) {
   .journal-splash__title,
-.journal-splash__subtitle {
+  .journal-splash__subtitle {
     font-size: 36px;
   }
 }
 
 @media screen and (min-width: 1850px) {
   .journal-splash__title,
-.journal-splash__subtitle {
+  .journal-splash__subtitle {
     font-size: 38px;
   }
 }
 
 @media screen and (min-width: mega) {
   .journal-splash__title,
-.journal-splash__subtitle {
+  .journal-splash__subtitle {
     font-size: 38px;
   }
 }
@@ -1883,7 +1883,7 @@ The home (and clients) PROMO zone
 
 @media screen and (min-width: 650px) {
   .journal-archive__title,
-.journal-archive__subtitle {
+  .journal-archive__subtitle {
     font-size: 18px;
     line-height: 27px;
   }
@@ -1891,7 +1891,7 @@ The home (and clients) PROMO zone
 
 @media screen and (min-width: 830px) {
   .journal-archive__title,
-.journal-archive__subtitle {
+  .journal-archive__subtitle {
     font-size: 19px;
     line-height: 30px;
     letter-spacing: -0.01em;
@@ -1900,7 +1900,7 @@ The home (and clients) PROMO zone
 
 @media screen and (min-width: 1120px) {
   .journal-archive__title,
-.journal-archive__subtitle {
+  .journal-archive__subtitle {
     font-size: 20px;
     line-height: 31px;
   }
@@ -1908,7 +1908,7 @@ The home (and clients) PROMO zone
 
 @media screen and (min-width: 1480px) {
   .journal-archive__title,
-.journal-archive__subtitle {
+  .journal-archive__subtitle {
     font-size: 21px;
     line-height: 32px;
   }
@@ -1916,14 +1916,14 @@ The home (and clients) PROMO zone
 
 @media screen and (min-width: 830px) {
   .journal-archive__title,
-.journal-archive__subtitle {
+  .journal-archive__subtitle {
     line-height: 27px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-archive__title,
-.journal-archive__subtitle {
+  .journal-archive__subtitle {
     line-height: 30px;
   }
 }
@@ -2375,21 +2375,21 @@ The home (and clients) PROMO zone
 
 @media screen and (min-width: 420px) {
   .journal-home .recently-header,
-.journal-home .onward-journey-link {
+  .journal-home .onward-journey-link {
     font-size: 13px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .journal-home .recently-header,
-.journal-home .onward-journey-link {
+  .journal-home .onward-journey-link {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-home .recently-header,
-.journal-home .onward-journey-link {
+  .journal-home .onward-journey-link {
     font-size: 15px;
   }
 }
@@ -2449,6 +2449,408 @@ The home (and clients) PROMO zone
     padding-left: 39px;
     margin-left: -9px;
   }
+}
+
+.about__splash {
+  color: #000;
+  padding: 70px 0;
+}
+
+.about__splash .splash-title {
+  grid-column: 2 / span 12;
+}
+
+.about__splash .about-content {
+  grid-column: 2 / span 12;
+}
+
+@media screen and (min-width: 420px) {
+  .about__splash .splash-title {
+    grid-column: 3 / span 10;
+  }
+  .about__splash .about-content {
+    grid-column: 3 / span 10;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .about__splash {
+    padding: 85px 0 90px 0;
+  }
+  .about__splash .splash-title {
+    grid-column: 3 / span 9;
+  }
+  .about__splash .about-content {
+    grid-column: 3 / span 9;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .about__splash {
+    padding: 114px 0 120px 0;
+  }
+  .about__splash .splash-title {
+    grid-column: 3 / span 8;
+  }
+  .about__splash .about-content {
+    grid-column: 3 / span 8;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .about__splash .splash-title {
+    grid-column: 4 / span 8;
+  }
+  .about__splash .about-content {
+    grid-column: 4 / span 8;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .about__splash .splash-title {
+    grid-column: 4 / span 8;
+  }
+  .about__splash .about-content {
+    grid-column: 4 / span 8;
+  }
+}
+
+.about__splash h2 {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  font-family: Graphik, sans-serif;
+  font-weight: 800;
+  margin: 0 0 19px;
+}
+
+@media screen and (min-width: 420px) {
+  .about__splash h2 {
+    font-size: 38px;
+    line-height: 47px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .about__splash h2 {
+    font-size: 46px;
+    line-height: 52px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .about__splash h2 {
+    font-size: 52px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .about__splash h2 {
+    font-size: 56px;
+    line-height: 65px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .about__splash h2 {
+    font-size: 60px;
+    line-height: 67px;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .about__splash h2 {
+    font-size: 64px;
+    line-height: 70px;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .about__splash h2 {
+    font-size: 64px;
+    line-height: 70px;
+  }
+}
+
+.about__splash p {
+  font-size: 22px;
+  line-height: 118%;
+  letter-spacing: -0.01em;
+  font-family: Tiempos, Georgia, serif;
+  line-height: 125%;
+  margin: 0 0 24px;
+}
+
+@media screen and (min-width: 420px) {
+  .about__splash p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .about__splash p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .about__splash p {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .about__splash p {
+    font-size: 34px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .about__splash p {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .about__splash p {
+    font-size: 38px;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .about__splash p {
+    font-size: 38px;
+  }
+}
+
+.about__splash p:last-of-type {
+  margin-bottom: 0;
+}
+
+.about__section-wrapper {
+  background: #f5f5f5;
+  padding: 70px 0;
+}
+
+@media screen and (min-width: 830px) {
+  .about__section-wrapper {
+    padding: 90px 0;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .about__section-wrapper {
+    padding: 120px 0;
+  }
+}
+
+.about__section {
+  color: #000;
+  align-items: start;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #EEE;
+}
+
+.about__section:first-of-type {
+  padding-top: 0;
+}
+
+.about__section:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.about__section .section-title {
+  grid-column: 2 / span 12;
+}
+
+@media screen and (min-width: 420px) {
+  .about__section .section-title {
+    grid-column: 3 / span 10;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .about__section .section-title {
+    grid-column: 3 / span 3;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .about__section .section-title {
+    grid-column: 3 / span 3;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .about__section .section-title {
+    grid-column: 4 / span 3;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .about__section .section-title {
+    grid-column: 4 / span 3;
+  }
+}
+
+.about__section .section-title h2 {
+  font-size: 22px;
+  line-height: 118%;
+  letter-spacing: -0.01em;
+  font-family: Tiempos, Georgia, serif;
+  margin: -5px 0 22px 0;
+}
+
+@media screen and (min-width: 420px) {
+  .about__section .section-title h2 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .about__section .section-title h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .about__section .section-title h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .about__section .section-title h2 {
+    font-size: 34px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .about__section .section-title h2 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .about__section .section-title h2 {
+    font-size: 38px;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .about__section .section-title h2 {
+    font-size: 38px;
+  }
+}
+
+.about__section .about-content {
+  grid-column: 2 / span 12;
+}
+
+@media screen and (min-width: 420px) {
+  .about__section .about-content {
+    grid-column: 3 / span 10;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .about__section .about-content {
+    grid-column: 7 / span 7;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .about__section .about-content {
+    grid-column: 7 / span 6;
+  }
+}
+
+.about__section .about-content p, .about__section .about-content ul {
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: -0.01em;
+  font-family: Tiempos, Georgia, serif;
+}
+
+@media screen and (min-width: 650px) {
+  .about__section .about-content p, .about__section .about-content ul {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .about__section .about-content p, .about__section .about-content ul {
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .about__section .about-content p, .about__section .about-content ul {
+    font-size: 20px;
+    line-height: 31px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .about__section .about-content p, .about__section .about-content ul {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
+.about__section .about-content p {
+  margin-top: 0;
+}
+
+.about__section .about-content p:last-of-type {
+  margin-bottom: 0;
+}
+
+.about__section .about-content ul {
+  padding-inline-start: 20px;
+  list-style-type: none;
+}
+
+.about__section .about-content ul:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 420px) {
+  .about__section .about-content ul {
+    padding-inline-start: 0;
+  }
+}
+
+.about__section .about-content ul li {
+  text-indent: -20px;
+}
+
+@media screen and (min-width: 420px) {
+  .about__section .about-content ul li {
+    text-indent: -20px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .about__section .about-content ul li {
+    text-indent: -22px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .about__section .about-content ul li {
+    text-indent: -24px;
+  }
+}
+
+.about__section .about-content ul li:before {
+  content: "— ";
 }
 
 .contact__content {
@@ -2669,56 +3071,56 @@ textarea {
 
 @media screen and (min-width: 420px) {
   input[type=text],
-input[type=email],
-textarea {
+  input[type=email],
+  textarea {
     font-size: 25px;
   }
 }
 
 @media screen and (min-width: 650px) {
   input[type=text],
-input[type=email],
-textarea {
+  input[type=email],
+  textarea {
     font-size: 30px;
   }
 }
 
 @media screen and (min-width: 830px) {
   input[type=text],
-input[type=email],
-textarea {
+  input[type=email],
+  textarea {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   input[type=text],
-input[type=email],
-textarea {
+  input[type=email],
+  textarea {
     font-size: 34px;
   }
 }
 
 @media screen and (min-width: 1480px) {
   input[type=text],
-input[type=email],
-textarea {
+  input[type=email],
+  textarea {
     font-size: 36px;
   }
 }
 
 @media screen and (min-width: 1850px) {
   input[type=text],
-input[type=email],
-textarea {
+  input[type=email],
+  textarea {
     font-size: 38px;
   }
 }
 
 @media screen and (min-width: mega) {
   input[type=text],
-input[type=email],
-textarea {
+  input[type=email],
+  textarea {
     font-size: 38px;
   }
 }
@@ -2732,8 +3134,8 @@ textarea:focus {
 
 @media screen and (min-width: 650px) {
   input[type=text]:focus,
-input[type=email]:focus,
-textarea:focus {
+  input[type=email]:focus,
+  textarea:focus {
     border: 8px solid #FF00FF;
   }
 }
@@ -2746,21 +3148,21 @@ input[type=email] {
 
 @media screen and (min-width: 420px) {
   input[type=text],
-input[type=email] {
+  input[type=email] {
     height: 64px;
   }
 }
 
 @media screen and (min-width: 650px) {
   input[type=text],
-input[type=email] {
+  input[type=email] {
     height: 70px;
   }
 }
 
 @media screen and (min-width: 830px) {
   input[type=text],
-input[type=email] {
+  input[type=email] {
     height: 80px;
     padding: 3px 18px 10px 18px;
   }
@@ -3263,48 +3665,48 @@ the article BODY
 
 @media screen and (min-width: 420px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-.article-body blockquote, .article-body figure,
-.article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
+  .article-body blockquote, .article-body figure,
+  .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 3 / span 10;
   }
 }
 
 @media screen and (min-width: 830px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-.article-body blockquote, .article-body figure,
-.article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
+  .article-body blockquote, .article-body figure,
+  .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 4 / span 8;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-.article-body blockquote, .article-body figure,
-.article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
+  .article-body blockquote, .article-body figure,
+  .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 5 / span 6;
   }
 }
 
 @media screen and (min-width: 1480px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-.article-body blockquote, .article-body figure,
-.article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
+  .article-body blockquote, .article-body figure,
+  .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 6 / span 6;
   }
 }
 
 @media screen and (min-width: 1850px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-.article-body blockquote, .article-body figure,
-.article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
+  .article-body blockquote, .article-body figure,
+  .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 7 / span 6;
   }
 }
 
 @media screen and (min-width: mega) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-.article-body blockquote, .article-body figure,
-.article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
+  .article-body blockquote, .article-body figure,
+  .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 7 / span 6;
   }
 }
@@ -3692,35 +4094,35 @@ nav {
 
 @media screen and (min-width: 830px) {
   nav,
-.nav-place-holder {
+  .nav-place-holder {
     height: 60px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   nav,
-.nav-place-holder {
+  .nav-place-holder {
     height: 62px;
   }
 }
 
 @media screen and (min-width: 1480px) {
   nav,
-.nav-place-holder {
+  .nav-place-holder {
     height: 63px;
   }
 }
 
 @media screen and (min-width: 1850px) {
   nav,
-.nav-place-holder {
+  .nav-place-holder {
     height: 64px;
   }
 }
 
 @media screen and (min-width: mega) {
   nav,
-.nav-place-holder {
+  .nav-place-holder {
     height: 64px;
   }
 }
@@ -3849,7 +4251,7 @@ nav {
 
 @media screen and (min-width: 420px) {
   .header-button,
-.close-menu-button {
+  .close-menu-button {
     padding-top: 8px;
     padding-right: 8px;
   }
@@ -3857,7 +4259,7 @@ nav {
 
 @media screen and (min-width: 650px) {
   .header-button,
-.close-menu-button {
+  .close-menu-button {
     padding-top: 9px;
     padding-right: 9px;
   }
@@ -4013,14 +4415,14 @@ h2.compact-menu__title {
 
 @media screen and (min-width: 420px) {
   .compact-menu__link,
-h2.compact-menu__title {
+  h2.compact-menu__title {
     font-size: 25px;
   }
 }
 
 @media screen and (min-width: 650px) {
   .compact-menu__link,
-h2.compact-menu__title {
+  h2.compact-menu__title {
     font-size: 30px;
   }
 }
