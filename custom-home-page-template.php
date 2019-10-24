@@ -26,7 +26,7 @@ $this_page_id = get_the_ID();
           <h2 class="splash__promo__title"><?php the_title(); ?></h2>
           <div class="splash__promo__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>
           <div class="splash__promo__date"><?php the_date() ?></div>
-          <a href="<?php the_permalink(); ?>" class="splash__promo__link">Read the journal post</a>
+          <a href="<?php the_permalink(); ?>" class="splash__promo__link">Read the blog post</a>
         </div>
        </div>
     </div>

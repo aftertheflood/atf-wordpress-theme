@@ -13,10 +13,9 @@ const main = () => {
 
   function scrollHandler() {  
     if(contentElement.getBoundingClientRect().top < 30){
-      console.log('S', homeLinks)
-      homeLinks.forEach(e=>e.classList.add('scrolled'));
+      homeLinks.forEach(e => e.classList.add('scrolled'));
     }else{
-      homeLinks.forEach(e=>e.classList.remove('scrolled'));
+      homeLinks.forEach(e => e.classList.remove('scrolled'));
     }
   };
 
@@ -32,13 +31,13 @@ const main = () => {
     return false;
   });
 
+  // add an event listener to the menu close button
   closeMenuButton.addEventListener('click', function(e){
     e.preventDefault();
     compactSiteMenu.setAttribute('style', 'height:0vh;overflow:hidden;');
     return false;
   })
-  
-  // add an event listener to the menu close button
+
 
 }
 
