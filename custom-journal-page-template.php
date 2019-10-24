@@ -12,7 +12,7 @@ if($paged == 0){
   <?php 
   $posts = get_category_post_range('journal',0,1);
   while ( $posts->have_posts() ) : $posts->the_post(); ?>
-    <?php if(get_post_meta($post->ID, 'promo-image', true) == '') { ?>  
+    <?php if(get_post_meta($post->ID, 'promo-image', true)) { ?>  
     <div class="journal-splash__text">
       <div class="journal-splash__kicker">The latest</div>
       <h2 class="journal-splash__title"><?php the_title(); ?></h2>
@@ -27,7 +27,8 @@ if($paged == 0){
     <?php } else { ?>
     <div class="journal-splash__textonly">
       <div class="journal-splash__kicker">The latest</div>
-      <h2 class="journal-splash__title"><?php the_title(); ?></h2>		
+      <h2 class="journal-splash__title"><?php the_title(); ?></h2>
+      <div class="journal-splash__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>			
       <div class="journal-splash__date"><?php the_date() ?></div>
       <div class="journal-splash__excerpt"><?php the_excerpt(); ?></div>
       <a href="<?php the_permalink(); ?>" class="journal-splash__link">Read more</a>
