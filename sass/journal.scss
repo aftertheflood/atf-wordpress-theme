@@ -17,6 +17,16 @@
   @include break(mega)  { grid-template-areas: ". . . text text text text text . image image image image image image image image image"; }
 }
 
+.journal-splash__textonly {
+  grid-template-areas: ". text text text text text text text text text text text text ."; 
+  @include break(tiny)   { grid-template-areas: ". . text text text text text text text text text text . ."; }
+  @include break(medium) { grid-template-areas: ". . . text text text text text text text text . . ."; }
+  @include break(large)  { grid-template-areas: ". . . . text text text text text text . . . ."; }
+  @include break(huge)   { grid-template-areas: ". . . . . text text text text text text . . . . ."; }
+  @include break(mega)   { grid-template-areas: ". . . . . text text text text text text text text . . . . ."; }
+}
+
+
 .journal-splash__text {
   padding: 20px 0 70px 0;
   grid-area: text;

@@ -1716,6 +1716,46 @@ The home (and clients) PROMO zone
   }
 }
 
+.journal-splash__textonly {
+  grid-template-areas: ". text text text text text text text text text text text text .";
+}
+
+@media screen and (min-width: 420px) {
+  .journal-splash__textonly {
+    grid-template-areas: ". . text text text text text text text text text text . .";
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .journal-splash__textonly {
+    grid-template-areas: ". . . text text text text text text text text . . .";
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .journal-splash__textonly {
+    grid-template-areas: ". . . . text text text text text text . . . .";
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .journal-splash__textonly {
+    grid-template-areas: ". . . . . text text text text text text . . . . .";
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .journal-splash__textonly {
+    grid-template-areas: ". . . . . text text text text text text text text . . . . .";
+  }
+}
+
+@media screen and (min-width: mega) {
+  .journal-splash__textonly {
+    grid-template-areas: ". . . . . text text text text text text text text . . . . .";
+  }
+}
+
 .journal-splash__text {
   padding: 20px 0 70px 0;
   grid-area: text;
