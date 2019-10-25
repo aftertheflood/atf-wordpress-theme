@@ -1041,28 +1041,105 @@ The home (and clients) PROMO zone
   }
 }
 
-.promo-double {
-  grid-template-areas: " . lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext . " " . righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext . ";
+@media screen and (min-width: 650px) {
+  .promo-double {
+    border-top: 1px solid #ddd;
+  }
+}
+
+.client-promo-double__left,
+.client-promo-double__right {
+  border-top: 1px solid #ddd;
+  margin-bottom: 0;
+  padding-top: 40px;
+  align-self: start;
 }
 
 @media screen and (min-width: 420px) {
-  .promo-double {
-    grid-template-areas: " . . lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext . . " " . . righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext . . ";
+  .client-promo-double__left,
+  .client-promo-double__right {
+    padding-top: 70px;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .promo-double {
-    grid-template-areas: ". . lefttext lefttext lefttext lefttext lefttext righttext righttext righttext righttext righttext . .";
+  .client-promo-double__left,
+  .client-promo-double__right {
+    border-top: none;
   }
 }
 
-@media screen and (min-width: 1120px) {
-  .promo-double {
-    grid-template-areas: ". . . lefttext lefttext lefttext lefttext righttext righttext righttext righttext . . .";
+.client-promo-double__left {
+  background: yellow;
+  grid-column: 1 / span 14;
+}
+
+@media screen and (min-width: 650px) {
+  .client-promo-double__left {
+    grid-column: 1 / span 7;
+  }
+  .client-promo-double__left .promo-double__text {
+    grid-column: 3 / span 6;
   }
 }
 
+.client-promo-double__right {
+  background: cyan;
+  grid-column: 1 / span 14;
+}
+
+@media screen and (min-width: 650px) {
+  .client-promo-double__right {
+    grid-column: 8 / span 7;
+  }
+  .client-promo-double__right .promo-double__text {
+    grid-column: 3 / span 6;
+  }
+}
+
+.promo-double-grid {
+  display: grid;
+  grid-template-columns: 0px repeat(12, 1fr) 0px;
+  column-gap: 20px;
+}
+
+@media screen and (min-width: 1480px) {
+  .promo-double-grid {
+    grid-template-columns: 0px repeat(14, 1fr) 0px;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .promo-double-grid {
+    grid-template-columns: 0px repeat(16, 1fr) 0px;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .promo-double-grid {
+    grid-template-columns: 0px repeat(16, 1fr) 0px;
+  }
+}
+
+.promo-double__text {
+  background: red;
+  align-self: start;
+  box-shadow: 0px 0px;
+  grid-column: 2 / span 12;
+}
+
+@media screen and (min-width: 420px) {
+  .promo-double__text {
+    grid-column: 3 / span 10;
+  }
+}
+
+/*
+NOTE:
+the __text class directly above this note
+needs to be set for both the left and right columns, 
+meaning I need a version of it nested inside the right and left columns
+*/
 /* Feature blocks: LAYOUT SETTINGS
 -------------------------------------------------------------------------------------- */
 /* The primary blocks */
@@ -1105,27 +1182,6 @@ The home (and clients) PROMO zone
   .client-promo__left, .client-promo__right {
     margin-bottom: 120px;
   }
-}
-
-.client-promo-double__left {
-  background: yellow;
-  align-self: start;
-  box-shadow: 0px 0px;
-  grid-area: lefttext;
-}
-
-@media screen and (min-width: 650px) {
-  .client-promo-double__left {
-    margin-right: -6.6666666667px;
-    box-shadow: 8px 0px #EEE;
-  }
-}
-
-.client-promo-double__right {
-  background: cyan;
-  align-self: start;
-  grid-area: righttext;
-  padding-right: 30px;
 }
 
 /* The text block */
