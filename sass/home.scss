@@ -247,71 +247,133 @@ The home (and clients) PROMO zone
 
 /* The promo-double module 
 -------------------------------------------------------------------------------------- */
+
+/* ---------- Non-grid settings ---------- */ 
 .promo-double {
+  position: relative;
+  text-align: center;
+  @include break(small)  { border-top: 1px solid #ddd; }
+  @include break(medium) { border-top: none; margin-bottom: 90px; }
+  @include break(large)  { margin-bottom: 120px; }
+}
+
+.client-promo-double__left, 
+.client-promo-double__right {
+  display: grid;
+  grid-column: 1 / span 14;
+  grid-template-columns: 0px repeat(12, 1fr) 0px;
+  column-gap: $column-gap;
+  border-top: 1px solid #ddd;
+  margin-bottom: 0; // on mobile, no margin
+  padding-top: 40px;
+  align-self: start;
+  align-items: center;
+  text-align: left;
+  @include break(tiny)   { padding-top: 70px; }
+  @include break(small)  { padding-top: 40px; border-top: none; }
+  @include break(medium) { padding-bottom: 40px; }
+}
+
+
+
+/* ---------- Grid (and spacing) settings ---------- */
+
+.promo-double__divider {
+  display: none;
+  position: absolute;
   @include break(small) {
-    border-top: 1px solid #ddd;
+    display: inline-block;
+    width: 1px;
+    min-height: 100%;
+    background: #ddd;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
   @include break(medium) {
-    border-top: none;
+    width: 8px;
+    margin-left: -4px;
+    background: $light-grey;
   }
 }
 
-/* ---------- Grid settings ---------- */
+.promo-double__image {
+  max-height: none; 
+  overflow: hidden;
+  height: 180px;
+  @include break(medium) { height: auto; }
+  img {
+    display: block;
+    width: calc(100% + 200px);
+    @include break(medium) { width: calc(100% + 60px); }
+  }
+}
+
 
 .client-promo-double__left {
-  // background: yellow;
-  grid-column: 1 / span 14;
-  display: grid;
-  grid-template-columns: 0px repeat(12, 1fr) 0px;
-  column-gap: $column-gap;
   @include break(small) {
     grid-column: 1 / span 7;
     grid-template-columns: 0px repeat(6, 1fr);
-    .promo-double__text { grid-column: 3 / span 5; }
+    .promo-double__text  { grid-column: 3 / span 5; padding-right: 20px; }
+    .promo-double__image { grid-column: 1 / span 7; }
+  }
+  @include break(medium) {
+    .promo-double__image { grid-column: 1 / span 2; 
+      img {
+        margin-left: -60px; 
+        left: -60px; 
+        right: 60px;
+      }
+    }
   }
   @include break(large) {
-    .promo-double__text { grid-column: 4 / span 4; }
+    .promo-double__text  { grid-column: 4 / span 4; padding-right: 30px; }
+    .promo-double__image { grid-column: 1 / span 3; }
   }
   @include break(huge) {
     grid-column: 1 / span 8;
     grid-template-columns: 0px repeat(7, 1fr);
-    .promo-double__text { grid-column: 4 / span 4; }
+    .promo-double__text  { grid-column: 4 / span 4; }
   }
   @include break(mega) {
     grid-column: 1 / span 9;
     grid-template-columns: 0px repeat(8, 1fr);
-    .promo-double__text { grid-column: 5 / span 4; }
+    .promo-double__text  { grid-column: 5 / span 4; }
   }
 }
 
 .client-promo-double__right {
-  // background: cyan;
-  grid-column: 1 / span 14;
-  display: grid;
-  grid-template-columns: 0px repeat(12, 1fr) 0px;
-  column-gap: $column-gap;
   @include break(small) {
     grid-column: 8 / span 7;
     grid-template-columns: repeat(6, 1fr) 0px;
-    .promo-double__text { grid-column: 1 / span 5; }
+    .promo-double__text  { grid-column: 1 / span 5; padding-left: 20px; }
+    .promo-double__image { grid-column: 1 / span 7; }
+  }
+  @include break(medium) {
+    .promo-double__image { grid-column: 6 / span 2; }
   }
   @include break(large) {
-    .promo-double__text { grid-column: 1 / span 4; }
+    .promo-double__text { 
+      grid-column: 1 / span 4; 
+      padding-left: 30px;
+    }
+    .promo-double__image { grid-column: 5 / span 3; }
   }
   @include break(huge) {
     grid-column: 9 / span 8;
     grid-template-columns: repeat(7, 1fr) 0px;
-    .promo-double__text { grid-column: 2 / span 4; }
+    .promo-double__text  { grid-column: 2 / span 4; }
+    .promo-double__image { grid-column: 6 / span 3; }
   }
   @include break(mega) {
     grid-column: 10 / span 9;
     grid-template-columns: repeat(8, 1fr) 0px;
-    .promo-double__text { grid-column: 2 / span 4; }
+    .promo-double__text  { grid-column: 2 / span 4; }
+    .promo-double__image { grid-column: 6 / span 4; }
   }
 }
 
 .promo-double__text {
-  // background: red;
   align-self: start;
   grid-column: 2 / span 12; 
   @include break(tiny) { grid-column: 3 / span 10; }
@@ -323,21 +385,6 @@ The home (and clients) PROMO zone
 }
 
 
-/* ---------- Non-grid settings ---------- */ 
-
-.client-promo-double__left, 
-.client-promo-double__right {
-  border-top: 1px solid #ddd;
-  margin-bottom: 0; // on mobile, no margin
-  padding-top: 40px;
-  align-self: start;
-  @include break(tiny) {
-    padding-top: 70px;
-  }
-  @include break(small) {
-    border-top: none;
-  }
-}
 
 
 
