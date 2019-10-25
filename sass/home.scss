@@ -243,29 +243,87 @@ The home (and clients) PROMO zone
   }
 }
 
-.promo-double {
-  // grid-template-areas: 
-  //   " . lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext . "
-  //   " . righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext . ";
-  // @include break(tiny)  { 
-  //   grid-template-areas: 
-  //     " . . lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext . . "
-  //     " . . righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext . . ";
-  // }
-  // @include break(small)  { grid-template-areas: ". . lefttext lefttext lefttext lefttext lefttext righttext righttext righttext righttext righttext . .";}
-  // @include break(large) { grid-template-areas: ". . . lefttext lefttext lefttext lefttext righttext righttext righttext righttext . . .";}
-
-}
 
 
-
-
-
+/* The promo-double module 
+-------------------------------------------------------------------------------------- */
 .promo-double {
   @include break(small) {
     border-top: 1px solid #ddd;
   }
+  @include break(medium) {
+    border-top: none;
+  }
 }
+
+/* ---------- Grid settings ---------- */
+
+.client-promo-double__left {
+  // background: yellow;
+  grid-column: 1 / span 14;
+  display: grid;
+  grid-template-columns: 0px repeat(12, 1fr) 0px;
+  column-gap: $column-gap;
+  @include break(small) {
+    grid-column: 1 / span 7;
+    grid-template-columns: 0px repeat(6, 1fr);
+    .promo-double__text { grid-column: 3 / span 5; }
+  }
+  @include break(large) {
+    .promo-double__text { grid-column: 4 / span 4; }
+  }
+  @include break(huge) {
+    grid-column: 1 / span 8;
+    grid-template-columns: 0px repeat(7, 1fr);
+    .promo-double__text { grid-column: 4 / span 4; }
+  }
+  @include break(mega) {
+    grid-column: 1 / span 9;
+    grid-template-columns: 0px repeat(8, 1fr);
+    .promo-double__text { grid-column: 5 / span 4; }
+  }
+}
+
+.client-promo-double__right {
+  // background: cyan;
+  grid-column: 1 / span 14;
+  display: grid;
+  grid-template-columns: 0px repeat(12, 1fr) 0px;
+  column-gap: $column-gap;
+  @include break(small) {
+    grid-column: 8 / span 7;
+    grid-template-columns: repeat(6, 1fr) 0px;
+    .promo-double__text { grid-column: 1 / span 5; }
+  }
+  @include break(large) {
+    .promo-double__text { grid-column: 1 / span 4; }
+  }
+  @include break(huge) {
+    grid-column: 9 / span 8;
+    grid-template-columns: repeat(7, 1fr) 0px;
+    .promo-double__text { grid-column: 2 / span 4; }
+  }
+  @include break(mega) {
+    grid-column: 10 / span 9;
+    grid-template-columns: repeat(8, 1fr) 0px;
+    .promo-double__text { grid-column: 2 / span 4; }
+  }
+}
+
+.promo-double__text {
+  // background: red;
+  align-self: start;
+  grid-column: 2 / span 12; 
+  @include break(tiny) { grid-column: 3 / span 10; }
+  /* 
+  once we get to size=small, 
+  the grid settings for this 
+  are set in the client-promo-double__right and __left classes
+  */
+}
+
+
+/* ---------- Non-grid settings ---------- */ 
 
 .client-promo-double__left, 
 .client-promo-double__right {
@@ -281,59 +339,15 @@ The home (and clients) PROMO zone
   }
 }
 
-.client-promo-double__left {
-  background: yellow;
-  grid-column: 1 / span 14;
-  @include break(small) {
-    grid-column: 1 / span 7;
-    .promo-double__text {
-      grid-column: 3 / span 6;
-    }
-  }
-}
-
-.client-promo-double__right {
-  background: cyan;
-  grid-column: 1 / span 14;
-  @include break(small) {
-    grid-column: 8 / span 7;
-    .promo-double__text {
-      grid-column: 3 / span 6;
-    }
-  }
-}
-
-.promo-double-grid {
-  display: grid;
-	grid-template-columns: 0px repeat(12, 1fr) 0px;
-	column-gap: $column-gap;
-  // align-items: center;
-	@include break(huge) { grid-template-columns: 0px repeat(14, 1fr) 0px; }
-	@include break(mega) { grid-template-columns: 0px repeat(16, 1fr) 0px; }
-}
-
-.promo-double__text {
-  background: red;
-  align-self: start;
-  box-shadow: 0px 0px; // necessary?
-  grid-column: 2 / span 12;
-  @include break(tiny) { 
-    grid-column: 3 / span 10;
-  }
-  // @include break(small) {
-  //   grid-column: 1 / span 7;
-  //   // margin-right: -($column-gap/3);
-  //   // box-shadow: ($column-gap/2.5) 0px $light-grey;
-  // }
-}
 
 
-/*
-NOTE:
-the __text class directly above this note
-needs to be set for both the left and right columns, 
-meaning I need a version of it nested inside the right and left columns
-*/
+
+
+
+
+
+
+
 
 
 
@@ -342,12 +356,7 @@ meaning I need a version of it nested inside the right and left columns
 -------------------------------------------------------------------------------------- */
 
 
-
-
-
-
-
-/* The primary blocks */
+/* ---------- The primary blocks ---------- */
 
 .client-promo__left, .client-promo__right {
   margin-bottom: 0; // on mobile, no margin
@@ -377,22 +386,10 @@ meaning I need a version of it nested inside the right and left columns
 
 
 
-// .promo-double__inner {
-//   grid-column: 3 / span 10;
-// }
 
 
 
-
-
-
-
-
-
-
-
-
-/* The text block */
+/* ---------- The text block ---------- */
 
 .promo__text { grid-area: text; }
 
@@ -503,7 +500,7 @@ meaning I need a version of it nested inside the right and left columns
 
 
 
-/* The image block */
+/* ---------- The image block ---------- */
 .promo__image {
   grid-area: image;
   overflow: hidden;
@@ -542,11 +539,6 @@ meaning I need a version of it nested inside the right and left columns
         margin-bottom: 64px;
       }
     }
-    // @include break(small) {
-    //   &.mobile__flowing-up {
-    //     margin-bottom: 0;
-    //   }
-    // }
     @include break(medium) {
       width: calc(100% + 180px);
       left: 0;
@@ -557,7 +549,6 @@ meaning I need a version of it nested inside the right and left columns
       &.desktop__extra-width { width: calc(100% + 360px); }
     }
   }
-
 }
 
 .client-promo__right .promo__image img {
@@ -577,7 +568,7 @@ meaning I need a version of it nested inside the right and left columns
 
 
 
-/* The "see more projects" link at the bottom */
+/* ---------- The "see more projects" link at the bottom ---------- */
 
 .more-clients {
   border-top: 1px solid #ddd;

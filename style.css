@@ -1041,12 +1041,144 @@ The home (and clients) PROMO zone
   }
 }
 
+/* The promo-double module 
+-------------------------------------------------------------------------------------- */
 @media screen and (min-width: 650px) {
   .promo-double {
     border-top: 1px solid #ddd;
   }
 }
 
+@media screen and (min-width: 830px) {
+  .promo-double {
+    border-top: none;
+  }
+}
+
+/* ---------- Grid settings ---------- */
+.client-promo-double__left {
+  grid-column: 1 / span 14;
+  display: grid;
+  grid-template-columns: 0px repeat(12, 1fr) 0px;
+  column-gap: 20px;
+}
+
+@media screen and (min-width: 650px) {
+  .client-promo-double__left {
+    grid-column: 1 / span 7;
+    grid-template-columns: 0px repeat(6, 1fr);
+  }
+  .client-promo-double__left .promo-double__text {
+    grid-column: 3 / span 5;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .client-promo-double__left .promo-double__text {
+    grid-column: 4 / span 4;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .client-promo-double__left {
+    grid-column: 1 / span 8;
+    grid-template-columns: 0px repeat(7, 1fr);
+  }
+  .client-promo-double__left .promo-double__text {
+    grid-column: 4 / span 4;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .client-promo-double__left {
+    grid-column: 1 / span 9;
+    grid-template-columns: 0px repeat(8, 1fr);
+  }
+  .client-promo-double__left .promo-double__text {
+    grid-column: 5 / span 4;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .client-promo-double__left {
+    grid-column: 1 / span 9;
+    grid-template-columns: 0px repeat(8, 1fr);
+  }
+  .client-promo-double__left .promo-double__text {
+    grid-column: 5 / span 4;
+  }
+}
+
+.client-promo-double__right {
+  grid-column: 1 / span 14;
+  display: grid;
+  grid-template-columns: 0px repeat(12, 1fr) 0px;
+  column-gap: 20px;
+}
+
+@media screen and (min-width: 650px) {
+  .client-promo-double__right {
+    grid-column: 8 / span 7;
+    grid-template-columns: repeat(6, 1fr) 0px;
+  }
+  .client-promo-double__right .promo-double__text {
+    grid-column: 1 / span 5;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .client-promo-double__right .promo-double__text {
+    grid-column: 1 / span 4;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .client-promo-double__right {
+    grid-column: 9 / span 8;
+    grid-template-columns: repeat(7, 1fr) 0px;
+  }
+  .client-promo-double__right .promo-double__text {
+    grid-column: 2 / span 4;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .client-promo-double__right {
+    grid-column: 10 / span 9;
+    grid-template-columns: repeat(8, 1fr) 0px;
+  }
+  .client-promo-double__right .promo-double__text {
+    grid-column: 2 / span 4;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .client-promo-double__right {
+    grid-column: 10 / span 9;
+    grid-template-columns: repeat(8, 1fr) 0px;
+  }
+  .client-promo-double__right .promo-double__text {
+    grid-column: 2 / span 4;
+  }
+}
+
+.promo-double__text {
+  align-self: start;
+  grid-column: 2 / span 12;
+  /* 
+  once we get to size=small, 
+  the grid settings for this 
+  are set in the client-promo-double__right and __left classes
+  */
+}
+
+@media screen and (min-width: 420px) {
+  .promo-double__text {
+    grid-column: 3 / span 10;
+  }
+}
+
+/* ---------- Non-grid settings ---------- */
 .client-promo-double__left,
 .client-promo-double__right {
   border-top: 1px solid #ddd;
@@ -1069,80 +1201,9 @@ The home (and clients) PROMO zone
   }
 }
 
-.client-promo-double__left {
-  background: yellow;
-  grid-column: 1 / span 14;
-}
-
-@media screen and (min-width: 650px) {
-  .client-promo-double__left {
-    grid-column: 1 / span 7;
-  }
-  .client-promo-double__left .promo-double__text {
-    grid-column: 3 / span 6;
-  }
-}
-
-.client-promo-double__right {
-  background: cyan;
-  grid-column: 1 / span 14;
-}
-
-@media screen and (min-width: 650px) {
-  .client-promo-double__right {
-    grid-column: 8 / span 7;
-  }
-  .client-promo-double__right .promo-double__text {
-    grid-column: 3 / span 6;
-  }
-}
-
-.promo-double-grid {
-  display: grid;
-  grid-template-columns: 0px repeat(12, 1fr) 0px;
-  column-gap: 20px;
-}
-
-@media screen and (min-width: 1480px) {
-  .promo-double-grid {
-    grid-template-columns: 0px repeat(14, 1fr) 0px;
-  }
-}
-
-@media screen and (min-width: 1850px) {
-  .promo-double-grid {
-    grid-template-columns: 0px repeat(16, 1fr) 0px;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .promo-double-grid {
-    grid-template-columns: 0px repeat(16, 1fr) 0px;
-  }
-}
-
-.promo-double__text {
-  background: red;
-  align-self: start;
-  box-shadow: 0px 0px;
-  grid-column: 2 / span 12;
-}
-
-@media screen and (min-width: 420px) {
-  .promo-double__text {
-    grid-column: 3 / span 10;
-  }
-}
-
-/*
-NOTE:
-the __text class directly above this note
-needs to be set for both the left and right columns, 
-meaning I need a version of it nested inside the right and left columns
-*/
 /* Feature blocks: LAYOUT SETTINGS
 -------------------------------------------------------------------------------------- */
-/* The primary blocks */
+/* ---------- The primary blocks ---------- */
 .client-promo__left, .client-promo__right {
   margin-bottom: 0;
   padding-top: 40px;
@@ -1184,7 +1245,7 @@ meaning I need a version of it nested inside the right and left columns
   }
 }
 
-/* The text block */
+/* ---------- The text block ---------- */
 .promo__text {
   grid-area: text;
 }
@@ -1566,7 +1627,7 @@ meaning I need a version of it nested inside the right and left columns
   }
 }
 
-/* The image block */
+/* ---------- The image block ---------- */
 .promo__image {
   grid-area: image;
   overflow: hidden;
@@ -1645,7 +1706,7 @@ meaning I need a version of it nested inside the right and left columns
   }
 }
 
-/* The "see more projects" link at the bottom */
+/* ---------- The "see more projects" link at the bottom ---------- */
 .more-clients {
   border-top: 1px solid #ddd;
   padding-top: 8px;
