@@ -149,10 +149,9 @@ the article BODY
   /* grid styles
   --------------------------------------------------------------------------------- */
 
-  .the-date {
+  .the-metadata {
     grid-column: 2 / span 12;
     height: 0px;
-  
     overflow: visible;
     @include break(tiny)   { grid-column: 3 / span 10; }
     @include break(medium) { grid-column: 4 / span 7; }

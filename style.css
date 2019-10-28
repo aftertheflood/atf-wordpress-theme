@@ -2835,23 +2835,23 @@ the article BODY
     margin-top: -7px;
   }
 }
-.article-body .the-date {
+.article-body .the-metadata {
   grid-column: 2/span 12;
   height: 0px;
   overflow: visible;
 }
 @media screen and (min-width: 420px) {
-  .article-body .the-date {
+  .article-body .the-metadata {
     grid-column: 3/span 10;
   }
 }
 @media screen and (min-width: 830px) {
-  .article-body .the-date {
+  .article-body .the-metadata {
     grid-column: 4/span 7;
   }
 }
 @media screen and (min-width: 1120px) {
-  .article-body .the-date {
+  .article-body .the-metadata {
     grid-column: 3/span 2;
   }
 }
