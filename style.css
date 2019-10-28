@@ -1331,19 +1331,11 @@ The home (and clients) PROMO zone
 /* ---------- The primary blocks ---------- */
 .client-promo__left, .client-promo__right {
   margin-bottom: 0;
-  padding-top: 40px;
   border-top: 1px solid #ddd;
 }
 
 .client-promo__left:first-of-type, .client-promo__right:first-of-type {
   border-top: none;
-  padding-top: 0;
-}
-
-@media screen and (min-width: 420px) {
-  .client-promo__left, .client-promo__right {
-    padding-top: 70px;
-  }
 }
 
 @media screen and (min-width: 650px) {
@@ -1373,6 +1365,19 @@ The home (and clients) PROMO zone
 /* ---------- The text block ---------- */
 .promo__text {
   grid-area: text;
+  padding-top: 40px;
+}
+
+@media screen and (min-width: 420px) {
+  .promo__text {
+    padding-top: 70px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo__text {
+    padding-top: 0;
+  }
 }
 
 .promo__text .sector,
@@ -1794,13 +1799,6 @@ The home (and clients) PROMO zone
 
 .promo__image img.mobile__flowing-up {
   bottom: 0;
-  margin-bottom: 40px;
-}
-
-@media screen and (min-width: 420px) {
-  .promo__image img.mobile__flowing-up {
-    margin-bottom: 64px;
-  }
 }
 
 @media screen and (min-width: 830px) {
@@ -1810,9 +1808,6 @@ The home (and clients) PROMO zone
     margin-left: 0;
     display: block;
     position: static;
-  }
-  .promo__image img.mobile__flowing-up {
-    margin-bottom: 0;
   }
   .promo__image img.desktop__extra-width {
     width: calc(100% + 360px);

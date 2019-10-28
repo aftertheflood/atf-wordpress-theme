@@ -438,18 +438,11 @@ The home (and clients) PROMO zone
 
 .client-promo__left, .client-promo__right {
   margin-bottom: 0; // on mobile, no margin
-  padding-top: 40px; // on mobile, add space between the text and image or divider
   border-top: 1px solid #ddd;
-  &:first-of-type { 
-    border-top: none; 
-    padding-top: 0;
-  }
-  @include break(tiny)   { padding-top: 70px; }
+  &:first-of-type { border-top: none; }
   @include break(small)  { 
     padding-bottom: 30px;  
-    &.text-first {
-      padding-bottom: 0;
-    }
+    &.text-first { padding-bottom: 0; }
   }
   @include break(medium) { 
     border-top: none; 
@@ -469,7 +462,12 @@ The home (and clients) PROMO zone
 
 /* ---------- The text block ---------- */
 
-.promo__text { grid-area: text; }
+.promo__text { 
+  grid-area: text; 
+  padding-top: 40px; // on mobile, add space between the text and image or divider
+  @include break(tiny)   { padding-top: 70px; }
+  @include break(medium) { padding-top: 0; }
+}
 
 .promo__text,
 .client-promo-double__left, 
@@ -607,23 +605,13 @@ The home (and clients) PROMO zone
     width: 120%;
     left: 50%;
     margin-left: -60%;
-    &.mobile__flowing-up {
-      bottom: 0;
-      margin-bottom: 40px;
-
-    }
-    @include break(tiny) {
-      &.mobile__flowing-up {
-        margin-bottom: 64px;
-      }
-    }
+    &.mobile__flowing-up { bottom: 0; }
     @include break(medium) {
       width: calc(100% + 180px);
       left: 0;
       margin-left: 0;
       display: block;
       position: static;
-      &.mobile__flowing-up { margin-bottom: 0; }
       &.desktop__extra-width { width: calc(100% + 360px); }
     }
   }
