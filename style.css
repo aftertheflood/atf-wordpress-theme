@@ -3347,6 +3347,18 @@ the article HEADING
   }
 }
 
+.article-head.image {
+  /* style for when the article head has a promo-image defined */
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.article-head.no-image {
+  /* no promo image */
+}
+
 /* ===================================================================================
 the article BODY
 =================================================================================== */

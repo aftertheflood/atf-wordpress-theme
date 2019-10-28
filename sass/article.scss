@@ -2,7 +2,7 @@
 the article HEADING
 =================================================================================== */
 
-  .article-head {
+.article-head {
   .article-title {
     margin: 70px 0 10px 0;
     grid-column: 2 / span 12;
@@ -35,7 +35,16 @@ the article HEADING
   }
 }
 
+.article-head.image{ /* style for when the article head has a promo-image defined */
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
 
+.article-head.no-image{ /* no promo image */
+  
+}
 
 
 /* ===================================================================================
@@ -162,7 +171,7 @@ the article METADATA
     li::before{
       content: "";
     }
-    
+
     a{
       text-decoration: none;
       border-bottom: none;
