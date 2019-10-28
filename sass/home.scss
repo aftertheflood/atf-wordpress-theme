@@ -301,7 +301,11 @@ The home (and clients) PROMO zone
   max-height: none; 
   overflow: hidden;
   height: 180px;
-  @include break(medium) { height: auto; }
+  grid-row: 2 / 2;
+  @include break(medium) { 
+    grid-row: 1 / 1;
+    height: auto; 
+  }
   img {
     display: block;
     width: calc(100% + 200px);
@@ -309,16 +313,37 @@ The home (and clients) PROMO zone
   }
 }
 
+.client-promo-double__left, 
+.client-promo-double__right {
+  .promo-double__image {
+    grid-column: 1 / span 14;
+    img {
+      margin-left: -100px;
+      left: -100px;
+      right: 100px;
+    }
+  }
+}
+
+
 
 .client-promo-double__left {
   @include break(small) {
     grid-column: 1 / span 7;
     grid-template-columns: 0px repeat(6, 1fr);
     .promo-double__text  { grid-column: 3 / span 5; padding-right: 20px; }
-    .promo-double__image { grid-column: 1 / span 7; }
+    .promo-double__image { 
+      grid-column: 1 / span 7; 
+      img {
+        margin-left: -200px;
+        left: -200px;
+        right: 200px;
+      }
+    }
   }
   @include break(medium) {
-    .promo-double__image { grid-column: 1 / span 2; 
+    .promo-double__image { 
+      grid-column: 1 / span 2; 
       img {
         margin-left: -60px; 
         left: -60px; 
@@ -347,7 +372,13 @@ The home (and clients) PROMO zone
     grid-column: 8 / span 7;
     grid-template-columns: repeat(6, 1fr) 0px;
     .promo-double__text  { grid-column: 1 / span 5; padding-left: 20px; }
-    .promo-double__image { grid-column: 1 / span 7; }
+    .promo-double__image { 
+      grid-column: 1 / span 7; 
+      img {
+        left: 0;
+        margin-left: 0;
+      }
+    }
   }
   @include break(medium) {
     .promo-double__image { grid-column: 6 / span 2; }

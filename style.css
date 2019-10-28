@@ -1134,10 +1134,12 @@ The home (and clients) PROMO zone
   max-height: none;
   overflow: hidden;
   height: 180px;
+  grid-row: 2 / 2;
 }
 
 @media screen and (min-width: 830px) {
   .promo-double__image {
+    grid-row: 1 / 1;
     height: auto;
   }
 }
@@ -1153,6 +1155,18 @@ The home (and clients) PROMO zone
   }
 }
 
+.client-promo-double__left .promo-double__image,
+.client-promo-double__right .promo-double__image {
+  grid-column: 1 / span 14;
+}
+
+.client-promo-double__left .promo-double__image img,
+.client-promo-double__right .promo-double__image img {
+  margin-left: -100px;
+  left: -100px;
+  right: 100px;
+}
+
 @media screen and (min-width: 650px) {
   .client-promo-double__left {
     grid-column: 1 / span 7;
@@ -1164,6 +1178,11 @@ The home (and clients) PROMO zone
   }
   .client-promo-double__left .promo-double__image {
     grid-column: 1 / span 7;
+  }
+  .client-promo-double__left .promo-double__image img {
+    margin-left: -200px;
+    left: -200px;
+    right: 200px;
   }
 }
 
@@ -1229,6 +1248,10 @@ The home (and clients) PROMO zone
   }
   .client-promo-double__right .promo-double__image {
     grid-column: 1 / span 7;
+  }
+  .client-promo-double__right .promo-double__image img {
+    left: 0;
+    margin-left: 0;
   }
 }
 
