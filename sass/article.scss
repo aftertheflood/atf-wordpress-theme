@@ -152,14 +152,20 @@ the article METADATA
       list-style: none;
       padding: 0px;
       margin: 0px;
+      margin-top: 20px;
     }
 
     li{
       text-indent: 0px;
     }
-    
+
     li::before{
       content: "";
+    }
+    
+    a{
+      text-decoration: none;
+      border-bottom: none;
     }
   }
 

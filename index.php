@@ -22,28 +22,14 @@
 				<div class="article-body">
 					<div class="article__date atf-grid">
 						<div class="the-metadata">
-							<?php
-							if ($pageTag != "clients") { ?>
-								<div class="the-date"><?php the_time( 'j M Y' ); ?></div>
-							<?php } else { ?>
-								<div class="the-client">Client</div>
-								<div class="the-sector">Sector</div>
-							<?php } ?>
+						<?php if ($pageTag != "clients") { ?>
+							<div class="the-date"><?php the_time( 'j M Y' ); ?></div>
+						<?php } else { ?>
+							<div class="the-sector"><?php echo get_post_meta($post->ID, 'client-sector', true) ?></div>
+							<div class="the-client">For <?php echo get_post_meta($post->ID, 'client', true) ?></div>
+						<?php } ?>
 							<div class="the-tags">
-								<ul>
-									<li class="tag">tag 1</li>
-									<li>tag 2</li>
-									<li>tag 3</li>
-									<li>tag 1</li>
-									<li>tag 2</li>
-									<li>tag 3</li>
-									<li>tag 1</li>
-									<li>tag 2</li>
-									<li>tag 3</li>
-									<li>tag 1</li>
-									<li>tag 2</li>
-									<li>tag 3</li>
-								</ul>
+						<?php echo get_the_tag_list( '<ul><li>','</li><li>','</li></ul>'); ?> 								
 							</div>
 						</div>
 					</div>
