@@ -1767,6 +1767,7 @@ The home (and clients) PROMO zone
   height: 280px;
   text-align: center;
   position: relative;
+  /* ---------- Helper classes for modifying images on small screens ---------- */
 }
 
 @media screen and (min-width: 420px) {
@@ -1811,6 +1812,78 @@ The home (and clients) PROMO zone
   }
   .promo__image img.desktop__extra-width {
     width: calc(100% + 360px);
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .promo__image.mobile__margin-left {
+    grid-column: 2 / span 14;
+  }
+  .promo__image.mobile__margin-left img {
+    width: calc(100% + 40px);
+    left: 0;
+    margin-left: 0;
+  }
+  .promo__image.mobile__margin-right {
+    grid-column: 1 / span 13;
+  }
+  .promo__image.mobile__margin-right img {
+    width: calc(100% + 40px);
+    left: -20px;
+    margin-left: -20px;
+    right: 40px;
+  }
+  .promo__image.mobile__shorter {
+    max-height: 220px;
+    height: 220px;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 649px) {
+  .promo__image.mobile__margin-left {
+    grid-column: 3 / span 12;
+  }
+  .promo__image.mobile__margin-left img {
+    width: calc(100% + 60px);
+    left: 0;
+    margin-left: 0;
+  }
+  .promo__image.mobile__margin-right {
+    grid-column: 1 / span 12;
+  }
+  .promo__image.mobile__margin-right img {
+    width: calc(100% + 60px);
+    left: -30px;
+    margin-left: -30px;
+    right: 60px;
+  }
+  .promo__image.mobile__shorter {
+    max-height: 280px;
+    height: 280px;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 829px) {
+  .promo__image.mobile__margin-left {
+    grid-column: 3 / span 12;
+  }
+  .promo__image.mobile__margin-left img {
+    width: calc(100% + 120px);
+    left: 0;
+    margin-left: 0;
+  }
+  .promo__image.mobile__margin-right {
+    grid-column: 1 / span 12;
+  }
+  .promo__image.mobile__margin-right img {
+    width: calc(100% + 120px);
+    left: -60px;
+    margin-left: -60px;
+    right: 1200px;
+  }
+  .promo__image.mobile__shorter {
+    max-height: 360px;
+    height: 360px;
   }
 }
 
@@ -3794,6 +3867,18 @@ the article HEADING
   }
 }
 
+.article-head.image {
+  /* style for when the article head has a promo-image defined */
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.article-head.no-image {
+  /* no promo image */
+}
+
 /* ===================================================================================
 the article BODY
 =================================================================================== */
@@ -3804,6 +3889,9 @@ the article BODY
   font-family: Tiempos, Georgia, serif;
   /* type styles and spacing
   --------------------------------------------------------------------------------- */
+  /* ===================================================================================
+the article METADATA
+=================================================================================== */
   /* grid styles
   --------------------------------------------------------------------------------- */
   /* styles for excerpting text content 
@@ -3957,11 +4045,11 @@ the article BODY
   margin-left: 20px;
 }
 
-.article-body ul li {
+.article-body li {
   text-indent: -25px;
 }
 
-.article-body ul li:before {
+.article-body li:before {
   content: "— ";
 }
 
@@ -4016,36 +4104,58 @@ the article BODY
   }
 }
 
-.article-body .the-date {
+.article-body .the-metadata ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.article-body .the-metadata li {
+  text-indent: 0px;
+}
+
+.article-body .the-metadata li::before {
+  content: "";
+}
+
+.article-body .the-metadata a {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.article-body .the-metadata {
   grid-column: 2 / span 12;
+  height: 0px;
+  overflow: visible;
 }
 
 @media screen and (min-width: 420px) {
-  .article-body .the-date {
+  .article-body .the-metadata {
     grid-column: 3 / span 10;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .article-body .the-date {
+  .article-body .the-metadata {
     grid-column: 4 / span 7;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .article-body .the-date {
+  .article-body .the-metadata {
     grid-column: 3 / span 2;
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .article-body .the-date {
+  .article-body .the-metadata {
     grid-column: 4 / span 2;
   }
 }
 
 @media screen and (min-width: mega) {
-  .article-body .the-date {
+  .article-body .the-metadata {
     grid-column: 4 / span 2;
   }
 }
