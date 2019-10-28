@@ -21,7 +21,18 @@
 				</div>
 				<div class="article-body">
 					<div class="article__date atf-grid">
-						<div class="the-date"><?php the_time( 'j M Y' ); ?></div>
+						<div class="the-date">
+							<?php the_time( 'j M Y' ); ?>
+							<div class="the-client">Client</div>
+							<div class="the-sector">Sector</div>
+							<div class="the-tags">
+								<ul>
+									<li>tag 1</li>
+									<li>tag 2</li>
+									<li>tag 3</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 					<div class="article__content atf-grid">
 						<?php the_content(); ?>
