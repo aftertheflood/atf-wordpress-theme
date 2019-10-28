@@ -22,12 +22,16 @@
 				<div class="article-body">
 					<div class="article__date atf-grid">
 						<div class="the-metadata">
-							<div class="the-date"><?php the_time( 'j M Y' ); ?></div>
-							<div class="the-client">Client</div>
-							<div class="the-sector">Sector</div>
+							<?php
+							if ($pageTag != "clients") { ?>
+								<div class="the-date"><?php the_time( 'j M Y' ); ?></div>
+							<?php } else { ?>
+								<div class="the-client">Client</div>
+								<div class="the-sector">Sector</div>
+							<?php } ?>
 							<div class="the-tags">
 								<ul>
-									<li>tag 1</li>
+									<li class="tag">tag 1</li>
 									<li>tag 2</li>
 									<li>tag 3</li>
 									<li>tag 1</li>

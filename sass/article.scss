@@ -117,11 +117,11 @@ the article BODY
     margin-left: $column-gap;
   }
 
-  ul li {
+  li {
     text-indent: -25px;
   }
 
-  ul li:before {
+  li:before {
     content: "— ";
   }
 
@@ -143,6 +143,25 @@ the article BODY
     }
   }
 
+/* ===================================================================================
+the article METADATA
+=================================================================================== */
+
+  .the-metadata{
+    ul{
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    li{
+      text-indent: 0px;
+    }
+    
+    li::before{
+      content: "";
+    }
+  }
 
 
 
