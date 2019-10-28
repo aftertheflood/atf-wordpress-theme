@@ -5,7 +5,7 @@
 ?>
 <?php get_template_part('partials/html','top'); ?>
 <div class="atf-grid journal-archive">
-  <div class="journal-archive__kicker">Archive</div>
+  <div class="journal-archive__kicker">Archive <?php single_tag_title(": "); ?></div>
   <div class="atf-archive-grid">
         <?php 
         global $wp_query;
