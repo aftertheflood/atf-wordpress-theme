@@ -7,8 +7,14 @@
 <?php get_template_part('partials/html','top'); ?>
 	<?php if ( have_posts() ) :?>
 		<?php while ( have_posts() ) : the_post(); ?>
-			<?php if ( is_singular() ){ ?>
-				<div class="article-head atf-grid">
+			<?php if ( is_singular() ){ 
+				$headerType = 'no-image';
+				$articlePromoImage = get_post_meta($post->ID, 'promo-image', true);
+				if($articlePromoImage != ""){
+					$headerType = 'image';
+				}
+				?>
+				<div class="article-head atf-grid <?php echo $headerType ?>" style="background-image:url(<?php echo $articlePromoImage ?>)">
 					<div class="article-title">
 						<h1><?php the_title(); ?></h1>
 						<?php 
@@ -21,7 +27,17 @@
 				</div>
 				<div class="article-body">
 					<div class="article__date atf-grid">
-						<div class="the-date"><?php the_time( 'j M Y' ); ?></div>
+						<div class="the-metadata">
+						<?php if ($pageTag != "clients") { ?>
+							<div class="the-date"><?php the_time( 'j M Y' ); ?></div>
+						<?php } else { ?>
+							<div class="the-sector"><?php echo get_post_meta($post->ID, 'client-sector', true) ?></div>
+							<div class="the-client">For <?php echo get_post_meta($post->ID, 'client', true) ?></div>
+						<?php } ?>
+							<div class="the-tags">
+						<?php echo get_the_tag_list( '<ul><li>','</li><li>','</li></ul>'); ?> 								
+							</div>
+						</div>
 					</div>
 					<div class="article__content atf-grid">
 						<?php the_content(); ?>

@@ -5,7 +5,7 @@
 ?>
 <?php get_template_part('partials/html','top'); ?>
 <div class="atf-grid journal-archive">
-  <div class="journal-archive__kicker">Archive</div>
+  <div class="journal-archive__kicker">Archive<?php single_tag_title(": "); ?></div>
   <div class="atf-archive-grid">
         <?php 
         global $wp_query;
@@ -28,6 +28,7 @@
         ?>
     </div>
 </div>
+<?php if($maxPages > 1){ ?>
 <div class="archive-pagination">
   <?php if($paged > 0){ ?>
   <a href="<?php previous_posts(); ?>">previous</a>
@@ -36,4 +37,5 @@
   <a href="<?php next_posts(); ?>">next</a>
   <?php }  ?>
 </div>
+  <?php } ?>
 <?php get_template_part('partials/html','bottom'); ?>

@@ -2,7 +2,7 @@
 the article HEADING
 =================================================================================== */
 
-  .article-head {
+.article-head {
   .article-title {
     margin: 70px 0 10px 0;
     grid-column: 2 / span 12;
@@ -35,7 +35,17 @@ the article HEADING
   }
 }
 
+.article-head.image{ /* style for when the article head has a promo-image defined */
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  
+}
 
+.article-head.no-image{ /* no promo image */
+  
+}
 
 
 /* ===================================================================================
@@ -117,11 +127,11 @@ the article BODY
     margin-left: $column-gap;
   }
 
-  ul li {
+  li {
     text-indent: -25px;
   }
 
-  ul li:before {
+  li:before {
     content: "— ";
   }
 
@@ -143,14 +153,41 @@ the article BODY
     }
   }
 
+/* ===================================================================================
+the article METADATA
+=================================================================================== */
+
+  .the-metadata{
+    ul{
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+      margin-top: 20px;
+    }
+
+    li{
+      text-indent: 0px;
+    }
+
+    li::before{
+      content: "";
+    }
+
+    a{
+      text-decoration: none;
+      border-bottom: none;
+    }
+  }
 
 
 
   /* grid styles
   --------------------------------------------------------------------------------- */
 
-  .the-date {
+  .the-metadata {
     grid-column: 2 / span 12;
+    height: 0px;
+    overflow: visible;
     @include break(tiny)   { grid-column: 3 / span 10; }
     @include break(medium) { grid-column: 4 / span 7; }
     @include break(large)  { grid-column: 3 / span 2; }
