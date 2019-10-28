@@ -3347,6 +3347,18 @@ the article HEADING
   }
 }
 
+.article-head.image {
+  /* style for when the article head has a promo-image defined */
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.article-head.no-image {
+  /* no promo image */
+}
+
 /* ===================================================================================
 the article BODY
 =================================================================================== */
@@ -3357,6 +3369,9 @@ the article BODY
   font-family: Tiempos, Georgia, serif;
   /* type styles and spacing
   --------------------------------------------------------------------------------- */
+  /* ===================================================================================
+  the article METADATA
+  =================================================================================== */
   /* grid styles
   --------------------------------------------------------------------------------- */
   /* styles for excerpting text content 
@@ -3487,10 +3502,10 @@ the article BODY
   list-style-type: none;
   margin-left: 20px;
 }
-.article-body ul li {
+.article-body li {
   text-indent: -25px;
 }
-.article-body ul li:before {
+.article-body li:before {
   content: "— ";
 }
 .article-body .article__date {
@@ -3536,31 +3551,49 @@ the article BODY
     margin-top: -7px;
   }
 }
-.article-body .the-date {
+.article-body .the-metadata ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 20px;
+}
+.article-body .the-metadata li {
+  text-indent: 0px;
+}
+.article-body .the-metadata li::before {
+  content: "";
+}
+.article-body .the-metadata a {
+  text-decoration: none;
+  border-bottom: none;
+}
+.article-body .the-metadata {
   grid-column: 2/span 12;
+  height: 0px;
+  overflow: visible;
 }
 @media screen and (min-width: 420px) {
-  .article-body .the-date {
+  .article-body .the-metadata {
     grid-column: 3/span 10;
   }
 }
 @media screen and (min-width: 830px) {
-  .article-body .the-date {
+  .article-body .the-metadata {
     grid-column: 4/span 7;
   }
 }
 @media screen and (min-width: 1120px) {
-  .article-body .the-date {
+  .article-body .the-metadata {
     grid-column: 3/span 2;
   }
 }
 @media screen and (min-width: 1850px) {
-  .article-body .the-date {
+  .article-body .the-metadata {
     grid-column: 4/span 2;
   }
 }
 @media screen and (min-width: mega) {
-  .article-body .the-date {
+  .article-body .the-metadata {
     grid-column: 4/span 2;
   }
 }
