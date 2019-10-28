@@ -15,80 +15,72 @@ version 2.0 (http://www.gnu.org/licensesoji/gpl-2.0.html)
 Graphik Font
 ----------------------------------------------------------*/
 @font-face {
-  font-family: 'Graphik';
+  font-family: "Graphik";
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-BlackItalic-Web.eot");
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-BlackItalic-Web.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-BlackItalic-Web.woff2") format("woff2"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-BlackItalic-Web.woff") format("woff");
   font-weight: 800;
   font-style: italic;
   font-stretch: normal;
 }
-
 @font-face {
-  font-family: 'Graphik';
+  font-family: "Graphik";
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-Black-Web.eot");
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-Black-Web.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-Black-Web.woff2") format("woff2"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-Black-Web.woff") format("woff");
   font-weight: 800;
   font-style: bold;
   font-stretch: normal;
 }
-
 @font-face {
-  font-family: 'Graphik';
+  font-family: "Graphik";
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-RegularItalic-Web.eot");
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-RegularItalic-Web.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-RegularItalic-Web.woff2") format("woff2"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-RegularItalic-Web.woff") format("woff");
   font-weight: 400;
   font-style: italic;
   font-stretch: normal;
 }
-
 @font-face {
-  font-family: 'Graphik';
+  font-family: "Graphik";
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-Regular-Web.eot");
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-Regular-Web.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-Regular-Web.woff2") format("woff2"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Graphik/Graphik-Regular-Web.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
 }
-
 /*-----------------------------------------------------------
 Tiempos Font
 ----------------------------------------------------------*/
 @font-face {
-  font-family: 'Tiempos';
+  font-family: "Tiempos";
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-Regular.eot");
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-Regular.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-Regular.woff2") format("woff2"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
 }
-
 @font-face {
-  font-family: 'Tiempos';
+  font-family: "Tiempos";
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-RegularItalic.eot");
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-RegularItalic.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-RegularItalic.woff2") format("woff2"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-RegularItalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
   font-stretch: normal;
 }
-
 @font-face {
-  font-family: 'Tiempos';
+  font-family: "Tiempos";
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-Semibold.eot");
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-Semibold.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-Semibold.woff2") format("woff2"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
 }
-
 @font-face {
-  font-family: 'Tiempos';
+  font-family: "Tiempos";
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-SemiboldItalic.eot");
   src: url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-SemiboldItalic.woff2") format("woff2"), url("/wp-content/themes/atf-wordpress-theme/assets/fonts/Tiempos/TiemposTextWeb-SemiboldItalic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
   font-stretch: normal;
 }
-
 html {
   text-rendering: optimizeLegibility;
   font-variant-ligatures: common-ligatures;
@@ -124,19 +116,16 @@ body {
   column-gap: 20px;
   align-items: center;
 }
-
 @media screen and (min-width: 1480px) {
   .atf-grid {
     grid-template-columns: 0px repeat(14, 1fr) 0px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .atf-grid {
     grid-template-columns: 0px repeat(16, 1fr) 0px;
   }
 }
-
 @media screen and (min-width: mega) {
   .atf-grid {
     grid-template-columns: 0px repeat(16, 1fr) 0px;
@@ -183,14 +172,12 @@ body {
   display: grid;
   grid-template-areas: ". heading heading heading heading heading heading heading heading heading heading heading heading ." ". link link link link link link link link link link link link ." ". social social social social social social social social social social social social ." ". address address address address address address address address address address address address ." ". logo logo logo logo logo logo logo logo logo logo logo logo .";
 }
-
 @media screen and (min-width: 420px) {
   .atf-footer {
     font-size: 13px;
     line-height: 19px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .atf-footer {
     font-size: 14px;
@@ -198,50 +185,42 @@ body {
     letter-spacing: 0.01em;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .atf-footer {
     font-size: 15px;
     line-height: 21px;
   }
 }
-
 @media screen and (min-width: 420px) {
   .atf-footer {
     grid-template-areas: ". . heading heading heading heading heading heading heading heading heading heading . ." ". . link link link link link link link link link link . ." ". . social social social social social social social social social social . ." ". . address address address address address address address address address address . ." ". logo logo logo logo logo logo logo logo logo logo logo logo .";
   }
 }
-
 @media screen and (min-width: 830px) {
   .atf-footer {
     padding-top: 90px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .atf-footer {
     padding-top: 120px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .atf-footer {
     grid-template-areas: ". . heading heading heading heading heading heading heading heading heading heading heading heading . ." ". . link link link link link link link link link link link link . ." ". . social social social social social social social social social social social social . ." ". . address address address address address address address address address address address address . ." ". logo logo logo logo logo logo logo logo logo logo logo logo logo logo .";
   }
 }
-
 @media screen and (min-width: 1850px) {
   .atf-footer {
     grid-template-areas: ". . . heading heading heading heading heading heading heading heading heading heading heading heading . . ." ". . . link link link link link link link link link link link link . . ." ". . . social social social social social social social social social social social social . . ." ". . . address address address address address address address address address address address address . . ." ". logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo .";
   }
 }
-
 @media screen and (min-width: mega) {
   .atf-footer {
     grid-template-areas: ". . . heading heading heading heading heading heading heading heading heading heading heading heading . . ." ". . . link link link link link link link link link link link link . . ." ". . . social social social social social social social social social social social social . . ." ". . . address address address address address address address address address address address address . . ." ". logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo .";
   }
 }
-
 .atf-footer h2 {
   grid-area: heading;
   font-size: 22px;
@@ -252,55 +231,46 @@ body {
   margin-top: 0;
   margin-bottom: 20px;
 }
-
 @media screen and (min-width: 420px) {
   .atf-footer h2 {
     font-size: 25px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .atf-footer h2 {
     font-size: 30px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .atf-footer h2 {
     font-size: 32px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .atf-footer h2 {
     font-size: 34px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .atf-footer h2 {
     font-size: 36px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .atf-footer h2 {
     font-size: 38px;
   }
 }
-
 @media screen and (min-width: mega) {
   .atf-footer h2 {
     font-size: 38px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .atf-footer h2 {
     margin-bottom: 24px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .atf-footer h2 {
     margin-bottom: 30px;
@@ -324,43 +294,36 @@ body {
   color: black;
   background-color: white;
 }
-
 @media screen and (min-width: 830px) {
   .footer-contact-link a {
     padding: 12px 18px 16px 18px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .footer-contact-link a {
     padding: 13px 20px 18px 20px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .footer-contact-link a {
     font-size: 18px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .footer-contact-link a {
     font-size: 19px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .footer-contact-link a {
     font-size: 20px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .footer-contact-link a {
     font-size: 21px;
   }
 }
-
 .footer-contact-link a:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -370,13 +333,11 @@ body {
   margin-bottom: 26px;
   height: 34px;
 }
-
 .social img {
   height: 34px;
   width: 34px;
   margin-right: 4px;
 }
-
 @media screen and (min-width: 830px) {
   .social img {
     height: 36px;
@@ -384,27 +345,23 @@ body {
     margin-right: 5px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .social img {
     height: 38px;
     width: 38px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .social {
     margin-bottom: 30px;
     height: 36px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .social {
     height: 38px;
   }
 }
-
 .social a:hover {
   opacity: 0.9;
 }
@@ -414,19 +371,16 @@ body {
   color: #aaa;
   margin-bottom: 64px;
 }
-
 @media screen and (min-width: 830px) {
   .address {
     margin-bottom: 84px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .address {
     margin-bottom: 108px;
   }
 }
-
 .address a {
   color: #aaa;
   text-decoration: none;
@@ -437,7 +391,6 @@ body {
   bottom: 0;
   padding-right: 2px;
 }
-
 .footer-logo img {
   width: 100%;
   vertical-align: bottom;
@@ -460,37 +413,31 @@ The home SPLASHh zone
 .splash {
   grid-template-areas: " . intro intro intro intro intro intro intro intro intro intro intro intro . " " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
 }
-
 @media screen and (min-width: 650px) {
   .splash {
     grid-template-areas: " . . intro intro intro intro intro intro intro intro . . . . " " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
   }
 }
-
 @media screen and (min-width: 830px) {
   .splash {
     grid-template-areas: " . . intro intro intro intro intro intro intro intro . . . . " " . . . . . . promo promo promo promo promo promo promo .";
   }
 }
-
 @media screen and (min-width: 1120px) {
   .splash {
     grid-template-areas: " . . intro intro intro intro intro intro . . . . . . " " . . . . . . . promo promo promo promo promo promo .";
   }
 }
-
 @media screen and (min-width: 1480px) {
   .splash {
     grid-template-areas: " . . intro intro intro intro intro intro intro . . . . . . ." " . . . . . . . . promo promo promo promo promo promo promo .";
   }
 }
-
 @media screen and (min-width: 1850px) {
   .splash {
     grid-template-areas: " . . . intro intro intro intro intro intro . . . . . . . . ." ". .  . . . . . . . promo promo promo promo promo promo promo promo .";
   }
 }
-
 @media screen and (min-width: mega) {
   .splash {
     grid-template-areas: " . . . intro intro intro intro intro intro . . . . . . . . ." ". .  . . . . . . . promo promo promo promo promo promo promo promo .";
@@ -502,28 +449,24 @@ The home SPLASHh zone
   margin-top: 60px;
   margin-bottom: 40px;
 }
-
 @media screen and (min-width: 420px) {
   .splash__intro {
     margin-top: 80px;
     margin-bottom: 55px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .splash__intro {
     margin-top: 80px;
     margin-bottom: 70px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .splash__intro {
     margin-top: 90px;
     margin-bottom: 100px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .splash__intro {
     margin-top: 100px;
@@ -538,49 +481,42 @@ The home SPLASHh zone
   margin-top: 0;
   margin-bottom: -2px;
 }
-
 @media screen and (min-width: 420px) {
   .splash__intro__title {
     font-size: 38px;
     line-height: 47px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .splash__intro__title {
     font-size: 46px;
     line-height: 52px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .splash__intro__title {
     font-size: 52px;
     line-height: 60px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .splash__intro__title {
     font-size: 56px;
     line-height: 65px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .splash__intro__title {
     font-size: 60px;
     line-height: 67px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .splash__intro__title {
     font-size: 64px;
     line-height: 70px;
   }
 }
-
 @media screen and (min-width: mega) {
   .splash__intro__title {
     font-size: 64px;
@@ -596,49 +532,42 @@ The home SPLASHh zone
   margin-top: 0;
   margin-bottom: 0;
 }
-
 @media screen and (min-width: 420px) {
   .splash__intro__description {
     font-size: 38px;
     line-height: 47px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .splash__intro__description {
     font-size: 46px;
     line-height: 52px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .splash__intro__description {
     font-size: 52px;
     line-height: 60px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .splash__intro__description {
     font-size: 56px;
     line-height: 65px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .splash__intro__description {
     font-size: 60px;
     line-height: 67px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .splash__intro__description {
     font-size: 64px;
     line-height: 70px;
   }
 }
-
 @media screen and (min-width: mega) {
   .splash__intro__description {
     font-size: 64px;
@@ -652,20 +581,17 @@ The home SPLASHh zone
   margin: 0;
   padding: 18px 20px 20px;
 }
-
 @media screen and (min-width: 650px) {
   .splash__promo {
     padding: 24px 0 27px 0;
   }
 }
-
 @media screen and (min-width: 830px) {
   .splash__promo {
     margin-bottom: 20px;
     padding: 33px 36px 36px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .splash__promo {
     padding: 37px 40px 40px;
@@ -683,7 +609,7 @@ The home SPLASHh zone
 
 @media screen and (min-width: 650px) and (max-width: 829px) {
   .splash__promo-gridwrapper-inner {
-    grid-column: 3 / span 10;
+    grid-column: 3/span 10;
   }
 }
 
@@ -695,63 +621,54 @@ The home SPLASHh zone
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
 }
-
 @media screen and (min-width: 420px) {
   .splash__promo__title,
 .splash__promo__subtitle {
     font-size: 25px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .splash__promo__title,
 .splash__promo__subtitle {
     font-size: 30px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .splash__promo__title,
 .splash__promo__subtitle {
     font-size: 32px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .splash__promo__title,
 .splash__promo__subtitle {
     font-size: 34px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .splash__promo__title,
 .splash__promo__subtitle {
     font-size: 36px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .splash__promo__title,
 .splash__promo__subtitle {
     font-size: 38px;
   }
 }
-
 @media screen and (min-width: mega) {
   .splash__promo__title,
 .splash__promo__subtitle {
     font-size: 38px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .splash__promo__title,
 .splash__promo__subtitle {
     padding-right: 20px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .splash__promo__title,
 .splash__promo__subtitle {
@@ -771,19 +688,16 @@ The home SPLASHh zone
   margin-bottom: 5px;
   font-style: italic;
 }
-
 @media screen and (min-width: 650px) {
   .splash__promo__subtitle {
     margin-bottom: 7px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .splash__promo__subtitle {
     margin-bottom: 8px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .splash__promo__subtitle {
     margin-bottom: 9px;
@@ -800,21 +714,18 @@ The home SPLASHh zone
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 33px;
 }
-
 @media screen and (min-width: 420px) {
   .splash__promo__date,
 .light-archive__date {
     font-size: 13px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .splash__promo__date,
 .light-archive__date {
     font-size: 14px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .splash__promo__date,
 .light-archive__date {
@@ -834,37 +745,32 @@ The home SPLASHh zone
   text-decoration: none;
   color: rgba(0, 0, 0, 0.5);
 }
-
 @media screen and (min-width: 650px) {
   .splash__promo__link {
     font-size: 18px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .splash__promo__link {
     font-size: 19px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .splash__promo__link {
     font-size: 20px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .splash__promo__link {
     font-size: 21px;
   }
 }
-
 .splash__promo__link:hover {
   color: #000;
 }
 
 .splash__promo__link::after {
-  content: ' \00bb';
+  content: " »";
 }
 
 /* =======================================================================================
@@ -882,79 +788,66 @@ The home (and clients) PROMO zone
 /* Feature blocks: GRID SETTINGS
 -------------------------------------------------------------------------------------- */
 .client-promo__right {
-  grid-template-areas: "image image image image image image image image image image image image image image"  ". text text text text text text text text text text text text .";
+  grid-template-areas: "image image image image image image image image image image image image image image" ". text text text text text text text text text text text text .";
 }
-
 @media screen and (min-width: 420px) {
   .client-promo__right {
-    grid-template-areas: "image image image image image image image image image image image image image image"  ". . text text text text text text text text text text . .";
+    grid-template-areas: "image image image image image image image image image image image image image image" ". . text text text text text text text text text text . .";
   }
 }
-
 @media screen and (min-width: 830px) {
   .client-promo__right {
     grid-template-areas: "image image image image image image image text text text text text . .";
   }
 }
-
 @media screen and (min-width: 1120px) {
   .client-promo__right {
     grid-template-areas: "image image image image image image image . text text text text . .";
   }
 }
-
 @media screen and (min-width: 1480px) {
   .client-promo__right {
     grid-template-areas: "image image image image image image image image image . text text text text . .";
   }
 }
-
 @media screen and (min-width: 1850px) {
   .client-promo__right {
     grid-template-areas: "image image image image image image image image . . text text text text text . . .";
   }
 }
-
 @media screen and (min-width: mega) {
   .client-promo__right {
     grid-template-areas: "image image image image image image image image . . text text text text text . . .";
   }
 }
-
 .client-promo__right.text-first {
   grid-template-areas: ". text text text text text text text text text text text text ." "image image image image image image image image image image image image image image";
 }
-
 @media screen and (min-width: 420px) {
   .client-promo__right.text-first {
     grid-template-areas: ". . text text text text text text text text text text . ." "image image image image image image image image image image image image image image";
   }
 }
-
 @media screen and (min-width: 830px) {
   .client-promo__right.text-first {
     grid-template-areas: "image image image image image image image text text text text text . .";
   }
 }
-
 @media screen and (min-width: 1120px) {
   .client-promo__right.text-first {
     grid-template-areas: "image image image image image image image . text text text text . .";
   }
 }
-
 @media screen and (min-width: 1480px) {
   .client-promo__right.text-first {
     grid-template-areas: "image image image image image image image image image . text text text text . .";
   }
 }
-
 @media screen and (min-width: 1850px) {
   .client-promo__right.text-first {
     grid-template-areas: "image image image image image image image image . . text text text text text . . .";
   }
 }
-
 @media screen and (min-width: mega) {
   .client-promo__right.text-first {
     grid-template-areas: "image image image image image image image image . . text text text text text . . .";
@@ -962,79 +855,66 @@ The home (and clients) PROMO zone
 }
 
 .client-promo__left {
-  grid-template-areas: "image image image image image image image image image image image image image image"  ". text text text text text text text text text text text text .";
+  grid-template-areas: "image image image image image image image image image image image image image image" ". text text text text text text text text text text text text .";
 }
-
 @media screen and (min-width: 420px) {
   .client-promo__left {
-    grid-template-areas: "image image image image image image image image image image image image image image"  ". . text text text text text text text text text text . .";
+    grid-template-areas: "image image image image image image image image image image image image image image" ". . text text text text text text text text text text . .";
   }
 }
-
 @media screen and (min-width: 830px) {
   .client-promo__left {
     grid-template-areas: ". . text text text text text image image image image image image image";
   }
 }
-
 @media screen and (min-width: 1120px) {
   .client-promo__left {
     grid-template-areas: ". . text text text text . image image image image image image image";
   }
 }
-
 @media screen and (min-width: 1480px) {
   .client-promo__left {
     grid-template-areas: ". . text text text text . image image image image image image image image image";
   }
 }
-
 @media screen and (min-width: 1850px) {
   .client-promo__left {
     grid-template-areas: ". . . text text text text text . . image image image image image image image image";
   }
 }
-
 @media screen and (min-width: mega) {
   .client-promo__left {
     grid-template-areas: ". . . text text text text text . . image image image image image image image image";
   }
 }
-
 .client-promo__left.text-first {
   grid-template-areas: ". text text text text text text text text text text text text ." "image image image image image image image image image image image image image image";
 }
-
 @media screen and (min-width: 420px) {
   .client-promo__left.text-first {
     grid-template-areas: ". . text text text text text text text text text text . ." "image image image image image image image image image image image image image image";
   }
 }
-
 @media screen and (min-width: 830px) {
   .client-promo__left.text-first {
     grid-template-areas: ". . text text text text text image image image image image image image";
   }
 }
-
 @media screen and (min-width: 1120px) {
   .client-promo__left.text-first {
     grid-template-areas: ". . text text text text . image image image image image image image";
   }
 }
-
 @media screen and (min-width: 1480px) {
   .client-promo__left.text-first {
     grid-template-areas: ". . text text text text . image image image image image image image image image";
   }
 }
-
 @media screen and (min-width: 1850px) {
   .client-promo__left.text-first {
     grid-template-areas: ". . . text text text text text . . image image image image image image image image";
   }
 }
-
 @media screen and (min-width: mega) {
   .client-promo__left.text-first {
     grid-template-areas: ". . . text text text text text . . image image image image image image image image";
@@ -1044,7 +924,6 @@ The home (and clients) PROMO zone
 .promo-double {
   grid-template-areas: "lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext lefttext" "righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext righttext";
 }
-
 @media screen and (min-width: 650px) {
   .promo-double {
     grid-template-areas: ". . . lefttext lefttext lefttext lefttext . righttext righttext righttext righttext . .";
@@ -1059,18 +938,15 @@ The home (and clients) PROMO zone
   padding-top: 40px;
   border-top: 1px solid #ddd;
 }
-
 .client-promo__left:first-of-type, .client-promo__right:first-of-type {
   border-top: none;
   padding-top: 0;
 }
-
 @media screen and (min-width: 420px) {
   .client-promo__left, .client-promo__right {
     padding-top: 70px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .client-promo__left, .client-promo__right {
     padding-bottom: 30px;
@@ -1079,7 +955,6 @@ The home (and clients) PROMO zone
     padding-bottom: 0;
   }
 }
-
 @media screen and (min-width: 830px) {
   .client-promo__left, .client-promo__right {
     border-top: none;
@@ -1088,7 +963,6 @@ The home (and clients) PROMO zone
     margin-bottom: 90px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .client-promo__left, .client-promo__right {
     margin-bottom: 120px;
@@ -1098,7 +972,6 @@ The home (and clients) PROMO zone
 .client-promo-double__left {
   box-shadow: 0px 0px;
 }
-
 @media screen and (min-width: 650px) {
   .client-promo-double__left {
     grid-area: lefttext;
@@ -1116,7 +989,6 @@ The home (and clients) PROMO zone
 .promo__text {
   grid-area: text;
 }
-
 .promo__text .sector {
   font-family: Graphik, sans-serif;
   font-weight: bold;
@@ -1124,25 +996,21 @@ The home (and clients) PROMO zone
   line-height: 118%;
   letter-spacing: 0.02em;
 }
-
 @media screen and (min-width: 420px) {
   .promo__text .sector {
     font-size: 13px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .promo__text .sector {
     font-size: 14px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .promo__text .sector {
     font-size: 15px;
   }
 }
-
 .promo__text .title {
   font-size: 22px;
   line-height: 118%;
@@ -1150,69 +1018,58 @@ The home (and clients) PROMO zone
   margin-top: 4px;
   margin-bottom: 15px;
 }
-
 @media screen and (min-width: 420px) {
   .promo__text .title {
     font-size: 25px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .promo__text .title {
     font-size: 30px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .promo__text .title {
     font-size: 32px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .promo__text .title {
     font-size: 34px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .promo__text .title {
     font-size: 36px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .promo__text .title {
     font-size: 38px;
   }
 }
-
 @media screen and (min-width: mega) {
   .promo__text .title {
     font-size: 38px;
   }
 }
-
 @media screen and (min-width: 420px) {
   .promo__text .title {
     margin-bottom: 30px;
   }
 }
-
 .promo__text .excerpt {
   font-size: 17px;
   line-height: 25px;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
 }
-
 @media screen and (min-width: 650px) {
   .promo__text .excerpt {
     font-size: 18px;
     line-height: 27px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .promo__text .excerpt {
     font-size: 19px;
@@ -1220,30 +1077,25 @@ The home (and clients) PROMO zone
     letter-spacing: -0.01em;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .promo__text .excerpt {
     font-size: 20px;
     line-height: 31px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .promo__text .excerpt {
     font-size: 21px;
     line-height: 32px;
   }
 }
-
 .promo__text .excerpt p {
   margin-top: 0;
   margin-bottom: 0.8em;
 }
-
 .promo__text .excerpt p:last-of-type {
   margin-bottom: 36px;
 }
-
 @media screen and (min-width: 420px) {
   .promo__text .excerpt p {
     margin-bottom: 0.9em;
@@ -1252,51 +1104,43 @@ The home (and clients) PROMO zone
     margin-bottom: 34px;
   }
 }
-
 .promo__text .promo-bottom {
   position: relative;
   height: 86px;
 }
-
 @media screen and (min-width: 420px) {
   .promo__text .promo-bottom {
     height: 116px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .promo__text .promo-bottom {
     height: auto;
     margin-bottom: 40px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .promo__text .promo-bottom {
     margin-bottom: 0;
   }
 }
-
 .promo__text .promo-bottom .bottom-inner {
   position: absolute;
   height: 46px;
   overflow: visible;
   width: 100%;
 }
-
 @media screen and (min-width: 420px) {
   .promo__text .promo-bottom .bottom-inner {
     height: 46px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .promo__text .promo-bottom .bottom-inner {
     position: static;
     height: auto;
   }
 }
-
 .promo__text .promo-bottom a.link {
   padding: 11px 16px 15px 16px;
   border: 0px;
@@ -1308,60 +1152,50 @@ The home (and clients) PROMO zone
   color: #000;
   display: inline-block;
 }
-
 @media screen and (min-width: 830px) {
   .promo__text .promo-bottom a.link {
     padding: 12px 18px 16px 18px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .promo__text .promo-bottom a.link {
     padding: 13px 20px 18px 20px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .promo__text .promo-bottom a.link {
     font-size: 18px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .promo__text .promo-bottom a.link {
     font-size: 19px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .promo__text .promo-bottom a.link {
     font-size: 20px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .promo__text .promo-bottom a.link {
     font-size: 21px;
   }
 }
-
 .promo__text .promo-bottom a.link:hover {
   background-color: #FF611E;
   color: #000;
 }
-
 @media screen and (min-width: 650px) {
   .promo__text .promo-bottom a.link {
     margin-bottom: 36px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .promo__text .promo-bottom a.link {
     margin-bottom: 40px;
   }
 }
-
 .promo__text .promo-bottom img.logo {
   display: block;
   position: relative;
@@ -1372,14 +1206,12 @@ The home (and clients) PROMO zone
   right: 0;
   transform: translateY(-50%);
 }
-
 @media screen and (min-width: 420px) {
   .promo__text .promo-bottom img.logo {
     max-width: 110px;
     max-height: 94px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .promo__text .promo-bottom img.logo {
     display: block;
@@ -1391,14 +1223,12 @@ The home (and clients) PROMO zone
     transform: none;
   }
 }
-
 @media screen and (min-width: 830px) {
   .promo__text .promo-bottom img.logo {
     max-width: 120px;
     max-height: 102px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .promo__text .promo-bottom img.logo {
     max-width: 128px;
@@ -1417,46 +1247,39 @@ The home (and clients) PROMO zone
   text-align: center;
   position: relative;
 }
-
 @media screen and (min-width: 420px) {
   .promo__image {
     max-height: 330px;
     height: 330px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .promo__image {
     max-height: 400px;
     height: 400px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .promo__image {
     max-height: none;
     height: auto;
   }
 }
-
 .promo__image img {
   position: absolute;
   width: 120%;
   left: 50%;
   margin-left: -60%;
 }
-
 .promo__image img.mobile__flowing-up {
   bottom: 0;
   margin-bottom: 40px;
 }
-
 @media screen and (min-width: 420px) {
   .promo__image img.mobile__flowing-up {
     margin-bottom: 64px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .promo__image img {
     width: calc(100% + 180px);
@@ -1491,7 +1314,6 @@ The home (and clients) PROMO zone
   padding-top: 8px;
   padding-bottom: 16px;
 }
-
 @media screen and (min-width: 830px) {
   .more-clients {
     border-top: none;
@@ -1503,70 +1325,60 @@ The home (and clients) PROMO zone
   line-height: 38px;
   letter-spacing: -0.02em;
   font-weight: 800;
-  grid-column: 2 / span 12;
+  grid-column: 2/span 12;
   text-decoration: none;
   color: #FF611E;
 }
-
 @media screen and (min-width: 420px) {
   .more-clients-link {
     font-size: 38px;
     line-height: 47px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .more-clients-link {
     font-size: 46px;
     line-height: 52px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .more-clients-link {
     font-size: 52px;
     line-height: 60px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .more-clients-link {
     font-size: 56px;
     line-height: 65px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .more-clients-link {
     font-size: 60px;
     line-height: 67px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .more-clients-link {
     font-size: 64px;
     line-height: 70px;
   }
 }
-
 @media screen and (min-width: mega) {
   .more-clients-link {
     font-size: 64px;
     line-height: 70px;
   }
 }
-
 .more-clients-link:hover {
   color: #000;
 }
-
 @media screen and (min-width: 420px) {
   .more-clients-link {
-    grid-column: 3 / span 10;
+    grid-column: 3/span 10;
   }
 }
-
 @media screen and (min-width: 830px) {
   .more-clients-link {
     color: #000;
@@ -1575,53 +1387,45 @@ The home (and clients) PROMO zone
     color: #FF611E;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .more-clients-link {
-    grid-column: 4 / span 10;
+    grid-column: 4/span 10;
   }
 }
-
 @media screen and (min-width: mega) {
   .more-clients-link {
-    grid-column: 4 / span 10;
+    grid-column: 4/span 10;
   }
 }
 
 .journal-splash {
   grid-template-areas: "image image image image image image image image image image image image image image" ". text text text text text text text text text text text text .";
 }
-
 @media screen and (min-width: 420px) {
   .journal-splash {
     grid-template-areas: "image image image image image image image image image image image image image image" ". . text text text text text text text text text text . .";
   }
 }
-
 @media screen and (min-width: 830px) {
   .journal-splash {
     grid-template-areas: "image image image image image image image image image image image image image image" ". . . text text text text text text text text . . .";
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-splash {
     grid-template-areas: ". . text text text text text image image image image image image image";
   }
 }
-
 @media screen and (min-width: 1480px) {
   .journal-splash {
     grid-template-areas: ". . text text text text text text image image image image image image image image";
   }
 }
-
 @media screen and (min-width: 1850px) {
   .journal-splash {
     grid-template-areas: ". . . text text text text text . image image image image image image image image image";
   }
 }
-
 @media screen and (min-width: mega) {
   .journal-splash {
     grid-template-areas: ". . . text text text text text . image image image image image image image image image";
@@ -1632,13 +1436,11 @@ The home (and clients) PROMO zone
   padding: 20px 0 70px 0;
   grid-area: text;
 }
-
 @media screen and (min-width: 420px) {
   .journal-splash__text {
     padding: 65px 0 70px 0;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-splash__text {
     padding: 114px 0 120px 0;
@@ -1650,13 +1452,11 @@ The home (and clients) PROMO zone
   overflow: hidden;
   background: none;
 }
-
 @media screen and (min-width: 830px) {
   .journal-splash__image {
     height: 500px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-splash__image {
     background-repeat: no-repeat;
@@ -1671,7 +1471,6 @@ The home (and clients) PROMO zone
   display: block;
   width: 100%;
 }
-
 @media screen and (min-width: 1120px) {
   .journal-splash__image img {
     display: none;
@@ -1686,21 +1485,18 @@ The home (and clients) PROMO zone
   line-height: 118%;
   letter-spacing: 0.02em;
 }
-
 @media screen and (min-width: 420px) {
   .journal-splash__kicker,
 .journal-splash__date {
     font-size: 13px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .journal-splash__kicker,
 .journal-splash__date {
     font-size: 14px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-splash__kicker,
 .journal-splash__date {
@@ -1716,49 +1512,42 @@ The home (and clients) PROMO zone
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
 }
-
 @media screen and (min-width: 420px) {
   .journal-splash__title,
 .journal-splash__subtitle {
     font-size: 25px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .journal-splash__title,
 .journal-splash__subtitle {
     font-size: 30px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .journal-splash__title,
 .journal-splash__subtitle {
     font-size: 32px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-splash__title,
 .journal-splash__subtitle {
     font-size: 34px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .journal-splash__title,
 .journal-splash__subtitle {
     font-size: 36px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .journal-splash__title,
 .journal-splash__subtitle {
     font-size: 38px;
   }
 }
-
 @media screen and (min-width: mega) {
   .journal-splash__title,
 .journal-splash__subtitle {
@@ -1771,7 +1560,6 @@ The home (and clients) PROMO zone
   letter-spacing: 0.04em;
   margin: 20px 60px 0 0;
 }
-
 @media screen and (min-width: 1120px) {
   .journal-splash__title {
     margin: 32px 40px 0 0;
@@ -1790,14 +1578,12 @@ The home (and clients) PROMO zone
   font-family: Tiempos, serif;
   margin: 25px 0 32px 0;
 }
-
 @media screen and (min-width: 650px) {
   .journal-splash__excerpt {
     font-size: 18px;
     line-height: 27px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .journal-splash__excerpt {
     font-size: 19px;
@@ -1805,21 +1591,18 @@ The home (and clients) PROMO zone
     letter-spacing: -0.01em;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-splash__excerpt {
     font-size: 20px;
     line-height: 31px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .journal-splash__excerpt {
     font-size: 21px;
     line-height: 32px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-splash__excerpt {
     margin: 36px 40px 36px 0;
@@ -1827,24 +1610,21 @@ The home (and clients) PROMO zone
 }
 
 .journal-archive {
-  grid-template-areas: ". kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker ."  ". entries entries entries entries entries entries entries entries entries entries entries entries .";
+  grid-template-areas: ". kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker ." ". entries entries entries entries entries entries entries entries entries entries entries entries .";
   background-color: #282828;
   padding-top: 70px;
   padding-bottom: 70px;
 }
-
 @media screen and (min-width: 420px) {
   .journal-archive {
-    grid-template-areas: ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ."  ". . entries entries entries entries entries entries entries entries entries entries . .";
+    grid-template-areas: ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ." ". . entries entries entries entries entries entries entries entries entries entries . .";
   }
 }
-
 @media screen and (min-width: 830px) {
   .journal-archive {
-    grid-template-areas: ". . . kicker kicker kicker kicker kicker kicker kicker kicker . . ."  ". . . entries entries entries entries entries entries entries entries . . .";
+    grid-template-areas: ". . . kicker kicker kicker kicker kicker kicker kicker kicker . . ." ". . . entries entries entries entries entries entries entries entries . . .";
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-archive {
     padding-top: 120px;
@@ -1852,19 +1632,16 @@ The home (and clients) PROMO zone
     grid-template-areas: ". . kicker kicker entries entries entries entries entries entries entries entries . .";
   }
 }
-
 @media screen and (min-width: 1480px) {
   .journal-archive {
     grid-template-areas: ". . kicker kicker . entries entries entries entries entries entries entries entries entries . .";
   }
 }
-
 @media screen and (min-width: 1850px) {
   .journal-archive {
     grid-template-areas: ". . . kicker . entries entries entries entries entries entries entries entries . . . . .";
   }
 }
-
 @media screen and (min-width: mega) {
   .journal-archive {
     grid-template-areas: ". . . kicker . entries entries entries entries entries entries entries entries . . . . .";
@@ -1880,7 +1657,6 @@ The home (and clients) PROMO zone
   font-weight: 400;
   line-height: 24px;
 }
-
 @media screen and (min-width: 650px) {
   .journal-archive__title,
 .journal-archive__subtitle {
@@ -1888,7 +1664,6 @@ The home (and clients) PROMO zone
     line-height: 27px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .journal-archive__title,
 .journal-archive__subtitle {
@@ -1897,7 +1672,6 @@ The home (and clients) PROMO zone
     letter-spacing: -0.01em;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-archive__title,
 .journal-archive__subtitle {
@@ -1905,7 +1679,6 @@ The home (and clients) PROMO zone
     line-height: 31px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .journal-archive__title,
 .journal-archive__subtitle {
@@ -1913,14 +1686,12 @@ The home (and clients) PROMO zone
     line-height: 32px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .journal-archive__title,
 .journal-archive__subtitle {
     line-height: 27px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-archive__title,
 .journal-archive__subtitle {
@@ -1934,12 +1705,10 @@ The home (and clients) PROMO zone
   margin: 0;
   padding-top: 0;
 }
-
 .journal-archive__title a {
   color: white;
   text-decoration: none;
 }
-
 @media screen and (min-width: 830px) {
   .journal-archive__title {
     margin: -8px 0 0 0;
@@ -1957,7 +1726,6 @@ The home (and clients) PROMO zone
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .journal-archive__entry:nth-of-type(odd), .journal-archive__entry:nth-of-type(even) {
   box-shadow: 0 8px 0px #3A3A3A;
   margin-left: 0;
@@ -1965,14 +1733,12 @@ The home (and clients) PROMO zone
   padding-left: 0;
   padding-right: 0;
 }
-
 @media screen and (min-width: 650px) {
   .journal-archive__entry:last-of-type {
     padding-bottom: 0;
     box-shadow: none;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-archive__entry {
     padding-top: 35px;
@@ -2013,37 +1779,31 @@ The home (and clients) PROMO zone
   box-shadow: 0px 8px 0px #3A3A3A;
   padding-bottom: 28px;
 }
-
 @media screen and (min-width: 420px) {
   .journal-archive__kicker {
     font-size: 13px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .journal-archive__kicker {
     font-size: 14px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-archive__kicker {
     font-size: 15px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .journal-archive__kicker {
     box-shadow: none;
   }
 }
-
 @media screen and (min-width: 830px) {
   .journal-archive__kicker {
     padding-bottom: 15px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-archive__kicker {
     margin-top: -6px;
@@ -2061,25 +1821,21 @@ The home (and clients) PROMO zone
   margin-top: 13px;
   margin-bottom: 18px;
 }
-
 @media screen and (min-width: 420px) {
   .journal-archive__date {
     font-size: 13px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .journal-archive__date {
     font-size: 14px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-archive__date {
     font-size: 15px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .journal-archive__date {
     margin-bottom: 24px;
@@ -2094,14 +1850,12 @@ The home (and clients) PROMO zone
   font-family: Tiempos, Georgia, serif;
   color: rgba(255, 255, 255, 0.7);
 }
-
 @media screen and (min-width: 830px) {
   .journal-archive__excerpt {
     font-size: 16px;
     line-height: 25px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-archive__excerpt {
     font-size: 17px;
@@ -2109,7 +1863,6 @@ The home (and clients) PROMO zone
     letter-spacing: -0.01em;
   }
 }
-
 .journal-archive__excerpt p {
   margin: 0;
 }
@@ -2124,14 +1877,12 @@ The home (and clients) PROMO zone
   font-weight: bold;
   text-decoration: none;
 }
-
 @media screen and (min-width: 830px) {
   .journal-archive__link {
     font-size: 16px;
     line-height: 25px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-archive__link {
     font-size: 17px;
@@ -2139,13 +1890,12 @@ The home (and clients) PROMO zone
     letter-spacing: -0.01em;
   }
 }
-
 .journal-archive__link:hover {
   color: #fff;
 }
 
 .journal-archive__link::after {
-  content: ' \00bb';
+  content: " »";
 }
 
 .journal-splash__link {
@@ -2159,37 +1909,31 @@ The home (and clients) PROMO zone
   color: #FFD600;
   display: inline-block;
 }
-
 @media screen and (min-width: 830px) {
   .journal-splash__link {
     padding: 12px 18px 16px 18px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-splash__link {
     padding: 13px 20px 18px 20px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .journal-splash__link {
     font-size: 18px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .journal-splash__link {
     font-size: 19px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-splash__link {
     font-size: 20px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .journal-splash__link {
     font-size: 21px;
@@ -2203,13 +1947,11 @@ The home (and clients) PROMO zone
   background-color: #FFD600;
   display: inline-block;
 }
-
 @media screen and (min-width: 830px) {
   .journal-splash__link:hover {
     padding: 12px 18px 16px 18px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-splash__link:hover {
     padding: 13px 20px 18px 20px;
@@ -2217,52 +1959,44 @@ The home (and clients) PROMO zone
 }
 
 .archive-pagination {
-  grid-column: 2 / span 8;
+  grid-column: 2/span 8;
   margin: 60px 0 0 0;
 }
-
 @media screen and (min-width: 420px) {
   .archive-pagination {
-    grid-column: 3 / span 8;
+    grid-column: 3/span 8;
   }
 }
-
 @media screen and (min-width: 650px) {
   .archive-pagination {
-    grid-column: 3 / span 8;
+    grid-column: 3/span 8;
   }
 }
-
 @media screen and (min-width: 830px) {
   .archive-pagination {
-    grid-column: 4 / span 8;
+    grid-column: 4/span 8;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .archive-pagination {
-    grid-column: 5 / span 8;
+    grid-column: 5/span 8;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .archive-pagination {
-    grid-column: 6 / span 8;
+    grid-column: 6/span 8;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .archive-pagination {
-    grid-column: 6 / span 8;
+    grid-column: 6/span 8;
   }
 }
-
 @media screen and (min-width: mega) {
   .archive-pagination {
-    grid-column: 6 / span 8;
+    grid-column: 6/span 8;
   }
 }
-
 .archive-pagination a {
   padding: 11px 16px 15px 16px;
   border: 0px;
@@ -2273,43 +2007,36 @@ The home (and clients) PROMO zone
   background: white;
   color: black;
 }
-
 @media screen and (min-width: 830px) {
   .archive-pagination a {
     padding: 12px 18px 16px 18px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .archive-pagination a {
     padding: 13px 20px 18px 20px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .archive-pagination a {
     font-size: 18px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .archive-pagination a {
     font-size: 19px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .archive-pagination a {
     font-size: 20px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .archive-pagination a {
     font-size: 21px;
   }
 }
-
 .archive-pagination a:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -2317,53 +2044,45 @@ The home (and clients) PROMO zone
 /* Variations on the journal archive for the homepage
 ------------------------------------------------------------------------------------------ */
 .journal-home {
-  grid-template-areas: ". kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker ."  ". entries entries entries entries entries entries entries entries entries entries entries entries ." ". onward onward onward onward onward onward onward onward onward onward onward onward .";
+  grid-template-areas: ". kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker ." ". entries entries entries entries entries entries entries entries entries entries entries entries ." ". onward onward onward onward onward onward onward onward onward onward onward onward .";
   background-color: #282828;
   padding: 70px 0;
 }
-
 @media screen and (min-width: 420px) {
   .journal-home {
-    grid-template-areas: ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ."  ". . entries entries entries entries entries entries entries entries entries entries . ." ". . onward onward onward onward onward onward onward onward onward onward . .";
+    grid-template-areas: ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ." ". . entries entries entries entries entries entries entries entries entries entries . ." ". . onward onward onward onward onward onward onward onward onward onward . .";
   }
 }
-
 @media screen and (min-width: 830px) {
   .journal-home {
     padding: 90px 0;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-home {
     padding: 120px 0;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .journal-home {
-    grid-template-areas: ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ."  ". . entries entries entries entries entries entries entries entries entries entries entries entries . ." ". . onward onward onward onward onward onward onward onward onward onward onward onward . .";
+    grid-template-areas: ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ." ". . entries entries entries entries entries entries entries entries entries entries entries entries . ." ". . onward onward onward onward onward onward onward onward onward onward onward onward . .";
   }
 }
-
 @media screen and (min-width: 1850px) {
   .journal-home {
-    grid-template-areas: ". . . . . kicker kicker kicker kicker kicker kicker kicker kicker . . . . ."  ". . . . . entries entries entries entries entries entries entries entries . . . . ." ". . . . . onward onward onward onward onward onward onward onward . . . . .";
+    grid-template-areas: ". . . . . kicker kicker kicker kicker kicker kicker kicker kicker . . . . ." ". . . . . entries entries entries entries entries entries entries entries . . . . ." ". . . . . onward onward onward onward onward onward onward onward . . . . .";
   }
 }
-
 @media screen and (min-width: mega) {
   .journal-home {
-    grid-template-areas: ". . . . . kicker kicker kicker kicker kicker kicker kicker kicker . . . . ."  ". . . . . entries entries entries entries entries entries entries entries . . . . ." ". . . . . onward onward onward onward onward onward onward onward . . . . .";
+    grid-template-areas: ". . . . . kicker kicker kicker kicker kicker kicker kicker kicker . . . . ." ". . . . . entries entries entries entries entries entries entries entries . . . . ." ". . . . . onward onward onward onward onward onward onward onward . . . . .";
   }
 }
-
 .journal-home .recently-header {
   grid-area: kicker;
   margin: 0;
   color: #FFD600;
 }
-
 .journal-home .recently-header,
 .journal-home .onward-journey-link {
   font-family: Graphik, sans-serif;
@@ -2372,50 +2091,42 @@ The home (and clients) PROMO zone
   line-height: 118%;
   letter-spacing: 0.02em;
 }
-
 @media screen and (min-width: 420px) {
   .journal-home .recently-header,
 .journal-home .onward-journey-link {
     font-size: 13px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .journal-home .recently-header,
 .journal-home .onward-journey-link {
     font-size: 14px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .journal-home .recently-header,
 .journal-home .onward-journey-link {
     font-size: 15px;
   }
 }
-
 .journal-home .recently-header {
   box-shadow: 0px 8px 0px #3A3A3A;
   padding-bottom: 28px;
 }
-
 @media screen and (min-width: 650px) {
   .journal-home .recently-header {
     box-shadow: none;
     padding-bottom: 0;
   }
 }
-
 .journal-home .journal-home__posts {
   padding-bottom: 38px;
 }
-
 @media screen and (min-width: 650px) {
   .journal-home .journal-home__posts {
     padding-bottom: 0;
   }
 }
-
 .journal-home .onward-journey-link {
   grid-area: onward;
   text-align: end;
@@ -2423,19 +2134,15 @@ The home (and clients) PROMO zone
   text-decoration: none;
   font-weight: bold;
 }
-
 .journal-home .onward-journey-link:hover {
   color: #FFF;
 }
-
 .journal-home .onward-journey-link::after {
-  content: ' \00bb';
+  content: " »";
 }
-
 .journal-home .journal-archive__entry:last-of-type {
   padding-bottom: 30px;
 }
-
 @media screen and (min-width: 650px) {
   .journal-home .journal-archive__entry {
     margin: -13px 0 -16px 0;
@@ -2458,59 +2165,49 @@ The home (and clients) PROMO zone
   margin: 0 0 60px 0;
   align-items: center;
 }
-
 @media screen and (min-width: 420px) {
   .contact__content {
     margin-bottom: 80px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .contact__content {
     margin-bottom: 90px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .contact__content {
     margin-bottom: 100px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .contact__content {
     grid-template-columns: 0px repeat(14, 1fr) 0px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .contact__content {
     grid-template-columns: 0px repeat(16, 1fr) 0px;
   }
 }
-
 @media screen and (min-width: mega) {
   .contact__content {
     grid-template-columns: 0px repeat(16, 1fr) 0px;
   }
 }
-
 .contact__content h1, .contact__content div.wpcf7 {
-  grid-column: 2 / span 12;
+  grid-column: 2/span 12;
 }
-
 @media screen and (min-width: 420px) {
   .contact__content h1, .contact__content div.wpcf7 {
-    grid-column: 3 / span 10;
+    grid-column: 3/span 10;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .contact__content h1, .contact__content div.wpcf7 {
-    grid-column: 3 / span 7;
+    grid-column: 3/span 7;
   }
 }
-
 .contact__content h1 {
   font-size: 32px;
   line-height: 38px;
@@ -2520,84 +2217,72 @@ The home (and clients) PROMO zone
   margin-top: 60px;
   margin-bottom: 20px;
 }
-
 @media screen and (min-width: 420px) {
   .contact__content h1 {
     font-size: 38px;
     line-height: 47px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .contact__content h1 {
     font-size: 46px;
     line-height: 52px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .contact__content h1 {
     font-size: 52px;
     line-height: 60px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .contact__content h1 {
     font-size: 56px;
     line-height: 65px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .contact__content h1 {
     font-size: 60px;
     line-height: 67px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .contact__content h1 {
     font-size: 64px;
     line-height: 70px;
   }
 }
-
 @media screen and (min-width: mega) {
   .contact__content h1 {
     font-size: 64px;
     line-height: 70px;
   }
 }
-
 @media screen and (min-width: 420px) {
   .contact__content h1 {
     margin-top: 80px;
     margin-bottom: 30px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .contact__content h1 {
     margin-top: 80px;
     margin-bottom: 35px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .contact__content h1 {
     margin-top: 90px;
     margin-bottom: 45px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .contact__content h1 {
     margin-top: 100px;
     margin-bottom: 50px;
   }
 }
-
 .contact__content label {
   font-family: Graphik, sans-serif;
   font-weight: bold;
@@ -2605,25 +2290,21 @@ The home (and clients) PROMO zone
   line-height: 118%;
   letter-spacing: 0.02em;
 }
-
 @media screen and (min-width: 420px) {
   .contact__content label {
     font-size: 13px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .contact__content label {
     font-size: 14px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .contact__content label {
     font-size: 15px;
   }
 }
-
 .contact__content .form-conditional {
   font-weight: 400;
 }
@@ -2631,7 +2312,6 @@ The home (and clients) PROMO zone
 .bold-content {
   grid-template-areas: " . text text text text text text text text text text .";
 }
-
 @media screen and (min-width: 650px) {
   .bold-content {
     grid-template-areas: ". . text text text text text text text . . . . .";
@@ -2666,7 +2346,6 @@ textarea {
   border: 8px solid #EEE;
   outline: none;
 }
-
 @media screen and (min-width: 420px) {
   input[type=text],
 input[type=email],
@@ -2674,7 +2353,6 @@ textarea {
     font-size: 25px;
   }
 }
-
 @media screen and (min-width: 650px) {
   input[type=text],
 input[type=email],
@@ -2682,7 +2360,6 @@ textarea {
     font-size: 30px;
   }
 }
-
 @media screen and (min-width: 830px) {
   input[type=text],
 input[type=email],
@@ -2690,7 +2367,6 @@ textarea {
     font-size: 32px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   input[type=text],
 input[type=email],
@@ -2698,7 +2374,6 @@ textarea {
     font-size: 34px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   input[type=text],
 input[type=email],
@@ -2706,7 +2381,6 @@ textarea {
     font-size: 36px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   input[type=text],
 input[type=email],
@@ -2714,7 +2388,6 @@ textarea {
     font-size: 38px;
   }
 }
-
 @media screen and (min-width: mega) {
   input[type=text],
 input[type=email],
@@ -2722,14 +2395,12 @@ textarea {
     font-size: 38px;
   }
 }
-
 input[type=text]:focus,
 input[type=email]:focus,
 textarea:focus {
   border: 6px solid #FF00FF;
   background: #FFF;
 }
-
 @media screen and (min-width: 650px) {
   input[type=text]:focus,
 input[type=email]:focus,
@@ -2743,21 +2414,18 @@ input[type=email] {
   height: 58px;
   padding: 3px 12px 10px 12px;
 }
-
 @media screen and (min-width: 420px) {
   input[type=text],
 input[type=email] {
     height: 64px;
   }
 }
-
 @media screen and (min-width: 650px) {
   input[type=text],
 input[type=email] {
     height: 70px;
   }
 }
-
 @media screen and (min-width: 830px) {
   input[type=text],
 input[type=email] {
@@ -2770,7 +2438,6 @@ textarea {
   padding: 5px 12px 10px 12px;
   line-height: 128%;
 }
-
 @media screen and (min-width: 830px) {
   textarea {
     padding: 10px 18px 10px 18px;
@@ -2790,37 +2457,31 @@ input[type=submit] {
   display: inline-block;
   cursor: pointer;
 }
-
 @media screen and (min-width: 830px) {
   input[type=submit] {
     padding: 12px 18px 16px 18px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   input[type=submit] {
     padding: 13px 20px 18px 20px;
   }
 }
-
 @media screen and (min-width: 650px) {
   input[type=submit] {
     font-size: 18px;
   }
 }
-
 @media screen and (min-width: 830px) {
   input[type=submit] {
     font-size: 19px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   input[type=submit] {
     font-size: 20px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   input[type=submit] {
     font-size: 21px;
@@ -2834,13 +2495,11 @@ input[type=submit]:hover {
   background-color: #FF00FF;
   display: inline-block;
 }
-
 @media screen and (min-width: 830px) {
   input[type=submit]:hover {
     padding: 12px 18px 16px 18px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   input[type=submit]:hover {
     padding: 13px 20px 18px 20px;
@@ -2856,47 +2515,40 @@ the article HEADING
 =================================================================================== */
 .article-head .article-title {
   margin: 70px 0 10px 0;
-  grid-column: 2 / span 12;
+  grid-column: 2/span 12;
 }
-
 @media screen and (min-width: 420px) {
   .article-head .article-title {
-    grid-column: 3 / span 10;
+    grid-column: 3/span 10;
   }
 }
-
 @media screen and (min-width: 830px) {
   .article-head .article-title {
     margin: 90px 0 7px 0;
-    grid-column: 4 / span 8;
+    grid-column: 4/span 8;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-head .article-title {
     margin: 114px 0 120px 0;
-    grid-column: 3 / span 6;
+    grid-column: 3/span 6;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .article-head .article-title {
-    grid-column: 3 / span 7;
+    grid-column: 3/span 7;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .article-head .article-title {
-    grid-column: 3 / span 8;
+    grid-column: 3/span 8;
   }
 }
-
 @media screen and (min-width: mega) {
   .article-head .article-title {
-    grid-column: 3 / span 8;
+    grid-column: 3/span 8;
   }
 }
-
 .article-head h1 {
   font-size: 22px;
   line-height: 118%;
@@ -2907,104 +2559,87 @@ the article HEADING
   font-weight: 400;
   margin: 0;
 }
-
 @media screen and (min-width: 420px) {
   .article-head h1 {
     font-size: 25px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .article-head h1 {
     font-size: 30px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .article-head h1 {
     font-size: 32px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-head h1 {
     font-size: 34px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .article-head h1 {
     font-size: 36px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .article-head h1 {
     font-size: 38px;
   }
 }
-
 @media screen and (min-width: mega) {
   .article-head h1 {
     font-size: 38px;
   }
 }
-
 .article-head .journal-splash__subtitle {
   font-size: 22px;
   line-height: 118%;
   letter-spacing: -0.01em;
   margin: -3px 0 0 0;
 }
-
 @media screen and (min-width: 420px) {
   .article-head .journal-splash__subtitle {
     font-size: 25px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .article-head .journal-splash__subtitle {
     font-size: 30px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .article-head .journal-splash__subtitle {
     font-size: 32px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-head .journal-splash__subtitle {
     font-size: 34px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .article-head .journal-splash__subtitle {
     font-size: 36px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .article-head .journal-splash__subtitle {
     font-size: 38px;
   }
 }
-
 @media screen and (min-width: mega) {
   .article-head .journal-splash__subtitle {
     font-size: 38px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .article-head .journal-splash__subtitle {
     margin: -1px 0 1px 0;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-head .journal-splash__subtitle {
     margin-bottom: 0;
@@ -3028,14 +2663,12 @@ the article BODY
   /* styles useful for images 
   --------------------------------------------------------------------------------- */
 }
-
 @media screen and (min-width: 650px) {
   .article-body {
     font-size: 18px;
     line-height: 27px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .article-body {
     font-size: 19px;
@@ -3043,52 +2676,43 @@ the article BODY
     letter-spacing: -0.01em;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-body {
     font-size: 20px;
     line-height: 31px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .article-body {
     font-size: 21px;
     line-height: 32px;
   }
 }
-
 .article-body p {
   font-weight: 400;
   margin: 0 0 0.9em 0;
 }
-
 @media screen and (min-width: 720px) and (max-width: 830px) {
   .article-body p {
     line-height: 29px;
   }
 }
-
 .article-body strong {
   font-family: Tiempos, Georgia, serif;
   font-weight: 600;
 }
-
 .article-body a {
   color: #000;
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
-
 .article-body a:hover {
   border-bottom: 1px solid black;
   transition: border-bottom 0.5s;
 }
-
 .article-body a:active {
   background: #FFD600;
 }
-
 .article-body h2 {
   font-size: 22px;
   line-height: 118%;
@@ -3097,49 +2721,41 @@ the article BODY
   font-weight: 600;
   margin: 120px 0 24px 0;
 }
-
 @media screen and (min-width: 420px) {
   .article-body h2 {
     font-size: 25px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .article-body h2 {
     font-size: 30px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .article-body h2 {
     font-size: 32px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-body h2 {
     font-size: 34px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .article-body h2 {
     font-size: 36px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .article-body h2 {
     font-size: 38px;
   }
 }
-
 @media screen and (min-width: mega) {
   .article-body h2 {
     font-size: 38px;
   }
 }
-
 .article-body h3 {
   font-family: Tiempos, Georgia, serif;
   font-weight: 600;
@@ -3147,7 +2763,6 @@ the article BODY
   line-height: 32px;
   margin: 60px 0 24px 0;
 }
-
 .article-body h4 {
   font-family: Tiempos, Georgia, serif;
   font-size: 20px;
@@ -3158,7 +2773,6 @@ the article BODY
   margin: 60px 0 12px 0;
   display: block;
 }
-
 .article-body h5 {
   font-family: Tiempos, Georgia, serif;
   font-size: 20px;
@@ -3168,20 +2782,16 @@ the article BODY
   letter-spacing: 0.04em;
   margin: 60px 0 0 0;
 }
-
 .article-body ul {
   list-style-type: none;
   margin-left: 20px;
 }
-
 .article-body ul li {
   text-indent: -25px;
 }
-
 .article-body ul li:before {
   content: "— ";
 }
-
 .article-body .article__date {
   font-family: Graphik, sans-serif;
   font-weight: bold;
@@ -3189,128 +2799,111 @@ the article BODY
   line-height: 118%;
   letter-spacing: 0.02em;
 }
-
 @media screen and (min-width: 420px) {
   .article-body .article__date {
     font-size: 13px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .article-body .article__date {
     font-size: 14px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-body .article__date {
     font-size: 15px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-body .article__date {
     margin-bottom: -22px;
   }
 }
-
 .article-body .article__content {
   margin-top: 70px;
   margin-bottom: 70px;
 }
-
 @media screen and (min-width: 830px) {
   .article-body .article__content {
     margin-top: 90px;
     margin-bottom: 90px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-body .article__content {
     padding-top: 0px;
     margin-top: -7px;
   }
 }
-
 .article-body .the-date {
-  grid-column: 2 / span 12;
+  grid-column: 2/span 12;
+  height: 0px;
+  overflow: visible;
 }
-
 @media screen and (min-width: 420px) {
   .article-body .the-date {
-    grid-column: 3 / span 10;
+    grid-column: 3/span 10;
   }
 }
-
 @media screen and (min-width: 830px) {
   .article-body .the-date {
-    grid-column: 4 / span 7;
+    grid-column: 4/span 7;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-body .the-date {
-    grid-column: 3 / span 2;
+    grid-column: 3/span 2;
   }
 }
-
 .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
 .article-body blockquote, .article-body figure,
 .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
-  grid-column: 2 / span 12;
+  grid-column: 2/span 12;
 }
-
 @media screen and (min-width: 420px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
 .article-body blockquote, .article-body figure,
 .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
-    grid-column: 3 / span 10;
+    grid-column: 3/span 10;
   }
 }
-
 @media screen and (min-width: 830px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
 .article-body blockquote, .article-body figure,
 .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
-    grid-column: 4 / span 8;
+    grid-column: 4/span 8;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
 .article-body blockquote, .article-body figure,
 .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
-    grid-column: 5 / span 6;
+    grid-column: 5/span 6;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
 .article-body blockquote, .article-body figure,
 .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
-    grid-column: 6 / span 6;
+    grid-column: 6/span 6;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
 .article-body blockquote, .article-body figure,
 .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
-    grid-column: 7 / span 6;
+    grid-column: 7/span 6;
   }
 }
-
 @media screen and (min-width: mega) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
 .article-body blockquote, .article-body figure,
 .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
-    grid-column: 7 / span 6;
+    grid-column: 7/span 6;
   }
 }
-
 .article-body div.case-study {
-  grid-column: 1 / span 14;
+  grid-column: 1/span 14;
   grid-template-columns: 0 repeat(12, 1fr) 0;
   display: grid;
   column-gap: 20px;
@@ -3318,16 +2911,13 @@ the article BODY
   margin: 40px 0;
   padding: 40px 0;
 }
-
 .article-body div.case-study p, .article-body div.case-study h5 {
-  grid-column: 2 / span 12;
+  grid-column: 2/span 12;
 }
-
 .article-body div.case-study .case-study-label {
   font-style: italic;
   margin-bottom: -4px;
 }
-
 .article-body div.case-study h5 {
   font-size: 22px;
   line-height: 118%;
@@ -3337,128 +2927,109 @@ the article BODY
   text-transform: none;
   margin: 0 0 1em 0;
 }
-
 @media screen and (min-width: 420px) {
   .article-body div.case-study h5 {
     font-size: 25px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .article-body div.case-study h5 {
     font-size: 30px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .article-body div.case-study h5 {
     font-size: 32px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-body div.case-study h5 {
     font-size: 34px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .article-body div.case-study h5 {
     font-size: 36px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .article-body div.case-study h5 {
     font-size: 38px;
   }
 }
-
 @media screen and (min-width: mega) {
   .article-body div.case-study h5 {
     font-size: 38px;
   }
 }
-
 .article-body div.case-study h5 a {
   color: #000;
   text-decoration: none;
   border-bottom: none;
 }
-
 .article-body div.case-study h5 a::after {
-  content: ' \00bb';
+  content: " »";
 }
-
 .article-body div.case-study h5 a:hover {
   color: rgba(0, 0, 0, 0.7);
 }
-
 .article-body div.case-study figure {
   margin-top: 1em;
   margin-bottom: 0;
   display: grid;
   column-gap: 20px;
-  grid-column: 1 / span 14;
+  grid-column: 1/span 14;
   grid-template-columns: 0 repeat(12, 1fr) 0;
 }
-
 .article-body div.case-study figure img {
-  grid-column: 1 / span 14;
+  grid-column: 1/span 14;
 }
-
 .article-body div.case-study figure img.with-margins {
-  grid-column: 2 / span 12;
+  grid-column: 2/span 12;
 }
-
 .article-body div.case-study figure figcaption {
-  grid-column: 2 / span 12;
+  grid-column: 2/span 12;
 }
-
 .article-body div.case-study .image-border-bottom---grey {
   border-bottom: 1px solid #ddd;
 }
-
 .article-body div.case-study .case-study-with-left-padding {
   padding-left: 20px;
 }
-
 .article-body div.case-study .case-study-with-right-padding {
   padding-right: 20px;
 }
-
 @media screen and (min-width: 420px) {
   .article-body div.case-study {
-    grid-column: 1 / span 14;
+    grid-column: 1/span 14;
     margin: 70px 0;
     padding: 70px 0;
   }
   .article-body div.case-study p, .article-body div.case-study h5 {
-    grid-column: 3 / span 10;
+    grid-column: 3/span 10;
   }
   .article-body div.case-study figure {
-    grid-column: 1 / span 14;
+    grid-column: 1/span 14;
   }
   .article-body div.case-study figure img.with-margins {
-    grid-column: 3 / span 10;
+    grid-column: 3/span 10;
   }
   .article-body div.case-study figure figcaption {
-    grid-column: 3 / span 8;
+    grid-column: 3/span 8;
   }
 }
-
 @media screen and (min-width: 830px) {
   .article-body div.case-study {
-    grid-column: 3 / span 10;
+    grid-column: 3/span 10;
     grid-template-columns: repeat(10, 1fr);
     margin: 85px 0;
     padding: 85px 0;
   }
   .article-body div.case-study p, .article-body div.case-study h5 {
-    grid-column: 2 / span 8;
+    grid-column: 2/span 8;
   }
   .article-body div.case-study figure {
-    grid-column: 1 / span 10;
+    grid-column: 1/span 10;
     margin-top: 1em;
     grid-template-columns: repeat(10, 1fr);
   }
@@ -3466,129 +3037,111 @@ the article BODY
     margin-top: 72px;
   }
   .article-body div.case-study figure img {
-    grid-column: 1 / span 10;
+    grid-column: 1/span 10;
   }
   .article-body div.case-study figure img.with-margins {
-    grid-column: 2 / span 8;
+    grid-column: 2/span 8;
   }
   .article-body div.case-study figure figcaption {
-    grid-column: 2 / span 8;
+    grid-column: 2/span 8;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-body div.case-study {
-    grid-column: 4 / span 8;
+    grid-column: 4/span 8;
     grid-template-columns: repeat(8, 1fr);
   }
   .article-body div.case-study p, .article-body div.case-study h5 {
-    grid-column: 2 / span 6;
+    grid-column: 2/span 6;
   }
   .article-body div.case-study figure {
-    grid-column: 1 / span 8;
+    grid-column: 1/span 8;
     grid-template-columns: repeat(8, 1fr);
   }
   .article-body div.case-study figure img {
-    grid-column: 1 / span 8;
+    grid-column: 1/span 8;
   }
   .article-body div.case-study figure img.with-margins {
-    grid-column: 2 / span 6;
+    grid-column: 2/span 6;
   }
   .article-body div.case-study figure figcaption {
-    grid-column: 2 / span 6;
+    grid-column: 2/span 6;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .article-body div.case-study {
-    grid-column: 5 / span 8;
+    grid-column: 5/span 8;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .article-body div.case-study {
-    grid-column: 6 / span 8;
+    grid-column: 6/span 8;
   }
 }
-
 @media screen and (min-width: mega) {
   .article-body div.case-study {
-    grid-column: 6 / span 8;
+    grid-column: 6/span 8;
   }
 }
-
 .article-body blockquote {
   background-color: #FFF9D8;
   margin: 60px 0 60px 0;
   padding: 24px 50px 24px 50px;
 }
-
 .article-body blockquote p {
   margin-top: 14px;
   margin-bottom: 14px;
 }
-
 .article-body blockquote p.in-quotes {
   text-indent: -10px;
 }
-
 .article-body blockquote.pullquote-left,
 .article-body blockquote.pullquote-right {
   font-family: Tiempos, Georgia, serif;
   padding: 30px 40px 30px 40px;
 }
-
 .article-body blockquote.pullquote-left p,
 .article-body blockquote.pullquote-right p {
   font-size: 48px;
   line-height: 54px;
   letter-spacing: -0.02em;
 }
-
 .article-body blockquote.pullquote-left {
-  grid-column: 1 / span 14;
+  grid-column: 1/span 14;
 }
-
 @media screen and (min-width: 420px) {
   .article-body blockquote.pullquote-left {
-    grid-column: 1 / span 11;
+    grid-column: 1/span 11;
   }
 }
-
 @media screen and (min-width: 830px) {
   .article-body blockquote.pullquote-left {
-    grid-column: 1 / span 9;
+    grid-column: 1/span 9;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-body blockquote.pullquote-left {
-    grid-column: 1 / span 7;
+    grid-column: 1/span 7;
   }
 }
-
 .article-body blockquote.pullquote-right {
-  grid-column: 1 / span 14;
+  grid-column: 1/span 14;
 }
-
 @media screen and (min-width: 420px) {
   .article-body blockquote.pullquote-right {
-    grid-column: 4 / span 11;
+    grid-column: 4/span 11;
   }
 }
-
 @media screen and (min-width: 830px) {
   .article-body blockquote.pullquote-right {
-    grid-column: 6 / span 9;
+    grid-column: 6/span 9;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-body blockquote.pullquote-right {
-    grid-column: 8 / span 7;
+    grid-column: 8/span 7;
   }
 }
-
 .article-body cite {
   display: block;
   margin: 24px 100px 14px 0;
@@ -3597,20 +3150,16 @@ the article BODY
   line-height: 22px;
   letter-spacing: 0.01em;
 }
-
 .article-body .indepth {
   background: gray;
 }
-
 .article-body .full-bleed {
-  grid-column: 1 / span 12;
+  grid-column: 1/span 12;
   width: 100%;
 }
-
 .article-body img {
   width: 100%;
 }
-
 .article-body .wp-block-image figcaption {
   font-size: 12px;
   line-height: 18px;
@@ -3620,14 +3169,12 @@ the article BODY
   max-width: 450px;
   margin: 6px 0 40px 0;
 }
-
 @media screen and (min-width: 420px) {
   .article-body .wp-block-image figcaption {
     font-size: 13px;
     line-height: 19px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .article-body .wp-block-image figcaption {
     font-size: 14px;
@@ -3635,14 +3182,12 @@ the article BODY
     letter-spacing: 0.01em;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-body .wp-block-image figcaption {
     font-size: 15px;
     line-height: 21px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .article-body .wp-block-image figcaption {
     margin: 7px 0 50px 0;
@@ -3673,13 +3218,11 @@ nav.full-nav {
 nav {
   height: 50px;
 }
-
 @media screen and (min-width: 420px) {
   nav {
     height: 52px;
   }
 }
-
 @media screen and (min-width: 650px) {
   nav {
     height: 55px;
@@ -3696,28 +3239,24 @@ nav {
     height: 60px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   nav,
 .nav-place-holder {
     height: 62px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   nav,
 .nav-place-holder {
     height: 63px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   nav,
 .nav-place-holder {
     height: 64px;
   }
 }
-
 @media screen and (min-width: mega) {
   nav,
 .nav-place-holder {
@@ -3733,19 +3272,16 @@ nav {
   font-weight: bold;
   padding-left: 20px;
 }
-
 @media screen and (min-width: 420px) {
   .header-links {
     font-size: 25px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .header-links {
     font-size: 30px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .header-links {
     font-size: 32px;
@@ -3753,26 +3289,22 @@ nav {
     padding-right: 10px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .header-links {
     font-size: 34px;
     padding: 0;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .header-links {
     font-size: 36px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .header-links {
     font-size: 38px;
   }
 }
-
 @media screen and (min-width: mega) {
   .header-links {
     font-size: 38px;
@@ -3784,45 +3316,38 @@ nav {
   display: inline-block;
   padding-top: 4px;
 }
-
 @media screen and (min-width: 420px) {
   .header-link {
     padding-top: 9px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .header-link {
     padding-top: 8px;
   }
 }
-
 @media screen and (min-width: 830px) {
   .header-link {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .header-link {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-
 @media screen and (min-width: 1480px) {
   .header-link {
     padding-top: 7px;
   }
 }
-
 @media screen and (min-width: 1850px) {
   .header-link {
     padding-top: 6px;
   }
 }
-
 @media screen and (min-width: mega) {
   .header-link {
     padding-top: 6px;
@@ -3834,7 +3359,6 @@ nav {
   float: right;
   right: 0;
 }
-
 @media screen and (min-width: 830px) {
   .header-button {
     display: none;
@@ -3846,7 +3370,6 @@ nav {
   padding-top: 7px;
   padding-right: 7px;
 }
-
 @media screen and (min-width: 420px) {
   .header-button,
 .close-menu-button {
@@ -3854,7 +3377,6 @@ nav {
     padding-right: 8px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .header-button,
 .close-menu-button {
@@ -3868,7 +3390,6 @@ nav a {
   color: black;
   justify-content: space-between;
 }
-
 nav a:hover {
   color: rgba(0, 0, 0, 0.7);
 }
@@ -3899,13 +3420,11 @@ nav.contact {
   left: 0;
   right: 0;
 }
-
 @media screen and (min-width: 830px) {
   .active-marker {
     margin-top: 35px;
   }
 }
-
 @media screen and (min-width: 1120px) {
   .active-marker {
     margin-top: 36px;
@@ -3919,7 +3438,7 @@ nav.contact {
 
 /* scroll behavior for home link */
 .header-links.home-link {
-  transition: visibility 0.3s linear,opacity 0.3s linear;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
   visibility: hidden;
   opacity: 0;
 }
@@ -3933,7 +3452,6 @@ nav.contact {
 .full-nav {
   display: none;
 }
-
 @media screen and (min-width: 830px) {
   .full-nav {
     display: flex;
@@ -3943,7 +3461,6 @@ nav.contact {
 .compact-nav {
   display: flex;
 }
-
 @media screen and (min-width: 830px) {
   .compact-nav {
     display: none;
@@ -3958,12 +3475,10 @@ nav.compact-menu {
   color: white;
   padding-left: 20px;
 }
-
 nav.compact-menu a {
   display: block;
   color: white;
 }
-
 @media screen and (min-width: 830px) {
   nav.compact-menu {
     display: none;
@@ -3975,7 +3490,6 @@ nav.compact-menu.closed {
   position: fixed;
   height: 0vh;
 }
-
 @media screen and (min-width: 830px) {
   nav.compact-menu.closed {
     display: none;
@@ -3986,7 +3500,6 @@ nav.compact-menu.open {
   position: fixed;
   height: 1000vh;
 }
-
 @media screen and (min-width: 830px) {
   nav.compact-menu.open {
     display: none;
@@ -4010,14 +3523,12 @@ h2.compact-menu__title {
   letter-spacing: -0.01em;
   font-weight: bold;
 }
-
 @media screen and (min-width: 420px) {
   .compact-menu__link,
 h2.compact-menu__title {
     font-size: 25px;
   }
 }
-
 @media screen and (min-width: 650px) {
   .compact-menu__link,
 h2.compact-menu__title {
@@ -4029,13 +3540,11 @@ h2.compact-menu__title {
   color: rgba(255, 255, 255, 0.5);
   padding-top: 4px;
 }
-
 @media screen and (min-width: 420px) {
   h2.compact-menu__title {
     padding-top: 9px;
   }
 }
-
 @media screen and (min-width: 650px) {
   h2.compact-menu__title {
     padding-top: 8px;
