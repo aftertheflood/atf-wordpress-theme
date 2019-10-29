@@ -1,7 +1,15 @@
 <!-- partials/html-head -->
 <?php 
 wp_enqueue_style( 'style', get_stylesheet_uri() ); 
-global $pageTag
+global $pageTag;
+if(is_single()){
+	if ( in_category( 'client' ) ){
+		$pageTag = 'clients';
+	}else{
+		$pageTag = 'journal';
+	}
+}
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
