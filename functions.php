@@ -28,11 +28,11 @@ function get_excluding_category_post_range($category_ids, $start, $count) {
   return $posts;
 }
 
-function get_child_category($postID, $targetParent){
+function get_child_category($postID, $targetParent, $before=""){
   foreach(wp_get_post_categories( $postID ) as $cat) {
     $parents = explode ( "/" , get_category_parents($cat));
     if($parents[0] == $targetParent && $parents[1]){
-      echo $parents[1];
+      echo $before.$parents[1];
     }
   }
   return '';

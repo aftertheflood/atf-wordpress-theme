@@ -32,7 +32,7 @@
 							<div class="the-date"><?php the_time( 'j M Y' ); ?></div>
 						<?php } else { ?>
 							<div class="the-sector"><?php get_child_category($post->ID, "Sector"); ?></div>
-							<div class="the-client">For <?php get_child_category($post->ID, "Client"); ?></div>
+							<div class="the-client"><?php get_child_category($post->ID, "Client", "For "); ?></div>
 						<?php } ?>
 							<div class="the-tags">
 						<?php echo get_the_tag_list( '<ul><li>','</li><li>','</li></ul>'); ?> 								
