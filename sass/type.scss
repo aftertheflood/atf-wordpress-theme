@@ -24,6 +24,7 @@ html {
     @include break(huge)   { font-size: 21px; line-height: 32px; }
 }
 
+
 @mixin type-small {
     font-family: Tiempos, Georgia, serif;
     font-size: 15px;
