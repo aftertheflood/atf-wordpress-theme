@@ -255,6 +255,15 @@ The home (and clients) PROMO zone
   @include break(small)  { border-top: 1px solid #ddd; }
   @include break(medium) { border-top: none; margin-bottom: 90px; }
   @include break(large)  { margin-bottom: 120px; }
+
+  // this is for promo-double modules that don't have a button or logo, or both
+  // it only works on screen-medium and up,
+  // because below that size you still need that margin.
+  .no-bottom-margin {
+    @include break(medium) {
+      margin-bottom: 0 !important;
+    }
+  }
 }
 
 .client-promo-double__left, 
@@ -273,6 +282,8 @@ The home (and clients) PROMO zone
   @include break(small)  { padding-top: 40px; border-top: none; }
   @include break(medium) { padding-bottom: 40px; }
 }
+
+
 
 
 
@@ -325,8 +336,6 @@ The home (and clients) PROMO zone
   }
 }
 
-
-
 .client-promo-double__left {
   @include break(small) {
     grid-column: 1 / span 7;
@@ -342,8 +351,10 @@ The home (and clients) PROMO zone
     }
   }
   @include break(medium) {
+    .promo-double__text  { grid-column: 4 / span 4; }
     .promo-double__image { 
-      grid-column: 1 / span 2; 
+      grid-column: 1 / span 3; 
+      padding-right: 20px;
       img {
         margin-left: -60px; 
         left: -60px; 
@@ -358,7 +369,8 @@ The home (and clients) PROMO zone
   @include break(huge) {
     grid-column: 1 / span 8;
     grid-template-columns: 0px repeat(7, 1fr);
-    .promo-double__text  { grid-column: 4 / span 4; }
+    .promo-double__text  { grid-column: 5 / span 4; }
+    .promo-double__image { grid-column: 1 / span 4; }
   }
   @include break(mega) {
     grid-column: 1 / span 9;
@@ -381,7 +393,11 @@ The home (and clients) PROMO zone
     }
   }
   @include break(medium) {
-    .promo-double__image { grid-column: 6 / span 2; }
+    .promo-double__text  { grid-column: 1 / span 4; }
+    .promo-double__image { 
+      grid-column: 5 / span 3; 
+      padding-left: 20px;
+    }
   }
   @include break(large) {
     .promo-double__text { 
@@ -393,8 +409,8 @@ The home (and clients) PROMO zone
   @include break(huge) {
     grid-column: 9 / span 8;
     grid-template-columns: repeat(7, 1fr) 0px;
-    .promo-double__text  { grid-column: 2 / span 4; }
-    .promo-double__image { grid-column: 6 / span 3; }
+    .promo-double__text  { grid-column: 1 / span 4; }
+    .promo-double__image { grid-column: 5 / span 4; }
   }
   @include break(mega) {
     grid-column: 10 / span 9;
@@ -572,13 +588,10 @@ The home (and clients) PROMO zone
 } // end text block
 
 
+/* overrides for the promo-double type */
 .promo-double__text {
-  .title { 
-    @include type-heading-small;
-  }
-  .excerpt {
-    @include type-small;
-  }
+  .title   { @include type-heading-small; }
+  .excerpt { @include type-small; }
 }
 
 
@@ -637,6 +650,13 @@ The home (and clients) PROMO zone
     }
   }
 }
+
+
+
+
+
+
+
 
 
 
@@ -711,6 +731,80 @@ The home (and clients) PROMO zone
     height: 360px
   }
 }
+
+
+
+
+
+
+
+/* ---------- promo alternate with a full-bleed image background ---------- */
+
+/*
+NOTE: i've kept the left/right styles 
+as this lets us put the blurb on the side we choose for it
+/when at larger browser sizes
+(it also lets us reuse the grid etc styles)
+*/
+
+.client-promo__left, 
+.client-promo__right {
+
+  &.image-background {
+    @include break(small) {
+      padding-bottom: 0;
+    }
+
+    .promo__text { 
+      color: white; 
+      z-index: 2;
+      grid-row: 1 / 1;
+      .sector, .title, .excerpt { text-shadow: 0 0 10px rgba(0,0,0,0.5); }
+      @include break(medium) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    }
+
+    .promo__image {
+      grid-area: unset;
+      grid-column: 1 / span 14;
+      grid-row: 1 / 1;
+      display: inline-block;
+      position: relative;
+      z-index: 0;
+      min-height: 100%;
+      min-width: 100%;
+      overflow: hidden;
+      margin: 0;
+      top: 0;
+      bottom: 0;
+      @include break(huge) { grid-column: 1 / span 16; }
+      @include break(mega) { grid-column: 1 / span 18; }
+  
+      img {
+        position: absolute;
+        object-fit: cover !important;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        margin-left: -50%;
+      }
+    }
+
+    img.logo {
+      -webkit-filter: drop-shadow(0 0 10px rgba(0,0,0,1));
+      filter: drop-shadow(0 0 10px rgba(0,0,0,1));
+    }
+
+  }
+}
+
+
+
+
+
+
 
 
 
