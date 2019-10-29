@@ -21,14 +21,14 @@ the article HEADING
     @include break(mega) { grid-column: 4 / span 8; }
   }
     h1 {
-    @include type-heading-small;
+    @include type-heading-medium;
     @include spaced-caps;
     @include type-serif;
     font-weight: 400;
     margin: 0;
   }
   .journal-splash__subtitle {
-    @include type-heading-small;
+    @include type-heading-medium;
     margin: -3px 0 0 0;
     @include break(medium) {margin: -1px 0 1px 0;}
     @include break(large) {margin-bottom: 0}
@@ -89,7 +89,7 @@ the article BODY
   }
 
   h2 {
-    @include type-heading-small;
+    @include type-heading-medium;
     @include type-serif;
     font-weight: 600;
     margin: 120px 0 24px 0;
@@ -222,7 +222,7 @@ the article METADATA
       margin-bottom: -4px;
     }
     h5 {
-      @include type-heading-small;
+      @include type-heading-medium;
       @include type-sans;
       font-weight: bold;
       text-transform: none;

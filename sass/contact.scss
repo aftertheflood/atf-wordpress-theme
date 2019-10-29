@@ -80,7 +80,7 @@ textarea {
   border: 0px;
   margin-top: 7px;
   background-color: $light-grey;
-  @include type-heading-small;
+  @include type-heading-medium;
   @include type-serif;
   letter-spacing: 0em;
   border: 8px solid $light-grey;

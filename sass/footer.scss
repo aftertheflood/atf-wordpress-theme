@@ -39,7 +39,7 @@
 	}
 	h2 {
 		grid-area: heading;
-		@include type-heading-small;
+		@include type-heading-medium;
 		font-family: Tiempos, serif;
 		font-weight: 400;
 		margin-top: 0;

@@ -67,7 +67,7 @@ html {
 }
 
 // Standard headings for the promo modules, etc.
-@mixin type-heading-small {
+@mixin type-heading-medium {
     font-size: 22px;
     line-height: 118%;
     letter-spacing: -0.01em;
@@ -78,6 +78,19 @@ html {
     @include break(huge)   { font-size: 36px; }
     @include break(mega)   { font-size: 38px; }
 }
+
+@mixin type-heading-small {
+    font-size: 18px;
+    line-height: 118%;
+    letter-spacing: -0.01em;
+    @include break(tiny)   { font-size: 20px; }
+    @include break(small)  { font-size: 22px; }
+    @include break(medium) { font-size: 24px; }
+    @include break(large)  { font-size: 25px; }
+    @include break(huge)   { font-size: 26px; }
+    @include break(mega)   { font-size: 27px; }
+}
+
 
 @mixin spaced-caps {
     text-transform: uppercase;

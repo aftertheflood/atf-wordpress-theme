@@ -40,7 +40,7 @@
 		margin: 0 0 19px;
 	}
 	p {
-		@include type-heading-small;
+		@include type-heading-medium;
 		@include type-serif;
     line-height: 125%;
 		margin: 0 0 24px;
@@ -83,7 +83,7 @@
 		@include break(large)  { grid-column: 3 / span 3; }
 		@include break(mega)	 { grid-column: 4 / span 3; }
 		h2 {
-			@include type-heading-small;
+			@include type-heading-medium;
 			@include type-serif;
 			margin: -5px 0 22px 0;
 		}
