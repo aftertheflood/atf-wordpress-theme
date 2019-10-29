@@ -3716,7 +3716,7 @@ the article BODY
 }
 @media screen and (min-width: 1120px) {
   .article-body .article__date {
-    margin-bottom: -22px;
+    margin-bottom: -7px;
   }
 }
 .article-body .article__content {
@@ -3732,7 +3732,7 @@ the article BODY
 @media screen and (min-width: 1120px) {
   .article-body .article__content {
     padding-top: 0px;
-    margin-top: -7px;
+    margin-top: 0px;
   }
 }
 .article-body .the-metadata ul {
