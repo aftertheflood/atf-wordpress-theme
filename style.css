@@ -1767,7 +1767,6 @@ The home (and clients) PROMO zone
   height: 280px;
   text-align: center;
   position: relative;
-  /* ---------- Helper classes for modifying images on small screens ---------- */
 }
 
 @media screen and (min-width: 420px) {
@@ -1815,78 +1814,6 @@ The home (and clients) PROMO zone
   }
 }
 
-@media screen and (max-width: 419px) {
-  .promo__image.mobile__margin-left {
-    grid-column: 2 / span 14;
-  }
-  .promo__image.mobile__margin-left img {
-    width: calc(100% + 40px);
-    left: 0;
-    margin-left: 0;
-  }
-  .promo__image.mobile__margin-right {
-    grid-column: 1 / span 13;
-  }
-  .promo__image.mobile__margin-right img {
-    width: calc(100% + 40px);
-    left: -20px;
-    margin-left: -20px;
-    right: 40px;
-  }
-  .promo__image.mobile__shorter {
-    max-height: 220px;
-    height: 220px;
-  }
-}
-
-@media screen and (min-width: 420px) and (max-width: 649px) {
-  .promo__image.mobile__margin-left {
-    grid-column: 3 / span 12;
-  }
-  .promo__image.mobile__margin-left img {
-    width: calc(100% + 60px);
-    left: 0;
-    margin-left: 0;
-  }
-  .promo__image.mobile__margin-right {
-    grid-column: 1 / span 12;
-  }
-  .promo__image.mobile__margin-right img {
-    width: calc(100% + 60px);
-    left: -30px;
-    margin-left: -30px;
-    right: 60px;
-  }
-  .promo__image.mobile__shorter {
-    max-height: 280px;
-    height: 280px;
-  }
-}
-
-@media screen and (min-width: 650px) and (max-width: 829px) {
-  .promo__image.mobile__margin-left {
-    grid-column: 3 / span 12;
-  }
-  .promo__image.mobile__margin-left img {
-    width: calc(100% + 120px);
-    left: 0;
-    margin-left: 0;
-  }
-  .promo__image.mobile__margin-right {
-    grid-column: 1 / span 12;
-  }
-  .promo__image.mobile__margin-right img {
-    width: calc(100% + 120px);
-    left: -60px;
-    margin-left: -60px;
-    right: 1200px;
-  }
-  .promo__image.mobile__shorter {
-    max-height: 360px;
-    height: 360px;
-  }
-}
-
 @media screen and (min-width: 830px) {
   .client-promo__right .promo__image img {
     position: relative;
@@ -1896,6 +1823,79 @@ The home (and clients) PROMO zone
   .client-promo__right .promo__image img.desktop__extra-width {
     right: 360px;
     left: -360px;
+  }
+}
+
+/* ---------- Helper classes for modifying images on small screens ---------- */
+@media screen and (max-width: 419px) {
+  .mobile__margin-left {
+    grid-column: 2 / span 14;
+  }
+  .mobile__margin-left img {
+    width: calc(100% + 40px);
+    left: 0;
+    margin-left: 0;
+  }
+  .mobile__margin-right {
+    grid-column: 1 / span 13;
+  }
+  .mobile__margin-right img {
+    width: calc(100% + 40px);
+    left: -20px;
+    margin-left: -20px;
+    right: 40px;
+  }
+  .mobile__shorter {
+    max-height: 220px;
+    height: 220px;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 649px) {
+  .mobile__margin-left {
+    grid-column: 3 / span 12;
+  }
+  .mobile__margin-left img {
+    width: calc(100% + 60px);
+    left: 0;
+    margin-left: 0;
+  }
+  .mobile__margin-right {
+    grid-column: 1 / span 12;
+  }
+  .mobile__margin-right img {
+    width: calc(100% + 60px);
+    left: -30px;
+    margin-left: -30px;
+    right: 60px;
+  }
+  .mobile__shorter {
+    max-height: 280px;
+    height: 280px;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 829px) {
+  .mobile__margin-left {
+    grid-column: 3 / span 12;
+  }
+  .mobile__margin-left img {
+    width: calc(100% + 120px);
+    left: 0;
+    margin-left: 0;
+  }
+  .mobile__margin-right {
+    grid-column: 1 / span 12;
+  }
+  .mobile__margin-right img {
+    width: calc(100% + 120px);
+    left: -60px;
+    margin-left: -60px;
+    right: 1200px;
+  }
+  .mobile__shorter {
+    max-height: 360px;
+    height: 360px;
   }
 }
 

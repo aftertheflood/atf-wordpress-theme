@@ -615,82 +615,6 @@ The home (and clients) PROMO zone
       &.desktop__extra-width { width: calc(100% + 360px); }
     }
   }
-
-/* ---------- Helper classes for modifying images on small screens ---------- */
-// these are setup in a non-standard way because I don't know how to say "after size X, ignore these rules.
-
-  @media screen and (max-width: $screen-tiny - 1) {
-    &.mobile__margin-left {
-      grid-column: 2 / span 14;
-      img {
-        width: calc(100% + 40px);
-        left: 0;
-        margin-left: 0;
-      }
-    }
-    &.mobile__margin-right {
-      grid-column: 1 / span 13;
-      img {
-        width: calc(100% + 40px);
-        left: -20px;
-        margin-left: -20px;
-        right: 40px;
-      }
-    }
-    &.mobile__shorter {
-      max-height: 220px;
-      height: 220px
-    }
-  }
-  @media screen and (min-width: $screen-tiny) and (max-width: $screen-small - 1) {
-    &.mobile__margin-left {
-      grid-column: 3 / span 12;
-      img {
-        width: calc(100% + 60px);
-        left: 0;
-        margin-left: 0;
-      }
-    }
-    &.mobile__margin-right {
-      grid-column: 1 / span 12;
-      img {
-        width: calc(100% + 60px);
-        left: -30px;
-        margin-left: -30px;
-        right: 60px;
-      }
-    }
-    &.mobile__shorter {
-      max-height: 280px;
-      height: 280px
-    }
-  }
-  @media screen and (min-width: $screen-small) and (max-width: $screen-medium - 1) {
-    &.mobile__margin-left {
-      grid-column: 3 / span 12;
-      img {
-        width: calc(100% + 120px);
-        left: 0;
-        margin-left: 0;
-      }
-    }
-    &.mobile__margin-right {
-      grid-column: 1 / span 12;
-      img {
-        width: calc(100% + 120px);
-        left: -60px;
-        margin-left: -60px;
-        right: 1200px;
-      }
-    }
-    &.mobile__shorter {
-      max-height: 360px;
-      height: 360px
-    }
-  }
-
-
-
 }
 
 .client-promo__right .promo__image img {
@@ -707,6 +631,77 @@ The home (and clients) PROMO zone
 
 
 
+/* ---------- Helper classes for modifying images on small screens ---------- */
+// these are setup in a non-standard way because I don't know how to say "after size X, ignore these rules.
+@media screen and (max-width: $screen-tiny - 1) {
+  &.mobile__margin-left {
+    grid-column: 2 / span 14;
+    img {
+      width: calc(100% + 40px);
+      left: 0;
+      margin-left: 0;
+    }
+  }
+  &.mobile__margin-right {
+    grid-column: 1 / span 13;
+    img {
+      width: calc(100% + 40px);
+      left: -20px;
+      margin-left: -20px;
+      right: 40px;
+    }
+  }
+  &.mobile__shorter {
+    max-height: 220px;
+    height: 220px
+  }
+}
+@media screen and (min-width: $screen-tiny) and (max-width: $screen-small - 1) {
+  .mobile__margin-left {
+    grid-column: 3 / span 12;
+    img {
+      width: calc(100% + 60px);
+      left: 0;
+      margin-left: 0;
+    }
+  }
+  .mobile__margin-right {
+    grid-column: 1 / span 12;
+    img {
+      width: calc(100% + 60px);
+      left: -30px;
+      margin-left: -30px;
+      right: 60px;
+    }
+  }
+  &.mobile__shorter {
+    max-height: 280px;
+    height: 280px
+  }
+}
+@media screen and (min-width: $screen-small) and (max-width: $screen-medium - 1) {
+  .mobile__margin-left {
+    grid-column: 3 / span 12;
+    img {
+      width: calc(100% + 120px);
+      left: 0;
+      margin-left: 0;
+    }
+  }
+  .mobile__margin-right {
+    grid-column: 1 / span 12;
+    img {
+      width: calc(100% + 120px);
+      left: -60px;
+      margin-left: -60px;
+      right: 1200px;
+    }
+  }
+  .mobile__shorter {
+    max-height: 360px;
+    height: 360px
+  }
+}
 
 
 
