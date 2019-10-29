@@ -663,7 +663,7 @@ The home (and clients) PROMO zone
 /* ---------- Helper classes for modifying images on small screens ---------- */
 // these are setup in a non-standard way because I don't know how to say "after size X, ignore these rules.
 @media screen and (max-width: $screen-tiny - 1) {
-  &.mobile__margin-left {
+  .mobile__margin-left {
     grid-column: 2 / span 14;
     img {
       width: calc(100% + 40px);
@@ -671,7 +671,7 @@ The home (and clients) PROMO zone
       margin-left: 0;
     }
   }
-  &.mobile__margin-right {
+  .mobile__margin-right {
     grid-column: 1 / span 13;
     img {
       width: calc(100% + 40px);

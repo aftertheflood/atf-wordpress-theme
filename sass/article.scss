@@ -137,7 +137,7 @@ the article BODY
 
   .article__date {
     @include type-label;
-    @include break(large) { margin-bottom: -22px; }
+    @include break(large) { margin-bottom: -7px; }
   }
 
   .article__content {
@@ -149,7 +149,7 @@ the article BODY
     }
     @include break(large) {
       padding-top: 0px;
-      margin-top: -7px;
+      margin-top: 0px;
     }
   }
 

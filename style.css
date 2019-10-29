@@ -4214,7 +4214,7 @@ the article METADATA
 
 @media screen and (min-width: 1120px) {
   .article-body .article__date {
-    margin-bottom: -22px;
+    margin-bottom: -7px;
   }
 }
 
@@ -4233,7 +4233,7 @@ the article METADATA
 @media screen and (min-width: 1120px) {
   .article-body .article__content {
     padding-top: 0px;
-    margin-top: -7px;
+    margin-top: 0px;
   }
 }
 
