@@ -31,8 +31,8 @@
 						<?php if ($pageTag != "clients") { ?>
 							<div class="the-date"><?php the_time( 'j M Y' ); ?></div>
 						<?php } else { ?>
-							<div class="the-sector"><?php echo get_post_meta($post->ID, 'client-sector', true) ?></div>
-							<div class="the-client">For <?php echo get_post_meta($post->ID, 'client', true) ?></div>
+							<div class="the-sector"><?php get_child_category($post->ID, "Sector"); ?></div>
+							<div class="the-client">For <?php get_child_category($post->ID, "Client"); ?></div>
 						<?php } ?>
 							<div class="the-tags">
 						<?php echo get_the_tag_list( '<ul><li>','</li><li>','</li></ul>'); ?> 								
