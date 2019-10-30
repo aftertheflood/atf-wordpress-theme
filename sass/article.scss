@@ -37,10 +37,8 @@ the article HEADING
 
 .article-head.image{ /* style for when the article head has a promo-image defined */
   background-repeat: no-repeat;
-  background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
-
 }
 
 .article-head.no-image{ /* no promo image */
@@ -92,7 +90,8 @@ the article BODY
     @include type-heading-medium;
     @include type-serif;
     font-weight: 600;
-    margin: 120px 0 24px 0;
+    margin: 90px 0 24px 0;
+    @include break(large) { margin-top: 120px; }
   }
 
   h3 {
@@ -157,25 +156,28 @@ the article BODY
 the article METADATA
 =================================================================================== */
 
-  .the-metadata{
-    ul{
+  .the-metadata {
+    ul {
       list-style: none;
       padding: 0px;
       margin: 0px;
       margin-top: 20px;
     }
 
-    li{
+    li {
       text-indent: 0px;
     }
 
-    li::before{
+    li::before {
       content: "";
     }
 
-    a{
+    a {
       text-decoration: none;
       border-bottom: none;
+      &:hover {
+        color: rgba(0,0,0,0.6);
+      }
     }
   }
 

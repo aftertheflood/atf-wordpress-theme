@@ -1,0 +1,330 @@
+.clients {
+// this will mainly be used for the case-study pages, btw
+
+
+	.article-head {
+		height: 48vh;
+		@include break(medium) { height: 75vh; }
+		.article-title {
+			align-self: start;
+			margin-top: 18px;
+			@include break(tiny)  { margin-top: 45px; }
+			@include break(small) { margin-top: 90px; }
+			@include break(medium) { grid-column: 3 / span 8;	} // the blog post headers align differently so that they match the content
+			@include break(large) { margin-top: 114px; }
+			h1 {
+				@include type-heading-big;
+				@include type-sans;
+				font-weight: 800;
+				color: white;
+				text-transform: none;
+				text-shadow: 0 0 20px rgba(0,0,0,0.5);
+			}
+		}
+	}
+
+	
+
+	.article-body {
+		padding-top: 15px;
+		@include break(large)  { padding-top: 90px; }
+		h2 { letter-spacing: -0.02em; }
+		h2:first-of-type { 
+			@include break(large) { margin-top: 0; }
+		}
+		p:last-of-type { margin-bottom: 0; }
+
+		.the-metadata {
+			grid-column: 2 / span 12;
+			@include break(large)  { grid-column: 3 / span 2; }
+			@include break(mega)   { grid-column: 4 / span 2; }
+
+			ul {
+				list-style: none;
+				padding: 13px 0 15px 0;
+				margin: 0px;
+				margin-top: 0;
+			}
+		
+			li {
+				text-indent: 0px;
+				display: inline;
+				text-transform: capitalize;
+				@include break(large) { 
+					display: block; 
+					text-transform: none;
+					padding-bottom: 2px;
+				}
+			}
+		
+			li::before { content: ""; }
+			li::after { 
+				content: ", ";
+				@include break(large) { content: none; }
+			}
+			li:last-of-type::after { content: none; }
+		
+			a {
+				text-decoration: none;
+				border-bottom: none;
+				&:hover { color: rgba(0,0,0,0.6); }
+			}
+		
+			.the-sector, .the-client {
+				display: inline-block;
+				@include break(large) { 
+					display: block;
+					padding-bottom: 2px; 
+				}
+			}
+			.the-client::before {
+				content: ", ";
+				margin-left: -3px;
+				@include break(large) { 
+					content: none; 
+					margin-left: 0;
+				}
+			}
+			.the-tags { 
+				display: block; 
+				border-top: 1px solid #ddd;
+				border-bottom: 1px solid #ddd;
+				margin-top: 15px; 
+				@include break(large) { 
+					border: none; 
+					margin-top: 5px;
+				}
+			}
+			.change-cap {
+				text-transform: lowercase;
+				@include break(large) { text-transform: none; }
+			}		
+		}
+
+
+
+	}
+
+	figure {
+
+		// various figure styles 
+		// *** does not include blocks with text next to the image
+
+		&.image__full-width {
+			grid-column: 1 / span 14;
+			margin-top: 0;
+			margin-bottom: 0;
+			display: grid;
+			grid-template-columns: 0px repeat(12, 1fr) 0px;
+			column-gap: $column-gap;
+			@include break(huge) { 
+				grid-column: 1 / span 16;
+				grid-template-columns: 0px repeat(14, 1fr) 0px; 
+			}
+			@include break(mega) { 
+				grid-column: 1 / span 18;
+				grid-template-columns: 0px repeat(16, 1fr) 0px; 
+			}
+			img {
+				grid-column: 1 / span 14;
+				@include break(huge) { grid-column: 1 / span 16; }
+				@include break(mega) { grid-column: 1 / span 18; }
+			}
+			figcaption {
+				grid-column: 2 / span 10;
+				margin-bottom: 0;
+				@include break(tiny)   { grid-column: 3 / span 10; }
+				@include break(small)  { grid-column: 3 / span 8; }
+				@include break(medium) { grid-column: 4 / span 6; }
+				@include break(large)  { grid-column: 5 / span 5; }
+				@include break(huge)   { grid-column: 6 / span 5; }
+				@include break(mega)   { grid-column: 7 / span 5; }
+			}
+		}
+
+		&.image__wide-with-margins {
+			grid-column: 1 / span 14;
+			margin-top: 0;
+			margin-bottom: 0;
+			display: grid;
+			grid-template-columns: 0px repeat(12, 1fr) 0px;
+			column-gap: $column-gap;
+			@include break(huge) { 
+				grid-column: 1 / span 16;
+				grid-template-columns: 0px repeat(14, 1fr) 0px; 
+			}
+			@include break(mega) { 
+				grid-column: 1 / span 18;
+				grid-template-columns: 0px repeat(16, 1fr) 0px; 
+			}
+			img {
+				grid-column: 3 / span 10;
+				@include break(huge) { grid-column: 3 / span 12; }
+				@include break(mega) { grid-column: 4 / span 12; }
+			}
+			figcaption {
+				grid-column: 2 / span 10;
+				margin-bottom: 0;
+				@include break(tiny)   { grid-column: 3 / span 10; }
+				@include break(small)  { grid-column: 3 / span 8; }
+				@include break(medium) { grid-column: 4 / span 6; }
+				@include break(large)  { grid-column: 5 / span 5; }
+				@include break(huge)   { grid-column: 6 / span 5; }
+				@include break(mega)   { grid-column: 7 / span 5; }
+			}
+		}
+
+		&.image__wide-right {
+			margin-bottom: 90px;
+			@include break(medium) { grid-column: 4 / span 8; }
+			@include break(large)  { grid-column: 5 / span 8; margin-bottom: 120px; }
+			@include break(huge)   { grid-column: 6 / span 9; }
+			@include break(mega)   { grid-column: 7 / span 9; }
+		}
+
+		// Spacing modifiers
+
+		&.image__last__no-bottom-margin {
+			margin-bottom: -70px;
+			@include break(medium) { margin-bottom: -90px; }
+		}
+
+		&.image__top-margin__after-p {
+			margin-top: 90px;
+			// @include break(small)  { margin-top: 70px; }
+			// @include break(medium) { margin-top: 90px; }
+			@include break(large)  { margin-top: 120px; }
+		}
+	}
+
+	// this is necessary because ... well I actually don't know, but it is.
+	// I assume that somewhere something is screwing things up.
+	.client-case-study {
+		display: grid;
+		grid-column: 1 / span 14;
+		@include break(huge) { grid-column: 1 / span 16; }
+		@include break(mega) { grid-column: 1 / span 18; }
+		.promo__image img {
+			width: 120%;
+			@include break(medium) {
+				width: calc(100% + 180px);
+				&.desktop__extra-width { width: calc(100% + 360px); }
+			}
+		}
+	}
+
+	// changes to the spacing and other details
+	.client-promo__right, 
+	.client-promo__left {
+		border-top: none;
+		margin-bottom: 90px;
+		@include break(large) { margin-bottom: 120px; }
+ 		.promo__text {
+			padding-top: 16px;
+			@include break(tiny)   { padding-top: 28px; }
+			@include break(medium) { padding-top: 0; }
+		}
+		.promo__image {
+			max-height: 100%;
+			height: 100%;
+			img {
+				position: relative;
+				left: 0;
+				margin-left: -10%;
+				@include break(medium) {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+	// it seems totally ridiculous to repeat this, but here we are.
+	.client-promo__right .promo__image img {
+		@include break(medium) {
+			position: relative;
+			right: 180px;
+			left: -180px;
+			&.desktop__extra-width {
+				right: 360px;
+				left: -360px;
+			}
+		}
+	}
+
+	.client-promo__left.image__full-view, 
+	.client-promo__right.image__full-view {
+		.promo__image {
+			max-height: 100%;
+			height: 100%;
+			img {
+				width: 100%;  // to prevent the image from being wider than its container
+				position: relative;
+				left: 0;
+				margin-left: 0;
+			}
+		}
+	}
+
+	// revised grid settings for when we want the image to not bleed off the edge
+
+	.client-promo__left.image__full-view {  
+		grid-template-areas:
+				". image image image image image image image image image image image image ." 
+				". text text text text text text text text text text text text .";
+		@include break(tiny)  {
+			grid-template-areas: 
+				". . image image image image image image image image image image . ." 
+				". . text text text text text text text text text text . .";
+		}  
+		@include break(medium) { grid-template-areas: ". . text text text text text image image image image image . ."; }
+		@include break(large)  { grid-template-areas: ". . text text text text . image image image image image . ."; }
+		@include break(huge)   { grid-template-areas: ". . text text text text . image image image image image image image . ."; }
+		@include break(mega)   { grid-template-areas: ". . . text text text text text . . image image image image image . . ."; }
+		&.text-first {
+			grid-template-areas:
+				". text text text text text text text text text text text text ."
+				". image image image image image image image image image image image image ."; 
+			@include break(tiny) {
+				grid-template-areas: 
+					". . text text text text text text text text text text . ."
+					". . image image image image image image image image image image . .";
+			}
+			@include break(medium) { grid-template-areas: ". . text text text text text image image image image image . ."; }
+			@include break(large)  { grid-template-areas: ". . text text text text . image image image image image . ."; }
+			@include break(huge)   { grid-template-areas: ". . text text text text . image image image image image image image . ."; }
+			@include break(mega)   { grid-template-areas: ". . . text text text text text . . image image image image image . . ."; }
+			// identical to the non-text-first version, as that only applies to small screens.
+		}
+	}
+
+	.client-promo__right.image__full-view {
+		grid-template-areas:
+			". image image image image image image image image image image image image ." 
+			". text text text text text text text text text text text text .";
+		@include break(tiny) {
+			grid-template-areas: 
+				". . image image image image image image image image image image . ." 
+				". . text text text text text text text text text text . .";
+		}  
+		@include break(medium) { grid-template-areas: ". . image image image image image text text text text text . .";}
+		@include break(large)  { grid-template-areas: ". . image image image image image . text text text text . .";}
+		@include break(huge)   { grid-template-areas: ". . image image image image image image image . text text text text . ."; }
+		@include break(mega)   { grid-template-areas: ". . . image image image image image . . text text text text text . . ."; }
+		&.text-first {
+			grid-template-areas:
+				". text text text text text text text text text text text text ."
+				". image image image image image image image image image image image image ."; 
+			@include break(tiny) {
+				grid-template-areas: 
+					". . text text text text text text text text text text . ."
+					". . image image image image image image image image image image . .";
+			}  
+			@include break(medium) { grid-template-areas: ". . image image image image image text text text text text . .";}
+			@include break(large)  { grid-template-areas: ". . image image image image image . text text text text . .";}
+			@include break(huge)   { grid-template-areas: ". . image image image image image image image . text text text text . ."; }
+			@include break(mega)   { grid-template-areas: ". . . image image image image image . . text text text text text . . ."; }
+			// identical to the non-text-first version, as that only applies to small screens.
+		}
+	}
+
+}
