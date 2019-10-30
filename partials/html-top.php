@@ -5,8 +5,10 @@ global $pageTag;
 if(is_single()){
 	if ( in_category( 'client' ) ){
 		$pageTag = 'clients';
+		$single = '-single';
 	}else{
 		$pageTag = 'journal';
+		$single = '';
 	}
 }
 
@@ -18,7 +20,7 @@ if(is_single()){
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 		<?php wp_head(); ?>
 	</head>
-	<body class="<?php echo $pageTag ?>">
+	<body class="<?php echo $pageTag.$single ?>">
 		<?php wp_body_open(); ?>
 		<div class="page-layout" id="page-top">
     <?php get_header(); ?>
