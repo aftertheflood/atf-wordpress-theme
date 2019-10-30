@@ -3043,46 +3043,46 @@ as this lets us put the blurb on the side we choose for it
   }
 }
 
-.clients .article-head {
+.clients-single .article-head {
   height: 48vh;
 }
 
 @media screen and (min-width: 830px) {
-  .clients .article-head {
+  .clients-single .article-head {
     height: 75vh;
   }
 }
 
-.clients .article-head .article-title {
+.clients-single .article-head .article-title {
   align-self: start;
   margin-top: 18px;
 }
 
 @media screen and (min-width: 420px) {
-  .clients .article-head .article-title {
+  .clients-single .article-head .article-title {
     margin-top: 45px;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .clients .article-head .article-title {
+  .clients-single .article-head .article-title {
     margin-top: 90px;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .clients .article-head .article-title {
+  .clients-single .article-head .article-title {
     grid-column: 3 / span 8;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .article-head .article-title {
+  .clients-single .article-head .article-title {
     margin-top: 114px;
   }
 }
 
-.clients .article-head .article-title h1 {
+.clients-single .article-head .article-title h1 {
   font-size: 32px;
   line-height: 38px;
   letter-spacing: -0.02em;
@@ -3094,172 +3094,172 @@ as this lets us put the blurb on the side we choose for it
 }
 
 @media screen and (min-width: 420px) {
-  .clients .article-head .article-title h1 {
+  .clients-single .article-head .article-title h1 {
     font-size: 38px;
     line-height: 47px;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .clients .article-head .article-title h1 {
+  .clients-single .article-head .article-title h1 {
     font-size: 46px;
     line-height: 52px;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .clients .article-head .article-title h1 {
+  .clients-single .article-head .article-title h1 {
     font-size: 52px;
     line-height: 60px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .article-head .article-title h1 {
+  .clients-single .article-head .article-title h1 {
     font-size: 56px;
     line-height: 65px;
   }
 }
 
 @media screen and (min-width: 1480px) {
-  .clients .article-head .article-title h1 {
+  .clients-single .article-head .article-title h1 {
     font-size: 60px;
     line-height: 67px;
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .clients .article-head .article-title h1 {
+  .clients-single .article-head .article-title h1 {
     font-size: 64px;
     line-height: 70px;
   }
 }
 
 @media screen and (min-width: mega) {
-  .clients .article-head .article-title h1 {
+  .clients-single .article-head .article-title h1 {
     font-size: 64px;
     line-height: 70px;
   }
 }
 
-.clients .article-body {
+.clients-single .article-body {
   padding-top: 15px;
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .article-body {
+  .clients-single .article-body {
     padding-top: 90px;
   }
 }
 
-.clients .article-body h2 {
+.clients-single .article-body h2 {
   letter-spacing: -0.02em;
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .article-body h2:first-of-type {
+  .clients-single .article-body h2:first-of-type {
     margin-top: 0;
   }
 }
 
-.clients .article-body p:last-of-type {
+.clients-single .article-body p:last-of-type {
   margin-bottom: 0;
 }
 
-.clients .article-body .the-metadata {
+.clients-single .article-body .the-metadata {
   grid-column: 2 / span 12;
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .article-body .the-metadata {
+  .clients-single .article-body .the-metadata {
     grid-column: 3 / span 2;
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .clients .article-body .the-metadata {
+  .clients-single .article-body .the-metadata {
     grid-column: 4 / span 2;
   }
 }
 
 @media screen and (min-width: mega) {
-  .clients .article-body .the-metadata {
+  .clients-single .article-body .the-metadata {
     grid-column: 4 / span 2;
   }
 }
 
-.clients .article-body .the-metadata ul {
+.clients-single .article-body .the-metadata ul {
   list-style: none;
   padding: 13px 0 15px 0;
   margin: 0px;
   margin-top: 0;
 }
 
-.clients .article-body .the-metadata li {
+.clients-single .article-body .the-metadata li {
   text-indent: 0px;
   display: inline;
   text-transform: capitalize;
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .article-body .the-metadata li {
+  .clients-single .article-body .the-metadata li {
     display: block;
     text-transform: none;
     padding-bottom: 2px;
   }
 }
 
-.clients .article-body .the-metadata li::before {
+.clients-single .article-body .the-metadata li::before {
   content: "";
 }
 
-.clients .article-body .the-metadata li::after {
+.clients-single .article-body .the-metadata li::after {
   content: ", ";
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .article-body .the-metadata li::after {
+  .clients-single .article-body .the-metadata li::after {
     content: none;
   }
 }
 
-.clients .article-body .the-metadata li:last-of-type::after {
+.clients-single .article-body .the-metadata li:last-of-type::after {
   content: none;
 }
 
-.clients .article-body .the-metadata a {
+.clients-single .article-body .the-metadata a {
   text-decoration: none;
   border-bottom: none;
 }
 
-.clients .article-body .the-metadata a:hover {
+.clients-single .article-body .the-metadata a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.clients .article-body .the-metadata .the-sector, .clients .article-body .the-metadata .the-client {
+.clients-single .article-body .the-metadata .the-sector, .clients-single .article-body .the-metadata .the-client {
   display: inline-block;
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .article-body .the-metadata .the-sector, .clients .article-body .the-metadata .the-client {
+  .clients-single .article-body .the-metadata .the-sector, .clients-single .article-body .the-metadata .the-client {
     display: block;
     padding-bottom: 2px;
   }
 }
 
-.clients .article-body .the-metadata .the-client::before {
+.clients-single .article-body .the-metadata .the-client::before {
   content: ", ";
   margin-left: -3px;
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .article-body .the-metadata .the-client::before {
+  .clients-single .article-body .the-metadata .the-client::before {
     content: none;
     margin-left: 0;
   }
 }
 
-.clients .article-body .the-metadata .the-tags {
+.clients-single .article-body .the-metadata .the-tags {
   display: block;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -3267,23 +3267,23 @@ as this lets us put the blurb on the side we choose for it
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .article-body .the-metadata .the-tags {
+  .clients-single .article-body .the-metadata .the-tags {
     border: none;
     margin-top: 5px;
   }
 }
 
-.clients .article-body .the-metadata .change-cap {
+.clients-single .article-body .the-metadata .change-cap {
   text-transform: lowercase;
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .article-body .the-metadata .change-cap {
+  .clients-single .article-body .the-metadata .change-cap {
     text-transform: none;
   }
 }
 
-.clients figure.image__full-width {
+.clients-single figure.image__full-width {
   grid-column: 1 / span 14;
   margin-top: 0;
   margin-bottom: 0;
@@ -3293,96 +3293,96 @@ as this lets us put the blurb on the side we choose for it
 }
 
 @media screen and (min-width: 1480px) {
-  .clients figure.image__full-width {
+  .clients-single figure.image__full-width {
     grid-column: 1 / span 16;
     grid-template-columns: 0px repeat(14, 1fr) 0px;
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .clients figure.image__full-width {
+  .clients-single figure.image__full-width {
     grid-column: 1 / span 18;
     grid-template-columns: 0px repeat(16, 1fr) 0px;
   }
 }
 
 @media screen and (min-width: mega) {
-  .clients figure.image__full-width {
+  .clients-single figure.image__full-width {
     grid-column: 1 / span 18;
     grid-template-columns: 0px repeat(16, 1fr) 0px;
   }
 }
 
-.clients figure.image__full-width img {
+.clients-single figure.image__full-width img {
   grid-column: 1 / span 14;
 }
 
 @media screen and (min-width: 1480px) {
-  .clients figure.image__full-width img {
+  .clients-single figure.image__full-width img {
     grid-column: 1 / span 16;
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .clients figure.image__full-width img {
+  .clients-single figure.image__full-width img {
     grid-column: 1 / span 18;
   }
 }
 
 @media screen and (min-width: mega) {
-  .clients figure.image__full-width img {
+  .clients-single figure.image__full-width img {
     grid-column: 1 / span 18;
   }
 }
 
-.clients figure.image__full-width figcaption {
+.clients-single figure.image__full-width figcaption {
   grid-column: 2 / span 10;
   margin-bottom: 0;
 }
 
 @media screen and (min-width: 420px) {
-  .clients figure.image__full-width figcaption {
+  .clients-single figure.image__full-width figcaption {
     grid-column: 3 / span 10;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .clients figure.image__full-width figcaption {
+  .clients-single figure.image__full-width figcaption {
     grid-column: 3 / span 8;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .clients figure.image__full-width figcaption {
+  .clients-single figure.image__full-width figcaption {
     grid-column: 4 / span 6;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .clients figure.image__full-width figcaption {
+  .clients-single figure.image__full-width figcaption {
     grid-column: 5 / span 5;
   }
 }
 
 @media screen and (min-width: 1480px) {
-  .clients figure.image__full-width figcaption {
+  .clients-single figure.image__full-width figcaption {
     grid-column: 6 / span 5;
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .clients figure.image__full-width figcaption {
+  .clients-single figure.image__full-width figcaption {
     grid-column: 7 / span 5;
   }
 }
 
 @media screen and (min-width: mega) {
-  .clients figure.image__full-width figcaption {
+  .clients-single figure.image__full-width figcaption {
     grid-column: 7 / span 5;
   }
 }
 
-.clients figure.image__wide-with-margins {
+.clients-single figure.image__wide-with-margins {
   grid-column: 1 / span 14;
   margin-top: 0;
   margin-bottom: 0;
@@ -3392,420 +3392,420 @@ as this lets us put the blurb on the side we choose for it
 }
 
 @media screen and (min-width: 1480px) {
-  .clients figure.image__wide-with-margins {
+  .clients-single figure.image__wide-with-margins {
     grid-column: 1 / span 16;
     grid-template-columns: 0px repeat(14, 1fr) 0px;
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .clients figure.image__wide-with-margins {
+  .clients-single figure.image__wide-with-margins {
     grid-column: 1 / span 18;
     grid-template-columns: 0px repeat(16, 1fr) 0px;
   }
 }
 
 @media screen and (min-width: mega) {
-  .clients figure.image__wide-with-margins {
+  .clients-single figure.image__wide-with-margins {
     grid-column: 1 / span 18;
     grid-template-columns: 0px repeat(16, 1fr) 0px;
   }
 }
 
-.clients figure.image__wide-with-margins img {
+.clients-single figure.image__wide-with-margins img {
   grid-column: 3 / span 10;
 }
 
 @media screen and (min-width: 1480px) {
-  .clients figure.image__wide-with-margins img {
+  .clients-single figure.image__wide-with-margins img {
     grid-column: 3 / span 12;
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .clients figure.image__wide-with-margins img {
+  .clients-single figure.image__wide-with-margins img {
     grid-column: 4 / span 12;
   }
 }
 
 @media screen and (min-width: mega) {
-  .clients figure.image__wide-with-margins img {
+  .clients-single figure.image__wide-with-margins img {
     grid-column: 4 / span 12;
   }
 }
 
-.clients figure.image__wide-with-margins figcaption {
+.clients-single figure.image__wide-with-margins figcaption {
   grid-column: 2 / span 10;
   margin-bottom: 0;
 }
 
 @media screen and (min-width: 420px) {
-  .clients figure.image__wide-with-margins figcaption {
+  .clients-single figure.image__wide-with-margins figcaption {
     grid-column: 3 / span 10;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .clients figure.image__wide-with-margins figcaption {
+  .clients-single figure.image__wide-with-margins figcaption {
     grid-column: 3 / span 8;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .clients figure.image__wide-with-margins figcaption {
+  .clients-single figure.image__wide-with-margins figcaption {
     grid-column: 4 / span 6;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .clients figure.image__wide-with-margins figcaption {
+  .clients-single figure.image__wide-with-margins figcaption {
     grid-column: 5 / span 5;
   }
 }
 
 @media screen and (min-width: 1480px) {
-  .clients figure.image__wide-with-margins figcaption {
+  .clients-single figure.image__wide-with-margins figcaption {
     grid-column: 6 / span 5;
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .clients figure.image__wide-with-margins figcaption {
+  .clients-single figure.image__wide-with-margins figcaption {
     grid-column: 7 / span 5;
   }
 }
 
 @media screen and (min-width: mega) {
-  .clients figure.image__wide-with-margins figcaption {
+  .clients-single figure.image__wide-with-margins figcaption {
     grid-column: 7 / span 5;
   }
 }
 
-.clients figure.image__wide-right {
+.clients-single figure.image__wide-right {
   margin-bottom: 90px;
 }
 
 @media screen and (min-width: 830px) {
-  .clients figure.image__wide-right {
+  .clients-single figure.image__wide-right {
     grid-column: 4 / span 8;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .clients figure.image__wide-right {
+  .clients-single figure.image__wide-right {
     grid-column: 5 / span 8;
     margin-bottom: 120px;
   }
 }
 
 @media screen and (min-width: 1480px) {
-  .clients figure.image__wide-right {
+  .clients-single figure.image__wide-right {
     grid-column: 6 / span 9;
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .clients figure.image__wide-right {
+  .clients-single figure.image__wide-right {
     grid-column: 7 / span 9;
   }
 }
 
 @media screen and (min-width: mega) {
-  .clients figure.image__wide-right {
+  .clients-single figure.image__wide-right {
     grid-column: 7 / span 9;
   }
 }
 
-.clients figure.image__last__no-bottom-margin {
+.clients-single figure.image__last__no-bottom-margin {
   margin-bottom: -70px;
 }
 
 @media screen and (min-width: 830px) {
-  .clients figure.image__last__no-bottom-margin {
+  .clients-single figure.image__last__no-bottom-margin {
     margin-bottom: -90px;
   }
 }
 
-.clients figure.image__top-margin__after-p {
+.clients-single figure.image__top-margin__after-p {
   margin-top: 90px;
 }
 
 @media screen and (min-width: 1120px) {
-  .clients figure.image__top-margin__after-p {
+  .clients-single figure.image__top-margin__after-p {
     margin-top: 120px;
   }
 }
 
-.clients .client-case-study {
+.clients-single .client-case-study {
   display: grid;
   grid-column: 1 / span 14;
 }
 
 @media screen and (min-width: 1480px) {
-  .clients .client-case-study {
+  .clients-single .client-case-study {
     grid-column: 1 / span 16;
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .clients .client-case-study {
+  .clients-single .client-case-study {
     grid-column: 1 / span 18;
   }
 }
 
 @media screen and (min-width: mega) {
-  .clients .client-case-study {
+  .clients-single .client-case-study {
     grid-column: 1 / span 18;
   }
 }
 
-.clients .client-case-study .promo__image img {
+.clients-single .client-case-study .promo__image img {
   width: 120%;
 }
 
 @media screen and (min-width: 830px) {
-  .clients .client-case-study .promo__image img {
+  .clients-single .client-case-study .promo__image img {
     width: calc(100% + 180px);
   }
-  .clients .client-case-study .promo__image img.desktop__extra-width {
+  .clients-single .client-case-study .promo__image img.desktop__extra-width {
     width: calc(100% + 360px);
   }
 }
 
-.clients .client-promo__right,
-.clients .client-promo__left {
+.clients-single .client-promo__right,
+.clients-single .client-promo__left {
   border-top: none;
   margin-bottom: 90px;
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .client-promo__right,
-  .clients .client-promo__left {
+  .clients-single .client-promo__right,
+  .clients-single .client-promo__left {
     margin-bottom: 120px;
   }
 }
 
-.clients .client-promo__right .promo__text,
-.clients .client-promo__left .promo__text {
+.clients-single .client-promo__right .promo__text,
+.clients-single .client-promo__left .promo__text {
   padding-top: 16px;
 }
 
 @media screen and (min-width: 420px) {
-  .clients .client-promo__right .promo__text,
-  .clients .client-promo__left .promo__text {
+  .clients-single .client-promo__right .promo__text,
+  .clients-single .client-promo__left .promo__text {
     padding-top: 28px;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .clients .client-promo__right .promo__text,
-  .clients .client-promo__left .promo__text {
+  .clients-single .client-promo__right .promo__text,
+  .clients-single .client-promo__left .promo__text {
     padding-top: 0;
   }
 }
 
-.clients .client-promo__right .promo__image,
-.clients .client-promo__left .promo__image {
+.clients-single .client-promo__right .promo__image,
+.clients-single .client-promo__left .promo__image {
   max-height: 100%;
   height: 100%;
 }
 
-.clients .client-promo__right .promo__image img,
-.clients .client-promo__left .promo__image img {
+.clients-single .client-promo__right .promo__image img,
+.clients-single .client-promo__left .promo__image img {
   position: relative;
   left: 0;
   margin-left: -10%;
 }
 
 @media screen and (min-width: 830px) {
-  .clients .client-promo__right .promo__image img,
-  .clients .client-promo__left .promo__image img {
+  .clients-single .client-promo__right .promo__image img,
+  .clients-single .client-promo__left .promo__image img {
     margin-left: 0;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .clients .client-promo__right .promo__image img {
+  .clients-single .client-promo__right .promo__image img {
     position: relative;
     right: 180px;
     left: -180px;
   }
-  .clients .client-promo__right .promo__image img.desktop__extra-width {
+  .clients-single .client-promo__right .promo__image img.desktop__extra-width {
     right: 360px;
     left: -360px;
   }
 }
 
-.clients .client-promo__left.image__full-view .promo__image,
-.clients .client-promo__right.image__full-view .promo__image {
+.clients-single .client-promo__left.image__full-view .promo__image,
+.clients-single .client-promo__right.image__full-view .promo__image {
   max-height: 100%;
   height: 100%;
 }
 
-.clients .client-promo__left.image__full-view .promo__image img,
-.clients .client-promo__right.image__full-view .promo__image img {
+.clients-single .client-promo__left.image__full-view .promo__image img,
+.clients-single .client-promo__right.image__full-view .promo__image img {
   width: 100%;
   position: relative;
   left: 0;
   margin-left: 0;
 }
 
-.clients .client-promo__left.image__full-view {
+.clients-single .client-promo__left.image__full-view {
   grid-template-areas: ". image image image image image image image image image image image image ."  ". text text text text text text text text text text text text .";
 }
 
 @media screen and (min-width: 420px) {
-  .clients .client-promo__left.image__full-view {
+  .clients-single .client-promo__left.image__full-view {
     grid-template-areas: ". . image image image image image image image image image image . ."  ". . text text text text text text text text text text . .";
   }
 }
 
 @media screen and (min-width: 830px) {
-  .clients .client-promo__left.image__full-view {
+  .clients-single .client-promo__left.image__full-view {
     grid-template-areas: ". . text text text text text image image image image image . .";
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .client-promo__left.image__full-view {
+  .clients-single .client-promo__left.image__full-view {
     grid-template-areas: ". . text text text text . image image image image image . .";
   }
 }
 
 @media screen and (min-width: 1480px) {
-  .clients .client-promo__left.image__full-view {
+  .clients-single .client-promo__left.image__full-view {
     grid-template-areas: ". . text text text text . image image image image image image image . .";
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .clients .client-promo__left.image__full-view {
+  .clients-single .client-promo__left.image__full-view {
     grid-template-areas: ". . . text text text text text . . image image image image image . . .";
   }
 }
 
 @media screen and (min-width: mega) {
-  .clients .client-promo__left.image__full-view {
+  .clients-single .client-promo__left.image__full-view {
     grid-template-areas: ". . . text text text text text . . image image image image image . . .";
   }
 }
 
-.clients .client-promo__left.image__full-view.text-first {
+.clients-single .client-promo__left.image__full-view.text-first {
   grid-template-areas: ". text text text text text text text text text text text text ." ". image image image image image image image image image image image image .";
 }
 
 @media screen and (min-width: 420px) {
-  .clients .client-promo__left.image__full-view.text-first {
+  .clients-single .client-promo__left.image__full-view.text-first {
     grid-template-areas: ". . text text text text text text text text text text . ." ". . image image image image image image image image image image . .";
   }
 }
 
 @media screen and (min-width: 830px) {
-  .clients .client-promo__left.image__full-view.text-first {
+  .clients-single .client-promo__left.image__full-view.text-first {
     grid-template-areas: ". . text text text text text image image image image image . .";
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .client-promo__left.image__full-view.text-first {
+  .clients-single .client-promo__left.image__full-view.text-first {
     grid-template-areas: ". . text text text text . image image image image image . .";
   }
 }
 
 @media screen and (min-width: 1480px) {
-  .clients .client-promo__left.image__full-view.text-first {
+  .clients-single .client-promo__left.image__full-view.text-first {
     grid-template-areas: ". . text text text text . image image image image image image image . .";
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .clients .client-promo__left.image__full-view.text-first {
+  .clients-single .client-promo__left.image__full-view.text-first {
     grid-template-areas: ". . . text text text text text . . image image image image image . . .";
   }
 }
 
 @media screen and (min-width: mega) {
-  .clients .client-promo__left.image__full-view.text-first {
+  .clients-single .client-promo__left.image__full-view.text-first {
     grid-template-areas: ". . . text text text text text . . image image image image image . . .";
   }
 }
 
-.clients .client-promo__right.image__full-view {
+.clients-single .client-promo__right.image__full-view {
   grid-template-areas: ". image image image image image image image image image image image image ."  ". text text text text text text text text text text text text .";
 }
 
 @media screen and (min-width: 420px) {
-  .clients .client-promo__right.image__full-view {
+  .clients-single .client-promo__right.image__full-view {
     grid-template-areas: ". . image image image image image image image image image image . ."  ". . text text text text text text text text text text . .";
   }
 }
 
 @media screen and (min-width: 830px) {
-  .clients .client-promo__right.image__full-view {
+  .clients-single .client-promo__right.image__full-view {
     grid-template-areas: ". . image image image image image text text text text text . .";
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .client-promo__right.image__full-view {
+  .clients-single .client-promo__right.image__full-view {
     grid-template-areas: ". . image image image image image . text text text text . .";
   }
 }
 
 @media screen and (min-width: 1480px) {
-  .clients .client-promo__right.image__full-view {
+  .clients-single .client-promo__right.image__full-view {
     grid-template-areas: ". . image image image image image image image . text text text text . .";
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .clients .client-promo__right.image__full-view {
+  .clients-single .client-promo__right.image__full-view {
     grid-template-areas: ". . . image image image image image . . text text text text text . . .";
   }
 }
 
 @media screen and (min-width: mega) {
-  .clients .client-promo__right.image__full-view {
+  .clients-single .client-promo__right.image__full-view {
     grid-template-areas: ". . . image image image image image . . text text text text text . . .";
   }
 }
 
-.clients .client-promo__right.image__full-view.text-first {
+.clients-single .client-promo__right.image__full-view.text-first {
   grid-template-areas: ". text text text text text text text text text text text text ." ". image image image image image image image image image image image image .";
 }
 
 @media screen and (min-width: 420px) {
-  .clients .client-promo__right.image__full-view.text-first {
+  .clients-single .client-promo__right.image__full-view.text-first {
     grid-template-areas: ". . text text text text text text text text text text . ." ". . image image image image image image image image image image . .";
   }
 }
 
 @media screen and (min-width: 830px) {
-  .clients .client-promo__right.image__full-view.text-first {
+  .clients-single .client-promo__right.image__full-view.text-first {
     grid-template-areas: ". . image image image image image text text text text text . .";
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .clients .client-promo__right.image__full-view.text-first {
+  .clients-single .client-promo__right.image__full-view.text-first {
     grid-template-areas: ". . image image image image image . text text text text . .";
   }
 }
 
 @media screen and (min-width: 1480px) {
-  .clients .client-promo__right.image__full-view.text-first {
+  .clients-single .client-promo__right.image__full-view.text-first {
     grid-template-areas: ". . image image image image image image image . text text text text . .";
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .clients .client-promo__right.image__full-view.text-first {
+  .clients-single .client-promo__right.image__full-view.text-first {
     grid-template-areas: ". . . image image image image image . . text text text text text . . .";
   }
 }
 
 @media screen and (min-width: mega) {
-  .clients .client-promo__right.image__full-view.text-first {
+  .clients-single .client-promo__right.image__full-view.text-first {
     grid-template-areas: ". . . image image image image image . . text text text text text . . .";
   }
 }
