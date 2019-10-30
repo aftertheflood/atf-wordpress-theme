@@ -7,14 +7,6 @@
   global $post;
   $post_slug = $post->post_name;
   
-  if(is_single()){
-    if ( in_category( 'client' ) ){
-      $pageTag = 'clients';
-    }else{
-      $pageTag = 'journal';
-    }
-  }
-  
   function linkIsActive($str, $slug){
     if($str == $slug){
       return true;
