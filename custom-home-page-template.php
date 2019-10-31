@@ -61,7 +61,7 @@ $this_page_id = get_the_ID();
       </div>
     <?php endwhile; ?>
   </div>
-  <a class="onward-journey-link" href="/journal">All Journal Posts</a>
+  <a class="onward-journey-link" href="/journal">More blog posts</a>
 
 </div>
 
