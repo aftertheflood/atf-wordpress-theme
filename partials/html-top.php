@@ -26,9 +26,7 @@ if(is_single()){
 		<meta http-equiv="content-type" content="<?php bloginfo( 'html_type' ); ?>" charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 		<meta name="description" content="<?php echo $description; ?>" >
-		<meta name="keywords" content="<?php
-			echo "design, data, ".get_the_tag_list( '',',','');
-		?>">
+		<meta name="keywords" content="">
 		<meta property="og:locale" content="en_GB" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="<?php echo get_the_title()." - ".get_bloginfo('name'); ?>" />
