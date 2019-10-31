@@ -10,11 +10,16 @@
 			<?php if ( is_singular() ){ 
 				$headerType = 'no-image';
 				$articlePromoImage = get_post_meta($post->ID, 'promo-image', true);
-				if($articlePromoImage != ""){
+				if($articlePromoImage != "" && $pageTag != 'journal'){
 					$headerType = 'image';
 				}
 				?>
-				<div class="article-head atf-grid <?php echo $headerType ?>" style="background-image:url(<?php echo $articlePromoImage ?>)">
+				<div 
+					class="article-head atf-grid <?php echo $headerType ?>" 
+					style="<?php
+					if($headerType == 'image'){
+						echo 'background-image:url('.$articlePromoImage.')';
+					}?>">
 					<div class="article-title">
 						<h1><?php the_title(); ?></h1>
 						<?php 
