@@ -1,3 +1,24 @@
+/* Reference
+
+The image modifier classes and what they do
+
+.image__full-width : full-bleed, no vertical cropping
+.image__wide-with-margins : wide, to the text frame margins (1 full column on both left and right)
+.image__bleed-small-size : works with the wide-with-margins class. makes the image bleed on both sides below break medium
+.image__wide-right : left-aligned with the primary text, and running to the last column on right
+.image__last__no-bottom-margin : no bottom margin
+
+.image__top-margin__after-p : for an image follows a paragraph
+
+.color-bg : gives the module a background color
+.bg__pale-grey
+
+*/
+
+
+
+
+
 .clients-single {
 // this will mainly be used for the case-study pages, btw
 
@@ -105,6 +126,10 @@
 
 	}
 
+
+
+
+
 	figure {
 
 		// various figure styles 
@@ -158,7 +183,8 @@
 				grid-template-columns: 0px repeat(16, 1fr) 0px; 
 			}
 			img {
-				grid-column: 3 / span 10;
+				grid-column: 2 / span 12;
+				@include break(tiny) { grid-column: 3 / span 10; }
 				@include break(huge) { grid-column: 3 / span 12; }
 				@include break(mega) { grid-column: 4 / span 12; }
 			}
@@ -171,6 +197,28 @@
 				@include break(large)  { grid-column: 5 / span 5; }
 				@include break(huge)   { grid-column: 6 / span 5; }
 				@include break(mega)   { grid-column: 7 / span 5; }
+			}
+		}
+
+		// modifier class, to be used primarily with the wide-with-margins class
+		// makes the image bleed on both sides when at small screens
+		&.image__bleed-small-sizes {
+			overflow: hidden;
+			img {
+				width: calc(100% + 60px);
+				max-width: calc(100% + 60%);
+				left: 0;
+				margin-left: -30px;
+				grid-column: 1 / span 14;
+				@include break(tiny)   { grid-column: 1 / span 14; }
+				@include break(medium) { 
+					width: 100%;
+					left: 0;
+					margin-left: 0;
+					grid-column: 3 / span 10;
+				}
+				@include break(huge)   { grid-column: 3 / span 12; }
+				@include break(mega)   { grid-column: 4 / span 12; }
 			}
 		}
 
@@ -187,6 +235,7 @@
 		&.image__last__no-bottom-margin {
 			margin-bottom: -70px;
 			@include break(medium) { margin-bottom: -90px; }
+			@include break(large)  { margin-bottom: -120px; }
 		}
 
 		&.image__top-margin__after-p {
@@ -195,7 +244,14 @@
 			// @include break(medium) { margin-top: 90px; }
 			@include break(large)  { margin-top: 120px; }
 		}
-	}
+
+
+	} // end figure
+
+
+
+
+
 
 	// this is necessary because ... well I actually don't know, but it is.
 	// I assume that somewhere something is screwing things up.
@@ -265,6 +321,11 @@
 		}
 	}
 
+
+
+
+
+
 	// revised grid settings for when we want the image to not bleed off the edge
 
 	.client-promo__left.image__full-view {  
@@ -326,5 +387,28 @@
 			// identical to the non-text-first version, as that only applies to small screens.
 		}
 	}
+
+
+
+
+
+	/* ---------- Color bacgrkounds ---------- */
+
+	.color-bg {
+		margin-top: 90px;
+		margin-bottom: 90px;
+		padding-top: 45px;
+		padding-bottom: 45px;
+		@include break(large) {
+			margin-top: 120px;
+			margin-bottom: 120px;
+		}
+	}
+
+	.bg__pale-grey {
+		background: #F6F6F6;
+	}
+
+
 
 }

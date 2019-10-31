@@ -103,6 +103,10 @@ html {
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 
+.no-bottom-margin {
+  margin-bottom: 0 !important;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -3043,6 +3047,26 @@ as this lets us put the blurb on the side we choose for it
   }
 }
 
+/* Reference
+
+The image modifier classes and what they do
+
+.image__full-width : full-bleed, no vertical cropping
+.image__wide-with-margins : wide, to the text frame margins (1 full column on both left and right)
+.image__bleed-small-size : works with the wide-with-margins class. makes the image bleed on both sides below break medium
+.image__wide-right : left-aligned with the primary text, and running to the last column on right
+.image__last__no-bottom-margin : no bottom margin
+
+.image__top-margin__after-p : for an image follows a paragraph
+
+.color-bg : gives the module a background color
+.bg__pale-grey
+
+*/
+.clients-single {
+  /* ---------- Color bacgrkounds ---------- */
+}
+
 .clients-single .article-head {
   height: 48vh;
 }
@@ -3413,7 +3437,13 @@ as this lets us put the blurb on the side we choose for it
 }
 
 .clients-single figure.image__wide-with-margins img {
-  grid-column: 3 / span 10;
+  grid-column: 2 / span 12;
+}
+
+@media screen and (min-width: 420px) {
+  .clients-single figure.image__wide-with-margins img {
+    grid-column: 3 / span 10;
+  }
 }
 
 @media screen and (min-width: 1480px) {
@@ -3481,6 +3511,51 @@ as this lets us put the blurb on the side we choose for it
   }
 }
 
+.clients-single figure.image__bleed-small-sizes {
+  overflow: hidden;
+}
+
+.clients-single figure.image__bleed-small-sizes img {
+  width: calc(100% + 60px);
+  max-width: calc(100% + 60%);
+  left: 0;
+  margin-left: -30px;
+  grid-column: 1 / span 14;
+}
+
+@media screen and (min-width: 420px) {
+  .clients-single figure.image__bleed-small-sizes img {
+    grid-column: 1 / span 14;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .clients-single figure.image__bleed-small-sizes img {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+    grid-column: 3 / span 10;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .clients-single figure.image__bleed-small-sizes img {
+    grid-column: 3 / span 12;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .clients-single figure.image__bleed-small-sizes img {
+    grid-column: 4 / span 12;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .clients-single figure.image__bleed-small-sizes img {
+    grid-column: 4 / span 12;
+  }
+}
+
 .clients-single figure.image__wide-right {
   margin-bottom: 90px;
 }
@@ -3523,6 +3598,12 @@ as this lets us put the blurb on the side we choose for it
 @media screen and (min-width: 830px) {
   .clients-single figure.image__last__no-bottom-margin {
     margin-bottom: -90px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .clients-single figure.image__last__no-bottom-margin {
+    margin-bottom: -120px;
   }
 }
 
@@ -3808,6 +3889,24 @@ as this lets us put the blurb on the side we choose for it
   .clients-single .client-promo__right.image__full-view.text-first {
     grid-template-areas: ". . . image image image image image . . text text text text text . . .";
   }
+}
+
+.clients-single .color-bg {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+@media screen and (min-width: 1120px) {
+  .clients-single .color-bg {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+}
+
+.clients-single .bg__pale-grey {
+  background: #F6F6F6;
 }
 
 .about__splash {
@@ -4917,7 +5016,7 @@ the article METADATA
 
 @media screen and (min-width: 1120px) {
   .article-body h2 {
-    margin-top: 120px;
+    margin-top: 114px;
   }
 }
 
@@ -5011,6 +5110,7 @@ the article METADATA
   .article-body .article__content {
     padding-top: 0px;
     margin-top: 0px;
+    margin-bottom: 120px;
   }
 }
 
