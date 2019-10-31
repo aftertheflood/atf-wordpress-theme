@@ -123,11 +123,18 @@ the article BODY
 
   ul {
     list-style-type: none;
-    margin-left: $column-gap;
+    // margin-left: $column-gap;
+    padding-left: 20px;
+    @include break(small)  { padding-left: 21px; }
+    @include break(medium) { padding-left: 22px; }
+    @include break(large)  { padding-left: 24px; }
   }
 
   li {
-    text-indent: -25px;
+    text-indent: -20px;
+    @include break(small)  { text-indent: -21px; }
+    @include break(medium) { text-indent: -22px; }
+    @include break(large)  { text-indent: -24px; }
   }
 
   li:before {

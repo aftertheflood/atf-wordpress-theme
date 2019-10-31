@@ -5051,11 +5051,47 @@ the article METADATA
 
 .article-body ul {
   list-style-type: none;
-  margin-left: 20px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 650px) {
+  .article-body ul {
+    padding-left: 21px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body ul {
+    padding-left: 22px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body ul {
+    padding-left: 24px;
+  }
 }
 
 .article-body li {
-  text-indent: -25px;
+  text-indent: -20px;
+}
+
+@media screen and (min-width: 650px) {
+  .article-body li {
+    text-indent: -21px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body li {
+    text-indent: -22px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body li {
+    text-indent: -24px;
+  }
 }
 
 .article-body li:before {
