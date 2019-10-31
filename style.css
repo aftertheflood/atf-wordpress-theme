@@ -3057,7 +3057,8 @@ The image modifier classes and what they do
 .image__wide-right : left-aligned with the primary text, and running to the last column on right
 .image__last__no-bottom-margin : no bottom margin
 
-.image__top-margin__after-p : for an image follows a paragraph
+.image__margin-top : for an image follows a paragraph
+.image__margin-bottom : for an image follows a paragraph
 
 .color-bg : gives the module a background color
 .bg__pale-grey
@@ -3607,13 +3608,23 @@ The image modifier classes and what they do
   }
 }
 
-.clients-single figure.image__top-margin__after-p {
+.clients-single figure.image__margin-top {
   margin-top: 90px;
 }
 
 @media screen and (min-width: 1120px) {
-  .clients-single figure.image__top-margin__after-p {
+  .clients-single figure.image__margin-top {
     margin-top: 120px;
+  }
+}
+
+.clients-single figure.image__margin-bottom {
+  margin-bottom: 90px;
+}
+
+@media screen and (min-width: 1120px) {
+  .clients-single figure.image__margin-bottom {
+    margin-bottom: 120px;
   }
 }
 
