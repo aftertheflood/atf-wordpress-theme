@@ -6,3 +6,13 @@
 .no-bottom-margin {
 	margin-bottom: 0 !important;
 }
+
+.no-top-margin {
+	margin-top: 0 !important;
+}
+
+.mobile__no-top-margin {
+	@media screen and (max-width: $screen-medium - 1px) {
+		margin-top: 0 !important;
+	}
+}
