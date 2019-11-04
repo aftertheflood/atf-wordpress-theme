@@ -327,37 +327,86 @@ the article METADATA
     text-indent: -10px;
   }
 
+  cite {
+    display: block;
+    margin: 24px 100px 0 18px;
+    text-indent: -18px;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.002em;
+    &:before { content: "— "; }
+  }
+
   blockquote.pullquote-left, 
   blockquote.pullquote-right {
     @include type-serif;
-    padding: 30px 40px 30px 40px;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 0px repeat(12, 1fr) 0px;
+    column-gap: $column-gap;
+    @include break(tiny)   { padding: 40px 0; }
+    @include break(small)  { padding: 50px 0; }
+    @include break(medium) { padding: 60px 0; margin: 90px 0; }
+    @include break(large)  { margin: 120px 0; }
+    @include break(huge)   { padding: 70px 0; }
     p {
-      font-size: 48px;
-      line-height: 54px;
-      letter-spacing: -0.02em;
+      grid-row: 1;
+      @include type-heading-big;
+      &:first-of-type { margin-top: -3px; }
+      &:last-of-type  { margin-bottom: 0;}
+      grid-column: 2 / span 12;
+    }
+    &.hang-punctuation p {
+      text-indent: -13px; 
+      @include break(tiny)   { text-indent: -17px; }
+      @include break(small)  { text-indent: -19px; }
+      @include break(medium) { text-indent: -22px; }
+      @include break(large)  { text-indent: -23px; }
+      @include break(huge)   { text-indent: -24px; }
+    }
+    cite {
+      grid-row: 2;
+      grid-column: 2 / span 11;
+      margin: 24px 0 0 18px;
     }
   }
 
   blockquote.pullquote-left { 
     grid-column: 1 / span 14;
-    @include break(tiny)  { grid-column: 1 / span 11; }
-    @include break(medium) { grid-column: 1 / span 9; }
-    @include break(large) { grid-column: 1 / span 7; }
+    @include break(small)  { grid-column: 1 / span 11;   grid-template-columns: 0px repeat(10, 1fr); }
+    @include break(medium) { grid-column: 1 / span 10;   grid-template-columns: 0px repeat(9, 1fr); }
+    @include break(huge)   { grid-column: 1 / span 9;    grid-template-columns: 0px repeat(8, 1fr); }
+    p {
+      @include break(tiny)   { grid-column: 3 / span 11; padding-right: 30px; }
+      @include break(small)  { grid-column: 3 / span 9; }
+      @include break(medium) { grid-column: 3 / span 8; }
+      @include break(large)  { grid-column: 3 / span 7; }
+    }
+    cite {
+      @include break(tiny)    { grid-column: 3 / span 9; }
+      @include break(medium)  { grid-column: 3 / span 7; }
+      @include break(medium)  { grid-column: 3 / span 5; }
+    }
   }
   blockquote.pullquote-right { 
     grid-column: 1 / span 14; 
-    @include break(tiny)  { grid-column: 4 / span 11; }
-    @include break(medium) { grid-column: 6 / span 9; }
-    @include break(large) { grid-column: 8 / span 7; }
-  }
-
-  cite {
-    display: block;
-    margin: 24px 100px 14px 0;
-    font-style: normal;
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: 0.01em;
+    @include break(small)  { grid-column: 4 / span 11;   grid-template-columns: repeat(10, 1fr) 0px; }
+    @include break(medium) { grid-column: 5 / span 10;   grid-template-columns: repeat(9, 1fr) 0px; }
+    @include break(huge)   { grid-column: 8 / span 9;    grid-template-columns: repeat(8, 1fr) 0px; }
+    @include break(mega)   { grid-column: 10 / span 9; }
+    p { 
+      @include break(tiny)   { grid-column: 3 / span 11; padding-right: 30px; }
+      @include break(small)  { grid-column: 2 / span 9; }
+      @include break(medium) { grid-column: 2 / span 8; }
+      @include break(large)  { grid-column: 2 / span 7; }
+    }
+    cite {
+      @include break(tiny)    { grid-column: 3 / span 9; }
+      @include break(small)   { grid-column: 2 / span 9; }
+      @include break(medium)  { grid-column: 2 / span 7; }
+      @include break(medium)  { grid-column: 2 / span 5; }
+    }
   }
 
   .indepth {

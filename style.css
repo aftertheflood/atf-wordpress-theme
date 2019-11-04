@@ -5870,38 +5870,252 @@ the article METADATA
   text-indent: -10px;
 }
 
+.article-body cite {
+  display: block;
+  margin: 24px 100px 0 18px;
+  text-indent: -18px;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.002em;
+}
+
+.article-body cite:before {
+  content: "— ";
+}
+
 .article-body blockquote.pullquote-left,
 .article-body blockquote.pullquote-right {
   font-family: Tiempos, Georgia, serif;
-  padding: 30px 40px 30px 40px;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 0px repeat(12, 1fr) 0px;
+  column-gap: 20px;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body blockquote.pullquote-left,
+  .article-body blockquote.pullquote-right {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-body blockquote.pullquote-left,
+  .article-body blockquote.pullquote-right {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote-left,
+  .article-body blockquote.pullquote-right {
+    padding: 60px 0;
+    margin: 90px 0;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body blockquote.pullquote-left,
+  .article-body blockquote.pullquote-right {
+    margin: 120px 0;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .article-body blockquote.pullquote-left,
+  .article-body blockquote.pullquote-right {
+    padding: 70px 0;
+  }
 }
 
 .article-body blockquote.pullquote-left p,
 .article-body blockquote.pullquote-right p {
-  font-size: 48px;
-  line-height: 54px;
+  grid-row: 1;
+  font-size: 32px;
+  line-height: 38px;
   letter-spacing: -0.02em;
+  grid-column: 2 / span 12;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body blockquote.pullquote-left p,
+  .article-body blockquote.pullquote-right p {
+    font-size: 38px;
+    line-height: 47px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-body blockquote.pullquote-left p,
+  .article-body blockquote.pullquote-right p {
+    font-size: 46px;
+    line-height: 52px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote-left p,
+  .article-body blockquote.pullquote-right p {
+    font-size: 52px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body blockquote.pullquote-left p,
+  .article-body blockquote.pullquote-right p {
+    font-size: 56px;
+    line-height: 65px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .article-body blockquote.pullquote-left p,
+  .article-body blockquote.pullquote-right p {
+    font-size: 60px;
+    line-height: 67px;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .article-body blockquote.pullquote-left p,
+  .article-body blockquote.pullquote-right p {
+    font-size: 64px;
+    line-height: 70px;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .article-body blockquote.pullquote-left p,
+  .article-body blockquote.pullquote-right p {
+    font-size: 64px;
+    line-height: 70px;
+  }
+}
+
+.article-body blockquote.pullquote-left p:first-of-type,
+.article-body blockquote.pullquote-right p:first-of-type {
+  margin-top: -3px;
+}
+
+.article-body blockquote.pullquote-left p:last-of-type,
+.article-body blockquote.pullquote-right p:last-of-type {
+  margin-bottom: 0;
+}
+
+.article-body blockquote.pullquote-left.hang-punctuation p,
+.article-body blockquote.pullquote-right.hang-punctuation p {
+  text-indent: -13px;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body blockquote.pullquote-left.hang-punctuation p,
+  .article-body blockquote.pullquote-right.hang-punctuation p {
+    text-indent: -17px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-body blockquote.pullquote-left.hang-punctuation p,
+  .article-body blockquote.pullquote-right.hang-punctuation p {
+    text-indent: -19px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote-left.hang-punctuation p,
+  .article-body blockquote.pullquote-right.hang-punctuation p {
+    text-indent: -22px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body blockquote.pullquote-left.hang-punctuation p,
+  .article-body blockquote.pullquote-right.hang-punctuation p {
+    text-indent: -23px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .article-body blockquote.pullquote-left.hang-punctuation p,
+  .article-body blockquote.pullquote-right.hang-punctuation p {
+    text-indent: -24px;
+  }
+}
+
+.article-body blockquote.pullquote-left cite,
+.article-body blockquote.pullquote-right cite {
+  grid-row: 2;
+  grid-column: 2 / span 11;
+  margin: 24px 0 0 18px;
 }
 
 .article-body blockquote.pullquote-left {
   grid-column: 1 / span 14;
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 650px) {
   .article-body blockquote.pullquote-left {
     grid-column: 1 / span 11;
+    grid-template-columns: 0px repeat(10, 1fr);
   }
 }
 
 @media screen and (min-width: 830px) {
   .article-body blockquote.pullquote-left {
+    grid-column: 1 / span 10;
+    grid-template-columns: 0px repeat(9, 1fr);
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .article-body blockquote.pullquote-left {
     grid-column: 1 / span 9;
+    grid-template-columns: 0px repeat(8, 1fr);
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .article-body blockquote.pullquote-left p {
+    grid-column: 3 / span 11;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-body blockquote.pullquote-left p {
+    grid-column: 3 / span 9;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote-left p {
+    grid-column: 3 / span 8;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .article-body blockquote.pullquote-left {
-    grid-column: 1 / span 7;
+  .article-body blockquote.pullquote-left p {
+    grid-column: 3 / span 7;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .article-body blockquote.pullquote-left cite {
+    grid-column: 3 / span 9;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote-left cite {
+    grid-column: 3 / span 7;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote-left cite {
+    grid-column: 3 / span 5;
   }
 }
 
@@ -5909,31 +6123,86 @@ the article METADATA
   grid-column: 1 / span 14;
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 650px) {
   .article-body blockquote.pullquote-right {
     grid-column: 4 / span 11;
+    grid-template-columns: repeat(10, 1fr) 0px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .article-body blockquote.pullquote-right {
-    grid-column: 6 / span 9;
+    grid-column: 5 / span 10;
+    grid-template-columns: repeat(9, 1fr) 0px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .article-body blockquote.pullquote-right {
+    grid-column: 8 / span 9;
+    grid-template-columns: repeat(8, 1fr) 0px;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .article-body blockquote.pullquote-right {
+    grid-column: 10 / span 9;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .article-body blockquote.pullquote-right {
+    grid-column: 10 / span 9;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .article-body blockquote.pullquote-right p {
+    grid-column: 3 / span 11;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-body blockquote.pullquote-right p {
+    grid-column: 2 / span 9;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote-right p {
+    grid-column: 2 / span 8;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .article-body blockquote.pullquote-right {
-    grid-column: 8 / span 7;
+  .article-body blockquote.pullquote-right p {
+    grid-column: 2 / span 7;
   }
 }
 
-.article-body cite {
-  display: block;
-  margin: 24px 100px 14px 0;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 0.01em;
+@media screen and (min-width: 420px) {
+  .article-body blockquote.pullquote-right cite {
+    grid-column: 3 / span 9;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-body blockquote.pullquote-right cite {
+    grid-column: 2 / span 9;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote-right cite {
+    grid-column: 2 / span 7;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote-right cite {
+    grid-column: 2 / span 5;
+  }
 }
 
 .article-body .indepth {
