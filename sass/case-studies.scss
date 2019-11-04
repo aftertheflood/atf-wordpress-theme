@@ -57,6 +57,10 @@ The image modifier classes and what they do
 		h2:first-of-type { 
 			@include break(large) { margin-top: 0; }
 		}
+		h3 {
+			@include type-sans;
+		}
+
 		p:last-of-type { margin-bottom: 0; }
 
 		.the-metadata {
@@ -283,6 +287,10 @@ The image modifier classes and what they do
 	// changes to the spacing and other details
 	.client-promo__right, 
 	.client-promo__left {
+		h3 {
+			@include type-heading-small;
+			@include type-sans;
+		}
 		border-top: none;
 		margin-bottom: 90px;
 		@include break(large) { margin-bottom: 120px; }
@@ -405,7 +413,9 @@ The image modifier classes and what they do
 
 	.cluster-left, .cluster-right {
 		display: grid;
+		column-gap: $column-gap;
 		margin: 66px 0 70px 0;
+		align-self: start;
 		&:last-of-type { margin-top: 0;}
 		@include break(small) { margin: 87px 0 90px 0; }
 		@include break(medium) {
@@ -441,7 +451,6 @@ The image modifier classes and what they do
 		@include break(medium) { grid-column: 1 / span 7; grid-template-columns: 0px repeat(6, 1fr);  }
 		@include break(huge)   { grid-column: 1 / span 8; grid-template-columns: 0px repeat(7, 1fr);  }
 		@include break(mega)   { grid-column: 1 / span 9; grid-template-columns: 0px repeat(8, 1fr);  }
-		column-gap: $column-gap;
 		.text {
 			grid-column: 2 / span 12;
 			@include break(tiny)   { grid-column: 3 / span 10; }
@@ -465,13 +474,13 @@ The image modifier classes and what they do
 		@include break(medium) { grid-column: 8 / span 7; grid-template-columns: repeat(6, 1fr) 0px;  }
 		@include break(huge)   { grid-column: 9 / span 8; grid-template-columns: repeat(7, 1fr) 0px;  }
 		@include break(mega)   { grid-column: 10 / span 9; grid-template-columns: repeat(8, 1fr) 0px; }
-		column-gap: $column-gap;
 		.text {
 			grid-column: 2 / span 12;
 			@include break(tiny)   { grid-column: 3 / span 10; }
 			@include break(medium) { grid-column: 2 / span 5; }
 			@include break(large)  { grid-column: 2 / span 4; }
-			@include break(huge)   { grid-column: 2 / span 5; }
+			@include break(huge)   { grid-column: 3 / span 4; }
+			@include break(mega)   { grid-column: 2 / span 5; }
 		}
 		.image {
 			grid-column: 2 / span 13;

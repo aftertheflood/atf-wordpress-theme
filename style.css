@@ -107,6 +107,16 @@ html {
   margin-bottom: 0 !important;
 }
 
+.no-top-margin {
+  margin-top: 0 !important;
+}
+
+@media screen and (max-width: 829px) {
+  .mobile__no-top-margin {
+    margin-top: 0 !important;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -3188,6 +3198,10 @@ The image modifier classes and what they do
   }
 }
 
+.clients-single .article-body h3 {
+  font-family: Graphik, sans-serif;
+}
+
 .clients-single .article-body p:last-of-type {
   margin-bottom: 0;
 }
@@ -3671,6 +3685,63 @@ The image modifier classes and what they do
   margin-bottom: 90px;
 }
 
+.clients-single .client-promo__right h3,
+.clients-single .client-promo__left h3 {
+  font-size: 18px;
+  line-height: 118%;
+  letter-spacing: -0.01em;
+  font-family: Graphik, sans-serif;
+}
+
+@media screen and (min-width: 420px) {
+  .clients-single .client-promo__right h3,
+  .clients-single .client-promo__left h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .clients-single .client-promo__right h3,
+  .clients-single .client-promo__left h3 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .clients-single .client-promo__right h3,
+  .clients-single .client-promo__left h3 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .clients-single .client-promo__right h3,
+  .clients-single .client-promo__left h3 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .clients-single .client-promo__right h3,
+  .clients-single .client-promo__left h3 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .clients-single .client-promo__right h3,
+  .clients-single .client-promo__left h3 {
+    font-size: 27px;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .clients-single .client-promo__right h3,
+  .clients-single .client-promo__left h3 {
+    font-size: 27px;
+  }
+}
+
 @media screen and (min-width: 1120px) {
   .clients-single .client-promo__right,
   .clients-single .client-promo__left {
@@ -3905,7 +3976,9 @@ The image modifier classes and what they do
 
 .clients-single .cluster-left, .clients-single .cluster-right {
   display: grid;
+  column-gap: 20px;
   margin: 66px 0 70px 0;
+  align-self: start;
 }
 
 .clients-single .cluster-left:last-of-type, .clients-single .cluster-right:last-of-type {
@@ -4000,7 +4073,6 @@ The image modifier classes and what they do
 .clients-single .cluster-left {
   grid-column: 1 / span 14;
   grid-template-columns: 0px repeat(12, 1fr) 0px;
-  column-gap: 20px;
 }
 
 @media screen and (min-width: 830px) {
@@ -4102,7 +4174,6 @@ The image modifier classes and what they do
 .clients-single .cluster-right {
   grid-column: 1 / span 14;
   grid-template-columns: 0px repeat(12, 1fr) 0px;
-  column-gap: 20px;
 }
 
 @media screen and (min-width: 830px) {
@@ -4156,6 +4227,18 @@ The image modifier classes and what they do
 }
 
 @media screen and (min-width: 1480px) {
+  .clients-single .cluster-right .text {
+    grid-column: 3 / span 4;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .clients-single .cluster-right .text {
+    grid-column: 2 / span 5;
+  }
+}
+
+@media screen and (min-width: mega) {
   .clients-single .cluster-right .text {
     grid-column: 2 / span 5;
   }
