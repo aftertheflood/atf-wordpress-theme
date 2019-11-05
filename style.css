@@ -3072,9 +3072,11 @@ The image modifier classes and what they do
 .image__wide-right : left-aligned with the primary text, and running to the last column on right
 .image__last__no-bottom-margin : no bottom margin
 
-.image__margin-top : for an image follows a paragraph
+— Figure-only styles
+.image__margin-top : for an image follows a paragraph 
 .image__margin-bottom : for an image follows a paragraph
 
+– Colour styles
 .color-bg : gives the module a background color
 .bg__pale-grey
 
@@ -4295,6 +4297,90 @@ The image modifier classes and what they do
 
 .clients-single .center-vertically {
   align-self: center;
+}
+
+.clients-single .side-by-side {
+  grid-column: 2 / span 12;
+}
+
+@media screen and (min-width: 420px) {
+  .clients-single .side-by-side {
+    grid-column: 3 / span 10;
+  }
+}
+
+.clients-single .side-by-side.margins-vertical-small {
+  margin-top: 20px;
+}
+
+.clients-single .side-by-side.margins-vertical-small:last-of-type {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 830px) {
+  .clients-single .side-by-side.margins-vertical-small {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .clients-single .side-by-side.left {
+    grid-column: 2 / span 6;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .clients-single .side-by-side.left {
+    grid-column: 3 / span 5;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .clients-single .side-by-side.left {
+    grid-column: 3 / span 6;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .clients-single .side-by-side.left {
+    grid-column: 4 / span 6;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .clients-single .side-by-side.left {
+    grid-column: 4 / span 6;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .clients-single .side-by-side.right {
+    grid-column: 8 / span 6;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .clients-single .side-by-side.right {
+    grid-column: 8 / span 5;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .clients-single .side-by-side.right {
+    grid-column: 9 / span 6;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .clients-single .side-by-side.right {
+    grid-column: 10 / span 6;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .clients-single .side-by-side.right {
+    grid-column: 10 / span 6;
+  }
 }
 
 .clients-single .color-bg {
