@@ -51,8 +51,11 @@
 
 .footer-contact-link {
 	grid-area: link;
-	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 0;
 	margin-bottom: 120px;
+	@include break(small) { flex-direction: row; }
 }
 
 .footer-contact-link a {
@@ -61,8 +64,15 @@
 	@include block-button-type;
 	color:black;
 	background-color: white;
-	&:hover {
-		background-color: rgba(255,255,255,0.9);
+	align-self: flex-start;
+	&:hover { background-color: rgba(255,255,255,0.9); }
+}
+
+.button-right { // for buttons in the footer that are not the first button
+	margin-top: 5px;
+	@include break(small) {
+		margin-left: 5px;
+		margin-top: 0;
 	}
 }
 
