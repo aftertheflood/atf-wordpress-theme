@@ -333,8 +333,16 @@ body {
 
 .footer-contact-link {
   grid-area: link;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
   margin-bottom: 120px;
+}
+
+@media screen and (min-width: 650px) {
+  .footer-contact-link {
+    flex-direction: row;
+  }
 }
 
 .footer-contact-link a {
@@ -347,6 +355,7 @@ body {
   text-decoration: none;
   color: black;
   background-color: white;
+  align-self: flex-start;
 }
 
 @media screen and (min-width: 830px) {
@@ -387,6 +396,17 @@ body {
 
 .footer-contact-link a:hover {
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.button-right {
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 650px) {
+  .button-right {
+    margin-left: 5px;
+    margin-top: 0;
+  }
 }
 
 .social {
