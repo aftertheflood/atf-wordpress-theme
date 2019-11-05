@@ -20,6 +20,15 @@ The image modifier classes and what they do
 
 
 
+/* arbitrary case-study-specific classes for doing stuff to the entire page, e.g. changing the background color */
+.indexventures {
+	background: #ECE8E4;
+}
+
+
+
+
+
 .clients-single {
 // this will mainly be used for the case-study pages, btw
 
@@ -116,8 +125,8 @@ The image modifier classes and what they do
 			}
 			.the-tags { 
 				display: block; 
-				border-top: 1px solid #ddd;
-				border-bottom: 1px solid #ddd;
+				border-top: 1px solid rgba(0,0,0,0.1);
+				border-bottom: 1px solid rgba(0,0,0,0.1);
 				margin-top: 15px; 
 				@include break(large) { 
 					border: none; 
@@ -129,9 +138,6 @@ The image modifier classes and what they do
 				@include break(large) { text-transform: none; }
 			}		
 		}
-
-
-
 	}
 
 
@@ -411,6 +417,11 @@ The image modifier classes and what they do
 
 	/* Half-page cluster */
 
+	.full-width-wrapper { 
+		width: 100%;
+		grid-column: 1 / span 14;
+	}
+
 	.cluster-left, .cluster-right {
 		display: grid;
 		column-gap: $column-gap;
@@ -489,6 +500,10 @@ The image modifier classes and what they do
 			@include break(huge)   { grid-column: 1 / span 8; }
 			@include break(mega)   { grid-column: 1 / span 9; }
 		}
+	}
+
+	.center-vertically {
+		align-self: center;
 	}
 
 

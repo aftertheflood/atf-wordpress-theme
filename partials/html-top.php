@@ -58,4 +58,4 @@ if($articlePromoImage){
 		<?php wp_body_open(); ?>
 		<div class="page-layout" id="page-top">
     <?php get_header(); ?>
-    <main class="content" id="content" role="main">
+    <main class="content  <?php echo get_post_meta($post->ID, 'additional-main-class', true) ?>" id="content" role="main">

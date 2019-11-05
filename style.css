@@ -103,6 +103,11 @@ html {
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 
+.drop-shadow__light {
+  -webkit-filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
 .no-bottom-margin {
   margin-bottom: 0 !important;
 }
@@ -3074,6 +3079,11 @@ The image modifier classes and what they do
 .bg__pale-grey
 
 */
+/* arbitrary case-study-specific classes for doing stuff to the entire page, e.g. changing the background color */
+.indexventures {
+  background: #ECE8E4;
+}
+
 .clients-single {
   /* Half-page cluster */
   /* ---------- Color bacgrkounds ---------- */
@@ -3301,8 +3311,8 @@ The image modifier classes and what they do
 
 .clients-single .article-body .the-metadata .the-tags {
   display: block;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 15px;
 }
 
@@ -3974,6 +3984,11 @@ The image modifier classes and what they do
   }
 }
 
+.clients-single .full-width-wrapper {
+  width: 100%;
+  grid-column: 1 / span 14;
+}
+
 .clients-single .cluster-left, .clients-single .cluster-right {
   display: grid;
   column-gap: 20px;
@@ -4276,6 +4291,10 @@ The image modifier classes and what they do
   .clients-single .cluster-right .image {
     grid-column: 1 / span 9;
   }
+}
+
+.clients-single .center-vertically {
+  align-self: center;
 }
 
 .clients-single .color-bg {
