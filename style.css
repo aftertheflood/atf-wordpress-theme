@@ -3081,7 +3081,7 @@ The image modifier classes and what they do
 */
 /* arbitrary case-study-specific classes for doing stuff to the entire page, e.g. changing the background color */
 .indexventures {
-  background: yellow;
+  background: #ECE8E4;
 }
 
 .clients-single {
