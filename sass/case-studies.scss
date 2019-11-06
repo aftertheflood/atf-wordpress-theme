@@ -1,16 +1,22 @@
 /* Reference
 
-The image modifier classes and what they do
-
+– The image modifier classes and what they do
 .image__full-width : full-bleed, no vertical cropping
 .image__wide-with-margins : wide, to the text frame margins (1 full column on both left and right)
 .image__bleed-small-size : works with the wide-with-margins class. makes the image bleed on both sides below break medium
 .image__wide-right : left-aligned with the primary text, and running to the last column on right
 .image__last__no-bottom-margin : no bottom margin
 
+.side-by-side.left (and .right) : two images, side-by-side, but not on mobile
+.side-by-side__including-mobile.left (and .right) : two images, side-by-side, always
+.side-by-side__including-mobile__with-overflow.left (and .right) : two images, side-by-side, always, with bleed
+
 — Figure-only styles
 .image__margin-top : for an image follows a paragraph 
 .image__margin-bottom : for an image follows a paragraph
+
+– Spacing for non-figures
+.margins-vertical-small : adds a smaller amount of vertical spacing for the div
 
 – Colour styles
 .color-bg : gives the module a background color
@@ -70,7 +76,13 @@ The image modifier classes and what they do
 		}
 		h3 {
 			@include type-sans;
+			margin: 90px 0 24px 0;
+			@include break(large) { margin-top: 114px; }
+			/* we set the h3 margins to be the same as the h2 margins on the case-study pages
+			because otherwise the spacing on these pages is too complicated */
 		}
+
+
 
 		p:last-of-type { margin-bottom: 0; }
 
@@ -417,12 +429,28 @@ The image modifier classes and what they do
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 	/* Half-page cluster */
 
 	.full-width-wrapper { 
 		width: 100%;
 		grid-column: 1 / span 14;
 	}
+
+
+
+
+
 
 	.cluster-left, .cluster-right {
 		display: grid;
@@ -509,14 +537,17 @@ The image modifier classes and what they do
 	}
 
 
+
+
+
+
+
+
+
+
 	.side-by-side {
 		grid-column: 2 / span 12;
 		@include break(tiny)   { grid-column: 3 / span 10; }
-		&.margins-vertical-small {
-			margin-top: 20px;
-			&:last-of-type { margin-bottom: 20px; }
-			@include break(medium) { margin-bottom: 20px; }
-		}
 	}
 	.side-by-side.left {
 		@include break(medium) { grid-column: 2 / span 6; }
@@ -530,6 +561,100 @@ The image modifier classes and what they do
 		@include break(huge)   { grid-column: 9 / span 6; }
 		@include break(mega)   { grid-column: 10 / span 6; }
 	}
+
+
+
+
+
+	/* a side-by-side class where the images remain side-by-side at smaller screen sizes, 
+	which is NOT the default behaviour */
+	.side-by-side__including-mobile.left {
+		grid-column: 2 / span 6;
+		@include break(large)  { grid-column: 3 / span 5; }
+		@include break(huge)   { grid-column: 3 / span 6; }
+		@include break(mega)   { grid-column: 4 / span 6; }
+	}
+	.side-by-side__including-mobile.right {
+		grid-column: 8 / span 6;
+		@include break(large)  { grid-column: 8 / span 5; }
+		@include break(huge)   { grid-column: 9 / span 6; }
+		@include break(mega)   { grid-column: 10 / span 6; }
+	}
+
+
+
+
+
+	/* the same as the side-by-side__including-mobile
+	except that at smaller sizes the images bleed off */
+	.side-by-side__including-mobile__with-overflow.left, 
+	.side-by-side__including-mobile__with-overflow.right {
+		overflow: hidden;
+		img { width: calc(100% + 40px); }
+		@include break(medium) {
+			img { width: 100%; }
+		}
+	}
+	.side-by-side__including-mobile__with-overflow.left {
+		grid-column: 1 / span 7;
+		img {	margin-left: -40px; }
+		@include break(medium) { 
+			grid-column: 2 / span 6; 
+			img { margin-left: 0; }
+		}
+		@include break(large)  { grid-column: 3 / span 5; }
+		@include break(huge)   { grid-column: 3 / span 6; }
+		@include break(mega)   { grid-column: 4 / span 6; }
+	}
+	.side-by-side__including-mobile__with-overflow.right {
+		grid-column: 8 / span 7;
+		img { right: -40px; }
+		@include break(medium) { 
+			grid-column: 8 / span 6; 
+			img { right: 0; }
+		}
+		@include break(large)  { grid-column: 8 / span 5; }
+		@include break(huge)   { grid-column: 9 / span 6; }
+		@include break(mega)   { grid-column: 10 / span 6; }
+	}
+
+
+
+
+
+
+
+
+
+
+	/* ---------- Vertical spacing adjustments ---------- */
+
+	.margin-vertical-top {
+		margin-top: 90px;
+		// @include break(small)  { margin-top: 70px; }
+		// @include break(medium) { margin-top: 90px; }
+		@include break(large)  { margin-top: 120px; }
+	}
+
+	.margin-vertical-bottom {
+		margin-bottom: 90px;
+		// @include break(small)  { margin-top: 70px; }
+		// @include break(medium) { margin-top: 90px; }
+		@include break(large)  { margin-bottom: 120px; }
+	}
+
+	.margins-vertical-small {
+		margin-top: 20px;
+		&:last-of-type { margin-bottom: 20px; }
+		@include break(medium) { margin-bottom: 20px; }
+	}
+
+
+
+
+
+
+
 
 
 

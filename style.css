@@ -3084,17 +3084,23 @@ as this lets us put the blurb on the side we choose for it
 
 /* Reference
 
-The image modifier classes and what they do
-
+– The image modifier classes and what they do
 .image__full-width : full-bleed, no vertical cropping
 .image__wide-with-margins : wide, to the text frame margins (1 full column on both left and right)
 .image__bleed-small-size : works with the wide-with-margins class. makes the image bleed on both sides below break medium
 .image__wide-right : left-aligned with the primary text, and running to the last column on right
 .image__last__no-bottom-margin : no bottom margin
 
+.side-by-side.left (and .right) : two images, side-by-side, but not on mobile
+.side-by-side__including-mobile.left (and .right) : two images, side-by-side, always
+.side-by-side__including-mobile__with-overflow.left (and .right) : two images, side-by-side, always, with bleed
+
 — Figure-only styles
 .image__margin-top : for an image follows a paragraph 
 .image__margin-bottom : for an image follows a paragraph
+
+– Spacing for non-figures
+.margins-vertical-small : adds a smaller amount of vertical spacing for the div
 
 – Colour styles
 .color-bg : gives the module a background color
@@ -3108,6 +3114,11 @@ The image modifier classes and what they do
 
 .clients-single {
   /* Half-page cluster */
+  /* a side-by-side class where the images remain side-by-side at smaller screen sizes, 
+	which is NOT the default behaviour */
+  /* the same as the side-by-side__including-mobile
+	except that at smaller sizes the images bleed off */
+  /* ---------- Vertical spacing adjustments ---------- */
   /* ---------- Color bacgrkounds ---------- */
 }
 
@@ -3232,6 +3243,15 @@ The image modifier classes and what they do
 
 .clients-single .article-body h3 {
   font-family: Graphik, sans-serif;
+  margin: 90px 0 24px 0;
+  /* we set the h3 margins to be the same as the h2 margins on the case-study pages
+			because otherwise the spacing on these pages is too complicated */
+}
+
+@media screen and (min-width: 1120px) {
+  .clients-single .article-body h3 {
+    margin-top: 114px;
+  }
 }
 
 .clients-single .article-body p:last-of-type {
@@ -4329,20 +4349,6 @@ The image modifier classes and what they do
   }
 }
 
-.clients-single .side-by-side.margins-vertical-small {
-  margin-top: 20px;
-}
-
-.clients-single .side-by-side.margins-vertical-small:last-of-type {
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 830px) {
-  .clients-single .side-by-side.margins-vertical-small {
-    margin-bottom: 20px;
-  }
-}
-
 @media screen and (min-width: 830px) {
   .clients-single .side-by-side.left {
     grid-column: 2 / span 6;
@@ -4400,6 +4406,195 @@ The image modifier classes and what they do
 @media screen and (min-width: mega) {
   .clients-single .side-by-side.right {
     grid-column: 10 / span 6;
+  }
+}
+
+.clients-single .side-by-side__including-mobile.left {
+  grid-column: 2 / span 6;
+}
+
+@media screen and (min-width: 1120px) {
+  .clients-single .side-by-side__including-mobile.left {
+    grid-column: 3 / span 5;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .clients-single .side-by-side__including-mobile.left {
+    grid-column: 3 / span 6;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .clients-single .side-by-side__including-mobile.left {
+    grid-column: 4 / span 6;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .clients-single .side-by-side__including-mobile.left {
+    grid-column: 4 / span 6;
+  }
+}
+
+.clients-single .side-by-side__including-mobile.right {
+  grid-column: 8 / span 6;
+}
+
+@media screen and (min-width: 1120px) {
+  .clients-single .side-by-side__including-mobile.right {
+    grid-column: 8 / span 5;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .clients-single .side-by-side__including-mobile.right {
+    grid-column: 9 / span 6;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .clients-single .side-by-side__including-mobile.right {
+    grid-column: 10 / span 6;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .clients-single .side-by-side__including-mobile.right {
+    grid-column: 10 / span 6;
+  }
+}
+
+.clients-single .side-by-side__including-mobile__with-overflow.left,
+.clients-single .side-by-side__including-mobile__with-overflow.right {
+  overflow: hidden;
+}
+
+.clients-single .side-by-side__including-mobile__with-overflow.left img,
+.clients-single .side-by-side__including-mobile__with-overflow.right img {
+  width: calc(100% + 40px);
+}
+
+@media screen and (min-width: 830px) {
+  .clients-single .side-by-side__including-mobile__with-overflow.left img,
+  .clients-single .side-by-side__including-mobile__with-overflow.right img {
+    width: 100%;
+  }
+}
+
+.clients-single .side-by-side__including-mobile__with-overflow.left {
+  grid-column: 1 / span 7;
+}
+
+.clients-single .side-by-side__including-mobile__with-overflow.left img {
+  margin-left: -40px;
+}
+
+@media screen and (min-width: 830px) {
+  .clients-single .side-by-side__including-mobile__with-overflow.left {
+    grid-column: 2 / span 6;
+  }
+  .clients-single .side-by-side__including-mobile__with-overflow.left img {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .clients-single .side-by-side__including-mobile__with-overflow.left {
+    grid-column: 3 / span 5;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .clients-single .side-by-side__including-mobile__with-overflow.left {
+    grid-column: 3 / span 6;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .clients-single .side-by-side__including-mobile__with-overflow.left {
+    grid-column: 4 / span 6;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .clients-single .side-by-side__including-mobile__with-overflow.left {
+    grid-column: 4 / span 6;
+  }
+}
+
+.clients-single .side-by-side__including-mobile__with-overflow.right {
+  grid-column: 8 / span 7;
+}
+
+.clients-single .side-by-side__including-mobile__with-overflow.right img {
+  right: -40px;
+}
+
+@media screen and (min-width: 830px) {
+  .clients-single .side-by-side__including-mobile__with-overflow.right {
+    grid-column: 8 / span 6;
+  }
+  .clients-single .side-by-side__including-mobile__with-overflow.right img {
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .clients-single .side-by-side__including-mobile__with-overflow.right {
+    grid-column: 8 / span 5;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .clients-single .side-by-side__including-mobile__with-overflow.right {
+    grid-column: 9 / span 6;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .clients-single .side-by-side__including-mobile__with-overflow.right {
+    grid-column: 10 / span 6;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .clients-single .side-by-side__including-mobile__with-overflow.right {
+    grid-column: 10 / span 6;
+  }
+}
+
+.clients-single .margin-vertical-top {
+  margin-top: 90px;
+}
+
+@media screen and (min-width: 1120px) {
+  .clients-single .margin-vertical-top {
+    margin-top: 120px;
+  }
+}
+
+.clients-single .margin-vertical-bottom {
+  margin-bottom: 90px;
+}
+
+@media screen and (min-width: 1120px) {
+  .clients-single .margin-vertical-bottom {
+    margin-bottom: 120px;
+  }
+}
+
+.clients-single .margins-vertical-small {
+  margin-top: 20px;
+}
+
+.clients-single .margins-vertical-small:last-of-type {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 830px) {
+  .clients-single .margins-vertical-small {
+    margin-bottom: 20px;
   }
 }
 
