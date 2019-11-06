@@ -2587,45 +2587,52 @@ as this lets us put the blurb on the side we choose for it
   color: white;
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.journal-archive__entry:nth-of-type(odd), .journal-archive__entry:nth-of-type(even) {
-  box-shadow: 0 8px 0px #3A3A3A;
+  box-shadow: 0 -8px 0px #3A3A3A;
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
   padding-right: 0;
 }
 
+.journal-archive__entry:nth-of-type(1) {
+  box-shadow: none;
+}
+
 @media screen and (min-width: 650px) {
   .journal-archive__entry:last-of-type {
     padding-bottom: 0;
-    box-shadow: none;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-archive__entry {
     padding-top: 35px;
+    /* 
+      This compensates for the negative top margin seen above.
+      In theory the additional padding here should match that, 
+      but for whatever reason that doesn't look right, so it is adjusted. 
+      */
     padding-bottom: 30px;
+    box-shadow: 0 -8px 0px #3A3A3A;
+  }
+  .journal-archive__entry:nth-of-type(even) {
+    box-shadow: -8px 0px #3A3A3A, 0 -8px 0px #3A3A3A;
+  }
+  .journal-archive__entry:nth-of-type(1) {
+    box-shadow: none;
+  }
+  .journal-archive__entry:nth-of-type(2) {
+    box-shadow: -8px 0px #3A3A3A;
   }
   .journal-archive__entry:nth-of-type(1), .journal-archive__entry:nth-of-type(2) {
     padding-top: 0;
   }
   .journal-archive__entry:nth-of-type(odd) {
-    box-shadow: 8px 0px #3A3A3A, 0 8px 0px #3A3A3A;
-    padding-right: 30px;
+    padding-right: 38px;
+    margin-right: -8px;
   }
   .journal-archive__entry:nth-of-type(even) {
-    padding-left: 39px;
-    box-shadow: 0 8px 0px #3A3A3A;
-    margin-left: -9px;
-  }
-  .journal-archive__entry:nth-last-child(2) {
-    box-shadow: 8px 0px #3A3A3A;
-  }
-  .journal-archive__entry:last-of-type {
-    box-shadow: none;
+    padding-left: 30px;
   }
   .journal-archive__entry:nth-last-child(2), .journal-archive__entry:last-of-type {
     padding-bottom: 0;
@@ -3063,6 +3070,10 @@ as this lets us put the blurb on the side we choose for it
   content: ' \00bb';
 }
 
+.journal-home .journal-archive__entry {
+  box-shadow: 0px 8px 0px #3A3A3A;
+}
+
 .journal-home .journal-archive__entry:last-of-type {
   padding-bottom: 30px;
 }
@@ -3073,12 +3084,13 @@ as this lets us put the blurb on the side we choose for it
     padding: 64px 0;
   }
   .journal-home .journal-archive__entry:nth-of-type(1) {
-    box-shadow: 8px 0px #3A3A3A;
-    padding-right: 30px;
+    box-shadow: none;
+    padding-right: 38px;
+    margin-right: -8px;
   }
   .journal-home .journal-archive__entry:nth-of-type(2) {
-    padding-left: 39px;
-    margin-left: -9px;
+    box-shadow: -8px 0px #3A3A3A;
+    padding-left: 30px;
   }
 }
 
