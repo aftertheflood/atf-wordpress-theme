@@ -96,10 +96,11 @@ the article BODY
   }
 
   h3 {
+    @include type-heading-small;
     @include type-serif;
     font-weight: 600;
-    font-size: 25px;
-    line-height: 32px;    
+    // font-size: 25px;
+    // line-height: 32px;    
     margin: 60px 0 24px 0;
   }
 
@@ -124,11 +125,9 @@ the article BODY
 
   ul {
     list-style-type: none;
-    // margin-left: $column-gap;
-    padding-left: 20px;
-    @include break(small)  { padding-left: 21px; }
-    @include break(medium) { padding-left: 22px; }
-    @include break(large)  { padding-left: 24px; }
+    margin-top: 0;
+    padding-inline-start: 20px;
+    @include break(tiny)   { padding-inline-start: 0; }
   }
 
   li {
