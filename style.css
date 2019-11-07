@@ -5607,9 +5607,8 @@ the article BODY
   font-family: Tiempos, Georgia, serif;
   /* type styles and spacing
   --------------------------------------------------------------------------------- */
-  /* ===================================================================================
-the article METADATA
-=================================================================================== */
+  /* article metadata
+  --------------------------------------------------------------------------------- */
   /* grid styles
   --------------------------------------------------------------------------------- */
   /* styles for excerpting text content 
@@ -6376,11 +6375,132 @@ the article METADATA
   }
 }
 
+.article-body blockquote.pullquote-left.no-bottom-margin,
+.article-body blockquote.pullquote-right.no-bottom-margin {
+  margin-bottom: 0;
+}
+
+.article-body blockquote.pullquote-left.bottom-of-the-page,
+.article-body blockquote.pullquote-right.bottom-of-the-page {
+  margin-bottom: -70px;
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote-left.bottom-of-the-page,
+  .article-body blockquote.pullquote-right.bottom-of-the-page {
+    margin-bottom: -90px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body blockquote.pullquote-left.bottom-of-the-page,
+  .article-body blockquote.pullquote-right.bottom-of-the-page {
+    margin-bottom: -120px;
+  }
+}
+
 .article-body blockquote.pullquote-left cite,
 .article-body blockquote.pullquote-right cite {
   grid-row: 2;
   grid-column: 2 / span 11;
   margin: 24px 0 0 18px;
+}
+
+.article-body blockquote.pullquote-left.small p,
+.article-body blockquote.pullquote-right.small p {
+  font-size: 22px;
+  line-height: 118%;
+  letter-spacing: -0.01em;
+  line-height: 130%;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body blockquote.pullquote-left.small p,
+  .article-body blockquote.pullquote-right.small p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-body blockquote.pullquote-left.small p,
+  .article-body blockquote.pullquote-right.small p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote-left.small p,
+  .article-body blockquote.pullquote-right.small p {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body blockquote.pullquote-left.small p,
+  .article-body blockquote.pullquote-right.small p {
+    font-size: 34px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .article-body blockquote.pullquote-left.small p,
+  .article-body blockquote.pullquote-right.small p {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .article-body blockquote.pullquote-left.small p,
+  .article-body blockquote.pullquote-right.small p {
+    font-size: 38px;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .article-body blockquote.pullquote-left.small p,
+  .article-body blockquote.pullquote-right.small p {
+    font-size: 38px;
+  }
+}
+
+.article-body blockquote.pullquote-left.small.hang-punctuation p,
+.article-body blockquote.pullquote-right.small.hang-punctuation p {
+  text-indent: -7px;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body blockquote.pullquote-left.small.hang-punctuation p,
+  .article-body blockquote.pullquote-right.small.hang-punctuation p {
+    text-indent: -7px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-body blockquote.pullquote-left.small.hang-punctuation p,
+  .article-body blockquote.pullquote-right.small.hang-punctuation p {
+    text-indent: -8px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote-left.small.hang-punctuation p,
+  .article-body blockquote.pullquote-right.small.hang-punctuation p {
+    text-indent: -9px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body blockquote.pullquote-left.small.hang-punctuation p,
+  .article-body blockquote.pullquote-right.small.hang-punctuation p {
+    text-indent: -10px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .article-body blockquote.pullquote-left.small.hang-punctuation p,
+  .article-body blockquote.pullquote-right.small.hang-punctuation p {
+    text-indent: -11px;
+  }
 }
 
 .article-body blockquote.pullquote-left {

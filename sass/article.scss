@@ -161,9 +161,14 @@ the article BODY
     }
   }
   
-/* ===================================================================================
-the article METADATA
-=================================================================================== */
+
+
+
+
+
+
+   /* article metadata
+  --------------------------------------------------------------------------------- */
 
   .the-metadata {
     ul {
@@ -192,6 +197,10 @@ the article METADATA
 
 
 
+
+
+
+
   /* grid styles
   --------------------------------------------------------------------------------- */
 
@@ -216,6 +225,11 @@ the article METADATA
     @include break(huge)   { grid-column: 6 / span 6; }
     @include break(mega)   { grid-column: 7 / span 6; }
   }
+
+
+
+
+
 
 
   // the case studies, which are just really complicated.
@@ -309,6 +323,10 @@ the article METADATA
   }
 
 
+
+
+
+
   /* styles for excerpting text content 
   --------------------------------------------------------------------------------- */
 
@@ -365,12 +383,37 @@ the article METADATA
       @include break(large)  { text-indent: -23px; }
       @include break(huge)   { text-indent: -24px; }
     }
+    &.no-bottom-margin {
+      margin-bottom: 0;
+    }
+    &.bottom-of-the-page {
+      margin-bottom: -70px; 
+      @include break(medium) { margin-bottom: -90px; }
+      @include break(large)  { margin-bottom: -120px; }
+    }
     cite {
       grid-row: 2;
       grid-column: 2 / span 11;
       margin: 24px 0 0 18px;
     }
   }
+
+  blockquote.pullquote-left.small, 
+  blockquote.pullquote-right.small {
+    p {
+      @include type-heading-medium;
+      line-height: 130%;
+    }
+    &.hang-punctuation p {
+      text-indent: -7px; 
+      @include break(tiny)   { text-indent: -7px; }
+      @include break(small)  { text-indent: -8px; }
+      @include break(medium) { text-indent: -9px; }
+      @include break(large)  { text-indent: -10px; }
+      @include break(huge)   { text-indent: -11px; }
+    }
+  }
+
 
   blockquote.pullquote-left { 
     grid-column: 1 / span 14;
@@ -412,6 +455,10 @@ the article METADATA
   .indepth {
     background:gray;
   }
+
+
+
+
 
 
 
