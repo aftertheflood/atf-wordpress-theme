@@ -122,6 +122,18 @@ html {
   }
 }
 
+@media screen and (max-width: 829px) {
+  .mobile__no-bottom-margin {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 829px) {
+  .mobile__small-bottom-margin {
+    margin-bottom: 20px !important;
+  }
+}
+
 * {
   box-sizing: border-box;
 }

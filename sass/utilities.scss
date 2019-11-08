@@ -21,3 +21,15 @@
 		margin-top: 0 !important;
 	}
 }
+
+.mobile__no-bottom-margin { 
+	@media screen and (max-width: $screen-medium - 1px) {
+		margin-bottom: 0 !important;
+	}
+}
+
+.mobile__small-bottom-margin { 
+	@media screen and (max-width: $screen-medium - 1px) {
+		margin-bottom: 20px !important;
+	}
+}
