@@ -6840,10 +6840,6 @@ the article BODY
   }
 }
 
-.article-body blockquote.plan-green {
-  background-color: #45b38c;
-}
-
 .article-body blockquote.indigo {
   background-color: indigo;
 }
@@ -6874,6 +6870,14 @@ the article BODY
 
 .article-body blockquote.lightsteelblue {
   background-color: lightsteelblue;
+}
+
+.article-body blockquote.plan-green {
+  background-color: #45b38c;
+}
+
+.article-body blockquote.index-lightgrey {
+  background-color: #d8d1ca;
 }
 
 .article-body blockquote.white-text {
