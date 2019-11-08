@@ -84,8 +84,10 @@
 
 
 
-		p:last-of-type { margin-bottom: 0; }
+		// p:last-of-type       { margin-bottom: 0; }
+		// p.with-bottom-margin { margin-bottom: 0.9em; } // needed because the last-of-type is sometimes not the bottom of the page
 
+		
 		.the-metadata {
 			grid-column: 2 / span 12;
 			@include break(large)  { grid-column: 3 / span 2; }
@@ -271,6 +273,11 @@
 			// @include break(small)  { margin-top: 70px; }
 			// @include break(medium) { margin-top: 90px; }
 			@include break(large)  { margin-top: 120px; }
+		}
+
+		&.image__margin-top__small {
+			margin-top: 20px;
+			@include break(large) { margin-top: 40px; }
 		}
 
 		&.image__margin-bottom {

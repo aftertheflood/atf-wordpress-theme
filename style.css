@@ -3266,10 +3266,6 @@ as this lets us put the blurb on the side we choose for it
   }
 }
 
-.clients-single .article-body p:last-of-type {
-  margin-bottom: 0;
-}
-
 .clients-single .article-body .the-metadata {
   grid-column: 2 / span 12;
 }
@@ -3694,6 +3690,16 @@ as this lets us put the blurb on the side we choose for it
 @media screen and (min-width: 1120px) {
   .clients-single figure.image__margin-top {
     margin-top: 120px;
+  }
+}
+
+.clients-single figure.image__margin-top__small {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1120px) {
+  .clients-single figure.image__margin-top__small {
+    margin-top: 40px;
   }
 }
 
@@ -6923,6 +6929,10 @@ the article BODY
   .article-body .wp-block-image figcaption {
     margin: 7px 0 50px 0;
   }
+}
+
+.journal .article-body p:last-of-type {
+  margin-bottom: 0;
 }
 
 .site-header {
