@@ -6840,22 +6840,18 @@ the article BODY
 
 .article-body blockquote.indigo {
   background-color: indigo;
-  color: white;
 }
 
 .article-body blockquote.darkblue {
   background-color: darkblue;
-  color: white;
 }
 
 .article-body blockquote.darkcyan {
   background-color: darkcyan;
-  color: white;
 }
 
 .article-body blockquote.darkolivegreen {
   background-color: darkolivegreen;
-  color: white;
 }
 
 .article-body blockquote.aquamarine {
@@ -6872,6 +6868,10 @@ the article BODY
 
 .article-body blockquote.lightsteelblue {
   background-color: lightsteelblue;
+}
+
+.article-body blockquote.white-text {
+  color: white;
 }
 
 .article-body .indepth {

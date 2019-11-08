@@ -478,15 +478,16 @@ the article BODY
   /* Blockquote color variations */
   blockquote.plan-green     { background-color: rgb(69,179,140); }
 
-  blockquote.indigo         { background-color: indigo;         color: white; }
-  blockquote.darkblue       { background-color: darkblue;       color: white; }
-  blockquote.darkcyan       { background-color: darkcyan;       color: white; }
-  blockquote.darkolivegreen { background-color: darkolivegreen; color: white; }
-
+  blockquote.indigo         { background-color: indigo; }
+  blockquote.darkblue       { background-color: darkblue; }
+  blockquote.darkcyan       { background-color: darkcyan; }
+  blockquote.darkolivegreen { background-color: darkolivegreen; }
   blockquote.aquamarine     { background-color: aquamarine; }
   blockquote.bisque         { background-color: bisque; }
   blockquote.lightsalmon    { background-color: lightsalmon; }
   blockquote.lightsteelblue { background-color: lightsteelblue; }
+
+  blockquote.white-text { color: white; }
 
   .indepth {
     background:gray;
