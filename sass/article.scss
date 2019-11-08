@@ -356,7 +356,8 @@ the article BODY
   }
 
   blockquote.pullquote-left, 
-  blockquote.pullquote-right {
+  blockquote.pullquote-right,
+  blockquote.pullquote-full-width {
     @include type-serif;
     padding: 20px 0;
     display: grid;
@@ -398,7 +399,8 @@ the article BODY
   }
 
   blockquote.pullquote-left.small, 
-  blockquote.pullquote-right.small {
+  blockquote.pullquote-right.small,
+  blockquote.pullquote-full-width {
     p {
       @include type-heading-medium;
       line-height: 130%;
@@ -428,7 +430,7 @@ the article BODY
     cite {
       @include break(tiny)    { grid-column: 3 / span 9; }
       @include break(medium)  { grid-column: 3 / span 7; }
-      @include break(medium)  { grid-column: 3 / span 5; }
+      @include break(large)  { grid-column: 3 / span 5; }
     }
   }
   blockquote.pullquote-right { 
@@ -447,9 +449,42 @@ the article BODY
       @include break(tiny)    { grid-column: 3 / span 9; }
       @include break(small)   { grid-column: 2 / span 9; }
       @include break(medium)  { grid-column: 2 / span 7; }
-      @include break(medium)  { grid-column: 2 / span 5; }
+      @include break(large)  { grid-column: 2 / span 5; }
     }
   }
+
+  blockquote.pullquote-full-width { 
+    grid-column: 1 / span 14;
+    @include break(huge)   { grid-column: 1 / span 16;    grid-template-columns: 0px repeat(14, 1fr) 0px; }
+    @include break(mega)   { grid-column: 1 / span 18;    grid-template-columns: 0px repeat(16, 1fr) 0px; }
+    p {
+      @include break(tiny)   { grid-column: 3 / span 10; }
+      @include break(small)  { grid-column: 3 / span 10; }
+      @include break(medium) { grid-column: 4 / span 8; }
+      @include break(large)  { grid-column: 5 / span 6; }
+      @include break(huge)   { grid-column: 6 / span 6; }
+      @include break(mega)   { grid-column: 7 / span 6; }
+    }
+    cite {
+      @include break(tiny)    { grid-column: 3 / span 9; }
+      @include break(medium)  { grid-column: 4 / span 7; }
+      @include break(large)   { grid-column: 5 / span 5; }
+      @include break(huge)    { grid-column: 6 / span 5; }
+      @include break(mega)    { grid-column: 7 / span 5; }
+    }
+  }
+
+
+  /* Blockquote color variations */
+  blockquote.indigo         { background-color: indigo;         color: white; }
+  blockquote.darkblue       { background-color: darkblue;       color: white; }
+  blockquote.darkcyan       { background-color: darkcyan;       color: white; }
+  blockquote.darkolivegreen { background-color: darkolivegreen; color: white; }
+
+  blockquote.aquamarine     { background-color: aquamarine; }
+  blockquote.bisque         { background-color: bisque; }
+  blockquote.lightsalmon    { background-color: lightsalmon; }
+  blockquote.lightsteelblue { background-color: lightsteelblue; }
 
   .indepth {
     background:gray;
