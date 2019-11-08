@@ -577,7 +577,11 @@ The home (and clients) PROMO zone
       @include break(large) {
         max-width: 128px;
         max-height: 113px;
-        margin-top: 40px;
+        margin-top: 38px;
+      }
+      &.logo__google {
+        @include break(small) { margin-top: 27px; }
+        @include break(large) { margin-top: 30px; }
       }
     }
   }
