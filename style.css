@@ -6834,6 +6834,10 @@ the article BODY
   }
 }
 
+.article-body blockquote.plan-green {
+  background-color: #45b38c;
+}
+
 .article-body blockquote.indigo {
   background-color: indigo;
   color: white;
