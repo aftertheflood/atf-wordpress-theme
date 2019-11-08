@@ -543,8 +543,8 @@ The home (and clients) PROMO zone
         background-color: $clients-color;
         color: #000;
       }
-      @include break(small)  { margin-bottom: 36px; }
-      @include break(large) { margin-bottom: 40px; }
+      // @include break(small)  { margin-bottom: 36px; }
+      // @include break(large) { margin-bottom: 40px; }
     }
 
     img.logo {
@@ -568,6 +568,7 @@ The home (and clients) PROMO zone
         height: auto;
         top: auto;
         transform: none;
+        margin-top: 36px;
       }
       @include break(medium) {
         max-width: 120px;
@@ -576,6 +577,7 @@ The home (and clients) PROMO zone
       @include break(large) {
         max-width: 128px;
         max-height: 113px;
+        margin-top: 40px;
       }
     }
   }

@@ -1723,20 +1723,6 @@ The home (and clients) PROMO zone
   color: #000;
 }
 
-@media screen and (min-width: 650px) {
-  .promo__text .promo-bottom a.link,
-  .promo-double__text .promo-bottom a.link {
-    margin-bottom: 36px;
-  }
-}
-
-@media screen and (min-width: 1120px) {
-  .promo__text .promo-bottom a.link,
-  .promo-double__text .promo-bottom a.link {
-    margin-bottom: 40px;
-  }
-}
-
 .promo__text .promo-bottom img.logo,
 .promo-double__text .promo-bottom img.logo {
   display: block;
@@ -1767,6 +1753,7 @@ The home (and clients) PROMO zone
     height: auto;
     top: auto;
     transform: none;
+    margin-top: 36px;
   }
 }
 
@@ -1783,6 +1770,7 @@ The home (and clients) PROMO zone
   .promo-double__text .promo-bottom img.logo {
     max-width: 128px;
     max-height: 113px;
+    margin-top: 40px;
   }
 }
 
