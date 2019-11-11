@@ -138,13 +138,6 @@
   @include spaced-caps;
   margin: 0;
   padding-top: 0;
-  a {
-    color: white;
-    text-decoration: none;
-    &:hover {
-      color: $journal-color;
-    }
-  }
   @include break(medium) {
     margin: -8px 0 0 0; // The negative top margin brings the text back up to the top of the element.
   }
@@ -155,6 +148,15 @@
   margin-top: -3px;
   margin-bottom: -10px;
 }
+
+.journal-archive__entry a {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: $journal-color;
+  }
+}
+
 
 .journal-archive__entry {
   color:white;
