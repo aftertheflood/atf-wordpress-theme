@@ -3132,6 +3132,9 @@ a.journal-archive__link:hover {
     margin: -13px 0 -16px 0;
     padding: 64px 0;
   }
+  .journal-home .journal-archive__entry:last-of-type {
+    padding-bottom: 64px;
+  }
   .journal-home .journal-archive__entry:nth-of-type(1) {
     box-shadow: none;
     padding-right: 38px;
