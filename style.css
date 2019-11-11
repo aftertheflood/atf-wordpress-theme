@@ -2607,6 +2607,10 @@ as this lets us put the blurb on the side we choose for it
   text-decoration: none;
 }
 
+.journal-archive__title a:hover {
+  color: #FFD600;
+}
+
 @media screen and (min-width: 830px) {
   .journal-archive__title {
     margin: -8px 0 0 0;

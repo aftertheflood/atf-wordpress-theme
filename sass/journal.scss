@@ -141,6 +141,9 @@
   a {
     color: white;
     text-decoration: none;
+    &:hover {
+      color: $journal-color;
+    }
   }
   @include break(medium) {
     margin: -8px 0 0 0; // The negative top margin brings the text back up to the top of the element.
