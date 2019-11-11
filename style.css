@@ -4796,7 +4796,7 @@ as this lets us put the blurb on the side we choose for it
   }
 }
 
-.about__splash p {
+.about__splash p, .about__splash ul {
   font-size: 22px;
   line-height: 118%;
   letter-spacing: -0.01em;
@@ -4806,49 +4806,110 @@ as this lets us put the blurb on the side we choose for it
 }
 
 @media screen and (min-width: 420px) {
-  .about__splash p {
+  .about__splash p, .about__splash ul {
     font-size: 25px;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .about__splash p {
+  .about__splash p, .about__splash ul {
     font-size: 30px;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .about__splash p {
+  .about__splash p, .about__splash ul {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .about__splash p {
+  .about__splash p, .about__splash ul {
     font-size: 34px;
   }
 }
 
 @media screen and (min-width: 1480px) {
-  .about__splash p {
+  .about__splash p, .about__splash ul {
     font-size: 36px;
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .about__splash p {
+  .about__splash p, .about__splash ul {
     font-size: 38px;
   }
 }
 
 @media screen and (min-width: mega) {
-  .about__splash p {
+  .about__splash p, .about__splash ul {
     font-size: 38px;
   }
 }
 
 .about__splash p:last-of-type {
   margin-bottom: 0;
+}
+
+.about__splash ul {
+  list-style-type: none;
+  padding-inline-start: 27px;
+}
+
+@media screen and (min-width: 420px) {
+  .about__splash ul {
+    padding-inline-start: 0;
+  }
+}
+
+.about__splash ul li {
+  text-indent: -27px;
+}
+
+@media screen and (min-width: 420px) {
+  .about__splash ul li {
+    text-indent: -30px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .about__splash ul li {
+    text-indent: -36px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .about__splash ul li {
+    text-indent: -39px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .about__splash ul li {
+    text-indent: -42px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .about__splash ul li {
+    text-indent: -44px;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .about__splash ul li {
+    text-indent: -46px;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .about__splash ul li {
+    text-indent: -46px;
+  }
+}
+
+.about__splash ul li:before {
+  content: "— ";
 }
 
 .about__section-wrapper {
