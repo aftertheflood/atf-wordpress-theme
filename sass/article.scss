@@ -363,6 +363,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
     &:before { content: "— "; }
   }
 
+  blockquote.pullquote,
   blockquote.pullquote-left, 
   blockquote.pullquote-right,
   blockquote.pullquote-full-width {
@@ -408,7 +409,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
   blockquote.pullquote-left.small, 
   blockquote.pullquote-right.small,
-  blockquote.pullquote-full-width {
+  blockquote.pullquote-full-width.small {
     p {
       @include type-heading-medium;
       line-height: 130%;
@@ -423,6 +424,25 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
     }
   }
 
+
+  blockquote.pullquote {
+    grid-column: 1 / span 14;
+    @include break(tiny)   { grid-column: 2 / span 12;   grid-template-columns: repeat(12, 1fr);}
+    @include break(medium) { grid-column: 3 / span 10;   grid-template-columns: repeat(10, 1fr);}
+    @include break(large)  { grid-column: 4 / span 8;    grid-template-columns: repeat(8, 1fr); }
+    @include break(huge)   { grid-column: 5 / span 8;    grid-template-columns: repeat(8, 1fr); }
+    @include break(mega)   { grid-column: 6 / span 8;    grid-template-columns: repeat(8, 1fr); }
+    p {
+      @include break(tiny)   { grid-column: 2 / span 10; }
+      @include break(medium) { grid-column: 2 / span 8; }
+      @include break(large)  { grid-column: 2 / span 6; }
+    }
+    cite {
+      @include break(tiny)   { grid-column: 2 / span 9; }
+      @include break(medium) { grid-column: 2 / span 7; }
+      @include break(large)  { grid-column: 2 / span 5; }
+    }
+  }
 
   blockquote.pullquote-left { 
     grid-column: 1 / span 14;

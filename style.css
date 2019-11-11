@@ -6372,6 +6372,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   content: "— ";
 }
 
+.article-body blockquote.pullquote,
 .article-body blockquote.pullquote-left,
 .article-body blockquote.pullquote-right,
 .article-body blockquote.pullquote-full-width {
@@ -6383,6 +6384,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 420px) {
+  .article-body blockquote.pullquote,
   .article-body blockquote.pullquote-left,
   .article-body blockquote.pullquote-right,
   .article-body blockquote.pullquote-full-width {
@@ -6391,6 +6393,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 650px) {
+  .article-body blockquote.pullquote,
   .article-body blockquote.pullquote-left,
   .article-body blockquote.pullquote-right,
   .article-body blockquote.pullquote-full-width {
@@ -6399,6 +6402,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote,
   .article-body blockquote.pullquote-left,
   .article-body blockquote.pullquote-right,
   .article-body blockquote.pullquote-full-width {
@@ -6408,6 +6412,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 1120px) {
+  .article-body blockquote.pullquote,
   .article-body blockquote.pullquote-left,
   .article-body blockquote.pullquote-right,
   .article-body blockquote.pullquote-full-width {
@@ -6416,6 +6421,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 1480px) {
+  .article-body blockquote.pullquote,
   .article-body blockquote.pullquote-left,
   .article-body blockquote.pullquote-right,
   .article-body blockquote.pullquote-full-width {
@@ -6423,6 +6429,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
+.article-body blockquote.pullquote p,
 .article-body blockquote.pullquote-left p,
 .article-body blockquote.pullquote-right p,
 .article-body blockquote.pullquote-full-width p {
@@ -6434,6 +6441,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 420px) {
+  .article-body blockquote.pullquote p,
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
@@ -6443,6 +6451,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 650px) {
+  .article-body blockquote.pullquote p,
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
@@ -6452,6 +6461,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote p,
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
@@ -6461,6 +6471,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 1120px) {
+  .article-body blockquote.pullquote p,
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
@@ -6470,6 +6481,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 1480px) {
+  .article-body blockquote.pullquote p,
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
@@ -6479,6 +6491,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 1850px) {
+  .article-body blockquote.pullquote p,
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
@@ -6488,6 +6501,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: mega) {
+  .article-body blockquote.pullquote p,
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
@@ -6496,18 +6510,21 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
+.article-body blockquote.pullquote p:first-of-type,
 .article-body blockquote.pullquote-left p:first-of-type,
 .article-body blockquote.pullquote-right p:first-of-type,
 .article-body blockquote.pullquote-full-width p:first-of-type {
   margin-top: -3px;
 }
 
+.article-body blockquote.pullquote p:last-of-type,
 .article-body blockquote.pullquote-left p:last-of-type,
 .article-body blockquote.pullquote-right p:last-of-type,
 .article-body blockquote.pullquote-full-width p:last-of-type {
   margin-bottom: 0;
 }
 
+.article-body blockquote.pullquote.hang-punctuation p,
 .article-body blockquote.pullquote-left.hang-punctuation p,
 .article-body blockquote.pullquote-right.hang-punctuation p,
 .article-body blockquote.pullquote-full-width.hang-punctuation p {
@@ -6515,6 +6532,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 420px) {
+  .article-body blockquote.pullquote.hang-punctuation p,
   .article-body blockquote.pullquote-left.hang-punctuation p,
   .article-body blockquote.pullquote-right.hang-punctuation p,
   .article-body blockquote.pullquote-full-width.hang-punctuation p {
@@ -6523,6 +6541,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 650px) {
+  .article-body blockquote.pullquote.hang-punctuation p,
   .article-body blockquote.pullquote-left.hang-punctuation p,
   .article-body blockquote.pullquote-right.hang-punctuation p,
   .article-body blockquote.pullquote-full-width.hang-punctuation p {
@@ -6531,6 +6550,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote.hang-punctuation p,
   .article-body blockquote.pullquote-left.hang-punctuation p,
   .article-body blockquote.pullquote-right.hang-punctuation p,
   .article-body blockquote.pullquote-full-width.hang-punctuation p {
@@ -6539,6 +6559,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 1120px) {
+  .article-body blockquote.pullquote.hang-punctuation p,
   .article-body blockquote.pullquote-left.hang-punctuation p,
   .article-body blockquote.pullquote-right.hang-punctuation p,
   .article-body blockquote.pullquote-full-width.hang-punctuation p {
@@ -6547,6 +6568,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 1480px) {
+  .article-body blockquote.pullquote.hang-punctuation p,
   .article-body blockquote.pullquote-left.hang-punctuation p,
   .article-body blockquote.pullquote-right.hang-punctuation p,
   .article-body blockquote.pullquote-full-width.hang-punctuation p {
@@ -6554,12 +6576,14 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
+.article-body blockquote.pullquote.no-bottom-margin,
 .article-body blockquote.pullquote-left.no-bottom-margin,
 .article-body blockquote.pullquote-right.no-bottom-margin,
 .article-body blockquote.pullquote-full-width.no-bottom-margin {
   margin-bottom: 0;
 }
 
+.article-body blockquote.pullquote.bottom-of-the-page,
 .article-body blockquote.pullquote-left.bottom-of-the-page,
 .article-body blockquote.pullquote-right.bottom-of-the-page,
 .article-body blockquote.pullquote-full-width.bottom-of-the-page {
@@ -6567,6 +6591,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote.bottom-of-the-page,
   .article-body blockquote.pullquote-left.bottom-of-the-page,
   .article-body blockquote.pullquote-right.bottom-of-the-page,
   .article-body blockquote.pullquote-full-width.bottom-of-the-page {
@@ -6575,6 +6600,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 1120px) {
+  .article-body blockquote.pullquote.bottom-of-the-page,
   .article-body blockquote.pullquote-left.bottom-of-the-page,
   .article-body blockquote.pullquote-right.bottom-of-the-page,
   .article-body blockquote.pullquote-full-width.bottom-of-the-page {
@@ -6582,6 +6608,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
+.article-body blockquote.pullquote cite,
 .article-body blockquote.pullquote-left cite,
 .article-body blockquote.pullquote-right cite,
 .article-body blockquote.pullquote-full-width cite {
@@ -6592,7 +6619,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 .article-body blockquote.pullquote-left.small p,
 .article-body blockquote.pullquote-right.small p,
-.article-body blockquote.pullquote-full-width p {
+.article-body blockquote.pullquote-full-width.small p {
   font-size: 22px;
   line-height: 118%;
   letter-spacing: -0.01em;
@@ -6602,7 +6629,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 @media screen and (min-width: 420px) {
   .article-body blockquote.pullquote-left.small p,
   .article-body blockquote.pullquote-right.small p,
-  .article-body blockquote.pullquote-full-width p {
+  .article-body blockquote.pullquote-full-width.small p {
     font-size: 25px;
   }
 }
@@ -6610,7 +6637,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 @media screen and (min-width: 650px) {
   .article-body blockquote.pullquote-left.small p,
   .article-body blockquote.pullquote-right.small p,
-  .article-body blockquote.pullquote-full-width p {
+  .article-body blockquote.pullquote-full-width.small p {
     font-size: 30px;
   }
 }
@@ -6618,7 +6645,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 @media screen and (min-width: 830px) {
   .article-body blockquote.pullquote-left.small p,
   .article-body blockquote.pullquote-right.small p,
-  .article-body blockquote.pullquote-full-width p {
+  .article-body blockquote.pullquote-full-width.small p {
     font-size: 32px;
   }
 }
@@ -6626,7 +6653,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 @media screen and (min-width: 1120px) {
   .article-body blockquote.pullquote-left.small p,
   .article-body blockquote.pullquote-right.small p,
-  .article-body blockquote.pullquote-full-width p {
+  .article-body blockquote.pullquote-full-width.small p {
     font-size: 34px;
   }
 }
@@ -6634,7 +6661,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 @media screen and (min-width: 1480px) {
   .article-body blockquote.pullquote-left.small p,
   .article-body blockquote.pullquote-right.small p,
-  .article-body blockquote.pullquote-full-width p {
+  .article-body blockquote.pullquote-full-width.small p {
     font-size: 36px;
   }
 }
@@ -6642,7 +6669,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 @media screen and (min-width: 1850px) {
   .article-body blockquote.pullquote-left.small p,
   .article-body blockquote.pullquote-right.small p,
-  .article-body blockquote.pullquote-full-width p {
+  .article-body blockquote.pullquote-full-width.small p {
     font-size: 38px;
   }
 }
@@ -6650,21 +6677,21 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 @media screen and (min-width: mega) {
   .article-body blockquote.pullquote-left.small p,
   .article-body blockquote.pullquote-right.small p,
-  .article-body blockquote.pullquote-full-width p {
+  .article-body blockquote.pullquote-full-width.small p {
     font-size: 38px;
   }
 }
 
 .article-body blockquote.pullquote-left.small.hang-punctuation p,
 .article-body blockquote.pullquote-right.small.hang-punctuation p,
-.article-body blockquote.pullquote-full-width.hang-punctuation p {
+.article-body blockquote.pullquote-full-width.small.hang-punctuation p {
   text-indent: -7px;
 }
 
 @media screen and (min-width: 420px) {
   .article-body blockquote.pullquote-left.small.hang-punctuation p,
   .article-body blockquote.pullquote-right.small.hang-punctuation p,
-  .article-body blockquote.pullquote-full-width.hang-punctuation p {
+  .article-body blockquote.pullquote-full-width.small.hang-punctuation p {
     text-indent: -7px;
   }
 }
@@ -6672,7 +6699,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 @media screen and (min-width: 650px) {
   .article-body blockquote.pullquote-left.small.hang-punctuation p,
   .article-body blockquote.pullquote-right.small.hang-punctuation p,
-  .article-body blockquote.pullquote-full-width.hang-punctuation p {
+  .article-body blockquote.pullquote-full-width.small.hang-punctuation p {
     text-indent: -8px;
   }
 }
@@ -6680,7 +6707,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 @media screen and (min-width: 830px) {
   .article-body blockquote.pullquote-left.small.hang-punctuation p,
   .article-body blockquote.pullquote-right.small.hang-punctuation p,
-  .article-body blockquote.pullquote-full-width.hang-punctuation p {
+  .article-body blockquote.pullquote-full-width.small.hang-punctuation p {
     text-indent: -9px;
   }
 }
@@ -6688,7 +6715,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 @media screen and (min-width: 1120px) {
   .article-body blockquote.pullquote-left.small.hang-punctuation p,
   .article-body blockquote.pullquote-right.small.hang-punctuation p,
-  .article-body blockquote.pullquote-full-width.hang-punctuation p {
+  .article-body blockquote.pullquote-full-width.small.hang-punctuation p {
     text-indent: -10px;
   }
 }
@@ -6696,8 +6723,90 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 @media screen and (min-width: 1480px) {
   .article-body blockquote.pullquote-left.small.hang-punctuation p,
   .article-body blockquote.pullquote-right.small.hang-punctuation p,
-  .article-body blockquote.pullquote-full-width.hang-punctuation p {
+  .article-body blockquote.pullquote-full-width.small.hang-punctuation p {
     text-indent: -11px;
+  }
+}
+
+.article-body blockquote.pullquote {
+  grid-column: 1 / span 14;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body blockquote.pullquote {
+    grid-column: 2 / span 12;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote {
+    grid-column: 3 / span 10;
+    grid-template-columns: repeat(10, 1fr);
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body blockquote.pullquote {
+    grid-column: 4 / span 8;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .article-body blockquote.pullquote {
+    grid-column: 5 / span 8;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .article-body blockquote.pullquote {
+    grid-column: 6 / span 8;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media screen and (min-width: mega) {
+  .article-body blockquote.pullquote {
+    grid-column: 6 / span 8;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .article-body blockquote.pullquote p {
+    grid-column: 2 / span 10;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote p {
+    grid-column: 2 / span 8;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body blockquote.pullquote p {
+    grid-column: 2 / span 6;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .article-body blockquote.pullquote cite {
+    grid-column: 2 / span 9;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.pullquote cite {
+    grid-column: 2 / span 7;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body blockquote.pullquote cite {
+    grid-column: 2 / span 5;
   }
 }
 
