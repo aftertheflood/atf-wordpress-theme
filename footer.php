@@ -6,7 +6,7 @@
 		<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" > 
 			Get in touch
 		</a>
-		<a class="button-right" href="">Or subscribe to our newsletter</a>
+		<a class="button-right" href="http://eepurl.com/dhBMZD">Or subscribe to our newsletter</a>
 	</div>
 <?php } ?>
 	<div class="social">
