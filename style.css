@@ -2801,7 +2801,7 @@ as this lets us put the blurb on the side we choose for it
   margin: 0;
 }
 
-.journal-archive__link {
+a.journal-archive__link {
   font-family: Tiempos, Georgia, serif;
   font-size: 15px;
   line-height: 24px;
@@ -2813,21 +2813,21 @@ as this lets us put the blurb on the side we choose for it
 }
 
 @media screen and (min-width: 830px) {
-  .journal-archive__link {
+  a.journal-archive__link {
     font-size: 16px;
     line-height: 25px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .journal-archive__link {
+  a.journal-archive__link {
     font-size: 17px;
     line-height: 26px;
     letter-spacing: -0.01em;
   }
 }
 
-.journal-archive__link:hover {
+a.journal-archive__link:hover {
   color: #fff;
 }
 

@@ -251,7 +251,7 @@
   }
 }
 
-.journal-archive__link {
+a.journal-archive__link {
   @include type-small;
   @include type-sans;
   color: $faded-text;
