@@ -70,6 +70,13 @@ The home SPLASHh zone
   font-family: Tiempos, serif;
   margin-top: 0;
   margin-bottom: 0;
+  a {
+    color: #000;
+    text-decoration: none;
+    &:hover {
+      color: rgba(0,0,0,0.6);
+    }
+  }
 }
 
 .splash__promo {

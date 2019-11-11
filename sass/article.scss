@@ -51,6 +51,14 @@ the article HEADING
 the article BODY
 =================================================================================== */
 
+
+.journal .article-body p:last-of-type { margin-bottom: 0; }
+/* for the bottom of the page 
+it is set out here because the rest of article-body applies to more than just the journal, 
+whereas we want this to only apply to the journal pages (i.e. NOT to the case-study pages)
+*/
+
+
 .article-body {
   @include type-body;
   @include type-serif;
@@ -332,7 +340,7 @@ the article BODY
   blockquote {
     background-color: #FFF9D8;
     margin: 60px 0 60px 0;
-    padding: 24px 50px 24px 50px;
+    padding: 24px 50px 40px 50px;
   }
 
   blockquote p {
@@ -355,6 +363,7 @@ the article BODY
     &:before { content: "— "; }
   }
 
+  blockquote.pullquote,
   blockquote.pullquote-left, 
   blockquote.pullquote-right,
   blockquote.pullquote-full-width {
@@ -370,18 +379,19 @@ the article BODY
     @include break(huge)   { padding: 70px 0; }
     p {
       grid-row: 1;
-      @include type-heading-big;
+      @include type-heading-medium;
+      line-height: 130%;
       &:first-of-type { margin-top: -3px; }
       &:last-of-type  { margin-bottom: 0;}
       grid-column: 2 / span 12;
     }
     &.hang-punctuation p {
-      text-indent: -13px; 
-      @include break(tiny)   { text-indent: -17px; }
-      @include break(small)  { text-indent: -19px; }
-      @include break(medium) { text-indent: -22px; }
-      @include break(large)  { text-indent: -23px; }
-      @include break(huge)   { text-indent: -24px; }
+      text-indent: -7px; 
+      @include break(tiny)   { text-indent: -7px; }
+      @include break(small)  { text-indent: -8px; }
+      @include break(medium) { text-indent: -9px; }
+      @include break(large)  { text-indent: -10px; }
+      @include break(huge)   { text-indent: -11px; }
     }
     &.no-bottom-margin {
       margin-bottom: 0;
@@ -398,58 +408,80 @@ the article BODY
     }
   }
 
-  blockquote.pullquote-left.small, 
-  blockquote.pullquote-right.small,
-  blockquote.pullquote-full-width {
+  blockquote.big, 
+  blockquote.pullquote-left.big, 
+  blockquote.pullquote-right.big,
+  blockquote.pullquote-full-width.big {
     p {
-      @include type-heading-medium;
-      line-height: 130%;
+      @include type-heading-big;
+      line-height: 120%;
     }
     &.hang-punctuation p {
-      text-indent: -7px; 
-      @include break(tiny)   { text-indent: -7px; }
-      @include break(small)  { text-indent: -8px; }
-      @include break(medium) { text-indent: -9px; }
-      @include break(large)  { text-indent: -10px; }
-      @include break(huge)   { text-indent: -11px; }
+      text-indent: -13px; 
+      @include break(tiny)   { text-indent: -17px; }
+      @include break(small)  { text-indent: -19px; }
+      @include break(medium) { text-indent: -22px; }
+      @include break(large)  { text-indent: -23px; }
+      @include break(huge)   { text-indent: -24px; }
     }
   }
 
 
+
+  blockquote.pullquote {
+    grid-column: 1 / span 14;
+    @include break(tiny)   { grid-column: 2 / span 12;   grid-template-columns: repeat(12, 1fr);}
+    @include break(medium) { grid-column: 3 / span 10;   grid-template-columns: repeat(10, 1fr);}
+    @include break(large)  { grid-column: 4 / span 8;    grid-template-columns: repeat(8, 1fr); }
+    @include break(huge)   { grid-column: 5 / span 8;    grid-template-columns: repeat(8, 1fr); }
+    @include break(mega)   { grid-column: 6 / span 8;    grid-template-columns: repeat(8, 1fr); }
+    p {
+      @include break(tiny)   { grid-column: 2 / span 10; }
+      @include break(medium) { grid-column: 2 / span 8; }
+      @include break(large)  { grid-column: 2 / span 6; }
+    }
+    cite {
+      @include break(tiny)   { grid-column: 2 / span 9; }
+      @include break(medium) { grid-column: 2 / span 7; }
+      @include break(large)  { grid-column: 2 / span 5; }
+    }
+  }
+
   blockquote.pullquote-left { 
     grid-column: 1 / span 14;
     @include break(small)  { grid-column: 1 / span 11;   grid-template-columns: 0px repeat(10, 1fr); }
-    @include break(medium) { grid-column: 1 / span 10;   grid-template-columns: 0px repeat(9, 1fr); }
-    @include break(huge)   { grid-column: 1 / span 9;    grid-template-columns: 0px repeat(8, 1fr); }
+    @include break(medium) { grid-column: 1 / span 9;    grid-template-columns: 0px repeat(8, 1fr); }
+    @include break(large)  { grid-column: 1 / span 8;    grid-template-columns: 0px repeat(7, 1fr); }
     p {
-      @include break(tiny)   { grid-column: 3 / span 11; padding-right: 30px; }
+      @include break(tiny)   { grid-column: 3 / span 11; padding-right: 50px; }
       @include break(small)  { grid-column: 3 / span 9; }
-      @include break(medium) { grid-column: 3 / span 8; }
-      @include break(large)  { grid-column: 3 / span 7; }
+      @include break(medium) { grid-column: 3 / span 7; }
+      @include break(large)  { grid-column: 3 / span 6; }
     }
     cite {
       @include break(tiny)    { grid-column: 3 / span 9; }
       @include break(medium)  { grid-column: 3 / span 7; }
-      @include break(large)  { grid-column: 3 / span 5; }
+      @include break(large)   { grid-column: 3 / span 5; }
     }
   }
   blockquote.pullquote-right { 
     grid-column: 1 / span 14; 
     @include break(small)  { grid-column: 4 / span 11;   grid-template-columns: repeat(10, 1fr) 0px; }
-    @include break(medium) { grid-column: 5 / span 10;   grid-template-columns: repeat(9, 1fr) 0px; }
+    @include break(medium) { grid-column: 6 / span 9;    grid-template-columns: repeat(8, 1fr) 0px; }
+    @include break(large)  { grid-column: 7 / span 8;    grid-template-columns: repeat(7, 1fr) 0px; }
     @include break(huge)   { grid-column: 8 / span 9;    grid-template-columns: repeat(8, 1fr) 0px; }
     @include break(mega)   { grid-column: 10 / span 9; }
     p { 
-      @include break(tiny)   { grid-column: 3 / span 11; padding-right: 30px; }
+      @include break(tiny)   { grid-column: 3 / span 11; padding-right: 50px; }
       @include break(small)  { grid-column: 2 / span 9; }
-      @include break(medium) { grid-column: 2 / span 8; }
-      @include break(large)  { grid-column: 2 / span 7; }
+      @include break(medium) { grid-column: 2 / span 7; }
+      @include break(large)  { grid-column: 2 / span 6; }
     }
     cite {
       @include break(tiny)    { grid-column: 3 / span 9; }
       @include break(small)   { grid-column: 2 / span 9; }
       @include break(medium)  { grid-column: 2 / span 7; }
-      @include break(large)  { grid-column: 2 / span 5; }
+      @include break(large)   { grid-column: 2 / span 5; }
     }
   }
 
@@ -531,6 +563,3 @@ the article BODY
 }
 
 
-
-.journal .article-body p:last-of-type { margin-bottom: 0; }
-// for the bottom of the page

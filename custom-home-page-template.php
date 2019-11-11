@@ -12,7 +12,7 @@ $this_page_id = get_the_ID();
   if ( is_front_page() ) {	?>
   <h1 class="splash__intro__title"><?php bloginfo( 'name' ); ?></h1>
   <?php if ( get_bloginfo( 'description' ) ) : ?>
-    <p class="splash__intro__description"><?php bloginfo( 'description' ); ?></p>
+    <p class="splash__intro__description"><a href=""><?php bloginfo( 'description' ); ?></a></p>
   <?php endif; ?>	
   <?php } ?>
   </div>
@@ -53,8 +53,10 @@ $this_page_id = get_the_ID();
       while ( $posts->have_posts() ) : 
         $posts->the_post(); ?>
       <div class="journal-archive__entry">
-        <h2 class="journal-archive__title"><?php the_title() ?></h2>
-        <div class="journal-archive__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>
+        <a href="<?php the_permalink() ?>">
+          <h2 class="journal-archive__title"><?php the_title() ?></h2>
+          <div class="journal-archive__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>
+        </a>
         <div class="journal-archive__date"><?php the_date() ?></div>
         <div class="journal-archive__excerpt"><?php the_excerpt() ?></div>
         <a class="journal-archive__link" href="<?php the_permalink() ?>">Read more</a>
