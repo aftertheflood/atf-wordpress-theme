@@ -6434,9 +6434,10 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 .article-body blockquote.pullquote-right p,
 .article-body blockquote.pullquote-full-width p {
   grid-row: 1;
-  font-size: 32px;
-  line-height: 38px;
-  letter-spacing: -0.02em;
+  font-size: 22px;
+  line-height: 118%;
+  letter-spacing: -0.01em;
+  line-height: 130%;
   grid-column: 2 / span 12;
 }
 
@@ -6445,8 +6446,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
-    font-size: 38px;
-    line-height: 47px;
+    font-size: 25px;
   }
 }
 
@@ -6455,8 +6455,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
-    font-size: 46px;
-    line-height: 52px;
+    font-size: 30px;
   }
 }
 
@@ -6465,8 +6464,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
-    font-size: 52px;
-    line-height: 60px;
+    font-size: 32px;
   }
 }
 
@@ -6475,8 +6473,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
-    font-size: 56px;
-    line-height: 65px;
+    font-size: 34px;
   }
 }
 
@@ -6485,8 +6482,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
-    font-size: 60px;
-    line-height: 67px;
+    font-size: 36px;
   }
 }
 
@@ -6495,8 +6491,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
-    font-size: 64px;
-    line-height: 70px;
+    font-size: 38px;
   }
 }
 
@@ -6505,8 +6500,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
-    font-size: 64px;
-    line-height: 70px;
+    font-size: 38px;
   }
 }
 
@@ -6528,7 +6522,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 .article-body blockquote.pullquote-left.hang-punctuation p,
 .article-body blockquote.pullquote-right.hang-punctuation p,
 .article-body blockquote.pullquote-full-width.hang-punctuation p {
-  text-indent: -13px;
+  text-indent: -7px;
 }
 
 @media screen and (min-width: 420px) {
@@ -6536,7 +6530,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   .article-body blockquote.pullquote-left.hang-punctuation p,
   .article-body blockquote.pullquote-right.hang-punctuation p,
   .article-body blockquote.pullquote-full-width.hang-punctuation p {
-    text-indent: -17px;
+    text-indent: -7px;
   }
 }
 
@@ -6545,7 +6539,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   .article-body blockquote.pullquote-left.hang-punctuation p,
   .article-body blockquote.pullquote-right.hang-punctuation p,
   .article-body blockquote.pullquote-full-width.hang-punctuation p {
-    text-indent: -19px;
+    text-indent: -8px;
   }
 }
 
@@ -6554,7 +6548,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   .article-body blockquote.pullquote-left.hang-punctuation p,
   .article-body blockquote.pullquote-right.hang-punctuation p,
   .article-body blockquote.pullquote-full-width.hang-punctuation p {
-    text-indent: -22px;
+    text-indent: -9px;
   }
 }
 
@@ -6563,7 +6557,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   .article-body blockquote.pullquote-left.hang-punctuation p,
   .article-body blockquote.pullquote-right.hang-punctuation p,
   .article-body blockquote.pullquote-full-width.hang-punctuation p {
-    text-indent: -23px;
+    text-indent: -10px;
   }
 }
 
@@ -6572,7 +6566,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   .article-body blockquote.pullquote-left.hang-punctuation p,
   .article-body blockquote.pullquote-right.hang-punctuation p,
   .article-body blockquote.pullquote-full-width.hang-punctuation p {
-    text-indent: -24px;
+    text-indent: -11px;
   }
 }
 
@@ -6617,114 +6611,135 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   margin: 24px 0 0 18px;
 }
 
-.article-body blockquote.pullquote-left.small p,
-.article-body blockquote.pullquote-right.small p,
-.article-body blockquote.pullquote-full-width.small p {
-  font-size: 22px;
-  line-height: 118%;
-  letter-spacing: -0.01em;
-  line-height: 130%;
+.article-body blockquote.big p,
+.article-body blockquote.pullquote-left.big p,
+.article-body blockquote.pullquote-right.big p,
+.article-body blockquote.pullquote-full-width.big p {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  line-height: 120%;
 }
 
 @media screen and (min-width: 420px) {
-  .article-body blockquote.pullquote-left.small p,
-  .article-body blockquote.pullquote-right.small p,
-  .article-body blockquote.pullquote-full-width.small p {
-    font-size: 25px;
+  .article-body blockquote.big p,
+  .article-body blockquote.pullquote-left.big p,
+  .article-body blockquote.pullquote-right.big p,
+  .article-body blockquote.pullquote-full-width.big p {
+    font-size: 38px;
+    line-height: 47px;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .article-body blockquote.pullquote-left.small p,
-  .article-body blockquote.pullquote-right.small p,
-  .article-body blockquote.pullquote-full-width.small p {
-    font-size: 30px;
+  .article-body blockquote.big p,
+  .article-body blockquote.pullquote-left.big p,
+  .article-body blockquote.pullquote-right.big p,
+  .article-body blockquote.pullquote-full-width.big p {
+    font-size: 46px;
+    line-height: 52px;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .article-body blockquote.pullquote-left.small p,
-  .article-body blockquote.pullquote-right.small p,
-  .article-body blockquote.pullquote-full-width.small p {
-    font-size: 32px;
+  .article-body blockquote.big p,
+  .article-body blockquote.pullquote-left.big p,
+  .article-body blockquote.pullquote-right.big p,
+  .article-body blockquote.pullquote-full-width.big p {
+    font-size: 52px;
+    line-height: 60px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .article-body blockquote.pullquote-left.small p,
-  .article-body blockquote.pullquote-right.small p,
-  .article-body blockquote.pullquote-full-width.small p {
-    font-size: 34px;
+  .article-body blockquote.big p,
+  .article-body blockquote.pullquote-left.big p,
+  .article-body blockquote.pullquote-right.big p,
+  .article-body blockquote.pullquote-full-width.big p {
+    font-size: 56px;
+    line-height: 65px;
   }
 }
 
 @media screen and (min-width: 1480px) {
-  .article-body blockquote.pullquote-left.small p,
-  .article-body blockquote.pullquote-right.small p,
-  .article-body blockquote.pullquote-full-width.small p {
-    font-size: 36px;
+  .article-body blockquote.big p,
+  .article-body blockquote.pullquote-left.big p,
+  .article-body blockquote.pullquote-right.big p,
+  .article-body blockquote.pullquote-full-width.big p {
+    font-size: 60px;
+    line-height: 67px;
   }
 }
 
 @media screen and (min-width: 1850px) {
-  .article-body blockquote.pullquote-left.small p,
-  .article-body blockquote.pullquote-right.small p,
-  .article-body blockquote.pullquote-full-width.small p {
-    font-size: 38px;
+  .article-body blockquote.big p,
+  .article-body blockquote.pullquote-left.big p,
+  .article-body blockquote.pullquote-right.big p,
+  .article-body blockquote.pullquote-full-width.big p {
+    font-size: 64px;
+    line-height: 70px;
   }
 }
 
 @media screen and (min-width: mega) {
-  .article-body blockquote.pullquote-left.small p,
-  .article-body blockquote.pullquote-right.small p,
-  .article-body blockquote.pullquote-full-width.small p {
-    font-size: 38px;
+  .article-body blockquote.big p,
+  .article-body blockquote.pullquote-left.big p,
+  .article-body blockquote.pullquote-right.big p,
+  .article-body blockquote.pullquote-full-width.big p {
+    font-size: 64px;
+    line-height: 70px;
   }
 }
 
-.article-body blockquote.pullquote-left.small.hang-punctuation p,
-.article-body blockquote.pullquote-right.small.hang-punctuation p,
-.article-body blockquote.pullquote-full-width.small.hang-punctuation p {
-  text-indent: -7px;
+.article-body blockquote.big.hang-punctuation p,
+.article-body blockquote.pullquote-left.big.hang-punctuation p,
+.article-body blockquote.pullquote-right.big.hang-punctuation p,
+.article-body blockquote.pullquote-full-width.big.hang-punctuation p {
+  text-indent: -13px;
 }
 
 @media screen and (min-width: 420px) {
-  .article-body blockquote.pullquote-left.small.hang-punctuation p,
-  .article-body blockquote.pullquote-right.small.hang-punctuation p,
-  .article-body blockquote.pullquote-full-width.small.hang-punctuation p {
-    text-indent: -7px;
+  .article-body blockquote.big.hang-punctuation p,
+  .article-body blockquote.pullquote-left.big.hang-punctuation p,
+  .article-body blockquote.pullquote-right.big.hang-punctuation p,
+  .article-body blockquote.pullquote-full-width.big.hang-punctuation p {
+    text-indent: -17px;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .article-body blockquote.pullquote-left.small.hang-punctuation p,
-  .article-body blockquote.pullquote-right.small.hang-punctuation p,
-  .article-body blockquote.pullquote-full-width.small.hang-punctuation p {
-    text-indent: -8px;
+  .article-body blockquote.big.hang-punctuation p,
+  .article-body blockquote.pullquote-left.big.hang-punctuation p,
+  .article-body blockquote.pullquote-right.big.hang-punctuation p,
+  .article-body blockquote.pullquote-full-width.big.hang-punctuation p {
+    text-indent: -19px;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .article-body blockquote.pullquote-left.small.hang-punctuation p,
-  .article-body blockquote.pullquote-right.small.hang-punctuation p,
-  .article-body blockquote.pullquote-full-width.small.hang-punctuation p {
-    text-indent: -9px;
+  .article-body blockquote.big.hang-punctuation p,
+  .article-body blockquote.pullquote-left.big.hang-punctuation p,
+  .article-body blockquote.pullquote-right.big.hang-punctuation p,
+  .article-body blockquote.pullquote-full-width.big.hang-punctuation p {
+    text-indent: -22px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .article-body blockquote.pullquote-left.small.hang-punctuation p,
-  .article-body blockquote.pullquote-right.small.hang-punctuation p,
-  .article-body blockquote.pullquote-full-width.small.hang-punctuation p {
-    text-indent: -10px;
+  .article-body blockquote.big.hang-punctuation p,
+  .article-body blockquote.pullquote-left.big.hang-punctuation p,
+  .article-body blockquote.pullquote-right.big.hang-punctuation p,
+  .article-body blockquote.pullquote-full-width.big.hang-punctuation p {
+    text-indent: -23px;
   }
 }
 
 @media screen and (min-width: 1480px) {
-  .article-body blockquote.pullquote-left.small.hang-punctuation p,
-  .article-body blockquote.pullquote-right.small.hang-punctuation p,
-  .article-body blockquote.pullquote-full-width.small.hang-punctuation p {
-    text-indent: -11px;
+  .article-body blockquote.big.hang-punctuation p,
+  .article-body blockquote.pullquote-left.big.hang-punctuation p,
+  .article-body blockquote.pullquote-right.big.hang-punctuation p,
+  .article-body blockquote.pullquote-full-width.big.hang-punctuation p {
+    text-indent: -24px;
   }
 }
 
@@ -6823,22 +6838,22 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 @media screen and (min-width: 830px) {
   .article-body blockquote.pullquote-left {
-    grid-column: 1 / span 10;
-    grid-template-columns: 0px repeat(9, 1fr);
+    grid-column: 1 / span 9;
+    grid-template-columns: 0px repeat(8, 1fr);
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1120px) {
   .article-body blockquote.pullquote-left {
-    grid-column: 1 / span 9;
-    grid-template-columns: 0px repeat(8, 1fr);
+    grid-column: 1 / span 8;
+    grid-template-columns: 0px repeat(7, 1fr);
   }
 }
 
 @media screen and (min-width: 420px) {
   .article-body blockquote.pullquote-left p {
     grid-column: 3 / span 11;
-    padding-right: 30px;
+    padding-right: 50px;
   }
 }
 
@@ -6850,13 +6865,13 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 @media screen and (min-width: 830px) {
   .article-body blockquote.pullquote-left p {
-    grid-column: 3 / span 8;
+    grid-column: 3 / span 7;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .article-body blockquote.pullquote-left p {
-    grid-column: 3 / span 7;
+    grid-column: 3 / span 6;
   }
 }
 
@@ -6891,8 +6906,15 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 @media screen and (min-width: 830px) {
   .article-body blockquote.pullquote-right {
-    grid-column: 5 / span 10;
-    grid-template-columns: repeat(9, 1fr) 0px;
+    grid-column: 6 / span 9;
+    grid-template-columns: repeat(8, 1fr) 0px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body blockquote.pullquote-right {
+    grid-column: 7 / span 8;
+    grid-template-columns: repeat(7, 1fr) 0px;
   }
 }
 
@@ -6918,7 +6940,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 @media screen and (min-width: 420px) {
   .article-body blockquote.pullquote-right p {
     grid-column: 3 / span 11;
-    padding-right: 30px;
+    padding-right: 50px;
   }
 }
 
@@ -6930,13 +6952,13 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 @media screen and (min-width: 830px) {
   .article-body blockquote.pullquote-right p {
-    grid-column: 2 / span 8;
+    grid-column: 2 / span 7;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .article-body blockquote.pullquote-right p {
-    grid-column: 2 / span 7;
+    grid-column: 2 / span 6;
   }
 }
 
