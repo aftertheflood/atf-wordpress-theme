@@ -708,7 +708,7 @@ The home SPLASHh zone
 }
 
 .splash__intro__description a:hover {
-  color: #FF005C;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .splash__promo {
@@ -7270,7 +7270,7 @@ nav a {
 }
 
 nav a:hover {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 nav.clients {

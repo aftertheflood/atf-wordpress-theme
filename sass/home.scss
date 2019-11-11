@@ -74,7 +74,7 @@ The home SPLASHh zone
     color: #000;
     text-decoration: none;
     &:hover {
-      color: $about-color;
+      color: rgba(0,0,0,0.6);
     }
   }
 }
