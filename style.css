@@ -702,6 +702,15 @@ The home SPLASHh zone
   }
 }
 
+.splash__intro__description a {
+  color: #000;
+  text-decoration: none;
+}
+
+.splash__intro__description a:hover {
+  color: #FF005C;
+}
+
 .splash__promo {
   grid-area: promo;
   background-color: #FFD600;
@@ -2602,15 +2611,6 @@ as this lets us put the blurb on the side we choose for it
   padding-top: 0;
 }
 
-.journal-archive__title a {
-  color: white;
-  text-decoration: none;
-}
-
-.journal-archive__title a:hover {
-  color: #FFD600;
-}
-
 @media screen and (min-width: 830px) {
   .journal-archive__title {
     margin: -8px 0 0 0;
@@ -2621,6 +2621,15 @@ as this lets us put the blurb on the side we choose for it
   font-style: italic;
   margin-top: -3px;
   margin-bottom: -10px;
+}
+
+.journal-archive__entry a {
+  color: white;
+  text-decoration: none;
+}
+
+.journal-archive__entry a:hover {
+  color: #FFD600;
 }
 
 .journal-archive__entry {
