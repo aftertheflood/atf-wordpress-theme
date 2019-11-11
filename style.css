@@ -2048,6 +2048,17 @@ as this lets us put the blurb on the side we choose for it
   }
 }
 
+.client-promo__left.image-background .promo__text .title a,
+.client-promo__right.image-background .promo__text .title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.client-promo__left.image-background .promo__text .title a:hover,
+.client-promo__right.image-background .promo__text .title a:hover {
+  color: #FF611E;
+}
+
 .client-promo__left.image-background .promo__image,
 .client-promo__right.image-background .promo__image {
   grid-area: unset;

@@ -772,6 +772,15 @@ as this lets us put the blurb on the side we choose for it
         padding-top: 50px;
         padding-bottom: 50px;
       }
+      .title a {
+        color: #fff;
+        text-decoration: none;
+        // transition: 0.4s;
+        &:hover {
+          color: $clients-color;
+          // transition: color 0.4s;
+        }
+      }
     }
 
     .promo__image {
