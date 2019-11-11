@@ -491,6 +491,15 @@ The home (and clients) PROMO zone
     margin-top: 4px;
     margin-bottom: 15px;
     @include break(tiny) { margin-bottom: 30px; }
+    a {
+      color: #000;
+      text-decoration: none;
+      // transition: 0.4s;
+      &:hover {
+        color: $clients-color;
+        // transition: color 0.4s;
+      }
+    }
   }
   
   .excerpt {

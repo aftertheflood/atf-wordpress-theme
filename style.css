@@ -1548,6 +1548,17 @@ The home (and clients) PROMO zone
   }
 }
 
+.promo__text .title a,
+.promo-double__text .title a {
+  color: #000;
+  text-decoration: none;
+}
+
+.promo__text .title a:hover,
+.promo-double__text .title a:hover {
+  color: #FF611E;
+}
+
 .promo__text .excerpt,
 .promo-double__text .excerpt {
   font-size: 17px;
