@@ -5716,6 +5716,14 @@ the article HEADING
 /* ===================================================================================
 the article BODY
 =================================================================================== */
+.journal .article-body p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* for the bottom of the page 
+it is set out here because the rest of article-body applies to more than just the journal, 
+whereas we want this to only apply to the journal pages (i.e. NOT to the case-study pages)
+*/
 .article-body {
   font-size: 17px;
   line-height: 25px;
@@ -6338,7 +6346,7 @@ the article BODY
 .article-body blockquote {
   background-color: #FFF9D8;
   margin: 60px 0 60px 0;
-  padding: 24px 50px 24px 50px;
+  padding: 24px 50px 40px 50px;
 }
 
 .article-body blockquote p {
@@ -7043,10 +7051,6 @@ the article BODY
   .article-body .wp-block-image figcaption {
     margin: 7px 0 50px 0;
   }
-}
-
-.journal .article-body p:last-of-type {
-  margin-bottom: 0;
 }
 
 .site-header {
