@@ -27,7 +27,7 @@
     </div>
     <div class="header-links">
       <div class="header-link">
-        <a href="<?php echo esc_url( home_url( '/clients' ) ); ?>">Clients</a>
+        <a href="<?php echo esc_url( home_url( '/clients' ) ); ?>">Projects</a>
         <?php if(linkIsActive('clients', $post_slug) || linkIsActive('clients', $pageTag)){ addActiveMarker(); } ?>
       </div>
       <div class="header-link">
