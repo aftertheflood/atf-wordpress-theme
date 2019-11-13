@@ -32,6 +32,30 @@ $this_page_id = get_the_ID();
     </div>
   <?php endwhile; ?>
 </div>
+
+<div class="logo-container">
+
+    <div class="logo-box">
+      <img class="logo__ford" src="/wp-content/themes/atf-wordpress-theme/assets/images/ford-black.svg" alt="">
+    </div>
+    <div class="logo-box">
+      <img class="logo__uefa" src="/wp-content/themes/atf-wordpress-theme/assets/images/uefa-champions-league-black.svg" alt="">
+    </div>
+    <div class="logo-box">
+      <img class="logo__google" src="/wp-content/themes/atf-wordpress-theme/assets/images/google-black.svg" alt="">
+    </div>
+    <div class="logo-box">
+      <img class="logo__bulb" src="/wp-content/themes/atf-wordpress-theme/assets/images/bulb-logo---black.svg" alt="">
+    </div>
+    <div class="logo-box">
+      <img class="logo__govUK" src="/wp-content/themes/atf-wordpress-theme/assets/images/govUK-black.svg" alt="">
+    </div>
+    <div class="logo-box">
+      <img class="logo__nikkei" src="/wp-content/themes/atf-wordpress-theme/assets/images/nikkei-black.svg" alt="">
+    </div>
+
+</div>
+
 <div class="homepage-promo-container">
 <?php 
 /* case studies */

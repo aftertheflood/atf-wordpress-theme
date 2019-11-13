@@ -19,33 +19,37 @@ The home SPLASHh zone
 
 
 .splash {
+
+  background: rgba(255,255,255,1);
+  background: linear-gradient(to bottom, rgba(250,250,250,0) 0%, rgba(250,250,250,0) 80%, rgba(250,250,250,1) 100%);
+
   grid-template-areas:  
     " . intro intro intro intro intro intro intro intro intro intro intro intro . "
     " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
   @include break(small) {
     grid-template-areas:  
-    " . . intro intro intro intro intro intro intro intro . . . . "
+    " . . intro intro intro intro intro intro intro intro intro intro . . "
     " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
   }
   @include break(medium) {
     grid-template-areas:  
     " . . intro intro intro intro intro intro intro intro . . . . "
-    " . . . . . . promo promo promo promo promo promo promo .";
+    " . . . . . . promo promo promo promo promo promo promo promo";
   }
   @include break(large) {
     grid-template-areas:  
-    " . . intro intro intro intro intro intro . . . . . . "
-    " . . . . . . . promo promo promo promo promo promo .";
+    " . . intro intro intro intro intro intro intro . . . . . "
+    " . . . . . . . promo promo promo promo promo promo promo";
   }
   @include break(huge) {
     grid-template-areas:  
     " . . intro intro intro intro intro intro intro . . . . . . ."
-    " . . . . . . . . promo promo promo promo promo promo promo .";
+    " . . . . . . . . promo promo promo promo promo promo promo promo";
   }
   @include break(mega) {
     grid-template-areas:  
     " . . . intro intro intro intro intro intro . . . . . . . . ."
-    ". .  . . . . . . . promo promo promo promo promo promo promo promo .";
+    ". .  . . . . . . . promo promo promo promo promo promo promo promo promo.";
   }
 }
 
@@ -53,10 +57,10 @@ The home SPLASHh zone
   grid-area: intro;
   margin-top: 60px;
   margin-bottom: 40px;
-  @include break(tiny)   { margin-top: 80px; margin-bottom: 55px; }
-  @include break(small)  { margin-top: 80px; margin-bottom: 70px; }
-  @include break(medium) { margin-top: 90px; margin-bottom: 100px; }
-  @include break(large)  { margin-top: 100px; margin-bottom: 112px; }
+  @include break(tiny)   { margin-top: 70px; margin-bottom: 45px; }
+  @include break(small)  { margin-top: 70px; margin-bottom: 60px; }
+  @include break(medium) { margin-top: 80px; margin-bottom: 90px; }
+  @include break(large)  { margin-top: 90px; margin-bottom: 100px; }
 }
 
 .splash__intro__title {
@@ -88,7 +92,7 @@ The home SPLASHh zone
     padding: 24px 0 27px 0;
   }
   @include break(medium) {
-    margin-bottom: $column-gap;
+    // margin-bottom: $column-gap;
     padding: 33px 36px 36px;
   }
   @include break(large) {
@@ -161,6 +165,85 @@ The home SPLASHh zone
 
 
 
+/* =======================================================================================
+The home (and clients) PROMO zone 
+======================================================================================= */
+
+.logo-container {
+  // background: #eee;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  .logo-box {
+    // background: cyan;
+    text-align: center;
+    flex: 1 0 32%;
+    height: 92px;
+  }
+  .logo__ford   { width: 74px; } 
+  .logo__uefa   { width: 80px; }
+  .logo__google { width: 80px; }
+  .logo__bulb   { width: 65px; }
+  .logo__govUK  { width: 96px; }
+  .logo__nikkei { width: 75px; }
+  img { 
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+  }
+  @include break(tiny) {
+    .logo-box     { height: 100px; }
+    .logo__ford   { width: 91px; } 
+    .logo__uefa   { width: 99px; }
+    .logo__google { width: 99px; }
+    .logo__bulb   { width: 86px; }
+    .logo__govUK  { width: 111px; }
+    .logo__nikkei { width: 92px; }
+  }
+  @include break(small) {
+    flex-wrap: nowrap;
+    margin-top: -1px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    .logo-box { 
+      display: inline-block;
+      flex: unset;
+      height: 100px;
+    }
+    .logo__ford   { width: 80px; } 
+    .logo__uefa   { width: 79px; }
+    .logo__google { width: 89px; }
+    .logo__bulb   { width: 80px; }
+    .logo__govUK  { width: 108px; }
+    .logo__nikkei { width: 86px; }
+  }
+  @include break(medium) {
+    .logo-box     { height: 115px; }
+    .logo__ford   { width: 85px; } 
+    .logo__uefa   { width: 84px; }
+    .logo__google { width: 94px; }
+    .logo__bulb   { width: 84px; }
+    .logo__govUK  { width: 112px; }
+    .logo__nikkei { width: 90px; }
+  }
+  @include break(large) {
+    .logo-box     { height: 150px; }
+    .logo__ford   { width: 135px; } 
+    .logo__uefa   { width: 110px; }
+    .logo__google { width: 150px; }
+    .logo__bulb   { width: 145px; }
+    .logo__govUK  { width: 165px; }
+    .logo__nikkei { width: 155px; }
+  }
+}
+
+
+
+
 
 
 
@@ -175,7 +258,7 @@ The home (and clients) PROMO zone
 
 .homepage-promo-container{
   background: rgba(255,255,255,1);
-  background: linear-gradient(to bottom, rgba(245,245,245,1) 0%, rgba(245,245,245,0) 20%, rgba(245,245,245,0) 80%, rgba(245,245,245,1) 100%);
+  background: linear-gradient(to bottom, rgba(250,250,250,1) 0%, rgba(250,250,250,0) 20%, rgba(250,250,250,0) 80%, rgba(250,250,250,1) 100%);
 }
 
 
