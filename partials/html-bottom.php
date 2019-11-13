@@ -18,7 +18,7 @@
 		</a>
 	</div>
 	<a class="compact-menu__link" href="/">Home</a>
-	<a class="compact-menu__link" href="/clients">Clients</a>
+	<a class="compact-menu__link" href="/clients">Projects</a>
 	<a class="compact-menu__link" href="/journal">Blog</a>
 	<a class="compact-menu__link" href="/about">About</a>
 	<a class="compact-menu__link" href="/contact">Contact</a>
