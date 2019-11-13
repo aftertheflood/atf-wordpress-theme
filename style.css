@@ -5356,6 +5356,11 @@ label {
   color: #000;
 }
 
+input {
+  border-radius: 0;
+  box-shadow: none;
+}
+
 input[type=text],
 input[type=email],
 textarea {

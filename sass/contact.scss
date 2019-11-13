@@ -73,6 +73,11 @@ span.wpcf7-form-control-wrap {
   
 }
 
+input {
+  border-radius: 0;
+  box-shadow: none;
+}
+
 input[type=text],
 input[type=email],
 textarea {
