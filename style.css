@@ -3193,7 +3193,13 @@ a.journal-archive__link:hover {
 
 @media screen and (min-width: 830px) {
   .clients-single .article-head {
-    height: 75vh;
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .clients-single .article-head {
+    height: 70vh;
   }
 }
 

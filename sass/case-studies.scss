@@ -44,7 +44,8 @@
 
 	.article-head {
 		height: 48vh;
-		@include break(medium) { height: 75vh; }
+		@include break(medium) { height: 60vh; }
+		@include break(large)  { height: 70vh; }
 		.article-title {
 			align-self: start;
 			margin-top: 18px;
