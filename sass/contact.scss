@@ -4,30 +4,57 @@
   display: grid;
   grid-template-columns: 0px repeat(12, 1fr) 0px;
   column-gap: $column-gap;
-  margin: 0 0 60px 0;
+  margin: 60px 0;
   align-items: center;
-  @include break(tiny)   { margin-bottom: 80px; }
-  @include break(medium) { margin-bottom: 90px; }
-  @include break(large)  { margin-bottom: 100px; }
-  @include break(huge) { grid-template-columns: 0px repeat(14, 1fr) 0px; }
-  @include break(mega) { grid-template-columns: 0px repeat(16, 1fr) 0px; }
+  @include break(tiny)   { margin-top: 80px; margin-bottom: 80px; }
+  @include break(medium) { margin-top: 90px; margin-bottom: 90px; }
+  @include break(large)  { margin-top: 100px; margin-bottom: 100px; }
+  @include break(huge)   { grid-template-columns: 0px repeat(14, 1fr) 0px; }
+  @include break(mega)   { grid-template-columns: 0px repeat(16, 1fr) 0px; }
 
-  h1, div.wpcf7 {
+
+  .contact__info {
+    margin-bottom: 60px;
+    align-self: start;
     grid-column: 2 / span 12;
-    @include break(tiny) { grid-column: 3 / span 10; }
-    @include break(large) { grid-column: 3 / span 7; }
+    @include break(tiny)   { grid-column: 3 / span 10; }
+    @include break(medium) { grid-column: 3 / span 4; }  
+    @include break(mega)   { grid-column: 4 / span 4; }
+    p {
+      margin-top: 0;
+      margin-bottom: 0.25em;
+    }
   }
 
+  .contact__form {
+    padding: 0 20px;
+    background: red;
+    grid-column: 2 / span 12;
+    @include break(tiny)   { grid-column: 3 / span 10; }
+    @include break(medium) { grid-column: 7 / span 7; }  
+    @include break(large)  { grid-column: 7 / span 6; }  
+    @include break(huge)   { grid-column: 8 / span 7; }  
+    @include break(mega)   { grid-column: 9 / span 7; }  
+  }
+
+
+
+  // h1, div.wpcf7 {
+  //   grid-column: 2 / span 12;
+  //   @include break(tiny) { grid-column: 3 / span 10; }
+  //   @include break(large) { grid-column: 3 / span 7; }
+  // }
+
   h1 {
-    @include type-heading-big;
+    @include type-heading-medium;
     @include type-serif;
     font-weight: 400;
-    margin-top: 60px;
+    margin-top: 0;
     margin-bottom: 20px;
-    @include break(tiny)   { margin-top: 80px; margin-bottom: 30px; }
-    @include break(small)  { margin-top: 80px; margin-bottom: 35px; }
-    @include break(medium) { margin-top: 90px; margin-bottom: 45px; }
-    @include break(large)  { margin-top: 100px; margin-bottom: 50px; }
+    @include break(tiny)   { margin-bottom: 20px; }
+    @include break(small)  { margin-bottom: 30px; }
+    // @include break(medium) { margin-bottom: 45px; }
+    // @include break(large)  { margin-bottom: 50px; }
   }
 
   // p input.wpcf7-form-control.wpcf7-submit {
@@ -42,6 +69,20 @@
   .form-conditional {
     font-weight: 400;
   }
+
+  .the-contact-details {
+    margin-bottom: 28px;
+    @include break(small)  { margin-bottom: 40px; }
+  }
+
+  .the-map {
+    height: 300px;
+    background: yellow;
+    border: 1px solid black;
+    @include break(medium) { margin-right: 30px; }
+    @include break(huge)   { margin-right: 0; }
+  }
+
 
 }
 
