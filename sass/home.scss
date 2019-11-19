@@ -574,7 +574,10 @@ The home (and clients) PROMO zone
 .promo__text,
 .promo-double__text { 
 
-  .sector { @include type-label; }
+  .sector { 
+    @include type-label; 
+    color: $clients-color; 
+  }
   
   .title {
     @include type-heading-medium;

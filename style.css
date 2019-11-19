@@ -1623,6 +1623,7 @@ The home (and clients) PROMO zone
   font-size: 12px;
   line-height: 118%;
   letter-spacing: 0.02em;
+  color: #FF611E;
 }
 
 @media screen and (min-width: 420px) {
