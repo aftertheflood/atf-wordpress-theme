@@ -136,6 +136,17 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
     @include break(huge)   { margin-bottom: 20px; }
   }
 
+  hr.wp-block-separator {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    margin-top: 32px; margin-bottom: 48px;
+    @include break(small)  { margin-top: 34px; margin-bottom: 51px; }
+    @include break(medium) { margin-top: 36px; margin-bottom: 34px; }
+    @include break(large)  { margin-top: 38px; margin-bottom: 57px; }
+    @include break(huge)   { margin-top: 40px; margin-bottom: 60px; }
+  }
+
   ul {
     list-style-type: none;
     margin-top: 0;
@@ -226,7 +237,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
     @include break(mega)   { grid-column: 4 / span 2; }
   }
 
-  p, h2, h3, h4, h5, h6, ul, ol, 
+  p, h2, h3, h4, h5, h6, ul, ol, hr,  
   blockquote, figure, 
   div.wp-block-image, div.exec-summary, div.wp-block-file {
     grid-column: 2 / span 12;

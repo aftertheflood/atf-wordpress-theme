@@ -6262,6 +6262,42 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
+.article-body hr.wp-block-separator {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 650px) {
+  .article-body hr.wp-block-separator {
+    margin-top: 34px;
+    margin-bottom: 51px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body hr.wp-block-separator {
+    margin-top: 36px;
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body hr.wp-block-separator {
+    margin-top: 38px;
+    margin-bottom: 57px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article-body hr.wp-block-separator {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}
+
 .article-body ul {
   list-style-type: none;
   margin-top: 0;
@@ -6412,14 +6448,14 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-.article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
+.article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
 .article-body blockquote, .article-body figure,
 .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
   grid-column: 2 / span 12;
 }
 
 @media screen and (min-width: 420px) {
-  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
   .article-body blockquote, .article-body figure,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 3 / span 10;
@@ -6427,7 +6463,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 830px) {
-  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
   .article-body blockquote, .article-body figure,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 4 / span 8;
@@ -6435,7 +6471,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 1120px) {
-  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
   .article-body blockquote, .article-body figure,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 5 / span 6;
@@ -6443,7 +6479,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 1440px) {
-  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
   .article-body blockquote, .article-body figure,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 6 / span 6;
@@ -6451,7 +6487,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: 1800px) {
-  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
   .article-body blockquote, .article-body figure,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 7 / span 6;
@@ -6459,7 +6495,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 @media screen and (min-width: mega) {
-  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
   .article-body blockquote, .article-body figure,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 7 / span 6;
