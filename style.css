@@ -1094,7 +1094,7 @@ The home (and clients) PROMO zone
 
 @media screen and (min-width: 1120px) {
   .logo-container .logo-box {
-    height: 150px;
+    height: 146px;
   }
   .logo-container .logo__ford {
     width: 135px;
@@ -1106,13 +1106,13 @@ The home (and clients) PROMO zone
     width: 150px;
   }
   .logo-container .logo__bulb {
-    width: 145px;
+    width: 137px;
   }
   .logo-container .logo__govUK {
     width: 165px;
   }
   .logo-container .logo__nikkei {
-    width: 155px;
+    width: 153px;
   }
 }
 
@@ -1660,6 +1660,40 @@ The home (and clients) PROMO zone
   }
 }
 
+.promo__text .promo-bottom img.logo.logo__bulb,
+.promo-double__text .promo-bottom img.logo.logo__bulb {
+  max-width: 89px;
+}
+
+@media screen and (min-width: 420px) {
+  .promo__text .promo-bottom img.logo.logo__bulb,
+  .promo-double__text .promo-bottom img.logo.logo__bulb {
+    max-width: 104px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .promo__text .promo-bottom img.logo.logo__bulb,
+  .promo-double__text .promo-bottom img.logo.logo__bulb {
+    margin-top: 34px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo__text .promo-bottom img.logo.logo__bulb,
+  .promo-double__text .promo-bottom img.logo.logo__bulb {
+    max-width: 114px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo__text .promo-bottom img.logo.logo__bulb,
+  .promo-double__text .promo-bottom img.logo.logo__bulb {
+    max-width: 122px;
+    margin-top: 38px;
+  }
+}
+
 .promo__text .promo-bottom img.logo.logo__google,
 .promo-double__text .promo-bottom img.logo.logo__google {
   float: left;
@@ -1684,6 +1718,147 @@ The home (and clients) PROMO zone
   .promo__text .promo-bottom img.logo.logo__google,
   .promo-double__text .promo-bottom img.logo.logo__google {
     margin-top: 25px;
+  }
+}
+
+.promo__text .promo-bottom img.logo.logo__index,
+.promo-double__text .promo-bottom img.logo.logo__index {
+  max-width: 102px;
+}
+
+@media screen and (min-width: 420px) {
+  .promo__text .promo-bottom img.logo.logo__index,
+  .promo-double__text .promo-bottom img.logo.logo__index {
+    max-width: 118px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo__text .promo-bottom img.logo.logo__index,
+  .promo-double__text .promo-bottom img.logo.logo__index {
+    max-width: 128px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo__text .promo-bottom img.logo.logo__index,
+  .promo-double__text .promo-bottom img.logo.logo__index {
+    max-width: 136px;
+  }
+}
+
+.promo__text .promo-bottom img.logo.logo__nhs,
+.promo-double__text .promo-bottom img.logo.logo__nhs {
+  max-width: 81px;
+}
+
+@media screen and (min-width: 420px) {
+  .promo__text .promo-bottom img.logo.logo__nhs,
+  .promo-double__text .promo-bottom img.logo.logo__nhs {
+    max-width: 92px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .promo__text .promo-bottom img.logo.logo__nhs,
+  .promo-double__text .promo-bottom img.logo.logo__nhs {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo__text .promo-bottom img.logo.logo__nhs,
+  .promo-double__text .promo-bottom img.logo.logo__nhs {
+    max-width: 100px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo__text .promo-bottom img.logo.logo__nhs,
+  .promo-double__text .promo-bottom img.logo.logo__nhs {
+    max-width: 105px;
+    margin-top: 36px;
+  }
+}
+
+.promo__text .promo-bottom img.logo.logo__nikkei,
+.promo-double__text .promo-bottom img.logo.logo__nikkei {
+  max-width: 98px;
+}
+
+@media screen and (min-width: 420px) {
+  .promo__text .promo-bottom img.logo.logo__nikkei,
+  .promo-double__text .promo-bottom img.logo.logo__nikkei {
+    max-width: 115px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo__text .promo-bottom img.logo.logo__nikkei,
+  .promo-double__text .promo-bottom img.logo.logo__nikkei {
+    max-width: 125px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo__text .promo-bottom img.logo.logo__nikkei,
+  .promo-double__text .promo-bottom img.logo.logo__nikkei {
+    max-width: 134px;
+  }
+}
+
+.promo__text .promo-bottom img.logo.logo__redburn,
+.promo-double__text .promo-bottom img.logo.logo__redburn {
+  max-width: 108px;
+}
+
+@media screen and (min-width: 420px) {
+  .promo__text .promo-bottom img.logo.logo__redburn,
+  .promo-double__text .promo-bottom img.logo.logo__redburn {
+    max-width: 124px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .promo__text .promo-bottom img.logo.logo__redburn,
+  .promo-double__text .promo-bottom img.logo.logo__redburn {
+    margin-top: 28px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo__text .promo-bottom img.logo.logo__redburn,
+  .promo-double__text .promo-bottom img.logo.logo__redburn {
+    max-width: 136px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo__text .promo-bottom img.logo.logo__redburn,
+  .promo-double__text .promo-bottom img.logo.logo__redburn {
+    max-width: 146px;
+    margin-top: 34px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .promo__text .promo-bottom img.logo.logo__uefa,
+  .promo-double__text .promo-bottom img.logo.logo__uefa {
+    max-height: 89px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo__text .promo-bottom img.logo.logo__uefa,
+  .promo-double__text .promo-bottom img.logo.logo__uefa {
+    max-height: 97px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo__text .promo-bottom img.logo.logo__uefa,
+  .promo-double__text .promo-bottom img.logo.logo__uefa {
+    max-height: 108px;
   }
 }
 
@@ -1759,7 +1934,7 @@ The home (and clients) PROMO zone
 /* ---------- Helper classes for modifying images on small screens ---------- */
 @media screen and (max-width: 419px) {
   .mobile__margin-left {
-    grid-column: 2 / span 14;
+    grid-column: 2 / span 13;
   }
   .mobile__margin-left img {
     width: calc(100% + 40px);

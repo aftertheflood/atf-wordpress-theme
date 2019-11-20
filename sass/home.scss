@@ -233,13 +233,13 @@ The home (and clients) PROMO zone
     .logo__nikkei { width: 90px; }
   }
   @include break(large) {
-    .logo-box     { height: 150px; }
+    .logo-box     { height: 146px; }
     .logo__ford   { width: 135px; } 
     .logo__uefa   { width: 110px; }
     .logo__google { width: 150px; }
-    .logo__bulb   { width: 145px; }
+    .logo__bulb   { width: 137px; }
     .logo__govUK  { width: 165px; }
-    .logo__nikkei { width: 155px; }
+    .logo__nikkei { width: 153px; }
   }
 }
 
@@ -492,6 +492,14 @@ The home (and clients) PROMO zone
         max-height: 113px;
         margin-top: 40px;
       }
+      // modifiers for the various logos
+      &.logo__bulb {
+        max-width: 89px;
+        @include break(tiny)   { max-width: 104px; }
+        @include break(small)  { margin-top: 34px; }
+        @include break(medium) { max-width: 114px; }
+        @include break(large)  { max-width: 122px; margin-top: 38px; }
+      }
       &.logo__google {
         float: left;
         margin-top: 9px;
@@ -499,6 +507,38 @@ The home (and clients) PROMO zone
         @include break(small) { margin-top: 23px; }
         @include break(large) { margin-top: 25px; }
       }
+      &.logo__index {
+        max-width: 102px;
+        @include break(tiny)   { max-width: 118px; }
+        @include break(medium) { max-width: 128px; }
+        @include break(large)  { max-width: 136px; }
+      }
+      &.logo__nhs {
+        max-width: 81px;
+        @include break(tiny)   { max-width: 92px; }
+        @include break(small)  { margin-top: 32px; }
+        @include break(medium) { max-width: 100px; }
+        @include break(large)  { max-width: 105px; margin-top: 36px; }
+      }
+      &.logo__nikkei {
+        max-width: 98px;
+        @include break(tiny)   { max-width: 115px; }
+        @include break(medium) { max-width: 125px; }
+        @include break(large)  { max-width: 134px; }
+      }
+      &.logo__redburn {
+        max-width: 108px;
+        @include break(tiny)   { max-width: 124px; }
+        @include break(small)  { margin-top: 28px; }
+        @include break(medium) { max-width: 136px; }
+        @include break(large)  { max-width: 146px; margin-top: 34px; }
+      }
+       &.logo__uefa {
+        @include break(tiny)   { max-height: 89px; }
+        @include break(medium) { max-height: 97px; }
+        @include break(large)  { max-height: 108px; }
+      }
+
     }
   }
 } // end text block
@@ -574,7 +614,7 @@ The home (and clients) PROMO zone
 // these are setup in a non-standard way because I don't know how to say "after size X, ignore these rules.
 @media screen and (max-width: $screen-tiny - 1) {
   .mobile__margin-left {
-    grid-column: 2 / span 14;
+    grid-column: 2 / span 13;
     img {
       width: calc(100% + 40px);
       left: 0;
