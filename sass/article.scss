@@ -17,18 +17,16 @@ the article HEADING
       margin: 114px 0 120px 0;
       grid-column: 3 / span 6;
     }
-    @include break(huge) { grid-column: 3 / span 7; }
-    @include break(mega) { grid-column: 4 / span 8; }
+    @include break(huge) { grid-column: 3 / span 6; }
+    @include break(mega) { grid-column: 4 / span 6; }
   }
     h1 {
-    @include type-heading-medium;
-    @include spaced-caps;
+    @include type-heading-medium-allCaps;
     @include type-serif;
     font-weight: 400;
     margin: 0;
   }
   .journal-splash__subtitle {
-    @include type-heading-medium;
     margin: -3px 0 0 0;
     @include break(medium) {margin: -1px 0 1px 0;}
     @include break(large) {margin-bottom: 0}
@@ -71,7 +69,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
   p {
     font-weight: 400;
-    margin: 0 0 0.9em 0;
+    margin-top: 0;
     @media screen and (min-width: 720px) and (max-width: $screen-medium) {
       line-height: 29px; // extra line-height while the paragraph is a bit wide.
     }
@@ -99,7 +97,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
     @include type-heading-medium;
     @include type-serif;
     font-weight: 600;
-    margin: 90px 0 24px 0;
+    margin-top: 3.6em;
     @include break(large) { margin-top: 114px; }
   }
 
@@ -107,28 +105,35 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
     @include type-heading-small;
     @include type-serif;
     font-weight: 600;
-    // font-size: 25px;
-    // line-height: 32px;    
-    margin: 60px 0 24px 0;
+    margin-top: 2.7em;
   }
 
   h4 {
     @include type-serif;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 32px;    
     @include spaced-caps;
-    margin: 60px 0 12px 0;
+    font-weight: 600;
+    margin-top: 1.8em;
     display: block;
   }
 
   h5 {
     @include type-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;    
-    @include spaced-caps;
-    margin: 60px 0 0 0;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 1.8em;
+    margin-bottom: 0;
+  }
+
+  p, h2, h3, h4, ul,
+  .client-case-study .promo__text .title {
+    // that last one modifies the promo module for the case study pages, since it is used a little differently there
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 16px;
+    @include break(small)  { margin-bottom: 17px; }
+    @include break(medium) { margin-bottom: 18px; }
+    @include break(large)  { margin-bottom: 19px; }
+    @include break(huge)   { margin-bottom: 20px; }
   }
 
   ul {
@@ -257,6 +262,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
       @include type-heading-medium;
       @include type-sans;
       font-weight: bold;
+      font-style: normal;
       text-transform: none;
       margin: 0 0 1em 0;
       a {
@@ -384,6 +390,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
       &:first-of-type { margin-top: -3px; }
       &:last-of-type  { margin-bottom: 0;}
       grid-column: 2 / span 12;
+      @include break(small)  { letter-spacing: -0.02em; }
     }
     &.hang-punctuation p {
       text-indent: -7px; 

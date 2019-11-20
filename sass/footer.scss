@@ -44,8 +44,9 @@
 		font-weight: 400;
 		margin-top: 0;
 		margin-bottom: 20px;
-		@include break(medium) {margin-bottom: 24px;}
-		@include break(large) {margin-bottom: 30px;}
+		@include break(small)  { letter-spacing: -0.02em; }
+		@include break(medium) { margin-bottom: 24px; }
+		@include break(large)  { margin-bottom: 30px; }
 	}
 }
 

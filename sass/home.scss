@@ -26,6 +26,11 @@ The home SPLASHh zone
   grid-template-areas:  
     " . intro intro intro intro intro intro intro intro intro intro intro intro . "
     " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
+  @include break(tiny) {
+    grid-template-areas:  
+    " . . intro intro intro intro intro intro intro intro intro intro intro . "
+    " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
+  }
   @include break(small) {
     grid-template-areas:  
     " . . intro intro intro intro intro intro intro intro intro intro . . "
@@ -39,17 +44,17 @@ The home SPLASHh zone
   @include break(large) {
     grid-template-areas:  
     " . . intro intro intro intro intro intro intro . . . . . "
-    " . . . . . . . promo promo promo promo promo promo promo";
+    " . . . . . . . promo promo promo promo promo promo promo ";
   }
   @include break(huge) {
     grid-template-areas:  
-    " . . intro intro intro intro intro intro intro . . . . . . ."
-    " . . . . . . . . promo promo promo promo promo promo promo promo";
+    " . . intro intro intro intro intro intro intro intro . . . . . . "
+    " . . . . . . . . promo promo promo promo promo promo promo promo ";
   }
   @include break(mega) {
     grid-template-areas:  
-    " . . . intro intro intro intro intro intro . . . . . . . . ."
-    ". .  . . . . . . . promo promo promo promo promo promo promo promo promo.";
+    " . . . intro intro intro intro intro intro intro . . . . . . . . "
+    " . . . . . . . . . . promo promo promo promo promo promo promo promo ";
   }
 }
 
@@ -88,21 +93,14 @@ The home SPLASHh zone
   background-color: #FFD600;
   margin: 0;
   padding: 18px 20px 20px;
-  @include break(small) {
-    padding: 24px 0 27px 0;
-  }
-  @include break(medium) {
-    // margin-bottom: $column-gap;
-    padding: 33px 36px 36px;
-  }
-  @include break(large) {
-    padding: 37px 40px 40px;
-  }
+  @include break(tiny)   { padding: 24px 0 27px 0; }
+  @include break(medium) { padding: 33px 36px 36px; }
+  @include break(large)  { padding: 37px 40px 40px; }
 }
 
 // the following two styles are just for the small–medium space.
 .splash__promo-gridwrapper {
-  @media screen and (min-width: $screen-small) and (max-width: $screen-medium - 1) {
+  @media screen and (min-width: $screen-tiny) and (max-width: $screen-medium - 1) {
     display: grid;
     grid-template-columns: 0px repeat(12, 1fr) 0px;
     column-gap: $column-gap;
@@ -110,6 +108,9 @@ The home SPLASHh zone
   }
 }
 .splash__promo-gridwrapper-inner {
+  @media screen and (min-width: $screen-tiny) and (max-width: $screen-small - 1) {
+    grid-column: 3 / span 11;
+  }
   @media screen and (min-width: $screen-small) and (max-width: $screen-medium - 1) {
     grid-column: 3 / span 10;
   }
@@ -117,7 +118,6 @@ The home SPLASHh zone
 
 .splash__promo__title,
 .splash__promo__subtitle {
-  @include type-heading-medium;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
   @include break(large) {padding-right: ($promoPadding/2);}
@@ -125,15 +125,17 @@ The home SPLASHh zone
 }
 
 .splash__promo__title {
+  @include type-heading-medium-allCaps; 
   margin-top: 0;
   margin-bottom: 0;
-  @include spaced-caps;
 }
 
 .splash__promo__subtitle {
+  @include type-heading-medium;
+  font-style: italic;
+  letter-spacing: -0.03em;
   margin-top: -1px;
   margin-bottom: 5px;
-  font-style: italic;
   @include break(small)  { margin-bottom: 7px; }
   @include break(medium) { margin-bottom: 8px; }
   @include break(large)  { margin-bottom: 9px; }
@@ -329,197 +331,6 @@ The home (and clients) PROMO zone
 
 
 
-/* The promo-double module 
--------------------------------------------------------------------------------------- */
-
-/* ---------- Non-grid settings ---------- */ 
-.promo-double {
-  position: relative;
-  text-align: center;
-  @include break(small)  { border-top: 1px solid #ddd; }
-  @include break(medium) { border-top: none; margin-bottom: 90px; }
-  @include break(large)  { margin-bottom: 120px; }
-
-  // this is for promo-double modules that don't have a button or logo, or both
-  // it only works on screen-medium and up,
-  // because below that size you still need that margin.
-  .no-bottom-margin {
-    @include break(medium) {
-      margin-bottom: 0 !important;
-    }
-  }
-}
-
-.client-promo-double__left, 
-.client-promo-double__right {
-  display: grid;
-  grid-column: 1 / span 14;
-  grid-template-columns: 0px repeat(12, 1fr) 0px;
-  column-gap: $column-gap;
-  border-top: 1px solid #ddd;
-  margin-bottom: 0; // on mobile, no margin
-  padding-top: 40px;
-  align-self: start;
-  align-items: center;
-  text-align: left;
-  @include break(tiny)   { padding-top: 70px; }
-  @include break(small)  { padding-top: 40px; border-top: none; }
-  @include break(medium) { padding-bottom: 40px; }
-}
-
-
-
-
-
-/* ---------- Grid (and spacing) settings ---------- */
-
-.promo-double__divider {
-  display: none;
-  position: absolute;
-  @include break(small) {
-    display: inline-block;
-    width: 1px;
-    min-height: 100%;
-    background: #ddd;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  @include break(medium) {
-    width: 8px;
-    margin-left: -4px;
-    background: $light-grey;
-  }
-}
-
-.promo-double__image {
-  max-height: none; 
-  overflow: hidden;
-  height: 280px;
-  grid-row: 2 / 2;
-  @include break(medium) { 
-    grid-row: 1 / 1;
-    height: auto; 
-  }
-  img {
-    display: block;
-    width: calc(100% + 200px);
-    @include break(medium) { width: calc(100% + 60px); }
-  }
-}
-
-.client-promo-double__left, 
-.client-promo-double__right {
-  .promo-double__image {
-    grid-column: 1 / span 14;
-    img {
-      margin-left: -100px;
-      left: -100px;
-      right: 100px;
-    }
-  }
-}
-
-.client-promo-double__left {
-  @include break(small) {
-    grid-column: 1 / span 7;
-    grid-template-columns: 0px repeat(6, 1fr);
-    .promo-double__text  { grid-column: 3 / span 5; padding-right: 20px; }
-    .promo-double__image { 
-      grid-column: 1 / span 7; 
-      img {
-        margin-left: -200px;
-        left: -200px;
-        right: 200px;
-      }
-    }
-  }
-  @include break(medium) {
-    .promo-double__text  { grid-column: 4 / span 4; }
-    .promo-double__image { 
-      grid-column: 1 / span 3; 
-      padding-right: 20px;
-      img {
-        margin-left: -60px; 
-        left: -60px; 
-        right: 60px;
-      }
-    }
-  }
-  @include break(large) {
-    .promo-double__text  { grid-column: 4 / span 4; padding-right: 30px; }
-    .promo-double__image { grid-column: 1 / span 3; }
-  }
-  @include break(huge) {
-    grid-column: 1 / span 8;
-    grid-template-columns: 0px repeat(7, 1fr);
-    .promo-double__text  { grid-column: 5 / span 4; }
-    .promo-double__image { grid-column: 1 / span 4; }
-  }
-  @include break(mega) {
-    grid-column: 1 / span 9;
-    grid-template-columns: 0px repeat(8, 1fr);
-    .promo-double__text  { grid-column: 5 / span 4; }
-  }
-}
-
-.client-promo-double__right {
-  @include break(small) {
-    grid-column: 8 / span 7;
-    grid-template-columns: repeat(6, 1fr) 0px;
-    .promo-double__text  { grid-column: 1 / span 5; padding-left: 20px; }
-    .promo-double__image { 
-      grid-column: 1 / span 7; 
-      img {
-        left: 0;
-        margin-left: 0;
-      }
-    }
-  }
-  @include break(medium) {
-    .promo-double__text  { grid-column: 1 / span 4; }
-    .promo-double__image { 
-      grid-column: 5 / span 3; 
-      padding-left: 20px;
-    }
-  }
-  @include break(large) {
-    .promo-double__text { 
-      grid-column: 1 / span 4; 
-      padding-left: 30px;
-    }
-    .promo-double__image { grid-column: 5 / span 3; }
-  }
-  @include break(huge) {
-    grid-column: 9 / span 8;
-    grid-template-columns: repeat(7, 1fr) 0px;
-    .promo-double__text  { grid-column: 1 / span 4; }
-    .promo-double__image { grid-column: 5 / span 4; }
-  }
-  @include break(mega) {
-    grid-column: 10 / span 9;
-    grid-template-columns: repeat(8, 1fr) 0px;
-    .promo-double__text  { grid-column: 2 / span 4; }
-    .promo-double__image { grid-column: 6 / span 4; }
-  }
-}
-
-.promo-double__text {
-  align-self: start;
-  grid-column: 2 / span 12; 
-  @include break(tiny) { grid-column: 3 / span 10; }
-  /* 
-  once we get to size=small, 
-  the grid settings for this 
-  are set in the client-promo-double__right and __left classes
-  */
-}
-
-
-
-
-
-
 
 
 
@@ -583,7 +394,7 @@ The home (and clients) PROMO zone
     @include type-heading-medium;
     margin-top: 4px;
     margin-bottom: 15px;
-    @include break(tiny) { margin-bottom: 30px; }
+    @include break(tiny) { margin-bottom: 28px; }
     a {
       color: #000;
       text-decoration: none;
@@ -606,7 +417,7 @@ The home (and clients) PROMO zone
     @include break(tiny) {
       p { 
         margin-bottom: 0.9em;
-        &:last-of-type { margin-bottom: 34px; }
+        &:last-of-type { margin-bottom: 36px; }
       }
     }
   }
@@ -679,22 +490,20 @@ The home (and clients) PROMO zone
       @include break(large) {
         max-width: 128px;
         max-height: 113px;
-        margin-top: 38px;
+        margin-top: 40px;
       }
       &.logo__google {
-        @include break(small) { margin-top: 27px; }
-        @include break(large) { margin-top: 30px; }
+        float: left;
+        margin-top: 9px;
+        @include break(tiny)  { margin-top: 20px; }
+        @include break(small) { margin-top: 23px; }
+        @include break(large) { margin-top: 25px; }
       }
     }
   }
 } // end text block
 
 
-/* overrides for the promo-double type */
-.promo-double__text {
-  .title   { @include type-heading-small; }
-  .excerpt { @include type-small; }
-}
 
 
 
@@ -909,6 +718,258 @@ as this lets us put the blurb on the side we choose for it
 
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The promo-double module 
+-------------------------------------------------------------------------------------- */
+
+/* ---------- Non-grid settings ---------- */ 
+.promo-double {
+  position: relative;
+  text-align: center;
+  @include break(small)  { border-top: 1px solid #ddd; }
+  @include break(medium) { border-top: none; margin-bottom: 90px; }
+  @include break(large)  { margin-bottom: 120px; }
+
+  // this is for promo-double modules that don't have a button or logo, or both
+  // it only works on screen-medium and up,
+  // because below that size you still need that margin.
+  .no-bottom-margin {
+    @include break(medium) {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.client-promo-double__left, 
+.client-promo-double__right {
+  display: grid;
+  grid-column: 1 / span 14;
+  grid-template-columns: 0px repeat(12, 1fr) 0px;
+  column-gap: $column-gap;
+  border-top: 1px solid #ddd;
+  margin-bottom: 0; // on mobile, no margin
+  padding-top: 40px;
+  align-self: start;
+  align-items: center;
+  text-align: left;
+  @include break(tiny)   { padding-top: 70px; }
+  @include break(small)  { padding-top: 40px; border-top: none; }
+  @include break(medium) { padding-bottom: 40px; }
+}
+
+/* overrides for the promo-double type */
+.promo-double__text {
+  .title   { 
+    @include type-heading-small; 
+    @include break(tiny) { margin-bottom: 20px; }
+  }
+  .excerpt { 
+    @include type-small; 
+    p:last-of-type { margin-bottom: 20px; }
+    @include break (tiny) { p:last-of-type { margin-bottom: 26px; } }
+  }
+}
+
+
+
+/* ---------- Grid (and spacing) settings ---------- */
+
+.promo-double__divider {
+  display: none;
+  position: absolute;
+  @include break(small) {
+    display: inline-block;
+    width: 1px;
+    min-height: 100%;
+    background: #ddd;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  @include break(medium) {
+    width: 8px;
+    margin-left: -4px;
+    background: $light-grey;
+  }
+}
+
+.promo-double__image {
+  max-height: none; 
+  overflow: hidden;
+  height: 280px;
+  grid-row: 2 / 2;
+  @include break(medium) { 
+    grid-row: 1 / 1;
+    height: auto; 
+  }
+  img {
+    display: block;
+    width: calc(100% + 200px);
+    @include break(medium) { width: calc(100% + 60px); }
+  }
+}
+
+.client-promo-double__left, 
+.client-promo-double__right {
+  .promo-double__image {
+    grid-column: 1 / span 14;
+    img {
+      margin-left: -100px;
+      left: -100px;
+      right: 100px;
+    }
+  }
+}
+
+.client-promo-double__left {
+  @include break(small) {
+    grid-column: 1 / span 7;
+    grid-template-columns: 0px repeat(6, 1fr);
+    .promo-double__text  { grid-column: 3 / span 5; padding-right: 20px; }
+    .promo-double__image { 
+      grid-column: 1 / span 7; 
+      img {
+        margin-left: -200px;
+        left: -200px;
+        right: 200px;
+      }
+    }
+  }
+  @include break(medium) {
+    .promo-double__text  { grid-column: 4 / span 4; }
+    .promo-double__image { 
+      grid-column: 1 / span 3; 
+      padding-right: 20px;
+      img {
+        margin-left: -60px; 
+        left: -60px; 
+        right: 60px;
+      }
+    }
+  }
+  @include break(large) {
+    .promo-double__text  { grid-column: 4 / span 4; padding-right: 30px; }
+    .promo-double__image { grid-column: 1 / span 3; }
+  }
+  @include break(huge) {
+    grid-column: 1 / span 8;
+    grid-template-columns: 0px repeat(7, 1fr);
+    .promo-double__text  { grid-column: 5 / span 4; }
+    .promo-double__image { grid-column: 1 / span 4; }
+  }
+  @include break(mega) {
+    grid-column: 1 / span 9;
+    grid-template-columns: 0px repeat(8, 1fr);
+    .promo-double__text  { grid-column: 5 / span 4; }
+  }
+}
+
+.client-promo-double__right {
+  @include break(small) {
+    grid-column: 8 / span 7;
+    grid-template-columns: repeat(6, 1fr) 0px;
+    .promo-double__text  { grid-column: 1 / span 5; padding-left: 20px; }
+    .promo-double__image { 
+      grid-column: 1 / span 7; 
+      img {
+        left: 0;
+        margin-left: 0;
+      }
+    }
+  }
+  @include break(medium) {
+    .promo-double__text  { grid-column: 1 / span 4; }
+    .promo-double__image { 
+      grid-column: 5 / span 3; 
+      padding-left: 20px;
+    }
+  }
+  @include break(large) {
+    .promo-double__text { 
+      grid-column: 1 / span 4; 
+      padding-left: 30px;
+    }
+    .promo-double__image { grid-column: 5 / span 3; }
+  }
+  @include break(huge) {
+    grid-column: 9 / span 8;
+    grid-template-columns: repeat(7, 1fr) 0px;
+    .promo-double__text  { grid-column: 1 / span 4; }
+    .promo-double__image { grid-column: 5 / span 4; }
+  }
+  @include break(mega) {
+    grid-column: 10 / span 9;
+    grid-template-columns: repeat(8, 1fr) 0px;
+    .promo-double__text  { grid-column: 2 / span 4; }
+    .promo-double__image { grid-column: 6 / span 4; }
+  }
+}
+
+.promo-double__text {
+  align-self: start;
+  grid-column: 2 / span 12; 
+  @include break(tiny) { grid-column: 3 / span 10; }
+  /* 
+  once we get to size=small, 
+  the grid settings for this 
+  are set in the client-promo-double__right and __left classes
+  */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
