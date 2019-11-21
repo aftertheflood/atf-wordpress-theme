@@ -38,3 +38,21 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
+// useful because, by default, the final paragraph has no bottom margin
+.margins-vertical__standard-text__bottom {
+	margin-bottom: 16px;
+	@include break(small)  { margin-bottom: 17px; }
+	@include break(medium) { margin-bottom: 18px; }
+	@include break(large)  { margin-bottom: 19px; }
+	@include break(huge)   { margin-bottom: 20px; }
+}
+
+// yeah, this was a tough one to overpower
+.journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+	margin-bottom: 16px;
+	@include break(small)  { margin-bottom: 17px; }
+	@include break(medium) { margin-bottom: 18px; }
+	@include break(large)  { margin-bottom: 19px; }
+	@include break(huge)   { margin-bottom: 20px; }
+}
