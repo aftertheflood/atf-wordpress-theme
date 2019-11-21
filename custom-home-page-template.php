@@ -69,7 +69,7 @@ $this_page_id = get_the_ID();
 </div>
 
 <div class="atf-grid journal-home">
-  <h3 class="recently-header">Recently from the Blog &hellip;</h3>
+  <h3 class="recently-header">Recently from the blog &hellip;</h3>
   <div class="atf-archive-grid-home journal-home__posts">
     <?php /* 2nd and 3rd journal posts start from 1 get 2*/ 
       $count = 0;
@@ -79,7 +79,9 @@ $this_page_id = get_the_ID();
       <div class="journal-archive__entry">
         <a href="<?php the_permalink() ?>">
           <h2 class="journal-archive__title"><?php the_title() ?></h2>
-          <div class="journal-archive__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>
+          <?php if (get_post_meta($post->ID, 'subtitle', true)) : ?>
+            <div class="journal-archive__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>
+          <?php endif; ?>
         </a>
         <div class="journal-archive__date"><?php the_date() ?></div>
         <div class="journal-archive__excerpt"><?php the_excerpt() ?></div>

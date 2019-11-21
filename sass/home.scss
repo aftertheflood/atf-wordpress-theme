@@ -26,6 +26,11 @@ The home SPLASHh zone
   grid-template-areas:  
     " . intro intro intro intro intro intro intro intro intro intro intro intro . "
     " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
+  @include break(tiny) {
+    grid-template-areas:  
+    " . . intro intro intro intro intro intro intro intro intro intro intro . "
+    " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
+  }
   @include break(small) {
     grid-template-areas:  
     " . . intro intro intro intro intro intro intro intro intro intro . . "
@@ -39,17 +44,17 @@ The home SPLASHh zone
   @include break(large) {
     grid-template-areas:  
     " . . intro intro intro intro intro intro intro . . . . . "
-    " . . . . . . . promo promo promo promo promo promo promo";
+    " . . . . . . . promo promo promo promo promo promo promo ";
   }
   @include break(huge) {
     grid-template-areas:  
-    " . . intro intro intro intro intro intro intro . . . . . . ."
-    " . . . . . . . . promo promo promo promo promo promo promo promo";
+    " . . intro intro intro intro intro intro intro intro . . . . . . "
+    " . . . . . . . . promo promo promo promo promo promo promo promo ";
   }
   @include break(mega) {
     grid-template-areas:  
-    " . . . intro intro intro intro intro intro . . . . . . . . ."
-    ". .  . . . . . . . promo promo promo promo promo promo promo promo promo.";
+    " . . . intro intro intro intro intro intro intro . . . . . . . . "
+    " . . . . . . . . . . promo promo promo promo promo promo promo promo ";
   }
 }
 
@@ -88,21 +93,14 @@ The home SPLASHh zone
   background-color: #FFD600;
   margin: 0;
   padding: 18px 20px 20px;
-  @include break(small) {
-    padding: 24px 0 27px 0;
-  }
-  @include break(medium) {
-    // margin-bottom: $column-gap;
-    padding: 33px 36px 36px;
-  }
-  @include break(large) {
-    padding: 37px 40px 40px;
-  }
+  @include break(tiny)   { padding: 24px 0 27px 0; }
+  @include break(medium) { padding: 33px 36px 36px; }
+  @include break(large)  { padding: 37px 40px 40px; }
 }
 
 // the following two styles are just for the small–medium space.
 .splash__promo-gridwrapper {
-  @media screen and (min-width: $screen-small) and (max-width: $screen-medium - 1) {
+  @media screen and (min-width: $screen-tiny) and (max-width: $screen-medium - 1) {
     display: grid;
     grid-template-columns: 0px repeat(12, 1fr) 0px;
     column-gap: $column-gap;
@@ -110,6 +108,9 @@ The home SPLASHh zone
   }
 }
 .splash__promo-gridwrapper-inner {
+  @media screen and (min-width: $screen-tiny) and (max-width: $screen-small - 1) {
+    grid-column: 3 / span 11;
+  }
   @media screen and (min-width: $screen-small) and (max-width: $screen-medium - 1) {
     grid-column: 3 / span 10;
   }
@@ -117,7 +118,6 @@ The home SPLASHh zone
 
 .splash__promo__title,
 .splash__promo__subtitle {
-  @include type-heading-medium;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
   @include break(large) {padding-right: ($promoPadding/2);}
@@ -125,15 +125,17 @@ The home SPLASHh zone
 }
 
 .splash__promo__title {
+  @include type-heading-medium-allCaps; 
   margin-top: 0;
   margin-bottom: 0;
-  @include spaced-caps;
 }
 
 .splash__promo__subtitle {
+  @include type-heading-medium;
+  font-style: italic;
+  letter-spacing: -0.03em;
   margin-top: -1px;
   margin-bottom: 5px;
-  font-style: italic;
   @include break(small)  { margin-bottom: 7px; }
   @include break(medium) { margin-bottom: 8px; }
   @include break(large)  { margin-bottom: 9px; }
@@ -231,13 +233,13 @@ The home (and clients) PROMO zone
     .logo__nikkei { width: 90px; }
   }
   @include break(large) {
-    .logo-box     { height: 150px; }
+    .logo-box     { height: 146px; }
     .logo__ford   { width: 135px; } 
     .logo__uefa   { width: 110px; }
     .logo__google { width: 150px; }
-    .logo__bulb   { width: 145px; }
+    .logo__bulb   { width: 137px; }
     .logo__govUK  { width: 165px; }
-    .logo__nikkei { width: 155px; }
+    .logo__nikkei { width: 153px; }
   }
 }
 
@@ -329,6 +331,457 @@ The home (and clients) PROMO zone
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* Feature blocks: LAYOUT SETTINGS
+-------------------------------------------------------------------------------------- */
+
+
+/* ---------- The primary blocks ---------- */
+
+.client-promo__left, .client-promo__right {
+  margin-bottom: 0; // on mobile, no margin
+  border-top: 1px solid #ddd;
+  &:first-of-type { border-top: none; }
+  @include break(small)  { 
+    padding-bottom: 30px;  
+    &.text-first { padding-bottom: 0; }
+  }
+  @include break(medium) { 
+    border-top: none; 
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 90px;
+  }
+  @include break(large) {
+    margin-bottom: 120px;
+  }
+}
+
+
+
+
+
+
+
+
+/* ---------- The text block ---------- */
+
+.promo__text { 
+  grid-area: text; 
+  padding-top: 40px; // on mobile, add space between the text and image or divider
+  @include break(tiny)   { padding-top: 70px; }
+  @include break(medium) { padding-top: 0; }
+}
+
+.promo__text,
+.promo-double__text { 
+
+  .sector { 
+    @include type-label; 
+    color: $clients-color; 
+  }
+  
+  .title {
+    @include type-heading-medium;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    @include break(tiny) { margin-bottom: 28px; }
+    a {
+      color: #000;
+      text-decoration: none;
+      // transition: 0.4s;
+      &:hover {
+        color: $clients-color;
+        // transition: color 0.4s;
+      }
+    }
+  }
+  
+  .excerpt {
+    @include type-body;
+    @include type-serif;
+    p {
+      margin-top: 0;
+      margin-bottom: 0.8em;
+      &:last-of-type { margin-bottom: 36px; }
+    }
+    @include break(tiny) {
+      p { 
+        margin-bottom: 0.9em;
+        &:last-of-type { margin-bottom: 36px; }
+      }
+    }
+  }
+  
+  .promo-bottom {
+    position: relative;
+    height: 86px; // this is the height of the button + the desired margin, 46 + 40
+    @include break(tiny) { height: 116px; } // 46 + 70
+    @include break(small) {
+      height: auto;
+      margin-bottom: 40px; // this only applies to the modules with images at the top
+    }
+    @include break(medium) {
+      margin-bottom: 0;
+    }
+
+    .bottom-inner {
+      position: absolute;
+      height: 46px;
+      overflow: visible;
+      width: 100%;
+      @include break(tiny)   { height: 46px; }
+      @include break(small) {
+        position: static;
+        height: auto;
+      }
+    }
+
+    a.link {
+      @include block-button;
+      @include block-button-type;
+      background-color: $light-grey;
+      color: #000;
+      display: inline-block;
+      &:hover {
+        background-color: $clients-color;
+        color: #000;
+      }
+      // @include break(small)  { margin-bottom: 36px; }
+      // @include break(large) { margin-bottom: 40px; }
+    }
+
+    img.logo {
+      display: block;
+      position: relative;
+      float: right;
+      max-width: 94px;
+      max-height: 77px;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      @include break(tiny) {
+        max-width: 110px;
+        max-height: 94px;
+      }
+      @include break(small) {
+        display: block;
+        position: static;
+        float: none;
+        width: auto;
+        height: auto;
+        top: auto;
+        transform: none;
+        margin-top: 36px;
+      }
+      @include break(medium) {
+        max-width: 120px;
+        max-height: 102px;
+      }
+      @include break(large) {
+        max-width: 128px;
+        max-height: 113px;
+        margin-top: 40px;
+      }
+      // modifiers for the various logos
+      &.logo__bulb {
+        max-width: 89px;
+        @include break(tiny)   { max-width: 104px; }
+        @include break(small)  { margin-top: 34px; }
+        @include break(medium) { max-width: 114px; }
+        @include break(large)  { max-width: 122px; margin-top: 38px; }
+      }
+      &.logo__google {
+        float: left;
+        margin-top: 9px;
+        @include break(tiny)  { margin-top: 20px; }
+        @include break(small) { margin-top: 23px; }
+        @include break(large) { margin-top: 25px; }
+      }
+      &.logo__index {
+        max-width: 102px;
+        @include break(tiny)   { max-width: 118px; }
+        @include break(medium) { max-width: 128px; }
+        @include break(large)  { max-width: 136px; }
+      }
+      &.logo__nhs {
+        max-width: 81px;
+        @include break(tiny)   { max-width: 92px; }
+        @include break(small)  { margin-top: 32px; }
+        @include break(medium) { max-width: 100px; }
+        @include break(large)  { max-width: 105px; margin-top: 36px; }
+      }
+      &.logo__nikkei {
+        max-width: 98px;
+        @include break(tiny)   { max-width: 115px; }
+        @include break(medium) { max-width: 125px; }
+        @include break(large)  { max-width: 134px; }
+      }
+      &.logo__redburn {
+        max-width: 108px;
+        @include break(tiny)   { max-width: 124px; }
+        @include break(small)  { margin-top: 28px; }
+        @include break(medium) { max-width: 136px; }
+        @include break(large)  { max-width: 146px; margin-top: 34px; }
+      }
+       &.logo__uefa {
+        @include break(tiny)   { max-height: 89px; }
+        @include break(medium) { max-height: 97px; }
+        @include break(large)  { max-height: 108px; }
+      }
+
+    }
+  }
+} // end text block
+
+
+
+
+
+
+
+/* ---------- The image block ---------- */
+.promo__image {
+  grid-area: image;
+  overflow: hidden;
+  max-width: 100%;
+  min-width: 100px;
+  max-height: 280px;
+  height: 280px;
+  text-align: center;
+  position: relative;
+  
+  @include break(tiny) { 
+    max-height: 330px; 
+    height: 330px; 
+  }
+  @include break(small) {
+    max-height: 400px; 
+    height: 400px; 
+  }
+  @include break(medium) { 
+    max-height: none; 
+    height: auto;
+  }
+
+  img {
+    position: absolute;
+    width: 120%;
+    left: 50%;
+    margin-left: -60%;
+    &.mobile__flowing-up { bottom: 0; }
+    @include break(medium) {
+      width: calc(100% + 180px);
+      left: 0;
+      margin-left: 0;
+      display: block;
+      position: static;
+      &.desktop__extra-width { width: calc(100% + 360px); }
+    }
+  }
+}
+
+.client-promo__right .promo__image img {
+  @include break(medium) {
+    position: relative;
+    right: 180px;
+    left: -180px;
+    &.desktop__extra-width {
+      right: 360px;
+      left: -360px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ---------- Helper classes for modifying images on small screens ---------- */
+// these are setup in a non-standard way because I don't know how to say "after size X, ignore these rules.
+@media screen and (max-width: $screen-tiny - 1) {
+  .mobile__margin-left {
+    grid-column: 2 / span 13;
+    img {
+      width: calc(100% + 40px);
+      left: 0;
+      margin-left: 0;
+    }
+  }
+  .mobile__margin-right {
+    grid-column: 1 / span 13;
+    img {
+      width: calc(100% + 40px);
+      left: -20px;
+      margin-left: -20px;
+      right: 40px;
+    }
+  }
+  .mobile__shorter {
+    max-height: 220px;
+    height: 220px
+  }
+}
+@media screen and (min-width: $screen-tiny) and (max-width: $screen-small - 1) {
+  .mobile__margin-left {
+    grid-column: 3 / span 12;
+    img {
+      width: calc(100% + 60px);
+      left: 0;
+      margin-left: 0;
+    }
+  }
+  .mobile__margin-right {
+    grid-column: 1 / span 12;
+    img {
+      width: calc(100% + 60px);
+      left: -30px;
+      margin-left: -30px;
+      right: 60px;
+    }
+  }
+  .mobile__shorter {
+    max-height: 280px;
+    height: 280px
+  }
+}
+@media screen and (min-width: $screen-small) and (max-width: $screen-medium - 1) {
+  .mobile__margin-left {
+    grid-column: 3 / span 12;
+    img {
+      width: calc(100% + 120px);
+      left: 0;
+      margin-left: 0;
+    }
+  }
+  .mobile__margin-right {
+    grid-column: 1 / span 12;
+    img {
+      width: calc(100% + 120px);
+      left: -60px;
+      margin-left: -60px;
+      right: 1200px;
+    }
+  }
+  .mobile__shorter {
+    max-height: 360px;
+    height: 360px
+  }
+}
+
+
+
+
+
+
+
+/* ---------- promo alternate with a full-bleed image background ---------- */
+
+/*
+NOTE: i've kept the left/right styles 
+as this lets us put the blurb on the side we choose for it
+/when at larger browser sizes
+(it also lets us reuse the grid etc styles)
+*/
+
+.client-promo__left, 
+.client-promo__right {
+
+  &.image-background {
+    @include break(small) {
+      padding-bottom: 0;
+    }
+
+    .promo__text { 
+      color: white; 
+      z-index: 2;
+      grid-row: 1 / 1;
+      .sector, .title, .excerpt { text-shadow: 0 0 10px rgba(0,0,0,0.5); }
+      @include break(medium) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .title a {
+        color: #fff;
+        text-decoration: none;
+        // transition: 0.4s;
+        &:hover {
+          color: $clients-color;
+          // transition: color 0.4s;
+        }
+      }
+    }
+
+    .promo__image {
+      grid-area: unset;
+      grid-column: 1 / span 14;
+      grid-row: 1 / 1;
+      display: inline-block;
+      position: relative;
+      z-index: 0;
+      min-height: 100%;
+      min-width: 100%;
+      overflow: hidden;
+      margin: 0;
+      top: 0;
+      bottom: 0;
+      @include break(huge) { grid-column: 1 / span 16; }
+      @include break(mega) { grid-column: 1 / span 18; }
+  
+      img {
+        position: absolute;
+        object-fit: cover !important;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        margin-left: -50%;
+      }
+    }
+
+    img.logo {
+      -webkit-filter: drop-shadow(0 0 10px rgba(0,0,0,1));
+      filter: drop-shadow(0 0 10px rgba(0,0,0,1));
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* The promo-double module 
 -------------------------------------------------------------------------------------- */
 
@@ -367,7 +820,18 @@ The home (and clients) PROMO zone
   @include break(medium) { padding-bottom: 40px; }
 }
 
-
+/* overrides for the promo-double type */
+.promo-double__text {
+  .title   { 
+    @include type-heading-small; 
+    @include break(tiny) { margin-bottom: 20px; }
+  }
+  .excerpt { 
+    @include type-small; 
+    p:last-of-type { margin-bottom: 20px; }
+    @include break (tiny) { p:last-of-type { margin-bottom: 26px; } }
+  }
+}
 
 
 
@@ -530,228 +994,6 @@ The home (and clients) PROMO zone
 
 
 
-/* Feature blocks: LAYOUT SETTINGS
--------------------------------------------------------------------------------------- */
-
-
-/* ---------- The primary blocks ---------- */
-
-.client-promo__left, .client-promo__right {
-  margin-bottom: 0; // on mobile, no margin
-  border-top: 1px solid #ddd;
-  &:first-of-type { border-top: none; }
-  @include break(small)  { 
-    padding-bottom: 30px;  
-    &.text-first { padding-bottom: 0; }
-  }
-  @include break(medium) { 
-    border-top: none; 
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 90px;
-  }
-  @include break(large) {
-    margin-bottom: 120px;
-  }
-}
-
-
-
-
-
-
-
-
-/* ---------- The text block ---------- */
-
-.promo__text { 
-  grid-area: text; 
-  padding-top: 40px; // on mobile, add space between the text and image or divider
-  @include break(tiny)   { padding-top: 70px; }
-  @include break(medium) { padding-top: 0; }
-}
-
-.promo__text,
-.promo-double__text { 
-
-  .sector { 
-    @include type-label; 
-    color: $clients-color; 
-  }
-  
-  .title {
-    @include type-heading-medium;
-    margin-top: 4px;
-    margin-bottom: 15px;
-    @include break(tiny) { margin-bottom: 30px; }
-    a {
-      color: #000;
-      text-decoration: none;
-      // transition: 0.4s;
-      &:hover {
-        color: $clients-color;
-        // transition: color 0.4s;
-      }
-    }
-  }
-  
-  .excerpt {
-    @include type-body;
-    @include type-serif;
-    p {
-      margin-top: 0;
-      margin-bottom: 0.8em;
-      &:last-of-type { margin-bottom: 36px; }
-    }
-    @include break(tiny) {
-      p { 
-        margin-bottom: 0.9em;
-        &:last-of-type { margin-bottom: 34px; }
-      }
-    }
-  }
-  
-  .promo-bottom {
-    position: relative;
-    height: 86px; // this is the height of the button + the desired margin, 46 + 40
-    @include break(tiny) { height: 116px; } // 46 + 70
-    @include break(small) {
-      height: auto;
-      margin-bottom: 40px; // this only applies to the modules with images at the top
-    }
-    @include break(medium) {
-      margin-bottom: 0;
-    }
-
-    .bottom-inner {
-      position: absolute;
-      height: 46px;
-      overflow: visible;
-      width: 100%;
-      @include break(tiny)   { height: 46px; }
-      @include break(small) {
-        position: static;
-        height: auto;
-      }
-    }
-
-    a.link {
-      @include block-button;
-      @include block-button-type;
-      background-color: $light-grey;
-      color: #000;
-      display: inline-block;
-      &:hover {
-        background-color: $clients-color;
-        color: #000;
-      }
-      // @include break(small)  { margin-bottom: 36px; }
-      // @include break(large) { margin-bottom: 40px; }
-    }
-
-    img.logo {
-      display: block;
-      position: relative;
-      float: right;
-      max-width: 94px;
-      max-height: 77px;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      @include break(tiny) {
-        max-width: 110px;
-        max-height: 94px;
-      }
-      @include break(small) {
-        display: block;
-        position: static;
-        float: none;
-        width: auto;
-        height: auto;
-        top: auto;
-        transform: none;
-        margin-top: 36px;
-      }
-      @include break(medium) {
-        max-width: 120px;
-        max-height: 102px;
-      }
-      @include break(large) {
-        max-width: 128px;
-        max-height: 113px;
-        margin-top: 38px;
-      }
-      &.logo__google {
-        @include break(small) { margin-top: 27px; }
-        @include break(large) { margin-top: 30px; }
-      }
-    }
-  }
-} // end text block
-
-
-/* overrides for the promo-double type */
-.promo-double__text {
-  .title   { @include type-heading-small; }
-  .excerpt { @include type-small; }
-}
-
-
-
-
-
-/* ---------- The image block ---------- */
-.promo__image {
-  grid-area: image;
-  overflow: hidden;
-  max-width: 100%;
-  min-width: 100px;
-  max-height: 280px;
-  height: 280px;
-  text-align: center;
-  position: relative;
-  
-  @include break(tiny) { 
-    max-height: 330px; 
-    height: 330px; 
-  }
-  @include break(small) {
-    max-height: 400px; 
-    height: 400px; 
-  }
-  @include break(medium) { 
-    max-height: none; 
-    height: auto;
-  }
-
-  img {
-    position: absolute;
-    width: 120%;
-    left: 50%;
-    margin-left: -60%;
-    &.mobile__flowing-up { bottom: 0; }
-    @include break(medium) {
-      width: calc(100% + 180px);
-      left: 0;
-      margin-left: 0;
-      display: block;
-      position: static;
-      &.desktop__extra-width { width: calc(100% + 360px); }
-    }
-  }
-}
-
-.client-promo__right .promo__image img {
-  @include break(medium) {
-    position: relative;
-    right: 180px;
-    left: -180px;
-    &.desktop__extra-width {
-      right: 360px;
-      left: -360px;
-    }
-  }
-}
 
 
 
@@ -761,77 +1003,6 @@ The home (and clients) PROMO zone
 
 
 
-/* ---------- Helper classes for modifying images on small screens ---------- */
-// these are setup in a non-standard way because I don't know how to say "after size X, ignore these rules.
-@media screen and (max-width: $screen-tiny - 1) {
-  .mobile__margin-left {
-    grid-column: 2 / span 14;
-    img {
-      width: calc(100% + 40px);
-      left: 0;
-      margin-left: 0;
-    }
-  }
-  .mobile__margin-right {
-    grid-column: 1 / span 13;
-    img {
-      width: calc(100% + 40px);
-      left: -20px;
-      margin-left: -20px;
-      right: 40px;
-    }
-  }
-  .mobile__shorter {
-    max-height: 220px;
-    height: 220px
-  }
-}
-@media screen and (min-width: $screen-tiny) and (max-width: $screen-small - 1) {
-  .mobile__margin-left {
-    grid-column: 3 / span 12;
-    img {
-      width: calc(100% + 60px);
-      left: 0;
-      margin-left: 0;
-    }
-  }
-  .mobile__margin-right {
-    grid-column: 1 / span 12;
-    img {
-      width: calc(100% + 60px);
-      left: -30px;
-      margin-left: -30px;
-      right: 60px;
-    }
-  }
-  .mobile__shorter {
-    max-height: 280px;
-    height: 280px
-  }
-}
-@media screen and (min-width: $screen-small) and (max-width: $screen-medium - 1) {
-  .mobile__margin-left {
-    grid-column: 3 / span 12;
-    img {
-      width: calc(100% + 120px);
-      left: 0;
-      margin-left: 0;
-    }
-  }
-  .mobile__margin-right {
-    grid-column: 1 / span 12;
-    img {
-      width: calc(100% + 120px);
-      left: -60px;
-      margin-left: -60px;
-      right: 1200px;
-    }
-  }
-  .mobile__shorter {
-    max-height: 360px;
-    height: 360px
-  }
-}
 
 
 
@@ -839,76 +1010,6 @@ The home (and clients) PROMO zone
 
 
 
-/* ---------- promo alternate with a full-bleed image background ---------- */
-
-/*
-NOTE: i've kept the left/right styles 
-as this lets us put the blurb on the side we choose for it
-/when at larger browser sizes
-(it also lets us reuse the grid etc styles)
-*/
-
-.client-promo__left, 
-.client-promo__right {
-
-  &.image-background {
-    @include break(small) {
-      padding-bottom: 0;
-    }
-
-    .promo__text { 
-      color: white; 
-      z-index: 2;
-      grid-row: 1 / 1;
-      .sector, .title, .excerpt { text-shadow: 0 0 10px rgba(0,0,0,0.5); }
-      @include break(medium) {
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
-      .title a {
-        color: #fff;
-        text-decoration: none;
-        // transition: 0.4s;
-        &:hover {
-          color: $clients-color;
-          // transition: color 0.4s;
-        }
-      }
-    }
-
-    .promo__image {
-      grid-area: unset;
-      grid-column: 1 / span 14;
-      grid-row: 1 / 1;
-      display: inline-block;
-      position: relative;
-      z-index: 0;
-      min-height: 100%;
-      min-width: 100%;
-      overflow: hidden;
-      margin: 0;
-      top: 0;
-      bottom: 0;
-      @include break(huge) { grid-column: 1 / span 16; }
-      @include break(mega) { grid-column: 1 / span 18; }
-  
-      img {
-        position: absolute;
-        object-fit: cover !important;
-        width: 100%;
-        height: 100%;
-        left: 50%;
-        margin-left: -50%;
-      }
-    }
-
-    img.logo {
-      -webkit-filter: drop-shadow(0 0 10px rgba(0,0,0,1));
-      filter: drop-shadow(0 0 10px rgba(0,0,0,1));
-    }
-
-  }
-}
 
 
 

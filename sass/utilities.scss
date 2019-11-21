@@ -1,3 +1,9 @@
+.orange { color: $clients-color; }
+.pink   { color: $contact-highlight-color; }
+.green  { color: $contact-color; }
+.blue   { color: #09bfec; }
+
+
 .drop-shadow {
 	-webkit-filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
 	filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
@@ -32,4 +38,56 @@
 	@media screen and (max-width: $screen-medium - 1px) {
 		margin-bottom: 20px !important;
 	}
+}
+
+.margins-vertical__small,
+figure.margins-vertical__small {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.margins-vertical__medium,
+figure.margins-vertical__medium {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	@include break(tiny)   { margin-top: 70px; margin-bottom: 70px; }
+	@include break(medium) { margin-top: 85px; margin-bottom: 85px; }
+}
+
+.margins-vertical__medium__top,
+figure.margins-vertical__medium__top {
+	margin-top: 40px;
+	@include break(tiny)   { margin-top: 70px; }
+	@include break(medium) { margin-top: 85px; }
+}
+
+.margins-vertical__medium__bottom,
+figure.margins-vertical__medium__bottom {
+	margin-bottom: 40px;
+	@include break(tiny)   { margin-bottom: 70px; }
+	@include break(medium) { margin-bottom: 85px; }
+}
+
+// useful because, by default, the final paragraph has no bottom margin
+// and yeah, this can be a tough one to overpower
+.margins-vertical__standard-text__bottom,
+.journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+	margin-bottom: 16px;
+	@include break(small)  { margin-bottom: 17px; }
+	@include break(medium) { margin-bottom: 18px; }
+	@include break(large)  { margin-bottom: 19px; }
+	@include break(huge)   { margin-bottom: 20px; }
+}
+
+// this accounts for the insanity that is the vertical spacing and trying to make it even
+// as sometimes it is just a real pain in the ass
+// this give an image an extra paragraph space, basically
+.margins-vertical__double-text__bottom,
+.journal .article-body p.margins-vertical__double-text__bottom, 
+figure.margins-vertical__double-text__bottom {
+	margin-bottom: 30px;
+	@include break(small)  { margin-bottom: 32px; }
+	@include break(medium) { margin-bottom: 34px; }
+	@include break(large)  { margin-bottom: 36px; }
+	@include break(huge)   { margin-bottom: 38px; }
 }

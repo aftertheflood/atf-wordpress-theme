@@ -70,13 +70,13 @@
 
 .journal-splash__title,
 .journal-splash__subtitle {
-  @include type-heading-medium;
+  // @include type-heading-medium;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
 }
 
 .journal-splash__title {
-  @include spaced-caps;
+  @include type-heading-medium-allCaps; 
   margin: 20px 60px 0 0;
   @include break(large) {
     margin: 32px 40px 0 0;
@@ -84,7 +84,9 @@
 }
 
 .journal-splash__subtitle {
+  @include type-heading-medium;
   font-style: italic; 
+  letter-spacing: -0.03em;
   margin: -1px 40px 10px 0;
 }
 
@@ -130,8 +132,8 @@
   @include type-serif;
   font-weight: 400;
   line-height: 24px;
-  @include break(medium) {line-height: 27px;}
-  @include break(large) {line-height: 30px;}
+  @include break(medium) {line-height: 25px;}
+  @include break(large)  {line-height: 27px;}
 }
 
 .journal-archive__title {
@@ -145,8 +147,9 @@
 
 .journal-archive__subtitle {
   font-style: italic;
-  margin-top: -3px;
-  margin-bottom: -10px;
+  // margin-top: -1px;
+  // margin-bottom: -1px;
+  // @include break(large) { margin-bottom: -2px; }
 }
 
 .journal-archive__entry a {
@@ -169,10 +172,8 @@
   margin-right: 0;
   padding-left: 0;
   padding-right: 0;  // just the box shadow on the bottom.
-  &:nth-of-type(1) {
-    box-shadow: none; // get rid of it for the first item, because it comes from the kicker here
-  }
-
+  &:nth-of-type(1) { box-shadow: none; } // get rid of it for the first item, because it comes from the kicker here
+ 
   @include break(small) {
     &:last-of-type { padding-bottom: 0; }
   }
@@ -235,11 +236,10 @@
 .journal-archive__date {
   @include type-label;
   color: $journal-color;
-  margin-top: 13px;
+  margin-top: 3px;
   margin-bottom: 18px;
-  @include break(medium) {
-    margin-bottom: 24px;
-  }
+  @include break(medium) { margin-top: 4px; margin-bottom: 24px; }
+  @include break(large)  { margin-top: 5px; }
 }
 
 .journal-archive__excerpt {
@@ -328,9 +328,9 @@ a.journal-archive__link {
   }
   @include break(mega) {
     grid-template-areas: 
-      ". . . . . kicker kicker kicker kicker kicker kicker kicker kicker . . . . ." 
-      ". . . . . entries entries entries entries entries entries entries entries . . . . ."
-      ". . . . . onward onward onward onward onward onward onward onward . . . . .";
+      ". . . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . . . . ." 
+      ". . . entries entries entries entries entries entries entries entries entries entries entries entries . . ."
+      ". . . . . onward onward onward onward onward onward onward onward onward onward . . .";
   }
 
   .recently-header {
@@ -340,7 +340,7 @@ a.journal-archive__link {
   }
   .recently-header, 
   .onward-journey-link {
-    @include type-label;
+    @include type-small;
   }
   // .journal-home__posts {
   //   @include break(small) {padding: 50px 0;}
@@ -379,7 +379,7 @@ a.journal-archive__link {
       padding-bottom: 30px;
     }
     @include break(small) {
-      margin: -13px 0 -16px 0;
+      margin: -15px 0 -18px 0;
       padding: 64px 0;
       &:last-of-type {
         padding-bottom: 64px;
@@ -394,6 +394,15 @@ a.journal-archive__link {
         padding-left: 30px;
       }
     }
+    @include break(huge) {
+      &:nth-of-type(1) { padding-right: 70px; }
+      &:nth-of-type(2) { padding-left:  70px; }
+    }
+    @include break(mega) {
+      &:nth-of-type(1) { padding-right: 120px; }
+      &:nth-of-type(2) { padding-left:  120px; }
+    }
+
   }
 
 

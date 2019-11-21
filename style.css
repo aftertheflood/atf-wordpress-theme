@@ -98,6 +98,22 @@ html {
 }
 
 /* category colours */
+.orange {
+  color: #FF611E;
+}
+
+.pink {
+  color: #FF00FF;
+}
+
+.green {
+  color: #00C720;
+}
+
+.blue {
+  color: #09bfec;
+}
+
 .drop-shadow {
   -webkit-filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
@@ -134,6 +150,143 @@ html {
   }
 }
 
+.margins-vertical__small,
+figure.margins-vertical__small {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.margins-vertical__medium,
+figure.margins-vertical__medium {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 420px) {
+  .margins-vertical__medium,
+  figure.margins-vertical__medium {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .margins-vertical__medium,
+  figure.margins-vertical__medium {
+    margin-top: 85px;
+    margin-bottom: 85px;
+  }
+}
+
+.margins-vertical__medium__top,
+figure.margins-vertical__medium__top {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 420px) {
+  .margins-vertical__medium__top,
+  figure.margins-vertical__medium__top {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .margins-vertical__medium__top,
+  figure.margins-vertical__medium__top {
+    margin-top: 85px;
+  }
+}
+
+.margins-vertical__medium__bottom,
+figure.margins-vertical__medium__bottom {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 420px) {
+  .margins-vertical__medium__bottom,
+  figure.margins-vertical__medium__bottom {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .margins-vertical__medium__bottom,
+  figure.margins-vertical__medium__bottom {
+    margin-bottom: 85px;
+  }
+}
+
+.margins-vertical__standard-text__bottom,
+.journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 650px) {
+  .margins-vertical__standard-text__bottom,
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+    margin-bottom: 17px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .margins-vertical__standard-text__bottom,
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .margins-vertical__standard-text__bottom,
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+    margin-bottom: 19px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .margins-vertical__standard-text__bottom,
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+    margin-bottom: 20px;
+  }
+}
+
+.margins-vertical__double-text__bottom,
+.journal .article-body p.margins-vertical__double-text__bottom,
+figure.margins-vertical__double-text__bottom {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 650px) {
+  .margins-vertical__double-text__bottom,
+  .journal .article-body p.margins-vertical__double-text__bottom,
+  figure.margins-vertical__double-text__bottom {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .margins-vertical__double-text__bottom,
+  .journal .article-body p.margins-vertical__double-text__bottom,
+  figure.margins-vertical__double-text__bottom {
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .margins-vertical__double-text__bottom,
+  .journal .article-body p.margins-vertical__double-text__bottom,
+  figure.margins-vertical__double-text__bottom {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .margins-vertical__double-text__bottom,
+  .journal .article-body p.margins-vertical__double-text__bottom,
+  figure.margins-vertical__double-text__bottom {
+    margin-bottom: 38px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -161,13 +314,13 @@ body {
   align-items: center;
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .atf-grid {
     grid-template-columns: 0px repeat(14, 1fr) 0px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .atf-grid {
     grid-template-columns: 0px repeat(16, 1fr) 0px;
   }
@@ -211,7 +364,7 @@ body {
 .atf-footer {
   width: 100%;
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 18px;
   letter-spacing: 0.02em;
   background-color: #000000;
@@ -222,14 +375,14 @@ body {
 
 @media screen and (min-width: 420px) {
   .atf-footer {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 19px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .atf-footer {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     letter-spacing: 0.01em;
   }
@@ -237,7 +390,7 @@ body {
 
 @media screen and (min-width: 1120px) {
   .atf-footer {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 21px;
   }
 }
@@ -260,13 +413,13 @@ body {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .atf-footer {
     grid-template-areas: ". . heading heading heading heading heading heading heading heading heading heading heading heading . ." ". . link link link link link link link link link link link link . ." ". . social social social social social social social social social social social social . ." ". . address address address address address address address address address address address address . ." ". logo logo logo logo logo logo logo logo logo logo logo logo logo logo .";
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .atf-footer {
     grid-template-areas: ". . . heading heading heading heading heading heading heading heading heading heading heading heading . . ." ". . . link link link link link link link link link link link link . . ." ". . . social social social social social social social social social social social social . . ." ". . . address address address address address address address address address address address address . . ." ". logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo .";
   }
@@ -280,8 +433,8 @@ body {
 
 .atf-footer h2 {
   grid-area: heading;
-  font-size: 22px;
-  line-height: 118%;
+  font-size: 24px;
+  line-height: 116%;
   letter-spacing: -0.01em;
   font-family: Tiempos, serif;
   font-weight: 400;
@@ -291,7 +444,7 @@ body {
 
 @media screen and (min-width: 420px) {
   .atf-footer h2 {
-    font-size: 25px;
+    font-size: 27px;
   }
 }
 
@@ -313,21 +466,15 @@ body {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .atf-footer h2 {
-    font-size: 36px;
+    font-size: 35px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 650px) {
   .atf-footer h2 {
-    font-size: 38px;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .atf-footer h2 {
-    font-size: 38px;
+    letter-spacing: -0.02em;
   }
 }
 
@@ -359,9 +506,10 @@ body {
 
 .footer-contact-link a {
   grid-area: link;
-  padding: 11px 16px 15px 16px;
+  padding: 12px 16px 16px 17px;
   border: 0px;
-  font-size: 17px;
+  font-size: 16px;
+  line-height: 16px;
   letter-spacing: 0.01em;
   font-weight: bold;
   text-decoration: none;
@@ -372,37 +520,41 @@ body {
 
 @media screen and (min-width: 830px) {
   .footer-contact-link a {
-    padding: 12px 18px 16px 18px;
+    padding: 13px 18px 17px 19px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .footer-contact-link a {
-    padding: 13px 20px 18px 20px;
+    padding: 14px 20px 18px 21px;
   }
 }
 
 @media screen and (min-width: 650px) {
   .footer-contact-link a {
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 17px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .footer-contact-link a {
-    font-size: 19px;
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .footer-contact-link a {
-    font-size: 20px;
+    font-size: 19px;
+    line-height: 19px;
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .footer-contact-link a {
-    font-size: 21px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -519,6 +671,12 @@ The home SPLASHh zone
   grid-template-areas: " . intro intro intro intro intro intro intro intro intro intro intro intro . " " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
 }
 
+@media screen and (min-width: 420px) {
+  .splash {
+    grid-template-areas: " . . intro intro intro intro intro intro intro intro intro intro intro . " " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
+  }
+}
+
 @media screen and (min-width: 650px) {
   .splash {
     grid-template-areas: " . . intro intro intro intro intro intro intro intro intro intro . . " " promo promo promo promo promo promo promo promo promo promo promo promo promo promo ";
@@ -533,25 +691,25 @@ The home SPLASHh zone
 
 @media screen and (min-width: 1120px) {
   .splash {
-    grid-template-areas: " . . intro intro intro intro intro intro intro . . . . . " " . . . . . . . promo promo promo promo promo promo promo";
+    grid-template-areas: " . . intro intro intro intro intro intro intro . . . . . " " . . . . . . . promo promo promo promo promo promo promo ";
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .splash {
-    grid-template-areas: " . . intro intro intro intro intro intro intro . . . . . . ." " . . . . . . . . promo promo promo promo promo promo promo promo";
+    grid-template-areas: " . . intro intro intro intro intro intro intro intro . . . . . . " " . . . . . . . . promo promo promo promo promo promo promo promo ";
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .splash {
-    grid-template-areas: " . . . intro intro intro intro intro intro . . . . . . . . ." ". .  . . . . . . . promo promo promo promo promo promo promo promo promo.";
+    grid-template-areas: " . . . intro intro intro intro intro intro intro . . . . . . . . " " . . . . . . . . . . promo promo promo promo promo promo promo promo ";
   }
 }
 
 @media screen and (min-width: mega) {
   .splash {
-    grid-template-areas: " . . . intro intro intro intro intro intro . . . . . . . . ." ". .  . . . . . . . promo promo promo promo promo promo promo promo promo.";
+    grid-template-areas: " . . . intro intro intro intro intro intro intro . . . . . . . . " " . . . . . . . . . . promo promo promo promo promo promo promo promo ";
   }
 }
 
@@ -590,8 +748,8 @@ The home SPLASHh zone
 }
 
 .splash__intro__title {
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 31px;
+  line-height: 35px;
   letter-spacing: -0.02em;
   margin-top: 0;
   margin-bottom: -2px;
@@ -621,18 +779,18 @@ The home SPLASHh zone
 @media screen and (min-width: 1120px) {
   .splash__intro__title {
     font-size: 56px;
-    line-height: 65px;
+    line-height: 64px;
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .splash__intro__title {
     font-size: 60px;
     line-height: 67px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .splash__intro__title {
     font-size: 64px;
     line-height: 70px;
@@ -647,8 +805,8 @@ The home SPLASHh zone
 }
 
 .splash__intro__description {
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 31px;
+  line-height: 35px;
   letter-spacing: -0.02em;
   font-family: Tiempos, serif;
   margin-top: 0;
@@ -679,18 +837,18 @@ The home SPLASHh zone
 @media screen and (min-width: 1120px) {
   .splash__intro__description {
     font-size: 56px;
-    line-height: 65px;
+    line-height: 64px;
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .splash__intro__description {
     font-size: 60px;
     line-height: 67px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .splash__intro__description {
     font-size: 64px;
     line-height: 70px;
@@ -720,7 +878,7 @@ The home SPLASHh zone
   padding: 18px 20px 20px;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 420px) {
   .splash__promo {
     padding: 24px 0 27px 0;
   }
@@ -738,12 +896,18 @@ The home SPLASHh zone
   }
 }
 
-@media screen and (min-width: 650px) and (max-width: 829px) {
+@media screen and (min-width: 420px) and (max-width: 829px) {
   .splash__promo-gridwrapper {
     display: grid;
     grid-template-columns: 0px repeat(12, 1fr) 0px;
     column-gap: 20px;
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 649px) {
+  .splash__promo-gridwrapper-inner {
+    grid-column: 3 / span 11;
   }
 }
 
@@ -755,60 +919,8 @@ The home SPLASHh zone
 
 .splash__promo__title,
 .splash__promo__subtitle {
-  font-size: 22px;
-  line-height: 118%;
-  letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
-}
-
-@media screen and (min-width: 420px) {
-  .splash__promo__title,
-  .splash__promo__subtitle {
-    font-size: 25px;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .splash__promo__title,
-  .splash__promo__subtitle {
-    font-size: 30px;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .splash__promo__title,
-  .splash__promo__subtitle {
-    font-size: 32px;
-  }
-}
-
-@media screen and (min-width: 1120px) {
-  .splash__promo__title,
-  .splash__promo__subtitle {
-    font-size: 34px;
-  }
-}
-
-@media screen and (min-width: 1480px) {
-  .splash__promo__title,
-  .splash__promo__subtitle {
-    font-size: 36px;
-  }
-}
-
-@media screen and (min-width: 1850px) {
-  .splash__promo__title,
-  .splash__promo__subtitle {
-    font-size: 38px;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .splash__promo__title,
-  .splash__promo__subtitle {
-    font-size: 38px;
-  }
 }
 
 @media screen and (min-width: 1120px) {
@@ -818,7 +930,7 @@ The home SPLASHh zone
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .splash__promo__title,
   .splash__promo__subtitle {
     padding-right: 40px;
@@ -826,16 +938,82 @@ The home SPLASHh zone
 }
 
 .splash__promo__title {
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+}
+
+@media screen and (min-width: 420px) {
+  .splash__promo__title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .splash__promo__title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .splash__promo__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .splash__promo__title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .splash__promo__title {
+    font-size: 33px;
+  }
 }
 
 .splash__promo__subtitle {
+  font-size: 24px;
+  line-height: 116%;
+  letter-spacing: -0.01em;
+  font-style: italic;
+  letter-spacing: -0.03em;
   margin-top: -1px;
   margin-bottom: 5px;
-  font-style: italic;
+}
+
+@media screen and (min-width: 420px) {
+  .splash__promo__subtitle {
+    font-size: 27px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .splash__promo__subtitle {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .splash__promo__subtitle {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .splash__promo__subtitle {
+    font-size: 34px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .splash__promo__subtitle {
+    font-size: 35px;
+  }
 }
 
 @media screen and (min-width: 650px) {
@@ -860,7 +1038,7 @@ The home SPLASHh zone
 .light-archive__date {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 118%;
   letter-spacing: 0.02em;
   color: rgba(0, 0, 0, 0.5);
@@ -870,21 +1048,21 @@ The home SPLASHh zone
 @media screen and (min-width: 420px) {
   .splash__promo__date,
   .light-archive__date {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .splash__promo__date,
   .light-archive__date {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .splash__promo__date,
   .light-archive__date {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
@@ -894,7 +1072,8 @@ The home SPLASHh zone
 }
 
 .splash__promo__link {
-  font-size: 17px;
+  font-size: 16px;
+  line-height: 16px;
   letter-spacing: 0.01em;
   font-weight: bold;
   text-decoration: none;
@@ -903,25 +1082,29 @@ The home SPLASHh zone
 
 @media screen and (min-width: 650px) {
   .splash__promo__link {
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 17px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .splash__promo__link {
-    font-size: 19px;
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .splash__promo__link {
-    font-size: 20px;
+    font-size: 19px;
+    line-height: 19px;
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .splash__promo__link {
-    font-size: 21px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -1064,7 +1247,7 @@ The home (and clients) PROMO zone
 
 @media screen and (min-width: 1120px) {
   .logo-container .logo-box {
-    height: 150px;
+    height: 146px;
   }
   .logo-container .logo__ford {
     width: 135px;
@@ -1076,13 +1259,13 @@ The home (and clients) PROMO zone
     width: 150px;
   }
   .logo-container .logo__bulb {
-    width: 145px;
+    width: 137px;
   }
   .logo-container .logo__govUK {
     width: 165px;
   }
   .logo-container .logo__nikkei {
-    width: 155px;
+    width: 153px;
   }
 }
 
@@ -1122,13 +1305,13 @@ The home (and clients) PROMO zone
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .client-promo__right {
     grid-template-areas: "image image image image image image image image image . text text text text . .";
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .client-promo__right {
     grid-template-areas: "image image image image image image image image . . text text text text text . . .";
   }
@@ -1162,13 +1345,13 @@ The home (and clients) PROMO zone
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .client-promo__right.text-first {
     grid-template-areas: "image image image image image image image image image . text text text text . .";
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .client-promo__right.text-first {
     grid-template-areas: "image image image image image image image image . . text text text text text . . .";
   }
@@ -1202,13 +1385,13 @@ The home (and clients) PROMO zone
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .client-promo__left {
     grid-template-areas: ". . text text text text . image image image image image image image image image";
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .client-promo__left {
     grid-template-areas: ". . . text text text text text . . image image image image image image image image";
   }
@@ -1242,13 +1425,13 @@ The home (and clients) PROMO zone
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .client-promo__left.text-first {
     grid-template-areas: ". . text text text text . image image image image image image image image image";
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .client-promo__left.text-first {
     grid-template-areas: ". . . text text text text text . . image image image image image image image image";
   }
@@ -1257,308 +1440,6 @@ The home (and clients) PROMO zone
 @media screen and (min-width: mega) {
   .client-promo__left.text-first {
     grid-template-areas: ". . . text text text text text . . image image image image image image image image";
-  }
-}
-
-/* The promo-double module 
--------------------------------------------------------------------------------------- */
-/* ---------- Non-grid settings ---------- */
-.promo-double {
-  position: relative;
-  text-align: center;
-}
-
-@media screen and (min-width: 650px) {
-  .promo-double {
-    border-top: 1px solid #ddd;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .promo-double {
-    border-top: none;
-    margin-bottom: 90px;
-  }
-}
-
-@media screen and (min-width: 1120px) {
-  .promo-double {
-    margin-bottom: 120px;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .promo-double .no-bottom-margin {
-    margin-bottom: 0 !important;
-  }
-}
-
-.client-promo-double__left,
-.client-promo-double__right {
-  display: grid;
-  grid-column: 1 / span 14;
-  grid-template-columns: 0px repeat(12, 1fr) 0px;
-  column-gap: 20px;
-  border-top: 1px solid #ddd;
-  margin-bottom: 0;
-  padding-top: 40px;
-  align-self: start;
-  align-items: center;
-  text-align: left;
-}
-
-@media screen and (min-width: 420px) {
-  .client-promo-double__left,
-  .client-promo-double__right {
-    padding-top: 70px;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .client-promo-double__left,
-  .client-promo-double__right {
-    padding-top: 40px;
-    border-top: none;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .client-promo-double__left,
-  .client-promo-double__right {
-    padding-bottom: 40px;
-  }
-}
-
-/* ---------- Grid (and spacing) settings ---------- */
-.promo-double__divider {
-  display: none;
-  position: absolute;
-}
-
-@media screen and (min-width: 650px) {
-  .promo-double__divider {
-    display: inline-block;
-    width: 1px;
-    min-height: 100%;
-    background: #ddd;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .promo-double__divider {
-    width: 8px;
-    margin-left: -4px;
-    background: #EEE;
-  }
-}
-
-.promo-double__image {
-  max-height: none;
-  overflow: hidden;
-  height: 280px;
-  grid-row: 2 / 2;
-}
-
-@media screen and (min-width: 830px) {
-  .promo-double__image {
-    grid-row: 1 / 1;
-    height: auto;
-  }
-}
-
-.promo-double__image img {
-  display: block;
-  width: calc(100% + 200px);
-}
-
-@media screen and (min-width: 830px) {
-  .promo-double__image img {
-    width: calc(100% + 60px);
-  }
-}
-
-.client-promo-double__left .promo-double__image,
-.client-promo-double__right .promo-double__image {
-  grid-column: 1 / span 14;
-}
-
-.client-promo-double__left .promo-double__image img,
-.client-promo-double__right .promo-double__image img {
-  margin-left: -100px;
-  left: -100px;
-  right: 100px;
-}
-
-@media screen and (min-width: 650px) {
-  .client-promo-double__left {
-    grid-column: 1 / span 7;
-    grid-template-columns: 0px repeat(6, 1fr);
-  }
-  .client-promo-double__left .promo-double__text {
-    grid-column: 3 / span 5;
-    padding-right: 20px;
-  }
-  .client-promo-double__left .promo-double__image {
-    grid-column: 1 / span 7;
-  }
-  .client-promo-double__left .promo-double__image img {
-    margin-left: -200px;
-    left: -200px;
-    right: 200px;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .client-promo-double__left .promo-double__text {
-    grid-column: 4 / span 4;
-  }
-  .client-promo-double__left .promo-double__image {
-    grid-column: 1 / span 3;
-    padding-right: 20px;
-  }
-  .client-promo-double__left .promo-double__image img {
-    margin-left: -60px;
-    left: -60px;
-    right: 60px;
-  }
-}
-
-@media screen and (min-width: 1120px) {
-  .client-promo-double__left .promo-double__text {
-    grid-column: 4 / span 4;
-    padding-right: 30px;
-  }
-  .client-promo-double__left .promo-double__image {
-    grid-column: 1 / span 3;
-  }
-}
-
-@media screen and (min-width: 1480px) {
-  .client-promo-double__left {
-    grid-column: 1 / span 8;
-    grid-template-columns: 0px repeat(7, 1fr);
-  }
-  .client-promo-double__left .promo-double__text {
-    grid-column: 5 / span 4;
-  }
-  .client-promo-double__left .promo-double__image {
-    grid-column: 1 / span 4;
-  }
-}
-
-@media screen and (min-width: 1850px) {
-  .client-promo-double__left {
-    grid-column: 1 / span 9;
-    grid-template-columns: 0px repeat(8, 1fr);
-  }
-  .client-promo-double__left .promo-double__text {
-    grid-column: 5 / span 4;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .client-promo-double__left {
-    grid-column: 1 / span 9;
-    grid-template-columns: 0px repeat(8, 1fr);
-  }
-  .client-promo-double__left .promo-double__text {
-    grid-column: 5 / span 4;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .client-promo-double__right {
-    grid-column: 8 / span 7;
-    grid-template-columns: repeat(6, 1fr) 0px;
-  }
-  .client-promo-double__right .promo-double__text {
-    grid-column: 1 / span 5;
-    padding-left: 20px;
-  }
-  .client-promo-double__right .promo-double__image {
-    grid-column: 1 / span 7;
-  }
-  .client-promo-double__right .promo-double__image img {
-    left: 0;
-    margin-left: 0;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .client-promo-double__right .promo-double__text {
-    grid-column: 1 / span 4;
-  }
-  .client-promo-double__right .promo-double__image {
-    grid-column: 5 / span 3;
-    padding-left: 20px;
-  }
-}
-
-@media screen and (min-width: 1120px) {
-  .client-promo-double__right .promo-double__text {
-    grid-column: 1 / span 4;
-    padding-left: 30px;
-  }
-  .client-promo-double__right .promo-double__image {
-    grid-column: 5 / span 3;
-  }
-}
-
-@media screen and (min-width: 1480px) {
-  .client-promo-double__right {
-    grid-column: 9 / span 8;
-    grid-template-columns: repeat(7, 1fr) 0px;
-  }
-  .client-promo-double__right .promo-double__text {
-    grid-column: 1 / span 4;
-  }
-  .client-promo-double__right .promo-double__image {
-    grid-column: 5 / span 4;
-  }
-}
-
-@media screen and (min-width: 1850px) {
-  .client-promo-double__right {
-    grid-column: 10 / span 9;
-    grid-template-columns: repeat(8, 1fr) 0px;
-  }
-  .client-promo-double__right .promo-double__text {
-    grid-column: 2 / span 4;
-  }
-  .client-promo-double__right .promo-double__image {
-    grid-column: 6 / span 4;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .client-promo-double__right {
-    grid-column: 10 / span 9;
-    grid-template-columns: repeat(8, 1fr) 0px;
-  }
-  .client-promo-double__right .promo-double__text {
-    grid-column: 2 / span 4;
-  }
-  .client-promo-double__right .promo-double__image {
-    grid-column: 6 / span 4;
-  }
-}
-
-.promo-double__text {
-  align-self: start;
-  grid-column: 2 / span 12;
-  /* 
-  once we get to size=small, 
-  the grid settings for this 
-  are set in the client-promo-double__right and __left classes
-  */
-}
-
-@media screen and (min-width: 420px) {
-  .promo-double__text {
-    grid-column: 3 / span 10;
   }
 }
 
@@ -1620,7 +1501,7 @@ The home (and clients) PROMO zone
 .promo-double__text .sector {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 118%;
   letter-spacing: 0.02em;
   color: #FF611E;
@@ -1629,28 +1510,28 @@ The home (and clients) PROMO zone
 @media screen and (min-width: 420px) {
   .promo__text .sector,
   .promo-double__text .sector {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .promo__text .sector,
   .promo-double__text .sector {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .promo__text .sector,
   .promo-double__text .sector {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
 .promo__text .title,
 .promo-double__text .title {
-  font-size: 22px;
-  line-height: 118%;
+  font-size: 24px;
+  line-height: 116%;
   letter-spacing: -0.01em;
   margin-top: 4px;
   margin-bottom: 15px;
@@ -1659,7 +1540,7 @@ The home (and clients) PROMO zone
 @media screen and (min-width: 420px) {
   .promo__text .title,
   .promo-double__text .title {
-    font-size: 25px;
+    font-size: 27px;
   }
 }
 
@@ -1684,31 +1565,17 @@ The home (and clients) PROMO zone
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .promo__text .title,
   .promo-double__text .title {
-    font-size: 36px;
-  }
-}
-
-@media screen and (min-width: 1850px) {
-  .promo__text .title,
-  .promo-double__text .title {
-    font-size: 38px;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .promo__text .title,
-  .promo-double__text .title {
-    font-size: 38px;
+    font-size: 35px;
   }
 }
 
 @media screen and (min-width: 420px) {
   .promo__text .title,
   .promo-double__text .title {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 }
 
@@ -1725,8 +1592,8 @@ The home (and clients) PROMO zone
 
 .promo__text .excerpt,
 .promo-double__text .excerpt {
-  font-size: 17px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
 }
@@ -1734,16 +1601,16 @@ The home (and clients) PROMO zone
 @media screen and (min-width: 650px) {
   .promo__text .excerpt,
   .promo-double__text .excerpt {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 17px;
+    line-height: 26px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .promo__text .excerpt,
   .promo-double__text .excerpt {
-    font-size: 19px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
     letter-spacing: -0.01em;
   }
 }
@@ -1751,16 +1618,8 @@ The home (and clients) PROMO zone
 @media screen and (min-width: 1120px) {
   .promo__text .excerpt,
   .promo-double__text .excerpt {
-    font-size: 20px;
-    line-height: 31px;
-  }
-}
-
-@media screen and (min-width: 1480px) {
-  .promo__text .excerpt,
-  .promo-double__text .excerpt {
-    font-size: 21px;
-    line-height: 32px;
+    font-size: 19px;
+    line-height: 30px;
   }
 }
 
@@ -1782,7 +1641,7 @@ The home (and clients) PROMO zone
   }
   .promo__text .excerpt p:last-of-type,
   .promo-double__text .excerpt p:last-of-type {
-    margin-bottom: 34px;
+    margin-bottom: 36px;
   }
 }
 
@@ -1839,13 +1698,14 @@ The home (and clients) PROMO zone
 
 .promo__text .promo-bottom a.link,
 .promo-double__text .promo-bottom a.link {
-  padding: 11px 16px 15px 16px;
+  padding: 12px 16px 16px 17px;
   border: 0px;
-  font-size: 17px;
+  font-size: 16px;
+  line-height: 16px;
   letter-spacing: 0.01em;
   font-weight: bold;
   text-decoration: none;
-  background-color: #EEE;
+  background-color: #f4f4f4;
   color: #000;
   display: inline-block;
 }
@@ -1853,42 +1713,46 @@ The home (and clients) PROMO zone
 @media screen and (min-width: 830px) {
   .promo__text .promo-bottom a.link,
   .promo-double__text .promo-bottom a.link {
-    padding: 12px 18px 16px 18px;
+    padding: 13px 18px 17px 19px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .promo__text .promo-bottom a.link,
   .promo-double__text .promo-bottom a.link {
-    padding: 13px 20px 18px 20px;
+    padding: 14px 20px 18px 21px;
   }
 }
 
 @media screen and (min-width: 650px) {
   .promo__text .promo-bottom a.link,
   .promo-double__text .promo-bottom a.link {
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 17px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .promo__text .promo-bottom a.link,
   .promo-double__text .promo-bottom a.link {
-    font-size: 19px;
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .promo__text .promo-bottom a.link,
   .promo-double__text .promo-bottom a.link {
-    font-size: 20px;
+    font-size: 19px;
+    line-height: 19px;
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .promo__text .promo-bottom a.link,
   .promo-double__text .promo-bottom a.link {
-    font-size: 21px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -1945,92 +1809,209 @@ The home (and clients) PROMO zone
   .promo-double__text .promo-bottom img.logo {
     max-width: 128px;
     max-height: 113px;
+    margin-top: 40px;
+  }
+}
+
+.promo__text .promo-bottom img.logo.logo__bulb,
+.promo-double__text .promo-bottom img.logo.logo__bulb {
+  max-width: 89px;
+}
+
+@media screen and (min-width: 420px) {
+  .promo__text .promo-bottom img.logo.logo__bulb,
+  .promo-double__text .promo-bottom img.logo.logo__bulb {
+    max-width: 104px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .promo__text .promo-bottom img.logo.logo__bulb,
+  .promo-double__text .promo-bottom img.logo.logo__bulb {
+    margin-top: 34px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo__text .promo-bottom img.logo.logo__bulb,
+  .promo-double__text .promo-bottom img.logo.logo__bulb {
+    max-width: 114px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo__text .promo-bottom img.logo.logo__bulb,
+  .promo-double__text .promo-bottom img.logo.logo__bulb {
+    max-width: 122px;
     margin-top: 38px;
   }
 }
 
-@media screen and (min-width: 650px) {
-  .promo__text .promo-bottom img.logo.logo__google,
-  .promo-double__text .promo-bottom img.logo.logo__google {
-    margin-top: 27px;
-  }
-}
-
-@media screen and (min-width: 1120px) {
-  .promo__text .promo-bottom img.logo.logo__google,
-  .promo-double__text .promo-bottom img.logo.logo__google {
-    margin-top: 30px;
-  }
-}
-
-/* overrides for the promo-double type */
-.promo-double__text .title {
-  font-size: 18px;
-  line-height: 118%;
-  letter-spacing: -0.01em;
+.promo__text .promo-bottom img.logo.logo__google,
+.promo-double__text .promo-bottom img.logo.logo__google {
+  float: left;
+  margin-top: 9px;
 }
 
 @media screen and (min-width: 420px) {
-  .promo-double__text .title {
-    font-size: 20px;
+  .promo__text .promo-bottom img.logo.logo__google,
+  .promo-double__text .promo-bottom img.logo.logo__google {
+    margin-top: 20px;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .promo-double__text .title {
-    font-size: 22px;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .promo-double__text .title {
-    font-size: 24px;
+  .promo__text .promo-bottom img.logo.logo__google,
+  .promo-double__text .promo-bottom img.logo.logo__google {
+    margin-top: 23px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .promo-double__text .title {
-    font-size: 25px;
+  .promo__text .promo-bottom img.logo.logo__google,
+  .promo-double__text .promo-bottom img.logo.logo__google {
+    margin-top: 25px;
   }
 }
 
-@media screen and (min-width: 1480px) {
-  .promo-double__text .title {
-    font-size: 26px;
-  }
+.promo__text .promo-bottom img.logo.logo__index,
+.promo-double__text .promo-bottom img.logo.logo__index {
+  max-width: 102px;
 }
 
-@media screen and (min-width: 1850px) {
-  .promo-double__text .title {
-    font-size: 27px;
+@media screen and (min-width: 420px) {
+  .promo__text .promo-bottom img.logo.logo__index,
+  .promo-double__text .promo-bottom img.logo.logo__index {
+    max-width: 118px;
   }
-}
-
-@media screen and (min-width: mega) {
-  .promo-double__text .title {
-    font-size: 27px;
-  }
-}
-
-.promo-double__text .excerpt {
-  font-family: Tiempos, Georgia, serif;
-  font-size: 15px;
-  line-height: 24px;
-  letter-spacing: 0em;
 }
 
 @media screen and (min-width: 830px) {
-  .promo-double__text .excerpt {
-    font-size: 16px;
-    line-height: 25px;
+  .promo__text .promo-bottom img.logo.logo__index,
+  .promo-double__text .promo-bottom img.logo.logo__index {
+    max-width: 128px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .promo-double__text .excerpt {
-    font-size: 17px;
-    line-height: 26px;
-    letter-spacing: -0.01em;
+  .promo__text .promo-bottom img.logo.logo__index,
+  .promo-double__text .promo-bottom img.logo.logo__index {
+    max-width: 136px;
+  }
+}
+
+.promo__text .promo-bottom img.logo.logo__nhs,
+.promo-double__text .promo-bottom img.logo.logo__nhs {
+  max-width: 81px;
+}
+
+@media screen and (min-width: 420px) {
+  .promo__text .promo-bottom img.logo.logo__nhs,
+  .promo-double__text .promo-bottom img.logo.logo__nhs {
+    max-width: 92px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .promo__text .promo-bottom img.logo.logo__nhs,
+  .promo-double__text .promo-bottom img.logo.logo__nhs {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo__text .promo-bottom img.logo.logo__nhs,
+  .promo-double__text .promo-bottom img.logo.logo__nhs {
+    max-width: 100px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo__text .promo-bottom img.logo.logo__nhs,
+  .promo-double__text .promo-bottom img.logo.logo__nhs {
+    max-width: 105px;
+    margin-top: 36px;
+  }
+}
+
+.promo__text .promo-bottom img.logo.logo__nikkei,
+.promo-double__text .promo-bottom img.logo.logo__nikkei {
+  max-width: 98px;
+}
+
+@media screen and (min-width: 420px) {
+  .promo__text .promo-bottom img.logo.logo__nikkei,
+  .promo-double__text .promo-bottom img.logo.logo__nikkei {
+    max-width: 115px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo__text .promo-bottom img.logo.logo__nikkei,
+  .promo-double__text .promo-bottom img.logo.logo__nikkei {
+    max-width: 125px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo__text .promo-bottom img.logo.logo__nikkei,
+  .promo-double__text .promo-bottom img.logo.logo__nikkei {
+    max-width: 134px;
+  }
+}
+
+.promo__text .promo-bottom img.logo.logo__redburn,
+.promo-double__text .promo-bottom img.logo.logo__redburn {
+  max-width: 108px;
+}
+
+@media screen and (min-width: 420px) {
+  .promo__text .promo-bottom img.logo.logo__redburn,
+  .promo-double__text .promo-bottom img.logo.logo__redburn {
+    max-width: 124px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .promo__text .promo-bottom img.logo.logo__redburn,
+  .promo-double__text .promo-bottom img.logo.logo__redburn {
+    margin-top: 28px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo__text .promo-bottom img.logo.logo__redburn,
+  .promo-double__text .promo-bottom img.logo.logo__redburn {
+    max-width: 136px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo__text .promo-bottom img.logo.logo__redburn,
+  .promo-double__text .promo-bottom img.logo.logo__redburn {
+    max-width: 146px;
+    margin-top: 34px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .promo__text .promo-bottom img.logo.logo__uefa,
+  .promo-double__text .promo-bottom img.logo.logo__uefa {
+    max-height: 89px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo__text .promo-bottom img.logo.logo__uefa,
+  .promo-double__text .promo-bottom img.logo.logo__uefa {
+    max-height: 97px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo__text .promo-bottom img.logo.logo__uefa,
+  .promo-double__text .promo-bottom img.logo.logo__uefa {
+    max-height: 108px;
   }
 }
 
@@ -2106,7 +2087,7 @@ The home (and clients) PROMO zone
 /* ---------- Helper classes for modifying images on small screens ---------- */
 @media screen and (max-width: 419px) {
   .mobile__margin-left {
-    grid-column: 2 / span 14;
+    grid-column: 2 / span 13;
   }
   .mobile__margin-left img {
     width: calc(100% + 40px);
@@ -2239,14 +2220,14 @@ as this lets us put the blurb on the side we choose for it
   bottom: 0;
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .client-promo__left.image-background .promo__image,
   .client-promo__right.image-background .promo__image {
     grid-column: 1 / span 16;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .client-promo__left.image-background .promo__image,
   .client-promo__right.image-background .promo__image {
     grid-column: 1 / span 18;
@@ -2276,6 +2257,394 @@ as this lets us put the blurb on the side we choose for it
   filter: drop-shadow(0 0 10px black);
 }
 
+/* The promo-double module 
+-------------------------------------------------------------------------------------- */
+/* ---------- Non-grid settings ---------- */
+.promo-double {
+  position: relative;
+  text-align: center;
+}
+
+@media screen and (min-width: 650px) {
+  .promo-double {
+    border-top: 1px solid #ddd;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo-double {
+    border-top: none;
+    margin-bottom: 90px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo-double {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo-double .no-bottom-margin {
+    margin-bottom: 0 !important;
+  }
+}
+
+.client-promo-double__left,
+.client-promo-double__right {
+  display: grid;
+  grid-column: 1 / span 14;
+  grid-template-columns: 0px repeat(12, 1fr) 0px;
+  column-gap: 20px;
+  border-top: 1px solid #ddd;
+  margin-bottom: 0;
+  padding-top: 40px;
+  align-self: start;
+  align-items: center;
+  text-align: left;
+}
+
+@media screen and (min-width: 420px) {
+  .client-promo-double__left,
+  .client-promo-double__right {
+    padding-top: 70px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .client-promo-double__left,
+  .client-promo-double__right {
+    padding-top: 40px;
+    border-top: none;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .client-promo-double__left,
+  .client-promo-double__right {
+    padding-bottom: 40px;
+  }
+}
+
+/* overrides for the promo-double type */
+.promo-double__text .title {
+  font-size: 18px;
+  line-height: 118%;
+  letter-spacing: -0.01em;
+}
+
+@media screen and (min-width: 420px) {
+  .promo-double__text .title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .promo-double__text .title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo-double__text .title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo-double__text .title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .promo-double__text .title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .promo-double__text .title {
+    font-size: 27px;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .promo-double__text .title {
+    font-size: 27px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .promo-double__text .title {
+    margin-bottom: 20px;
+  }
+}
+
+.promo-double__text .excerpt {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+@media screen and (min-width: 830px) {
+  .promo-double__text .excerpt {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo-double__text .excerpt {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+  }
+}
+
+.promo-double__text .excerpt p:last-of-type {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 420px) {
+  .promo-double__text .excerpt p:last-of-type {
+    margin-bottom: 26px;
+  }
+}
+
+/* ---------- Grid (and spacing) settings ---------- */
+.promo-double__divider {
+  display: none;
+  position: absolute;
+}
+
+@media screen and (min-width: 650px) {
+  .promo-double__divider {
+    display: inline-block;
+    width: 1px;
+    min-height: 100%;
+    background: #ddd;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo-double__divider {
+    width: 8px;
+    margin-left: -4px;
+    background: #f4f4f4;
+  }
+}
+
+.promo-double__image {
+  max-height: none;
+  overflow: hidden;
+  height: 280px;
+  grid-row: 2 / 2;
+}
+
+@media screen and (min-width: 830px) {
+  .promo-double__image {
+    grid-row: 1 / 1;
+    height: auto;
+  }
+}
+
+.promo-double__image img {
+  display: block;
+  width: calc(100% + 200px);
+}
+
+@media screen and (min-width: 830px) {
+  .promo-double__image img {
+    width: calc(100% + 60px);
+  }
+}
+
+.client-promo-double__left .promo-double__image,
+.client-promo-double__right .promo-double__image {
+  grid-column: 1 / span 14;
+}
+
+.client-promo-double__left .promo-double__image img,
+.client-promo-double__right .promo-double__image img {
+  margin-left: -100px;
+  left: -100px;
+  right: 100px;
+}
+
+@media screen and (min-width: 650px) {
+  .client-promo-double__left {
+    grid-column: 1 / span 7;
+    grid-template-columns: 0px repeat(6, 1fr);
+  }
+  .client-promo-double__left .promo-double__text {
+    grid-column: 3 / span 5;
+    padding-right: 20px;
+  }
+  .client-promo-double__left .promo-double__image {
+    grid-column: 1 / span 7;
+  }
+  .client-promo-double__left .promo-double__image img {
+    margin-left: -200px;
+    left: -200px;
+    right: 200px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .client-promo-double__left .promo-double__text {
+    grid-column: 4 / span 4;
+  }
+  .client-promo-double__left .promo-double__image {
+    grid-column: 1 / span 3;
+    padding-right: 20px;
+  }
+  .client-promo-double__left .promo-double__image img {
+    margin-left: -60px;
+    left: -60px;
+    right: 60px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .client-promo-double__left .promo-double__text {
+    grid-column: 4 / span 4;
+    padding-right: 30px;
+  }
+  .client-promo-double__left .promo-double__image {
+    grid-column: 1 / span 3;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .client-promo-double__left {
+    grid-column: 1 / span 8;
+    grid-template-columns: 0px repeat(7, 1fr);
+  }
+  .client-promo-double__left .promo-double__text {
+    grid-column: 5 / span 4;
+  }
+  .client-promo-double__left .promo-double__image {
+    grid-column: 1 / span 4;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .client-promo-double__left {
+    grid-column: 1 / span 9;
+    grid-template-columns: 0px repeat(8, 1fr);
+  }
+  .client-promo-double__left .promo-double__text {
+    grid-column: 5 / span 4;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .client-promo-double__left {
+    grid-column: 1 / span 9;
+    grid-template-columns: 0px repeat(8, 1fr);
+  }
+  .client-promo-double__left .promo-double__text {
+    grid-column: 5 / span 4;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .client-promo-double__right {
+    grid-column: 8 / span 7;
+    grid-template-columns: repeat(6, 1fr) 0px;
+  }
+  .client-promo-double__right .promo-double__text {
+    grid-column: 1 / span 5;
+    padding-left: 20px;
+  }
+  .client-promo-double__right .promo-double__image {
+    grid-column: 1 / span 7;
+  }
+  .client-promo-double__right .promo-double__image img {
+    left: 0;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .client-promo-double__right .promo-double__text {
+    grid-column: 1 / span 4;
+  }
+  .client-promo-double__right .promo-double__image {
+    grid-column: 5 / span 3;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .client-promo-double__right .promo-double__text {
+    grid-column: 1 / span 4;
+    padding-left: 30px;
+  }
+  .client-promo-double__right .promo-double__image {
+    grid-column: 5 / span 3;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .client-promo-double__right {
+    grid-column: 9 / span 8;
+    grid-template-columns: repeat(7, 1fr) 0px;
+  }
+  .client-promo-double__right .promo-double__text {
+    grid-column: 1 / span 4;
+  }
+  .client-promo-double__right .promo-double__image {
+    grid-column: 5 / span 4;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .client-promo-double__right {
+    grid-column: 10 / span 9;
+    grid-template-columns: repeat(8, 1fr) 0px;
+  }
+  .client-promo-double__right .promo-double__text {
+    grid-column: 2 / span 4;
+  }
+  .client-promo-double__right .promo-double__image {
+    grid-column: 6 / span 4;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .client-promo-double__right {
+    grid-column: 10 / span 9;
+    grid-template-columns: repeat(8, 1fr) 0px;
+  }
+  .client-promo-double__right .promo-double__text {
+    grid-column: 2 / span 4;
+  }
+  .client-promo-double__right .promo-double__image {
+    grid-column: 6 / span 4;
+  }
+}
+
+.promo-double__text {
+  align-self: start;
+  grid-column: 2 / span 12;
+  /* 
+  once we get to size=small, 
+  the grid settings for this 
+  are set in the client-promo-double__right and __left classes
+  */
+}
+
+@media screen and (min-width: 420px) {
+  .promo-double__text {
+    grid-column: 3 / span 10;
+  }
+}
+
 /* ---------- The "see more projects" link at the bottom ---------- */
 .more-clients {
   border-top: 1px solid #ddd;
@@ -2290,8 +2659,8 @@ as this lets us put the blurb on the side we choose for it
 }
 
 .more-clients-link {
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 31px;
+  line-height: 35px;
   letter-spacing: -0.02em;
   font-weight: 800;
   grid-column: 2 / span 12;
@@ -2323,18 +2692,18 @@ as this lets us put the blurb on the side we choose for it
 @media screen and (min-width: 1120px) {
   .more-clients-link {
     font-size: 56px;
-    line-height: 65px;
+    line-height: 64px;
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .more-clients-link {
     font-size: 60px;
     line-height: 67px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .more-clients-link {
     font-size: 64px;
     line-height: 70px;
@@ -2367,7 +2736,7 @@ as this lets us put the blurb on the side we choose for it
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .more-clients-link {
     grid-column: 4 / span 10;
   }
@@ -2401,13 +2770,13 @@ as this lets us put the blurb on the side we choose for it
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .journal-splash {
     grid-template-areas: ". . text text text text text text image image image image image image image image";
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .journal-splash {
     grid-template-areas: ". . . text text text text text . image image image image image image image image image";
   }
@@ -2441,13 +2810,13 @@ as this lets us put the blurb on the side we choose for it
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .journal-splash__textonly {
     grid-template-areas: ". . . . . text text text text text text . . . . .";
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .journal-splash__textonly {
     grid-template-areas: ". . . . . text text text text text text text text . . . . .";
   }
@@ -2513,7 +2882,7 @@ as this lets us put the blurb on the side we choose for it
 .journal-splash__date {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 118%;
   letter-spacing: 0.02em;
 }
@@ -2521,86 +2890,66 @@ as this lets us put the blurb on the side we choose for it
 @media screen and (min-width: 420px) {
   .journal-splash__kicker,
   .journal-splash__date {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .journal-splash__kicker,
   .journal-splash__date {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-splash__kicker,
   .journal-splash__date {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
 .journal-splash__title,
 .journal-splash__subtitle {
-  font-size: 22px;
-  line-height: 118%;
-  letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
 }
 
+.journal-splash__title {
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 20px 60px 0 0;
+}
+
 @media screen and (min-width: 420px) {
-  .journal-splash__title,
-  .journal-splash__subtitle {
+  .journal-splash__title {
     font-size: 25px;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .journal-splash__title,
-  .journal-splash__subtitle {
-    font-size: 30px;
+  .journal-splash__title {
+    font-size: 28px;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .journal-splash__title,
-  .journal-splash__subtitle {
-    font-size: 32px;
+  .journal-splash__title {
+    font-size: 30px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .journal-splash__title,
-  .journal-splash__subtitle {
-    font-size: 34px;
+  .journal-splash__title {
+    font-size: 32px;
   }
 }
 
-@media screen and (min-width: 1480px) {
-  .journal-splash__title,
-  .journal-splash__subtitle {
-    font-size: 36px;
+@media screen and (min-width: 1440px) {
+  .journal-splash__title {
+    font-size: 33px;
   }
-}
-
-@media screen and (min-width: 1850px) {
-  .journal-splash__title,
-  .journal-splash__subtitle {
-    font-size: 38px;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .journal-splash__title,
-  .journal-splash__subtitle {
-    font-size: 38px;
-  }
-}
-
-.journal-splash__title {
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin: 20px 60px 0 0;
 }
 
 @media screen and (min-width: 1120px) {
@@ -2610,13 +2959,47 @@ as this lets us put the blurb on the side we choose for it
 }
 
 .journal-splash__subtitle {
+  font-size: 24px;
+  line-height: 116%;
+  letter-spacing: -0.01em;
   font-style: italic;
+  letter-spacing: -0.03em;
   margin: -1px 40px 10px 0;
 }
 
+@media screen and (min-width: 420px) {
+  .journal-splash__subtitle {
+    font-size: 27px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .journal-splash__subtitle {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .journal-splash__subtitle {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .journal-splash__subtitle {
+    font-size: 34px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .journal-splash__subtitle {
+    font-size: 35px;
+  }
+}
+
 .journal-splash__excerpt {
-  font-size: 17px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: -0.01em;
   font-family: Tiempos, serif;
   margin: 25px 0 32px 0;
@@ -2624,30 +3007,23 @@ as this lets us put the blurb on the side we choose for it
 
 @media screen and (min-width: 650px) {
   .journal-splash__excerpt {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 17px;
+    line-height: 26px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .journal-splash__excerpt {
-    font-size: 19px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
     letter-spacing: -0.01em;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-splash__excerpt {
-    font-size: 20px;
-    line-height: 31px;
-  }
-}
-
-@media screen and (min-width: 1480px) {
-  .journal-splash__excerpt {
-    font-size: 21px;
-    line-height: 32px;
+    font-size: 19px;
+    line-height: 30px;
   }
 }
 
@@ -2684,13 +3060,13 @@ as this lets us put the blurb on the side we choose for it
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .journal-archive {
     grid-template-areas: ". . kicker kicker . entries entries entries entries entries entries entries entries entries . .";
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .journal-archive {
     grid-template-areas: ". . . kicker . entries entries entries entries entries entries entries entries . . . . .";
   }
@@ -2704,8 +3080,8 @@ as this lets us put the blurb on the side we choose for it
 
 .journal-archive__title,
 .journal-archive__subtitle {
-  font-size: 17px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
@@ -2715,16 +3091,16 @@ as this lets us put the blurb on the side we choose for it
 @media screen and (min-width: 650px) {
   .journal-archive__title,
   .journal-archive__subtitle {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 17px;
+    line-height: 26px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .journal-archive__title,
   .journal-archive__subtitle {
-    font-size: 19px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
     letter-spacing: -0.01em;
   }
 }
@@ -2732,30 +3108,22 @@ as this lets us put the blurb on the side we choose for it
 @media screen and (min-width: 1120px) {
   .journal-archive__title,
   .journal-archive__subtitle {
-    font-size: 20px;
-    line-height: 31px;
-  }
-}
-
-@media screen and (min-width: 1480px) {
-  .journal-archive__title,
-  .journal-archive__subtitle {
-    font-size: 21px;
-    line-height: 32px;
+    font-size: 19px;
+    line-height: 30px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .journal-archive__title,
   .journal-archive__subtitle {
-    line-height: 27px;
+    line-height: 25px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-archive__title,
   .journal-archive__subtitle {
-    line-height: 30px;
+    line-height: 27px;
   }
 }
 
@@ -2774,8 +3142,6 @@ as this lets us put the blurb on the side we choose for it
 
 .journal-archive__subtitle {
   font-style: italic;
-  margin-top: -3px;
-  margin-bottom: -10px;
 }
 
 .journal-archive__entry a {
@@ -2847,7 +3213,7 @@ as this lets us put the blurb on the side we choose for it
   grid-area: kicker;
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 118%;
   letter-spacing: 0.02em;
   color: #FFD600;
@@ -2858,19 +3224,19 @@ as this lets us put the blurb on the side we choose for it
 
 @media screen and (min-width: 420px) {
   .journal-archive__kicker {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .journal-archive__kicker {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-archive__kicker {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
@@ -2896,15 +3262,27 @@ as this lets us put the blurb on the side we choose for it
 .journal-archive__date {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 118%;
   letter-spacing: 0.02em;
   color: #FFD600;
-  margin-top: 13px;
+  margin-top: 3px;
   margin-bottom: 18px;
 }
 
 @media screen and (min-width: 420px) {
+  .journal-archive__date {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .journal-archive__date {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
   .journal-archive__date {
     font-size: 13px;
   }
@@ -2912,26 +3290,20 @@ as this lets us put the blurb on the side we choose for it
 
 @media screen and (min-width: 830px) {
   .journal-archive__date {
-    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 24px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-archive__date {
-    font-size: 15px;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .journal-archive__date {
-    margin-bottom: 24px;
+    margin-top: 5px;
   }
 }
 
 .journal-archive__excerpt {
-  font-family: Tiempos, Georgia, serif;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 22px;
   letter-spacing: 0em;
   font-family: Tiempos, Georgia, serif;
   color: rgba(255, 255, 255, 0.7);
@@ -2939,15 +3311,15 @@ as this lets us put the blurb on the side we choose for it
 
 @media screen and (min-width: 830px) {
   .journal-archive__excerpt {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 23px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-archive__excerpt {
-    font-size: 17px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 24px;
     letter-spacing: -0.01em;
   }
 }
@@ -2957,9 +3329,8 @@ as this lets us put the blurb on the side we choose for it
 }
 
 a.journal-archive__link {
-  font-family: Tiempos, Georgia, serif;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 22px;
   letter-spacing: 0em;
   font-family: Graphik, sans-serif;
   color: rgba(255, 255, 255, 0.7);
@@ -2969,15 +3340,15 @@ a.journal-archive__link {
 
 @media screen and (min-width: 830px) {
   a.journal-archive__link {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 23px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   a.journal-archive__link {
-    font-size: 17px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 24px;
     letter-spacing: -0.01em;
   }
 }
@@ -2991,9 +3362,10 @@ a.journal-archive__link:hover {
 }
 
 .journal-splash__link {
-  padding: 11px 16px 15px 16px;
+  padding: 12px 16px 16px 17px;
   border: 0px;
-  font-size: 17px;
+  font-size: 16px;
+  line-height: 16px;
   letter-spacing: 0.01em;
   font-weight: bold;
   text-decoration: none;
@@ -3004,42 +3376,46 @@ a.journal-archive__link:hover {
 
 @media screen and (min-width: 830px) {
   .journal-splash__link {
-    padding: 12px 18px 16px 18px;
+    padding: 13px 18px 17px 19px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-splash__link {
-    padding: 13px 20px 18px 20px;
+    padding: 14px 20px 18px 21px;
   }
 }
 
 @media screen and (min-width: 650px) {
   .journal-splash__link {
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 17px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .journal-splash__link {
-    font-size: 19px;
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-splash__link {
-    font-size: 20px;
+    font-size: 19px;
+    line-height: 19px;
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .journal-splash__link {
-    font-size: 21px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 .journal-splash__link:hover {
-  padding: 11px 16px 15px 16px;
+  padding: 12px 16px 16px 17px;
   border: 0px;
   color: black;
   background-color: #FFD600;
@@ -3048,13 +3424,13 @@ a.journal-archive__link:hover {
 
 @media screen and (min-width: 830px) {
   .journal-splash__link:hover {
-    padding: 12px 18px 16px 18px;
+    padding: 13px 18px 17px 19px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-splash__link:hover {
-    padding: 13px 20px 18px 20px;
+    padding: 14px 20px 18px 21px;
   }
 }
 
@@ -3087,13 +3463,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .archive-pagination {
     grid-column: 6 / span 8;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .archive-pagination {
     grid-column: 6 / span 8;
   }
@@ -3106,9 +3482,10 @@ a.journal-archive__link:hover {
 }
 
 .archive-pagination a {
-  padding: 11px 16px 15px 16px;
+  padding: 12px 16px 16px 17px;
   border: 0px;
-  font-size: 17px;
+  font-size: 16px;
+  line-height: 16px;
   letter-spacing: 0.01em;
   font-weight: bold;
   text-decoration: none;
@@ -3118,37 +3495,41 @@ a.journal-archive__link:hover {
 
 @media screen and (min-width: 830px) {
   .archive-pagination a {
-    padding: 12px 18px 16px 18px;
+    padding: 13px 18px 17px 19px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .archive-pagination a {
-    padding: 13px 20px 18px 20px;
+    padding: 14px 20px 18px 21px;
   }
 }
 
 @media screen and (min-width: 650px) {
   .archive-pagination a {
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 17px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .archive-pagination a {
-    font-size: 19px;
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .archive-pagination a {
-    font-size: 20px;
+    font-size: 19px;
+    line-height: 19px;
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .archive-pagination a {
-    font-size: 21px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -3182,21 +3563,21 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .journal-home {
     grid-template-areas: ". . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . ."  ". . entries entries entries entries entries entries entries entries entries entries entries entries . ." ". . onward onward onward onward onward onward onward onward onward onward onward onward . .";
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .journal-home {
-    grid-template-areas: ". . . . . kicker kicker kicker kicker kicker kicker kicker kicker . . . . ."  ". . . . . entries entries entries entries entries entries entries entries . . . . ." ". . . . . onward onward onward onward onward onward onward onward . . . . .";
+    grid-template-areas: ". . . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . . . . ."  ". . . entries entries entries entries entries entries entries entries entries entries entries entries . . ." ". . . . . onward onward onward onward onward onward onward onward onward onward . . .";
   }
 }
 
 @media screen and (min-width: mega) {
   .journal-home {
-    grid-template-areas: ". . . . . kicker kicker kicker kicker kicker kicker kicker kicker . . . . ."  ". . . . . entries entries entries entries entries entries entries entries . . . . ." ". . . . . onward onward onward onward onward onward onward onward . . . . .";
+    grid-template-areas: ". . . kicker kicker kicker kicker kicker kicker kicker kicker kicker kicker . . . . ."  ". . . entries entries entries entries entries entries entries entries entries entries entries entries . . ." ". . . . . onward onward onward onward onward onward onward onward onward onward . . .";
   }
 }
 
@@ -3208,31 +3589,25 @@ a.journal-archive__link:hover {
 
 .journal-home .recently-header,
 .journal-home .onward-journey-link {
-  font-family: Graphik, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 118%;
-  letter-spacing: 0.02em;
-}
-
-@media screen and (min-width: 420px) {
-  .journal-home .recently-header,
-  .journal-home .onward-journey-link {
-    font-size: 13px;
-  }
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0em;
 }
 
 @media screen and (min-width: 830px) {
   .journal-home .recently-header,
   .journal-home .onward-journey-link {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 23px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-home .recently-header,
   .journal-home .onward-journey-link {
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -3284,7 +3659,7 @@ a.journal-archive__link:hover {
 
 @media screen and (min-width: 650px) {
   .journal-home .journal-archive__entry {
-    margin: -13px 0 -16px 0;
+    margin: -15px 0 -18px 0;
     padding: 64px 0;
   }
   .journal-home .journal-archive__entry:last-of-type {
@@ -3298,6 +3673,33 @@ a.journal-archive__link:hover {
   .journal-home .journal-archive__entry:nth-of-type(2) {
     box-shadow: -8px 0px #3A3A3A;
     padding-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .journal-home .journal-archive__entry:nth-of-type(1) {
+    padding-right: 70px;
+  }
+  .journal-home .journal-archive__entry:nth-of-type(2) {
+    padding-left: 70px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .journal-home .journal-archive__entry:nth-of-type(1) {
+    padding-right: 120px;
+  }
+  .journal-home .journal-archive__entry:nth-of-type(2) {
+    padding-left: 120px;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .journal-home .journal-archive__entry:nth-of-type(1) {
+    padding-right: 120px;
+  }
+  .journal-home .journal-archive__entry:nth-of-type(2) {
+    padding-left: 120px;
   }
 }
 
@@ -3388,8 +3790,8 @@ a.journal-archive__link:hover {
 }
 
 .clients-single .article-head .article-title h1 {
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 31px;
+  line-height: 35px;
   letter-spacing: -0.02em;
   font-family: Graphik, sans-serif;
   font-weight: 800;
@@ -3422,18 +3824,18 @@ a.journal-archive__link:hover {
 @media screen and (min-width: 1120px) {
   .clients-single .article-head .article-title h1 {
     font-size: 56px;
-    line-height: 65px;
+    line-height: 64px;
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .article-head .article-title h1 {
     font-size: 60px;
     line-height: 67px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .article-head .article-title h1 {
     font-size: 64px;
     line-height: 70px;
@@ -3490,7 +3892,7 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .article-body .the-metadata {
     grid-column: 4 / span 2;
   }
@@ -3606,14 +4008,14 @@ a.journal-archive__link:hover {
   column-gap: 20px;
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single figure.image__full-width {
     grid-column: 1 / span 16;
     grid-template-columns: 0px repeat(14, 1fr) 0px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single figure.image__full-width {
     grid-column: 1 / span 18;
     grid-template-columns: 0px repeat(16, 1fr) 0px;
@@ -3631,13 +4033,13 @@ a.journal-archive__link:hover {
   grid-column: 1 / span 14;
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single figure.image__full-width img {
     grid-column: 1 / span 16;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single figure.image__full-width img {
     grid-column: 1 / span 18;
   }
@@ -3678,13 +4080,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single figure.image__full-width figcaption {
     grid-column: 6 / span 5;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single figure.image__full-width figcaption {
     grid-column: 7 / span 5;
   }
@@ -3705,14 +4107,14 @@ a.journal-archive__link:hover {
   column-gap: 20px;
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single figure.image__wide-with-margins {
     grid-column: 1 / span 16;
     grid-template-columns: 0px repeat(14, 1fr) 0px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single figure.image__wide-with-margins {
     grid-column: 1 / span 18;
     grid-template-columns: 0px repeat(16, 1fr) 0px;
@@ -3736,13 +4138,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single figure.image__wide-with-margins img {
     grid-column: 3 / span 12;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single figure.image__wide-with-margins img {
     grid-column: 4 / span 12;
   }
@@ -3783,13 +4185,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single figure.image__wide-with-margins figcaption {
     grid-column: 6 / span 5;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single figure.image__wide-with-margins figcaption {
     grid-column: 7 / span 5;
   }
@@ -3828,13 +4230,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single figure.image__bleed-small-sizes img {
     grid-column: 3 / span 12;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single figure.image__bleed-small-sizes img {
     grid-column: 4 / span 12;
   }
@@ -3863,13 +4265,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single figure.image__wide-right {
     grid-column: 6 / span 9;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single figure.image__wide-right {
     grid-column: 7 / span 9;
   }
@@ -3932,13 +4334,13 @@ a.journal-archive__link:hover {
   grid-column: 1 / span 14;
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .client-case-study {
     grid-column: 1 / span 16;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .client-case-study {
     grid-column: 1 / span 18;
   }
@@ -4005,14 +4407,14 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .client-promo__right h3,
   .clients-single .client-promo__left h3 {
     font-size: 26px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .client-promo__right h3,
   .clients-single .client-promo__left h3 {
     font-size: 27px;
@@ -4120,13 +4522,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .client-promo__left.image__full-view {
     grid-template-areas: ". . text text text text . image image image image image image image . .";
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .client-promo__left.image__full-view {
     grid-template-areas: ". . . text text text text text . . image image image image image . . .";
   }
@@ -4160,13 +4562,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .client-promo__left.image__full-view.text-first {
     grid-template-areas: ". . text text text text . image image image image image image image . .";
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .client-promo__left.image__full-view.text-first {
     grid-template-areas: ". . . text text text text text . . image image image image image . . .";
   }
@@ -4200,13 +4602,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .client-promo__right.image__full-view {
     grid-template-areas: ". . image image image image image image image . text text text text . .";
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .client-promo__right.image__full-view {
     grid-template-areas: ". . . image image image image image . . text text text text text . . .";
   }
@@ -4240,13 +4642,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .client-promo__right.image__full-view.text-first {
     grid-template-areas: ". . image image image image image image image . text text text text . .";
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .client-promo__right.image__full-view.text-first {
     grid-template-areas: ". . . image image image image image . . text text text text text . . .";
   }
@@ -4327,13 +4729,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .cluster-left h3, .clients-single .cluster-right h3 {
     font-size: 26px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .cluster-left h3, .clients-single .cluster-right h3 {
     font-size: 27px;
   }
@@ -4371,14 +4773,14 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .cluster-left {
     grid-column: 1 / span 8;
     grid-template-columns: 0px repeat(7, 1fr);
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .cluster-left {
     grid-column: 1 / span 9;
     grid-template-columns: 0px repeat(8, 1fr);
@@ -4414,7 +4816,7 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .cluster-left .text {
     grid-column: 4 / span 5;
   }
@@ -4442,13 +4844,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .cluster-left .image {
     grid-column: 1 / span 8;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .cluster-left .image {
     grid-column: 1 / span 9;
   }
@@ -4472,14 +4874,14 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .cluster-right {
     grid-column: 9 / span 8;
     grid-template-columns: repeat(7, 1fr) 0px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .cluster-right {
     grid-column: 10 / span 9;
     grid-template-columns: repeat(8, 1fr) 0px;
@@ -4515,13 +4917,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .cluster-right .text {
     grid-column: 3 / span 4;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .cluster-right .text {
     grid-column: 2 / span 5;
   }
@@ -4549,13 +4951,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .cluster-right .image {
     grid-column: 1 / span 8;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .cluster-right .image {
     grid-column: 1 / span 9;
   }
@@ -4593,13 +4995,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .side-by-side.left {
     grid-column: 3 / span 6;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .side-by-side.left {
     grid-column: 4 / span 6;
   }
@@ -4623,13 +5025,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .side-by-side.right {
     grid-column: 9 / span 6;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .side-by-side.right {
     grid-column: 10 / span 6;
   }
@@ -4651,13 +5053,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .side-by-side__including-mobile.left {
     grid-column: 3 / span 6;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .side-by-side__including-mobile.left {
     grid-column: 4 / span 6;
   }
@@ -4679,13 +5081,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .side-by-side__including-mobile.right {
     grid-column: 9 / span 6;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .side-by-side__including-mobile.right {
     grid-column: 10 / span 6;
   }
@@ -4737,13 +5139,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .side-by-side__including-mobile__with-overflow.left {
     grid-column: 3 / span 6;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .side-by-side__including-mobile__with-overflow.left {
     grid-column: 4 / span 6;
   }
@@ -4778,13 +5180,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .clients-single .side-by-side__including-mobile__with-overflow.right {
     grid-column: 9 / span 6;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .clients-single .side-by-side__including-mobile__with-overflow.right {
     grid-column: 10 / span 6;
   }
@@ -4894,7 +5296,7 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .about__splash .splash-title {
     grid-column: 4 / span 8;
   }
@@ -4913,8 +5315,8 @@ a.journal-archive__link:hover {
 }
 
 .about__splash h2 {
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 31px;
+  line-height: 35px;
   letter-spacing: -0.02em;
   font-family: Graphik, sans-serif;
   font-weight: 800;
@@ -4945,18 +5347,18 @@ a.journal-archive__link:hover {
 @media screen and (min-width: 1120px) {
   .about__splash h2 {
     font-size: 56px;
-    line-height: 65px;
+    line-height: 64px;
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .about__splash h2 {
     font-size: 60px;
     line-height: 67px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .about__splash h2 {
     font-size: 64px;
     line-height: 70px;
@@ -4971,8 +5373,8 @@ a.journal-archive__link:hover {
 }
 
 .about__splash p, .about__splash ul {
-  font-size: 22px;
-  line-height: 118%;
+  font-size: 24px;
+  line-height: 116%;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   line-height: 125%;
@@ -4981,7 +5383,7 @@ a.journal-archive__link:hover {
 
 @media screen and (min-width: 420px) {
   .about__splash p, .about__splash ul {
-    font-size: 25px;
+    font-size: 27px;
   }
 }
 
@@ -5003,21 +5405,9 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .about__splash p, .about__splash ul {
-    font-size: 36px;
-  }
-}
-
-@media screen and (min-width: 1850px) {
-  .about__splash p, .about__splash ul {
-    font-size: 38px;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .about__splash p, .about__splash ul {
-    font-size: 38px;
+    font-size: 35px;
   }
 }
 
@@ -5064,13 +5454,13 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .about__splash ul li {
     text-indent: -44px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .about__splash ul li {
     text-indent: -46px;
   }
@@ -5108,7 +5498,7 @@ a.journal-archive__link:hover {
   align-items: start;
   padding-top: 40px;
   padding-bottom: 40px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #f4f4f4;
 }
 
 .about__section:first-of-type {
@@ -5142,7 +5532,7 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .about__section .section-title {
     grid-column: 4 / span 3;
   }
@@ -5155,8 +5545,8 @@ a.journal-archive__link:hover {
 }
 
 .about__section .section-title h2 {
-  font-size: 22px;
-  line-height: 118%;
+  font-size: 24px;
+  line-height: 116%;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   margin: -5px 0 22px 0;
@@ -5164,7 +5554,7 @@ a.journal-archive__link:hover {
 
 @media screen and (min-width: 420px) {
   .about__section .section-title h2 {
-    font-size: 25px;
+    font-size: 27px;
   }
 }
 
@@ -5186,21 +5576,9 @@ a.journal-archive__link:hover {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .about__section .section-title h2 {
-    font-size: 36px;
-  }
-}
-
-@media screen and (min-width: 1850px) {
-  .about__section .section-title h2 {
-    font-size: 38px;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .about__section .section-title h2 {
-    font-size: 38px;
+    font-size: 35px;
   }
 }
 
@@ -5227,38 +5605,31 @@ a.journal-archive__link:hover {
 }
 
 .about__section .about-content p, .about__section .about-content ul {
-  font-size: 17px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
 }
 
 @media screen and (min-width: 650px) {
   .about__section .about-content p, .about__section .about-content ul {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 17px;
+    line-height: 26px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .about__section .about-content p, .about__section .about-content ul {
-    font-size: 19px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
     letter-spacing: -0.01em;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .about__section .about-content p, .about__section .about-content ul {
-    font-size: 20px;
-    line-height: 31px;
-  }
-}
-
-@media screen and (min-width: 1480px) {
-  .about__section .about-content p, .about__section .about-content ul {
-    font-size: 21px;
-    line-height: 32px;
+    font-size: 19px;
+    line-height: 30px;
   }
 }
 
@@ -5312,21 +5683,38 @@ a.journal-archive__link:hover {
 }
 
 .contact__content {
-  background: url("https://api.mapbox.com/styles/v1/aftertheflood/ck361mb770fa71cmj7e6zutul/static/-0.1077,51.5227,14.50/1200x1000@2x?access_token=pk.eyJ1IjoiYWZ0ZXJ0aGVmbG9vZCIsImEiOiJkMzhlOTBjNTI2Mjk5OGIyNTAzNWJkZGUzYjZmMjY5YyJ9.Uv6UQV1HoLQJ5vUG8nF7ug");
   display: grid;
   grid-template-columns: 0px repeat(12, 1fr) 0px;
   column-gap: 20px;
-  margin: 0 0;
+  margin: 0 0 60px 0;
   align-items: center;
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 420px) {
+  .contact__content {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .contact__content {
+    margin-bottom: 90px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .contact__content {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .contact__content {
     grid-template-columns: 0px repeat(14, 1fr) 0px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .contact__content {
     grid-template-columns: 0px repeat(16, 1fr) 0px;
   }
@@ -5338,200 +5726,137 @@ a.journal-archive__link:hover {
   }
 }
 
-.contact__content .contact__info {
-  margin: 60px 0;
-  align-self: start;
+.contact__content h1, .contact__content div.wpcf7 {
   grid-column: 2 / span 12;
 }
 
 @media screen and (min-width: 420px) {
-  .contact__content .contact__info {
+  .contact__content h1, .contact__content div.wpcf7 {
     grid-column: 3 / span 10;
-    margin-top: 80px;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .contact__content .contact__info {
-    grid-column: 3 / span 4;
-    margin-top: 90px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .contact__content .contact__info {
-    margin-top: 100px;
-  }
-}
-
-@media screen and (min-width: 1850px) {
-  .contact__content .contact__info {
-    grid-column: 4 / span 4;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .contact__content .contact__info {
-    grid-column: 4 / span 4;
-  }
-}
-
-.contact__content .contact__info p {
-  margin-top: 0;
-  margin-bottom: 0.25em;
-}
-
-.contact__content .contact__form {
-  padding: 60px 20px;
-  background: #EEE;
-  grid-column: 1 / span 14;
-}
-
-@media screen and (min-width: 420px) {
-  .contact__content .contact__form {
-    padding: 80px 20px;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .contact__content .contact__form {
-    grid-column: 8 / span 7;
-    padding: 90px 20px;
-  }
-}
-
-@media screen and (min-width: 1120px) {
-  .contact__content .contact__form {
-    padding: 100px 20px;
-  }
-}
-
-@media screen and (min-width: 1480px) {
-  .contact__content .contact__form {
-    grid-column: 8 / span 9;
-  }
-}
-
-@media screen and (min-width: 1850px) {
-  .contact__content .contact__form {
-    grid-column: 9 / span 10;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .contact__content .contact__form {
-    grid-column: 9 / span 10;
+  .contact__content h1, .contact__content div.wpcf7 {
+    grid-column: 3 / span 7;
   }
 }
 
 .contact__content h1 {
-  font-size: 22px;
-  line-height: 118%;
-  letter-spacing: -0.01em;
+  font-size: 31px;
+  line-height: 35px;
+  letter-spacing: -0.02em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
-  margin-top: 0;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 
 @media screen and (min-width: 420px) {
   .contact__content h1 {
-    font-size: 25px;
+    font-size: 38px;
+    line-height: 47px;
   }
 }
 
 @media screen and (min-width: 650px) {
   .contact__content h1 {
-    font-size: 30px;
+    font-size: 46px;
+    line-height: 52px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .contact__content h1 {
-    font-size: 32px;
+    font-size: 52px;
+    line-height: 60px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .contact__content h1 {
-    font-size: 34px;
+    font-size: 56px;
+    line-height: 64px;
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .contact__content h1 {
-    font-size: 36px;
+    font-size: 60px;
+    line-height: 67px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .contact__content h1 {
-    font-size: 38px;
+    font-size: 64px;
+    line-height: 70px;
   }
 }
 
 @media screen and (min-width: mega) {
   .contact__content h1 {
-    font-size: 38px;
+    font-size: 64px;
+    line-height: 70px;
   }
 }
 
 @media screen and (min-width: 420px) {
   .contact__content h1 {
-    margin-bottom: 20px;
+    margin-top: 80px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 650px) {
   .contact__content h1 {
-    margin-bottom: 30px;
+    margin-top: 80px;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .contact__content h1 {
+    margin-top: 90px;
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .contact__content h1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
   }
 }
 
 .contact__content label {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 118%;
   letter-spacing: 0.02em;
 }
 
 @media screen and (min-width: 420px) {
   .contact__content label {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .contact__content label {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .contact__content label {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
 .contact__content .form-conditional {
   font-weight: 400;
-}
-
-.contact__content .the-contact-details {
-  margin-bottom: 28px;
-}
-
-@media screen and (min-width: 650px) {
-  .contact__content .the-contact-details {
-    margin-bottom: 40px;
-  }
-}
-
-.contact__content .the-map {
-  height: 300px;
-  background: yellow;
-  border: 1px solid black;
 }
 
 .bold-content {
@@ -5568,13 +5893,13 @@ textarea {
   width: 100%;
   border: 0px;
   margin-top: 7px;
-  background-color: #fff;
-  font-size: 22px;
-  line-height: 118%;
+  background-color: #f4f4f4;
+  font-size: 24px;
+  line-height: 116%;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   letter-spacing: 0em;
-  border: 8px solid #fff;
+  border: 8px solid #f4f4f4;
   outline: none;
 }
 
@@ -5582,7 +5907,7 @@ textarea {
   input[type=text],
   input[type=email],
   textarea {
-    font-size: 25px;
+    font-size: 27px;
   }
 }
 
@@ -5610,27 +5935,11 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   input[type=text],
   input[type=email],
   textarea {
-    font-size: 36px;
-  }
-}
-
-@media screen and (min-width: 1850px) {
-  input[type=text],
-  input[type=email],
-  textarea {
-    font-size: 38px;
-  }
-}
-
-@media screen and (min-width: mega) {
-  input[type=text],
-  input[type=email],
-  textarea {
-    font-size: 38px;
+    font-size: 35px;
   }
 }
 
@@ -5689,9 +5998,10 @@ textarea {
 }
 
 input[type=submit] {
-  padding: 11px 16px 15px 16px;
+  padding: 12px 16px 16px 17px;
   border: 0px;
-  font-size: 17px;
+  font-size: 16px;
+  line-height: 16px;
   letter-spacing: 0.01em;
   font-weight: bold;
   text-decoration: none;
@@ -5704,42 +6014,46 @@ input[type=submit] {
 
 @media screen and (min-width: 830px) {
   input[type=submit] {
-    padding: 12px 18px 16px 18px;
+    padding: 13px 18px 17px 19px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   input[type=submit] {
-    padding: 13px 20px 18px 20px;
+    padding: 14px 20px 18px 21px;
   }
 }
 
 @media screen and (min-width: 650px) {
   input[type=submit] {
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 17px;
   }
 }
 
 @media screen and (min-width: 830px) {
   input[type=submit] {
-    font-size: 19px;
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   input[type=submit] {
-    font-size: 20px;
+    font-size: 19px;
+    line-height: 19px;
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   input[type=submit] {
-    font-size: 21px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 input[type=submit]:hover {
-  padding: 11px 16px 15px 16px;
+  padding: 12px 16px 16px 17px;
   border: 0px;
   color: #000;
   background-color: #FF00FF;
@@ -5748,13 +6062,13 @@ input[type=submit]:hover {
 
 @media screen and (min-width: 830px) {
   input[type=submit]:hover {
-    padding: 12px 18px 16px 18px;
+    padding: 13px 18px 17px 19px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   input[type=submit]:hover {
-    padding: 13px 20px 18px 20px;
+    padding: 14px 20px 18px 21px;
   }
 }
 
@@ -5790,30 +6104,29 @@ the article HEADING
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-head .article-title {
-    grid-column: 3 / span 7;
+    grid-column: 3 / span 6;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .article-head .article-title {
-    grid-column: 4 / span 8;
+    grid-column: 4 / span 6;
   }
 }
 
 @media screen and (min-width: mega) {
   .article-head .article-title {
-    grid-column: 4 / span 8;
+    grid-column: 4 / span 6;
   }
 }
 
 .article-head h1 {
   font-size: 22px;
-  line-height: 118%;
-  letter-spacing: -0.01em;
+  line-height: 120%;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
   margin: 0;
@@ -5827,87 +6140,30 @@ the article HEADING
 
 @media screen and (min-width: 650px) {
   .article-head h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .article-head h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .article-head h1 {
-    font-size: 34px;
+    font-size: 32px;
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-head h1 {
-    font-size: 36px;
-  }
-}
-
-@media screen and (min-width: 1850px) {
-  .article-head h1 {
-    font-size: 38px;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .article-head h1 {
-    font-size: 38px;
+    font-size: 33px;
   }
 }
 
 .article-head .journal-splash__subtitle {
-  font-size: 22px;
-  line-height: 118%;
-  letter-spacing: -0.01em;
   margin: -3px 0 0 0;
-}
-
-@media screen and (min-width: 420px) {
-  .article-head .journal-splash__subtitle {
-    font-size: 25px;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .article-head .journal-splash__subtitle {
-    font-size: 30px;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .article-head .journal-splash__subtitle {
-    font-size: 32px;
-  }
-}
-
-@media screen and (min-width: 1120px) {
-  .article-head .journal-splash__subtitle {
-    font-size: 34px;
-  }
-}
-
-@media screen and (min-width: 1480px) {
-  .article-head .journal-splash__subtitle {
-    font-size: 36px;
-  }
-}
-
-@media screen and (min-width: 1850px) {
-  .article-head .journal-splash__subtitle {
-    font-size: 38px;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .article-head .journal-splash__subtitle {
-    font-size: 38px;
-  }
 }
 
 @media screen and (min-width: 830px) {
@@ -5941,8 +6197,8 @@ it is set out here because the rest of article-body applies to more than just th
 whereas we want this to only apply to the journal pages (i.e. NOT to the case-study pages)
 */
 .article-body {
-  font-size: 17px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   /* type styles and spacing
@@ -5960,36 +6216,29 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 @media screen and (min-width: 650px) {
   .article-body {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 17px;
+    line-height: 26px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .article-body {
-    font-size: 19px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
     letter-spacing: -0.01em;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .article-body {
-    font-size: 20px;
-    line-height: 31px;
-  }
-}
-
-@media screen and (min-width: 1480px) {
-  .article-body {
-    font-size: 21px;
-    line-height: 32px;
+    font-size: 19px;
+    line-height: 30px;
   }
 }
 
 .article-body p {
   font-weight: 400;
-  margin: 0 0 0.9em 0;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 720px) and (max-width: 830px) {
@@ -6019,17 +6268,17 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 .article-body h2 {
-  font-size: 22px;
-  line-height: 118%;
+  font-size: 24px;
+  line-height: 116%;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 600;
-  margin: 90px 0 24px 0;
+  margin-top: 3.6em;
 }
 
 @media screen and (min-width: 420px) {
   .article-body h2 {
-    font-size: 25px;
+    font-size: 27px;
   }
 }
 
@@ -6051,21 +6300,9 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-body h2 {
-    font-size: 36px;
-  }
-}
-
-@media screen and (min-width: 1850px) {
-  .article-body h2 {
-    font-size: 38px;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .article-body h2 {
-    font-size: 38px;
+    font-size: 35px;
   }
 }
 
@@ -6081,7 +6318,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 600;
-  margin: 60px 0 24px 0;
+  margin-top: 2.7em;
 }
 
 @media screen and (min-width: 420px) {
@@ -6108,13 +6345,13 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-body h3 {
     font-size: 26px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .article-body h3 {
     font-size: 27px;
   }
@@ -6128,23 +6365,91 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 .article-body h4 {
   font-family: Tiempos, Georgia, serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 32px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  margin: 60px 0 12px 0;
+  font-weight: 600;
+  margin-top: 1.8em;
   display: block;
 }
 
 .article-body h5 {
   font-family: Tiempos, Georgia, serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin: 60px 0 0 0;
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 1.8em;
+  margin-bottom: 0;
+}
+
+.article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body ul,
+.article-body .client-case-study .promo__text .title {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 650px) {
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body ul,
+  .article-body .client-case-study .promo__text .title {
+    margin-bottom: 17px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body ul,
+  .article-body .client-case-study .promo__text .title {
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body ul,
+  .article-body .client-case-study .promo__text .title {
+    margin-bottom: 19px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body ul,
+  .article-body .client-case-study .promo__text .title {
+    margin-bottom: 20px;
+  }
+}
+
+.article-body hr.wp-block-separator {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 650px) {
+  .article-body hr.wp-block-separator {
+    margin-top: 34px;
+    margin-bottom: 51px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body hr.wp-block-separator {
+    margin-top: 36px;
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body hr.wp-block-separator {
+    margin-top: 38px;
+    margin-bottom: 57px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article-body hr.wp-block-separator {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
 }
 
 .article-body ul {
@@ -6188,26 +6493,26 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 .article-body .article__date {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 118%;
   letter-spacing: 0.02em;
 }
 
 @media screen and (min-width: 420px) {
   .article-body .article__date {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .article-body .article__date {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .article-body .article__date {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
@@ -6285,7 +6590,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .article-body .the-metadata {
     grid-column: 4 / span 2;
   }
@@ -6297,58 +6602,97 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-.article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-.article-body blockquote, .article-body figure,
+.article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
+.article-body blockquote, .article-body figure, .article-body code,
 .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
   grid-column: 2 / span 12;
 }
 
 @media screen and (min-width: 420px) {
-  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-  .article-body blockquote, .article-body figure,
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
+  .article-body blockquote, .article-body figure, .article-body code,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 3 / span 10;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-  .article-body blockquote, .article-body figure,
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
+  .article-body blockquote, .article-body figure, .article-body code,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 4 / span 8;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-  .article-body blockquote, .article-body figure,
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
+  .article-body blockquote, .article-body figure, .article-body code,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 5 / span 6;
   }
 }
 
-@media screen and (min-width: 1480px) {
-  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-  .article-body blockquote, .article-body figure,
+@media screen and (min-width: 1440px) {
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
+  .article-body blockquote, .article-body figure, .article-body code,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 6 / span 6;
   }
 }
 
-@media screen and (min-width: 1850px) {
-  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-  .article-body blockquote, .article-body figure,
+@media screen and (min-width: 1800px) {
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
+  .article-body blockquote, .article-body figure, .article-body code,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 7 / span 6;
   }
 }
 
 @media screen and (min-width: mega) {
-  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol,
-  .article-body blockquote, .article-body figure,
+  .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
+  .article-body blockquote, .article-body figure, .article-body code,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 7 / span 6;
   }
+}
+
+.article-body code {
+  font-size: 0.95em;
+  color: #777;
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 650px) {
+  .article-body code {
+    margin-bottom: 17px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body code {
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body code {
+    margin-bottom: 19px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article-body code {
+    margin-bottom: 20px;
+  }
+}
+
+.article-body code p {
+  margin-bottom: 0;
+}
+
+.article-body code .code-level-2 {
+  margin-left: 20px;
 }
 
 .article-body div.case-study {
@@ -6356,7 +6700,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   grid-template-columns: 0 repeat(12, 1fr) 0;
   display: grid;
   column-gap: 20px;
-  background: #EEE;
+  background: #f4f4f4;
   margin: 40px 0;
   padding: 40px 0;
 }
@@ -6371,18 +6715,19 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 .article-body div.case-study h5 {
-  font-size: 22px;
-  line-height: 118%;
+  font-size: 24px;
+  line-height: 116%;
   letter-spacing: -0.01em;
   font-family: Graphik, sans-serif;
   font-weight: bold;
+  font-style: normal;
   text-transform: none;
   margin: 0 0 1em 0;
 }
 
 @media screen and (min-width: 420px) {
   .article-body div.case-study h5 {
-    font-size: 25px;
+    font-size: 27px;
   }
 }
 
@@ -6404,21 +6749,9 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-body div.case-study h5 {
-    font-size: 36px;
-  }
-}
-
-@media screen and (min-width: 1850px) {
-  .article-body div.case-study h5 {
-    font-size: 38px;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .article-body div.case-study h5 {
-    font-size: 38px;
+    font-size: 35px;
   }
 }
 
@@ -6541,13 +6874,13 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-body div.case-study {
     grid-column: 5 / span 8;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .article-body div.case-study {
     grid-column: 6 / span 8;
   }
@@ -6636,7 +6969,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-body blockquote.pullquote,
   .article-body blockquote.pullquote-left,
   .article-body blockquote.pullquote-right,
@@ -6650,8 +6983,8 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 .article-body blockquote.pullquote-right p,
 .article-body blockquote.pullquote-full-width p {
   grid-row: 1;
-  font-size: 22px;
-  line-height: 118%;
+  font-size: 24px;
+  line-height: 116%;
   letter-spacing: -0.01em;
   line-height: 130%;
   grid-column: 2 / span 12;
@@ -6662,7 +6995,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
-    font-size: 25px;
+    font-size: 27px;
   }
 }
 
@@ -6693,30 +7026,12 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-body blockquote.pullquote p,
   .article-body blockquote.pullquote-left p,
   .article-body blockquote.pullquote-right p,
   .article-body blockquote.pullquote-full-width p {
-    font-size: 36px;
-  }
-}
-
-@media screen and (min-width: 1850px) {
-  .article-body blockquote.pullquote p,
-  .article-body blockquote.pullquote-left p,
-  .article-body blockquote.pullquote-right p,
-  .article-body blockquote.pullquote-full-width p {
-    font-size: 38px;
-  }
-}
-
-@media screen and (min-width: mega) {
-  .article-body blockquote.pullquote p,
-  .article-body blockquote.pullquote-left p,
-  .article-body blockquote.pullquote-right p,
-  .article-body blockquote.pullquote-full-width p {
-    font-size: 38px;
+    font-size: 35px;
   }
 }
 
@@ -6732,6 +7047,15 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 .article-body blockquote.pullquote-right p:last-of-type,
 .article-body blockquote.pullquote-full-width p:last-of-type {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 650px) {
+  .article-body blockquote.pullquote p,
+  .article-body blockquote.pullquote-left p,
+  .article-body blockquote.pullquote-right p,
+  .article-body blockquote.pullquote-full-width p {
+    letter-spacing: -0.02em;
+  }
 }
 
 .article-body blockquote.pullquote.hang-punctuation p,
@@ -6777,7 +7101,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-body blockquote.pullquote.hang-punctuation p,
   .article-body blockquote.pullquote-left.hang-punctuation p,
   .article-body blockquote.pullquote-right.hang-punctuation p,
@@ -6831,8 +7155,8 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 .article-body blockquote.pullquote-left.big p,
 .article-body blockquote.pullquote-right.big p,
 .article-body blockquote.pullquote-full-width.big p {
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 31px;
+  line-height: 35px;
   letter-spacing: -0.02em;
   line-height: 120%;
 }
@@ -6873,11 +7197,11 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   .article-body blockquote.pullquote-right.big p,
   .article-body blockquote.pullquote-full-width.big p {
     font-size: 56px;
-    line-height: 65px;
+    line-height: 64px;
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-body blockquote.big p,
   .article-body blockquote.pullquote-left.big p,
   .article-body blockquote.pullquote-right.big p,
@@ -6887,7 +7211,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .article-body blockquote.big p,
   .article-body blockquote.pullquote-left.big p,
   .article-body blockquote.pullquote-right.big p,
@@ -6950,7 +7274,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-body blockquote.big.hang-punctuation p,
   .article-body blockquote.pullquote-left.big.hang-punctuation p,
   .article-body blockquote.pullquote-right.big.hang-punctuation p,
@@ -6984,14 +7308,14 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-body blockquote.pullquote {
     grid-column: 5 / span 8;
     grid-template-columns: repeat(8, 1fr);
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .article-body blockquote.pullquote {
     grid-column: 6 / span 8;
     grid-template-columns: repeat(8, 1fr);
@@ -7134,14 +7458,14 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-body blockquote.pullquote-right {
     grid-column: 8 / span 9;
     grid-template-columns: repeat(8, 1fr) 0px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .article-body blockquote.pullquote-right {
     grid-column: 10 / span 9;
   }
@@ -7206,14 +7530,14 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   grid-column: 1 / span 14;
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-body blockquote.pullquote-full-width {
     grid-column: 1 / span 16;
     grid-template-columns: 0px repeat(14, 1fr) 0px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .article-body blockquote.pullquote-full-width {
     grid-column: 1 / span 18;
     grid-template-columns: 0px repeat(16, 1fr) 0px;
@@ -7251,13 +7575,13 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-body blockquote.pullquote-full-width p {
     grid-column: 6 / span 6;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .article-body blockquote.pullquote-full-width p {
     grid-column: 7 / span 6;
   }
@@ -7287,13 +7611,13 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .article-body blockquote.pullquote-full-width cite {
     grid-column: 6 / span 5;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .article-body blockquote.pullquote-full-width cite {
     grid-column: 7 / span 5;
   }
@@ -7362,8 +7686,12 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   width: 100%;
 }
 
+.article-body .wp-block-image {
+  line-height: 0;
+}
+
 .article-body .wp-block-image figcaption {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 18px;
   letter-spacing: 0.02em;
   text-align: left;
@@ -7374,14 +7702,14 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 @media screen and (min-width: 420px) {
   .article-body .wp-block-image figcaption {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 19px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .article-body .wp-block-image figcaption {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     letter-spacing: 0.01em;
   }
@@ -7389,7 +7717,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 @media screen and (min-width: 1120px) {
   .article-body .wp-block-image figcaption {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 21px;
   }
 }
@@ -7455,14 +7783,14 @@ nav {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   nav,
   .nav-place-holder {
     height: 63px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   nav,
   .nav-place-holder {
     height: 64px;
@@ -7478,7 +7806,7 @@ nav {
 
 .header-links {
   display: inline-block;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 118%;
   letter-spacing: -0.01em;
   font-weight: bold;
@@ -7512,13 +7840,13 @@ nav {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .header-links {
     font-size: 36px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .header-links {
     font-size: 38px;
   }
@@ -7562,13 +7890,13 @@ nav {
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1440px) {
   .header-link {
     padding-top: 7px;
   }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 1800px) {
   .header-link {
     padding-top: 6px;
   }
