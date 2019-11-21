@@ -134,6 +134,11 @@ html {
   }
 }
 
+.margins-vertical__small {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 * {
   box-sizing: border-box;
 }
