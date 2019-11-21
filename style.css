@@ -134,62 +134,100 @@ html {
   }
 }
 
-.margins-vertical__small {
+.margins-vertical__small,
+figure.margins-vertical__small {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.margins-vertical__standard-text__bottom {
-  margin-bottom: 16px;
+.margins-vertical__medium,
+figure.margins-vertical__medium {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-@media screen and (min-width: 650px) {
-  .margins-vertical__standard-text__bottom {
-    margin-bottom: 17px;
+@media screen and (min-width: 420px) {
+  .margins-vertical__medium,
+  figure.margins-vertical__medium {
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .margins-vertical__standard-text__bottom {
-    margin-bottom: 18px;
+  .margins-vertical__medium,
+  figure.margins-vertical__medium {
+    margin-top: 85px;
+    margin-bottom: 85px;
   }
 }
 
-@media screen and (min-width: 1120px) {
-  .margins-vertical__standard-text__bottom {
-    margin-bottom: 19px;
+.margins-vertical__medium__top,
+figure.margins-vertical__medium__top {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 420px) {
+  .margins-vertical__medium__top,
+  figure.margins-vertical__medium__top {
+    margin-top: 70px;
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .margins-vertical__standard-text__bottom {
-    margin-bottom: 20px;
+@media screen and (min-width: 830px) {
+  .margins-vertical__medium__top,
+  figure.margins-vertical__medium__top {
+    margin-top: 85px;
   }
 }
 
+.margins-vertical__medium__bottom,
+figure.margins-vertical__medium__bottom {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 420px) {
+  .margins-vertical__medium__bottom,
+  figure.margins-vertical__medium__bottom {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .margins-vertical__medium__bottom,
+  figure.margins-vertical__medium__bottom {
+    margin-bottom: 85px;
+  }
+}
+
+.margins-vertical__standard-text__bottom,
 .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
   margin-bottom: 16px;
 }
 
 @media screen and (min-width: 650px) {
+  .margins-vertical__standard-text__bottom,
   .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
     margin-bottom: 17px;
   }
 }
 
 @media screen and (min-width: 830px) {
+  .margins-vertical__standard-text__bottom,
   .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
     margin-bottom: 18px;
   }
 }
 
 @media screen and (min-width: 1120px) {
+  .margins-vertical__standard-text__bottom,
   .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
     margin-bottom: 19px;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  .margins-vertical__standard-text__bottom,
   .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
     margin-bottom: 20px;
   }
