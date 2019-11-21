@@ -77,6 +77,7 @@ figure.margins-vertical__medium__bottom {
 // as sometimes it is just a real pain in the ass
 // this give an image an extra paragraph space, basically
 .margins-vertical__double-text__bottom,
+.journal .article-body p.margins-vertical__double-text__bottom, 
 figure.margins-vertical__double-text__bottom {
 	margin-bottom: 30px;
 	@include break(small)  { margin-bottom: 32px; }

@@ -234,12 +234,14 @@ figure.margins-vertical__medium__bottom {
 }
 
 .margins-vertical__double-text__bottom,
+.journal .article-body p.margins-vertical__double-text__bottom,
 figure.margins-vertical__double-text__bottom {
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 650px) {
   .margins-vertical__double-text__bottom,
+  .journal .article-body p.margins-vertical__double-text__bottom,
   figure.margins-vertical__double-text__bottom {
     margin-bottom: 32px;
   }
@@ -247,6 +249,7 @@ figure.margins-vertical__double-text__bottom {
 
 @media screen and (min-width: 830px) {
   .margins-vertical__double-text__bottom,
+  .journal .article-body p.margins-vertical__double-text__bottom,
   figure.margins-vertical__double-text__bottom {
     margin-bottom: 34px;
   }
@@ -254,6 +257,7 @@ figure.margins-vertical__double-text__bottom {
 
 @media screen and (min-width: 1120px) {
   .margins-vertical__double-text__bottom,
+  .journal .article-body p.margins-vertical__double-text__bottom,
   figure.margins-vertical__double-text__bottom {
     margin-bottom: 36px;
   }
@@ -261,6 +265,7 @@ figure.margins-vertical__double-text__bottom {
 
 @media screen and (min-width: 1440px) {
   .margins-vertical__double-text__bottom,
+  .journal .article-body p.margins-vertical__double-text__bottom,
   figure.margins-vertical__double-text__bottom {
     margin-bottom: 38px;
   }
