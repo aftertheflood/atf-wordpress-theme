@@ -33,3 +33,44 @@
 		margin-bottom: 20px !important;
 	}
 }
+
+.margins-vertical__small,
+figure.margins-vertical__small {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.margins-vertical__medium,
+figure.margins-vertical__medium {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	@include break(tiny)   { margin-top: 70px; margin-bottom: 70px; }
+	@include break(medium) { margin-top: 85px; margin-bottom: 85px; }
+}
+
+.margins-vertical__medium__top,
+figure.margins-vertical__medium__top {
+	margin-top: 40px;
+	@include break(tiny)   { margin-top: 70px; }
+	@include break(medium) { margin-top: 85px; }
+}
+
+.margins-vertical__medium__bottom,
+figure.margins-vertical__medium__bottom {
+	margin-bottom: 40px;
+	@include break(tiny)   { margin-bottom: 70px; }
+	@include break(medium) { margin-bottom: 85px; }
+}
+
+// useful because, by default, the final paragraph has no bottom margin
+// and yeah, this can be a tough one to overpower
+.margins-vertical__standard-text__bottom,
+.journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+	margin-bottom: 16px;
+	@include break(small)  { margin-bottom: 17px; }
+	@include break(medium) { margin-bottom: 18px; }
+	@include break(large)  { margin-bottom: 19px; }
+	@include break(huge)   { margin-bottom: 20px; }
+}
+
+

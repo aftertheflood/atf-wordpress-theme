@@ -134,6 +134,105 @@ html {
   }
 }
 
+.margins-vertical__small,
+figure.margins-vertical__small {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.margins-vertical__medium,
+figure.margins-vertical__medium {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 420px) {
+  .margins-vertical__medium,
+  figure.margins-vertical__medium {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .margins-vertical__medium,
+  figure.margins-vertical__medium {
+    margin-top: 85px;
+    margin-bottom: 85px;
+  }
+}
+
+.margins-vertical__medium__top,
+figure.margins-vertical__medium__top {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 420px) {
+  .margins-vertical__medium__top,
+  figure.margins-vertical__medium__top {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .margins-vertical__medium__top,
+  figure.margins-vertical__medium__top {
+    margin-top: 85px;
+  }
+}
+
+.margins-vertical__medium__bottom,
+figure.margins-vertical__medium__bottom {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 420px) {
+  .margins-vertical__medium__bottom,
+  figure.margins-vertical__medium__bottom {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .margins-vertical__medium__bottom,
+  figure.margins-vertical__medium__bottom {
+    margin-bottom: 85px;
+  }
+}
+
+.margins-vertical__standard-text__bottom,
+.journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 650px) {
+  .margins-vertical__standard-text__bottom,
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+    margin-bottom: 17px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .margins-vertical__standard-text__bottom,
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .margins-vertical__standard-text__bottom,
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+    margin-bottom: 19px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .margins-vertical__standard-text__bottom,
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+    margin-bottom: 20px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -1552,7 +1651,7 @@ The home (and clients) PROMO zone
   letter-spacing: 0.01em;
   font-weight: bold;
   text-decoration: none;
-  background-color: #EEE;
+  background-color: #f4f4f4;
   color: #000;
   display: inline-block;
 }
@@ -2281,7 +2380,7 @@ as this lets us put the blurb on the side we choose for it
   .promo-double__divider {
     width: 8px;
     margin-left: -4px;
-    background: #EEE;
+    background: #f4f4f4;
   }
 }
 
@@ -5345,7 +5444,7 @@ a.journal-archive__link:hover {
   align-items: start;
   padding-top: 40px;
   padding-bottom: 40px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #f4f4f4;
 }
 
 .about__section:first-of-type {
@@ -5740,13 +5839,13 @@ textarea {
   width: 100%;
   border: 0px;
   margin-top: 7px;
-  background-color: #EEE;
+  background-color: #f4f4f4;
   font-size: 24px;
   line-height: 116%;
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   letter-spacing: 0em;
-  border: 8px solid #EEE;
+  border: 8px solid #f4f4f4;
   outline: none;
 }
 
@@ -6508,7 +6607,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   grid-template-columns: 0 repeat(12, 1fr) 0;
   display: grid;
   column-gap: 20px;
-  background: #EEE;
+  background: #f4f4f4;
   margin: 40px 0;
   padding: 40px 0;
 }
@@ -7492,6 +7591,10 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 .article-body img {
   width: 100%;
+}
+
+.article-body .wp-block-image {
+  line-height: 0;
 }
 
 .article-body .wp-block-image figcaption {
