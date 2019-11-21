@@ -98,6 +98,22 @@ html {
 }
 
 /* category colours */
+.orange {
+  color: #FF611E;
+}
+
+.pink {
+  color: #FF00FF;
+}
+
+.green {
+  color: #00C720;
+}
+
+.blue {
+  color: #09bfec;
+}
+
 .drop-shadow {
   -webkit-filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
@@ -6587,14 +6603,14 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
-.article-body blockquote, .article-body figure,
+.article-body blockquote, .article-body figure, .article-body code,
 .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
   grid-column: 2 / span 12;
 }
 
 @media screen and (min-width: 420px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
-  .article-body blockquote, .article-body figure,
+  .article-body blockquote, .article-body figure, .article-body code,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 3 / span 10;
   }
@@ -6602,7 +6618,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 @media screen and (min-width: 830px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
-  .article-body blockquote, .article-body figure,
+  .article-body blockquote, .article-body figure, .article-body code,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 4 / span 8;
   }
@@ -6610,7 +6626,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 @media screen and (min-width: 1120px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
-  .article-body blockquote, .article-body figure,
+  .article-body blockquote, .article-body figure, .article-body code,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 5 / span 6;
   }
@@ -6618,7 +6634,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 @media screen and (min-width: 1440px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
-  .article-body blockquote, .article-body figure,
+  .article-body blockquote, .article-body figure, .article-body code,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 6 / span 6;
   }
@@ -6626,7 +6642,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 @media screen and (min-width: 1800px) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
-  .article-body blockquote, .article-body figure,
+  .article-body blockquote, .article-body figure, .article-body code,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 7 / span 6;
   }
@@ -6634,10 +6650,49 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 @media screen and (min-width: mega) {
   .article-body p, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6, .article-body ul, .article-body ol, .article-body hr,
-  .article-body blockquote, .article-body figure,
+  .article-body blockquote, .article-body figure, .article-body code,
   .article-body div.wp-block-image, .article-body div.exec-summary, .article-body div.wp-block-file {
     grid-column: 7 / span 6;
   }
+}
+
+.article-body code {
+  font-size: 0.95em;
+  color: #777;
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 650px) {
+  .article-body code {
+    margin-bottom: 17px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body code {
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body code {
+    margin-bottom: 19px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article-body code {
+    margin-bottom: 20px;
+  }
+}
+
+.article-body code p {
+  margin-bottom: 0;
+}
+
+.article-body code .code-level-2 {
+  margin-left: 20px;
 }
 
 .article-body div.case-study {

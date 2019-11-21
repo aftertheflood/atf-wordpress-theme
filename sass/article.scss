@@ -239,7 +239,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 
   p, h2, h3, h4, h5, h6, ul, ol, hr,  
-  blockquote, figure, 
+  blockquote, figure, code,
   div.wp-block-image, div.exec-summary, div.wp-block-file {
     grid-column: 2 / span 12;
     // text-align: left;
@@ -251,7 +251,22 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 
 
-
+  code {
+    font-size: 0.95em;
+    color: $medium-grey;
+    margin-left: $column-gap;
+    margin-bottom: 16px;
+    @include break(small)  { margin-bottom: 17px; }
+    @include break(medium) { margin-bottom: 18px; }
+    @include break(large)  { margin-bottom: 19px; }
+    @include break(huge)   { margin-bottom: 20px; }
+    p {
+      margin-bottom: 0;
+    }
+    .code-level-2 {
+      margin-left: $column-gap;
+    }
+  }
 
 
 

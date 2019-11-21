@@ -1,3 +1,9 @@
+.orange { color: $clients-color; }
+.pink   { color: $contact-highlight-color; }
+.green  { color: $contact-color; }
+.blue   { color: #09bfec; }
+
+
 .drop-shadow {
 	-webkit-filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
 	filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
