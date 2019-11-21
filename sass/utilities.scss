@@ -73,4 +73,18 @@ figure.margins-vertical__medium__bottom {
 	@include break(huge)   { margin-bottom: 20px; }
 }
 
+<<<<<<< HEAD
 
+=======
+// this accounts for the insanity that is the vertical spacing and trying to make it even
+// as sometimes it is just a real pain in the ass
+// this give an image an extra paragraph space, basically
+.margins-vertical__double-text__bottom,
+figure.margins-vertical__double-text__bottom {
+	margin-bottom: 30px;
+	@include break(small)  { margin-bottom: 32px; }
+	@include break(medium) { margin-bottom: 34px; }
+	@include break(large)  { margin-bottom: 36px; }
+	@include break(huge)   { margin-bottom: 38px; }
+}
+>>>>>>> visual-design
