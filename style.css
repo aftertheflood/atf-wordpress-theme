@@ -139,6 +139,62 @@ html {
   margin-bottom: 20px;
 }
 
+.margins-vertical__standard-text__bottom {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 650px) {
+  .margins-vertical__standard-text__bottom {
+    margin-bottom: 17px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .margins-vertical__standard-text__bottom {
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .margins-vertical__standard-text__bottom {
+    margin-bottom: 19px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .margins-vertical__standard-text__bottom {
+    margin-bottom: 20px;
+  }
+}
+
+.journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 650px) {
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+    margin-bottom: 17px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+    margin-bottom: 19px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+    margin-bottom: 20px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7497,6 +7553,10 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 .article-body img {
   width: 100%;
+}
+
+.article-body .wp-block-image {
+  line-height: 0;
 }
 
 .article-body .wp-block-image figcaption {

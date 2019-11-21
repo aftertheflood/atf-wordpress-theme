@@ -567,6 +567,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 
   .wp-block-image {
+    line-height: 0;
     figcaption {
       @include type-very-small;
       text-align: left;
