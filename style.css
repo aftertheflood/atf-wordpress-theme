@@ -233,8 +233,6 @@ figure.margins-vertical__medium__bottom {
   }
 }
 
-<<<<<<< HEAD
-=======
 .margins-vertical__double-text__bottom,
 figure.margins-vertical__double-text__bottom {
   margin-bottom: 30px;
@@ -268,7 +266,6 @@ figure.margins-vertical__double-text__bottom {
   }
 }
 
->>>>>>> visual-design
 * {
   box-sizing: border-box;
 }
