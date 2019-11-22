@@ -18,7 +18,7 @@
 	<div class="address">
 		<span class="address-highlight">After the flood</span><br>
 		140–142 St John St, London, EC1V 4UB, UK<br>
-		+44 (0)20 7459 4245<br>
+		+44 (0)23 5678 9012<br>
 		info@aftertheflood.com<br>
 		Registered in England and Wales as After the flood Limited. 7792366
 	</div>
