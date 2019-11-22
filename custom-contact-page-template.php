@@ -8,7 +8,7 @@ $pageTag = 'contact';
   <div class="contact__info atf-grid">
 
     <div class="info__details">
-      <p>140–142 St John Street, EC1V 4UB, UK</p>
+      <p>140–142 St John Street, <span class="only-on-mobile"><br /></span>EC1V 4UB, UK</p>
       <p class="phone-number">+44 (0)23 5678 9012</p>
       <p>info@aftertheflood.com</p>
       <div class="social">

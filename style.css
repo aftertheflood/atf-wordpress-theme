@@ -5708,6 +5708,12 @@ a.journal-archive__link:hover {
   }
 }
 
+@media screen and (min-width: 830px) {
+  .contact__content .only-on-mobile {
+    display: none;
+  }
+}
+
 .contact__content .contact__info,
 .contact__content .contact__map,
 .contact__content .contact__form {
@@ -5740,39 +5746,39 @@ a.journal-archive__link:hover {
 
 .contact__content .contact__info {
   background: #00C720;
-  background: url("/wp-content/themes/atf-wordpress-theme/assets/images/london-openStreetMap---v3a.svg");
-  background-position: center top;
+  background: url("/wp-content/themes/atf-wordpress-theme/assets/images/london-openStreetMap---v6.svg");
+  background-position: center bottom;
   background-size: cover;
   overflow: hidden;
   margin: 0;
   padding: 60px 0 20px;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 150px);
 }
 
 @media screen and (min-width: 420px) {
   .contact__content .contact__info {
     padding: 60px 0 40px;
-    height: calc(100vh - 52px);
+    height: calc(100vh - 208px);
   }
 }
 
 @media screen and (min-width: 650px) {
   .contact__content .contact__info {
-    height: calc(100vh - 55px);
+    height: calc(100vh - 220px);
   }
 }
 
 @media screen and (min-width: 830px) {
   .contact__content .contact__info {
     padding: 90px 0 40px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 180px);
   }
 }
 
 @media screen and (min-width: 1120px) {
   .contact__content .contact__info {
     padding: 120px 0 60px;
-    height: calc(100vh - 62px);
+    height: calc(100vh - 186px);
   }
 }
 
@@ -5783,7 +5789,7 @@ a.journal-archive__link:hover {
 
 @media screen and (min-width: 420px) {
   .contact__content .contact__info .info__details {
-    grid-column: 3 / span 9;
+    grid-column: 3 / span 10;
   }
 }
 
@@ -5966,7 +5972,6 @@ a.journal-archive__link:hover {
 
 .contact__content .contact__form .form__body {
   grid-column: 2 / span 12;
-  margin-top: 10px;
 }
 
 .contact__content .contact__form .form__body label {
@@ -5985,6 +5990,7 @@ a.journal-archive__link:hover {
 
 @media screen and (min-width: 830px) {
   .contact__content .contact__form .form__body {
+    margin-top: 10px;
     grid-column: 6 / span 7;
   }
   .contact__content .contact__form .form__body p {
