@@ -116,6 +116,12 @@ The home SPLASHh zone
   }
 }
 
+.splash__promo__link-title {
+  color: #000;
+  text-decoration: none;
+  &:hover { color: rgba(0,0,0,0.5); }
+}
+
 .splash__promo__title,
 .splash__promo__subtitle {
   font-family: Tiempos, Georgia, serif;

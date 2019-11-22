@@ -23,8 +23,10 @@ $this_page_id = get_the_ID();
     <div class="splash__promo">
       <div class="splash__promo-gridwrapper">
         <div class="splash__promo-gridwrapper-inner">
-          <h2 class="splash__promo__title"><?php the_title(); ?></h2>
-          <div class="splash__promo__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>
+          <a href="<?php the_permalink(); ?>" class="splash__promo__link-title">
+            <h2 class="splash__promo__title"><?php the_title(); ?></h2>
+            <div class="splash__promo__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>
+          </a>
           <div class="splash__promo__date"><?php the_date() ?></div>
           <a href="<?php the_permalink(); ?>" class="splash__promo__link">Read the blog post</a>
         </div>
@@ -34,26 +36,12 @@ $this_page_id = get_the_ID();
 </div>
 
 <div class="logo-container">
-
-    <div class="logo-box">
-      <img class="logo__ford" src="/wp-content/themes/atf-wordpress-theme/assets/images/ford-black.svg" alt="">
-    </div>
-    <div class="logo-box">
-      <img class="logo__uefa" src="/wp-content/themes/atf-wordpress-theme/assets/images/uefa-champions-league-black.svg" alt="">
-    </div>
-    <div class="logo-box">
-      <img class="logo__google" src="/wp-content/themes/atf-wordpress-theme/assets/images/google-black.svg" alt="">
-    </div>
-    <div class="logo-box">
-      <img class="logo__bulb" src="/wp-content/themes/atf-wordpress-theme/assets/images/bulb-logo---black.svg" alt="">
-    </div>
-    <div class="logo-box">
-      <img class="logo__govUK" src="/wp-content/themes/atf-wordpress-theme/assets/images/govUK-black.svg" alt="">
-    </div>
-    <div class="logo-box">
-      <img class="logo__nikkei" src="/wp-content/themes/atf-wordpress-theme/assets/images/nikkei-black.svg" alt="">
-    </div>
-
+  <div class="logo-box"><img class="logo__ford" src="/wp-content/themes/atf-wordpress-theme/assets/images/ford-black.svg" alt=""></div>
+  <div class="logo-box"><img class="logo__uefa" src="/wp-content/themes/atf-wordpress-theme/assets/images/uefa-champions-league-black.svg" alt=""></div>
+  <div class="logo-box"><img class="logo__google" src="/wp-content/themes/atf-wordpress-theme/assets/images/google-black.svg" alt=""></div>
+  <div class="logo-box"><img class="logo__bulb" src="/wp-content/themes/atf-wordpress-theme/assets/images/bulb-logo---black.svg" alt=""></div>
+  <div class="logo-box"><img class="logo__govUK" src="/wp-content/themes/atf-wordpress-theme/assets/images/govUK-black.svg" alt=""></div>
+  <div class="logo-box"><img class="logo__nikkei" src="/wp-content/themes/atf-wordpress-theme/assets/images/nikkei-black.svg" alt=""></div>
 </div>
 
 <div class="homepage-promo-container">
