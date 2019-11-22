@@ -54,6 +54,7 @@
       align-self: start;
       grid-column: 2 / span 10;
       @include break(tiny) { grid-column: 3 / span 10; }
+      @include break(mega) { grid-column: 4 / span 10; }
     }
 
     p {
@@ -110,6 +111,7 @@
       grid-column: 2 / span 12;
       @include break(tiny)   {grid-column: 3 / span 9; }
       @include break(medium) {grid-column: 3 / span 3; }
+      @include break(mega)   {grid-column: 4 / span 3; }
     }
 
     .form__body {
@@ -122,7 +124,9 @@
         grid-column: 6 / span 7; 
         p { margin-top: 0; }
       }
-      @include break(large)  {grid-column: 7 / span 6; }
+      @include break(large) {grid-column: 7 / span 6; }
+      @include break(huge)  {grid-column: 8 / span 7; }
+      @include break(mega)  {grid-column: 8 / span 8; }
     }
 
     p.form__title { margin: 0; }
@@ -200,13 +204,7 @@
 label {
   display: block;
   width:  100%;
-  // background-color: $light-grey;
   color: #000;
-  // padding-bottom: 10px;
-}
-
-span.wpcf7-form-control-wrap {
-  
 }
 
 input {
@@ -260,7 +258,7 @@ input[type=submit] {
 input[type=submit]:hover {
   @include block-button;
   color: #000;
-  background-color: $contact-highlight-color;
+  background-color: $contact-color;
   display: inline-block;
 }
 

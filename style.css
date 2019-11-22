@@ -103,7 +103,7 @@ html {
 }
 
 .pink {
-  color: #FF00FF;
+  color: #7c2441;
 }
 
 .green {
@@ -5793,6 +5793,18 @@ a.journal-archive__link:hover {
   }
 }
 
+@media screen and (min-width: 1800px) {
+  .contact__content .contact__info .info__details {
+    grid-column: 4 / span 10;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .contact__content .contact__info .info__details {
+    grid-column: 4 / span 10;
+  }
+}
+
 .contact__content .contact__info p {
   font-size: 24px;
   line-height: 116%;
@@ -5970,6 +5982,18 @@ a.journal-archive__link:hover {
   }
 }
 
+@media screen and (min-width: 1800px) {
+  .contact__content .contact__form .form__title {
+    grid-column: 4 / span 3;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .contact__content .contact__form .form__title {
+    grid-column: 4 / span 3;
+  }
+}
+
 .contact__content .contact__form .form__body {
   grid-column: 2 / span 12;
 }
@@ -6001,6 +6025,24 @@ a.journal-archive__link:hover {
 @media screen and (min-width: 1120px) {
   .contact__content .contact__form .form__body {
     grid-column: 7 / span 6;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact__content .contact__form .form__body {
+    grid-column: 8 / span 7;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .contact__content .contact__form .form__body {
+    grid-column: 8 / span 8;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .contact__content .contact__form .form__body {
+    grid-column: 8 / span 8;
   }
 }
 
@@ -6154,7 +6196,7 @@ textarea {
 input[type=text]:focus,
 input[type=email]:focus,
 textarea:focus {
-  background: #FF00FF;
+  background: #7c2441;
   color: #fff;
 }
 
@@ -6256,7 +6298,7 @@ input[type=submit]:hover {
   padding: 12px 16px 16px 17px;
   border: 0px;
   color: #000;
-  background-color: #FF00FF;
+  background-color: #00C720;
   display: inline-block;
 }
 
