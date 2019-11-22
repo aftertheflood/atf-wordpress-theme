@@ -45,7 +45,7 @@ nav,
   letter-spacing: -0.01em;
   font-weight: bold;
   padding-left: $column-gap;
-  @include break(tiny)   { font-size: 25px; }
+  @include break(tiny)   { font-size: 27px; }
   @include break(small)  { font-size: 30px; }
   @include break(medium) { font-size: 32px; padding-left: $column-gap/2; padding-right: $column-gap/2; }
   @include break(large)  { font-size: 34px; padding: 0; }
@@ -57,11 +57,10 @@ nav,
   position: relative;
   display: inline-block;
   padding-top: 4px;
-  @include break(tiny)   { padding-top: 9px; }
-  @include break(small)  { padding-top: 8px; }
-  @include break(medium) { padding-left: $column-gap/2; padding-right: $column-gap/2; }
-  @include break(large)  { padding-left: $column-gap; padding-right: $column-gap; }
-  @include break(huge)   { padding-top: 7px; }
+  @include break(tiny)   { padding-top: 7px; }
+  @include break(medium) { padding-top: 7.5px; padding-left: $column-gap/2; padding-right: $column-gap/2; }
+  @include break(large)  { padding-top: 7px; padding-left: $column-gap; padding-right: $column-gap; }
+  @include break(huge)   { padding-top: 6.5px; }
   @include break(mega)   { padding-top: 6px; }
 }
 

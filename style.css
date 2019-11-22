@@ -8074,7 +8074,7 @@ nav {
 
 @media screen and (min-width: 420px) {
   .header-links {
-    font-size: 25px;
+    font-size: 27px;
   }
 }
 
@@ -8125,18 +8125,13 @@ nav {
 
 @media screen and (min-width: 420px) {
   .header-link {
-    padding-top: 9px;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .header-link {
-    padding-top: 8px;
+    padding-top: 7px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .header-link {
+    padding-top: 7.5px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -8144,6 +8139,7 @@ nav {
 
 @media screen and (min-width: 1120px) {
   .header-link {
+    padding-top: 7px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -8151,7 +8147,7 @@ nav {
 
 @media screen and (min-width: 1440px) {
   .header-link {
-    padding-top: 7px;
+    padding-top: 6.5px;
   }
 }
 
