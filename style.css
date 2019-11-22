@@ -5740,29 +5740,44 @@ a.journal-archive__link:hover {
 
 .contact__content .contact__info {
   background: #00C720;
+  background: url("/wp-content/themes/atf-wordpress-theme/assets/images/london-openStreetMap---v3a.svg");
+  background-position: center top;
+  background-size: cover;
+  overflow: hidden;
   margin: 0;
   padding: 60px 0 20px;
+  height: calc(100vh - 50px);
 }
 
 @media screen and (min-width: 420px) {
   .contact__content .contact__info {
     padding: 60px 0 40px;
+    height: calc(100vh - 52px);
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .contact__content .contact__info {
+    height: calc(100vh - 55px);
   }
 }
 
 @media screen and (min-width: 830px) {
   .contact__content .contact__info {
     padding: 90px 0 40px;
+    height: calc(100vh - 60px);
   }
 }
 
 @media screen and (min-width: 1120px) {
   .contact__content .contact__info {
     padding: 120px 0 60px;
+    height: calc(100vh - 62px);
   }
 }
 
 .contact__content .contact__info .info__details {
+  align-self: start;
   grid-column: 2 / span 10;
 }
 

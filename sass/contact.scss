@@ -24,13 +24,31 @@
 
   .contact__info {
     background: $contact-color;
+    background: url("/wp-content/themes/atf-wordpress-theme/assets/images/london-openStreetMap---v3a.svg");
+    background-position: center top;
+    background-size: cover;
+    overflow: hidden;
     margin: 0;
     padding: 60px 0 20px;
-    @include break(tiny)   { padding: 60px 0 40px; }
-    @include break(medium) { padding: 90px 0 40px; }
-    @include break(large)  { padding: 120px 0 60px; }
+    height: calc(100vh - 50px);
+    @include break(tiny)   { 
+      padding: 60px 0 40px; 
+      height: calc(100vh - 52px);
+    }
+    @include break(small) {
+      height: calc(100vh - 55px);
+    }
+    @include break(medium) { 
+      padding: 90px 0 40px; 
+      height: calc(100vh - 60px); 
+    }
+    @include break(large)  { 
+      padding: 120px 0 60px;
+      height: calc(100vh - 62px); 
+    }
 
     .info__details {
+      align-self: start;
       grid-column: 2 / span 10;
       @include break(tiny) { grid-column: 3 / span 9; }
     }

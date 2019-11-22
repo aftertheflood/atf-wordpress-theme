@@ -12,19 +12,17 @@ $pageTag = 'contact';
       <p class="phone-number">+44 (0)23 5678 9012</p>
       <p>info@aftertheflood.com</p>
       <div class="social">
-        <a href="https://twitter.com/afterthefloodco?lang=en"><img src="/wp-content/themes/atf-wordpress-theme/assets/images/twitter-social-circle-black-trans.svg" class="social-icon"></a>
-        <a href="https://www.instagram.com/afterthefloodco/"><img src="/wp-content/themes/atf-wordpress-theme/assets/images/instagram-social-circle-black-trans.svg" class="social-icon"></a>
-        <a href="https://medium.com/@AftertheFloodco"><img src="/wp-content/themes/atf-wordpress-theme/assets/images/medium-social-circle-black-trans.svg" class="social-icon"></a>
-        <a href="https://www.linkedin.com/company/after-the-flood"><img src="/wp-content/themes/atf-wordpress-theme/assets/images/linkedin-social-circle-black-trans.svg" class="social-icon"></a>
+        <a href="https://twitter.com/afterthefloodco?lang=en"><img src="/wp-content/themes/atf-wordpress-theme/assets/images/twitter-social-circle-black.svg" class="social-icon"></a>
+        <a href="https://www.instagram.com/afterthefloodco/"><img src="/wp-content/themes/atf-wordpress-theme/assets/images/instagram-social-circle-black.svg" class="social-icon"></a>
+        <a href="https://medium.com/@AftertheFloodco"><img src="/wp-content/themes/atf-wordpress-theme/assets/images/medium-social-circle-black.svg" class="social-icon"></a>
+        <a href="https://www.linkedin.com/company/after-the-flood"><img src="/wp-content/themes/atf-wordpress-theme/assets/images/linkedin-social-circle-black.svg" class="social-icon"></a>
       </div>
 
     </div>
 
-
-
   </div>
 
-  <div class="contact__map"></div>
+  <!-- <div class="contact__map"></div> -->
 
   <div class="contact__form">
     <p class="form__title">Get in touch</p>
