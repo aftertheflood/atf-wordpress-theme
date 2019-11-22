@@ -9,8 +9,8 @@ $pageTag = 'contact';
 
     <div class="info__details">
       <p>140–142 St John Street, <span class="only-on-mobile"><br /></span>EC1V 4UB, UK</p>
-      <p class="phone-number">+44 (0)23 5678 9012</p>
-      <p>info@aftertheflood.com</p>
+      <p class="phone-number"><a href="tel:+442356789012">+44 (0)23 5678 9012</a></p>
+      <p><a href="mailto:info@aftertheflood.com">info@aftertheflood.com</a></p>
       <div class="social">
         <a href="https://twitter.com/afterthefloodco?lang=en"><img src="/wp-content/themes/atf-wordpress-theme/assets/images/twitter-social-circle-black.svg" class="social-icon"></a>
         <a href="https://www.instagram.com/afterthefloodco/"><img src="/wp-content/themes/atf-wordpress-theme/assets/images/instagram-social-circle-black.svg" class="social-icon"></a>

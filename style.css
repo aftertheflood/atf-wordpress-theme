@@ -5851,9 +5851,26 @@ a.journal-archive__link:hover {
   margin-bottom: 0;
 }
 
+.contact__content .contact__info p a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact__content .contact__info p a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.contact__content .contact__info p a:active {
+  background: #FFD600;
+}
+
 .contact__content .contact__info .social {
   margin-top: 12px;
   margin-bottom: 0;
+}
+
+.contact__content .contact__info .social a:hover {
+  opacity: 0.7;
 }
 
 .contact__content .contact__map {
