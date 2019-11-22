@@ -1,76 +1,219 @@
-
+.contact {
+  // background: red;
+  // background: $contact-color;
+}
   
+
 .contact__content {
   display: grid;
   grid-template-columns: 0px repeat(12, 1fr) 0px;
   column-gap: $column-gap;
-  margin: 0 0 60px 0;
-  align-items: center;
-  @include break(tiny)   { margin-bottom: 80px; }
-  @include break(medium) { margin-bottom: 90px; }
-  @include break(large)  { margin-bottom: 100px; }
-  @include break(huge) { grid-template-columns: 0px repeat(14, 1fr) 0px; }
-  @include break(mega) { grid-template-columns: 0px repeat(16, 1fr) 0px; }
+  margin: 0 0;
+  align-items: start;
+  @include break(huge)   { grid-template-columns: 0px repeat(14, 1fr) 0px; }
+  @include break(mega)   { grid-template-columns: 0px repeat(16, 1fr) 0px; }
 
-  h1, div.wpcf7 {
-    grid-column: 2 / span 12;
-    @include break(tiny) { grid-column: 3 / span 10; }
-    @include break(large) { grid-column: 3 / span 7; }
+  .only-on-mobile {
+    @include break(medium) { display: none; }
+  }
+
+  .contact__info,
+  .contact__map, 
+  .contact__form {
+    grid-column: 1 / span 14;
+    @include break(huge) { grid-column: 1 / span 16; }
+    @include break(mega) { grid-column: 1 / span 18; }
+  }
+
+  .contact__info {
+    background: $contact-color;
+    background: url("/wp-content/themes/atf-wordpress-theme/assets/images/london-openStreetMap---v6.svg");
+    background-position: center bottom;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    padding: 60px 0 20px;
+    height: calc(100vh - 150px);
+    @include break(tiny)   { 
+      padding: 60px 0 40px; 
+      height: calc(100vh - 208px);
+    }
+    @include break(small) {
+      height: calc(100vh - 220px);
+    }
+    @include break(medium) { 
+      padding: 90px 0 40px; 
+      height: calc(100vh - 180px); 
+    }
+    @include break(large)  { 
+      padding: 120px 0 60px;
+      height: calc(100vh - 186px); 
+    }
+
+    .info__details {
+      align-self: start;
+      grid-column: 2 / span 10;
+      @include break(tiny) { grid-column: 3 / span 10; }
+      @include break(mega) { grid-column: 4 / span 10; }
+    }
+
+    p {
+      @include type-heading-medium;
+      font-weight: 800;
+      margin: 0 0 0.1em 0;
+      &.phone-number { letter-spacing: 0.007em; }
+      &:last-of-type { margin-bottom: 0; }
+      a {
+        color: #000;
+        text-decoration: none;
+        &:hover { color: rgba(0,0,0,0.7); }
+        &:active { background: $journal-color; }
+      }
+    }
+    .social { 
+      margin-top: 12px; 
+      margin-bottom: 0;
+      a:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .contact__map {
+    position: relative;
+    display: inline-block;
+    background: url("/wp-content/themes/atf-wordpress-theme/assets/images/london-openStreetMap---v3a.svg");
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    height: 500px;
+    width: 100%;
+    margin-top: 0;
+  }
+
+
+  .contact__form {
+    background: $very-dark-grey;
+    
+    @include type-heading-medium;
+    font-weight: 800;
+    color: #fff;
+    
+    grid-column: 1 / span 14;
+    @include break(huge) { grid-column: 1 / span 16; }
+    @include break(mega) { grid-column: 1 / span 18; }
+
+    display: grid;
+    column-gap: $column-gap;
+    grid-template-columns: 0px repeat(12, 1fr) 0px;
+    @include break(huge)   { grid-template-columns: 0px repeat(14, 1fr) 0px; }
+    @include break(mega)   { grid-template-columns: 0px repeat(16, 1fr) 0px; }
+    // margin: 0 0;
+    // align-items: start;
+    
+    padding: 18px 0 70px;
+    @include break(tiny)   { padding: 36px 0 40px; }
+    @include break(medium) { padding: 33px 0 90px;}
+    @include break(large)  { padding: 54px 0 120px;}
+
+    .form__title {
+      grid-column: 2 / span 12;
+      @include break(tiny)   {grid-column: 3 / span 9; }
+      @include break(medium) {grid-column: 3 / span 3; }
+      @include break(mega)   {grid-column: 4 / span 3; }
+    }
+
+    .form__body {
+      label { color: #fff; }
+      p:last-of-type { margin: 0; } // because the form plugin adds a blank <p> that otherwise screws up the spacing
+      grid-column: 2 / span 12;
+      @include break(tiny)   {grid-column: 3 / span 9; }
+      @include break(medium) {
+        margin-top: 10px; 
+        grid-column: 6 / span 7; 
+        p { margin-top: 0; }
+      }
+      @include break(large) {grid-column: 7 / span 6; }
+      @include break(huge)  {grid-column: 8 / span 7; }
+      @include break(mega)  {grid-column: 8 / span 8; }
+    }
+
+    p.form__title { margin: 0; }
+
   }
 
   h1 {
-    @include type-heading-big;
+    @include type-heading-medium;
     @include type-serif;
     font-weight: 400;
-    margin-top: 60px;
+    margin-top: 0;
     margin-bottom: 20px;
-    @include break(tiny)   { margin-top: 80px; margin-bottom: 30px; }
-    @include break(small)  { margin-top: 80px; margin-bottom: 35px; }
-    @include break(medium) { margin-top: 90px; margin-bottom: 45px; }
-    @include break(large)  { margin-top: 100px; margin-bottom: 50px; }
+    @include break(tiny)   { margin-bottom: 20px; }
+    // @include break(small)  { margin-bottom: 30px; }
+    // @include break(medium) { margin-bottom: 45px; }
+    // @include break(large)  { margin-bottom: 50px; }
   }
 
-  // p input.wpcf7-form-control.wpcf7-submit {
-  //   @include block-button;
-  //   @include block-button-type;
-  // }
+  label { @include type-label; }
+  .form-conditional { font-weight: 400; }
 
-  label {
-    @include type-label;
-  }
 
-  .form-conditional {
-    font-weight: 400;
-  }
 
-}
 
-  
+} // end contact__content
 
-.bold-content{
-  grid-template-areas:  " . text text text text text text text text text text .";
-  @include break(small) {
-    grid-template-areas:  ". . text text text text text text text . . . . .";
-  }
-}
 
-.bold-content__text {
-  grid-area: text;
-  font-family: Graphik;
-  font-size: 32px;
-  line-height: 140%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 label {
   display: block;
   width:  100%;
-  // background-color: $light-grey;
   color: #000;
-  // padding-bottom: 10px;
-}
-
-span.wpcf7-form-control-wrap {
-  
 }
 
 input {
@@ -84,28 +227,25 @@ textarea {
   width: 100%;
   border: 0px;
   margin-top: 7px;
-  background-color: $light-grey;
+  background-color: $dark-grey;
+  color: #fff;
   @include type-heading-medium;
   @include type-serif;
   letter-spacing: 0em;
-  border: 8px solid $light-grey;
   outline: none;
   &:focus {
-    border: 6px solid $contact-highlight-color;
-    background: #FFF;
-    @include break(small) {
-      border: 8px solid $contact-highlight-color;
-    }
+    background: $contact-highlight-color;
+    color: #fff;
   } 
 }
 
 input[type=text],
 input[type=email] {
-  height: 58px;
+  height: 50px;
   padding: 3px 12px 10px 12px;
-  @include break(tiny)   { height: 64px; }
-  @include break(small)  { height: 70px; }
-  @include break(medium) { height: 80px; padding: 3px 18px 10px 18px; }
+  @include break(tiny)   { height: 58px; }
+  @include break(small)  { height: 60px; }
+  @include break(medium) { height: 64px; padding: 3px 18px 10px 18px; }
 }
 
 textarea {
@@ -118,8 +258,8 @@ input[type=submit] {
   @include block-button;
   @include block-button-type;
   @include type-sans;
-  background-color: #000;
-  color: #FFF;
+  background-color: #fff;
+  color: #000;
   display: inline-block;
   cursor: pointer;
 }
@@ -127,7 +267,7 @@ input[type=submit] {
 input[type=submit]:hover {
   @include block-button;
   color: #000;
-  background-color: $contact-highlight-color;
+  background-color: $contact-color;
   display: inline-block;
 }
 
