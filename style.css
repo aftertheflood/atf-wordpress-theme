@@ -337,14 +337,19 @@ body {
   display: grid;
   grid-area: entries;
   grid-template-columns: 1fr;
-  row-gap: 5px;
+  row-gap: 1px;
   column-gap: 20px;
+}
+
+@media screen and (min-width: 830px) {
+  .atf-archive-grid {
+    row-gap: 8px;
+  }
 }
 
 @media screen and (min-width: 1120px) {
   .atf-archive-grid {
     grid-template-columns: 1fr 1fr;
-    row-gap: 8px;
     column-gap: 8px;
   }
 }
@@ -352,7 +357,6 @@ body {
 @media screen and (min-width: 650px) {
   .atf-archive-grid-home {
     grid-template-columns: 1fr 1fr;
-    row-gap: 8px;
     column-gap: 8px;
   }
 }
@@ -3156,7 +3160,7 @@ as this lets us put the blurb on the side we choose for it
   padding-top: 0;
 }
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 1120px) {
   .journal-archive__title {
     margin: -8px 0 0 0;
   }
@@ -3176,10 +3180,10 @@ as this lets us put the blurb on the side we choose for it
 }
 
 .journal-archive__entry {
-  color: white;
+  color: rgba(255, 255, 255, 0.192);
   padding-top: 30px;
-  padding-bottom: 30px;
-  box-shadow: 0 -8px 0px #3A3A3A;
+  padding-bottom: 32px;
+  box-shadow: 0 -1px 0px #555;
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
@@ -3196,9 +3200,16 @@ as this lets us put the blurb on the side we choose for it
   }
 }
 
+@media screen and (min-width: 830px) {
+  .journal-archive__entry {
+    box-shadow: 0 -8px 0px #3A3A3A;
+    padding-bottom: 35px;
+  }
+}
+
 @media screen and (min-width: 1120px) {
   .journal-archive__entry {
-    padding-top: 35px;
+    padding-top: 36px;
     /* 
       This compensates for the negative top margin seen above.
       In theory the additional padding here should match that, 
@@ -3240,8 +3251,7 @@ as this lets us put the blurb on the side we choose for it
   letter-spacing: 0.02em;
   color: #FFD600;
   height: 100%;
-  box-shadow: 0px 8px 0px #3A3A3A;
-  padding-bottom: 28px;
+  padding-bottom: 34px;
 }
 
 @media screen and (min-width: 420px) {
@@ -3262,6 +3272,12 @@ as this lets us put the blurb on the side we choose for it
   }
 }
 
+@media screen and (min-width: 420px) {
+  .journal-archive__kicker {
+    padding-bottom: 28px;
+  }
+}
+
 @media screen and (min-width: 650px) {
   .journal-archive__kicker {
     box-shadow: none;
@@ -3270,14 +3286,17 @@ as this lets us put the blurb on the side we choose for it
 
 @media screen and (min-width: 830px) {
   .journal-archive__kicker {
-    padding-bottom: 15px;
+    padding-bottom: 25px;
+    margin-bottom: 16px;
+    box-shadow: 0px 8px 0px #3A3A3A;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .journal-archive__kicker {
-    margin-top: -6px;
+    margin-top: 11px;
     padding-bottom: 0;
+    box-shadow: none;
   }
 }
 
@@ -3288,7 +3307,7 @@ as this lets us put the blurb on the side we choose for it
   line-height: 118%;
   letter-spacing: 0.02em;
   color: #FFD600;
-  margin-top: 3px;
+  margin-top: 6px;
   margin-bottom: 18px;
 }
 
@@ -3310,9 +3329,20 @@ as this lets us put the blurb on the side we choose for it
   }
 }
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 420px) {
+  .journal-archive__date {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 650px) {
   .journal-archive__date {
     margin-top: 4px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .journal-archive__date {
     margin-bottom: 24px;
   }
 }
@@ -3652,8 +3682,14 @@ a.journal-archive__link:hover {
 }
 
 .journal-home .recently-header {
-  box-shadow: 0px 8px 0px #3A3A3A;
-  padding-bottom: 28px;
+  box-shadow: 0px 1px 0px #555;
+  padding-bottom: 34px;
+}
+
+@media screen and (min-width: 420px) {
+  .journal-home .recently-header {
+    padding-bottom: 36px;
+  }
 }
 
 @media screen and (min-width: 650px) {
@@ -3664,7 +3700,7 @@ a.journal-archive__link:hover {
 }
 
 .journal-home .journal-home__posts {
-  padding-bottom: 38px;
+  padding-bottom: 34px;
 }
 
 @media screen and (min-width: 650px) {
@@ -3690,11 +3726,8 @@ a.journal-archive__link:hover {
 }
 
 .journal-home .journal-archive__entry {
-  box-shadow: 0px 8px 0px #3A3A3A;
-}
-
-.journal-home .journal-archive__entry:last-of-type {
-  padding-bottom: 30px;
+  box-shadow: 0px 1px 0px #555;
+  padding-bottom: 34px;
 }
 
 @media screen and (min-width: 650px) {
@@ -3709,6 +3742,16 @@ a.journal-archive__link:hover {
     box-shadow: none;
     padding-right: 38px;
     margin-right: -8px;
+  }
+  .journal-home .journal-archive__entry:nth-of-type(2) {
+    box-shadow: -1px 0px #555;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .journal-home .journal-archive__entry {
+    box-shadow: 0px 8px 0px #3A3A3A;
   }
   .journal-home .journal-archive__entry:nth-of-type(2) {
     box-shadow: -8px 0px #3A3A3A;
@@ -6973,7 +7016,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 .article-body code {
   font-size: 0.95em;
-  color: #777;
+  color: #555;
   margin-left: 20px;
   margin-bottom: 16px;
 }

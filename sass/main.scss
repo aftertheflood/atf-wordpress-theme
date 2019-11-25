@@ -53,14 +53,16 @@ body {
 	display: grid;
 	grid-area: entries;
 	grid-template-columns: 1fr;
-	row-gap: 5px;
+	row-gap: 1px;
 	column-gap: $column-gap;
 }
 
 .atf-archive-grid {
+	@include break(medium) { 
+		row-gap: 8px;
+	}
 	@include break(large) {
 		grid-template-columns: 1fr 1fr;
-		row-gap: 8px;
 		column-gap: 8px;
 	}
 }
@@ -68,7 +70,6 @@ body {
 .atf-archive-grid-home {
 	@include break(small) {
 		grid-template-columns: 1fr 1fr;
-		row-gap: 8px;
 		column-gap: 8px;
 	}
 }

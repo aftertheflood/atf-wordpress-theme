@@ -140,8 +140,11 @@
   @include spaced-caps;
   margin: 0;
   padding-top: 0;
-  @include break(medium) {
-    margin: -8px 0 0 0; // The negative top margin brings the text back up to the top of the element.
+  // @include break(medium) {
+  //   margin: -5px 0 0 0; // The negative top margin brings the text back up to the top of the element.
+  // }
+  @include break(large) {
+    margin: -8px 0 0 0;
   }
 }
 
@@ -162,24 +165,25 @@
 
 
 .journal-archive__entry {
-  color:white;
+  color:rgba(255, 255, 255, 0.192);
   padding-top: 30px; 
     // This compensates for the negative top margin seen above.
     // In theory the additional padding here should match that, but for whatever reason that doesn't look right, so it is adjusted.
-  padding-bottom: 30px;
-  box-shadow: 0 -8px 0px $dark-grey; // horizontal rule
+  padding-bottom: 32px;
+  box-shadow: 0 -1px 0px $medium-grey; // horizontal rule
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
   padding-right: 0;  // just the box shadow on the bottom.
   &:nth-of-type(1) { box-shadow: none; } // get rid of it for the first item, because it comes from the kicker here
  
-  @include break(small) {
-    &:last-of-type { padding-bottom: 0; }
-  }
-
-  @include break(large) {
-    padding-top: 35px; 
+  @include break(small) { &:last-of-type { padding-bottom: 0; }}
+  @include break(medium) { 
+    box-shadow: 0 -8px 0px $dark-grey; // horizontal rule
+    padding-bottom: 35px;
+  } 
+  @include break(large) { 
+    padding-top: 36px; 
       /* 
       This compensates for the negative top margin seen above.
       In theory the additional padding here should match that, 
@@ -219,26 +223,30 @@
   @include type-label;
   color: $journal-color;
   height: 100%;
-  box-shadow: 0px 8px 0px $dark-grey;
-  padding-bottom: 28px;
-  @include break(small) {
-    box-shadow: none;
-  }
+  // box-shadow: 0px 1px 0px $medium-grey;
+  padding-bottom: 34px;
+  @include break(tiny)   { padding-bottom: 28px; }
+  @include break(small)  { box-shadow: none; }
   @include break(medium) {
-    padding-bottom: 15px;
+    padding-bottom: 25px;
+    margin-bottom: 16px;
+    box-shadow: 0px 8px 0px $dark-grey;
   }
   @include break(large) {
-    margin-top: -6px; // this is to match the top of the archive entries, which are also adjusted upward.
+    margin-top: 11px; // this is to match the top of the archive entries, which are also adjusted upward.
     padding-bottom: 0;
+    box-shadow: none;
   }
 }
 
 .journal-archive__date {
   @include type-label;
   color: $journal-color;
-  margin-top: 3px;
+  margin-top: 6px;
   margin-bottom: 18px;
-  @include break(medium) { margin-top: 4px; margin-bottom: 24px; }
+  @include break(tiny)   { margin-top: 5px; }
+  @include break(small)  { margin-top: 4px; }
+  @include break(medium) { margin-bottom: 24px; }
   @include break(large)  { margin-top: 5px; }
 }
 
@@ -347,8 +355,9 @@ a.journal-archive__link {
   // }
 
   .recently-header {
-    box-shadow: 0px 8px 0px $dark-grey;
-    padding-bottom: 28px;
+    box-shadow: 0px 1px 0px $medium-grey;
+    padding-bottom: 34px;
+    @include break(tiny) { padding-bottom: 36px; }
     @include break(small) {
       box-shadow: none;
       padding-bottom: 0;
@@ -356,7 +365,7 @@ a.journal-archive__link {
   }
 
   .journal-home__posts {
-    padding-bottom: 38px;
+    padding-bottom: 34px;
     @include break(small) {
       padding-bottom: 0;
     }
@@ -374,10 +383,11 @@ a.journal-archive__link {
 
 
   .journal-archive__entry {
-    box-shadow: 0px 8px 0px $dark-grey;
-    &:last-of-type {
-      padding-bottom: 30px;
-    }
+    box-shadow: 0px 1px 0px $medium-grey;
+    padding-bottom: 34px;
+    // &:last-of-type {
+    //   padding-bottom: 30px;
+    // }
     @include break(small) {
       margin: -15px 0 -18px 0;
       padding: 64px 0;
@@ -389,6 +399,13 @@ a.journal-archive__link {
         padding-right: 38px;
         margin-right: -8px;
       }
+      &:nth-of-type(2) {
+        box-shadow: -1px 0px $medium-grey;
+        padding-left: 30px;
+      }
+    }
+    @include break(medium) { 
+      box-shadow: 0px 8px 0px $dark-grey; 
       &:nth-of-type(2) {
         box-shadow: -8px 0px $dark-grey;
         padding-left: 30px;
