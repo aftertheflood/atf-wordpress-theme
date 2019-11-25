@@ -85,7 +85,7 @@ html {
     line-height: 120%; // a little extra vertical spacing
     letter-spacing: 0.03em;
     text-transform: uppercase; 
-    @include break(tiny)   { font-size: 25px; }
+    @include break(tiny)   { font-size: 25.5px; }
     @include break(small)  { font-size: 28px; }
     @include break(medium) { font-size: 30px; }
     @include break(large)  { font-size: 32px; }

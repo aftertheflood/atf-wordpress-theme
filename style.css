@@ -961,13 +961,14 @@ The home SPLASHh zone
   line-height: 120%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  line-height: 124%;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 @media screen and (min-width: 420px) {
   .splash__promo__title {
-    font-size: 25px;
+    font-size: 25.5px;
   }
 }
 
@@ -1000,8 +1001,8 @@ The home SPLASHh zone
   line-height: 116%;
   letter-spacing: -0.01em;
   font-style: italic;
+  line-height: 122%;
   letter-spacing: -0.03em;
-  margin-top: -1px;
   margin-bottom: 5px;
 }
 
@@ -1082,6 +1083,16 @@ The home SPLASHh zone
   .splash__promo__date,
   .light-archive__date {
     font-size: 13px;
+  }
+}
+
+.splash__promo__date {
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 650px) {
+  .splash__promo__date {
+    margin-top: 9px;
   }
 }
 
@@ -2945,12 +2956,13 @@ as this lets us put the blurb on the side we choose for it
   line-height: 120%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  line-height: 124%;
   margin: 20px 60px 0 0;
 }
 
 @media screen and (min-width: 420px) {
   .journal-splash__title {
-    font-size: 25px;
+    font-size: 25.5px;
   }
 }
 
@@ -2988,6 +3000,7 @@ as this lets us put the blurb on the side we choose for it
   font-size: 24px;
   line-height: 116%;
   letter-spacing: -0.01em;
+  line-height: 122%;
   font-style: italic;
   letter-spacing: -0.03em;
   margin: -1px 40px 10px 0;
@@ -6439,7 +6452,7 @@ input[type=submit]:hover {
 the article HEADING
 =================================================================================== */
 .article-head .article-title {
-  margin: 70px 0 10px 0;
+  margin: 70px 0 9px 0;
   grid-column: 2 / span 12;
 }
 
@@ -6449,9 +6462,15 @@ the article HEADING
   }
 }
 
+@media screen and (min-width: 650px) {
+  .article-head .article-title {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 830px) {
   .article-head .article-title {
-    margin: 90px 0 7px 0;
+    margin: 90px 0 11px 0;
     grid-column: 4 / span 8;
   }
 }
@@ -6486,6 +6505,7 @@ the article HEADING
   line-height: 120%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  line-height: 124%;
   font-family: Tiempos, Georgia, serif;
   font-weight: 400;
   margin: 0;
@@ -6493,7 +6513,7 @@ the article HEADING
 
 @media screen and (min-width: 420px) {
   .article-head h1 {
-    font-size: 25px;
+    font-size: 25.5px;
   }
 }
 
@@ -6522,7 +6542,8 @@ the article HEADING
 }
 
 .article-head .journal-splash__subtitle {
-  margin: -3px 0 0 0;
+  line-height: 122%;
+  margin: 0;
 }
 
 @media screen and (min-width: 830px) {

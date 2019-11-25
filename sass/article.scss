@@ -4,13 +4,14 @@ the article HEADING
 
 .article-head {
   .article-title {
-    margin: 70px 0 10px 0;
+    margin: 70px 0 9px 0;
     grid-column: 2 / span 12;
     @include break(tiny) {
       grid-column: 3 / span 10;
     }
+    @include break(small) { margin-bottom: 10px; }
     @include break(medium) {
-      margin: 90px 0 7px 0;
+      margin: 90px 0 11px 0;
       grid-column: 4 / span 8;
     }
     @include break(large) {
@@ -22,12 +23,14 @@ the article HEADING
   }
     h1 {
     @include type-heading-medium-allCaps;
+    line-height: 124%;
     @include type-serif;
     font-weight: 400;
     margin: 0;
   }
   .journal-splash__subtitle {
-    margin: -3px 0 0 0;
+    line-height: 122%;
+    margin: 0;
     @include break(medium) {margin: -1px 0 1px 0;}
     @include break(large) {margin-bottom: 0}
   }

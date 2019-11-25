@@ -132,6 +132,7 @@ The home SPLASHh zone
 
 .splash__promo__title {
   @include type-heading-medium-allCaps; 
+  line-height: 124%;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -139,8 +140,9 @@ The home SPLASHh zone
 .splash__promo__subtitle {
   @include type-heading-medium;
   font-style: italic;
+  line-height: 122%;
   letter-spacing: -0.03em;
-  margin-top: -1px;
+  // margin-top: -1px;
   margin-bottom: 5px;
   @include break(small)  { margin-bottom: 7px; }
   @include break(medium) { margin-bottom: 8px; }
@@ -152,6 +154,11 @@ The home SPLASHh zone
   @include type-label;
   color: $half-black;
   margin-bottom: ($promoPadding - 7px);
+}
+
+.splash__promo__date {
+  margin-top: 8px;
+  @include break(small)  { margin-top: 9px; }
 }
 
 .splash__promo__excerpt {

@@ -77,6 +77,7 @@
 
 .journal-splash__title {
   @include type-heading-medium-allCaps; 
+  line-height: 124%;
   margin: 20px 60px 0 0;
   @include break(large) {
     margin: 32px 40px 0 0;
@@ -85,6 +86,7 @@
 
 .journal-splash__subtitle {
   @include type-heading-medium;
+  line-height: 122%;
   font-style: italic; 
   letter-spacing: -0.03em;
   margin: -1px 40px 10px 0;
