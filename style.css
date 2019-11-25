@@ -4063,7 +4063,7 @@ a.journal-archive__link:hover {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 15px;
-  line-height: 15px;
+  line-height: 18px;
 }
 
 @media screen and (min-width: 1120px) {
