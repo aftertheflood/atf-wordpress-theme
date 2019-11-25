@@ -114,7 +114,7 @@ html {
 @mixin block-button {
     padding: 12.5px 15px 15.5px 15px;
     border: 0px;
-    @include break(small)   {padding: 12px 15px 15.5px 15px;}
+    @include break(small)  {padding: 12px 15px 15.5px 15px;}
     @include break(medium) {padding: 13px 18px 17px 19px;}
     @include break(large)  {padding: 14px 20px 18px 21px;}
 }
