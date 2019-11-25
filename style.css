@@ -368,7 +368,7 @@ body {
 .atf-footer {
   width: 100%;
   color: #FFFFFF;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 18px;
   letter-spacing: 0.02em;
   background-color: #000000;
@@ -1057,7 +1057,7 @@ The home SPLASHh zone
 .light-archive__date {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 118%;
   letter-spacing: 0.02em;
   color: rgba(0, 0, 0, 0.5);
@@ -1520,7 +1520,7 @@ The home (and clients) PROMO zone
 .promo-double__text .sector {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 118%;
   letter-spacing: 0.02em;
   color: #FF611E;
@@ -2908,7 +2908,7 @@ as this lets us put the blurb on the side we choose for it
 .journal-splash__date {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 118%;
   letter-spacing: 0.02em;
 }
@@ -3246,7 +3246,7 @@ as this lets us put the blurb on the side we choose for it
   grid-area: kicker;
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 118%;
   letter-spacing: 0.02em;
   color: #FFD600;
@@ -3303,11 +3303,11 @@ as this lets us put the blurb on the side we choose for it
 .journal-archive__date {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 118%;
   letter-spacing: 0.02em;
   color: #FFD600;
-  margin-top: 6px;
+  margin-top: 5px;
   margin-bottom: 18px;
 }
 
@@ -4063,6 +4063,7 @@ a.journal-archive__link:hover {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 15px;
+  line-height: 15px;
 }
 
 @media screen and (min-width: 1120px) {
@@ -6199,7 +6200,7 @@ a.journal-archive__link:hover {
 .contact__content label {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 118%;
   letter-spacing: 0.02em;
 }
@@ -6851,7 +6852,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 .article-body .article__date {
   font-family: Graphik, sans-serif;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 118%;
   letter-spacing: 0.02em;
 }
@@ -8049,7 +8050,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 }
 
 .article-body .wp-block-image figcaption {
-  font-size: 10px;
+  font-size: 11px;
   line-height: 18px;
   letter-spacing: 0.02em;
   text-align: left;

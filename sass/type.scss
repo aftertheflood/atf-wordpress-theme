@@ -34,7 +34,7 @@ html {
 }
 
 @mixin type-very-small {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 18px;
     letter-spacing: 0.02em;
     @include break(tiny)   { font-size: 11px; line-height: 19px; }
@@ -45,7 +45,7 @@ html {
 @mixin type-label {
     font-family: Graphik, sans-serif;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 118%;
     letter-spacing: 0.02em;
     @include break(tiny)   { font-size: 11px; }

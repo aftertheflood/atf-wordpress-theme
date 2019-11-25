@@ -242,7 +242,7 @@
 .journal-archive__date {
   @include type-label;
   color: $journal-color;
-  margin-top: 6px;
+  margin-top: 5px;
   margin-bottom: 18px;
   @include break(tiny)   { margin-top: 5px; }
   @include break(small)  { margin-top: 4px; }
