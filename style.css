@@ -4083,6 +4083,7 @@ a.journal-archive__link:hover {
   .clients-single .article-body .the-metadata .the-tags {
     border: none;
     margin-top: 5px;
+    line-height: 122%;
   }
 }
 
@@ -4523,6 +4524,11 @@ a.journal-archive__link:hover {
   .clients-single .client-promo__left h3 {
     font-size: 27px;
   }
+}
+
+.clients-single .client-promo__right .promo__text .excerpt p:last-of-type,
+.clients-single .client-promo__left .promo__text .excerpt p:last-of-type {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 1120px) {
@@ -5330,16 +5336,27 @@ a.journal-archive__link:hover {
 }
 
 .clients-single .color-bg {
-  margin-top: 90px;
-  margin-bottom: 90px;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+@media screen and (min-width: 650px) {
+  .clients-single .color-bg {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
 }
 
 @media screen and (min-width: 1120px) {
   .clients-single .color-bg {
     margin-top: 120px;
     margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -6653,7 +6670,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   letter-spacing: -0.01em;
   font-family: Tiempos, Georgia, serif;
   font-weight: 600;
-  margin-top: 3.6em;
+  margin-top: 65px;
 }
 
 @media screen and (min-width: 420px) {
@@ -6683,6 +6700,12 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 @media screen and (min-width: 1440px) {
   .article-body h2 {
     font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-body h2 {
+    margin-top: 85px;
   }
 }
 
@@ -6876,6 +6899,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   font-size: 11px;
   line-height: 118%;
   letter-spacing: 0.02em;
+  line-height: 122%;
 }
 
 @media screen and (min-width: 420px) {

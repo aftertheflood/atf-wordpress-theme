@@ -100,7 +100,8 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
     @include type-heading-medium;
     @include type-serif;
     font-weight: 600;
-    margin-top: 3.6em;
+    margin-top: 65px;
+    @include break(small) { margin-top: 85px; }
     @include break(large) { margin-top: 114px; }
   }
 
@@ -171,6 +172,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
   .article__date {
     @include type-label;
+    line-height: 122%;
     @include break(large) { margin-bottom: -7px; }
   }
 
