@@ -6972,7 +6972,6 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 .article-body .the-metadata {
   grid-column: 2 / span 12;
-  height: 0px;
   overflow: visible;
 }
 
@@ -6991,6 +6990,7 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 @media screen and (min-width: 1120px) {
   .article-body .the-metadata {
     grid-column: 3 / span 2;
+    height: 0;
   }
 }
 
