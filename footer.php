@@ -23,6 +23,6 @@
 		Registered in England and Wales as After the flood Limited. 7792366
 	</div>
 	<div class="footer-logo">
-		<img src="/wp-content/themes/atf-wordpress-theme/assets/images/atf-logo-clipped-footer.png">
+		<img src="/wp-content/themes/atf-wordpress-theme/assets/images/atf-logo-clipped---very-dark-grey.svg">
 	</div>
 </footer>

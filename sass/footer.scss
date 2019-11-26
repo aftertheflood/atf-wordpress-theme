@@ -66,7 +66,7 @@
 	color:black;
 	background-color: white;
 	align-self: flex-start;
-	&:hover { background-color: rgba(255,255,255,0.9); }
+	&:hover { background-color: rgba(255,255,255,0.8); }
 }
 
 .button-right { // for buttons in the footer that are not the first button
@@ -92,7 +92,7 @@
 	@include break(large)  {height: 38px;}
 
 	a:hover {
-		opacity: 0.9;
+		opacity: 0.8;
 	}
 }
 
@@ -115,5 +115,6 @@
 	img {
 		width: 100%;
 		vertical-align: bottom;
+		// bottom: -2px;
 	}
 }
