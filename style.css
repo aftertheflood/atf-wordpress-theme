@@ -8092,6 +8092,8 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 .article-body .wp-block-image {
   line-height: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .article-body .wp-block-image figcaption {
