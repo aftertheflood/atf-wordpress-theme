@@ -3959,10 +3959,8 @@ a.journal-archive__link:hover {
   font-family: Graphik, sans-serif;
 }
 
-@media screen and (min-width: 1120px) {
-  .clients-single .article-body h2:first-of-type {
-    margin-top: 0;
-  }
+.clients-single .article-body h2:first-of-type {
+  margin-top: 0;
 }
 
 .clients-single .article-body h3 {

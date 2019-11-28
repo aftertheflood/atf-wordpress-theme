@@ -71,10 +71,7 @@
 		@include break(large)  { padding-top: 90px; }
 		h2 { 
 			@include type-sans;
-			// letter-spacing: -0.02em; 
-		}
-		h2:first-of-type { 
-			@include break(large) { margin-top: 0; }
+			&:first-of-type { margin-top: 0; }		
 		}
 		h3 {
 			@include type-sans;
