@@ -591,8 +591,10 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
   .wp-block-image {
     line-height: 0;
-    margin-left: 0;
-    margin-right: 0;
+    font-size: 0;
+    margin: 9px 0 21px 0;
+    @include break(small)  { margin: 9px 0 24px 0; }
+    @include break(large)  { margin: 10px 0 26px 0; }
     figcaption {
       @include type-very-small;
       text-align: left;
@@ -605,6 +607,6 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
     }
   }
 
-}
-
+} // end of article-body
+ 
 
