@@ -546,12 +546,28 @@
 	}
 
 
-
-
-
-
-
-
+	/* 
+	This is to create a 2 column grid of images
+	with no margins and a 1px gap between images.
+	The class is applie to a div that wraps image tags, 
+	which do not have/need a class of their own.
+	Each div gets two images.
+	*/
+	.image-grid__2-across__no-margins {
+		grid-column: 1 / span 14;
+		display: block;
+		margin: 1px 0 0;
+		line-height: 0;
+		img:last-of-type { margin-top: 1px; }
+		@include break(small) {
+			display: grid;
+			column-gap: 1px;
+			grid-template-columns: 0 repeat(2, 1fr) 0;
+			img:first-of-type { grid-column: 1 / span 2; }
+			img:last-of-type  { grid-column: 3 / span 2; margin-top: 0; }
+			&:first-of-type { margin-top: 0; }
+		}
+	}
 
 
 	.side-by-side {
@@ -691,6 +707,10 @@
 	.bg__pale-grey {
 		background: #F6F6F6;
 	}
+
+
+
+
 
 
 

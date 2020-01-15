@@ -124,6 +124,99 @@ html {
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
+a.std-button {
+  padding: 12.5px 15px 15.5px 15px;
+  border: 0px;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Graphik, sans-serif;
+  background-color: #efefef;
+  color: #000;
+  border-bottom: none !important;
+  display: inline-block;
+}
+
+@media screen and (min-width: 650px) {
+  a.std-button {
+    padding: 12px 15px 15.5px 15px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  a.std-button {
+    padding: 13px 18px 17px 19px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  a.std-button {
+    padding: 14px 20px 18px 21px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  a.std-button {
+    font-size: 17px;
+    line-height: 17px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  a.std-button {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  a.std-button {
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  a.std-button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+a.std-button:hover {
+  background-color: #FF611E;
+  color: #000;
+}
+
+a.std-button.extra-top-margin {
+  margin-top: 6px;
+}
+
+@media screen and (min-width: 830px) {
+  a.std-button.extra-top-margin {
+    margin-top: 7px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  a.std-button.extra-top-margin {
+    margin-top: 9px;
+  }
+}
+
+a.std-button.orange {
+  background-color: #FF611E;
+  color: #fff;
+}
+
+a.std-button.orange:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Spacing adjustments */
 .no-bottom-margin {
   margin-bottom: 0 !important;
 }
@@ -3832,6 +3925,13 @@ a.journal-archive__link:hover {
 
 .clients-single {
   /* Half-page cluster */
+  /* 
+	This is to create a 2 column grid of images
+	with no margins and a 1px gap between images.
+	The class is applie to a div that wraps image tags, 
+	which do not have/need a class of their own.
+	Each div gets two images.
+	*/
   /* a side-by-side class where the images remain side-by-side at smaller screen sizes, 
 	which is NOT the default behaviour */
   /* the same as the side-by-side__including-mobile
@@ -5072,6 +5172,35 @@ a.journal-archive__link:hover {
 
 .clients-single .center-vertically {
   align-self: center;
+}
+
+.clients-single .image-grid__2-across__no-margins {
+  grid-column: 1 / span 14;
+  display: block;
+  margin: 1px 0 0;
+  line-height: 0;
+}
+
+.clients-single .image-grid__2-across__no-margins img:last-of-type {
+  margin-top: 1px;
+}
+
+@media screen and (min-width: 650px) {
+  .clients-single .image-grid__2-across__no-margins {
+    display: grid;
+    column-gap: 1px;
+    grid-template-columns: 0 repeat(2, 1fr) 0;
+  }
+  .clients-single .image-grid__2-across__no-margins img:first-of-type {
+    grid-column: 1 / span 2;
+  }
+  .clients-single .image-grid__2-across__no-margins img:last-of-type {
+    grid-column: 3 / span 2;
+    margin-top: 0;
+  }
+  .clients-single .image-grid__2-across__no-margins:first-of-type {
+    margin-top: 0;
+  }
 }
 
 .clients-single .side-by-side {
