@@ -14,6 +14,40 @@
 	filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
+
+a.std-button {
+	@include block-button;
+	@include block-button-type;
+	@include type-sans;
+	background-color: $light-grey;
+	color: #000;
+	border-bottom: none !important;
+	display: inline-block;
+	&:hover {
+		background-color: $clients-color;
+		color: #000;
+	}
+	&.extra-top-margin {
+		// This is to give it extra spacing so that it looks correct when in a flow of paragraphs
+		margin-top: 6px;
+		@include break(medium) { margin-top: 7px; }
+		@include break(large)  { margin-top: 9px; }
+
+	}
+	&.orange {
+		// in case you want an orange button
+		background-color: $clients-color;
+		color: #fff;
+		&:hover {
+			background-color: #000;
+			color: #fff;
+		}
+	}
+}
+
+
+/* Spacing adjustments */
+
 .no-bottom-margin {
 	margin-bottom: 0 !important;
 }
