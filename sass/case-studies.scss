@@ -38,6 +38,8 @@
 
 
 
+
+
 .clients-single {
 // this will mainly be used for the case-study pages, btw
 
@@ -567,6 +569,8 @@
 			img:last-of-type  { grid-column: 3 / span 2; margin-top: 0; }
 			&:first-of-type { margin-top: 0; }
 		}
+		@include break(huge) { grid-column: 1 / span 16; }
+		@include break(mega) { grid-column: 1 / span 18; }
 	}
 
 

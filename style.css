@@ -5203,6 +5203,24 @@ a.journal-archive__link:hover {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .clients-single .image-grid__2-across__no-margins {
+    grid-column: 1 / span 16;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .clients-single .image-grid__2-across__no-margins {
+    grid-column: 1 / span 18;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .clients-single .image-grid__2-across__no-margins {
+    grid-column: 1 / span 18;
+  }
+}
+
 .clients-single .side-by-side {
   grid-column: 2 / span 12;
 }
