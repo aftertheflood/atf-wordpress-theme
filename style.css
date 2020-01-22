@@ -2969,7 +2969,7 @@ The home (and clients) banner zone
 @media screen and (min-width: 1120px) {
   .promo__cities-squared .promo__text {
     grid-column: 3 / span 7;
-    margin-top: 340px;
+    margin-top: 270px;
     margin-bottom: 120px;
   }
 }
