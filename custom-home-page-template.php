@@ -56,6 +56,18 @@ $this_page_id = get_the_ID();
   </div>
 </div>
 
+<div class="atf-grid promo__cities-squared client-promo__left no-bottom-margin">
+  <div class="promo__text drop-shadow">
+    <div class="sector">Our new book</div>
+    <h2 class="title">Cities squared: making urban data legible</h2>
+    <div class="promo-bottom">
+      <div class="bottom-inner">
+        <a class="link" href="/journal/cities-squared/">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="atf-grid journal-home">
   <h3 class="recently-header">Recently from the blog &hellip;</h3>
   <div class="atf-archive-grid-home journal-home__posts">
@@ -78,7 +90,6 @@ $this_page_id = get_the_ID();
     <?php endwhile; ?>
   </div>
   <a class="onward-journey-link" href="/journal">More blog posts</a>
-
 </div>
 
 <?php get_template_part('partials/html','bottom'); ?>

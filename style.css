@@ -2878,6 +2878,122 @@ as this lets us put the blurb on the side we choose for it
   }
 }
 
+/* =======================================================================================
+The home (and clients) banner zone 
+======================================================================================= */
+.promo__cities-squared.client-promo__left {
+  padding-bottom: 0;
+}
+
+.promo__cities-squared {
+  background: url("/wp-content/uploads/2020/01/IMG_7904-C.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (min-width: 830px) {
+  .promo__cities-squared {
+    background-position: left top;
+  }
+}
+
+.promo__cities-squared .promo__text {
+  margin-top: 200px;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.promo__cities-squared .promo__text .title {
+  font-size: 31px;
+  line-height: 35px;
+  letter-spacing: -0.02em;
+}
+
+@media screen and (min-width: 420px) {
+  .promo__cities-squared .promo__text .title {
+    font-size: 38px;
+    line-height: 47px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .promo__cities-squared .promo__text .title {
+    font-size: 46px;
+    line-height: 52px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo__cities-squared .promo__text .title {
+    font-size: 52px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo__cities-squared .promo__text .title {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .promo__cities-squared .promo__text .title {
+    font-size: 60px;
+    line-height: 67px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .promo__cities-squared .promo__text .title {
+    font-size: 64px;
+    line-height: 70px;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .promo__cities-squared .promo__text .title {
+    font-size: 64px;
+    line-height: 70px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .promo__cities-squared .promo__text {
+    grid-column: 3 / span 9;
+    margin-top: 300px;
+    margin-bottom: 90px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .promo__cities-squared .promo__text {
+    grid-column: 3 / span 7;
+    margin-top: 340px;
+    margin-bottom: 120px;
+  }
+}
+
+.promo__cities-squared .promo-bottom {
+  margin-bottom: 0;
+  height: auto;
+  position: relative;
+  display: block;
+}
+
+.promo__cities-squared .promo__text .promo-bottom .bottom-inner {
+  position: relative;
+}
+
+.promo__cities-squared .sector, .promo__cities-squared .title {
+  color: white;
+}
+
+.promo__cities-squared .promo-bottom a.link:hover {
+  background: black;
+  color: white;
+}
+
 .journal-splash {
   grid-template-areas: "image image image image image image image image image image image image image image" ". text text text text text text text text text text text text .";
 }

@@ -1062,3 +1062,55 @@ as this lets us put the blurb on the side we choose for it
 
 
 
+
+
+
+
+
+
+
+
+/* =======================================================================================
+The home (and clients) banner zone 
+======================================================================================= */
+
+.promo__cities-squared.client-promo__left { padding-bottom: 0; }
+
+.promo__cities-squared {
+  background: url("/wp-content/uploads/2020/01/IMG_7904-C.jpg");
+  background-size: cover;
+  background-position: center center;
+  @include break(medium) { background-position: left top; }
+
+  .promo__text {
+    margin-top: 200px;
+    margin-bottom: 70px;
+    position: relative;
+    .title { @include type-heading-big; }
+    @include break(medium) {
+      grid-column: 3 / span 9;
+      margin-top: 300px;
+      margin-bottom: 90px;
+    }
+    @include break(large) {
+      grid-column: 3 / span 7;
+      margin-top: 340px;
+      margin-bottom: 120px;
+    }
+  }
+
+  .promo-bottom { 
+    margin-bottom: 0; 
+    height: auto; 
+    position: relative;
+    display: block;
+  }
+
+  .promo__text .promo-bottom .bottom-inner { position: relative; }
+  .sector, .title { color: white; }
+  .promo-bottom a.link:hover {
+    background: black;
+    color: white;    
+  }
+
+} // end of .promo__cities-squared
