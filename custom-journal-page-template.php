@@ -50,7 +50,12 @@ while ( $posts->have_posts() ) : $posts->the_post(); ?>
   <?php } ?>  
   <div class="atf-archive-grid">
     <?php 
-    $posts = get_excluding_category_post_range(array('8'), ($paged*10 + 1), 10);
+    $start_entry = 1;
+    if($paged > 1){
+      $start_entry = (($paged-1)*10 + 1);
+    }
+
+    $posts = get_excluding_category_post_range(array('8'), $start_entry, 10);
     while ( $posts->have_posts() ) : $posts->the_post(); ?>
     <div class="journal-archive__entry">
       <a href="<?php the_permalink(); ?>">
