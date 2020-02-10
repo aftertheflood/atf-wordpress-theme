@@ -114,6 +114,21 @@ html {
   color: #09bfec;
 }
 
+.grey {
+  color: #aaa;
+}
+
+.article-body .grey a {
+  color: #aaa;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.article-body .grey a:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
 .drop-shadow {
   -webkit-filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
@@ -122,6 +137,14 @@ html {
 .drop-shadow__light {
   -webkit-filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.rule-above__grey {
+  border-top: 1px solid #ccc;
+}
+
+.rule-above__grey.with-padding {
+  padding-top: 20px;
 }
 
 a.std-button {
@@ -217,26 +240,6 @@ a.std-button.orange:hover {
 }
 
 /* Spacing adjustments */
-.no-bottom-margin {
-  margin-bottom: 0 !important;
-}
-
-.no-top-margin {
-  margin-top: 0 !important;
-}
-
-@media screen and (max-width: 829px) {
-  .mobile__no-top-margin {
-    margin-top: 0 !important;
-  }
-}
-
-@media screen and (max-width: 829px) {
-  .mobile__no-bottom-margin {
-    margin-bottom: 0 !important;
-  }
-}
-
 @media screen and (max-width: 829px) {
   .mobile__small-bottom-margin {
     margin-bottom: 20px !important;
@@ -250,14 +253,16 @@ figure.margins-vertical__small {
 }
 
 .margins-vertical__medium,
-figure.margins-vertical__medium {
+figure.margins-vertical__medium,
+.article-body figure.wp-block-image.margins-vertical__medium {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 420px) {
   .margins-vertical__medium,
-  figure.margins-vertical__medium {
+  figure.margins-vertical__medium,
+  .article-body figure.wp-block-image.margins-vertical__medium {
     margin-top: 70px;
     margin-bottom: 70px;
   }
@@ -265,7 +270,8 @@ figure.margins-vertical__medium {
 
 @media screen and (min-width: 830px) {
   .margins-vertical__medium,
-  figure.margins-vertical__medium {
+  figure.margins-vertical__medium,
+  .article-body figure.wp-block-image.margins-vertical__medium {
     margin-top: 85px;
     margin-bottom: 85px;
   }
@@ -377,6 +383,32 @@ figure.margins-vertical__double-text__bottom {
   .journal .article-body p.margins-vertical__double-text__bottom,
   figure.margins-vertical__double-text__bottom {
     margin-bottom: 38px;
+  }
+}
+
+.no-bottom-margin {
+  margin-bottom: 0 !important;
+}
+
+.no-top-margin {
+  margin-top: 0 !important;
+}
+
+@media screen and (max-width: 829px) {
+  .mobile__no-top-margin {
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .phone__no-top-margin {
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 829px) {
+  .mobile__no-bottom-margin {
+    margin-bottom: 0 !important;
   }
 }
 
@@ -7128,30 +7160,40 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
   }
 }
 
-.article-body li {
+.article-body ul li {
   text-indent: -20px;
 }
 
 @media screen and (min-width: 650px) {
-  .article-body li {
+  .article-body ul li {
     text-indent: -21px;
   }
 }
 
 @media screen and (min-width: 830px) {
-  .article-body li {
+  .article-body ul li {
     text-indent: -22px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .article-body li {
+  .article-body ul li {
     text-indent: -24px;
   }
 }
 
-.article-body li:before {
+.article-body ul li:before {
   content: "— ";
+}
+
+.article-body ol {
+  padding-inline-start: 20px;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body ol {
+    padding-inline-start: 0;
+  }
 }
 
 .article-body .article__date {
@@ -7576,6 +7618,45 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 .article-body blockquote p.in-quotes {
   text-indent: -10px;
+}
+
+.article-body blockquote.plain {
+  background: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.article-body blockquote.plain p, .article-body blockquote.plain p:last-of-type {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-left: 30px;
+}
+
+@media screen and (min-width: 650px) {
+  .article-body blockquote.plain p, .article-body blockquote.plain p:last-of-type {
+    margin-bottom: 17px;
+    padding-left: 40px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body blockquote.plain p, .article-body blockquote.plain p:last-of-type {
+    margin-bottom: 18px;
+    padding-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body blockquote.plain p, .article-body blockquote.plain p:last-of-type {
+    margin-bottom: 19px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article-body blockquote.plain p, .article-body blockquote.plain p:last-of-type {
+    margin-bottom: 20px;
+  }
 }
 
 .article-body cite {
@@ -8410,6 +8491,262 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 @media screen and (min-width: 1120px) {
   .article-body .wp-block-image figcaption {
     margin: 7px 0 50px 0;
+  }
+}
+
+.article-body .two-col__text-block__left,
+.article-body .two-col__text-block__right,
+.article-body .two-col__wide__left,
+.article-body .two-col__wide__right {
+  align-self: start;
+}
+
+.article-body .two-col__text-block__left .caption-above,
+.article-body .two-col__text-block__right .caption-above,
+.article-body .two-col__wide__left .caption-above,
+.article-body .two-col__wide__right .caption-above {
+  margin-bottom: 20px;
+}
+
+.article-body .two-col__text-block__left {
+  grid-column: 2 / span 6;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body .two-col__text-block__left {
+    grid-column: 3 / span 5;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body .two-col__text-block__left {
+    grid-column: 4 / span 4;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body .two-col__text-block__left {
+    grid-column: 5 / span 3;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article-body .two-col__text-block__left {
+    grid-column: 6 / span 3;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .article-body .two-col__text-block__left {
+    grid-column: 7 / span 3;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .article-body .two-col__text-block__left {
+    grid-column: 7 / span 3;
+  }
+}
+
+.article-body .two-col__text-block__right {
+  grid-column: 8 / span 6;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body .two-col__text-block__right {
+    grid-column: 8 / span 5;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body .two-col__text-block__right {
+    grid-column: 8 / span 4;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body .two-col__text-block__right {
+    grid-column: 8 / span 3;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article-body .two-col__text-block__right {
+    grid-column: 9 / span 3;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .article-body .two-col__text-block__right {
+    grid-column: 10 / span 3;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .article-body .two-col__text-block__right {
+    grid-column: 10 / span 3;
+  }
+}
+
+.article-body .two-col__wide__left {
+  grid-column: 2 / span 12;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body .two-col__wide__left {
+    grid-column: 2 / span 6;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body .two-col__wide__left {
+    grid-column: 3 / span 5;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article-body .two-col__wide__left {
+    grid-column: 3 / span 6;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .article-body .two-col__wide__left {
+    grid-column: 4 / span 6;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .article-body .two-col__wide__left {
+    grid-column: 4 / span 6;
+  }
+}
+
+.article-body .two-col__wide__right {
+  grid-column: 2 / span 12;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body .two-col__wide__right {
+    grid-column: 8 / span 6;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body .two-col__wide__right {
+    grid-column: 8 / span 5;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article-body .two-col__wide__right {
+    grid-column: 9 / span 6;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .article-body .two-col__wide__right {
+    grid-column: 10 / span 6;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .article-body .two-col__wide__right {
+    grid-column: 10 / span 6;
+  }
+}
+
+.article-body .split-col {
+  grid-column: 2 / span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+}
+
+.article-body .split-col figcaption {
+  grid-column: 1 / span 6;
+  margin-bottom: 0;
+}
+
+.article-body .split-col img {
+  grid-column: 7 / span 6;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body .split-col {
+    grid-column: 3 / span 10;
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .article-body .split-col figcaption {
+    grid-column: 1 / span 4;
+  }
+  .article-body .split-col img {
+    grid-column: 5 / span 6;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body .split-col {
+    grid-column: 4 / span 8;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .article-body .split-col figcaption {
+    grid-column: 1 / span 3;
+  }
+  .article-body .split-col img {
+    grid-column: 4 / span 5;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body .split-col {
+    grid-column: 5 / span 6;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .article-body .split-col figcaption {
+    grid-column: 1 / span 3;
+  }
+  .article-body .split-col img {
+    grid-column: 4 / span 3;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article-body .split-col {
+    grid-column: 6 / span 6;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .article-body .split-col figcaption {
+    grid-column: 1 / span 3;
+  }
+  .article-body .split-col img {
+    grid-column: 4 / span 3;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .article-body .split-col {
+    grid-column: 7 / span 6;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .article-body .split-col figcaption {
+    grid-column: 1 / span 3;
+  }
+  .article-body .split-col img {
+    grid-column: 4 / span 3;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .article-body .split-col {
+    grid-column: 7 / span 6;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .article-body .split-col figcaption {
+    grid-column: 1 / span 3;
+  }
+  .article-body .split-col img {
+    grid-column: 4 / span 3;
   }
 }
 

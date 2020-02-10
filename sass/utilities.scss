@@ -2,7 +2,18 @@
 .pink   { color: $contact-highlight-color; }
 .green  { color: $contact-color; }
 .blue   { color: #09bfec; }
+.grey   { color: $grey; }
 
+// for text links you need to brute-force the cascade
+.article-body .grey a {
+	color: $grey; 
+	text-decoration: none;
+	border-bottom: 1px solid $medium-light-grey;
+	&:hover {
+		color: #000;
+		border-bottom: 1px solid #000;
+	}
+}
 
 .drop-shadow {
 	-webkit-filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
@@ -13,6 +24,15 @@
 	-webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 	filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
+
+
+.rule-above__grey {
+	border-top: 1px solid $medium-light-grey;
+	&.with-padding {
+		padding-top: 20px;
+	}
+}
+
 
 
 a.std-button {
@@ -48,26 +68,6 @@ a.std-button {
 
 /* Spacing adjustments */
 
-.no-bottom-margin {
-	margin-bottom: 0 !important;
-}
-
-.no-top-margin {
-	margin-top: 0 !important;
-}
-
-.mobile__no-top-margin {
-	@media screen and (max-width: $screen-medium - 1px) {
-		margin-top: 0 !important;
-	}
-}
-
-.mobile__no-bottom-margin { 
-	@media screen and (max-width: $screen-medium - 1px) {
-		margin-bottom: 0 !important;
-	}
-}
-
 .mobile__small-bottom-margin { 
 	@media screen and (max-width: $screen-medium - 1px) {
 		margin-bottom: 20px !important;
@@ -81,7 +81,8 @@ figure.margins-vertical__small {
 }
 
 .margins-vertical__medium,
-figure.margins-vertical__medium {
+figure.margins-vertical__medium,
+.article-body figure.wp-block-image.margins-vertical__medium {
 	margin-top: 40px;
 	margin-bottom: 40px;
 	@include break(tiny)   { margin-top: 70px; margin-bottom: 70px; }
@@ -124,4 +125,32 @@ figure.margins-vertical__double-text__bottom {
 	@include break(medium) { margin-bottom: 34px; }
 	@include break(large)  { margin-bottom: 36px; }
 	@include break(huge)   { margin-bottom: 38px; }
+}
+
+// these come after the other margin adjustments because they un-do some of the things above
+
+.no-bottom-margin {
+	margin-bottom: 0 !important;
+}
+
+.no-top-margin {
+	margin-top: 0 !important;
+}
+
+.mobile__no-top-margin {
+	@media screen and (max-width: $screen-medium - 1px) {
+		margin-top: 0 !important;
+	}
+}
+
+.phone__no-top-margin {
+	@media screen and (max-width: $screen-tiny - 1px) {
+		margin-top: 0 !important;
+	}
+}
+
+.mobile__no-bottom-margin { 
+	@media screen and (max-width: $screen-medium - 1px) {
+		margin-bottom: 0 !important;
+	}
 }
