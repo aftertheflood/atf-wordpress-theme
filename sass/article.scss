@@ -159,15 +159,20 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
     @include break(tiny)   { padding-inline-start: 0; }
   }
 
-  li {
+  ul li {
     text-indent: -20px;
     @include break(small)  { text-indent: -21px; }
     @include break(medium) { text-indent: -22px; }
     @include break(large)  { text-indent: -24px; }
   }
 
-  li:before {
+  ul li:before {
     content: "— ";
+  }
+
+  ol {
+    padding-inline-start: 20px;
+    @include break(tiny) { padding-inline-start: 0; }
   }
 
   .article__date {
@@ -393,6 +398,23 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
     text-indent: -10px;
   }
 
+  blockquote.plain {
+    background: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    p, p:last-of-type {
+      margin-top: 0;
+      margin-bottom: 16px;
+      padding-left: 30px;
+      @include break(small)  { margin-bottom: 17px; padding-left: 40px; }
+      @include break(medium) { margin-bottom: 18px; padding-left: 50px; }
+      @include break(large)  { margin-bottom: 19px; }
+      @include break(huge)   { margin-bottom: 20px; }
+    }
+  }
+
+
   cite {
     display: block;
     margin: 24px 100px 0 18px;
@@ -604,6 +626,93 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
       @include break(large) {
         margin: 7px 0 50px 0;
       }
+    }
+  }
+
+  // for two columns image grids that are the width of the text-column
+  .two-col__text-block__left,
+  .two-col__text-block__right,
+  .two-col__wide__left,
+  .two-col__wide__right { 
+    align-self: start; 
+    .caption-above {
+      margin-bottom: 20px;
+    }
+  }
+
+
+  // standard side-by-side grid for two images
+  .two-col__text-block__left  { 
+    grid-column: 2 / span 6; 
+    @include break(tiny)   { grid-column: 3 / span 5; }
+    @include break(medium) { grid-column: 4 / span 4; }
+    @include break(large)  { grid-column: 5 / span 3; }
+    @include break(huge)   { grid-column: 6 / span 3; }
+    @include break(mega)   { grid-column: 7 / span 3; }
+  }
+  .two-col__text-block__right { 
+    grid-column: 8 / span 6; 
+    @include break(tiny)   { grid-column: 8 / span 5; }
+    @include break(medium) { grid-column: 8 / span 4; }
+    @include break(large)  { grid-column: 8 / span 3; }
+    @include break(huge)   { grid-column: 9 / span 3; }
+    @include break(mega)   { grid-column: 10 / span 3; }
+  }
+
+  // wide side-by-side grid for two images
+  // this stacks the images at mobile sizes
+  .two-col__wide__left  { 
+    grid-column: 2 / span 12; 
+    @include break(tiny)   { grid-column: 2 / span 6; }
+    @include break(medium) { grid-column: 3 / span 5; }
+    @include break(huge)   { grid-column: 3 / span 6; }
+    @include break(mega)   { grid-column: 4 / span 6; }
+  }
+  .two-col__wide__right { 
+    grid-column: 2 / span 12; 
+    @include break(tiny)   { grid-column: 8 / span 6; }
+    @include break(medium) { grid-column: 8 / span 5; }
+    @include break(huge)   { grid-column: 9 / span 6; }
+    @include break(mega)   { grid-column: 10 / span 6; }
+  }
+
+  // standard side-by-side grid for two images
+  .split-col  { 
+    grid-column: 2 / span 12; 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: $column-gap;
+    figcaption { grid-column: 1 / span 6; margin-bottom: 0; }
+    img        { grid-column: 7 / span 6; }    
+    @include break(tiny) { 
+      grid-column: 3 / span 10; 
+      grid-template-columns: repeat(10, 1fr);
+      figcaption { grid-column: 1 / span 4; }
+      img        { grid-column: 5 / span 6; }
+    }
+    @include break(medium) { 
+      grid-column: 4 / span 8; 
+      grid-template-columns: repeat(8, 1fr);
+      figcaption { grid-column: 1 / span 3; }
+      img        { grid-column: 4 / span 5; }
+    }
+    @include break(large) { 
+      grid-column: 5 / span 6; 
+      grid-template-columns: repeat(6, 1fr);
+      figcaption { grid-column: 1 / span 3; }
+      img        { grid-column: 4 / span 3; }
+    }
+    @include break(huge) { 
+      grid-column: 6 / span 6; 
+      grid-template-columns: repeat(6, 1fr);
+      figcaption { grid-column: 1 / span 3; }
+      img        { grid-column: 4 / span 3; }
+    }
+    @include break(mega) { 
+      grid-column: 7 / span 6; 
+      grid-template-columns: repeat(6, 1fr);
+      figcaption { grid-column: 1 / span 3; }
+      img        { grid-column: 4 / span 3; }
     }
   }
 
