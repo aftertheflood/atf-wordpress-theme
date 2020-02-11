@@ -316,34 +316,39 @@ figure.margins-vertical__medium__bottom {
 }
 
 .margins-vertical__standard-text__bottom,
-.journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+.journal .article-body p:last-of-type.margins-vertical__standard-text__bottom,
+.journal .article-body figure figcaption.margins-vertical__standard-text__bottom {
   margin-bottom: 16px;
 }
 
 @media screen and (min-width: 650px) {
   .margins-vertical__standard-text__bottom,
-  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom,
+  .journal .article-body figure figcaption.margins-vertical__standard-text__bottom {
     margin-bottom: 17px;
   }
 }
 
 @media screen and (min-width: 830px) {
   .margins-vertical__standard-text__bottom,
-  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom,
+  .journal .article-body figure figcaption.margins-vertical__standard-text__bottom {
     margin-bottom: 18px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .margins-vertical__standard-text__bottom,
-  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom,
+  .journal .article-body figure figcaption.margins-vertical__standard-text__bottom {
     margin-bottom: 19px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .margins-vertical__standard-text__bottom,
-  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+  .journal .article-body p:last-of-type.margins-vertical__standard-text__bottom,
+  .journal .article-body figure figcaption.margins-vertical__standard-text__bottom {
     margin-bottom: 20px;
   }
 }
@@ -8584,6 +8589,86 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
 
 @media screen and (min-width: mega) {
   .article-body .two-col__text-block__right {
+    grid-column: 10 / span 3;
+  }
+}
+
+.article-body .two-col__text-block__left__asymmetric-large {
+  grid-column: 2 / span 7;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body .two-col__text-block__left__asymmetric-large {
+    grid-column: 3 / span 6;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body .two-col__text-block__left__asymmetric-large {
+    grid-column: 4 / span 4;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body .two-col__text-block__left__asymmetric-large {
+    grid-column: 5 / span 3;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article-body .two-col__text-block__left__asymmetric-large {
+    grid-column: 6 / span 3;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .article-body .two-col__text-block__left__asymmetric-large {
+    grid-column: 7 / span 3;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .article-body .two-col__text-block__left__asymmetric-large {
+    grid-column: 7 / span 3;
+  }
+}
+
+.article-body .two-col__text-block__right__asymmetric-small {
+  grid-column: 9 / span 5;
+}
+
+@media screen and (min-width: 420px) {
+  .article-body .two-col__text-block__right__asymmetric-small {
+    grid-column: 9 / span 4;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .article-body .two-col__text-block__right__asymmetric-small {
+    grid-column: 8 / span 4;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .article-body .two-col__text-block__right__asymmetric-small {
+    grid-column: 8 / span 3;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article-body .two-col__text-block__right__asymmetric-small {
+    grid-column: 9 / span 3;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .article-body .two-col__text-block__right__asymmetric-small {
+    grid-column: 10 / span 3;
+  }
+}
+
+@media screen and (min-width: mega) {
+  .article-body .two-col__text-block__right__asymmetric-small {
     grid-column: 10 / span 3;
   }
 }

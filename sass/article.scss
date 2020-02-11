@@ -659,6 +659,24 @@ whereas we want this to only apply to the journal pages (i.e. NOT to the case-st
     @include break(mega)   { grid-column: 10 / span 3; }
   }
 
+  // standard side-by-side grid for two images
+  .two-col__text-block__left__asymmetric-large  { 
+    grid-column: 2 / span 7; 
+    @include break(tiny)   { grid-column: 3 / span 6; }
+    @include break(medium) { grid-column: 4 / span 4; }
+    @include break(large)  { grid-column: 5 / span 3; }
+    @include break(huge)   { grid-column: 6 / span 3; }
+    @include break(mega)   { grid-column: 7 / span 3; }
+  }
+  .two-col__text-block__right__asymmetric-small { 
+    grid-column: 9 / span 5; 
+    @include break(tiny)   { grid-column: 9 / span 4; }
+    @include break(medium) { grid-column: 8 / span 4; }
+    @include break(large)  { grid-column: 8 / span 3; }
+    @include break(huge)   { grid-column: 9 / span 3; }
+    @include break(mega)   { grid-column: 10 / span 3; }
+  }
+
   // wide side-by-side grid for two images
   // this stacks the images at mobile sizes
   .two-col__wide__left  { 

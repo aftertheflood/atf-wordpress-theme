@@ -106,7 +106,8 @@ figure.margins-vertical__medium__bottom {
 // useful because, by default, the final paragraph has no bottom margin
 // and yeah, this can be a tough one to overpower
 .margins-vertical__standard-text__bottom,
-.journal .article-body p:last-of-type.margins-vertical__standard-text__bottom {
+.journal .article-body p:last-of-type.margins-vertical__standard-text__bottom,
+.journal .article-body figure figcaption.margins-vertical__standard-text__bottom {
 	margin-bottom: 16px;
 	@include break(small)  { margin-bottom: 17px; }
 	@include break(medium) { margin-bottom: 18px; }
