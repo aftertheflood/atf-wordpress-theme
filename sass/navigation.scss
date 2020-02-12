@@ -88,10 +88,11 @@ nav a {
   }
 }
 
-nav.clients {background-color: $clients-color;}
-nav.journal {background-color: $journal-color;}
-nav.about   {background-color: $about-color;}
-nav.contact {background-color: $contact-color;}
+nav.clients  {background-color: $clients-color;}
+nav.journal  {background-color: $journal-color;}
+nav.about    {background-color: $about-color;}
+nav.contact  {background-color: $contact-color;}
+nav.playbook {background-color: $playbook-color;}
 
 .active-marker {
   position: absolute;

@@ -6,7 +6,10 @@ if(is_single()){
 	if ( in_category( 'client' ) ){
 		$pageTag = 'clients';
 		$single = '-single';
-	}else{
+	} elseif ( in_category( 'playbook' ) ){
+		$pageTag = 'playbook';
+		$single = '';
+	} else {
 		$pageTag = 'journal';
 		$single = '';
 	}

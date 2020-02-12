@@ -9071,6 +9071,10 @@ nav.contact {
   background-color: #00C720;
 }
 
+nav.playbook {
+  background-color: #a200ff;
+}
+
 .active-marker {
   position: absolute;
   display: inline-block;

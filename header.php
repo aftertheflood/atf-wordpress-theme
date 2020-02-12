@@ -35,6 +35,10 @@
         <?php if(linkIsActive('journal', $post_slug) || linkIsActive('journal', $pageTag)){ addActiveMarker(); }?>
       </div>
       <div class="header-link">
+        <a href="<?php echo esc_url( home_url( '/playbook' ) ); ?>">Playbook</a>
+        <?php if(linkIsActive('playbook', $post_slug) || linkIsActive('playbook', $pageTag)){ addActiveMarker(); }?>
+      </div>
+      <div class="header-link">
         <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">About</a>
         <?php if(linkIsActive('about', $post_slug)){ addActiveMarker(); }?>
       </div>
