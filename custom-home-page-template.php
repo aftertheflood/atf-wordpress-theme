@@ -73,7 +73,7 @@ $this_page_id = get_the_ID();
   <div class="atf-archive-grid-home journal-home__posts">
     <?php /* 2nd and 3rd journal posts start from 1 get 2*/ 
       $count = 0;
-      $posts = get_excluding_category_post_range(11, 0, 2);
+      $posts = get_excluding_category_post_range(array('41', '3'), 0, 2);
       while ( $posts->have_posts() ) : 
         $posts->the_post(); ?>
       <div class="journal-archive__entry">
