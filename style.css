@@ -5441,16 +5441,16 @@ nav {
       font-size: 30px; } }
   @media screen and (min-width: 830px) {
     .header-links {
-      font-size: 32px;
-      padding-left: 10px;
-      padding-right: 10px; } }
+      font-size: 32px; } }
   @media screen and (min-width: 1120px) {
     .header-links {
       font-size: 34px;
-      padding: 0; } }
+      padding-left: 10px;
+      padding-right: 10px; } }
   @media screen and (min-width: 1440px) {
     .header-links {
-      font-size: 36px; } }
+      font-size: 36px;
+      padding: 0; } }
   @media screen and (min-width: 1800px) {
     .header-links {
       font-size: 38px; } }
@@ -5467,17 +5467,17 @@ nav {
       padding-top: 7px; } }
   @media screen and (min-width: 830px) {
     .header-link {
-      padding-top: 7.5px;
-      padding-left: 10px;
-      padding-right: 10px; } }
+      padding-top: 7.5px; } }
   @media screen and (min-width: 1120px) {
     .header-link {
       padding-top: 7px;
-      padding-left: 20px;
-      padding-right: 20px; } }
+      padding-left: 10px;
+      padding-right: 10px; } }
   @media screen and (min-width: 1440px) {
     .header-link {
-      padding-top: 6.5px; } }
+      padding-top: 6.5px;
+      padding-left: 20px;
+      padding-right: 20px; } }
   @media screen and (min-width: 1800px) {
     .header-link {
       padding-top: 6px; } }
@@ -5489,7 +5489,7 @@ nav {
   position: fixed;
   float: right;
   right: 0; }
-  @media screen and (min-width: 830px) {
+  @media screen and (min-width: 1120px) {
     .header-button {
       display: none; } }
 
@@ -5507,6 +5507,11 @@ nav {
     .close-menu-button {
       padding-top: 9px;
       padding-right: 9px; } }
+  @media screen and (min-width: 830px) {
+    .header-button,
+    .close-menu-button {
+      padding-top: 12px;
+      padding-right: 12px; } }
 
 nav a {
   text-decoration: none;
@@ -5539,9 +5544,6 @@ nav.playbook {
   margin-right: auto;
   left: 0;
   right: 0; }
-  @media screen and (min-width: 830px) {
-    .active-marker {
-      margin-top: 35px; } }
   @media screen and (min-width: 1120px) {
     .active-marker {
       margin-top: 36px; } }
@@ -5563,13 +5565,13 @@ nav.playbook {
 
 .full-nav {
   display: none; }
-  @media screen and (min-width: 830px) {
+  @media screen and (min-width: 1120px) {
     .full-nav {
       display: flex; } }
 
 .compact-nav {
   display: flex; }
-  @media screen and (min-width: 830px) {
+  @media screen and (min-width: 1120px) {
     .compact-nav {
       display: none; } }
 
@@ -5583,7 +5585,7 @@ nav.compact-menu {
   nav.compact-menu a {
     display: block;
     color: white; }
-  @media screen and (min-width: 830px) {
+  @media screen and (min-width: 1120px) {
     nav.compact-menu {
       display: none;
       overflow: hidden; } }
@@ -5591,14 +5593,14 @@ nav.compact-menu {
 nav.compact-menu.closed {
   position: fixed;
   height: 0vh; }
-  @media screen and (min-width: 830px) {
+  @media screen and (min-width: 1120px) {
     nav.compact-menu.closed {
       display: none; } }
 
 nav.compact-menu.open {
   position: fixed;
   height: 1000vh; }
-  @media screen and (min-width: 830px) {
+  @media screen and (min-width: 1120px) {
     nav.compact-menu.open {
       display: none; } }
 

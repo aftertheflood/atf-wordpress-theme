@@ -47,9 +47,9 @@ nav,
   padding-left: $column-gap;
   @include break(tiny)   { font-size: 27px; }
   @include break(small)  { font-size: 30px; }
-  @include break(medium) { font-size: 32px; padding-left: $column-gap/2; padding-right: $column-gap/2; }
-  @include break(large)  { font-size: 34px; padding: 0; }
-  @include break(huge)   { font-size: 36px; }
+  @include break(medium) { font-size: 32px; }
+  @include break(large)  { font-size: 34px; padding-left: $column-gap/2; padding-right: $column-gap/2;  }
+  @include break(huge)   { font-size: 36px; padding: 0;}
   @include break(mega)   { font-size: 38px; }  
 }
 
@@ -58,9 +58,9 @@ nav,
   display: inline-block;
   padding-top: 4px;
   @include break(tiny)   { padding-top: 7px; }
-  @include break(medium) { padding-top: 7.5px; padding-left: $column-gap/2; padding-right: $column-gap/2; }
-  @include break(large)  { padding-top: 7px; padding-left: $column-gap; padding-right: $column-gap; }
-  @include break(huge)   { padding-top: 6.5px; }
+  @include break(medium) { padding-top: 7.5px; }
+  @include break(large)  { padding-top: 7px; padding-left: $column-gap/2; padding-right: $column-gap/2;}
+  @include break(huge)   { padding-top: 6.5px; padding-left: $column-gap; padding-right: $column-gap; }
   @include break(mega)   { padding-top: 6px; }
 }
 
@@ -68,15 +68,16 @@ nav,
   position: fixed;
   float: right;
   right: 0;
-  @include break(medium) { display: none; }
+  @include break(large) { display: none; }
 }
 
 .header-button, 
 .close-menu-button {
   padding-top: 7px;
   padding-right: 7px;
-  @include break(tiny)  { padding-top: 8px; padding-right: 8px; }
-  @include break(small) { padding-top: 9px; padding-right: 9px; }
+  @include break(tiny)   { padding-top: 8px; padding-right: 8px; }
+  @include break(small)  { padding-top: 9px; padding-right: 9px; }
+  @include break(medium) { padding-top: 12px; padding-right: 12px; }
 }
 
 nav a {
@@ -103,7 +104,7 @@ nav.playbook {background-color: $playbook-color;}
   margin-right: auto;
   left: 0;
   right: 0;
-  @include break(medium) { margin-top: 35px; }
+  // @include break(medium) { margin-top: 35px; }
   @include break(large)  { margin-top: 36px; }
 }
 
@@ -127,14 +128,14 @@ nav.playbook {background-color: $playbook-color;}
 
 .full-nav {
   display: none;
-  @include break(medium) {
+  @include break(large) {
     display: flex;
   }
 }
 
 .compact-nav {
   display: flex;
-  @include break(medium) {
+  @include break(large) {
     display: none;
   }
 }
@@ -150,18 +151,18 @@ nav.compact-menu {
     display: block;
     color: white;
   }
-  @include break(medium) { display: none; overflow: hidden; }
+  @include break(large) { display: none; overflow: hidden; }
 }
 
 nav.compact-menu.closed {
   position: fixed;
   height: 0vh;
-  @include break(medium) {display: none;}
+  @include break(large) {display: none;}
 }
 nav.compact-menu.open {
   position: fixed;
   height: 1000vh;
-  @include break(medium) {display: none;}
+  @include break(large) {display: none;}
 }
 
 
