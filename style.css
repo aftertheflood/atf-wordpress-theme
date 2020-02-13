@@ -3497,6 +3497,65 @@ a.journal-archive__link {
   .clients-single .bg__pale-grey {
     background: #F6F6F6; }
 
+.playbook-standfirst {
+  color: #ae00ff;
+  padding: 70px 0; }
+  .playbook-standfirst h2 {
+    font-size: 31px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+    font-family: Tiempos, Georgia, serif;
+    font-weight: 400;
+    margin: 0 0 19px;
+    grid-column: 2 / span 12; }
+    @media screen and (min-width: 420px) {
+      .playbook-standfirst h2 {
+        font-size: 38px;
+        line-height: 47px; } }
+    @media screen and (min-width: 650px) {
+      .playbook-standfirst h2 {
+        font-size: 46px;
+        line-height: 52px; } }
+    @media screen and (min-width: 830px) {
+      .playbook-standfirst h2 {
+        font-size: 52px;
+        line-height: 60px; } }
+    @media screen and (min-width: 1120px) {
+      .playbook-standfirst h2 {
+        font-size: 56px;
+        line-height: 64px; } }
+    @media screen and (min-width: 1440px) {
+      .playbook-standfirst h2 {
+        font-size: 60px;
+        line-height: 67px; } }
+    @media screen and (min-width: 1800px) {
+      .playbook-standfirst h2 {
+        font-size: 64px;
+        line-height: 70px; } }
+    @media screen and (min-width: mega) {
+      .playbook-standfirst h2 {
+        font-size: 64px;
+        line-height: 70px; } }
+  @media screen and (min-width: 420px) {
+    .playbook-standfirst h2 {
+      grid-column: 3 / span 10; } }
+  @media screen and (min-width: 830px) {
+    .playbook-standfirst {
+      padding: 85px 0 90px 0; }
+      .playbook-standfirst h2 {
+        grid-column: 3 / span 9; } }
+  @media screen and (min-width: 1120px) {
+    .playbook-standfirst {
+      padding: 114px 0 120px 0; }
+      .playbook-standfirst h2 {
+        grid-column: 3 / span 8; } }
+  @media screen and (min-width: 1800px) {
+    .playbook-standfirst h2 {
+      grid-column: 4 / span 8; } }
+  @media screen and (min-width: mega) {
+    .playbook-standfirst h2 {
+      grid-column: 4 / span 8; } }
+
 .about__splash {
   color: #000;
   padding: 70px 0; }
