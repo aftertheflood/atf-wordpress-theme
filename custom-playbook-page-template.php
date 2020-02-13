@@ -8,9 +8,17 @@ $paged = get_query_var( 'paged' ); // what page of the archive etc are we on
 if($paged == 0){
 ?>
 
+<div class="atf-grid playbook-standfirst">
+  <?php if ( have_posts() ) :?>
+    <?php while ( have_posts() ) : the_post(); ?>
+    <?php the_content(); ?>
+    <?php endwhile; ?>
+  <?php endif; ?>
+</div>
+
 <?php 
 /* exclude category '8' which is clients */
-$posts = get_excluding_category_post_range(array('8'), 0, 1);
+$posts = get_excluding_category_post_range(array('2', '3', '5'), 0, 1);
 while ( $posts->have_posts() ) : $posts->the_post(); ?>
   <?php if(get_post_meta($post->ID, 'promo-image', true)) { ?>  
     <div class="atf-grid journal-splash">
@@ -55,7 +63,7 @@ while ( $posts->have_posts() ) : $posts->the_post(); ?>
       $start_entry = (($paged-1)*10 + 1);
     }
 
-    $posts = get_excluding_category_post_range(array('8'), $start_entry, 10);
+    $posts = get_excluding_category_post_range(array('2', '3', '5'), $start_entry, 10);
     while ( $posts->have_posts() ) : $posts->the_post(); ?>
     <div class="journal-archive__entry">
       <a href="<?php the_permalink(); ?>">
