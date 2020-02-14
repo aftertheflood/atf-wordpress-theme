@@ -3500,6 +3500,12 @@ a.journal-archive__link {
 .playbook-standfirst {
   color: #ae00ff;
   padding: 70px 0; }
+  @media screen and (min-width: 830px) {
+    .playbook-standfirst {
+      padding: 85px 0 90px 0; } }
+  @media screen and (min-width: 1120px) {
+    .playbook-standfirst {
+      padding: 114px 0 120px 0; } }
   .playbook-standfirst h2 {
     font-size: 31px;
     line-height: 35px;
@@ -3536,25 +3542,21 @@ a.journal-archive__link {
       .playbook-standfirst h2 {
         font-size: 64px;
         line-height: 70px; } }
-  @media screen and (min-width: 420px) {
-    .playbook-standfirst h2 {
-      grid-column: 3 / span 10; } }
-  @media screen and (min-width: 830px) {
-    .playbook-standfirst {
-      padding: 85px 0 90px 0; }
+    @media screen and (min-width: 420px) {
+      .playbook-standfirst h2 {
+        grid-column: 3 / span 10; } }
+    @media screen and (min-width: 830px) {
       .playbook-standfirst h2 {
         grid-column: 3 / span 9; } }
-  @media screen and (min-width: 1120px) {
-    .playbook-standfirst {
-      padding: 114px 0 120px 0; }
+    @media screen and (min-width: 1120px) {
       .playbook-standfirst h2 {
         grid-column: 3 / span 8; } }
-  @media screen and (min-width: 1800px) {
-    .playbook-standfirst h2 {
-      grid-column: 4 / span 8; } }
-  @media screen and (min-width: mega) {
-    .playbook-standfirst h2 {
-      grid-column: 4 / span 8; } }
+    @media screen and (min-width: 1800px) {
+      .playbook-standfirst h2 {
+        grid-column: 4 / span 8; } }
+    @media screen and (min-width: mega) {
+      .playbook-standfirst h2 {
+        grid-column: 4 / span 8; } }
 
 .about__splash {
   color: #000;
