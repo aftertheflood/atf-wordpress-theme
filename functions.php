@@ -39,5 +39,19 @@ function get_child_category($postID, $targetParent, $before=""){
   return '';
 }
 
+/* currently used for just the playbook pages 
+   it returns the category name(s), 
+   but needs to be modified to add a space between then, if there is more than one */
+function get_child_category_playbook($postID, $targetParent, $before=""){
+  foreach(wp_get_post_categories( $postID ) as $cat) {
+    $heirachy = get_category_parents($cat);
+    $parents = explode ( "/" , $heirachy);
+    if($parents[0] == $targetParent && $parents[1]){
+      echo strtolower($parents[1]);
+    }
+  }
+  return '';
+}
+
 add_action( 'wp_enqueue_scripts', 'wp_add_scripts' );  
 ?>
