@@ -1,4 +1,6 @@
-.playbook {}
+.playbook {	
+
+}
 
 
 .playbook-standfirst {
@@ -7,18 +9,57 @@
 	@include break(medium)  { padding: 85px 0 90px 0; }
 	@include break(large)   { padding: 114px 0 120px 0; }
 	h2 {
-		@include type-heading-big;
+		@include type-heading-medium;
 		@include type-serif;
 		font-weight: 400;
-		margin: 0 0 19px;
+		margin: 0;
 		grid-column: 2 / span 12;
 		@include break(tiny)    { grid-column: 3 / span 10; }
-		@include break(medium)  { grid-column: 3 / span 9; }
-		@include break(large)   { grid-column: 3 / span 8; }
-		@include break(mega)    { grid-column: 4 / span 8; }
+		@include break(medium)  { grid-column: 3 / span 8; }
+		@include break(large)   { grid-column: 3 / span 7; }
+		@include break(mega)    { grid-column: 4 / span 7; }
 	}
 }
 
+.playbook-entry {
+	padding: $column-gap;
+	margin-bottom: -8px;
+	border: solid 8px $playbook-color;
 
+	&.discovery { grid-column: 3 / span 6;	}
+	&.synthesis { grid-column: 4 / span 6;	}
+	&.strategy  { grid-column: 5 / span 6;	}
+	&.design    { grid-column: 6 / span 6;	}
+	&.delivery  { grid-column: 7 / span 6;	}
+
+	h2 {
+		margin: 0;
+		font-size: 31px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    @include break(tiny)   { font-size: 38px; line-height: 39px; }
+    @include break(small)  { font-size: 46px; line-height: 46px; }
+    @include break(medium) { font-size: 52px; line-height: 51px; }
+    @include break(large)  { font-size: 56px; line-height: 55px; }
+    @include break(huge)   { font-size: 60px; line-height: 59px; }
+		@include break(mega)   { font-size: 64px; line-height: 63px; }
+		// this is here because the standard version has too much line-height
+	}
+
+	a {
+		color: #000;
+		text-decoration: none;
+	}
+
+	.playbook__category {
+		a { 
+			@include type-very-small;
+			letter-spacing: 0.01em;
+			font-weight: bold;
+		}
+	}
+
+
+}
 
 
