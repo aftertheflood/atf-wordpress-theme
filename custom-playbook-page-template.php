@@ -27,6 +27,8 @@
 
 <!-- the entries --> 
 <div class="atf-grid playbook-entries"> 
+
+  <!-- get the entries, exclude non-playbook posts -->
   <?php 
     $start_entry = 0;
     if($paged > 1){
@@ -34,25 +36,29 @@
     }
     $posts = get_excluding_category_post_range(array('2', '3', '5'), $start_entry, 10);
     while ( $posts->have_posts() ) : $posts->the_post(); 
-  
   ?>
 
+    <!-- the individual playbook posts -->
     <div class="playbook-entry  <?php echo get_child_category_playbook($post->ID, "Playbook"); ?>">
+      
+      <!-- this prints the category as a link, but it will need to be re-worked 
+      as it currently goes to the wrong place -->
+      <div class="playbook__category">
+        <?php echo get_child_category($post->ID, "Playbook"); ?>
+      </div>
+
       <a href="<?php the_permalink(); ?>">
         <h2 class="playbook__title"><?php the_title(); ?></h2>
         <?php if (get_post_meta($post->ID, 'subtitle', true)) : ?>
           <div class="playbook__subtitle"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></div>
         <?php endif; ?>
       </a>
-      <div class="playbook__date"><?php the_date() ?></div>
+      <!-- <div class="playbook__date"><?php the_date() ?></div> -->
       <div class="playbook__excerpt"><?php the_excerpt(); ?></div>
       <a href="<?php the_permalink(); ?>" class="playbook__link">Read more</a>
     </div>
 
   <?php endwhile; ?>
-
-
-
 
   <!-- the previous/next button -->
   <div class="archive-pagination">
@@ -62,6 +68,7 @@
     <a href="<?php next_posts(); ?>">Older</a>
     <?php ?>
   </div>
+
 </div>
 
 
